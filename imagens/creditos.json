@@ -1,15 +1,4 @@
 {
-  "orla-verticalizada.jpg": {
-    "banco": "Pexels",
-    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
-    "uso": "imagem ilustrativa",
-    "fotografo": "Evandro Kluge",
-    "url_fotografo": "https://www.pexels.com/@evandro-kluge-201796092",
-    "url_original": "https://www.pexels.com/photo/aerial-view-of-city-buildings-near-the-seashore-12271543/",
-    "id_pexels": 12271543,
-    "termo_de_busca": "aerial beach highrise buildings brazil",
-    "baixada_em": "2026-08-04"
-  },
   "home-orla-itapema.jpg": {
     "banco": "Pexels",
     "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
@@ -41,6 +30,39 @@
     "url_original": "https://www.pexels.com/photo/silhouette-of-a-woman-standing-on-the-beach-and-watching-scenic-sunrise-19611076/",
     "id_pexels": 19611076,
     "termo_de_busca": "itapema santa catarina praia",
+    "baixada_em": "2026-08-04"
+  },
+  "porto-belo-enseada.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Flavio Luiz Koch",
+    "url_fotografo": "https://www.pexels.com/@flavio-luiz-koch-458088848",
+    "url_original": "https://www.pexels.com/photo/forest-in-bay-on-seashore-20695550/",
+    "id_pexels": 20695550,
+    "termo_de_busca": "porto belo santa catarina",
+    "baixada_em": "2026-08-04"
+  },
+  "itapema-cidade-br101.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "off leko",
+    "url_fotografo": "https://www.pexels.com/@offleko",
+    "url_original": "https://www.pexels.com/photo/sunset-over-itapema-skyline-and-br-101-highway-33613300/",
+    "id_pexels": 33613300,
+    "termo_de_busca": "itapema brasil rua cidade avenida",
+    "baixada_em": "2026-08-04"
+  },
+  "itapema-skyline-verticalizacao.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "off leko",
+    "url_fotografo": "https://www.pexels.com/@offleko",
+    "url_original": "https://www.pexels.com/photo/itapema-skyline-at-sunset-in-santa-catarina-33613299/",
+    "id_pexels": 33613299,
+    "termo_de_busca": "itapema skyline predios orla",
     "baixada_em": "2026-08-04"
   }
 }

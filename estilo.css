@@ -120,6 +120,11 @@ figure.foto svg.cena{display:block;width:100%;height:auto}
 figure.foto figcaption{font-size:.92rem;color:var(--suave);line-height:1.5;margin-top:9px;border-left:2px solid var(--sol);padding-left:12px}
 figure.foto .credito{display:block;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--suave);margin-top:5px}
 
+/* CAPAS DE CHAMADA */
+article.card .capa{display:block;width:calc(100% + 44px);height:auto;margin:-24px -22px 15px;aspect-ratio:16/9;object-fit:cover;background:var(--areia);transition:filter .25s}
+article.card:hover .capa{filter:saturate(1.1) brightness(1.03)}
+.item .mini{width:60px;height:60px;flex:none;object-fit:cover;align-self:flex-start;margin-top:3px;background:rgba(255,255,255,.08)}
+
 /* ICONES */
 .icone{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .titulo h2{display:inline-flex;align-items:center;gap:10px}
