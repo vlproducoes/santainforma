@@ -9,5 +9,38 @@
     "id_pexels": 12271543,
     "termo_de_busca": "aerial beach highrise buildings brazil",
     "baixada_em": "2026-08-04"
+  },
+  "home-orla-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Leandro Bezerra",
+    "url_fotografo": "https://www.pexels.com/@leandrobez",
+    "url_original": "https://www.pexels.com/photo/skyline-of-itapema-beach-santa-catarina-brazil-38268704/",
+    "id_pexels": 38268704,
+    "termo_de_busca": "itapema santa catarina praia",
+    "baixada_em": "2026-08-04"
+  },
+  "ceu-estrelado-litoral.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Alicia Zinn",
+    "url_fotografo": "https://www.pexels.com/@aliciazinn",
+    "url_original": "https://www.pexels.com/photo/stars-in-the-sky-above-the-sea-11564057/",
+    "id_pexels": 11564057,
+    "termo_de_busca": "night sky stars milky way ocean horizon",
+    "baixada_em": "2026-08-04"
+  },
+  "amanhecer-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Leandro Bezerra",
+    "url_fotografo": "https://www.pexels.com/@leandrobez",
+    "url_original": "https://www.pexels.com/photo/silhouette-of-a-woman-standing-on-the-beach-and-watching-scenic-sunrise-19611076/",
+    "id_pexels": 19611076,
+    "termo_de_busca": "itapema santa catarina praia",
+    "baixada_em": "2026-08-04"
   }
 }
