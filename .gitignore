@@ -1,2 +1,9 @@
 .claude/
 .DS_Store
+__pycache__/
+*.pyc
+
+# Segredos. NUNCA remover estas linhas: o repositorio e publico.
+.env
+*.key
+segredos*

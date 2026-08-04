@@ -1,0 +1,7 @@
+# Santa Informa · santainforma.com.br
+# Jornalismo regional do litoral catarinense
+
+User-agent: *
+Allow: /
+
+Sitemap: https://santainforma.com.br/sitemap.xml
