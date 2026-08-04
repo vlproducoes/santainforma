@@ -113,16 +113,41 @@ article.card p{font-size:.96rem;color:var(--suave)}
 .texto strong{font-weight:600}
 .destaque{border-left:3px solid var(--sol);background:#fff;padding:20px 24px;margin:24px 0;font-size:1.05rem}
 
-/* PLACEHOLDER VISUAL */
-.ilustra{aspect-ratio:16/7;background:linear-gradient(160deg,var(--mar) 0%,var(--breu) 70%);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:22px 24px;margin:24px 0}
-.ilustra::after{content:"";position:absolute;right:-40px;top:-50px;width:230px;height:230px;border-radius:50%;background:var(--sol);opacity:.22}
-.ilustra span{position:relative;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--mar-claro)}
-
 /* FOTO */
 figure.foto{margin:26px 0}
 figure.foto img{width:100%;height:auto;background:var(--areia)}
+figure.foto svg.cena{display:block;width:100%;height:auto}
 figure.foto figcaption{font-size:.92rem;color:var(--suave);line-height:1.5;margin-top:9px;border-left:2px solid var(--sol);padding-left:12px}
 figure.foto .credito{display:block;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--suave);margin-top:5px}
+
+/* ICONES */
+.icone{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.titulo h2{display:inline-flex;align-items:center;gap:10px}
+.titulo h2 .icone{color:var(--sol);width:1.05em;height:1.05em}
+.escuro .titulo h2 .icone{color:var(--sol)}
+.texto h2{display:flex;align-items:center;gap:11px}
+.texto h2 .icone{color:var(--sol);width:.9em;height:.9em}
+.d .icone{display:block;color:var(--mar);width:20px;height:20px;margin-bottom:11px}
+.escuro .d .icone{color:var(--sol)}
+.selo .icone,.fonte .icone{width:13px;height:13px;color:var(--suave);vertical-align:-.15em;margin-right:4px}
+footer h5 .icone{width:12px;height:12px;color:var(--sol);vertical-align:-.1em;margin-right:5px}
+
+/* ONDA: transicao do bloco escuro para o claro */
+.onda{background:var(--breu);line-height:0}
+.onda svg{display:block;width:100%;height:34px}
+.onda path{fill:var(--espuma)}
+.escuro+.onda{background:var(--mar)}
+
+/* MOVIMENTO */
+.rv-on .rv{opacity:0;transform:translateY(16px)}
+.rv-on .rv.vis{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1)}
+article.card{transition:background .2s}
+article.card:hover{background:#fff}
+.d{transition:background .2s,border-color .2s}
+.d:hover{border-color:var(--mar)}
+.escuro .d:hover{border-color:var(--sol)}
+figure.foto img{transition:filter .3s}
+figure.foto:hover img{filter:saturate(1.08)}
 
 /* HOROSCOPO */
 .signos{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:26px}
@@ -184,4 +209,7 @@ footer a:hover{color:var(--sol)}
   .signos{grid-template-columns:repeat(3,1fr)}
   .leitura{padding:22px}
 }
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rv-on .rv{opacity:1!important;transform:none!important}
+}
