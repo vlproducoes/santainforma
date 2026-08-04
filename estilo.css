@@ -120,6 +120,25 @@ figure.foto svg.cena{display:block;width:100%;height:auto}
 figure.foto figcaption{font-size:.92rem;color:var(--suave);line-height:1.5;margin-top:9px;border-left:2px solid var(--sol);padding-left:12px}
 figure.foto .credito{display:block;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--suave);margin-top:5px}
 
+/* CENAS ANIMADAS
+   Regra de performance: anima so transform e opacity, que o compositor
+   resolve sem refazer layout nem pintura. Nada de animar left, width ou
+   background-position. will-change fica so nas camadas que de fato correm. */
+.anima{position:relative;overflow:hidden;aspect-ratio:16/7;background:linear-gradient(180deg,var(--breu) 0%,#16536A 100%)}
+.anima>.fundo{position:absolute;inset:0;width:100%;height:100%}
+.anima .corre{position:absolute;left:0;width:200%;will-change:transform;animation:corre var(--dur,20s) linear infinite}
+.anima .corre svg{display:block;width:100%;height:auto}
+@keyframes corre{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+.anima .pulsa{transform-origin:center;will-change:opacity;animation:pulsa 6s ease-in-out infinite}
+@keyframes pulsa{0%,100%{opacity:.92}50%{opacity:.62}}
+.anima .sobe{will-change:transform;animation:sobe 9s ease-in-out infinite}
+@keyframes sobe{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-2.5%,0)}}
+figure.foto .anima{margin:0}
+
+@media(prefers-reduced-motion:reduce){
+  .anima .corre,.anima .pulsa,.anima .sobe{animation:none!important;transform:none!important;opacity:1!important}
+}
+
 /* CAPAS DE CHAMADA */
 article.card .capa{display:block;width:calc(100% + 44px);height:auto;margin:-24px -22px 15px;aspect-ratio:16/9;object-fit:cover;background:var(--areia);transition:filter .25s}
 article.card:hover .capa{filter:saturate(1.1) brightness(1.03)}

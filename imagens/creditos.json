@@ -64,5 +64,38 @@
     "id_pexels": 33613299,
     "termo_de_busca": "itapema skyline predios orla",
     "baixada_em": "2026-08-04"
+  },
+  "bc-skyline-roda-gigante.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Leonardo Carminati",
+    "url_fotografo": "https://www.pexels.com/@leonardo-carminati-2162875238",
+    "url_original": "https://www.pexels.com/photo/twilight-view-of-balneario-camboriu-skyline-and-ferris-wheel-38670168/",
+    "id_pexels": 38670168,
+    "termo_de_busca": "balneario camboriu brasil",
+    "baixada_em": "2026-08-04"
+  },
+  "bombinhas-praia-sepultura.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Eduardo Ocampo",
+    "url_fotografo": "https://www.pexels.com/@eduardo-ocampo-81842816",
+    "url_original": "https://www.pexels.com/photo/praia-da-sepultura-bombinhas-santa-catarina-brazil-16303887/",
+    "id_pexels": 16303887,
+    "termo_de_busca": "bombinhas praia mata atlantica",
+    "baixada_em": "2026-08-04"
+  },
+  "floripa-ponte-hercilio-luz.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "André Gemmer",
+    "url_fotografo": "https://www.pexels.com/@andregemmer",
+    "url_original": "https://www.pexels.com/photo/aerial-view-of-a-suspension-bridge-in-the-city-of-floripa-brazil-6676186/",
+    "id_pexels": 6676186,
+    "termo_de_busca": "florianopolis ponte hercilio luz",
+    "baixada_em": "2026-08-04"
   }
 }
