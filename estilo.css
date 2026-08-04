@@ -1,0 +1,160 @@
+/* SANTA INFORMA | folha de estilo unica | v1.0 */
+
+:root{
+  --breu:#0A1F28;
+  --mar:#11485B;
+  --mar-claro:#8FB0B9;
+  --espuma:#F1F5F3;
+  --sol:#FFB627;
+  --coral:#E24E3B;
+  --areia:#CFC4B4;
+  --suave:#5A7078;
+  --display:'Archivo',system-ui,-apple-system,sans-serif;
+  --corpo:'Newsreader',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--espuma);color:var(--breu);font-family:var(--corpo);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+.estreito{max-width:760px}
+
+/* HEADER */
+header{background:var(--breu);color:var(--espuma);padding:22px 0 0}
+.topo{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.sun{animation:nascer 1.3s cubic-bezier(.2,.7,.3,1) both}
+.wordmark{opacity:0;animation:aparecer .7s ease .45s both}
+.tagline{opacity:0;animation:aparecer .7s ease .8s both}
+@keyframes nascer{from{transform:translateY(24px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes aparecer{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.meta{font-family:var(--display);font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--mar-claro);text-align:right;line-height:1.9}
+.meta b{color:var(--sol);font-weight:600}
+nav{margin-top:20px;border-top:1px solid rgba(255,255,255,.13)}
+nav ul{display:flex;gap:24px;list-style:none;overflow-x:auto;padding:13px 0}
+nav a{font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--espuma);text-decoration:none;white-space:nowrap;padding-bottom:2px;border-bottom:2px solid transparent}
+nav a:hover,nav a:focus-visible,nav a.ativo{color:var(--sol);border-color:var(--sol)}
+
+/* HERO */
+.hero{background:var(--breu);color:var(--espuma);padding:42px 0 60px}
+.chapeu{display:inline-block;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;background:var(--sol);color:var(--breu);padding:5px 11px;margin-bottom:18px}
+.chapeu.claro{background:transparent;color:var(--sol);border:1px solid var(--sol)}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5.2vw,3.7rem);line-height:1.04;letter-spacing:-.025em;max-width:19ch}
+.linhafina{font-size:1.13rem;color:#A9C4CC;max-width:58ch;margin-top:16px}
+.assinatura{font-family:var(--display);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mar-claro);margin-top:18px}
+
+/* MODO DE LEITURA */
+.modo{margin-top:36px;border-top:1px solid rgba(255,255,255,.16);padding-top:22px}
+.modo-rotulo{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--mar-claro);margin-bottom:14px}
+.modo-rotulo span{color:var(--sol)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-family:var(--display);font-size:13px;font-weight:600;background:transparent;color:var(--espuma);border:1px solid rgba(255,255,255,.28);border-radius:100px;padding:9px 17px;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
+.chip:hover{border-color:var(--sol)}
+.chip[aria-selected="true"]{background:var(--sol);color:var(--breu);border-color:var(--sol)}
+.painel{margin-top:22px;background:rgba(255,255,255,.05);border-left:3px solid var(--sol);padding:24px 26px;min-height:190px;transition:opacity .2s ease,transform .2s ease}
+.painel.trocando{opacity:0;transform:translateY(5px)}
+.autor{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sol);margin-bottom:11px}
+.painel p{color:#E3EDEF;font-size:1.06rem;margin-bottom:12px}
+.painel p:last-child{margin-bottom:0}
+
+/* PATROCINIO */
+.patro{border:1px dashed var(--areia);background:#fff;text-align:center;padding:24px 20px;margin:42px 0}
+.patro span{display:block;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--suave)}
+.patro b{display:block;font-family:var(--display);font-size:1.05rem;font-weight:800;color:var(--mar);margin-top:7px}
+.patro small{display:block;font-size:.85rem;color:var(--suave);margin-top:5px}
+
+/* SECOES */
+main{padding:52px 0}
+.titulo{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;border-bottom:2px solid var(--breu);padding-bottom:11px;flex-wrap:wrap}
+.titulo h2{font-family:var(--display);font-size:1.32rem;font-weight:800;letter-spacing:-.01em;text-transform:uppercase}
+.titulo em{font-family:var(--display);font-size:12px;font-style:normal;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--suave)}
+
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--areia);border:1px solid var(--areia)}
+article.card{background:var(--espuma);padding:24px 22px;display:flex;flex-direction:column;gap:9px}
+.ed{font-family:var(--display);font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--coral)}
+.ed.b{color:var(--mar)}
+article.card h3{font-family:var(--display);font-size:1.18rem;font-weight:800;line-height:1.18;letter-spacing:-.015em}
+article.card p{font-size:.96rem;color:var(--suave)}
+.selo{margin-top:auto;padding-top:12px;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--suave)}
+.selo i{font-style:normal;color:var(--mar)}
+.fonte{font-family:var(--display);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--suave)}
+.fonte a{color:var(--mar)}
+
+/* BLOCO ESCURO */
+.escuro{background:var(--mar);color:var(--espuma);padding:50px 0;margin:52px 0}
+.escuro .titulo{border-color:rgba(255,255,255,.28)}
+.escuro .titulo em{color:var(--mar-claro)}
+.semana{display:grid;grid-template-columns:repeat(2,1fr);gap:0 42px}
+.item{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+.num{font-family:var(--display);font-size:.88rem;font-weight:800;color:var(--sol);padding-top:3px}
+.item h4{font-family:var(--display);font-size:1rem;font-weight:600;line-height:1.32}
+.item small{color:var(--mar-claro);font-family:var(--display);font-size:11px;letter-spacing:.07em;text-transform:uppercase}
+
+/* DADOS */
+.dados{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.d{background:#fff;border:1px solid var(--areia);padding:22px}
+.d i{display:block;font-style:normal;font-family:var(--display);font-size:1.85rem;font-weight:800;color:var(--mar);letter-spacing:-.025em;line-height:1.1}
+.d b{display:block;font-family:var(--display);font-size:.92rem;font-weight:800;margin:7px 0 4px}
+.d small{color:var(--suave);font-size:.85rem;display:block}
+.d em{display:block;font-style:normal;font-family:var(--display);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--suave);margin-top:9px}
+.escuro .d{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18)}
+.escuro .d i{color:var(--sol)}
+.escuro .d b{color:var(--espuma)}
+.escuro .d small,.escuro .d em{color:var(--mar-claro)}
+
+/* TEXTO CORRIDO */
+.texto h2{font-family:var(--display);font-size:1.5rem;font-weight:800;letter-spacing:-.015em;margin:34px 0 12px}
+.texto h3{font-family:var(--display);font-size:1.12rem;font-weight:800;margin:26px 0 8px}
+.texto p{margin-bottom:16px}
+.texto ul{margin:0 0 18px 20px}
+.texto li{margin-bottom:7px}
+.texto strong{font-weight:600}
+.destaque{border-left:3px solid var(--sol);background:#fff;padding:20px 24px;margin:24px 0;font-size:1.05rem}
+
+/* PLACEHOLDER VISUAL */
+.ilustra{aspect-ratio:16/7;background:linear-gradient(160deg,var(--mar) 0%,var(--breu) 70%);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:22px 24px;margin:24px 0}
+.ilustra::after{content:"";position:absolute;right:-40px;top:-50px;width:230px;height:230px;border-radius:50%;background:var(--sol);opacity:.22}
+.ilustra span{position:relative;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--mar-claro)}
+
+/* HOROSCOPO */
+.signos{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:26px}
+.signo{background:#fff;border:1px solid var(--areia);padding:14px 8px;text-align:center;cursor:pointer;font-family:var(--display);font-size:.8rem;font-weight:600;transition:background .16s,color .16s,border-color .16s}
+.signo:hover{border-color:var(--mar)}
+.signo[aria-pressed="true"]{background:var(--breu);color:var(--sol);border-color:var(--breu)}
+.signo b{display:block;font-size:1.35rem;font-weight:400;margin-bottom:4px}
+.leitura{background:var(--breu);color:var(--espuma);padding:32px;display:grid;grid-template-columns:230px 1fr;gap:32px;align-items:start}
+.carta{background:linear-gradient(165deg,var(--mar),#061620);border:1px solid rgba(255,182,39,.4);padding:26px 20px;text-align:center;min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.carta .glifo{font-size:3.4rem;line-height:1}
+.carta .nome{font-family:var(--display);font-size:1.05rem;font-weight:800;color:var(--sol);letter-spacing:.02em}
+.carta .num{font-family:var(--display);font-size:11px;letter-spacing:.2em;color:var(--mar-claro)}
+.leitura h3{font-family:var(--display);font-size:1.5rem;font-weight:800;letter-spacing:-.015em;margin-bottom:4px}
+.leitura .sub{font-family:var(--display);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sol);margin-bottom:18px}
+.leitura p{color:#E3EDEF;margin-bottom:14px}
+.abas{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.vazio{color:var(--mar-claro);font-family:var(--display);font-size:.95rem}
+
+/* FOOTER */
+footer{background:var(--breu);color:var(--mar-claro);padding:46px 0 32px;font-size:.9rem}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:30px}
+footer h5{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--espuma);margin-bottom:13px}
+footer a{color:var(--mar-claro);text-decoration:none;display:block;padding:3px 0}
+footer a:hover{color:var(--sol)}
+.legal{border-top:1px solid rgba(255,255,255,.13);padding-top:20px;font-size:.84rem;line-height:1.75}
+.legal b{color:var(--espuma);font-weight:500}
+
+@media(max-width:980px){
+  .grade{grid-template-columns:1fr 1fr}
+  .dados{grid-template-columns:1fr 1fr}
+  .semana{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  .meta{text-align:left}
+  .signos{grid-template-columns:repeat(4,1fr)}
+  .leitura{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  body{font-size:17px}
+  .grade{grid-template-columns:1fr}
+  .dados{grid-template-columns:1fr}
+  .signos{grid-template-columns:repeat(3,1fr)}
+  .leitura{padding:22px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
