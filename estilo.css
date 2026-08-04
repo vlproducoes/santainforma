@@ -16,6 +16,9 @@
 html{scroll-behavior:smooth}
 body{background:var(--espuma);color:var(--breu);font-family:var(--corpo);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
+a{color:var(--mar);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(17,72,91,.32);transition:color .16s,text-decoration-color .16s}
+a:hover{color:var(--breu);text-decoration-color:var(--sol);text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--sol);outline-offset:3px}
 .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
 .estreito{max-width:760px}
 
@@ -131,6 +134,24 @@ article.card p{font-size:.96rem;color:var(--suave)}
 .leitura p{color:#E3EDEF;margin-bottom:14px}
 .abas{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
 .vazio{color:var(--mar-claro);font-family:var(--display);font-size:.95rem}
+
+/* LINKS */
+.topo>a{display:inline-block;line-height:0;color:inherit;text-decoration:none}
+.topo>a:focus-visible{outline-offset:6px}
+
+/* fundo escuro: o realce e o sol, como no menu */
+.hero a,.escuro a,.painel a,.leitura a,.carta a{color:var(--sol);text-decoration-color:rgba(255,182,39,.42)}
+.hero a:hover,.escuro a:hover,.painel a:hover,.leitura a:hover,.carta a:hover{color:var(--sol);text-decoration-color:var(--sol)}
+
+/* titulo clicavel: herda a cor do titulo, o link aparece no hover */
+:is(h1,h2,h3,h4) a,.escuro :is(h1,h2,h3,h4) a{color:inherit;text-decoration:none}
+:is(h1,h2,h3,h4) a:hover{color:var(--mar);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--sol)}
+.escuro :is(h1,h2,h3,h4) a:hover{color:var(--sol);text-decoration:none}
+
+/* chamadas e creditos: display font, sublinhado discreto */
+.selo a{font-weight:600;color:var(--mar)}
+.fonte a{text-decoration-color:rgba(17,72,91,.28)}
+.selo a:hover,.fonte a:hover{color:var(--breu);text-decoration-color:var(--sol)}
 
 /* FOOTER */
 footer{background:var(--breu);color:var(--mar-claro);padding:46px 0 32px;font-size:.9rem}
