@@ -15,8 +15,12 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="estilo.css">
 <script src="visual.js"></script>
+<script type="speculationrules">
+{"prerender":[{"where":{"href_matches":"/*"},"eagerness":"moderate"}]}
+</script>
 </head>
 <body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <svg class="sprite" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
 <defs>
 <symbol id="i-onda" viewBox="0 0 24 24"><path d="M2 9c2.5 0 2.5 2.2 5 2.2S9.5 9 12 9s2.5 2.2 5 2.2S19.5 9 22 9"/><path d="M2 15c2.5 0 2.5 2.2 5 2.2s2.5-2.2 5-2.2 2.5 2.2 5 2.2 2.5-2.2 5-2.2"/></symbol>
@@ -68,7 +72,7 @@
   </div>
 </header>
 
-<main class="wrap estreito texto">
+<main id="conteudo" class="wrap estreito texto">
 
   <h2><svg class="icone" aria-hidden="true"><use href="#i-documento"></use></svg><span>O resumo, em 30 segundos</span></h2>
   <p>Ler o Santa Informa é de graça e não exige cadastro. Você pode compartilhar nossos links à vontade. O que você não pode é copiar nosso texto inteiro e republicar como se fosse seu. Nossa opinião é nossa, nossa apuração é honesta, e quando erramos a gente corrige com registro visível.</p>

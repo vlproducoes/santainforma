@@ -14,6 +14,38 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+
+/* TRANSICAO ENTRE PAGINAS
+   Cabecalho e rodape ficam parados enquanto o miolo troca. Desligado para
+   quem pediu menos movimento. */
+@view-transition{navigation:auto}
+header{view-transition-name:cabecalho}
+footer{view-transition-name:rodape}
+@media(prefers-reduced-motion:reduce){
+  @view-transition{navigation:none}
+}
+
+/* QUEBRA DE LINHA
+   balance nos titulos evita palavra orfa na ultima linha. So em texto curto,
+   porque o navegador desiste acima de seis linhas e o custo sobe.
+   pretty no corpo cuida das ultimas linhas do paragrafo. */
+h1,h2,h3,h4,.chapeu,.titulo em{text-wrap:balance}
+p,li,figcaption,.linhafina{text-wrap:pretty}
+
+/* PULAR PARA O CONTEUDO: primeiro item do teclado, invisivel ao mouse */
+.pular{position:absolute;left:-9999px;top:0;z-index:100;background:var(--sol);color:var(--breu);font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.04em;padding:11px 20px;text-decoration:none}
+.pular:focus{left:0}
+
+/* BARRA DE LEITURA: rolagem move a barra sem uma linha de JS.
+   Onde a animacao por rolagem nao existe, ela simplesmente nao aparece. */
+.progresso{position:fixed;inset:0 0 auto 0;height:3px;background:var(--sol);transform:scaleX(0);transform-origin:0 50%;z-index:60}
+@keyframes progresso{to{transform:scaleX(1)}}
+/* Sem o @supports, a animacao sem duracao cairia direto no estado final e a
+   barra apareceria cheia em navegador que nao tem timeline de rolagem. */
+@supports (animation-timeline:scroll()){
+  .progresso{animation:progresso linear both;animation-timeline:scroll(root block)}
+}
+@media(prefers-reduced-motion:reduce){.progresso{display:none}}
 body{background:var(--espuma);color:var(--breu);font-family:var(--corpo);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:var(--mar);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(17,72,91,.32);transition:color .16s,text-decoration-color .16s}

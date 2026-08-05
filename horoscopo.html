@@ -16,8 +16,12 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="estilo.css">
 <script src="visual.js"></script>
+<script type="speculationrules">
+{"prerender":[{"where":{"href_matches":"/*"},"eagerness":"moderate"}]}
+</script>
 </head>
 <body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <svg class="sprite" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
 <defs>
 <symbol id="i-onda" viewBox="0 0 24 24"><path d="M2 9c2.5 0 2.5 2.2 5 2.2S9.5 9 12 9s2.5 2.2 5 2.2S19.5 9 22 9"/><path d="M2 15c2.5 0 2.5 2.2 5 2.2s2.5-2.2 5-2.2 2.5 2.2 5 2.2 2.5-2.2 5-2.2"/></symbol>
@@ -80,7 +84,7 @@
 </section>
 <div class="onda" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0 40V18c120 0 180 14 300 14s180-22 300-22 180 18 300 18 180-12 300-12v24z"/></svg></div>
 
-<main class="wrap" style="padding-top:44px">
+<main id="conteudo" class="wrap" style="padding-top:44px">
 
   <div class="titulo"><h2><svg class="icone" aria-hidden="true"><use href="#i-estrela"></use></svg><span>Escolha seu signo</span></h2><em>Clique para tirar a carta</em></div>
   <div class="signos" id="signos"></div>
