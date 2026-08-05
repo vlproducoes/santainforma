@@ -53,7 +53,7 @@
         <text class="tagline" x="57" y="44" font-family="Archivo,sans-serif" font-size="9.5" font-weight="600" letter-spacing="2.5" fill="#8FB0B9">LITORAL DE SANTA CATARINA</text>
       </svg>
       </a>
-      <div class="meta">Carta do dia<br><b id="dataHoje">5 de agosto de 2026</b></div>
+      <div class="meta">Carta do dia<br><b><time data-agora="data" datetime="2026-08-05">5 de agosto de 2026</time></b></div>
     </div>
     <nav>
       <ul>
@@ -186,8 +186,7 @@ signos.forEach((s,i)=>{
 });
 
 function diaDoAno(){const h=new Date();const i=new Date(h.getFullYear(),0,0);return Math.floor((h-i)/86400000)}
-const hoje=new Date();
-document.getElementById('dataHoje').textContent=hoje.toLocaleDateString('pt-BR',{day:'numeric',month:'long',year:'numeric'});
+/* a data do topo agora e escrita pelo relogio central, em visual.js */
 
 let atual=null;
 function abrir(i){
