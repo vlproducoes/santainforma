@@ -58,8 +58,7 @@
     <div class="topo">
       <a href="index.html" aria-label="Santa Informa, página inicial">
       <svg width="298" height="60" viewBox="0 0 298 60" role="img" aria-label="Santa Informa">
-        <g class="sun"><circle cx="22" cy="23" r="13" fill="#FFB627"/><rect x="0" y="23" width="45" height="14" fill="#0A1F28"/><rect x="0" y="23" width="45" height="1.5" fill="#FFB627"/></g>
-        <g class="wordmark"><text x="57" y="26" font-family="Archivo,sans-serif" font-size="25" font-weight="800" letter-spacing="-0.6" fill="#F1F5F3">SANTA</text><text x="152" y="26" font-family="Archivo,sans-serif" font-size="25" font-weight="800" letter-spacing="-0.6" fill="#FFB627">INFORMA</text></g>
+        <g class="sun"><g stroke="#FFB627" stroke-width="1.7" stroke-linecap="round"><line x1="34.1" y1="19.8" x2="37.9" y2="18.7"/><line x1="30.0" y1="13.4" x2="32.6" y2="10.4"/><line x1="22.0" y1="10.5" x2="22.0" y2="6.5"/><line x1="14.0" y1="13.4" x2="11.4" y2="10.4"/><line x1="9.9" y1="19.8" x2="6.1" y2="18.7"/></g><circle cx="22" cy="23" r="11" fill="#FFB627"/><rect x="0" y="23" width="45" height="16" fill="#0A1F28"/><rect x="0" y="23" width="45" height="1.6" fill="#FFB627"/><g fill="#8FB0B9"><rect x="2" y="27.4" width="41" height="1.4" opacity=".85"/><rect x="6" y="31.2" width="33" height="1.4" opacity=".6"/><rect x="10" y="35" width="25" height="1.4" opacity=".38"/></g></g><g class="wordmark"><text x="57" y="26" font-family="Archivo,sans-serif" font-size="25" font-weight="800" letter-spacing="-0.6" fill="#F1F5F3">SANTA</text><text x="152" y="26" font-family="Archivo,sans-serif" font-size="25" font-weight="800" letter-spacing="-0.6" fill="#FFB627">INFORMA</text></g>
         <text class="tagline" x="57" y="44" font-family="Archivo,sans-serif" font-size="9.5" font-weight="600" letter-spacing="2.5" fill="#8FB0B9">LITORAL DE SANTA CATARINA</text>
       </svg>
       </a>
@@ -87,11 +86,8 @@
     <p class="linhafina">Chuva com raio, rajada e granizo em todas as regiões do estado. O risco sobe na quinta e a frente fria passa na madrugada de sexta, com vendaval e mar agitado.</p>
 
     <div class="modo">
-      <p class="modo-rotulo">Modo de Leitura <span>&middot; formato original Santa Informa</span></p>
-      <div class="chips" role="tablist" aria-label="Escolha como quer ler esta matéria">
-        <button class="chip" role="tab" aria-selected="true" data-modo="resumo">30 segundos</button><button class="chip" role="tab" aria-selected="false" data-modo="completa">Matéria completa</button><button class="chip" role="tab" aria-selected="false" data-modo="clara">Clara, a otimista</button><button class="chip" role="tab" aria-selected="false" data-modo="prudencio">Seu Prudêncio, o criterioso</button><button class="chip" role="tab" aria-selected="false" data-modo="caco">Caco, o sarcástico</button>
-      </div>
-      <div class="painel" id="painel" role="tabpanel"></div>
+      <p class="modo-rotulo">Em 30 segundos <span>&middot; Modo de Leitura, formato original Santa Informa</span></p>
+      <div class="painel"><p>Chuva e <strong>temporal isolado em todas as regiões</strong> de Santa Catarina entre 5 e 9 de agosto, com raio, rajada e granizo.</p><p><strong>Quinta (6):</strong> risco sobe para moderado a pontualmente alto. <strong>Sexta (7):</strong> frente fria passa de madrugada, com risco de vendaval e mar agitado.</p><p>Fim de semana segue encoberto, com chuva pontualmente intensa no Litoral.</p></div>
     </div>
   </div>
 </section>
@@ -131,6 +127,23 @@
     <li>Ameaças citadas: <strong>raio, rajada de vento, granizo, alagamento, queda de árvore e dano elétrico</strong></li>
   </ul>
 
+  <div class="titulo"><h2><svg class="icone" aria-hidden="true"><use href="#i-livro"></use></svg><span>Outros jeitos de ler</span></h2><em>Modo de Leitura &middot; formato original</em></div>
+  <p class="leituras-nota">O resumo de 30 segundos está no topo e a versão completa é o texto acima. Aqui ficam as três leituras da casa sobre o mesmo assunto.</p>
+  <div class="leituras">
+    <section class="leitura-v">
+      <p class="autor">Clara, a otimista</p>
+      <p>A boa notícia é que o aviso veio com quatro dias de antecedência e com o risco separado por dia. Dá tempo de amarrar telhado, recolher andaime e remarcar o que precisar.</p><p>E chuva em agosto tem lado bom: enche reservatório antes da temporada, quando a cidade triplica de gente e a água vira assunto sério.</p>
+    </section>
+    <section class="leitura-v">
+      <p class="autor">Seu Prudêncio, o criterioso</p>
+      <p>Duas ressalvas de leitura. A primeira é que boletim de cinco dias perde precisão a cada dia que avança. O que vale para sábado hoje pode mudar até quinta, então convém reler a atualização diária.</p><p>A segunda é que este documento não separa Litoral Norte e Vale do Itajaí. Quem precisa decidir sobre obra ou evento em Itapema está lendo um aviso estadual, não local, e essa diferença importa.</p><p>Dito isso, o boletim cumpre o papel. Risco classificado por dia e ameaça nomeada é exatamente o que permite alguém agir antes, e não depois.</p>
+    </section>
+    <section class="leitura-v">
+      <p class="autor">Caco, o sarcástico</p>
+      <p>Frente fria chegando na madrugada de sexta. Ou seja, vai passar exatamente quando ninguém estiver vendo, derrubar o galho do vizinho e sumir antes do café.</p><p>Vendaval na sexta e Viva Praia no sábado. O litoral catarinense adora um teste de fé.</p><p>Brincadeira à parte: aviso com quatro dias de antecedência é luxo. Meu avô descobria temporal pelo joelho.</p>
+    </section>
+  </div>
+
   <p class="fonte" style="margin-top:30px"><strong>Fontes:</strong> <a href="https://www.defesacivil.sc.gov.br/2026/08/05/previsao-para-os-proximos-5-dias-05-08-2/">Secretaria de Estado da Proteção e Defesa Civil de Santa Catarina</a>, boletim de 5 de agosto de 2026.</p>
 
   <div class="patro">
@@ -168,12 +181,5 @@
   </div>
 </footer>
 
-<script>
-const textos={"resumo": {"a": "Resumo de 30 segundos", "h": "<p>Chuva e <strong>temporal isolado em todas as regiões</strong> de Santa Catarina entre 5 e 9 de agosto, com raio, rajada e granizo.</p><p><strong>Quinta (6):</strong> risco sobe para moderado a pontualmente alto. <strong>Sexta (7):</strong> frente fria passa de madrugada, com risco de vendaval e mar agitado.</p><p>Fim de semana segue encoberto, com chuva pontualmente intensa no Litoral.</p>"}, "completa": {"a": "Matéria completa", "h": "<p>O boletim da Defesa Civil cobre cinco dias e trata as regiões de forma genérica. Abaixo, o dia a dia com o risco de cada data e o que isso muda para quem tem obra, evento ou barco no fim de semana.</p><p>Role a página para o detalhe.</p>"}, "clara": {"a": "Clara, a otimista", "h": "<p>A boa notícia é que o aviso veio com quatro dias de antecedência e com o risco separado por dia. Dá tempo de amarrar telhado, recolher andaime e remarcar o que precisar.</p><p>E chuva em agosto tem lado bom: enche reservatório antes da temporada, quando a cidade triplica de gente e a água vira assunto sério.</p>"}, "prudencio": {"a": "Seu Prudêncio, o criterioso", "h": "<p>Duas ressalvas de leitura. A primeira é que boletim de cinco dias perde precisão a cada dia que avança. O que vale para sábado hoje pode mudar até quinta, então convém reler a atualização diária.</p><p>A segunda é que este documento não separa Litoral Norte e Vale do Itajaí. Quem precisa decidir sobre obra ou evento em Itapema está lendo um aviso estadual, não local, e essa diferença importa.</p><p>Dito isso, o boletim cumpre o papel. Risco classificado por dia e ameaça nomeada é exatamente o que permite alguém agir antes, e não depois.</p>"}, "caco": {"a": "Caco, o sarcástico", "h": "<p>Frente fria chegando na madrugada de sexta. Ou seja, vai passar exatamente quando ninguém estiver vendo, derrubar o galho do vizinho e sumir antes do café.</p><p>Vendaval na sexta e Viva Praia no sábado. O litoral catarinense adora um teste de fé.</p><p>Brincadeira à parte: aviso com quatro dias de antecedência é luxo. Meu avô descobria temporal pelo joelho.</p>"}};
-const painel=document.getElementById('painel');
-const chips=[...document.querySelectorAll('.chip')];
-function render(m){const t=textos[m];painel.classList.add('trocando');setTimeout(()=>{painel.innerHTML='<p class="autor">'+t.a+'</p>'+t.h;painel.classList.remove('trocando')},170)}
-chips.forEach(c=>c.addEventListener('click',()=>{chips.forEach(x=>x.setAttribute('aria-selected','false'));c.setAttribute('aria-selected','true');render(c.dataset.modo)}));
-</script>
 </body>
 </html>

@@ -116,3 +116,49 @@ document.addEventListener('DOMContentLoaded', function () {
   /* rede 2: em qualquer cenario, nada fica escondido depois de 2s */
   setTimeout(revelarTudo, 2000);
 });
+
+/* CARROSSEL
+   Progressivo: sem este script a faixa ja rola no dedo e no teclado.
+   Ele so acrescenta setas e marcacao de posicao. */
+document.addEventListener('DOMContentLoaded', function () {
+  var caixa = document.querySelector('.carrossel');
+  if (!caixa) return;
+  var trilho = caixa.querySelector('.carrossel-trilho');
+  var slides = [].slice.call(trilho.children);
+  if (slides.length < 2) return;
+  caixa.classList.add('js-carrossel');
+
+  var ant = caixa.querySelector('.carrossel-btn.ant');
+  var pro = caixa.querySelector('.carrossel-btn.pro');
+  var pontos = caixa.querySelector('.carrossel-pontos');
+
+  slides.forEach(function (s, i) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', 'Ir para o destaque ' + (i + 1));
+    b.addEventListener('click', function () {
+      trilho.scrollTo({ left: s.offsetLeft - trilho.offsetLeft, behavior: 'smooth' });
+    });
+    pontos.appendChild(b);
+  });
+  var bolinhas = [].slice.call(pontos.children);
+
+  function passo() { return slides[0].getBoundingClientRect().width + 22; }
+  ant.addEventListener('click', function () { trilho.scrollBy({ left: -passo(), behavior: 'smooth' }); });
+  pro.addEventListener('click', function () { trilho.scrollBy({ left: passo(), behavior: 'smooth' }); });
+
+  var pendente = false;
+  function situacao() {
+    var i = Math.round(trilho.scrollLeft / passo());
+    for (var k = 0; k < bolinhas.length; k++)
+      bolinhas[k].setAttribute('aria-current', k === i ? 'true' : 'false');
+    ant.hidden = trilho.scrollLeft < 8;
+    pro.hidden = trilho.scrollLeft + trilho.clientWidth >= trilho.scrollWidth - 8;
+  }
+  trilho.addEventListener('scroll', function () {
+    if (pendente) return;
+    pendente = true;
+    requestAnimationFrame(function () { pendente = false; situacao(); });
+  }, { passive: true });
+  situacao();
+});

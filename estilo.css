@@ -91,6 +91,14 @@ nav a:hover,nav a:focus-visible,nav a.ativo{color:var(--sol);border-color:var(--
 .painel p{color:#E3EDEF;font-size:1.06rem;margin-bottom:12px}
 .painel p:last-child{margin-bottom:0}
 
+/* OUTROS JEITOS DE LER, no fim da materia */
+.leituras{display:grid;gap:16px;margin-bottom:8px}
+.leitura-v{background:#fff;border-left:3px solid var(--sol);padding:20px 24px}
+.leitura-v .autor{color:var(--mar);margin-bottom:10px}
+.leitura-v p{margin-bottom:12px}
+.leitura-v p:last-child{margin-bottom:0}
+.leituras-nota{font-size:.95rem;color:var(--suave);margin-bottom:16px}
+
 /* PATROCINIO */
 .patro{border:1px dashed var(--areia);background:#fff;text-align:center;padding:24px 20px;margin:42px 0}
 .patro span{display:block;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--suave)}
@@ -166,6 +174,35 @@ figure.foto .credito{display:block;font-family:var(--display);font-size:10px;fon
 article.card .quando{margin-top:auto;padding-top:10px}
 article.card .selo{margin-top:6px;padding-top:0}
 
+/* CARROSSEL DE DESTAQUES
+   Sem JS a faixa continua rolando com o dedo e com a barra do teclado.
+   O JS so acrescenta os botoes e a marcacao de posicao. */
+.carrossel{position:relative;margin-bottom:46px}
+.carrossel-trilho{display:grid;grid-auto-flow:column;grid-auto-columns:calc(50% - 11px);gap:22px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.carrossel-trilho::-webkit-scrollbar{display:none}
+.slide{position:relative;scroll-snap-align:start;background:var(--breu);min-height:250px;display:flex;align-items:flex-end;overflow:hidden}
+.slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.slide .dentro{position:relative;padding:24px;background:linear-gradient(transparent,rgba(10,31,40,.92) 55%);width:100%}
+.slide .ed{color:var(--sol)}
+.slide h3{font-family:var(--display);font-size:1.24rem;font-weight:800;line-height:1.16;letter-spacing:-.015em;color:var(--espuma);margin:7px 0 8px}
+.slide h3 a{color:inherit;text-decoration:none}
+.slide h3 a::after{content:"";position:absolute;inset:0;z-index:1}
+.slide .quando{color:var(--mar-claro)}
+.slide:has(h3 a:focus-visible){outline:2px solid var(--sol);outline-offset:-2px}
+.carrossel-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:42px;height:42px;border:0;border-radius:50%;background:rgba(10,31,40,.82);color:var(--espuma);cursor:pointer;display:none;align-items:center;justify-content:center;transition:background .18s}
+.carrossel-btn:hover{background:var(--sol);color:var(--breu)}
+.carrossel-btn[hidden]{display:none!important}
+.carrossel-btn.ant{left:-8px}
+.carrossel-btn.pro{right:-8px}
+.js-carrossel .carrossel-btn{display:flex}
+.carrossel-pontos{display:flex;gap:7px;justify-content:center;margin-top:16px}
+.carrossel-pontos button{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:var(--areia);cursor:pointer}
+.carrossel-pontos button[aria-current="true"]{background:var(--mar);width:22px;border-radius:4px}
+@media(max-width:760px){
+  .carrossel-trilho{grid-auto-columns:calc(100% - 8px)}
+  .carrossel-btn{display:none!important}
+}
+
 /* ULTIMAS NOTICIAS */
 .ultimas{list-style:none;border-top:2px solid var(--breu)}
 .ultimas li{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--areia)}
@@ -174,6 +211,15 @@ article.card .selo{margin-top:6px;padding-top:0}
 .ultimas h4 a{color:inherit;text-decoration:none}
 .ultimas h4 a:hover{color:var(--mar);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--sol)}
 .ultimas small{font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--coral)}
+
+/* PAGINACAO */
+.paginacao{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin:34px 0 6px;font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.paginacao>a{color:var(--mar);text-decoration:none}
+.paginacao>a:hover{color:var(--breu);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--sol)}
+.paginacao .numeros{display:flex;gap:8px}
+.paginacao .numeros a,.paginacao .numeros span{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;border:1px solid var(--areia);background:#fff;color:var(--mar);text-decoration:none}
+.paginacao .numeros a:hover{border-color:var(--mar)}
+.paginacao .numeros span[aria-current]{background:var(--mar);color:var(--espuma);border-color:var(--mar)}
 
 /* TRILHA E ASSINATURA DO POST */
 .trilha{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--mar-claro);margin-bottom:16px}
