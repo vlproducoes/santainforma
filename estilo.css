@@ -71,8 +71,10 @@ main{padding:52px 0}
 .titulo h2{font-family:var(--display);font-size:1.32rem;font-weight:800;letter-spacing:-.01em;text-transform:uppercase}
 .titulo em{font-family:var(--display);font-size:12px;font-style:normal;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--suave)}
 
-.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--areia);border:1px solid var(--areia)}
-article.card{background:var(--espuma);padding:24px 22px;display:flex;flex-direction:column;gap:9px}
+/* A borda vem dos proprios cards, e nao de background com gap: assim a
+   ultima fila incompleta nao deixa celula vazia pintada de areia. */
+.grade{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--areia);border-left:1px solid var(--areia)}
+article.card{background:var(--espuma);border-right:1px solid var(--areia);border-bottom:1px solid var(--areia);padding:24px 22px;display:flex;flex-direction:column;gap:9px}
 .ed{font-family:var(--display);font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--coral)}
 .ed.b{color:var(--mar)}
 article.card h3{font-family:var(--display);font-size:1.18rem;font-weight:800;line-height:1.18;letter-spacing:-.015em}
@@ -119,6 +121,42 @@ figure.foto img{width:100%;height:auto;background:var(--areia)}
 figure.foto svg.cena{display:block;width:100%;height:auto}
 figure.foto figcaption{font-size:.92rem;color:var(--suave);line-height:1.5;margin-top:9px;border-left:2px solid var(--sol);padding-left:12px}
 figure.foto .credito{display:block;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--suave);margin-top:5px}
+
+/* BARRA DE EDITORIAS */
+.editorias{border-top:1px solid rgba(255,255,255,.13)}
+.editorias ul{display:flex;gap:22px;list-style:none;overflow-x:auto;padding:11px 0}
+.editorias a{display:inline-flex;align-items:center;gap:7px;font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--mar-claro);text-decoration:none;white-space:nowrap}
+.editorias a:hover,.editorias a:focus-visible,.editorias a.ativo{color:var(--sol)}
+.editorias .icone{width:14px;height:14px}
+
+/* DATA NAS CHAMADAS */
+.quando{display:block;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--suave)}
+article.card .quando{margin-top:auto;padding-top:10px}
+article.card .selo{margin-top:6px;padding-top:0}
+
+/* ULTIMAS NOTICIAS */
+.ultimas{list-style:none;border-top:2px solid var(--breu)}
+.ultimas li{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--areia)}
+.ultimas .quando{flex:none;width:82px;padding-top:3px;color:var(--mar)}
+.ultimas h4{font-family:var(--display);font-size:1rem;font-weight:600;line-height:1.34;margin-bottom:3px}
+.ultimas h4 a{color:inherit;text-decoration:none}
+.ultimas h4 a:hover{color:var(--mar);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--sol)}
+.ultimas small{font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--coral)}
+
+/* TRILHA E ASSINATURA DO POST */
+.trilha{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--mar-claro);margin-bottom:16px}
+.trilha a{color:var(--mar-claro);text-decoration:none}
+.trilha a:hover{color:var(--sol);text-decoration:underline;text-underline-offset:3px}
+.trilha i{font-style:normal;color:var(--sol);margin:0 8px}
+.publicado{display:flex;flex-wrap:wrap;gap:5px 20px;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--suave);border-top:1px solid var(--areia);border-bottom:1px solid var(--areia);padding:12px 0;margin:0 0 26px}
+.publicado b{color:var(--mar);font-weight:600}
+
+/* CABECALHO DE EDITORIA */
+.editoria-topo{background:var(--mar);color:var(--espuma);padding:38px 0 44px}
+.editoria-topo h1{font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.06;letter-spacing:-.02em;display:flex;align-items:center;gap:14px}
+.editoria-topo h1 .icone{color:var(--sol);width:.85em;height:.85em}
+.editoria-topo p{color:#CFE0E5;max-width:56ch;margin-top:12px}
+.editoria-topo .conta{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mar-claro);margin-top:16px}
 
 /* CENAS ANIMADAS
    Regra de performance: anima so transform e opacity, que o compositor
