@@ -108,5 +108,60 @@
     "id_pexels": 20422519,
     "termo_de_busca": "storm clouds coast rain dark sky",
     "baixada_em": "2026-08-05"
+  },
+  "porto-belo-casas-barcos.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Marian Sol Miranda",
+    "url_fotografo": "https://www.pexels.com/@marian-sol-miranda-32246321",
+    "url_original": "https://www.pexels.com/photo/boats-on-the-ocean-6999939/",
+    "id_pexels": 6999939,
+    "termo_de_busca": "porto belo ilha barco travessia",
+    "baixada_em": "2026-08-05"
+  },
+  "mergulho-costao-peixes.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Rodrigo  Pederzini",
+    "url_fotografo": "https://www.pexels.com/@rodrigo-pederzini-102497840",
+    "url_original": "https://www.pexels.com/photo/diver-swimming-underwater-9435853/",
+    "id_pexels": 9435853,
+    "termo_de_busca": "mergulho subaquatico peixes recife brasil",
+    "baixada_em": "2026-08-05"
+  },
+  "itapema-orla-anoitecer.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "off leko",
+    "url_fotografo": "https://www.pexels.com/@offleko",
+    "url_original": "https://www.pexels.com/photo/stunning-sunset-over-itapema-skyline-and-coastline-33613301/",
+    "id_pexels": 33613301,
+    "termo_de_busca": "itapema santa catarina calcadao orla",
+    "baixada_em": "2026-08-05"
+  },
+  "serra-catarinense.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Aliguieri",
+    "url_fotografo": "https://www.pexels.com/@aliguieri-166055944",
+    "url_original": "https://www.pexels.com/photo/breathtaking-view-of-serra-do-rio-do-rastro-brazil-38027408/",
+    "id_pexels": 38027408,
+    "termo_de_busca": "santa catarina serra paisagem verde montanhas",
+    "baixada_em": "2026-08-05"
+  },
+  "reais-credito.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Daniel Dan",
+    "url_fotografo": "https://www.pexels.com/@daniel-dan-47825192",
+    "url_original": "https://www.pexels.com/photo/paper-money-in-brazilian-reals-currency-7623482/",
+    "id_pexels": 7623482,
+    "termo_de_busca": "dinheiro real brasileiro moeda economia",
+    "baixada_em": "2026-08-05"
   }
 }
