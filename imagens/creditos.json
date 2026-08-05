@@ -97,5 +97,16 @@
     "id_pexels": 6676186,
     "termo_de_busca": "florianopolis ponte hercilio luz",
     "baixada_em": "2026-08-04"
+  },
+  "temporal-litoral.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Francesco Ungaro",
+    "url_fotografo": "https://www.pexels.com/@francesco-ungaro",
+    "url_original": "https://www.pexels.com/photo/storm-cloud-over-sea-coast-20422519/",
+    "id_pexels": 20422519,
+    "termo_de_busca": "storm clouds coast rain dark sky",
+    "baixada_em": "2026-08-05"
   }
 }

@@ -3,21 +3,21 @@
 
   <url>
     <loc>https://santainforma.com.br/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://santainforma.com.br/regiao.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://santainforma.com.br/horoscopo.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
@@ -107,6 +107,30 @@
   <url>
     <loc>https://santainforma.com.br/materia-10-arvoredo-mergulho-regras.html</loc>
     <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-11-prefeitura-itapema-semana.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-12-camara-itapema-pauta.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-13-defesa-civil-temporais.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-14-selic-copom-litoral.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
