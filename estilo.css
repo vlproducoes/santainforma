@@ -210,8 +210,20 @@ figure.foto .anima{margin:0}
 }
 
 /* CAPAS DE CHAMADA */
-article.card .capa{display:block;width:calc(100% + 44px);height:auto;margin:-24px -22px 15px;aspect-ratio:16/9;object-fit:cover;background:var(--areia);transition:filter .25s}
+/* max-width:none e preciso: a regra global de img limita a 100% e cortava
+   os 44px de sangria, deixando a foto encostada so na esquerda. */
+article.card .capa{display:block;width:calc(100% + 44px);max-width:none;height:auto;margin:-24px -22px 15px;aspect-ratio:16/9;object-fit:cover;background:var(--areia);transition:filter .25s}
 article.card:hover .capa{filter:saturate(1.1) brightness(1.03)}
+
+/* CARD INTEIRO CLICAVEL
+   O link continua sendo um so, no titulo, para leitor de tela e teclado.
+   O pseudo-elemento estica a area de clique por cima do card inteiro. */
+article.card,.item,.ultimas li{position:relative}
+article.card h3 a::after,.item h4 a::after,.ultimas h4 a::after{content:"";position:absolute;inset:0;z-index:1}
+article.card:has(h3 a:focus-visible),.item:has(h4 a:focus-visible),.ultimas li:has(h4 a:focus-visible){outline:2px solid var(--sol);outline-offset:-2px}
+article.card h3 a:focus-visible,.item h4 a:focus-visible,.ultimas h4 a:focus-visible{outline:none}
+.item:hover h4,.ultimas li:hover h4{color:var(--sol)}
+.ultimas li:hover h4{color:var(--mar)}
 .item .mini{width:60px;height:60px;flex:none;object-fit:cover;align-self:flex-start;margin-top:3px;background:rgba(255,255,255,.08)}
 
 /* ICONES */
