@@ -207,5 +207,71 @@
     "id_pexels": 9858904,
     "termo_de_busca": "documento carimbo assinatura lei papel",
     "baixada_em": "2026-08-06"
+  },
+  "ginasio-quadra-jogos.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Bence Szemerey",
+    "url_fotografo": "https://www.pexels.com/@bence-szemerey-337043",
+    "url_original": "https://www.pexels.com/photo/interior-design-of-an-indoors-handball-court-7513413/",
+    "id_pexels": 7513413,
+    "termo_de_busca": "empty indoor sports court gymnasium wooden floor",
+    "baixada_em": "2026-08-06"
+  },
+  "feira-artesanato-orla.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Elias Jara",
+    "url_fotografo": "https://www.pexels.com/@eliasjaara",
+    "url_original": "https://www.pexels.com/photo/people-standing-by-the-jewelry-exhibition-at-the-market-16063764/",
+    "id_pexels": 16063764,
+    "termo_de_busca": "outdoor craft fair market stalls beach promenade",
+    "baixada_em": "2026-08-06"
+  },
+  "praia-cheia-temporada.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Juan Pablo Daniel",
+    "url_fotografo": "https://www.pexels.com/@who0ne",
+    "url_original": "https://www.pexels.com/photo/crowded-beach-scene-with-umbrellas-and-tents-35652398/",
+    "id_pexels": 35652398,
+    "termo_de_busca": "crowded brazilian beach summer sunny people umbrellas",
+    "baixada_em": "2026-08-06"
+  },
+  "oficinas-culturais-pinceis.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Schena Maria  Karlec",
+    "url_fotografo": "https://www.pexels.com/@schena-maria-karlec-885328",
+    "url_original": "https://www.pexels.com/photo/creative-art-workshop-with-paint-and-brushes-29922792/",
+    "id_pexels": 29922792,
+    "termo_de_busca": "children art workshop painting music class community",
+    "baixada_em": "2026-08-06"
+  },
+  "itapema-skyline-sunset-costa.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "off leko",
+    "url_fotografo": "https://www.pexels.com/@offleko",
+    "url_original": "https://www.pexels.com/photo/stunning-sunset-over-itapema-skyline-and-coastline-33613301/",
+    "id_pexels": 33613301,
+    "termo_de_busca": "itapema santa catarina",
+    "baixada_em": "2026-08-06"
+  },
+  "costa-esmeralda-bombinhas-baia.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Aleson Padilha",
+    "url_fotografo": "https://www.pexels.com/@aleson-padilha-945919991",
+    "url_original": "https://www.pexels.com/photo/scenic-aerial-view-of-bombinhas-bay-brazil-34054817/",
+    "id_pexels": 34054817,
+    "termo_de_busca": "porto belo bombinhas praia enseada barcos santa catarina",
+    "baixada_em": "2026-08-06"
   }
 }

@@ -286,6 +286,16 @@ article.card h3 a:focus-visible,.item h3 a:focus-visible{outline:none}
 .item:hover h3{color:var(--sol)}
 .item .mini{width:60px;height:60px;flex:none;object-fit:cover;align-self:flex-start;margin-top:3px;background:rgba(255,255,255,.08)}
 
+/* SUMARIO DE PAGINA LONGA
+   Numero visivel, porque a ordem das camadas importa: cada uma parte da anterior. */
+.sumario{border:1px solid var(--areia);border-left:3px solid var(--sol);padding:20px 24px 18px;margin:34px 0}
+.sumario .modo-rotulo{color:var(--suave);margin-bottom:12px}
+.sumario ol{margin:0;padding-left:20px}
+.sumario li{margin:0;font-family:var(--display);font-size:.95rem;line-height:1.5}
+.sumario li::marker{color:var(--suave);font-size:.82em}
+.sumario a{display:inline-block;padding:5px 0;color:var(--mar);text-decoration:none}
+.sumario a:hover{color:var(--breu);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--sol)}
+
 /* ICONES */
 .icone{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .titulo h2{display:inline-flex;align-items:center;gap:10px}
