@@ -58,7 +58,7 @@
       </a>
       <div class="meta">Carta do dia<br><b><time data-agora="data" datetime="2026-08-05">5 de agosto de 2026</time></b></div>
     </div>
-    <nav>
+    <nav aria-label="Principal">
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="regiao.html">Raio-X da Região</a></li>
@@ -73,6 +73,8 @@
   </div>
 </header>
 
+<main id="conteudo" class="com-capa">
+
 <section class="hero">
   <div class="wrap">
     <span class="chapeu">Horóscopo &amp; Tarô do Litoral</span>
@@ -83,7 +85,7 @@
 </section>
 <div class="onda" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0 40V18c120 0 180 14 300 14s180-22 300-22 180 18 300 18 180-12 300-12v24z"/></svg></div>
 
-<main id="conteudo" class="wrap" style="padding-top:44px">
+<div class="wrap" style="padding-top:44px">
 
   <div class="titulo"><h2><svg class="icone" aria-hidden="true"><use href="#i-estrela"></use></svg><span>Escolha seu signo</span></h2><em>Clique para tirar a carta</em></div>
   <div class="signos" id="signos"></div>
@@ -124,21 +126,22 @@
     O Horóscopo &amp; Tarô do Litoral é conteúdo de entretenimento produzido pela redação do Santa Informa. Não substitui orientação profissional de saúde, finanças ou direito, e não deve ser usado como base para decisões importantes.
   </p>
 
+</div>
 </main>
 
 <footer>
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <h5>Santa Informa</h5>
+        <h2>Santa Informa</h2>
         <p style="max-width:44ch">Jornalismo regional do litoral catarinense. A pauta é de todo mundo. O jeito de contar é nosso.</p>
       </div>
       <div>
-        <h5>Navegue</h5>
+        <h2>Navegue</h2>
         <a href="index.html">Início</a><a href="regiao.html">Raio-X da Região</a><a href="horoscopo.html">Horóscopo &amp; Tarô</a><a href="index.html#semanal">Resumo Semanal</a>
       </div>
       <div>
-        <h5>Institucional</h5>
+        <h2>Institucional</h2>
         <a href="sobre.html">Quem somos</a><a href="sobre.html#linhas">Política editorial</a><a href="sobre.html#correcoes">Correções</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a><a href="mailto:vl7producoes@gmail.com">Anuncie conosco</a>
       </div>
     </div>
@@ -204,14 +207,14 @@ function abrir(i){
     '<h3>'+s.n+' <span style="color:#8FB0B9;font-weight:400;font-size:1rem">'+s.p+'</span></h3>'+
     '<p class="sub">Sua carta de hoje: '+c.n+'</p>'+
     '<div class="abas">'+
-      '<button class="chip" data-l="d" aria-selected="true">O recado</button>'+
-      '<button class="chip" data-l="a" aria-selected="false">O alerta</button>'+
-      '<button class="chip" data-l="h" aria-selected="false">Sem paciência</button>'+
-    '</div><div id="leituraTexto"><p>'+c.d+'</p></div>';
+      '<button type="button" class="chip" data-l="d" aria-pressed="true">O recado</button>'+
+      '<button type="button" class="chip" data-l="a" aria-pressed="false">O alerta</button>'+
+      '<button type="button" class="chip" data-l="h" aria-pressed="false">Sem paciência</button>'+
+    '</div><div id="leituraTexto" aria-live="polite"><p>'+c.d+'</p></div>';
   const abas=[...document.querySelectorAll('.abas .chip')];
   abas.forEach(b=>b.addEventListener('click',()=>{
-    abas.forEach(x=>x.setAttribute('aria-selected','false'));
-    b.setAttribute('aria-selected','true');
+    abas.forEach(x=>x.setAttribute('aria-pressed','false'));
+    b.setAttribute('aria-pressed','true');
     document.getElementById('leituraTexto').innerHTML='<p>'+c[b.dataset.l]+'</p>';
   }));
 }

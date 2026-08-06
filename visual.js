@@ -132,28 +132,32 @@ document.addEventListener('DOMContentLoaded', function () {
   var pro = caixa.querySelector('.carrossel-btn.pro');
   var pontos = caixa.querySelector('.carrossel-pontos');
 
+  /* quem pediu menos movimento nao deve receber rolagem deslizante */
+  var suave = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+
   slides.forEach(function (s, i) {
     var b = document.createElement('button');
     b.type = 'button';
     b.setAttribute('aria-label', 'Ir para o destaque ' + (i + 1));
     b.addEventListener('click', function () {
-      trilho.scrollTo({ left: s.offsetLeft - trilho.offsetLeft, behavior: 'smooth' });
+      trilho.scrollTo({ left: s.offsetLeft - trilho.offsetLeft, behavior: suave });
     });
     pontos.appendChild(b);
   });
   var bolinhas = [].slice.call(pontos.children);
 
   function passo() { return slides[0].getBoundingClientRect().width + 22; }
-  ant.addEventListener('click', function () { trilho.scrollBy({ left: -passo(), behavior: 'smooth' }); });
-  pro.addEventListener('click', function () { trilho.scrollBy({ left: passo(), behavior: 'smooth' }); });
+  ant.addEventListener('click', function () { trilho.scrollBy({ left: -passo(), behavior: suave }); });
+  pro.addEventListener('click', function () { trilho.scrollBy({ left: passo(), behavior: suave }); });
 
   var pendente = false;
   function situacao() {
     var i = Math.round(trilho.scrollLeft / passo());
     for (var k = 0; k < bolinhas.length; k++)
       bolinhas[k].setAttribute('aria-current', k === i ? 'true' : 'false');
-    ant.hidden = trilho.scrollLeft < 8;
-    pro.hidden = trilho.scrollLeft + trilho.clientWidth >= trilho.scrollWidth - 8;
+    /* desabilitar em vez de esconder: escondido tira o foco do teclado */
+    ant.disabled = trilho.scrollLeft < 8;
+    pro.disabled = trilho.scrollLeft + trilho.clientWidth >= trilho.scrollWidth - 8;
   }
   trilho.addEventListener('scroll', function () {
     if (pendente) return;
@@ -161,4 +165,27 @@ document.addEventListener('DOMContentLoaded', function () {
     requestAnimationFrame(function () { pendente = false; situacao(); });
   }, { passive: true });
   situacao();
+});
+
+/* PAUSAR CENA ANIMADA
+   A 2.2.2 pede um controle no proprio conteudo, e nao so a preferencia do
+   sistema. Aparece somente onde ha cena animada. */
+document.addEventListener('DOMContentLoaded', function () {
+  var cenas = document.querySelectorAll('.anima');
+  for (var i = 0; i < cenas.length; i++) {
+    (function (cena) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'pausa-anima';
+      b.setAttribute('aria-pressed', 'false');
+      b.textContent = 'Pausar animação';
+      b.addEventListener('click', function () {
+        var parado = cena.classList.toggle('pausada');
+        b.setAttribute('aria-pressed', parado ? 'true' : 'false');
+        b.textContent = parado ? 'Retomar animação' : 'Pausar animação';
+      });
+      var fig = cena.closest('figure') || cena.parentNode;
+      fig.appendChild(b);
+    })(cenas[i]);
+  }
 });

@@ -6,7 +6,7 @@
   --mar-claro:#8FB0B9;
   --espuma:#F1F5F3;
   --sol:#FFB627;
-  --coral:#E24E3B;
+  --coral:#D1331F;
   --areia:#CFC4B4;
   --suave:#5A7078;
   --display:'Archivo',system-ui,-apple-system,sans-serif;
@@ -33,6 +33,9 @@ h1,h2,h3,h4,.chapeu,.titulo em{text-wrap:balance}
 p,li,figcaption,.linhafina{text-wrap:pretty}
 
 /* PULAR PARA O CONTEUDO: primeiro item do teclado, invisivel ao mouse */
+/* titulo de secao que a estrutura exige mas o desenho nao mostra.
+   clip-path em vez de display:none: escondido de verdade some do leitor tambem. */
+.so-leitor{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 .pular{position:absolute;left:-9999px;top:0;z-index:100;background:var(--sol);color:var(--breu);font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.04em;padding:11px 20px;text-decoration:none}
 .pular:focus{left:0}
 
@@ -50,7 +53,8 @@ body{background:var(--espuma);color:var(--breu);font-family:var(--corpo);font-si
 img{max-width:100%;display:block}
 a{color:var(--mar);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(17,72,91,.32);transition:color .16s,text-decoration-color .16s}
 a:hover{color:var(--breu);text-decoration-color:var(--sol);text-decoration-thickness:2px}
-a:focus-visible{outline:2px solid var(--sol);outline-offset:3px}
+a:focus-visible{outline:2px solid var(--mar);outline-offset:3px}
+header a:focus-visible,footer a:focus-visible,nav a:focus-visible,.hero a:focus-visible,.escuro a:focus-visible,.editoria-topo a:focus-visible,.slide a:focus-visible{outline-color:var(--sol)}
 .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
 .estreito{max-width:760px}
 
@@ -82,9 +86,9 @@ nav a:hover,nav a:focus-visible,nav a.ativo{color:var(--sol);border-color:var(--
 .modo-rotulo{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--mar-claro);margin-bottom:14px}
 .modo-rotulo span{color:var(--sol)}
 .chips{display:flex;gap:8px;flex-wrap:wrap}
-.chip{font-family:var(--display);font-size:13px;font-weight:600;background:transparent;color:var(--espuma);border:1px solid rgba(255,255,255,.28);border-radius:100px;padding:9px 17px;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
+.chip{font-family:var(--display);font-size:13px;font-weight:600;background:transparent;color:var(--espuma);border:1px solid rgba(255,255,255,.38);border-radius:100px;padding:9px 17px;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
 .chip:hover{border-color:var(--sol)}
-.chip[aria-selected="true"]{background:var(--sol);color:var(--breu);border-color:var(--sol)}
+.chip[aria-selected="true"],.chip[aria-pressed="true"]{background:var(--sol);color:var(--breu);border-color:var(--sol)}
 .painel{margin-top:22px;background:rgba(255,255,255,.05);border-left:3px solid var(--sol);padding:24px 26px;min-height:190px;transition:opacity .2s ease,transform .2s ease}
 .painel.trocando{opacity:0;transform:translateY(5px)}
 .autor{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sol);margin-bottom:11px}
@@ -107,6 +111,10 @@ nav a:hover,nav a:focus-visible,nav a.ativo{color:var(--sol);border-color:var(--
 
 /* SECOES */
 main{padding:52px 0}
+/* quando o main comeca na capa, quem da o respiro de cima e a propria capa.
+   sem classe :has() de proposito, para nao depender de suporte recente. */
+main.com-capa{padding-top:0}
+main.com-capa>.wrap{padding-top:52px;padding-bottom:52px}
 .titulo{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;border-bottom:2px solid var(--breu);padding-bottom:11px;flex-wrap:wrap}
 .titulo h2{font-family:var(--display);font-size:1.32rem;font-weight:800;letter-spacing:-.01em;text-transform:uppercase}
 .titulo em{font-family:var(--display);font-size:12px;font-style:normal;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--suave)}
@@ -127,12 +135,12 @@ article.card p{font-size:.96rem;color:var(--suave)}
 /* BLOCO ESCURO */
 .escuro{background:var(--mar);color:var(--espuma);padding:50px 0;margin:52px 0}
 .escuro .titulo{border-color:rgba(255,255,255,.28)}
-.escuro .titulo em{color:var(--mar-claro)}
+.escuro .titulo em{color:#CFE0E5}
 .semana{display:grid;grid-template-columns:repeat(2,1fr);gap:0 42px}
 .item{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.15)}
 .num{font-family:var(--display);font-size:.88rem;font-weight:800;color:var(--sol);padding-top:3px}
-.item h4{font-family:var(--display);font-size:1rem;font-weight:600;line-height:1.32}
-.item small{color:var(--mar-claro);font-family:var(--display);font-size:11px;letter-spacing:.07em;text-transform:uppercase}
+.item h3{font-family:var(--display);font-size:1rem;font-weight:600;line-height:1.32}
+.item small{color:#CFE0E5;font-family:var(--display);font-size:11px;letter-spacing:.07em;text-transform:uppercase}
 
 /* DADOS */
 .dados{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
@@ -144,7 +152,7 @@ article.card p{font-size:.96rem;color:var(--suave)}
 .escuro .d{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18)}
 .escuro .d i{color:var(--sol)}
 .escuro .d b{color:var(--espuma)}
-.escuro .d small,.escuro .d em{color:var(--mar-claro)}
+.escuro .d small,.escuro .d em{color:#CFE0E5}
 
 /* TEXTO CORRIDO */
 .texto h2{font-family:var(--display);font-size:1.5rem;font-weight:800;letter-spacing:-.015em;margin:34px 0 12px}
@@ -191,41 +199,41 @@ article.card .selo{margin-top:6px;padding-top:0}
 .slide:has(h3 a:focus-visible){outline:2px solid var(--sol);outline-offset:-2px}
 .carrossel-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:42px;height:42px;border:0;border-radius:50%;background:rgba(10,31,40,.82);color:var(--espuma);cursor:pointer;display:none;align-items:center;justify-content:center;transition:background .18s}
 .carrossel-btn:hover{background:var(--sol);color:var(--breu)}
-.carrossel-btn[hidden]{display:none!important}
+.carrossel-btn:disabled{opacity:.32;cursor:default}
+.carrossel-btn:disabled:hover{background:rgba(10,31,40,.82);color:var(--espuma)}
 .carrossel-btn.ant{left:-8px}
 .carrossel-btn.pro{right:-8px}
 .js-carrossel .carrossel-btn{display:flex}
-.carrossel-pontos{display:flex;gap:7px;justify-content:center;margin-top:16px}
-.carrossel-pontos button{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:var(--areia);cursor:pointer}
-.carrossel-pontos button[aria-current="true"]{background:var(--mar);width:22px;border-radius:4px}
+/* O ponto continua pequeno, mas o alvo de toque tem 24px, como pede a 2.5.8 */
+.carrossel-pontos{display:flex;gap:0;justify-content:center;margin-top:12px}
+.carrossel-pontos button{width:24px;height:24px;padding:8px;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.carrossel-pontos button::before{content:"";display:block;width:8px;height:8px;border-radius:50%;background:var(--suave)}
+.carrossel-pontos button[aria-current="true"]{width:38px}
+.carrossel-pontos button[aria-current="true"]::before{background:var(--mar);width:22px;border-radius:4px}
+.carrossel-pontos button:focus-visible{outline:2px solid var(--mar);outline-offset:-2px}
 @media(max-width:760px){
   .carrossel-trilho{grid-auto-columns:calc(100% - 8px)}
   .carrossel-btn{display:none!important}
 }
 
 /* ULTIMAS NOTICIAS */
-.ultimas{list-style:none;border-top:2px solid var(--breu)}
-.ultimas li{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--areia)}
-.ultimas .quando{flex:none;width:82px;padding-top:3px;color:var(--mar)}
-.ultimas h4{font-family:var(--display);font-size:1rem;font-weight:600;line-height:1.34;margin-bottom:3px}
-.ultimas h4 a{color:inherit;text-decoration:none}
-.ultimas h4 a:hover{color:var(--mar);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--sol)}
-.ultimas small{font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--coral)}
 
 /* PAGINACAO */
 .paginacao{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin:34px 0 6px;font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
 .paginacao>a{color:var(--mar);text-decoration:none}
 .paginacao>a:hover{color:var(--breu);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--sol)}
 .paginacao .numeros{display:flex;gap:8px}
-.paginacao .numeros a,.paginacao .numeros span{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;border:1px solid var(--areia);background:#fff;color:var(--mar);text-decoration:none}
+.paginacao .numeros a,.paginacao .numeros span{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;border:1px solid #9F8A6A;background:#fff;color:var(--mar);text-decoration:none}
 .paginacao .numeros a:hover{border-color:var(--mar)}
 .paginacao .numeros span[aria-current]{background:var(--mar);color:var(--espuma);border-color:var(--mar)}
 
 /* TRILHA E ASSINATURA DO POST */
-.trilha{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--mar-claro);margin-bottom:16px}
-.trilha a{color:var(--mar-claro);text-decoration:none}
-.trilha a:hover{color:var(--sol);text-decoration:underline;text-underline-offset:3px}
-.trilha i{font-style:normal;color:var(--sol);margin:0 8px}
+.trilha{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--suave);margin-bottom:16px}
+.trilha a{color:var(--mar);text-decoration:none}
+.trilha a:hover{color:var(--breu);text-decoration:underline;text-underline-offset:3px}
+.trilha i{font-style:normal;color:var(--suave);margin:0 8px}
+.editoria-topo .trilha,.editoria-topo .trilha a,.editoria-topo .trilha i{color:#CFE0E5}
+.editoria-topo .trilha a:hover{color:var(--sol)}
 .publicado{display:flex;flex-wrap:wrap;gap:5px 20px;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--suave);border-top:1px solid var(--areia);border-bottom:1px solid var(--areia);padding:12px 0;margin:0 0 26px}
 .publicado b{color:var(--mar);font-weight:600}
 
@@ -234,7 +242,7 @@ article.card .selo{margin-top:6px;padding-top:0}
 .editoria-topo h1{font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.06;letter-spacing:-.02em;display:flex;align-items:center;gap:14px}
 .editoria-topo h1 .icone{color:var(--sol);width:.85em;height:.85em}
 .editoria-topo p{color:#CFE0E5;max-width:56ch;margin-top:12px}
-.editoria-topo .conta{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mar-claro);margin-top:16px}
+.editoria-topo .conta{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#CFE0E5;margin-top:16px}
 
 /* CENAS ANIMADAS
    Regra de performance: anima so transform e opacity, que o compositor
@@ -251,8 +259,12 @@ article.card .selo{margin-top:6px;padding-top:0}
 @keyframes sobe{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-2.5%,0)}}
 figure.foto .anima{margin:0}
 
+.anima.pausada .corre,.anima.pausada .pulsa,.anima.pausada .sobe{animation-play-state:paused}
+.pausa-anima{margin-top:10px;font-family:var(--display);font-size:12px;font-weight:600;background:transparent;color:var(--mar);border:1px solid #9F8A6A;border-radius:100px;padding:7px 15px;cursor:pointer}
+.pausa-anima:hover{border-color:var(--mar)}
 @media(prefers-reduced-motion:reduce){
   .anima .corre,.anima .pulsa,.anima .sobe{animation:none!important;transform:none!important;opacity:1!important}
+  .pausa-anima{display:none}
 }
 
 /* CAPAS DE CHAMADA */
@@ -264,13 +276,8 @@ article.card:hover .capa{filter:saturate(1.1) brightness(1.03)}
 /* CARD INTEIRO CLICAVEL
    O link continua sendo um so, no titulo, para leitor de tela e teclado.
    O pseudo-elemento estica a area de clique por cima do card inteiro. */
-article.card,.item,.ultimas li{position:relative}
-article.card h3 a::after,.item h4 a::after,.ultimas h4 a::after{content:"";position:absolute;inset:0;z-index:1}
-article.card:has(h3 a:focus-visible),.item:has(h4 a:focus-visible),.ultimas li:has(h4 a:focus-visible){outline:2px solid var(--sol);outline-offset:-2px}
-article.card h3 a:focus-visible,.item h4 a:focus-visible,.ultimas h4 a:focus-visible{outline:none}
-.item:hover h4,.ultimas li:hover h4{color:var(--sol)}
-.ultimas li:hover h4{color:var(--mar)}
-.item .mini{width:60px;height:60px;flex:none;object-fit:cover;align-self:flex-start;margin-top:3px;background:rgba(255,255,255,.08)}
+article.card,.item,article.card h3 a::after,.item h3 a::after,article.card:has(h3 a:focus-visible),.item:has(h3 a:focus-visible),.slide:has(h3 a:focus-visible){outline:2px solid var(--sol);outline-offset:-2px}
+article.card h3 a:focus-visible,.item h3 a:focus-visible,.item:hover h3,.item .mini{width:60px;height:60px;flex:none;object-fit:cover;align-self:flex-start;margin-top:3px;background:rgba(255,255,255,.08)}
 
 /* ICONES */
 .icone{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
@@ -303,15 +310,15 @@ figure.foto:hover img{filter:saturate(1.08)}
 
 /* HOROSCOPO */
 .signos{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:26px}
-.signo{background:#fff;border:1px solid var(--areia);padding:14px 8px;text-align:center;cursor:pointer;font-family:var(--display);font-size:.8rem;font-weight:600;transition:background .16s,color .16s,border-color .16s}
+.signo{background:#fff;border:1px solid #9F8A6A;padding:14px 8px;text-align:center;cursor:pointer;font-family:var(--display);font-size:.8rem;font-weight:600;transition:background .16s,color .16s,border-color .16s}
 .signo:hover{border-color:var(--mar)}
 .signo[aria-pressed="true"]{background:var(--breu);color:var(--sol);border-color:var(--breu)}
 .signo b{display:block;font-size:1.35rem;font-weight:400;margin-bottom:4px}
 .leitura{background:var(--breu);color:var(--espuma);padding:32px;display:grid;grid-template-columns:230px 1fr;gap:32px;align-items:start}
-.carta{background:linear-gradient(165deg,var(--mar),#061620);border:1px solid rgba(255,182,39,.4);padding:26px 20px;text-align:center;min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.carta{background:linear-gradient(165deg,var(--mar),#061620);border:1px solid rgba(255,182,39,.62);padding:26px 20px;text-align:center;min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:12px}
 .carta .glifo{font-size:3.4rem;line-height:1}
 .carta .nome{font-family:var(--display);font-size:1.05rem;font-weight:800;color:var(--sol);letter-spacing:.02em}
-.carta .num{font-family:var(--display);font-size:11px;letter-spacing:.2em;color:var(--mar-claro)}
+.carta .num{font-family:var(--display);font-size:11px;letter-spacing:.2em;color:#CFE0E5}
 .leitura h3{font-family:var(--display);font-size:1.5rem;font-weight:800;letter-spacing:-.015em;margin-bottom:4px}
 .leitura .sub{font-family:var(--display);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sol);margin-bottom:18px}
 .leitura p{color:#E3EDEF;margin-bottom:14px}
@@ -339,7 +346,7 @@ figure.foto:hover img{filter:saturate(1.08)}
 /* FOOTER */
 footer{background:var(--breu);color:var(--mar-claro);padding:46px 0 32px;font-size:.9rem}
 .fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:30px}
-footer h5{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--espuma);margin-bottom:13px}
+footer h2{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--espuma);margin-bottom:13px}
 footer a{color:var(--mar-claro);text-decoration:none;display:block;padding:3px 0}
 footer a:hover{color:var(--sol)}
 .legal{border-top:1px solid rgba(255,255,255,.13);padding-top:20px;font-size:.84rem;line-height:1.75}
@@ -363,5 +370,8 @@ footer a:hover{color:var(--sol)}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
-  .rv-on .rv{opacity:1!important;transform:none!important}
+  /* quem depende da animacao para chegar a opacity:1 precisa ser reposto,
+     senao some da tela junto com o movimento */
+  .rv-on .rv,.wordmark,.tagline,.sun{opacity:1!important;transform:none!important}
+  html,.carrossel-trilho{scroll-behavior:auto}
 }
