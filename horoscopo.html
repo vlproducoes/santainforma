@@ -94,7 +94,7 @@
       <div class="nome">Aguardando</div>
       <div class="num">ESCOLHA UM SIGNO</div>
     </div>
-    <div id="conteudo">
+    <div id="leituraSigno" aria-live="polite">
       <p class="vazio">Toque no seu signo acima. A carta do dia aparece aqui, com três leituras para você escolher qual faz mais sentido hoje.</p>
     </div>
   </div>
@@ -200,7 +200,7 @@ function abrir(i){
   const s=signos[i];
   const c=cartas[(diaDoAno()+i*5)%cartas.length];
   document.getElementById('carta').innerHTML='<div class="glifo">'+c.g+'</div><div class="nome">'+c.n+'</div><div class="num">'+c.num+'</div>';
-  document.getElementById('conteudo').innerHTML=
+  document.getElementById('leituraSigno').innerHTML=
     '<h3>'+s.n+' <span style="color:#8FB0B9;font-weight:400;font-size:1rem">'+s.p+'</span></h3>'+
     '<p class="sub">Sua carta de hoje: '+c.n+'</p>'+
     '<div class="abas">'+

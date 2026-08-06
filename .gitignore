@@ -7,3 +7,6 @@ __pycache__/
 .env
 *.key
 segredos*
+
+# Cópias temporárias de auditoria. Nenhum arquivo do site começa com _.
+_*.html
