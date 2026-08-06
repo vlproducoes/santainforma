@@ -9,6 +9,7 @@
 <link rel="canonical" href="https://santainforma.com.br/privacidade.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -17,6 +18,29 @@
 <script src="visual.js"></script>
 <script type="speculationrules">
 {"prerender":[{"where":{"href_matches":"/*"},"eagerness":"moderate"}]}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PQKY68PE07"></script>
+<script>
+/* MEDICAO DE AUDIENCIA
+   O site pre-renderiza link no hover (speculationrules, eagerness moderate).
+   Pagina pre-renderizada que o leitor nunca abriu nao pode virar visita, entao
+   a contagem so dispara quando a pagina de fato aparece na tela. */
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+function medir(){
+  /* sinal de anuncio e perfil de usuario desligados: a Politica de Privacidade
+     promete que nao montamos perfil de leitor, e isso precisa valer no codigo. */
+  gtag('config', 'G-PQKY68PE07', {
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
+}
+if (document.prerendering) {
+  document.addEventListener('prerenderingchange', medir, {once: true});
+} else {
+  medir();
+}
 </script>
 </head>
 <body>
@@ -104,7 +128,7 @@
   <h2><svg class="icone" aria-hidden="true"><use href="#i-olho"></use></svg><span>O que a gente coleta</span></h2>
 
   <h3>Navegação comum</h3>
-  <p>Quando você abre uma página, nosso servidor e os serviços que sustentam o site registram informação técnica: endereço IP, tipo de navegador, sistema operacional, qual página foi aberta, horário e de onde você veio. Isso é padrão de qualquer site da internet e serve para o site funcionar, carregar rápido e se defender de ataque.</p>
+  <p>Quando você abre uma página, nosso servidor e os serviços que sustentam o site registram informação técnica: endereço IP, tipo de navegador, sistema operacional, qual página foi aberta, horário e de onde você veio. Isso é padrão de qualquer site da internet e serve para o site funcionar, carregar rápido e se defender de ataque. Parte dessa informação também alimenta o Google Analytics, que usamos para medir audiência, como explicamos logo abaixo em cookies.</p>
 
   <h3>Quando você escreve para a gente</h3>
   <p>Se você manda e-mail, seja para apontar erro, sugerir pauta, exercer direito de resposta ou falar de anúncio, ficamos com o que você escreveu e com o seu endereço de e-mail. Usamos só para responder e para manter o histórico de correção, que é obrigação editorial nossa.</p>
@@ -126,6 +150,7 @@
   <ul>
     <li><strong>Necessários.</strong> Fazem o site funcionar e lembram preferências simples, como a versão do Modo de Leitura que você escolheu. Sem eles nada funciona direito.</li>
     <li><strong>Infraestrutura.</strong> O site roda em Cloudflare Pages. A Cloudflare usa cookies técnicos de segurança e desempenho.</li>
+    <li><strong>Medição de audiência.</strong> Usamos o <strong>Google Analytics</strong> para saber quantas pessoas leem, quais matérias interessam e de onde vem o acesso. Ele grava cookie no seu navegador e não guarda seu endereço IP completo. A gente olha número no atacado, nunca o caminho de um leitor específico. Se quiser ficar de fora, o Google oferece um <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">complemento de navegador que desativa a medição</a> em qualquer site.</li>
     <li><strong>Fontes.</strong> As tipografias vêm do Google Fonts, o que faz seu navegador se conectar a um servidor do Google.</li>
     <li><strong>Publicidade.</strong> No futuro pretendemos exibir anúncios do Google AdSense. Quando isso acontecer, esta página será atualizada antes, com a data da mudança visível, e o Google poderá usar cookies para exibir anúncio conforme suas visitas. Você pode desativar isso nas configurações de anúncio do Google.</li>
   </ul>
@@ -145,6 +170,7 @@
     <li><strong>Registro de acesso:</strong> seis meses, prazo do Marco Civil.</li>
     <li><strong>E-mail que você mandou:</strong> enquanto o assunto estiver aberto, mais o prazo de eventual questionamento.</li>
     <li><strong>Assinatura de newsletter:</strong> até você se descadastrar.</li>
+    <li><strong>Dado de audiência no Google Analytics:</strong> o prazo é o configurado na ferramenta, hoje no padrão de dois meses para dado por usuário. Relatório agregado, que não identifica ninguém, fica mais tempo.</li>
   </ul>
 
   <h2><svg class="icone" aria-hidden="true"><use href="#i-pessoas"></use></svg><span>Seus direitos</span></h2>

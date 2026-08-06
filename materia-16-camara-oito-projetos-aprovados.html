@@ -12,6 +12,7 @@
 <link rel="canonical" href="https://santainforma.com.br/materia-16-camara-oito-projetos-aprovados.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -23,6 +24,29 @@
 </script>
 <script type="speculationrules">
 {"prerender":[{"where":{"href_matches":"/*"},"eagerness":"moderate"}]}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PQKY68PE07"></script>
+<script>
+/* MEDICAO DE AUDIENCIA
+   O site pre-renderiza link no hover (speculationrules, eagerness moderate).
+   Pagina pre-renderizada que o leitor nunca abriu nao pode virar visita, entao
+   a contagem so dispara quando a pagina de fato aparece na tela. */
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+function medir(){
+  /* sinal de anuncio e perfil de usuario desligados: a Politica de Privacidade
+     promete que nao montamos perfil de leitor, e isso precisa valer no codigo. */
+  gtag('config', 'G-PQKY68PE07', {
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
+}
+if (document.prerendering) {
+  document.addEventListener('prerenderingchange', medir, {once: true});
+} else {
+  medir();
+}
 </script>
 </head>
 <body>
