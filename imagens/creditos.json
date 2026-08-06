@@ -163,5 +163,49 @@
     "id_pexels": 7623482,
     "termo_de_busca": "dinheiro real brasileiro moeda economia",
     "baixada_em": "2026-08-05"
+  },
+  "grafico-juros.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Arturo Añez.",
+    "url_fotografo": "https://www.pexels.com/@arturoaez225",
+    "url_original": "https://www.pexels.com/photo/a-close-up-of-a-stock-chart-28165814/",
+    "id_pexels": 28165814,
+    "termo_de_busca": "juros grafico economia brasil taxa",
+    "baixada_em": "2026-08-06"
+  },
+  "arraia-bandeirinhas.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Dz Anderson  Video Editor",
+    "url_fotografo": "https://www.pexels.com/@dz-anderson-video-editor-230478",
+    "url_original": "https://www.pexels.com/photo/vibrant-festival-bunting-against-clear-blue-sky-38331648/",
+    "id_pexels": 38331648,
+    "termo_de_busca": "festa junina bandeirinhas arraia brasil",
+    "baixada_em": "2026-08-06"
+  },
+  "frente-fria-nuvens.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Enrique",
+    "url_fotografo": "https://www.pexels.com/@enrique72",
+    "url_original": "https://www.pexels.com/photo/dramatic-storm-clouds-with-dark-sky-32637595/",
+    "id_pexels": 32637595,
+    "termo_de_busca": "ciclone vento tempestade nuvens escuras",
+    "baixada_em": "2026-08-06"
+  },
+  "projetos-lei-carimbo.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Markus Spiske",
+    "url_fotografo": "https://www.pexels.com/@markusspiske",
+    "url_original": "https://www.pexels.com/photo/wooden-stamp-on-an-open-book-9858904/",
+    "id_pexels": 9858904,
+    "termo_de_busca": "documento carimbo assinatura lei papel",
+    "baixada_em": "2026-08-06"
   }
 }
