@@ -306,5 +306,27 @@
     "id_pexels": 32241750,
     "termo_de_busca": "modern residential high rise balconies blue sky brazil",
     "baixada_em": "2026-08-07"
+  },
+  "feira-conhecimento-cartaz.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Kaboompics",
+    "url_fotografo": "https://www.pexels.com/@karola-g",
+    "url_original": "https://www.pexels.com/photo/a-person-painting-on-brown-paper-7692890/",
+    "id_pexels": 7692890,
+    "termo_de_busca": "school science fair project display recycled materials",
+    "baixada_em": "2026-08-07"
+  },
+  "frota-veiculos-saude.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Luke Miller",
+    "url_fotografo": "https://www.pexels.com/@bylukemiller",
+    "url_original": "https://www.pexels.com/photo/row-of-new-cars-in-outdoor-parking-lot-29566899/",
+    "id_pexels": 29566899,
+    "termo_de_busca": "new white cars fleet parked dealership row",
+    "baixada_em": "2026-08-07"
   }
 }
