@@ -211,6 +211,11 @@ article.card .selo{margin-top:6px;padding-top:0}
 .carrossel-pontos button[aria-current="true"]{width:38px}
 .carrossel-pontos button[aria-current="true"]::before{background:var(--mar);width:22px;border-radius:4px}
 .carrossel-pontos button:focus-visible{outline:2px solid var(--mar);outline-offset:-2px}
+/* botao de parar o giro: exigencia da 2.2.2 para conteudo que anda sozinho.
+   fica discreto ao lado dos pontos, e nao no meio do caminho do dedo. */
+.carrossel-pausa{display:block;margin:6px auto 0;border:1px solid var(--areia);background:none;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--suave);padding:7px 14px;cursor:pointer;border-radius:2px}
+.carrossel-pausa:hover{border-color:var(--mar);color:var(--breu)}
+.carrossel-pausa:focus-visible{outline:2px solid var(--mar);outline-offset:2px}
 @media(max-width:760px){
   .carrossel-trilho{grid-auto-columns:calc(100% - 8px)}
   .carrossel-btn{display:none!important}
@@ -231,7 +236,7 @@ article.card .selo{margin-top:6px;padding-top:0}
 .trilha{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--suave);margin-bottom:10px}
 /* 11px de altura nao se acerta com o dedo: o link vira bloco em linha
    e ganha folga vertical sem mudar o desenho da linha. */
-.trilha a,.publicado a,.selo a{display:inline-block;padding:6px 0}
+.trilha a,.publicado a,.selo a,.fonte a{display:inline-block;padding:6px 0}
 .trilha a{color:var(--mar);text-decoration:none}
 .trilha a:hover{color:var(--breu);text-decoration:underline;text-underline-offset:3px}
 .trilha i{font-style:normal;color:var(--suave);margin:0 8px}
@@ -353,7 +358,10 @@ figure.foto:hover img{filter:saturate(1.08)}
 /* titulo clicavel: herda a cor do titulo, o link aparece no hover */
 :is(h1,h2,h3,h4) a,.escuro :is(h1,h2,h3,h4) a{color:inherit;text-decoration:none}
 :is(h1,h2,h3,h4) a:hover{color:var(--mar);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--sol)}
-.escuro :is(h1,h2,h3,h4) a:hover{color:var(--sol);text-decoration:none}
+/* o slide do carrossel e superficie escura, mas nao fica dentro de .escuro.
+   sem entrar nesta regra, o hover pintava o titulo de --mar sobre fundo
+   quase preto: 1,70 de contraste, ilegivel. */
+.escuro :is(h1,h2,h3,h4) a:hover,.slide h3 a:hover{color:var(--sol);text-decoration:none}
 
 /* chamadas e creditos: display font, sublinhado discreto */
 .selo a{font-weight:600;color:var(--mar)}
@@ -391,4 +399,5 @@ footer a:hover{color:var(--sol)}
      senao some da tela junto com o movimento */
   .rv-on .rv,.wordmark,.tagline,.sun{opacity:1!important;transform:none!important}
   html,.carrossel-trilho{scroll-behavior:auto}
+  .carrossel-pausa{display:none}
 }

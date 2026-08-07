@@ -165,6 +165,78 @@ document.addEventListener('DOMContentLoaded', function () {
     requestAnimationFrame(function () { pendente = false; situacao(); });
   }, { passive: true });
   situacao();
+
+  /* AVANCO AUTOMATICO
+     Conteudo que anda sozinho por mais de cinco segundos precisa de um jeito de
+     parar (WCAG 2.2.2). Aqui sao quatro: o botao, o mouse em cima, o foco do
+     teclado dentro e qualquer toque na faixa. Quem pediu menos movimento nunca
+     ve o carrossel andar. */
+  var reduzido = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var INTERVALO = 6000;
+  var relogio = null;
+  var parado = reduzido.matches;   /* comeca parado para quem pediu menos movimento */
+  var desistiu = false;            /* o leitor mexeu: nao volta a andar sozinho */
+
+  function proximo() {
+    /* chegou no fim: volta ao comeco em vez de travar */
+    var fim = trilho.scrollLeft + trilho.clientWidth >= trilho.scrollWidth - 8;
+    trilho.scrollTo({ left: fim ? 0 : trilho.scrollLeft + passo(), behavior: 'smooth' });
+  }
+  function toca() {
+    if (relogio || parado || desistiu || reduzido.matches) return;
+    relogio = setInterval(proximo, INTERVALO);
+  }
+  function pausa() {
+    if (relogio) { clearInterval(relogio); relogio = null; }
+  }
+
+  var bp = document.createElement('button');
+  bp.type = 'button';
+  bp.className = 'carrossel-pausa';
+  function rotulo() {
+    var andando = !!relogio;
+    bp.setAttribute('aria-pressed', andando ? 'false' : 'true');
+    bp.textContent = andando ? 'Pausar' : 'Reproduzir';
+    bp.setAttribute('aria-label', andando ? 'Pausar o giro dos destaques' : 'Reproduzir o giro dos destaques');
+  }
+  bp.addEventListener('click', function () {
+    parado = !parado;
+    desistiu = false;              /* pedir play desfaz a desistencia */
+    if (parado) pausa(); else toca();
+    rotulo();
+  });
+  pontos.parentNode.insertBefore(bp, pontos.nextSibling);
+
+  /* mouse e teclado seguram o giro sem cancelar a preferencia */
+  caixa.addEventListener('mouseenter', pausa);
+  caixa.addEventListener('mouseleave', function () { if (!parado) toca(); });
+  caixa.addEventListener('focusin', pausa);
+  caixa.addEventListener('focusout', function () {
+    if (!caixa.contains(document.activeElement) && !parado) toca();
+  });
+
+  /* mexeu na faixa com o dedo ou clicou numa seta: o leitor assumiu o controle */
+  function assumiu() { desistiu = true; pausa(); rotulo(); }
+  trilho.addEventListener('pointerdown', assumiu);
+  trilho.addEventListener('wheel', assumiu, { passive: true });
+  ant.addEventListener('click', assumiu);
+  pro.addEventListener('click', assumiu);
+  bolinhas.forEach(function (b) { b.addEventListener('click', assumiu); });
+
+  /* aba escondida nao precisa girar */
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) pausa(); else if (!parado) toca();
+  });
+
+  /* mudou a preferencia no sistema no meio da sessao */
+  var ouvir = reduzido.addEventListener ? 'addEventListener' : 'addListener';
+  reduzido[ouvir]('change', function () {
+    if (reduzido.matches) { parado = true; pausa(); } else { parado = false; toca(); }
+    rotulo();
+  });
+
+  toca();
+  rotulo();
 });
 
 /* PAUSAR CENA ANIMADA

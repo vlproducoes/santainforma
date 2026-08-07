@@ -273,5 +273,38 @@
     "id_pexels": 34054817,
     "termo_de_busca": "porto belo bombinhas praia enseada barcos santa catarina",
     "baixada_em": "2026-08-06"
+  },
+  "aferir-pressao-saude.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Thirdman",
+    "url_fotografo": "https://www.pexels.com/@thirdman",
+    "url_original": "https://www.pexels.com/photo/a-healthcare-worker-measuring-a-patient-s-blood-pressure-using-a-sphygmomanometer-7659564/",
+    "id_pexels": 7659564,
+    "termo_de_busca": "blood pressure cuff stethoscope medical checkup table",
+    "baixada_em": "2026-08-07"
+  },
+  "artistas-palco-credenciamento.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "RDNE Stock project",
+    "url_fotografo": "https://www.pexels.com/@rdne",
+    "url_original": "https://www.pexels.com/photo/people-playing-musical-instruments-on-the-rooftop-7502173/",
+    "id_pexels": 7502173,
+    "termo_de_busca": "live music band performing outdoor stage small crowd",
+    "baixada_em": "2026-08-07"
+  },
+  "predios-normas-construcao.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Hunter Schroeder",
+    "url_fotografo": "https://www.pexels.com/@hunter-schroeder-2149144899",
+    "url_original": "https://www.pexels.com/photo/modern-high-rise-building-against-clear-sky-32241750/",
+    "id_pexels": 32241750,
+    "termo_de_busca": "modern residential high rise balconies blue sky brazil",
+    "baixada_em": "2026-08-07"
   }
 }
