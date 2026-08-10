@@ -328,5 +328,38 @@
     "id_pexels": 29566899,
     "termo_de_busca": "new white cars fleet parked dealership row",
     "baixada_em": "2026-08-07"
+  },
+  "bicicleta-contrarrelogio.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Alari Tammsalu",
+    "url_fotografo": "https://www.pexels.com/@alaritammsalu",
+    "url_original": "https://www.pexels.com/photo/a-woman-riding-her-road-bike-in-a-competition-8024984/",
+    "id_pexels": 8024984,
+    "termo_de_busca": "time trial bicycle aerodynamic road cycling",
+    "baixada_em": "2026-08-10"
+  },
+  "obra-emissario-rua.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "D Goug",
+    "url_fotografo": "https://www.pexels.com/@d-goug-211350543",
+    "url_original": "https://www.pexels.com/photo/drainage-pipe-installation-in-elk-grove-trench-37627673/",
+    "id_pexels": 37627673,
+    "termo_de_busca": "road excavation sewer pipe work street construction",
+    "baixada_em": "2026-08-10"
+  },
+  "projetos-obras-prancheta.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Angie Reyes",
+    "url_fotografo": "https://www.pexels.com/@anjreyes",
+    "url_original": "https://www.pexels.com/photo/planning-over-blueprints-465118/",
+    "id_pexels": 465118,
+    "termo_de_busca": "architects engineers looking at blueprints plans table meeting",
+    "baixada_em": "2026-08-10"
   }
 }
