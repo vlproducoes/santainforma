@@ -467,5 +467,51 @@
     "observacao": "recortada para excluir crianca em quadro",
     "dimensao_original": "1280x960",
     "baixada_em": "2026-08-10"
+  },
+  "acor-formacao-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/formacao_acor-1.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/formacao-prepara-rede-municipal-de-ensino-para-a-32a-festa-da-cultura-acoriana-em-itapema/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-08-11"
+  },
+  "melhor-idade-cci-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/pilates_idoso-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/atividades-da-melhor-idade-sao-retomadas-nos-centros-de-convivencia-de-itapema/",
+    "dimensao_original": "1280x720",
+    "baixada_em": "2026-08-11"
+  },
+  "geada-campo-frio.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Nataliia Zhytnytska",
+    "url_fotografo": "https://www.pexels.com/@nataliia-zhytnytska-696963186",
+    "url_original": "https://www.pexels.com/photo/serene-winter-landscape-with-frosted-grass-35863969/",
+    "id_pexels": 35863969,
+    "termo_de_busca": "frost on grass cold winter morning field",
+    "baixada_em": "2026-08-11"
+  },
+  "feira-legumes-precos.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "picmamba.com",
+    "url_fotografo": "https://www.pexels.com/@picmamba",
+    "url_original": "https://www.pexels.com/photo/assorted-vegetables-701970/",
+    "id_pexels": 701970,
+    "termo_de_busca": "vegetable market stall tomatoes potatoes prices",
+    "baixada_em": "2026-08-11"
   }
 }
