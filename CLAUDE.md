@@ -83,6 +83,29 @@ Ordem de preferência:
 4. **Ilustração SVG da marca.** Já existe nas matérias 04 e 05. Use quando não
    houver imagem honesta disponível. É a saída mais segura.
 
+**Regra da foto da fonte.** Quando a fonte oficial publica foto do próprio fato,
+usar a foto dela, não banco de imagem. Foto real do evento vale mais que stock
+bonito. Só cair para o Pexels quando a fonte não tiver foto, ou quando a foto
+dela não puder ser usada.
+
+O que cada fonte permite, conferido em 10 de agosto de 2026:
+
+| Fonte | O que diz | Uso |
+|---|---|---|
+| Prefeitura de Itapema | sem termos publicados | Divulgação, com crédito completo |
+| Câmara de Itapema | sem termos publicados | Divulgação, com crédito completo |
+| Agência Brasil / EBC | "reprodução autorizada para veículos de comunicação com fins jornalísticos, mediante indicação da fonte" | Pode, creditando o fotógrafo |
+| Governo de SC | "todos os direitos reservados" | **Não usar** sem autorização escrita |
+| Portais de notícia | — | Nunca |
+
+Na Agência Brasil, conferir foto a foto: parte do conteúdo vem de agência
+parceira e às vezes traz "Proibida reprodução". Se tiver essa marca, não usa.
+
+**Antes de aplicar qualquer foto, olhe a imagem.** Se houver criança em quadro,
+recorte para tirá-la ou escolha outra. O mesmo vale para plateia e para rosto de
+pessoa comum em primeiro plano: a regra de não expor vale mesmo quando foi o
+órgão público que publicou.
+
 **Proibido:** foto de terceiro sem licença, foto de portal de notícia, foto que
 sugira documentar um fato que ela não documenta.
 
