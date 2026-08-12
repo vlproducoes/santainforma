@@ -513,5 +513,51 @@
     "id_pexels": 701970,
     "termo_de_busca": "vegetable market stall tomatoes potatoes prices",
     "baixada_em": "2026-08-11"
+  },
+  "camara-sessao-24a.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Câmara de Vereadores de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://site.itapema.sc.leg.br/public/portaladm-cvitapema/imagens/fotos/9b49d87173e07586e5ee51c2e491da2f.jpg",
+    "pagina_da_fonte": "https://site.itapema.sc.leg.br/noticia/1808-Duas+Resolucoes+impactam+a+transparencia+publica+da+Camara.html",
+    "dimensao_original": "3000x2000",
+    "baixada_em": "2026-08-12"
+  },
+  "camara-itapema-fachada.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Câmara de Vereadores de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://site.itapema.sc.leg.br/public/portaladm-cvitapema/imagens/fotos/04702f123869e3146aa03f89325f79cd.jpeg",
+    "pagina_da_fonte": "https://site.itapema.sc.leg.br/noticia/1806-Camara+de+Itapema+divulga+analise+do+TCE.html",
+    "dimensao_original": "1280x720",
+    "baixada_em": "2026-08-12"
+  },
+  "violencia-mulher-protesto.jpg": {
+    "origem": "agencia publica",
+    "orgao": "Agência Brasil",
+    "ano": 2026,
+    "licenca": "reproducao autorizada para veiculo jornalistico mediante indicacao da fonte",
+    "uso": "registro do fato",
+    "url_original": "https://imagens.ebc.com.br/ccsPYp0X7Ari6jA3VjsS-fCd4MM=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/12/07/mcm_5753_0.jpg?itok=ppOfX93H",
+    "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-08/agressoes-domesticas-contra-mulheres-crescem-289-em-dias-de-futebol",
+    "dimensao_original": "1600x800",
+    "baixada_em": "2026-08-12"
+  },
+  "plenario-palestra-cadeiras.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Daniel Cruz",
+    "url_fotografo": "https://www.pexels.com/@dano",
+    "url_original": "https://www.pexels.com/photo/photo-of-orange-leather-seats-8095054/",
+    "id_pexels": 8095054,
+    "termo_de_busca": "empty auditorium chairs conference room lecture",
+    "baixada_em": "2026-08-12"
   }
 }
