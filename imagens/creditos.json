@@ -559,5 +559,76 @@
     "id_pexels": 8095054,
     "termo_de_busca": "empty auditorium chairs conference room lecture",
     "baixada_em": "2026-08-12"
+  },
+  "mcmv-cadastro-habitacional.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/cadastro_habitacional.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-esta-com-inscricoes-abertas-para-90-unidades-habitacionais-do-minha-casa-minha-vida/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-08-17"
+  },
+  "paco-municipal-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/07/Paco-Municipal.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/financas-realiza-audiencia-publica-da-ldo-e-loa-2027-na-proxima-segunda-feira/",
+    "dimensao_original": "1600x1199",
+    "baixada_em": "2026-08-17"
+  },
+  "avanca-itapema-rua.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/avanca_Itapema-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/avanca-itapema-chega-a-novas-ruas-com-melhorias-de-infraestrutura/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-08-17"
+  },
+  "parajasc-atletas-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/atletas_Itapema_parajasc.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-disputa-parajasc-2026-com-33-atletas/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-08-17"
+  },
+  "camara-votacao-tea.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Câmara de Vereadores de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://site.itapema.sc.leg.br/public/portaladm-cvitapema/imagens/fotos/c95dcd473faccc94845976ed5ef885c8.jpg",
+    "pagina_da_fonte": "https://site.itapema.sc.leg.br/noticia/1809-Voucher+para+criancas+com+TEA.html",
+    "dimensao_original": "3000x2000",
+    "baixada_em": "2026-08-17"
+  },
+  "comercio-caixa-simples.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Tim  Samuel",
+    "url_fotografo": "https://www.pexels.com/@tim-samuel",
+    "url_original": "https://www.pexels.com/photo/ethnic-man-with-cup-of-coffee-at-counter-5835019/",
+    "id_pexels": 5835019,
+    "termo_de_busca": "small shop owner cash register receipt counter",
+    "baixada_em": "2026-08-17"
   }
 }
