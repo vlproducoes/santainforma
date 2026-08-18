@@ -5,3 +5,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://santainforma.com.br/sitemap.xml
+Sitemap: https://santainforma.com.br/sitemap-noticias.xml
