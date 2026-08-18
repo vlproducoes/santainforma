@@ -1,17 +1,34 @@
 # Prompt do agente de notícias · Santa Informa
 
-Cole o bloco abaixo no Claude Code, dentro de `/Users/viniciusdelego/Documents/santainforma`.
-Ele cria um agente agendado que roda de 6 em 6 horas.
+Rotina agendada que roda duas vezes por dia, às 6h e às 18h de Brasília
+(09h e 21h em UTC, que é o fuso do agendador).
 
-Para criar: `/schedule` e cole o prompt.
+Para criar: `/schedule` e cole o bloco de prompt abaixo.
 Para conferir depois: `/schedule` e peça a lista.
-Para desligar: `/schedule` e peça para apagar a rotina "Santa Informa · ciclo de notícias".
+Para desligar: https://claude.ai/code/routines
+
+## Antes de criar: conectar o GitHub
+
+O agente roda NA NUVEM, não nesta máquina. Ele recebe um checkout do
+repositório, então a conta do GitHub precisa estar conectada ao Claude,
+senão a criação é recusada com erro 401. Rode `/web-setup` no Claude Code,
+ou instale o app do Claude no repositório:
+https://claude.ai/code/onboarding?magic=github-app-setup
+
+## Dois limites da nuvem, já embutidos no prompt
+
+1. **Sem Pexels.** O `.env` fica fora do Git, então a chave da API não existe
+   na nuvem e o `buscar-imagem.py` não roda lá. O agente usa foto oficial
+   (`foto-oficial.py`, que não precisa de chave) ou a ilustração SVG da marca,
+   que são as duas melhores opções da Constituição de qualquer jeito.
+2. **Sem caminho local.** Nada de `/Users/...` no prompt: o agente trabalha na
+   raiz do checkout.
 
 ---
 
 ```
-Crie um agente agendado chamado "Santa Informa · ciclo de notícias" que roda de
-6 em 6 horas (00h, 06h, 12h e 18h no horário de Brasília), no diretório
+Crie um agente agendado chamado "Santa Informa · ciclo de notícias" que roda duas
+vezes por dia, às 6h e às 18h no horário de Brasília, no diretório
 /Users/viniciusdelego/Documents/santainforma.
 
 A cada execução, faça exatamente isto, nesta ordem:
@@ -64,8 +81,10 @@ ilustração SVG da marca.
 - Foto com mais de 3 anos não ilustra mudança recente de paisagem. O ano vai no
   crédito, sempre.
 
-Ferramentas: `python3 ferramentas/foto-oficial.py` para foto oficial e
-`python3 ferramentas/buscar-imagem.py "termo" --listar` para o banco gratuito.
+LIMITE DA NUVEM: o `.env` não existe lá, então `buscar-imagem.py` (Pexels)
+NÃO funciona. Use `python3 ferramentas/foto-oficial.py` para foto de
+divulgação, ou a ilustração SVG da marca, copiando o padrão das matérias 04
+e 12. As ferramentas usam Pillow; se faltar, `pip install pillow`.
 Gere sempre as versões WebP e as miniaturas m<NN>-card.jpg e m<NN>-mini.jpg.
 
 ## 5. Publique
@@ -137,17 +156,21 @@ difícil (recusou uma pauta, rejeitou uma foto), diga qual e por quê.
 
 ---
 
-## Por que 6 horas e não 48
+## Por que 6h e 18h, e não a cada 48 horas
 
 A janela do sitemap do Google News é de 48 horas, mas isso é o prazo de validade
-das entradas, não a periodicidade de execução. Rodando de 6 em 6 horas, matéria
-nova entra no sitemap em no máximo 6 horas e matéria vencida sai antes de o
-Google reclamar. Rodando a cada 48 horas, os dois problemas apareceriam.
+das entradas, não a periodicidade de execução. Rodando a cada 48 horas, matéria
+publicada logo depois de uma execução ficaria fora do sitemap por dois dias, e
+matéria vencida ficaria dentro, o que o Google acusa como erro.
+
+Com duas execuções diárias, o intervalo máximo é de 12 horas, bem dentro da
+janela de 48. A das 6h pega o que os órgãos publicaram na véspera à noite e deixa
+a matéria no ar antes do horário de maior leitura. A das 18h pega o expediente
+inteiro da Prefeitura e da Câmara.
 
 ## Sobre custo
 
-São 4 execuções por dia, cerca de 120 por mês. A seção 11 do CLAUDE.md diz que,
-enquanto não houver receita, o padrão é ciclo assistido e automação tem
-orçamento separado. Vale medir o custo na primeira semana antes de deixar rodando
-em definitivo. Se pesar, dá para baixar para 2 execuções por dia (12h e 18h)
-sem prejudicar o sitemap, já que a janela é de 48 horas.
+São 2 execuções por dia, cerca de 60 por mês. A seção 11 do CLAUDE.md diz que,
+enquanto não houver receita, o padrão é ciclo assistido e automação tem orçamento
+separado. Vale medir o custo na primeira semana. Se ainda pesar, dá para ficar só
+com a das 18h, que é a que pega o expediente fechado.
