@@ -34,7 +34,7 @@
         <text class="tagline" x="57" y="44" font-family="Archivo,sans-serif" font-size="9.5" font-weight="600" letter-spacing="2.5" fill="#8FB0B9">LITORAL DE SANTA CATARINA</text>
       </svg>
       </a>
-      <div class="meta">Comercial<br><b>Tabela vigente &middot; agosto de 2026</b></div>
+      <div class="meta">Comercial<br><b>Tabela vigente &middot; agosto a dezembro de 2026</b></div>
     </div>
     <nav aria-label="Principal">
       <ul>
@@ -42,7 +42,7 @@
         <li><a href="regiao.html">Raio-X da Região</a></li>
         <li><a href="horoscopo.html">Horóscopo &amp; Tarô</a></li>
         <li><a href="index.html#semanal">Resumo Semanal</a></li>
-        <li><a href="sobre.html" class="ativo">Quem somos</a></li>
+        <li><a href="sobre.html">Quem somos</a></li>
       </ul>
     </nav>
     <nav class="editorias" aria-label="Editorias">

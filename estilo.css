@@ -107,8 +107,10 @@ nav a:hover,nav a:focus-visible,nav a.ativo{color:var(--sol);border-color:var(--
 /* TABELA DE PRECOS
    Tabela larga nao pode empurrar a pagina: rola dentro da propria caixa. */
 .tabela-rolagem{overflow-x:auto;margin:22px 0;border:1px solid #9F8A6A}
+/* foco visivel: a caixa agora recebe teclado, e foco sem contorno nao serve */
+.tabela-rolagem:focus-visible{outline:2px solid var(--mar);outline-offset:2px}
 table.preco{width:100%;border-collapse:collapse;font-size:.9rem;min-width:560px;background:#fff}
-table.preco th,table.preco td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--areia);vertical-align:top}
+table.preco th,table.preco td{padding:11px 13px;text-align:left;border-bottom:1px solid #9F8A6A;vertical-align:top}
 table.preco thead th{font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--espuma);background:var(--mar);border-bottom:0;white-space:nowrap}
 table.preco tbody th{font-family:var(--display);font-weight:700;color:var(--breu);white-space:nowrap}
 table.preco td.n{font-family:var(--display);font-weight:800;color:var(--mar);white-space:nowrap;text-align:right}
@@ -116,14 +118,6 @@ table.preco tbody tr:last-child th,table.preco tbody tr:last-child td{border-bot
 table.preco tbody tr:nth-child(even){background:var(--espuma)}
 
 /* CARTAS DE PACOTE */
-.cartas{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:1px;background:#9F8A6A;border:1px solid #9F8A6A;margin:22px 0}
-.cartas .carta{background:#fff;padding:22px 20px;display:flex;flex-direction:column}
-.cartas .carta .num{font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--suave)}
-.cartas .carta .nome{display:block;font-family:var(--display);font-size:1.3rem;font-weight:800;color:var(--breu);margin:4px 0 10px;letter-spacing:-.015em}
-.cartas .carta p{font-size:.9rem;margin:0 0 8px}
-.cartas .carta .comp{font-size:.8rem;color:var(--suave);line-height:1.45;flex:1}
-.cartas .carta .preco{font-family:var(--display);font-size:1.45rem;font-weight:800;color:var(--mar);margin:12px 0 0;letter-spacing:-.02em}
-.cartas .carta .preco em{display:block;font-style:normal;font-size:.72rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--suave);margin-top:2px}
 
 /* ESPACO PUBLICITARIO
    A area e reservada por aspect-ratio, entao o anuncio nao empurra o texto
@@ -156,19 +150,43 @@ table.preco tbody tr:nth-child(even){background:var(--espuma)}
 .a-faixa{--w:728;--h:90;--wm:320;--hm:100}
 .a-ret{--w:300;--h:250;--wm:300;--hm:250}
 .a-selo{--w:300;--h:90;--wm:300;--hm:90}
+
+/* VITRINE DE FORMATOS, na pagina comercial.
+   Os dois formatos de 300px cabem lado a lado; o resto empilha sozinho. */
+.formatos{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:center;margin:38px 0}
+.formatos .anuncio{margin:0}
+
+/* Formato baixo nao cabe com quatro linhas de texto em pe: o rotulo e o link
+   saiam cortados pelo overflow. Deitado, cabe com folga dentro dos 90px. */
+.a-faixa,.a-selo{flex-flow:row wrap;gap:14px;padding:6px 14px}
+.a-faixa .onde,.a-selo .onde{display:none}
+.a-faixa .medida,.a-selo .medida,.a-faixa .valor,.a-selo .valor{margin-top:0}
 /* dentro da faixa escura o tracejado claro some: inverte o contraste */
-.anuncio.escuro{background:transparent;border-color:rgba(255,255,255,.45)}
+/* .escuro e classe de secao e carrega padding:50px 0 e margem propria.
+   Na vitrine ela viaja junto com .anuncio so para trocar as cores, entao
+   aqui a caixa recupera o proprio espacamento, senao estoura a medida. */
+.anuncio.escuro{background:transparent;border-color:rgba(255,255,255,.45);padding:14px;margin:38px auto}
 .anuncio.escuro .rotulo{color:#CFE0E5}
 .anuncio.escuro .medida{color:var(--sol)}
 .anuncio.escuro .onde{color:#CFE0E5}
 .anuncio.escuro .valor a{color:var(--sol)}
 @media(max-width:760px){
-  .anuncio{max-width:calc(var(--wm) * 1px);aspect-ratio:var(--wm) / var(--hm);margin:30px auto}
+  .anuncio{max-width:calc(var(--wm) * 1px);aspect-ratio:var(--wm) / var(--hm);margin:30px auto;padding:8px}
   .anuncio .medida{font-size:1rem}
-  .a-faixa .onde,.a-selo .onde{display:none}
+  /* no celular quem vira 320x100 sao os formatos altos: agora sao eles
+     que precisam abrir mao da linha de contexto, senao o rotulo e o link
+     saem cortados pelo overflow da caixa. */
+  .a-super .onde,.a-bill .onde{display:none}
+  /* a coluna do nome fica presa: rolando a tabela de lado, o preco
+     aparecia sem dono. */
+  table.preco tbody th{position:sticky;left:0;background:#fff;box-shadow:1px 0 0 #9F8A6A}
+  table.preco tbody tr:nth-child(even) th{background:var(--espuma)}
+  table.preco thead th:first-child{position:sticky;left:0;background:var(--mar)}
 }
 /* em tela curta o formato alto rouba a leitura: some, e o texto segue */
-@media(max-height:520px) and (orientation:landscape){.a-ret{display:none}}
+/* em tela curta o formato alto rouba a leitura da materia. Na vitrine
+   da pagina comercial ele e o proprio produto, entao continua. */
+@media(max-height:520px) and (orientation:landscape){.texto .a-ret{display:none}}
 
 .patro{border:1px dashed var(--areia);background:#fff;text-align:center;padding:24px 20px;margin:42px 0}
 .patro span{display:block;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--suave)}

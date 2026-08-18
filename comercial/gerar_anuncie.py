@@ -2,7 +2,7 @@
 """Monta a pagina anuncie.html a partir da tabela. Fonte unica de preco."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from tabela import ESPACOS, PATROCINIOS, EDITORIAIS, COTAS, PACOTES, ALVO, tudo, diario, brl
+from tabela import ESPACOS, PATROCINIOS, EDITORIAIS, COTAS, MATERIA_A_PARTIR, PISO, tudo, diario, brl
 
 BASE = '/Users/viniciusdelego/Documents/santainforma'
 MODELO = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'modelo')
@@ -44,20 +44,6 @@ def linhas(itens, colunas=3):
             o += f'      <tr><th scope="row">{nome} &middot; {qtd}</th><td>{desc}</td><td class="n">{brl(v)}</td></tr>\n'
     return o
 
-def pacotes():
-    o = ''
-    for nome, itens, desc in PACOTES:
-        soma = sum(d[i][1] for i in itens)
-        comp = ' + '.join(d[i][0] for i in itens)
-        o += (f'    <div class="carta">\n'
-              f'      <span class="num">Pacote</span>\n'
-              f'      <b class="nome">{nome}</b>\n'
-              f'      <p>{desc}</p>\n'
-              f'      <p class="comp">{comp}</p>\n'
-              f'      <p class="preco">{brl(soma)}<em>por mês</em></p>\n'
-              f'    </div>\n')
-    return o
-
 MAIN = f'''<main id="conteudo" class="com-capa">
 
 <section class="editoria-topo">
@@ -65,35 +51,67 @@ MAIN = f'''<main id="conteudo" class="com-capa">
     <p class="trilha"><a href="index.html">Início</a><i>&rsaquo;</i>Comercial</p>
     <h1><svg class="icone" aria-hidden="true"><use href="#i-moeda"></use></svg>Anuncie no Santa Informa</h1>
     <p>Formatos, tamanhos em pixels e preços. Sem letra miúda.</p>
-    <p class="conta">Tabela vigente &middot; agosto de 2026</p>
+    <p class="conta">Tabela vigente &middot; agosto a dezembro de 2026</p>
   </div>
 </section>
 <div class="onda" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0 40V18c120 0 180 14 300 14s180-22 300-22 180 18 300 18 180-12 300-12v24z"/></svg></div>
 
 <div class="wrap estreito texto">
 
-  <div class="destaque">
-    <strong>Como esta tabela funciona.</strong> Todo valor é múltiplo de R$ 250, então qualquer combinação fecha em número redondo. Você monta o seu pacote somando espaços, ou pega um dos pacotes prontos abaixo. O preço é mensal, e o diário serve para campanha curta.
-  </div>
-
   <h2><svg class="icone" aria-hidden="true"><use href="#i-predio"></use></svg><span>Espaços de anúncio</span></h2>
   <p>Todo espaço tem área reservada no layout, então o anúncio não empurra o texto quando carrega. O tamanho de celular é o que aparece em tela de até 760 px de largura.</p>
   <p>A arte é entregue no tamanho da coluna Desktop, e é assim que ela aparece em tela larga. Entre 760 px e 1120 px a peça é reduzida proporcionalmente, sem cortar nada. Abaixo de 760 px entra a arte de celular.</p>
 
-  <div class="tabela-rolagem">
+  <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-espacos">
     <table class="preco">
-      <caption class="so-leitor">Espaços de anúncio, com tamanho em pixels e preço mensal e diário</caption>
+      <caption id="cap-espacos" class="so-leitor">Espaços de anúncio, com tamanho em pixels e preço mensal e diário</caption>
       <thead><tr><th scope="col">Espaço</th><th scope="col">Desktop</th><th scope="col">Celular</th><th scope="col">Onde aparece</th><th scope="col">Mensal</th><th scope="col">Diário</th></tr></thead>
       <tbody>
 {linhas_espacos()}      </tbody>
     </table>
   </div>
 
+</div>
+
+<section class="escuro">
+  <div class="wrap">
+    <div class="titulo"><h2><svg class="icone" aria-hidden="true"><use href="#i-predio"></use></svg><span>Veja o tamanho de verdade</span></h2><em>Tamanho real em tela larga</em></div>
+    <p class="linhafina">Cada bloco abaixo tem a medida exata do espaço no site. Em tela larga aparece o formato de desktop. No celular aparece o formato de celular, que é o que a maioria dos seus clientes vê.</p>
+
+    <div class="anuncio a-super escuro">
+      <span class="rotulo">Super Banner, Billboard e Banner de editoria</span>
+      <b class="medida">970 &times; 250 px</b>
+      <span class="onde">Topo e meio da página inicial, e no alto das editorias.</span>
+    </div>
+
+    <div class="anuncio a-faixa escuro">
+      <span class="rotulo">Banner de matéria e Banner do arquivo</span>
+      <b class="medida">728 &times; 90 px</b>
+      <span class="onde">Meio do texto das matérias.</span>
+    </div>
+
+    <div class="formatos">
+      <div class="anuncio a-ret escuro">
+        <span class="rotulo">Retângulo</span>
+        <b class="medida">300 &times; 250 px</b>
+        <span class="onde">Home e fim de matéria.</span>
+      </div>
+      <div class="anuncio a-selo escuro">
+        <span class="rotulo">Selo de apoio</span>
+        <b class="medida">300 &times; 90 px</b>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="onda" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0 40V18c120 0 180 14 300 14s180-22 300-22 180 18 300 18 180-12 300-12v24z"/></svg></div>
+
+<div class="wrap estreito texto">
+
   <h2><svg class="icone" aria-hidden="true"><use href="#i-estrela"></use></svg><span>Patrocínio de seção</span></h2>
   <p>Aqui não é banner. Sua marca assina a seção, com exclusividade, e aparece junto do conteúdo.</p>
-  <div class="tabela-rolagem">
+  <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-patrocinio">
     <table class="preco">
-      <caption class="so-leitor">Patrocínios de seção e preço mensal</caption>
+      <caption id="cap-patrocinio" class="so-leitor">Patrocínios de seção e preço mensal</caption>
       <thead><tr><th scope="col">Seção</th><th scope="col">O que inclui</th><th scope="col">Mensal</th></tr></thead>
       <tbody>
 {linhas(PATROCINIOS)}      </tbody>
@@ -102,46 +120,37 @@ MAIN = f'''<main id="conteudo" class="com-capa">
 
   <h2><svg class="icone" aria-hidden="true"><use href="#i-livro"></use></svg><span>Publieditorial</span></h2>
   <p>Conteúdo escrito pela nossa redação, no nosso jeito de contar, sobre o que você quer mostrar. Sai sempre com <strong>selo de Publieditorial e o nome de quem pagou</strong>, e fica em área separada da cobertura. Link permanente.</p>
-  <div class="tabela-rolagem">
+  <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-publieditorial">
     <table class="preco">
-      <caption class="so-leitor">Publieditorial por quantidade e preço</caption>
+      <caption id="cap-publieditorial" class="so-leitor">Publieditorial por quantidade e preço</caption>
       <thead><tr><th scope="col">Formato</th><th scope="col">O que inclui</th><th scope="col">Valor</th></tr></thead>
       <tbody>
 {linhas(EDITORIAIS, 4)}      </tbody>
     </table>
   </div>
 
-  <h2 id="pacotes"><svg class="icone" aria-hidden="true"><use href="#i-bussola"></use></svg><span>Pacotes prontos</span></h2>
-  <p>Seis maneiras diferentes de investir <strong>{brl(ALVO)} por mês</strong>. Escolha pelo que faz sentido para o seu negócio, não pelo preço, porque o preço é o mesmo.</p>
-  <div class="cartas">
-{pacotes()}  </div>
-
   <h2><svg class="icone" aria-hidden="true"><use href="#i-sol"></use></svg><span>Cotas fechadas</span></h2>
   <p>Para quem quer o site inteiro, ou a temporada inteira.</p>
-  <div class="tabela-rolagem">
+  <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-cotas">
     <table class="preco">
-      <caption class="so-leitor">Cotas fechadas e preço</caption>
+      <caption id="cap-cotas" class="so-leitor">Cotas fechadas e preço</caption>
       <thead><tr><th scope="col">Cota</th><th scope="col">O que inclui</th><th scope="col">Valor</th></tr></thead>
       <tbody>
 {linhas(COTAS)}      </tbody>
     </table>
   </div>
 
-  <h2><svg class="icone" aria-hidden="true"><use href="#i-escudo"></use></svg><span>O que está incluído em qualquer contratação</span></h2>
-  <ul>
-    <li><strong>Arte por nossa conta</strong>, se você não tiver. Enviamos para aprovação antes de publicar.</li>
-    <li><strong>Relatório mensal</strong> de visualizações e cliques, direto do Google Analytics.</li>
-    <li><strong>Troca de arte</strong> sem custo, até duas vezes por mês.</li>
-    <li><strong>Área separada</strong> da cobertura editorial, com identificação clara.</li>
-  </ul>
-
-  <div class="destaque">
-    <strong>O que a gente não faz.</strong> Não publicamos anúncio disfarçado de notícia. Conteúdo pago sempre leva selo e o nome de quem pagou. Não vendemos espaço para conteúdo eleitoral, nem para produto que dependa de promessa que não dá para checar.
+  <h2><svg class="icone" aria-hidden="true"><use href="#i-escudo"></use></svg><span>Incluído em qualquer contratação</span></h2>
+  <div class="dados">
+    <div class="d"><svg class="icone" aria-hidden="true"><use href="#i-livro"></use></svg><b>Uma matéria por mês</b><small>A partir de {brl(MATERIA_A_PARTIR)} mensais. Escrita pela nossa redação, sobre o seu negócio ou sobre um assunto que interessa a você.</small></div>
+    <div class="d"><svg class="icone" aria-hidden="true"><use href="#i-relogio"></use></svg><b>Troca de arte</b><small>Sem custo, até duas vezes por mês.</small></div>
+    <div class="d"><svg class="icone" aria-hidden="true"><use href="#i-balanca"></use></svg><b>Área separada</b><small>Fora da cobertura editorial, sempre com identificação clara.</small></div>
+    <div class="d"><svg class="icone" aria-hidden="true"><use href="#i-escudo"></use></svg><b>Um espaço, um dono</b><small>Enquanto o espaço for seu, não é de mais ninguém.</small></div>
   </div>
 
   <h2><svg class="icone" aria-hidden="true"><use href="#i-carta"></use></svg><span>Falar com a gente</span></h2>
   <p>Escreva para <a href="mailto:vl7producoes@gmail.com">vl7producoes@gmail.com</a> dizendo qual espaço interessa e por quanto tempo. Respondemos com a proposta e a arte de exemplo.</p>
-  <p class="fonte">Santa Informa &middot; CNPJ 51.087.731/0001-57 &middot; Itapema, Santa Catarina. Valores em reais, por mês, sem reajuste durante a vigência do contrato. Tabela sujeita a alteração mediante aviso prévio.</p>
+  <p class="fonte">Santa Informa &middot; CNPJ 51.087.731/0001-57 &middot; Itapema, Santa Catarina. Valores em reais, por mês, sem reajuste durante a vigência do contrato. Todo preço é múltiplo de R$ 250, e nenhuma opção custa menos de {brl(PISO)} por mês. Tabela sujeita a alteração mediante aviso prévio.</p>
 
 </div>
 </main>'''

@@ -82,7 +82,7 @@ if (document.prerendering) {
         <text class="tagline" x="57" y="44" font-family="Archivo,sans-serif" font-size="9.5" font-weight="600" letter-spacing="2.5" fill="#8FB0B9">LITORAL DE SANTA CATARINA</text>
       </svg>
       </a>
-      <div class="meta">Comercial<br><b>Tabela vigente &middot; agosto de 2026</b></div>
+      <div class="meta">Comercial<br><b>Tabela vigente &middot; agosto a dezembro de 2026</b></div>
     </div>
     <nav aria-label="Principal">
       <ul>
@@ -90,7 +90,7 @@ if (document.prerendering) {
         <li><a href="regiao.html">Raio-X da Região</a></li>
         <li><a href="horoscopo.html">Horóscopo &amp; Tarô</a></li>
         <li><a href="index.html#semanal">Resumo Semanal</a></li>
-        <li><a href="sobre.html" class="ativo">Quem somos</a></li>
+        <li><a href="sobre.html">Quem somos</a></li>
       </ul>
     </nav>
     <nav class="editorias" aria-label="Editorias">
@@ -106,143 +106,124 @@ if (document.prerendering) {
     <p class="trilha"><a href="index.html">Início</a><i>&rsaquo;</i>Comercial</p>
     <h1><svg class="icone" aria-hidden="true"><use href="#i-moeda"></use></svg>Anuncie no Santa Informa</h1>
     <p>Formatos, tamanhos em pixels e preços. Sem letra miúda.</p>
-    <p class="conta">Tabela vigente &middot; agosto de 2026</p>
+    <p class="conta">Tabela vigente &middot; agosto a dezembro de 2026</p>
   </div>
 </section>
 <div class="onda" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0 40V18c120 0 180 14 300 14s180-22 300-22 180 18 300 18 180-12 300-12v24z"/></svg></div>
 
 <div class="wrap estreito texto">
 
-  <div class="destaque">
-    <strong>Como esta tabela funciona.</strong> Todo valor é múltiplo de R$ 250, então qualquer combinação fecha em número redondo. Você monta o seu pacote somando espaços, ou pega um dos pacotes prontos abaixo. O preço é mensal, e o diário serve para campanha curta.
-  </div>
-
   <h2><svg class="icone" aria-hidden="true"><use href="#i-predio"></use></svg><span>Espaços de anúncio</span></h2>
   <p>Todo espaço tem área reservada no layout, então o anúncio não empurra o texto quando carrega. O tamanho de celular é o que aparece em tela de até 760 px de largura.</p>
   <p>A arte é entregue no tamanho da coluna Desktop, e é assim que ela aparece em tela larga. Entre 760 px e 1120 px a peça é reduzida proporcionalmente, sem cortar nada. Abaixo de 760 px entra a arte de celular.</p>
 
-  <div class="tabela-rolagem">
+  <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-espacos">
     <table class="preco">
-      <caption class="so-leitor">Espaços de anúncio, com tamanho em pixels e preço mensal e diário</caption>
+      <caption id="cap-espacos" class="so-leitor">Espaços de anúncio, com tamanho em pixels e preço mensal e diário</caption>
       <thead><tr><th scope="col">Espaço</th><th scope="col">Desktop</th><th scope="col">Celular</th><th scope="col">Onde aparece</th><th scope="col">Mensal</th><th scope="col">Diário</th></tr></thead>
       <tbody>
-      <tr><th scope="row">Super Banner</th><td><b>970 &times; 250</b></td><td>320 &times; 100</td><td>Topo da página inicial, abaixo do menu</td><td class="n">R$ 3.750,00</td><td class="n">R$ 125,00</td></tr>
-      <tr><th scope="row">Billboard</th><td><b>970 &times; 250</b></td><td>320 &times; 100</td><td>Meio da página inicial, entre os blocos</td><td class="n">R$ 2.500,00</td><td class="n">R$ 83,33</td></tr>
+      <tr><th scope="row">Super Banner</th><td><b>970 &times; 250</b></td><td>320 &times; 100</td><td>Topo da página inicial, antes da manchete do dia</td><td class="n">R$ 3.750,00</td><td class="n">R$ 125,00</td></tr>
+      <tr><th scope="row">Billboard</th><td><b>970 &times; 250</b></td><td>320 &times; 100</td><td>Meio da página inicial, onde o leitor já parou de rolar</td><td class="n">R$ 2.500,00</td><td class="n">R$ 83,33</td></tr>
+      <tr><th scope="row">Billboard Raio-X</th><td><b>970 &times; 250</b></td><td>320 &times; 100</td><td>Página de dados da região, onde corretor e construtora procuram número</td><td class="n">R$ 2.500,00</td><td class="n">R$ 83,33</td></tr>
+      <tr><th scope="row">Banner de matéria</th><td><b>728 &times; 90</b></td><td>320 &times; 100</td><td>Meio do texto de todas as matérias, e nas páginas de arquivo</td><td class="n">R$ 2.000,00</td><td class="n">R$ 66,67</td></tr>
+      <tr><th scope="row">Retângulo de matéria</th><td><b>300 &times; 250</b></td><td>mesmo tamanho</td><td>Fim do texto, depois dos colunistas. Pega quem leu até o fim</td><td class="n">R$ 1.500,00</td><td class="n">R$ 50,00</td></tr>
       <tr><th scope="row">Retângulo</th><td><b>300 &times; 250</b></td><td>mesmo tamanho</td><td>Página inicial, ao lado do Resumo Semanal</td><td class="n">R$ 1.250,00</td><td class="n">R$ 41,67</td></tr>
-      <tr><th scope="row">Banner de matéria</th><td><b>728 &times; 90</b></td><td>320 &times; 100</td><td>Meio do texto, em todas as matérias</td><td class="n">R$ 2.000,00</td><td class="n">R$ 66,67</td></tr>
-      <tr><th scope="row">Retângulo de matéria</th><td><b>300 &times; 250</b></td><td>mesmo tamanho</td><td>Fim do texto, em todas as matérias</td><td class="n">R$ 1.500,00</td><td class="n">R$ 50,00</td></tr>
-      <tr><th scope="row">Banner de editoria</th><td><b>970 &times; 250</b></td><td>320 &times; 100</td><td>Uma das seis editorias, à sua escolha</td><td class="n">R$ 1.250,00</td><td class="n">R$ 41,67</td></tr>
-      <tr><th scope="row">Banner do arquivo</th><td><b>728 &times; 90</b></td><td>320 &times; 100</td><td>Todas as páginas de Todas as notícias</td><td class="n">R$ 750,00</td><td class="n">R$ 25,00</td></tr>
-      <tr><th scope="row">Billboard Raio-X</th><td><b>970 &times; 250</b></td><td>320 &times; 100</td><td>Página Raio-X da Região, público qualificado</td><td class="n">R$ 2.500,00</td><td class="n">R$ 83,33</td></tr>
-      <tr><th scope="row">Selo de apoio</th><td><b>300 &times; 90</b></td><td>mesmo tamanho</td><td>Rodapé de todas as páginas do site</td><td class="n">R$ 500,00</td><td class="n">R$ 16,67</td></tr>
+      <tr><th scope="row">Banner de editoria</th><td><b>970 &times; 250</b></td><td>320 &times; 100</td><td>Na editoria do seu assunto, à sua escolha entre as seis</td><td class="n">R$ 1.250,00</td><td class="n">R$ 41,67</td></tr>
+      <tr><th scope="row">Banner do arquivo</th><td><b>728 &times; 90</b></td><td>320 &times; 100</td><td>Todas as páginas de Todas as notícias</td><td class="n">R$ 1.000,00</td><td class="n">R$ 33,33</td></tr>
+      <tr><th scope="row">Selo de apoio</th><td><b>300 &times; 90</b></td><td>mesmo tamanho</td><td>Seu nome no rodapé de todas as páginas do site</td><td class="n">R$ 1.000,00</td><td class="n">R$ 33,33</td></tr>
       </tbody>
     </table>
   </div>
 
+</div>
+
+<section class="escuro">
+  <div class="wrap">
+    <div class="titulo"><h2><svg class="icone" aria-hidden="true"><use href="#i-predio"></use></svg><span>Veja o tamanho de verdade</span></h2><em>Tamanho real em tela larga</em></div>
+    <p class="linhafina">Cada bloco abaixo tem a medida exata do espaço no site. Em tela larga aparece o formato de desktop. No celular aparece o formato de celular, que é o que a maioria dos seus clientes vê.</p>
+
+    <div class="anuncio a-super escuro">
+      <span class="rotulo">Super Banner, Billboard e Banner de editoria</span>
+      <b class="medida">970 &times; 250 px</b>
+      <span class="onde">Topo e meio da página inicial, e no alto das editorias.</span>
+    </div>
+
+    <div class="anuncio a-faixa escuro">
+      <span class="rotulo">Banner de matéria e Banner do arquivo</span>
+      <b class="medida">728 &times; 90 px</b>
+      <span class="onde">Meio do texto das matérias.</span>
+    </div>
+
+    <div class="formatos">
+      <div class="anuncio a-ret escuro">
+        <span class="rotulo">Retângulo</span>
+        <b class="medida">300 &times; 250 px</b>
+        <span class="onde">Home e fim de matéria.</span>
+      </div>
+      <div class="anuncio a-selo escuro">
+        <span class="rotulo">Selo de apoio</span>
+        <b class="medida">300 &times; 90 px</b>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="onda" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0 40V18c120 0 180 14 300 14s180-22 300-22 180 18 300 18 180-12 300-12v24z"/></svg></div>
+
+<div class="wrap estreito texto">
+
   <h2><svg class="icone" aria-hidden="true"><use href="#i-estrela"></use></svg><span>Patrocínio de seção</span></h2>
   <p>Aqui não é banner. Sua marca assina a seção, com exclusividade, e aparece junto do conteúdo.</p>
-  <div class="tabela-rolagem">
+  <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-patrocinio">
     <table class="preco">
-      <caption class="so-leitor">Patrocínios de seção e preço mensal</caption>
+      <caption id="cap-patrocinio" class="so-leitor">Patrocínios de seção e preço mensal</caption>
       <thead><tr><th scope="col">Seção</th><th scope="col">O que inclui</th><th scope="col">Mensal</th></tr></thead>
       <tbody>
-      <tr><th scope="row">Resumo Semanal</th><td>Marca única na seção mais lida da home, com assinatura no bloco</td><td class="n">R$ 3.000,00</td></tr>
-      <tr><th scope="row">Horóscopo & Tarô</th><td>Marca única na página de horóscopo, atualizada toda semana</td><td class="n">R$ 1.250,00</td></tr>
-      <tr><th scope="row">Editoria inteira</th><td>Seu nome na editoria, no menu e no banner dela, com exclusividade</td><td class="n">R$ 4.500,00</td></tr>
+      <tr><th scope="row">Editoria inteira</th><td>Seu nome na editoria, no menu e no banner dela, e mais ninguém ali dentro</td><td class="n">R$ 4.500,00</td></tr>
+      <tr><th scope="row">Resumo Semanal</th><td>Sua marca assina o bloco que reúne a semana de Itapema</td><td class="n">R$ 3.000,00</td></tr>
+      <tr><th scope="row">Horóscopo e Tarô</th><td>Sua marca na página que o leitor volta para ver toda semana</td><td class="n">R$ 1.250,00</td></tr>
       </tbody>
     </table>
   </div>
 
   <h2><svg class="icone" aria-hidden="true"><use href="#i-livro"></use></svg><span>Publieditorial</span></h2>
   <p>Conteúdo escrito pela nossa redação, no nosso jeito de contar, sobre o que você quer mostrar. Sai sempre com <strong>selo de Publieditorial e o nome de quem pagou</strong>, e fica em área separada da cobertura. Link permanente.</p>
-  <div class="tabela-rolagem">
+  <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-publieditorial">
     <table class="preco">
-      <caption class="so-leitor">Publieditorial por quantidade e preço</caption>
+      <caption id="cap-publieditorial" class="so-leitor">Publieditorial por quantidade e preço</caption>
       <thead><tr><th scope="col">Formato</th><th scope="col">O que inclui</th><th scope="col">Valor</th></tr></thead>
       <tbody>
-      <tr><th scope="row">Publieditorial &middot; 1 publicação</th><td>até 3.400 caracteres, com foto e link permanente</td><td class="n">R$ 750,00</td></tr>
-      <tr><th scope="row">Publieditorial &middot; 3 publicações</th><td>mesmo formato, publicadas ao longo do mês</td><td class="n">R$ 2.000,00</td></tr>
-      <tr><th scope="row">Publieditorial &middot; 5 publicações</th><td>mesmo formato, uma por semana</td><td class="n">R$ 3.000,00</td></tr>
+      <tr><th scope="row">Publieditorial &middot; 1 publicação</th><td>até 3.400 caracteres, com foto e link permanente</td><td class="n">R$ 1.250,00</td></tr>
+      <tr><th scope="row">Publieditorial &middot; 3 publicações</th><td>mesmo formato, ao longo do mês, para contar em partes</td><td class="n">R$ 3.000,00</td></tr>
+      <tr><th scope="row">Publieditorial &middot; 5 publicações</th><td>mesmo formato, uma por semana</td><td class="n">R$ 4.500,00</td></tr>
       </tbody>
     </table>
-  </div>
-
-  <h2 id="pacotes"><svg class="icone" aria-hidden="true"><use href="#i-bussola"></use></svg><span>Pacotes prontos</span></h2>
-  <p>Seis maneiras diferentes de investir <strong>R$ 6.250,00 por mês</strong>. Escolha pelo que faz sentido para o seu negócio, não pelo preço, porque o preço é o mesmo.</p>
-  <div class="cartas">
-    <div class="carta">
-      <span class="num">Pacote</span>
-      <b class="nome">Vitrine</b>
-      <p>Domina a home inteira, de cima a baixo.</p>
-      <p class="comp">Super Banner + Billboard</p>
-      <p class="preco">R$ 6.250,00<em>por mês</em></p>
-    </div>
-    <div class="carta">
-      <span class="num">Pacote</span>
-      <b class="nome">Bairro</b>
-      <p>As seis editorias menos uma, à sua escolha. Presença em todo o noticiário temático.</p>
-      <p class="comp">Banner de editoria + Banner de editoria + Banner de editoria + Banner de editoria + Banner de editoria</p>
-      <p class="preco">R$ 6.250,00<em>por mês</em></p>
-    </div>
-    <div class="carta">
-      <span class="num">Pacote</span>
-      <b class="nome">Leitura</b>
-      <p>Aparece no meio e no fim de toda matéria, mais uma publieditorial.</p>
-      <p class="comp">Banner de matéria + Retângulo de matéria + Retângulo + Publieditorial 1 publicação + Banner do arquivo</p>
-      <p class="preco">R$ 6.250,00<em>por mês</em></p>
-    </div>
-    <div class="carta">
-      <span class="num">Pacote</span>
-      <b class="nome">Semana</b>
-      <p>Assina o Resumo Semanal e aparece dentro de todas as matérias.</p>
-      <p class="comp">Resumo Semanal + Banner de matéria + Banner de editoria</p>
-      <p class="preco">R$ 6.250,00<em>por mês</em></p>
-    </div>
-    <div class="carta">
-      <span class="num">Pacote</span>
-      <b class="nome">Região</b>
-      <p>Foco em quem pesquisa dado da região: corretor, construtora e investidor.</p>
-      <p class="comp">Billboard Raio-X + Billboard + Retângulo</p>
-      <p class="preco">R$ 6.250,00<em>por mês</em></p>
-    </div>
-    <div class="carta">
-      <span class="num">Pacote</span>
-      <b class="nome">Conteúdo</b>
-      <p>Cinco publieditoriais no mês, mais presença fixa em matéria e rodapé.</p>
-      <p class="comp">Publieditorial 5 publicações + Retângulo de matéria + Retângulo + Selo de apoio</p>
-      <p class="preco">R$ 6.250,00<em>por mês</em></p>
-    </div>
   </div>
 
   <h2><svg class="icone" aria-hidden="true"><use href="#i-sol"></use></svg><span>Cotas fechadas</span></h2>
   <p>Para quem quer o site inteiro, ou a temporada inteira.</p>
-  <div class="tabela-rolagem">
+  <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-cotas">
     <table class="preco">
-      <caption class="so-leitor">Cotas fechadas e preço</caption>
+      <caption id="cap-cotas" class="so-leitor">Cotas fechadas e preço</caption>
       <thead><tr><th scope="col">Cota</th><th scope="col">O que inclui</th><th scope="col">Valor</th></tr></thead>
       <tbody>
-      <tr><th scope="row">Take-over da Home</th><td>Todos os espaços da página inicial, com exclusividade no dia</td><td class="n">R$ 8.500,00</td></tr>
-      <tr><th scope="row">Cota Master</th><td>Todos os espaços do site, mais Resumo Semanal e 2 publieditoriais por mês</td><td class="n">R$ 14.500,00</td></tr>
-      <tr><th scope="row">Cota Verão</th><td>Cota Master de dezembro a março, com 4 meses fechados</td><td class="n">R$ 52.000,00</td></tr>
+      <tr><th scope="row">Página inicial fechada</th><td>Super Banner, Billboard, Retângulo da home e Billboard do Raio-X, mais um publieditorial. Nenhum outro anunciante na home</td><td class="n">R$ 8.500,00</td></tr>
+      <tr><th scope="row">Cota Master</th><td>A página inicial fechada, mais banner e retângulo em todas as matérias, o Resumo Semanal assinado e dois publieditoriais</td><td class="n">R$ 14.500,00</td></tr>
+      <tr><th scope="row">Cota Verão</th><td>A Cota Master de dezembro a março, os quatro meses da temporada fechados de uma vez</td><td class="n">R$ 55.000,00</td></tr>
       </tbody>
     </table>
   </div>
 
-  <h2><svg class="icone" aria-hidden="true"><use href="#i-escudo"></use></svg><span>O que está incluído em qualquer contratação</span></h2>
-  <ul>
-    <li><strong>Arte por nossa conta</strong>, se você não tiver. Enviamos para aprovação antes de publicar.</li>
-    <li><strong>Relatório mensal</strong> de visualizações e cliques, direto do Google Analytics.</li>
-    <li><strong>Troca de arte</strong> sem custo, até duas vezes por mês.</li>
-    <li><strong>Área separada</strong> da cobertura editorial, com identificação clara.</li>
-  </ul>
-
-  <div class="destaque">
-    <strong>O que a gente não faz.</strong> Não publicamos anúncio disfarçado de notícia. Conteúdo pago sempre leva selo e o nome de quem pagou. Não vendemos espaço para conteúdo eleitoral, nem para produto que dependa de promessa que não dá para checar.
+  <h2><svg class="icone" aria-hidden="true"><use href="#i-escudo"></use></svg><span>Incluído em qualquer contratação</span></h2>
+  <div class="dados">
+    <div class="d"><svg class="icone" aria-hidden="true"><use href="#i-livro"></use></svg><b>Uma matéria por mês</b><small>A partir de R$ 2.500,00 mensais. Escrita pela nossa redação, sobre o seu negócio ou sobre um assunto que interessa a você.</small></div>
+    <div class="d"><svg class="icone" aria-hidden="true"><use href="#i-relogio"></use></svg><b>Troca de arte</b><small>Sem custo, até duas vezes por mês.</small></div>
+    <div class="d"><svg class="icone" aria-hidden="true"><use href="#i-balanca"></use></svg><b>Área separada</b><small>Fora da cobertura editorial, sempre com identificação clara.</small></div>
+    <div class="d"><svg class="icone" aria-hidden="true"><use href="#i-escudo"></use></svg><b>Um espaço, um dono</b><small>Enquanto o espaço for seu, não é de mais ninguém.</small></div>
   </div>
 
   <h2><svg class="icone" aria-hidden="true"><use href="#i-carta"></use></svg><span>Falar com a gente</span></h2>
   <p>Escreva para <a href="mailto:vl7producoes@gmail.com">vl7producoes@gmail.com</a> dizendo qual espaço interessa e por quanto tempo. Respondemos com a proposta e a arte de exemplo.</p>
-  <p class="fonte">Santa Informa &middot; CNPJ 51.087.731/0001-57 &middot; Itapema, Santa Catarina. Valores em reais, por mês, sem reajuste durante a vigência do contrato. Tabela sujeita a alteração mediante aviso prévio.</p>
+  <p class="fonte">Santa Informa &middot; CNPJ 51.087.731/0001-57 &middot; Itapema, Santa Catarina. Valores em reais, por mês, sem reajuste durante a vigência do contrato. Todo preço é múltiplo de R$ 250, e nenhuma opção custa menos de R$ 1.000,00 por mês. Tabela sujeita a alteração mediante aviso prévio.</p>
 
 </div>
 </main>
