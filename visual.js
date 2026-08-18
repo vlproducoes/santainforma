@@ -261,3 +261,34 @@ document.addEventListener('DOMContentLoaded', function () {
     })(cenas[i]);
   }
 });
+
+/* PUBLICIDADE
+   O AdSense marca o <ins> com data-ad-status quando decide o que fazer:
+   "filled" quando serviu anuncio, "unfilled" quando nao tinha o que servir.
+   Antes da conta ser aprovada ele nao marca nada. O rotulo "Publicidade" so
+   faz sentido quando ha anuncio, entao ele espera esse sinal.
+   Sem JS o rotulo nao aparece, e o anuncio aparece do mesmo jeito: o
+   conteudo nunca depende do efeito. */
+document.addEventListener('DOMContentLoaded', function () {
+  var blocos = document.querySelectorAll('.pub-google');
+  if (!blocos.length) return;
+
+  function conferir() {
+    var pendentes = 0;
+    for (var i = 0; i < blocos.length; i++) {
+      var ins = blocos[i].querySelector('ins.adsbygoogle');
+      if (!ins) continue;
+      var st = ins.getAttribute('data-ad-status');
+      if (st === 'filled') blocos[i].classList.add('tem-anuncio');
+      else if (st !== 'unfilled') pendentes++;
+    }
+    return pendentes;
+  }
+
+  if (!conferir()) return;
+  /* o anuncio chega depois do carregamento: olha de novo por 10 segundos */
+  var voltas = 0;
+  var relogio = setInterval(function () {
+    if (!conferir() || ++voltas > 20) clearInterval(relogio);
+  }, 500);
+});
