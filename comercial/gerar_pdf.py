@@ -56,10 +56,8 @@ h2{{break-after:avoid}}
 table{{break-inside:avoid}}
 thead{{display:table-header-group}}
 tr{{break-inside:avoid}}
-.box,.aviso,.pe,.duas{{break-inside:avoid}}
+.box,.pe,.duas{{break-inside:avoid}}
 p,li{{orphans:2;widows:2}}
-.aviso{{border-left:2.4pt solid #FFB627;background:#F1F5F3;padding:3.2mm 4mm;margin:3mm 0;font-size:8.6pt;color:#0A1F28}}
-.aviso b{{color:#11485B}}
 </style></head><body>
 
 <div class="capa">
@@ -105,10 +103,6 @@ p,li{{orphans:2;widows:2}}
 
 <div class="box">
   <b>Por que este portal.</b> O Santa Informa cobre Itapema e a Costa Esmeralda com apuração em fonte oficial, foto do próprio fato e um formato de leitura que é só nosso: cada matéria tem versão de 30 segundos, versão completa e três colunistas com olhares diferentes sobre o mesmo assunto. Quem entra fica mais tempo, porque tem mais de um jeito de ler.
-</div>
-
-<div class="aviso">
-  <b>Espaço reservado para dados de audiência.</b> Este portal instalou medição em 10 de agosto de 2026 e ainda não tem série histórica suficiente para publicar número de visualizações. Assim que houver três meses de dados, esta área trará o número real, com a fonte. Preferimos deixar o campo em branco a colocar estimativa.
 </div>
 
 <div class="pe">
