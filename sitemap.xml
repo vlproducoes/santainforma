@@ -411,6 +411,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://santainforma.com.br/noticias-9.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
   <url>
     <loc>https://santainforma.com.br/materia-46-concessoes-parque-capivaras-mirante.html</loc>
     <lastmod>2026-08-18</lastmod>
@@ -423,6 +430,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-49-meia-praia-agosto-sem-inicio.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://santainforma.com.br/materia-48-parajasc-ouro-eliezer-itapema.html</loc>
     <lastmod>2026-08-18</lastmod>
