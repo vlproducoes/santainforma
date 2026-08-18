@@ -156,6 +156,15 @@ table.preco tbody tr:nth-child(even){background:var(--espuma)}
 .formatos{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:center;margin:38px 0}
 .formatos .anuncio{margin:0}
 
+/* PUBLICIDADE GOOGLE, so em materia. E outro produto, com outra cara:
+   sem moldura tracejada, rotulado, e com altura reservada para o texto
+   nao pular quando o anuncio carrega. Nao confundir com .anuncio, que e
+   o inventario proprio da tabela de precos. */
+.pub-google{margin:34px auto;max-width:728px;text-align:center}
+.pub-google .pub-rotulo{display:block;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--suave);margin-bottom:6px}
+.pub-google .adsbygoogle{min-height:90px}
+@media(max-width:760px){.pub-google .adsbygoogle{min-height:100px}}
+
 /* Formato baixo nao cabe com quatro linhas de texto em pe: o rotulo e o link
    saiam cortados pelo overflow. Deitado, cabe com folga dentro dos 90px. */
 .a-faixa,.a-selo{flex-flow:row wrap;gap:14px;padding:6px 14px}
