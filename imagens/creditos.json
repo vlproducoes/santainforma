@@ -679,5 +679,41 @@
     "baixada_em": "2026-08-18",
     "usada_em": "materia-49-meia-praia-agosto-sem-inicio.html",
     "observacao": "Mostra a orla verticalizada de Itapema com a faixa de areia estreita entre a agua e o primeiro anel de edificios, que e o objeto da obra. Pessoas aparecem em escala de multidao, nenhuma identificavel, sem crianca em destaque. Conferido ampliando a faixa."
+  },
+  "bafometro-passivo-blitz.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Agência Brasil",
+    "autor": "Tânia Rêgo",
+    "ano": 2019,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://imagens.ebc.com.br/nhBRKzVpnviwqxg5lQhHnHDf46U=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/vac_abr_0890240719rj.jpg?itok=CQgMisKY",
+    "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-08/contran-aprova-novas-regras-para-fiscalizacao-da-lei-seca",
+    "dimensao_original": "1170x700",
+    "baixada_em": "2026-08-18"
+  },
+  "cras-itapema-fachada.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2025,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2025/11/cras-1-1024x768.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/assistencia-social-realiza-acao-especial-para-cadastro-unico-voltado-a-habitacao-nesta-sexta-feira/",
+    "dimensao_original": "1024x768",
+    "baixada_em": "2026-08-18"
+  },
+  "ilustracao-m52.jpg": {
+    "origem": "ilustracao da marca",
+    "orgao": null,
+    "autor": "Santa Informa",
+    "ano": 2026,
+    "licenca": "arte propria do portal",
+    "uso": "ilustracao",
+    "url_original": null,
+    "pagina_da_fonte": null,
+    "dimensao_original": "1600x900",
+    "baixada_em": "2026-08-18"
   }
 }

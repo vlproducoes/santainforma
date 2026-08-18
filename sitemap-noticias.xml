@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-52-desfile-civico-7-setembro-inscricao.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-18T15:40:00-03:00</news:publication_date>
+      <news:title>Inscrição para o Desfile de 7 de Setembro em Itapema vai de 19 a 25 de agosto, só por e-mail</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-51-cadunico-habitacao-cras-itapema.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-18T15:25:00-03:00</news:publication_date>
+      <news:title>Itapema abre mutirão de CadÚnico só para quem quer entrar no Cadastro Habitacional</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-50-lei-seca-contran-triagem-reteste.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-18T15:10:00-03:00</news:publication_date>
+      <news:title>Contran muda o passo a passo da blitz da Lei Seca, com triagem por teste passivo e reteste no bafômetro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-49-meia-praia-agosto-sem-inicio.html</loc>
     <news:news>
       <news:publication>
