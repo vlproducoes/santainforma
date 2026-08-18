@@ -10,7 +10,7 @@ a procedencia de toda imagem do site ficar num lugar so.
 import json, os, re, subprocess, sys
 from PIL import Image, ImageOps
 
-BASE = '/Users/viniciusdelego/Documents/santainforma'
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Santa Informa/1.0'
 
 
