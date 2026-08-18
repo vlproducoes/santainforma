@@ -42,14 +42,30 @@ topo com legenda e crédito, "Entenda o assunto", box "O que ainda está em
 aberto", lista "Os números que importam", os três colunistas (Clara, Seu
 Prudêncio e Caco), fontes linkadas, o bloco .pub-google e os espaços .anuncio.
 
-## 2. Procure pauta nas fontes oficiais
-Nesta ordem de prioridade:
-1. Prefeitura de Itapema (itapema.sc.gov.br) e Câmara de Itapema
-2. Governo de SC, corpos oficiais estaduais, MPSC, IMA
-3. Agência Brasil / EBC para pauta nacional que converse com o leitor daqui
+## 2. Procure pauta nos quatro níveis de abrangência
 
-Compare com o que já está publicado: liste os títulos das matérias existentes
-antes de decidir, para não repetir assunto já coberto.
+O Santa Informa cobre QUATRO níveis, e todos importam. Não vire um boletim só
+da Prefeitura. A cada execução, olhe os quatro antes de decidir:
+
+1. MUNICIPAL (Itapema). Prefeitura (itapema.sc.gov.br) e Câmara de Vereadores.
+   É o coração do portal.
+2. REGIONAL (Costa Esmeralda e litoral). Porto Belo, Bombinhas, Balneário
+   Camboriú, Tijucas, Itajaí, Navegantes, e o Litoral Norte. Prefeituras
+   vizinhas, obras que cruzam municípios, BR-101, turismo e temporada.
+3. ESTADUAL (Santa Catarina). Governo de SC, Assembleia, MPSC, IMA, Defesa
+   Civil, Polícia Militar, órgãos de saúde e educação do estado.
+4. NACIONAL (Brasil). Agência Brasil e EBC. Só entra quando conversa com o
+   leitor daqui: imposto que muda a vida do comerciante, juros, programa
+   habitacional, regra de turismo, clima. Nunca notícia nacional solta.
+
+A mistura publicada até aqui é de cerca de 63% municipal, 14% regional, 10%
+estadual e 12% nacional. Use isso como alvo, não como regra rígida. Na prática:
+se as últimas execuções só publicaram Itapema, dê preferência a regional,
+estadual ou nacional nesta. Se a cidade tiver fato forte, ela vem primeiro.
+
+Antes de decidir, liste os títulos e os chapéus de TODAS as matérias já
+publicadas no repositório. Isso serve para duas coisas: não repetir assunto já
+coberto, e ver qual nível de abrangência está em falta.
 
 ## 3. Decida se publica, e quantas
 Publique de zero a três matérias por execução, conforme houver fato novo real.
