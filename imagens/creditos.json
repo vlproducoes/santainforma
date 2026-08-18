@@ -630,5 +630,41 @@
     "id_pexels": 5835019,
     "termo_de_busca": "small shop owner cash register receipt counter",
     "baixada_em": "2026-08-17"
+  },
+  "mirante-encanto-concessao.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/Mirante-do-Encanto6-1.jpg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-abre-concessoes-para-revitalizacao-do-parque-das-capivaras-e-do-mirante-do-encanto/",
+    "dimensao_original": "1280x720",
+    "baixada_em": "2026-08-18"
+  },
+  "multivacinacao-ubs-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/06/vacinacao_gripe_servidores-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/dia-d-de-multivacinacao-tera-ubs-de-itapema-abertas-neste-sabado/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-08-18"
+  },
+  "parajasc-ouro-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/Itapema_Parajasc-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-abre-parajasc-2026-com-ouro/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-08-18"
   }
 }
