@@ -5,33 +5,100 @@ Rotina agendada que roda duas vezes por dia, às 6h e às 18h de Brasília
 
 Para criar: `/schedule` e cole o bloco de prompt abaixo.
 Para conferir depois: `/schedule` e peça a lista.
-Para desligar: https://claude.ai/code/routines
+Para editar ou desligar: https://claude.ai/code/routines
+
+**Este arquivo é a cópia de referência.** O que dispara de verdade é o texto
+salvo na caixa **Instructions** da rotina, em claude.ai/code/routines. Mudar
+aqui não muda lá. Sempre que este arquivo for alterado, cole o bloco novo na
+caixa também, senão os dois ficam contando histórias diferentes.
 
 ## Antes de criar: conectar o GitHub
 
 O agente roda NA NUVEM, não nesta máquina. Ele recebe um checkout do
-repositório, então a conta do GitHub precisa estar conectada ao Claude,
-senão a criação é recusada com erro 401. Rode `/web-setup` no Claude Code,
-ou instale o app do Claude no repositório:
-https://claude.ai/code/onboarding?magic=github-app-setup
+repositório e precisa conseguir escrever nele.
 
-## Dois limites da nuvem, já embutidos no prompt
+**Instale o app do Claude no repositório:** https://github.com/apps/claude,
+botão **Configure**, conta `vlproducoes`, e marque `santainforma` em
+Repository access.
 
-1. **Sem Pexels.** O `.env` fica fora do Git, então a chave da API não existe
-   na nuvem e o `buscar-imagem.py` não roda lá. O agente usa foto oficial
-   (`foto-oficial.py`, que não precisa de chave) ou a ilustração SVG da marca,
-   que são as duas melhores opções da Constituição de qualquer jeito.
-2. **Sem caminho local.** Nada de `/Users/...` no prompt: o agente trabalha na
-   raiz do checkout.
+Isso é o que dá **escrita**. Testado em 18 de agosto de 2026: só com a conta
+conectada, sem o app instalado no repositório, a sessão clona e lê normalmente
+mas todo `git push` volta 403, em `main` e até em branch `claude/`. A API
+responde `Resource not accessible by integration`. O sintoma engana, porque a
+conta aparece com `admin` e `push` no repositório: quem está sem permissão é a
+credencial da sessão, não você.
+
+## Configuração do ambiente da nuvem
+
+Em claude.ai/code/routines, abra a rotina, lápis para editar, clique no ícone
+de nuvem do ambiente e depois na engrenagem. No diálogo **Update cloud
+environment**:
+
+**Network access:** mude para **Custom**, marque **Also include default list of
+common package managers** e ponha em **Allowed domains**:
+
+```
+*.gov.br
+*.leg.br
+*.jus.br
+*.mp.br
+*.ebc.com.br
+santainforma.com.br
+*.santainforma.com.br
+api.pexels.com
+images.pexels.com
+*.pexels.com
+ndmais.com.br
+*.ndmais.com.br
+nsctotal.com.br
+*.nsctotal.com.br
+jornalrazao.com
+*.jornalrazao.com
+visornoticias.com.br
+*.visornoticias.com.br
+```
+
+**Environment variables:**
+
+```
+PEXELS_API_KEY=a_chave_real
+```
+
+**Setup script:**
+
+```bash
+pip install --quiet pillow
+```
+
+Sem o Pillow nenhuma imagem é gerada. Sem a chave, o Pexels sai do jogo e
+sobram foto oficial e ilustração SVG. A mudança só vale a partir da execução
+seguinte.
+
+Depois de mexer em qualquer um desses campos, confira com:
+
+```bash
+python3 ferramentas/checa-ambiente.py   # as três configurações acima
+python3 ferramentas/ensaio-geral.py     # o ciclo inteiro, sem publicar nada
+```
+
+Saindo 0 nos dois, o ciclo está liberado.
+
+**Duas fontes que o painel não resolve.** `portobelo.sc.gov.br` e
+`bombinhas.sc.gov.br` devolvem 403 para leitura automatizada, mesmo com o
+domínio liberado e com User-Agent de navegador. É recusa do servidor delas.
+Para essas duas, use busca aberta.
 
 ---
 
 ```
-Crie um agente agendado chamado "Santa Informa · ciclo de notícias" que roda duas
-vezes por dia, às 6h e às 18h no horário de Brasília, no diretório
-/Users/viniciusdelego/Documents/santainforma.
+Você é a redação do Santa Informa (santainforma.com.br), portal de notícias de
+Itapema e da Costa Esmeralda, em Santa Catarina. Este é o ciclo automático de
+notícias. Faça exatamente o que está abaixo, nesta ordem.
 
-A cada execução, faça exatamente isto, nesta ordem:
+## 0. Confira o ambiente antes de começar
+Rode `python3 ferramentas/checa-ambiente.py`. Ele diz se as fontes abrem, se a
+chave do Pexels está no ambiente e se o Pillow está instalado. Se reprovar,
+siga assim mesmo com o que der para fazer e diga no relatório o que faltou.
 
 ## 1. Leia as regras antes de qualquer coisa
 Leia o CLAUDE.md do repositório. Ele manda. Em especial: nunca use travessão,
@@ -67,6 +134,10 @@ Antes de decidir, liste os títulos e os chapéus de TODAS as matérias já
 publicadas no repositório. Isso serve para duas coisas: não repetir assunto já
 coberto, e ver qual nível de abrangência está em falta.
 
+ABRA A PÁGINA DA FONTE. Resumo de busca não serve para conferir dado: ele
+mistura ano, troca horário e confunde matéria velha com nova. Se a página da
+fonte não abrir, o dado não está conferido, e sem dado conferido não se publica.
+
 ## 3. Decida se publica, e quantas
 Publique de zero a três matérias por execução, conforme houver fato novo real.
 
@@ -97,10 +168,14 @@ ilustração SVG da marca.
 - Foto com mais de 3 anos não ilustra mudança recente de paisagem. O ano vai no
   crédito, sempre.
 
-LIMITE DA NUVEM: o `.env` não existe lá, então `buscar-imagem.py` (Pexels)
-NÃO funciona. Use `python3 ferramentas/foto-oficial.py` para foto de
-divulgação, ou a ilustração SVG da marca, copiando o padrão das matérias 04
-e 12. As ferramentas usam Pillow; se faltar, `pip install pillow`.
+As três ferramentas funcionam na nuvem:
+- `python3 ferramentas/foto-oficial.py` para foto de divulgação oficial
+- `python3 ferramentas/buscar-imagem.py "termo" --listar` para o Pexels, que lê
+  a chave da variável PEXELS_API_KEY do ambiente
+- a ilustração SVG da marca, copiando o padrão das matérias 04 e 12
+
+Se o checa-ambiente.py tiver acusado falta de chave ou de Pillow, caia para a
+ilustração SVG e registre isso no relatório.
 Gere sempre as versões WebP e as miniaturas m<NN>-card.jpg e m<NN>-mini.jpg.
 
 ## 5. Publique
@@ -123,21 +198,15 @@ não publicar nada. Ele só aceita as últimas 48 horas: se não rodar, matéria
 vencida fica no arquivo e o Google acusa erro.
 
 ## 7. Confira antes de publicar
-Rode uma checagem que reprove o commit se algo falhar:
-- Toda página: title, meta description, canonical, Open Graph, o Analytics
-  G-PQKY68PE07 e link para anuncie.html
-- Exatamente um <h1> por página
-- Tags balanceadas (main, section, div, span, article, figure, ul, li, p, a,
-  table, time, ins, script)
-- Nenhum travessão no conteúdo
-- JSON-LD válido em todas, e com todos os campos acima
-- Todo <img> com width, height, loading e alt descritivo de verdade
-- Nenhum link interno quebrado
-- Nenhum data-agora dentro de span.quando (data de publicação é fixa, nunca
-  relógio)
-- Nenhum bloco .pub-google fora de página de matéria
-- estilo.css com chaves balanceadas
-- As imagens citadas no JSON-LD existem mesmo no disco
+Rode `python3 ferramentas/checa-site.py`. Ele reprova o commit se algo falhar, e
+cobre: title, meta description, canonical, Open Graph, o Analytics G-PQKY68PE07
+e link para anuncie.html em toda página; exatamente um <h1>; tags balanceadas;
+travessão no conteúdo; JSON-LD válido e completo; <img> com width, height,
+loading e alt descritivo de verdade; data-agora dentro de span.quando; bloco
+.pub-google fora de página de matéria; links internos quebrados; chaves do
+estilo.css; e se as imagens citadas no JSON-LD existem no disco.
+
+Saindo diferente de 0, conserte antes de commitar. Não commite site reprovado.
 
 CUIDADO CONHECIDO: nunca edite HTML ou CSS com regex de regra inteira nem com
 `.*?` entre duas âncoras. Isso já quebrou este site duas vezes, apagando corpo de
@@ -164,10 +233,11 @@ ela e que o sitemap-noticias.xml no ar traz as matérias certas.
 Use grep -F em textos com R$ ou outros caracteres especiais.
 
 ## 11. Relate
-Ao fim, diga em poucas linhas: quantas matérias saíram e quais, ou que não havia
-pauta; quantas entradas ficaram no sitemap de notícias; e qualquer coisa que
-tenha ficado pendente ou duvidosa. Se você tomou alguma decisão editorial
-difícil (recusou uma pauta, rejeitou uma foto), diga qual e por quê.
+Ao fim, diga em poucas linhas: quantas matérias saíram e quais, com o nível de
+abrangência de cada uma; ou que não havia pauta; quantas entradas ficaram no
+sitemap de notícias; e qualquer coisa que tenha ficado pendente ou duvidosa. Se
+você tomou alguma decisão editorial difícil (recusou uma pauta, rejeitou uma
+foto), diga qual e por quê.
 ```
 
 ---
