@@ -104,6 +104,72 @@ nav a:hover,nav a:focus-visible,nav a.ativo{color:var(--sol);border-color:var(--
 .leituras-nota{font-size:.95rem;color:var(--suave);margin-bottom:16px}
 
 /* PATROCINIO */
+/* TABELA DE PRECOS
+   Tabela larga nao pode empurrar a pagina: rola dentro da propria caixa. */
+.tabela-rolagem{overflow-x:auto;margin:22px 0;border:1px solid #9F8A6A}
+table.preco{width:100%;border-collapse:collapse;font-size:.9rem;min-width:560px;background:#fff}
+table.preco th,table.preco td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--areia);vertical-align:top}
+table.preco thead th{font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--espuma);background:var(--mar);border-bottom:0;white-space:nowrap}
+table.preco tbody th{font-family:var(--display);font-weight:700;color:var(--breu);white-space:nowrap}
+table.preco td.n{font-family:var(--display);font-weight:800;color:var(--mar);white-space:nowrap;text-align:right}
+table.preco tbody tr:last-child th,table.preco tbody tr:last-child td{border-bottom:0}
+table.preco tbody tr:nth-child(even){background:var(--espuma)}
+
+/* CARTAS DE PACOTE */
+.cartas{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:1px;background:#9F8A6A;border:1px solid #9F8A6A;margin:22px 0}
+.cartas .carta{background:#fff;padding:22px 20px;display:flex;flex-direction:column}
+.cartas .carta .num{font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--suave)}
+.cartas .carta .nome{display:block;font-family:var(--display);font-size:1.3rem;font-weight:800;color:var(--breu);margin:4px 0 10px;letter-spacing:-.015em}
+.cartas .carta p{font-size:.9rem;margin:0 0 8px}
+.cartas .carta .comp{font-size:.8rem;color:var(--suave);line-height:1.45;flex:1}
+.cartas .carta .preco{font-family:var(--display);font-size:1.45rem;font-weight:800;color:var(--mar);margin:12px 0 0;letter-spacing:-.02em}
+.cartas .carta .preco em{display:block;font-style:normal;font-size:.72rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--suave);margin-top:2px}
+
+/* ESPACO PUBLICITARIO
+   A area e reservada por aspect-ratio, entao o anuncio nao empurra o texto
+   quando carrega. Cada formato declara o tamanho de desktop e o de celular,
+   e a troca acontece na mesma quebra do resto do site. */
+.anuncio{--w:970;--h:250;--wm:320;--hm:100;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  width:100%;max-width:calc(var(--w) * 1px);aspect-ratio:var(--w) / var(--h);
+  margin:38px auto;border:1px dashed #9F8A6A;background:#fff;
+  text-align:center;padding:14px;overflow:hidden}
+.anuncio img,.anuncio iframe,.anuncio video{width:100%;height:100%;object-fit:contain;max-width:none}
+/* A coluna de texto tem 712px uteis, menos que os 728 do formato. Onde a
+   janela permite, o banner sangra para fora dela e entrega o tamanho cheio.
+   Escopo em min-width de proposito: assim a regra do celular continua
+   valendo, e nao e atropelada por especificidade. */
+@media(min-width:1120px){
+  .texto .a-faixa,.texto .a-bill,.texto .a-super{
+    width:calc(var(--w) * 1px);max-width:none;
+    margin-left:calc((100% - var(--w) * 1px) / 2);
+    margin-right:calc((100% - var(--w) * 1px) / 2)}
+}
+.anuncio .rotulo{font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--suave)}
+.anuncio .medida{font-family:var(--display);font-size:1.15rem;font-weight:800;color:var(--mar);margin-top:6px;letter-spacing:-.01em}
+.anuncio .onde{font-size:.82rem;color:var(--suave);margin-top:4px;max-width:46ch;line-height:1.4}
+.anuncio .valor{font-family:var(--display);font-size:.78rem;font-weight:600;color:var(--breu);margin-top:8px}
+.anuncio .valor a{color:var(--mar)}
+/* formatos */
+.a-super{--w:970;--h:250;--wm:320;--hm:100}
+.a-bill{--w:970;--h:250;--wm:320;--hm:100}
+.a-faixa{--w:728;--h:90;--wm:320;--hm:100}
+.a-ret{--w:300;--h:250;--wm:300;--hm:250}
+.a-selo{--w:300;--h:90;--wm:300;--hm:90}
+/* dentro da faixa escura o tracejado claro some: inverte o contraste */
+.anuncio.escuro{background:transparent;border-color:rgba(255,255,255,.45)}
+.anuncio.escuro .rotulo{color:#CFE0E5}
+.anuncio.escuro .medida{color:var(--sol)}
+.anuncio.escuro .onde{color:#CFE0E5}
+.anuncio.escuro .valor a{color:var(--sol)}
+@media(max-width:760px){
+  .anuncio{max-width:calc(var(--wm) * 1px);aspect-ratio:var(--wm) / var(--hm);margin:30px auto}
+  .anuncio .medida{font-size:1rem}
+  .a-faixa .onde,.a-selo .onde{display:none}
+}
+/* em tela curta o formato alto rouba a leitura: some, e o texto segue */
+@media(max-height:520px) and (orientation:landscape){.a-ret{display:none}}
+
 .patro{border:1px dashed var(--areia);background:#fff;text-align:center;padding:24px 20px;margin:42px 0}
 .patro span{display:block;font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--suave)}
 .patro b{display:block;font-family:var(--display);font-size:1.05rem;font-weight:800;color:var(--mar);margin-top:7px}

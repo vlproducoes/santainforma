@@ -1,0 +1,28 @@
+
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h2>Santa Informa</h2>
+        <p style="max-width:44ch">Jornalismo regional do litoral catarinense. A pauta é de todo mundo. O jeito de contar é nosso.</p>
+      </div>
+      <div>
+        <h2>Navegue</h2>
+        <a href="index.html">Início</a><a href="regiao.html">Raio-X da Região</a><a href="horoscopo.html">Horóscopo &amp; Tarô</a><a href="index.html#semanal">Resumo Semanal</a>
+      </div>
+      <div>
+        <h2>Institucional</h2>
+        <a href="sobre.html">Quem somos</a><a href="sobre.html#linhas">Política editorial</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a><a href="mailto:vl7producoes@gmail.com">Anuncie conosco</a>
+      </div>
+    </div>
+    <div class="legal">
+      <b>Santa Informa</b> · CNPJ 51.087.731/0001-57 · Responsável: Lucas Esmerio Varela<br>
+      vl7producoes@gmail.com · Itapema, Santa Catarina<br><br>
+      Toda matéria parte de fontes públicas verificáveis, citadas no rodapé do texto.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
