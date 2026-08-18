@@ -2,7 +2,7 @@
 """Monta o PDF comercial a partir da mesma tabela que alimenta o site."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from tabela import ESPACOS, PATROCINIOS, EDITORIAIS, COTAS, MATERIA_A_PARTIR, PISO, tudo, diario, brl
+from tabela import ESPACOS, PATROCINIOS, EDITORIAIS, COTAS, MATERIA_A_PARTIR, tudo, diario, brl
 d = tudo()
 
 def esp():
@@ -108,7 +108,7 @@ p,li{{orphans:2;widows:2}}
 <div class="pe">
   <b>Santa Informa</b> &middot; CNPJ 51.087.731/0001-57 &middot; Responsável: Lucas Esmerio Varela &middot; Itapema, Santa Catarina<br>
   vl7producoes@gmail.com &middot; santainforma.com.br/anuncie.html<br>
-  Valores em reais, por mês, sem reajuste durante a vigência do contrato. Todo preço é múltiplo de R$ 250, então qualquer soma fecha em valor redondo, e nenhuma opção custa menos de {brl(PISO)} por mês. Tabela sujeita a alteração mediante aviso prévio.
+  Valores em reais, por mês, sem reajuste durante a vigência do contrato. Tabela sujeita a alteração mediante aviso prévio.
 </div>
 
 </body></html>'''

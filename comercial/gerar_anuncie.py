@@ -2,7 +2,7 @@
 """Monta a pagina anuncie.html a partir da tabela. Fonte unica de preco."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from tabela import ESPACOS, PATROCINIOS, EDITORIAIS, COTAS, MATERIA_A_PARTIR, PISO, tudo, diario, brl
+from tabela import ESPACOS, PATROCINIOS, EDITORIAIS, COTAS, MATERIA_A_PARTIR, tudo, diario, brl
 
 BASE = '/Users/viniciusdelego/Documents/santainforma'
 MODELO = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'modelo')
@@ -150,7 +150,7 @@ MAIN = f'''<main id="conteudo" class="com-capa">
 
   <h2><svg class="icone" aria-hidden="true"><use href="#i-carta"></use></svg><span>Falar com a gente</span></h2>
   <p>Escreva para <a href="mailto:vl7producoes@gmail.com">vl7producoes@gmail.com</a> dizendo qual espaço interessa e por quanto tempo. Respondemos com a proposta e a arte de exemplo.</p>
-  <p class="fonte">Santa Informa &middot; CNPJ 51.087.731/0001-57 &middot; Itapema, Santa Catarina. Valores em reais, por mês, sem reajuste durante a vigência do contrato. Todo preço é múltiplo de R$ 250, e nenhuma opção custa menos de {brl(PISO)} por mês. Tabela sujeita a alteração mediante aviso prévio.</p>
+  <p class="fonte">Santa Informa &middot; CNPJ 51.087.731/0001-57 &middot; Itapema, Santa Catarina. Valores em reais, por mês, sem reajuste durante a vigência do contrato. Tabela sujeita a alteração mediante aviso prévio.</p>
 
 </div>
 </main>'''
