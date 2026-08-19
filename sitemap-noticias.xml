@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-60-camara-itapema-cadastro-imovel-itbi-zr4</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-19T06:15:00-03:00</news:publication_date>
+      <news:title>Cadastro de imóvel, ITBI e alvará de baixa temporada: a pauta que a Câmara de Itapema levou ao plenário</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-59-curso-gratuito-ia-empreendedoras-5-mil-vagas</loc>
     <news:news>
       <news:publication>
