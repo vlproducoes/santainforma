@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://www.googletagmanager.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -84,12 +84,21 @@ if (document.prerendering) {
 </defs>
 </svg>
 
-<header>
+<header class="ceu">
   <div class="wrap">
     <div class="topo">
       <a href="index.html" aria-label="Santa Informa, página inicial">
       <svg width="298" height="60" viewBox="0 0 298 60" role="img" aria-label="Santa Informa">
-        <g class="sun"><g stroke="#FFB627" stroke-width="1.7" stroke-linecap="round"><line x1="34.1" y1="19.8" x2="37.9" y2="18.7"/><line x1="30.0" y1="13.4" x2="32.6" y2="10.4"/><line x1="22.0" y1="10.5" x2="22.0" y2="6.5"/><line x1="14.0" y1="13.4" x2="11.4" y2="10.4"/><line x1="9.9" y1="19.8" x2="6.1" y2="18.7"/></g><circle cx="22" cy="23" r="11" fill="#FFB627"/><rect x="0" y="23" width="45" height="16" fill="#0A1F28"/><rect x="0" y="23" width="45" height="1.6" fill="#FFB627"/><g fill="#8FB0B9"><rect x="2" y="27.4" width="41" height="1.4" opacity=".85"/><rect x="6" y="31.2" width="33" height="1.4" opacity=".6"/><rect x="10" y="35" width="25" height="1.4" opacity=".38"/></g></g>
+        <g class="sun">
+          <g class="astro">
+            <g class="raios" stroke="#FFB627" stroke-width="1.7" stroke-linecap="round"><line x1="34.1" y1="19.8" x2="37.9" y2="18.7"/><line x1="30.0" y1="13.4" x2="32.6" y2="10.4"/><line x1="22.0" y1="10.5" x2="22.0" y2="6.5"/><line x1="14.0" y1="13.4" x2="11.4" y2="10.4"/><line x1="9.9" y1="19.8" x2="6.1" y2="18.7"/></g>
+            <circle cx="22" cy="23" r="11" fill="#FFB627"/>
+          </g>
+          <path class="lua" d="M27 12.5A6.5 6.5 0 0 1 18.6 4.4a6.5 6.5 0 1 0 8.4 8.1z" fill="#F1F5F3"/>
+          <rect x="0" y="23" width="45" height="16" fill="#0A1F28"/>
+          <rect x="0" y="23" width="45" height="1.6" fill="#FFB627"/>
+          <g fill="#8FB0B9"><rect x="2" y="27.4" width="41" height="1.4" opacity=".85"/><rect x="6" y="31.2" width="33" height="1.4" opacity=".6"/><rect x="10" y="35" width="25" height="1.4" opacity=".38"/></g>
+        </g>
         <g class="wordmark">
           <text x="57" y="26" font-family="Archivo,sans-serif" font-size="25" font-weight="800" letter-spacing="-0.6" fill="#F1F5F3">SANTA</text>
           <text x="152" y="26" font-family="Archivo,sans-serif" font-size="25" font-weight="800" letter-spacing="-0.6" fill="#FFB627">INFORMA</text>
@@ -99,7 +108,7 @@ if (document.prerendering) {
       </a>
       <div class="meta">
         Itapema, Santa Catarina<br>
-        <b><time data-agora="completo" datetime="2026-08-05">Quarta, 5 de agosto de 2026</time></b>
+        <b><time data-agora="completo" datetime="2026-08-19">Quarta, 19 de agosto de 2026</time></b>
       </div>
     </div>
     <nav aria-label="Principal">
@@ -111,90 +120,147 @@ if (document.prerendering) {
         <li><a href="sobre.html">Quem somos</a></li>
       </ul>
     </nav>
-    <nav class="editorias" aria-label="Editorias">
-      <ul><li><a href="editoria-poder-publico.html"><svg class="icone" aria-hidden="true"><use href="#i-documento"></use></svg>Poder Público</a></li><li><a href="editoria-economia.html"><svg class="icone" aria-hidden="true"><use href="#i-moeda"></use></svg>Economia</a></li><li><a href="editoria-infraestrutura.html"><svg class="icone" aria-hidden="true"><use href="#i-obras"></use></svg>Infraestrutura</a></li><li><a href="editoria-santa-catarina.html"><svg class="icone" aria-hidden="true"><use href="#i-mapa"></use></svg>Santa Catarina</a></li><li><a href="editoria-turismo.html"><svg class="icone" aria-hidden="true"><use href="#i-bussola"></use></svg>Turismo</a></li><li><a href="editoria-meio-ambiente.html"><svg class="icone" aria-hidden="true"><use href="#i-escudo"></use></svg>Meio Ambiente</a></li></ul>
-    </nav>
   </div>
 </header>
 
+<nav class="editorias fixa" aria-label="Editorias">
+  <div class="wrap">
+    <ul><li><a href="editoria-poder-publico.html"><svg class="icone" aria-hidden="true"><use href="#i-documento"></use></svg>Poder Público</a></li><li><a href="editoria-economia.html"><svg class="icone" aria-hidden="true"><use href="#i-moeda"></use></svg>Economia</a></li><li><a href="editoria-infraestrutura.html"><svg class="icone" aria-hidden="true"><use href="#i-obras"></use></svg>Infraestrutura</a></li><li><a href="editoria-santa-catarina.html"><svg class="icone" aria-hidden="true"><use href="#i-mapa"></use></svg>Santa Catarina</a></li><li><a href="editoria-turismo.html"><svg class="icone" aria-hidden="true"><use href="#i-bussola"></use></svg>Turismo</a></li><li><a href="editoria-meio-ambiente.html"><svg class="icone" aria-hidden="true"><use href="#i-escudo"></use></svg>Meio Ambiente</a></li></ul>
+  </div>
+</nav>
+
+<div class="horizonte">
+  <div class="onda-camada tras" aria-hidden="true">
+    <svg viewBox="0 0 2400 44" preserveAspectRatio="none"><path d="M0 24 C50 32,100 32,150 24 S250 16,300 24 S400 32,450 24 S550 16,600 24 S700 32,750 24 S850 16,900 24 S1000 32,1050 24 S1150 16,1200 24 S1300 32,1350 24 S1450 16,1500 24 S1600 32,1650 24 S1750 16,1800 24 S1900 32,1950 24 S2050 16,2100 24 S2200 32,2250 24 S2350 16,2400 24 V44 H0 Z"/></svg>
+  </div>
+  <div class="onda-camada frente" aria-hidden="true">
+    <svg viewBox="0 0 2400 44" preserveAspectRatio="none"><path d="M0 28 C50 20,100 20,150 28 S250 36,300 28 S400 20,450 28 S550 36,600 28 S700 20,750 28 S850 36,900 28 S1000 20,1050 28 S1150 36,1200 28 S1300 20,1350 28 S1450 36,1500 28 S1600 20,1650 28 S1750 36,1800 28 S1900 20,1950 28 S2050 36,2100 28 S2200 20,2250 28 S2350 36,2400 28 V44 H0 Z"/></svg>
+  </div>
+  <button class="onda-pausa" type="button" aria-pressed="false">Pausar ondas</button>
+</div>
+
 <main id="conteudo" class="com-capa">
-
-<div class="onda" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0 40V18c120 0 180 14 300 14s180-22 300-22 180 18 300 18 180-12 300-12v24z"/></svg></div>
-
 <div class="wrap">
 
   <h1 class="so-leitor">Santa Informa, notícias de Itapema, Costa Esmeralda e Santa Catarina</h1>
-  <div class="carrossel" role="region" aria-roledescription="carrossel" aria-label="Destaques e últimas notícias">
-    <button class="carrossel-btn ant" type="button" aria-label="Destaque anterior"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" style="width:20px;height:20px"><path d="M15 5l-7 7 7 7"/></svg></button>
-    <div class="carrossel-trilho" role="group" tabindex="0" aria-label="Destaques, role para o lado">
-      <article class="slide"><img src="imagens/miniaturas/m59-card.jpg" width="720" height="405" loading="eager" fetchpriority="high" decoding="async" alt="Mulher de camisa branca e óculos sentada a uma mesa de madeira, sorrindo com uma caneta na mão, ao lado de um caderno aberto e de um notebook ligado.">
-        <div class="dentro"><span class="ed">Brasil</span><h3><a href="materia-59-curso-gratuito-ia-empreendedoras-5-mil-vagas.html">Curso gratuito de inteligência artificial abre 5 mil vagas para mulheres que tocam o próprio negócio</a></h3><span class="quando"><time datetime="2026-08-19T02:40:00-03:00">19 de agosto de 2026</time></span></div></article>
-      <article class="slide"><img src="imagens/miniaturas/m58-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Surfista deitado na prancha esperando a onda quebrar ao entardecer, em silhueta contra o céu alaranjado, com a parede da onda se formando ao lado.">
-        <div class="dentro"><span class="ed">Itapema</span><h3><a href="materia-58-surfe-itapema-podios-itapoa-brasileiro.html">Surfe de base de Itapema faz dobradinha em Itapoá e garante vaga no Brasileiro, em Navegantes</a></h3><span class="quando"><time datetime="2026-08-19T02:30:00-03:00">19 de agosto de 2026</time></span></div></article>
-      <article class="slide"><img src="imagens/miniaturas/m57-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Mãos de um atendente separando notas de real dentro da gaveta de uma caixa registradora, com cédulas de dois, cinco, dez e vinte reais organizadas nas divisórias.">
-        <div class="dentro"><span class="ed">Brasil</span><h3><a href="materia-57-abono-salarial-ultimo-lote-novembro-dezembro.html">Último lote do abono salarial começou a cair para quem nasceu em novembro e dezembro</a></h3><span class="quando"><time datetime="2026-08-19T01:00:00-03:00">19 de agosto de 2026</time></span></div></article>
-      <article class="slide"><img src="imagens/miniaturas/m56-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Vereadores sentados à mesa do plenário da Câmara de Itapema, com microfones à frente e as bandeiras do município, do estado e do Brasil ao fundo.">
-        <div class="dentro"><span class="ed">Itapema</span><h3><a href="materia-56-palestra-obesidade-sem-mitos-camara.html">Câmara de Itapema recebe nesta quinta palestra gratuita sobre obesidade, com nutricionista e educador físico</a></h3><span class="quando"><time datetime="2026-08-19T00:55:00-03:00">19 de agosto de 2026</time></span></div></article>
-      <article class="slide"><img src="imagens/miniaturas/m55-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Nuvens carregadas e escuras de temporal ocupando todo o céu sobre o mar, com a arrebentação branca avançando sobre a areia escura da praia.">
-        <div class="dentro"><span class="ed">Santa Catarina</span><h3><a href="materia-55-temporais-granizo-quarta-quinta.html">Defesa Civil prevê temporal com granizo e rajada de vento em Santa Catarina na quarta e na quinta</a></h3><span class="quando"><time datetime="2026-08-19T00:25:00-03:00">19 de agosto de 2026</time></span></div></article>
-      <article class="slide"><img src="imagens/miniaturas/m54-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Integrantes da Banda Municipal de Itapema reunidos em quadra coberta para foto de grupo, com os troféus conquistados apoiados no chão à frente e bandeiras penduradas ao fundo.">
-        <div class="dentro"><span class="ed">Itapema</span><h3><a href="materia-54-banda-municipal-titulo-uniao-da-vitoria.html">Banda Municipal de Itapema é campeã em concurso no Paraná no ano em que completa 20 anos</a></h3><span class="quando"><time datetime="2026-08-19T00:20:00-03:00">19 de agosto de 2026</time></span></div></article>
+
+  <!-- PACOTE DE CAPA · ordem fixa: manchete (1), rio de últimas (6), sub-destaques (2).
+       Regra de rotação para o ciclo de notícias: matéria nova entra no topo do rio e a
+       mais antiga do rio sai. A manchete só troca quando a matéria nova tem interesse
+       público imediato maior (alerta, decisão, prazo); quem deixa a manchete vira
+       sub-destaque, quem deixa sub-destaque desce para o rio. -->
+  <div class="capa-grade">
+    <article class="manchete">
+      <span class="filete" aria-hidden="true"></span>
+      <span class="ed b">Santa Catarina · Clima</span>
+      <h2><a href="materia-55-temporais-granizo-quarta-quinta.html">Defesa Civil prevê temporal com granizo e rajada de vento na quarta e na quinta</a></h2>
+      <p class="linhafina">O aviso nº 149/2026 aponta temporal isolado com granizo e rajada entre quarta e quinta. Na quinta a instabilidade alcança todas as regiões do estado.</p>
+      <span class="meta-capa"><time datetime="2026-08-19T00:25:00-03:00">19 de agosto de 2026, 00h25</time></span>
+      <figure>
+        <img class="foto-tratada" src="imagens/miniaturas/m55-card.jpg" width="720" height="405" loading="eager" fetchpriority="high" decoding="async" alt="Nuvens carregadas e escuras de temporal ocupando todo o céu sobre o mar, com a arrebentação branca avançando sobre a areia escura da praia.">
+        <figcaption>Nuvens de temporal sobre o mar: o aviso da Defesa Civil vale para quarta e quinta em todo o estado.</figcaption>
+      </figure>
+    </article>
+
+    <aside class="rio" aria-label="Últimas notícias">
+      <h2>Últimas</h2>
+      <ol>
+        <li><time datetime="2026-08-19T01:00:00-03:00">19 ago · 01h00</time><a href="materia-57-abono-salarial-ultimo-lote-novembro-dezembro.html">Último lote do abono salarial começou a cair para quem nasceu em novembro e dezembro</a></li>
+        <li><time datetime="2026-08-19T00:55:00-03:00">19 ago · 00h55</time><a href="materia-56-palestra-obesidade-sem-mitos-camara.html">Câmara de Itapema recebe nesta quinta palestra gratuita sobre obesidade</a></li>
+        <li><time datetime="2026-08-19T00:15:00-03:00">19 ago · 00h15</time><a href="materia-53-professor-destaque-2026-inscricao.html">Professor Destaque abre inscrição nesta sexta em Itapema, e o prazo vai até 21 de setembro</a></li>
+        <li><time datetime="2026-08-18T14:20:00-03:00">18 ago · 14h20</time><a href="materia-49-meia-praia-agosto-sem-inicio.html">Alargamento da Meia Praia chega à segunda metade de agosto sem início anunciado</a></li>
+        <li><time datetime="2026-08-18T13:50:00-03:00">18 ago · 13h50</time><a href="materia-48-parajasc-ouro-eliezer-itapema.html">Itapema estreia no Parajasc com ouro e sai de 3 para 33 atletas em um ano</a></li>
+        <li><time datetime="2026-08-18T12:40:00-03:00">18 ago · 12h40</time><a href="materia-42-voucher-tea-aprovado-camara.html">Câmara aprova voucher para terapia de criança com autismo quando a rede pública não dá conta</a></li>
+      </ol>
+    </aside>
+
+    <div class="subs">
+      <article class="sub">
+        <span class="ed">Itapema · Esporte</span>
+        <h3 class="mare"><a href="materia-58-surfe-itapema-podios-itapoa-brasileiro.html">Surfe de base de Itapema faz dobradinha em Itapoá e garante vaga no Brasileiro, em Navegantes</a></h3>
+        <p>Dois primeiros lugares no Itapoá Surf Festival e um terceiro em Matinhos, que vale vaga no Brasileiro de Base de setembro.</p>
+      </article>
+      <article class="sub">
+        <span class="ed b">Brasil · Economia</span>
+        <h3 class="mare"><a href="materia-59-curso-gratuito-ia-empreendedoras-5-mil-vagas.html">Curso gratuito de inteligência artificial abre 5 mil vagas para mulheres que tocam o próprio negócio</a></h3>
+        <p>São 5 mil vagas, metade para mulheres negras, com aulas ao vivo a partir de 1º de setembro. No fim, 50 negócios recebem capital semente.</p>
+      </article>
     </div>
-    <button class="carrossel-btn pro" type="button" aria-label="Próximo destaque"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" style="width:20px;height:20px"><path d="M9 5l7 7-7 7"/></svg></button>
-    <div class="carrossel-pontos" role="group" aria-label="Escolher destaque"></div>
   </div>
 
   <div class="anuncio a-super">
     <span class="rotulo">Espaço disponível</span>
     <b class="medida">970 &times; 250 px</b>
-    <span class="onde">Super Banner, topo da página inicial, logo abaixo do carrossel. No celular, 320 &times; 100 px.</span>
+    <span class="onde">Super Banner, topo da página inicial, logo abaixo da capa. No celular, 320 &times; 100 px.</span>
     <span class="valor"><a href="anuncie.html">Ver tabela de preços</a></span>
   </div>
 
-  <div class="titulo"><h2><svg class="icone" aria-hidden="true"><use href="#i-mapa"></use></svg><span>Itapema e Costa Esmeralda</span></h2><em><time data-agora="data" datetime="2026-08-05">5 de agosto de 2026</time></em></div>
-  <div class="grade">
-    <article class="card">
-      <img class="capa" src="imagens/miniaturas/m59-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Mulher de camisa branca e óculos sentada a uma mesa de madeira, sorrindo com uma caneta na mão, ao lado de um caderno aberto e de um notebook ligado."><span class="ed b">Brasil &middot; Economia</span><h3><a href="materia-59-curso-gratuito-ia-empreendedoras-5-mil-vagas.html" style="color:inherit;text-decoration:none">Curso gratuito de inteligência artificial abre 5 mil vagas para mulheres que tocam o próprio negócio</a></h3><p>São 5 mil vagas, metade para mulheres negras, com aulas ao vivo a partir de 1º de setembro. No fim, 50 negócios recebem capital semente.</p><span class="quando"><time datetime="2026-08-19T02:40:00-03:00">19 de agosto de 2026</time></span></article>
-    <article class="card">
-      <img class="capa" src="imagens/miniaturas/m58-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Surfista deitado na prancha esperando a onda quebrar ao entardecer, em silhueta contra o céu alaranjado, com a parede da onda se formando ao lado."><span class="ed">Itapema &middot; Esporte</span><h3><a href="materia-58-surfe-itapema-podios-itapoa-brasileiro.html" style="color:inherit;text-decoration:none">Surfe de base de Itapema faz dobradinha em Itapoá e garante vaga no Brasileiro, em Navegantes</a></h3><p>Dois primeiros lugares no Itapoá Surf Festival e um terceiro em Matinhos, que vale vaga no Brasileiro de Base de setembro.</p><span class="quando"><time datetime="2026-08-19T02:30:00-03:00">19 de agosto de 2026</time></span></article>
-    <article class="card">
-      <img class="capa" src="imagens/miniaturas/m57-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Mãos de um atendente separando notas de real dentro da gaveta de uma caixa registradora, com cédulas de dois, cinco, dez e vinte reais organizadas nas divisórias."><span class="ed b">Brasil &middot; Trabalho</span><h3><a href="materia-57-abono-salarial-ultimo-lote-novembro-dezembro.html" style="color:inherit;text-decoration:none">Último lote do abono salarial começou a cair para quem nasceu em novembro e dezembro</a></h3><p>São R$ 5,2 bilhões para 4,1 milhões de trabalhadores, de R$ 136 a R$ 1.621. O prazo de saque vai até 30 de dezembro.</p><span class="quando"><time datetime="2026-08-19T01:00:00-03:00">19 de agosto de 2026</time></span></article>
-    <article class="card">
-      <img class="capa" src="imagens/miniaturas/m56-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Vereadores sentados à mesa do plenário da Câmara de Itapema, com microfones à frente e as bandeiras do município, do estado e do Brasil ao fundo."><span class="ed">Itapema &middot; Saúde</span><h3><a href="materia-56-palestra-obesidade-sem-mitos-camara.html" style="color:inherit;text-decoration:none">Câmara de Itapema recebe nesta quinta palestra gratuita sobre obesidade, com nutricionista e educador físico</a></h3><p>São três palestrantes e um momento de perguntas no fim, às 19h no Plenário. A entrada é livre e não há inscrição divulgada.</p><span class="quando"><time datetime="2026-08-19T00:55:00-03:00">19 de agosto de 2026</time></span></article>
-    <article class="card">
-      <img class="capa" src="imagens/miniaturas/m55-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Nuvens carregadas e escuras de temporal ocupando todo o céu sobre o mar, com a arrebentação branca avançando sobre a areia escura da praia."><span class="ed b">Santa Catarina · Clima</span><h3><a href="materia-55-temporais-granizo-quarta-quinta.html" style="color:inherit;text-decoration:none">Defesa Civil prevê temporal com granizo e rajada de vento em Santa Catarina na quarta e na quinta</a></h3><p>O aviso nº 149/2026 aponta temporal isolado com granizo e rajada entre quarta e quinta. Na quinta a instabilidade alcança todas as regiões do estado.</p><span class="quando"><time datetime="2026-08-19T00:25:00-03:00">19 de agosto de 2026</time></span></article>
-    <article class="card">
-      <img class="capa" src="imagens/miniaturas/m54-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Integrantes da Banda Municipal de Itapema reunidos em quadra coberta para foto de grupo, com os troféus conquistados apoiados no chão à frente e bandeiras penduradas ao fundo."><span class="ed">Itapema · Cultura</span><h3><a href="materia-54-banda-municipal-titulo-uniao-da-vitoria.html" style="color:inherit;text-decoration:none">Banda Municipal de Itapema é campeã em concurso no Paraná no ano em que completa 20 anos</a></h3><p>Primeiro lugar na categoria principal, mais três pódios em União da Vitória. O grupo completa 20 anos em 2026.</p><span class="quando"><time datetime="2026-08-19T00:20:00-03:00">19 de agosto de 2026</time></span></article>
-    <article class="card">
-      <img class="capa" src="imagens/miniaturas/m53-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Fachada da Secretaria Municipal de Educação de Itapema, prédio de dois andares com o nome em letras azuis no alto, grades escuras no pavimento superior e portões verdes na frente."><span class="ed">Itapema · Educação</span><h3><a href="materia-53-professor-destaque-2026-inscricao.html" style="color:inherit;text-decoration:none">Professor Destaque abre inscrição nesta sexta em Itapema, e o prazo vai até 21 de setembro</a></h3><p>A 7ª edição premia prática pedagógica feita este ano na rede municipal. A inscrição é só na própria escola e fecha em 21 de setembro.</p><span class="quando"><time datetime="2026-08-19T00:15:00-03:00">19 de agosto de 2026</time></span></article>
-      <article class="card">
-      <span class="ed">Manifesto</span>
-      <h3>Por que criamos um jornal que não quer dar furo</h3>
-      <p>Enquanto todo mundo corre atrás do exclusivo, a gente resolveu correr atrás de outra coisa: contar melhor o que já está na boca do povo. A lógica por trás dessa escolha.</p>
-      <span class="selo"><i>Leia</i> · <a href="sobre.html">Quem somos</a></span>
-    </article>
-      <article class="card">
-      <span class="ed">Manifesto</span>
-      <h3>Cinco maneiras de ler a mesma notícia</h3>
-      <p>Resumo de 30 segundos, matéria completa e três colunistas com opiniões diferentes sobre o mesmo fato. Como funciona o Modo de Leitura e por que ele existe.</p>
-      <span class="selo"><i>Leia</i> · <a href="sobre.html#modo">O formato</a></span>
-    </article>
-  </div>
+  <section class="secao">
+    <div class="titulo regua"><h2><svg class="icone" aria-hidden="true"><use href="#i-mapa"></use></svg><span>Itapema e Costa Esmeralda</span></h2><em><time data-agora="data" datetime="2026-08-19">19 de agosto de 2026</time></em></div>
+    <div class="linha-1">
+      <article class="lider-sec">
+        <figure><img class="foto-tratada" src="imagens/miniaturas/m54-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Integrantes da Banda Municipal de Itapema reunidos em quadra coberta para foto de grupo, com os troféus conquistados apoiados no chão à frente e bandeiras penduradas ao fundo."></figure>
+        <span class="ed">Itapema · Cultura</span>
+        <h3 class="mare"><a href="materia-54-banda-municipal-titulo-uniao-da-vitoria.html">Banda Municipal de Itapema é campeã em concurso no Paraná no ano em que completa 20 anos</a></h3>
+        <p>Primeiro lugar na categoria principal, mais três pódios em União da Vitória. O grupo completa 20 anos em 2026.</p>
+      </article>
+      <div class="pilha">
+        <article>
+          <span class="ed">Itapema · Segurança</span>
+          <h3 class="mare"><a href="materia-39-violencia-domestica-dias-de-jogo.html">Agressão doméstica sobe 28,9% em dia de jogo, e o dado chega na semana em que Itapema discute o assunto</a></h3>
+          <p>O número é nacional. A conversa, desta vez, é aqui.</p>
+        </article>
+        <article>
+          <span class="ed b">Itapema · Contas públicas</span>
+          <h3 class="mare"><a href="materia-37-tce-contas-2025-consulta-publica.html">Abriu o prazo para qualquer morador questionar as contas de Itapema de 2025</a></h3>
+          <p>A consulta é pública e o prazo é curto. O caminho está no site do TCE.</p>
+        </article>
+        <article>
+          <span class="ed">Itapema · Legislativo</span>
+          <h3 class="mare"><a href="materia-36-camara-governo-digital-lgpd.html">Câmara vota Governo Digital e regras de proteção de dados, no meio de uma pauta de 26 propostas</a></h3>
+          <p>A pauta é longa, mas dois projetos mudam a relação da prefeitura com o seu dado.</p>
+        </article>
+      </div>
+    </div>
+    <div class="linha-2">
+      <article class="card v2">
+        <figure><img class="capa" src="imagens/miniaturas/m34-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Campo coberto de geada ao amanhecer na Serra Catarinense, com cerca de madeira e árvores ao fundo."></figure>
+        <span class="ed b">Santa Catarina · Clima</span>
+        <h3 class="mare"><a href="materia-34-frio-geada-serra-catarinense.html">Geada na Serra, chuva no litoral: o frio volta a Santa Catarina</a></h3>
+        <p>A frente fria chega com força na serra e respinga no litoral. O que esperar dos próximos dias.</p>
+        <span class="quando"><time datetime="2026-08-16T09:00:00-03:00">16 de agosto de 2026</time></span>
+      </article>
+      <article class="card v2">
+        <figure><img class="capa" src="imagens/miniaturas/m31-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Pessoa pagando com celular por aproximação em maquininha, em balcão de comércio."></figure>
+        <span class="ed b">Economia · Turismo</span>
+        <h3 class="mare"><a href="materia-31-pix-internacional-turista-argentino.html">Banco Central estuda ligar o Pix ao exterior, e isso interessa a quem vende para turista argentino</a></h3>
+        <p>Num litoral onde 1 em cada 3 turistas vem de fora, pagamento internacional não é assunto distante.</p>
+        <span class="quando"><time datetime="2026-08-14T11:20:00-03:00">14 de agosto de 2026</time></span>
+      </article>
+      <article class="card v2">
+        <figure><img class="capa" src="imagens/miniaturas/m29-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Obra viária em andamento no litoral, com máquinas trabalhando e mar ao fundo."></figure>
+        <span class="ed">Litoral · Investimento</span>
+        <h3 class="mare"><a href="materia-29-empresarios-bancam-projetos-litoral.html">Empresários do litoral já colocaram R$ 17 milhões do próprio bolso em projeto de obra pública</a></h3>
+        <p>Porto Belo e Bombinhas estão na conta. Entenda como funciona esse modelo e quem responde pelo resultado.</p>
+        <span class="quando"><time datetime="2026-08-13T10:05:00-03:00">13 de agosto de 2026</time></span>
+      </article>
+    </div>
+  </section>
 
 </div>
 </main>
 
-<section class="escuro" id="semanal">
+<section class="escuro anoitecer" id="semanal">
   <div class="wrap">
     <div class="titulo"><h2><svg class="icone" aria-hidden="true"><use href="#i-relogio"></use></svg><span>Resumo Semanal</span></h2><em>O litoral em 7 blocos, toda semana</em></div>
     <div class="semana">
-      <div class="item"><span class="num">01</span><img class="mini" src="imagens/miniaturas/m59-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Mulher de camisa branca e óculos sentada a uma mesa de madeira, sorrindo com uma caneta na mão, ao lado de um caderno aberto e de um notebook ligado."><div><h3><a href="materia-59-curso-gratuito-ia-empreendedoras-5-mil-vagas.html">Curso gratuito de inteligência artificial abre 5 mil vagas para mulheres que tocam o próprio negócio</a></h3><small>Brasil &middot; Economia</small></div></div>
-      <div class="item"><span class="num">02</span><img class="mini" src="imagens/miniaturas/m58-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Surfista deitado na prancha esperando a onda quebrar ao entardecer, em silhueta contra o céu alaranjado, com a parede da onda se formando ao lado."><div><h3><a href="materia-58-surfe-itapema-podios-itapoa-brasileiro.html">Surfe de base de Itapema faz dobradinha em Itapoá e garante vaga no Brasileiro, em Navegantes</a></h3><small>Itapema &middot; Esporte</small></div></div>
-      <div class="item"><span class="num">03</span><img class="mini" src="imagens/miniaturas/m57-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Mãos de um atendente separando notas de real dentro da gaveta de uma caixa registradora, com cédulas de dois, cinco, dez e vinte reais organizadas nas divisórias."><div><h3><a href="materia-57-abono-salarial-ultimo-lote-novembro-dezembro.html">Último lote do abono salarial começou a cair para quem nasceu em novembro e dezembro</a></h3><small>Brasil &middot; Trabalho</small></div></div>
-      <div class="item"><span class="num">04</span><img class="mini" src="imagens/miniaturas/m56-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Vereadores sentados à mesa do plenário da Câmara de Itapema, com microfones à frente e as bandeiras do município, do estado e do Brasil ao fundo."><div><h3><a href="materia-56-palestra-obesidade-sem-mitos-camara.html">Câmara de Itapema recebe nesta quinta palestra gratuita sobre obesidade, com nutricionista e educador físico</a></h3><small>Itapema &middot; Saúde</small></div></div>
-      <div class="item"><span class="num">05</span><img class="mini" src="imagens/miniaturas/m55-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Nuvens carregadas e escuras de temporal ocupando todo o céu sobre o mar, com a arrebentação branca avançando sobre a areia escura da praia."><div><h3><a href="materia-55-temporais-granizo-quarta-quinta.html">Defesa Civil prevê temporal com granizo e rajada de vento em Santa Catarina na quarta e na quinta</a></h3><small>Santa Catarina · Clima</small></div></div>
-      <div class="item"><span class="num">06</span><img class="mini" src="imagens/miniaturas/m54-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Integrantes da Banda Municipal de Itapema reunidos em quadra coberta para foto de grupo, com os troféus conquistados apoiados no chão à frente e bandeiras penduradas ao fundo."><div><h3><a href="materia-54-banda-municipal-titulo-uniao-da-vitoria.html">Banda Municipal de Itapema é campeã em concurso no Paraná no ano em que completa 20 anos</a></h3><small>Itapema · Cultura</small></div></div>
-      <div class="item"><span class="num">07</span><img class="mini" src="imagens/miniaturas/m53-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Fachada da Secretaria Municipal de Educação de Itapema, prédio de dois andares com o nome em letras azuis no alto, grades escuras no pavimento superior e portões verdes na frente."><div><h3><a href="materia-53-professor-destaque-2026-inscricao.html">Professor Destaque abre inscrição nesta sexta em Itapema, e o prazo vai até 21 de setembro</a></h3><small>Itapema · Educação</small></div></div>
+      <div class="item"><span class="num" aria-hidden="true">01</span><img class="mini" src="imagens/miniaturas/m59-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Mulher de camisa branca e óculos sentada a uma mesa de madeira, sorrindo com uma caneta na mão, ao lado de um caderno aberto e de um notebook ligado."><div><h3><a href="materia-59-curso-gratuito-ia-empreendedoras-5-mil-vagas.html">Curso gratuito de inteligência artificial abre 5 mil vagas para mulheres que tocam o próprio negócio</a></h3><small>Brasil · Economia</small></div></div>
+      <div class="item"><span class="num" aria-hidden="true">02</span><img class="mini" src="imagens/miniaturas/m58-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Surfista deitado na prancha esperando a onda quebrar ao entardecer, em silhueta contra o céu alaranjado, com a parede da onda se formando ao lado."><div><h3><a href="materia-58-surfe-itapema-podios-itapoa-brasileiro.html">Surfe de base de Itapema faz dobradinha em Itapoá e garante vaga no Brasileiro, em Navegantes</a></h3><small>Itapema · Esporte</small></div></div>
+      <div class="item"><span class="num" aria-hidden="true">03</span><img class="mini" src="imagens/miniaturas/m57-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Mãos de um atendente separando notas de real dentro da gaveta de uma caixa registradora, com cédulas de dois, cinco, dez e vinte reais organizadas nas divisórias."><div><h3><a href="materia-57-abono-salarial-ultimo-lote-novembro-dezembro.html">Último lote do abono salarial começou a cair para quem nasceu em novembro e dezembro</a></h3><small>Brasil · Trabalho</small></div></div>
+      <div class="item"><span class="num" aria-hidden="true">04</span><img class="mini" src="imagens/miniaturas/m56-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Vereadores sentados à mesa do plenário da Câmara de Itapema, com microfones à frente e as bandeiras do município, do estado e do Brasil ao fundo."><div><h3><a href="materia-56-palestra-obesidade-sem-mitos-camara.html">Câmara de Itapema recebe nesta quinta palestra gratuita sobre obesidade, com nutricionista e educador físico</a></h3><small>Itapema · Saúde</small></div></div>
+      <div class="item"><span class="num" aria-hidden="true">05</span><img class="mini" src="imagens/miniaturas/m55-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Nuvens carregadas e escuras de temporal ocupando todo o céu sobre o mar, com a arrebentação branca avançando sobre a areia escura da praia."><div><h3><a href="materia-55-temporais-granizo-quarta-quinta.html">Defesa Civil prevê temporal com granizo e rajada de vento em Santa Catarina na quarta e na quinta</a></h3><small>Santa Catarina · Clima</small></div></div>
+      <div class="item"><span class="num" aria-hidden="true">06</span><img class="mini" src="imagens/miniaturas/m54-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Integrantes da Banda Municipal de Itapema reunidos em quadra coberta para foto de grupo, com os troféus conquistados apoiados no chão à frente e bandeiras penduradas ao fundo."><div><h3><a href="materia-54-banda-municipal-titulo-uniao-da-vitoria.html">Banda Municipal de Itapema é campeã em concurso no Paraná no ano em que completa 20 anos</a></h3><small>Itapema · Cultura</small></div></div>
+      <div class="item"><span class="num" aria-hidden="true">07</span><img class="mini" src="imagens/miniaturas/m53-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Fachada da Secretaria Municipal de Educação de Itapema, prédio de dois andares com o nome em letras azuis no alto, grades escuras no pavimento superior e portões verdes na frente."><div><h3><a href="materia-53-professor-destaque-2026-inscricao.html">Professor Destaque abre inscrição nesta sexta em Itapema, e o prazo vai até 21 de setembro</a></h3><small>Itapema · Educação</small></div></div>
     </div>
     <div class="anuncio a-ret escuro">
     <span class="rotulo">Espaço disponível</span>
@@ -206,23 +272,34 @@ if (document.prerendering) {
 </section>
 
 <section class="wrap" style="padding-bottom:56px">
-  <div class="titulo"><h2><svg class="icone" aria-hidden="true"><use href="#i-bussola"></use></svg><span>Ferramentas do litoral</span></h2><em>Motivo para voltar</em></div>
+  <div class="titulo regua"><h2><svg class="icone" aria-hidden="true"><use href="#i-bussola"></use></svg><span>Ferramentas do litoral</span></h2><em>Motivo para voltar</em></div>
   <div class="dados">
     <a href="regiao.html" class="d" style="text-decoration:none;color:inherit"><svg class="icone" aria-hidden="true"><use href="#i-mapa"></use></svg>
-      <i>Raio-X</i><b>Dados da nossa região</b><small>IDH, segurança, população e mercado imobiliário de SC até Itapema, com fonte em tudo.</small><em>Abrir página</em>
+      <i>Raio-X</i><b>Dados da nossa região</b><small>IDH, segurança, população e mercado imobiliário de SC até Itapema, com fonte em tudo.</small><em>Explorar os dados</em><span class="mare-d" aria-hidden="true"></span>
     </a>
     <a href="horoscopo.html" class="d" style="text-decoration:none;color:inherit"><svg class="icone" aria-hidden="true"><use href="#i-estrela"></use></svg>
-      <i>Signos</i><b>Horóscopo &amp; Tarô do Litoral</b><small>Sua carta do dia com três leituras diferentes. Entretenimento, do nosso jeito.</small><em>Abrir página</em>
+      <i>Signos</i><b>Horóscopo &amp; Tarô do Litoral</b><small>Sua carta do dia com três leituras diferentes. Entretenimento, do nosso jeito.</small><em>Tirar a carta do dia</em><span class="mare-d" aria-hidden="true"></span>
     </a>
     <a href="sobre.html" class="d" style="text-decoration:none;color:inherit"><svg class="icone" aria-hidden="true"><use href="#i-livro"></use></svg>
-      <i>Regras</i><b>Nossa política editorial</b><small>O que publicamos, o que recusamos e como corrigimos erro. Tudo aberto.</small><em>Abrir página</em>
+      <i>Regras</i><b>Nossa política editorial</b><small>O que publicamos, o que recusamos e como corrigimos erro. Tudo aberto.</small><em>Ler as regras</em><span class="mare-d" aria-hidden="true"></span>
     </a>
     <a href="regiao.html#projetos" class="d" style="text-decoration:none;color:inherit"><svg class="icone" aria-hidden="true"><use href="#i-obras"></use></svg>
-      <i>Obras</i><b>Projetos que mudam a cidade</b><small>O que está em execução, o que está no papel e o que ainda é conversa de mercado.</small><em>Abrir página</em>
+      <i>Obras</i><b>Projetos que mudam a cidade</b><small>O que está em execução, o que está no papel e o que ainda é conversa de mercado.</small><em>Acompanhar as obras</em><span class="mare-d" aria-hidden="true"></span>
     </a>
   </div>
 </section>
 
+<div class="institucional">
+  <div class="wrap">
+    <b>Manifesto</b>
+    <p>Por que criamos um jornal que não quer dar furo: a gente corre atrás de contar melhor o que já está na boca do povo. <a href="sobre.html">Quem somos</a></p>
+    <p>Cinco maneiras de ler a mesma notícia: resumo de 30 segundos, matéria completa e três colunistas. <a href="sobre.html#modo">Como funciona o Modo de Leitura</a></p>
+  </div>
+</div>
+
+<div class="onda-rodape" aria-hidden="true">
+  <svg viewBox="0 0 1200 34" preserveAspectRatio="none"><path d="M0 34V14c120 0 180 12 300 12s180-18 300-18 180 14 300 14 180-10 300-10v22z"/></svg>
+</div>
 <footer>
   <div class="wrap">
     <div class="fgrid">

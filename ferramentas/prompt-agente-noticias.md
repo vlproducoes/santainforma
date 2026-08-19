@@ -186,10 +186,22 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
   dateModified com hora e fuso (-03:00), author (Redação Santa Informa), image
   em URL absoluta, publisher e mainEntityOfPage
 - Inclua o bloco .pub-google antes de "Os números que importam"
-- Ligue nas listagens: carrossel e grade do index.html (o mais antigo sai), a
-  editoria certa, e as páginas noticias*.html (o arquivo é de 6 por página, e
-  incluir no topo empurra tudo; crie página nova se precisar, e acerte
-  paginação, títulos e o contador "página N de M")
+- Ligue nas listagens do index.html, que desde 19/08/2026 tem PACOTE DE CAPA
+  no lugar do carrossel. A ordem é fixa e está comentada no próprio arquivo:
+  manchete (1), rio de últimas (6 itens em .rio ol), sub-destaques (2 em .subs).
+  Regra de rotação: matéria nova entra no TOPO do rio (li com time "DD mmm ·
+  HHhMM" e link) e a mais antiga do rio sai. A manchete só troca quando a
+  matéria nova tem interesse público imediato maior (alerta em vigor, decisão,
+  prazo curto); quem deixa a manchete vira sub-destaque, quem deixa
+  sub-destaque desce para o rio. Ao trocar manchete ou sub, copie o bloco
+  existente e mantenha: classe .ed (Itapema) ou .ed b (Brasil/SC), alt
+  completo, width/height/loading, e a foto 3:2 da manchete com loading="eager"
+  fetchpriority="high". A seção "Itapema e Costa Esmeralda" (líder .lider-sec,
+  pilha de 3 e cards .card.v2) e o Resumo Semanal giram como antes: o mais
+  antigo sai. Nunca toque em .anuncio, .horizonte nem no cabeçalho.
+- Ligue também na editoria certa e nas páginas noticias*.html (o arquivo é de
+  6 por página, e incluir no topo empurra tudo; crie página nova se precisar,
+  e acerte paginação, títulos e o contador "página N de M")
 - Acrescente ao sitemap.xml
 
 ## 6. Regenere o sitemap de notícias SEMPRE

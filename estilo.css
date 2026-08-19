@@ -499,3 +499,222 @@ footer a:hover{color:var(--sol)}
   html,.carrossel-trilho{scroll-behavior:auto}
   .carrossel-pausa{display:none}
 }
+
+/* ============================================================
+   CAPA v2 · redesign aprovado pelo editor em 19/08/2026
+   Regras deste bloco sao ADITIVAS: nenhum seletor acima muda.
+   Paleta: nenhum hex novo; toda cor derivada e color-mix das
+   variaveis da casa. Proposta completa na pasta proposta/.
+   ============================================================ */
+:root{
+  /* camada semantica: componente novo usa estes nomes, nunca hex.
+     Hoje valem o tema claro; o modo escuro da fase 2 so remapeia aqui. */
+  --fundo:var(--espuma);
+  --tinta:var(--breu);
+  --tinta-2:var(--suave);
+  --superficie:#fff;
+  --fio:1px;
+  --fio-cor:var(--areia);
+  --link:var(--mar);
+
+  /* papeis tipograficos fluidos */
+  --t-capa-lead:clamp(1.625rem,1.05rem + 2.31vw,2.75rem);
+  --t-secao:clamp(1.19rem,1.06rem + .51vw,1.44rem);
+  --t-card:clamp(1.0625rem,.95rem + .45vw,1.28rem);
+  --t-linhafina:clamp(1.0625rem,.97rem + .38vw,1.25rem);
+  --t-ui:clamp(.72rem,.68rem + .18vw,.81rem);
+  --t-rio:clamp(.92rem,.87rem + .2vw,1.02rem);
+
+  /* movimento: toda duracao e curva nova sai daqui */
+  --dur-toque:.15s;
+  --dur-troca:.3s;
+  --dur-chegada:.55s;
+  --curva-chegada:cubic-bezier(.2,.7,.3,1);
+  --curva-troca:cubic-bezier(.45,0,.2,1);
+
+  /* ceu por hora: o padrao e o breu de hoje; o JS so troca a classe */
+  --ceu-alto:var(--breu);
+  --ceu-baixo:var(--breu);
+  --astro-y:0px;
+}
+
+/* estados do ceu, escritos pelo visual.js conforme a hora de Brasilia */
+html.ceu-noite{--ceu-alto:var(--breu);--ceu-baixo:color-mix(in srgb,var(--breu) 85%,var(--mar) 15%)}
+html.ceu-amanhecer{--ceu-alto:color-mix(in srgb,var(--breu) 70%,var(--mar) 30%);--ceu-baixo:color-mix(in srgb,var(--coral) 55%,var(--sol) 45%);--astro-y:5px}
+html.ceu-dia{--ceu-alto:var(--mar);--ceu-baixo:color-mix(in srgb,var(--mar) 45%,var(--mar-claro) 55%)}
+html.ceu-entardecer{--ceu-alto:color-mix(in srgb,var(--breu) 75%,var(--coral) 25%);--ceu-baixo:color-mix(in srgb,var(--coral) 60%,var(--sol) 40%)}
+/* registrada, a variavel transiciona: a virada de ceu leva 1200ms.
+   Sem @property a troca e seca uma vez por minuto, imperceptivel. */
+@property --ceu-alto{syntax:'<color>';inherits:true;initial-value:#0A1F28}
+@property --ceu-baixo{syntax:'<color>';inherits:true;initial-value:#0A1F28}
+html{transition:--ceu-alto 1.2s,--ceu-baixo 1.2s}
+
+/* so o cabecalho da home veste o ceu; as outras paginas seguem no breu */
+header.ceu{background:var(--ceu-alto);transition:background 1.2s}
+.astro{transform:translateY(var(--astro-y));transition:transform 1.2s var(--curva-troca),opacity .9s}
+.lua{opacity:0;transition:opacity .9s}
+html.ceu-noite .astro .raios{opacity:0}
+html.ceu-noite .lua{opacity:1}
+
+/* barra de editorias que gruda no topo (so a home usa a variante .fixa) */
+.editorias.fixa{position:sticky;top:0;z-index:50;background:var(--ceu-alto);transition:background 1.2s;view-transition-name:editorias}
+.editorias.fixa::after{content:"";position:absolute;inset:auto 0 -14px 0;height:14px;background:linear-gradient(rgba(10,31,40,.28),transparent);opacity:0;pointer-events:none}
+@supports (animation-timeline:scroll()){
+  .editorias.fixa::after{animation:eleva linear both;animation-timeline:scroll(root);animation-range:80px 260px}
+}
+@keyframes eleva{to{opacity:1}}
+
+/* HORIZONTE: a luz do ceu termina aqui, longe do texto, e o mar deriva
+   em duas camadas. A onda e a propria pagina chegando: pinta com o fundo. */
+.horizonte{position:relative;height:clamp(48px,8vw,84px);background:linear-gradient(180deg,var(--ceu-alto),var(--ceu-baixo));overflow:hidden}
+.onda-camada{position:absolute;left:0;bottom:-1px;width:200%;height:44px}
+.onda-camada svg{display:block;width:100%;height:100%}
+.onda-camada path{fill:var(--fundo)}
+.onda-camada.tras{opacity:.45;animation:deriva 34s linear infinite}
+.onda-camada.tras path{fill:color-mix(in srgb,var(--fundo) 55%,transparent)}
+.onda-camada.frente{animation:deriva 26s linear infinite}
+@keyframes deriva{to{transform:translateX(-50%)}}
+.horizonte.pausada .onda-camada{animation-play-state:paused}
+.onda-pausa{position:absolute;right:14px;bottom:10px;z-index:2;border:1px solid rgba(255,255,255,.4);background:rgba(10,31,40,.35);color:var(--espuma);font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;border-radius:100px;padding:5px 11px;cursor:pointer}
+.onda-pausa:hover{border-color:var(--sol);color:var(--sol)}
+.onda-pausa:focus-visible{outline:2px solid var(--sol);outline-offset:2px}
+
+/* PACOTE DE CAPA: manchete dominante, rio de ultimas, sub-destaques */
+.capa-grade{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2.4vw,32px);row-gap:2rem}
+.manchete{grid-column:1/9;position:relative;display:flex;flex-direction:column;gap:.75rem}
+.filete{width:28px;height:3px;background:var(--sol);transform-origin:0 50%;animation:filete .45s var(--curva-chegada) both}
+@keyframes filete{from{transform:scaleX(0)}}
+.manchete .ed{font-size:var(--t-ui);letter-spacing:.13em;animation:surge .3s var(--curva-chegada) .05s both}
+@keyframes surge{from{opacity:0}}
+.manchete h2{font-family:var(--display);font-weight:800;font-size:var(--t-capa-lead);line-height:1.05;letter-spacing:-.03em;max-width:20ch;animation:sobe-suave .65s var(--curva-chegada) .12s both}
+@keyframes sobe-suave{from{opacity:0;transform:translateY(14px)}}
+.capa-grade .linhafina{font-family:var(--corpo);font-style:italic;font-weight:500;font-size:var(--t-linhafina);line-height:1.45;color:var(--tinta-2);max-width:52ch;margin-top:0;animation:sobe-suave .65s var(--curva-chegada) .26s both}
+.meta-capa{font-family:var(--display);font-size:var(--t-ui);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--tinta-2);animation:sobe-suave .65s var(--curva-chegada) .26s both}
+.manchete figure{margin:.5rem 0 0;overflow:hidden;animation:revela-foto .7s var(--curva-chegada) .2s both}
+@keyframes revela-foto{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
+.manchete figure img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--fio-cor);animation:foto-assenta .9s var(--curva-chegada) .2s both}
+@keyframes foto-assenta{from{transform:scale(1.03)}}
+.manchete figcaption{font-size:.92rem;color:var(--tinta-2);line-height:1.5;margin-top:.5rem}
+.foto-tratada{filter:saturate(.94) contrast(1.03)}
+.manchete h2 a{color:inherit;text-decoration:none}
+.manchete h2 a:hover{color:var(--link)}
+.manchete h2 a::after{content:"";position:absolute;inset:0;z-index:1}
+.manchete:has(h2 a:focus-visible){outline:2px solid var(--sol);outline-offset:3px}
+.manchete h2 a:focus-visible{outline:none}
+
+.rio{grid-column:9/13;border-left:var(--fio) solid var(--fio-cor);padding-left:clamp(16px,2vw,28px)}
+.rio h2{font-family:var(--display);font-size:var(--t-ui);font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--tinta-2);display:flex;align-items:center;gap:8px;margin-bottom:.5rem}
+.rio h2::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--coral)}
+.rio ol{list-style:none;margin:0;padding:0}
+.rio li{padding:13px 0;border-bottom:var(--fio) solid var(--fio-cor);animation:surge .5s var(--curva-chegada) both}
+.rio li:nth-child(1){animation-delay:.32s}.rio li:nth-child(2){animation-delay:.38s}
+.rio li:nth-child(3){animation-delay:.44s}.rio li:nth-child(4){animation-delay:.5s}
+.rio li:nth-child(5){animation-delay:.56s}.rio li:nth-child(6){animation-delay:.62s}
+.rio li:last-child{border-bottom:0}
+.rio time{display:block;font-family:var(--display);font-size:.76rem;font-weight:600;letter-spacing:.06em;color:var(--tinta-2);font-variant-numeric:tabular-nums;margin-bottom:3px}
+.rio a{font-family:var(--display);font-weight:600;font-size:var(--t-rio);line-height:1.35;color:var(--tinta);text-decoration:none;display:inline-block;padding:0}
+.rio a:hover{color:var(--link)}
+
+.subs{grid-column:1/9;display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,32px);border-top:var(--fio) solid var(--fio-cor);padding-top:1.5rem}
+.sub{position:relative}
+.sub+.sub{border-left:var(--fio) solid var(--fio-cor);padding-left:clamp(16px,2.4vw,32px)}
+.sub h3{font-family:var(--display);font-weight:800;font-size:var(--t-card);line-height:1.18;letter-spacing:-.015em;margin:7px 0 6px}
+.sub p{font-size:.96rem;color:var(--tinta-2)}
+.sub h3 a{color:inherit;text-decoration:none}
+.sub h3 a:hover{color:var(--link)}
+.sub h3 a::after{content:"";position:absolute;inset:0;z-index:1}
+.sub:has(a:focus-visible){outline:2px solid var(--sol);outline-offset:3px}
+.sub h3 a:focus-visible{outline:none}
+
+/* titulo de secao com regua dupla (scotch rule) */
+.titulo.regua{border-bottom:0;border-top:3px solid var(--tinta);padding-top:9px;padding-bottom:0;position:relative}
+.titulo.regua::before{content:"";position:absolute;top:5px;left:0;right:0;height:1px;background:var(--fio-cor)}
+.titulo.regua h2{font-size:var(--t-secao);text-transform:none;letter-spacing:-.01em}
+
+/* primeira linha assimetrica da secao: lider com foto + pilha so-texto */
+.linha-1{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2.4vw,32px)}
+.lider-sec{grid-column:1/8;position:relative}
+.lider-sec figure{overflow:hidden;margin:0 0 .75rem}
+.lider-sec img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--fio-cor)}
+.lider-sec h3{font-family:var(--display);font-weight:800;font-size:clamp(1.25rem,1.05rem + .8vw,1.7rem);line-height:1.12;letter-spacing:-.02em;margin:7px 0 8px}
+.lider-sec p{color:var(--tinta-2);max-width:58ch}
+.lider-sec h3 a{color:inherit;text-decoration:none}
+.lider-sec h3 a:hover{color:var(--link)}
+.lider-sec h3 a::after{content:"";position:absolute;inset:0;z-index:1}
+.lider-sec:has(a:focus-visible){outline:2px solid var(--sol);outline-offset:3px}
+.lider-sec h3 a:focus-visible{outline:none}
+.pilha{grid-column:8/13;display:flex;flex-direction:column;border-left:var(--fio) solid var(--fio-cor);padding-left:clamp(16px,2vw,28px)}
+.pilha article{position:relative;padding:16px 0;border-bottom:var(--fio) solid var(--fio-cor)}
+.pilha article:first-child{padding-top:4px}
+.pilha article:last-child{border-bottom:0}
+.pilha h3{font-family:var(--corpo);font-weight:600;font-size:1.05rem;line-height:1.3;margin:6px 0 4px}
+.pilha p{font-size:.92rem;color:var(--tinta-2)}
+.pilha h3 a{color:inherit;text-decoration:none}
+.pilha h3 a:hover{color:var(--link)}
+.pilha h3 a::after{content:"";position:absolute;inset:0;z-index:1}
+.pilha article:has(a:focus-visible){outline:2px solid var(--sol);outline-offset:3px}
+.pilha h3 a:focus-visible{outline:none}
+
+/* segunda linha: cards v2 (o card classico das outras paginas nao muda) */
+.linha-2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,32px);margin-top:2rem;border-top:0}
+article.card.v2{background:var(--superficie);border:1px solid var(--fio-cor);padding:0 0 18px;gap:8px}
+article.card.v2 figure{overflow:hidden;margin:0 0 8px}
+article.card.v2 .capa{width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0;background:var(--fio-cor)}
+article.card.v2 .ed,article.card.v2 h3,article.card.v2 p,article.card.v2 .quando{padding:0 18px}
+article.card.v2 p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+/* linha da mare: um traco de sol que sobe a praia no hover e no foco */
+.mare{position:relative;padding-bottom:6px}
+.mare::after{content:"";position:absolute;left:0;bottom:0;width:44px;height:2px;background:var(--sol);transform:scaleX(0);transform-origin:0 50%;transition:transform .32s var(--curva-chegada)}
+article.card.v2 .mare::after{left:18px}
+:is(article.card,.sub,.pilha article,.lider-sec):hover .mare::after,
+:is(article.card,.sub,.pilha article,.lider-sec):has(a:focus-visible) .mare::after{transform:scaleX(1)}
+
+/* resumo semanal cravado no anoitecer, ancora fixa da marca */
+.escuro.anoitecer{background:linear-gradient(180deg,var(--mar),var(--breu));content-visibility:auto;contain-intrinsic-size:auto 720px}
+.escuro.anoitecer .num{font-family:var(--corpo);font-weight:500;font-size:2rem;line-height:1;padding-top:0;min-width:1.6ch}
+.escuro.anoitecer .item{gap:18px;padding:15px 0}
+.escuro.anoitecer .item .mini{margin-top:5px}
+
+/* ferramentas: o traco do icone se desenha quando o card entra na tela */
+@supports (animation-timeline:view()){
+  .d .icone{stroke-dasharray:64;stroke-dashoffset:64;animation:desenha linear both;animation-timeline:view();animation-range:entry 10% entry 60%}
+}
+@keyframes desenha{to{stroke-dashoffset:0}}
+.d{position:relative}
+.d .mare-d{position:absolute;left:22px;bottom:14px;width:38px;height:2px;background:var(--sol);transform:scaleX(0);transform-origin:0 50%;transition:transform .32s var(--curva-chegada)}
+.d:hover .mare-d,.d:focus-visible .mare-d{transform:scaleX(1)}
+
+/* faixa institucional: manifesto fora da grade de noticias */
+.institucional{margin-top:clamp(3rem,2.2rem + 2.5vw,4.5rem);border-top:var(--fio) solid var(--fio-cor);border-bottom:var(--fio) solid var(--fio-cor);padding:1.5rem 0}
+.institucional .wrap{display:flex;gap:2rem;flex-wrap:wrap;align-items:baseline}
+.institucional b{font-family:var(--display);font-size:var(--t-ui);font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--tinta-2)}
+.institucional p{font-family:var(--corpo);font-size:.98rem;flex:1;min-width:260px;max-width:none}
+
+/* onda espelhada na entrada do rodape (so a home) */
+.onda-rodape{line-height:0;margin-top:clamp(3rem,2.2rem + 2.5vw,4.5rem)}
+.onda-rodape svg{display:block;width:100%;height:34px}
+.onda-rodape path{fill:var(--breu)}
+
+/* capa responsiva */
+@media(max-width:980px){
+  .manchete{grid-column:1/13}
+  .rio{grid-column:1/13;border-left:0;padding-left:0;border-top:var(--fio) solid var(--fio-cor);padding-top:1rem}
+  .subs{grid-column:1/13}
+  .lider-sec{grid-column:1/13}
+  .pilha{grid-column:1/13;border-left:0;padding-left:0;margin-top:1rem}
+  .linha-2{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .linha-2{grid-template-columns:1fr;gap:0}
+  .linha-2 article.card.v2{display:grid;grid-template-columns:1fr 94px;gap:2px 16px;background:transparent;border:0;border-bottom:var(--fio) solid var(--fio-cor);padding:14px 0}
+  .linha-2 article.card.v2 figure{grid-column:2;grid-row:1/5;margin:0}
+  .linha-2 article.card.v2 .capa{width:94px;height:94px;aspect-ratio:1}
+  .linha-2 article.card.v2 .ed,.linha-2 article.card.v2 h3,.linha-2 article.card.v2 p,.linha-2 article.card.v2 .quando{padding:0}
+  .linha-2 article.card.v2 p{-webkit-line-clamp:2}
+  .subs{grid-template-columns:1fr}
+  .sub+.sub{border-left:0;padding-left:0;border-top:var(--fio) solid var(--fio-cor);padding-top:1rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .onda-pausa{display:none}
+}

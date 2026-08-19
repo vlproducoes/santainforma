@@ -199,6 +199,29 @@ Nunca, em hipótese nenhuma:
 - **Acentuação:** os HTML são UTF-8. Escreva com acento correto no conteúdo.
 - **Nomes de arquivo:** minúsculo, sem acento, separado por hífen.
 
+## 9.5 A capa (redesign aprovado em 19/08/2026)
+
+O index.html tem pacote de capa no lugar do carrossel: manchete dominante,
+rio de últimas (6), dois sub-destaques, seção com líder e pilha, Resumo
+Semanal e ferramentas. A ordem e a regra de rotação estão comentadas no
+próprio index.html e no prompt do agente (`ferramentas/prompt-agente-noticias.md`).
+
+Regras do redesign:
+
+- **Nenhum hex novo.** Toda cor derivada nasce de `color-mix()` sobre as oito
+  variáveis da paleta. O céu do cabeçalho muda com a hora de Brasília
+  (classes `ceu-*` escritas pelo visual.js; sem JS fica o breu de sempre).
+- Componente novo usa a camada semântica (`--fundo`, `--tinta`, `--tinta-2`,
+  `--superficie`, `--fio-cor`, `--link`), nunca hex direto. O modo escuro da
+  fase 2 só remapeia essa camada.
+- Convenção de view transition: a imagem da chamada e a foto de topo da
+  matéria compartilham o nome `capa-mNN` (o visual.js nomeia no clique; o
+  modelo de matéria ainda não nomeia, fase 2).
+- Movimento novo usa os tokens `--dur-*` e `--curva-*` do estilo.css. Estado
+  invisível mora sempre no `from` do keyframe, nunca na regra do elemento.
+- A proposta completa da equipe de design está na pasta `proposta/` (não
+  versionada); o blueprint é o documento 01.
+
 ## 10. Ao criar página nova
 
 Toda página precisa de:

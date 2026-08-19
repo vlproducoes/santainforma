@@ -292,3 +292,117 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!conferir() || ++voltas > 20) clearInterval(relogio);
   }, 500);
 });
+
+/* CEU POR HORA
+   So a home tem header.ceu; nas outras paginas nada acontece. A classe no
+   <html> escolhe o gradiente no estilo.css. Sem Intl ou com erro, o ceu
+   fica no breu padrao e o site tem a cara de sempre. */
+document.addEventListener('DOMContentLoaded', function () {
+  if (!document.querySelector('header.ceu')) return;
+  var ZONA = 'America/Sao_Paulo';
+
+  function horaBrasilia() {
+    try {
+      return parseInt(new Intl.DateTimeFormat('pt-BR', {
+        timeZone: ZONA, hour: 'numeric', hour12: false
+      }).format(new Date()), 10);
+    } catch (e) { return null; }
+  }
+  function estadoDaHora(h) {
+    if (h === null) return null;
+    if (h >= 19 || h < 5) return 'noite';
+    if (h < 8) return 'amanhecer';
+    if (h < 17) return 'dia';
+    return 'entardecer';
+  }
+  function aplicar() {
+    var estado = estadoDaHora(horaBrasilia());
+    if (!estado) return;
+    var raiz = document.documentElement;
+    raiz.className = raiz.className.replace(/\bceu-\S+/g, '').trim();
+    raiz.classList.add('ceu-' + estado);
+  }
+  function tique() {
+    aplicar();
+    setTimeout(tique, 60000 - (Date.now() % 60000) + 120);
+  }
+  tique();
+});
+
+/* PAUSA DAS ONDAS DO HORIZONTE
+   Conteudo que anda sozinho tem botao de parar (WCAG 2.2.2). */
+document.addEventListener('DOMContentLoaded', function () {
+  var faixa = document.querySelector('.horizonte');
+  var botao = faixa && faixa.querySelector('.onda-pausa');
+  if (!botao) return;
+  botao.addEventListener('click', function () {
+    var parou = faixa.classList.toggle('pausada');
+    botao.setAttribute('aria-pressed', parou ? 'true' : 'false');
+    botao.textContent = parou ? 'Retomar ondas' : 'Pausar ondas';
+  });
+});
+
+/* MOLA FISICA
+   mola(el, alvo) leva scale ate o alvo com fisica de mola, interrompivel
+   no meio sem pulo. Menos movimento: vai direto ao estado final. */
+var mola = (function () {
+  var RIGIDEZ = 220, AMORTECIMENTO = 26, ativas = new WeakMap();
+  var reduzido = window.matchMedia('(prefers-reduced-motion: reduce)');
+  return function (el, alvo) {
+    if (reduzido.matches) {
+      el.style.transform = alvo === 1 ? '' : 'scale(' + alvo + ')';
+      return;
+    }
+    var s = ativas.get(el);
+    if (!s) { s = { x: 1, v: 0, alvo: alvo, quadro: 0, antes: 0 }; ativas.set(el, s); }
+    s.alvo = alvo;
+    if (s.quadro) return;                    /* ja anda: so muda o alvo */
+    s.antes = performance.now();
+    s.quadro = requestAnimationFrame(function anda(agora) {
+      var dt = Math.min((agora - s.antes) / 1000, 1 / 30);
+      s.antes = agora;
+      var forca = -RIGIDEZ * (s.x - s.alvo) - AMORTECIMENTO * s.v;
+      s.v += forca * dt;
+      s.x += s.v * dt;
+      if (Math.abs(s.x - s.alvo) < .001 && Math.abs(s.v) < .001) {
+        s.x = s.alvo; s.v = 0; s.quadro = 0;
+        el.style.transform = s.alvo === 1 ? '' : 'scale(' + s.alvo + ')';
+        return;
+      }
+      el.style.transform = 'scale(' + s.x + ')';
+      s.quadro = requestAnimationFrame(anda);
+    });
+  };
+})();
+
+/* fiacao da mola: aperto encolhe, soltura devolve. Botoes de interface
+   encolhem mais; chamadas de materia, quase nada. Teclado nao precisa:
+   o :focus-visible ja responde por CSS. */
+(function () {
+  var BOTOES = '.chip,.signo,.carrossel-btn,.carrossel-pontos button,.carrossel-pausa,.pausa-anima,.onda-pausa';
+  var CARTOES = '.manchete,.sub,.lider-sec,.pilha article,article.card.v2';
+  var preso = null;
+  document.addEventListener('pointerdown', function (e) {
+    var b = e.target.closest(BOTOES);
+    if (b) { preso = b; mola(b, .94); return; }
+    var c = e.target.closest(CARTOES);
+    if (c) { preso = c; mola(c, .985); }
+  });
+  function solta() { if (preso) { mola(preso, 1); preso = null; } }
+  document.addEventListener('pointerup', solta);
+  document.addEventListener('pointercancel', solta);
+})();
+
+/* VOO DE CAPA
+   No clique rumo a uma materia, a imagem da chamada ganha o nome de
+   view transition daquela materia. Quando o modelo de materia nomear a
+   foto de topo com o mesmo capa-mNN (fase 2), a imagem viaja de uma
+   pagina a outra. Ate la, nada muda: o fade atual continua. */
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('a[href*="materia-"]');
+  if (!a || !('startViewTransition' in document)) return;
+  var bloco = a.closest('article,aside,li,div');
+  var img = bloco && bloco.querySelector('img');
+  var n = (a.getAttribute('href').match(/materia-(\d+)/) || [])[1];
+  if (img && n) img.style.viewTransitionName = 'capa-m' + n;
+});
