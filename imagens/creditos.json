@@ -750,5 +750,29 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/banda-municipal-de-itapema-conquista-titulo-em-concurso-de-bandas-e-fanfarras-em-uniao-da-vitoria/",
     "dimensao_original": "1024x768",
     "baixada_em": "2026-08-19"
+  },
+  "plenario-camara-obesidade.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Câmara de Vereadores de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://site.itapema.sc.leg.br/public/portaladm-cvitapema/imagens/fotos/27c237addddf77b7ca48e0af2f9c1309.jpg",
+    "pagina_da_fonte": "https://site.itapema.sc.leg.br/noticia/1810-Câmara recebe palestra sobre prevenção e combate à obesidade na próxima quinta-feira (20).html",
+    "dimensao_original": "3000x2000",
+    "baixada_em": "2026-08-19"
+  },
+  "dinheiro-troco-caixa.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Agência Brasil",
+    "autor": "Marcello Casal Jr",
+    "ano": 2022,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/dinheiro_caixa_mcajr_abr_2907221125.jpg",
+    "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/trabalhadores-nascidos-em-novembro-e-dezembro-recebem-abono-salarial",
+    "dimensao_original": "5184x3456",
+    "baixada_em": "2026-08-19"
   }
 }
