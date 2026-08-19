@@ -643,7 +643,7 @@ html.ceu-noite .lua{opacity:1}
 /* ANCORA SOB A BARRA FIXA
    Com a barra de editorias grudada no topo, pular para #semanal escondia o
    titulo atras dela. So vale onde a barra existe, que e a capa. */
-body:has(.editorias.fixa) [id]{scroll-margin-top:68px}
+body:has(.editorias.fixa) [id]{scroll-margin-top:52px}
 
 /* primeira linha assimetrica da secao: lider com foto + pilha so-texto */
 .linha-1{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2.4vw,32px)}
@@ -685,7 +685,9 @@ article.card.v2 .mare::after{left:18px}
 :is(article.card,.sub,.pilha article,.lider-sec):has(a:focus-visible) .mare::after{transform:scaleX(1)}
 
 /* resumo semanal cravado no anoitecer, ancora fixa da marca */
-.escuro.anoitecer{background:linear-gradient(180deg,var(--mar),var(--breu));content-visibility:auto;contain-intrinsic-size:auto 720px}
+/* sem content-visibility aqui de proposito: a secao e alvo de ancora
+   (#semanal), e o render adiado faz o pulo cair em area em branco. */
+.escuro.anoitecer{background:linear-gradient(180deg,var(--mar),var(--breu))}
 .escuro.anoitecer .num{font-family:var(--corpo);font-weight:500;font-size:2rem;line-height:1;padding-top:0;min-width:1.6ch}
 .escuro.anoitecer .item{gap:18px;padding:15px 0}
 .escuro.anoitecer .item .mini{margin-top:5px}
