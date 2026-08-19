@@ -189,8 +189,11 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
 - Ligue nas listagens do index.html, que desde 19/08/2026 tem PACOTE DE CAPA
   no lugar do carrossel. A ordem é fixa e está comentada no próprio arquivo:
   manchete (1), rio de últimas (8 itens em .rio ol), sub-destaques (3 em .subs).
-  Regra de rotação: matéria nova entra no TOPO do rio (li com time "DD mmm ·
-  HHhMM" e link) e a mais antiga do rio sai. A manchete só troca quando a
+  Regra de rotação: matéria nova entra no TOPO do rio e a mais antiga do rio
+  sai. O li do rio tem: mini (img.rio-mini com a mNN-mini.jpg, width e height
+  160, loading lazy, alt descritivo real), time "DD mmm · HHhMM" e o link.
+  Se a mini não existir no disco, publique o li SEM a tag img (o CSS cuida
+  do resto); nunca aponte para imagem que não existe. A manchete só troca quando a
   matéria nova tem interesse público imediato maior (alerta em vigor, decisão,
   prazo curto); quem deixa a manchete vira sub-destaque, quem deixa
   sub-destaque desce para o rio. Ao trocar manchete ou sub, copie o bloco
