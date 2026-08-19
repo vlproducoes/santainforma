@@ -225,6 +225,25 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 
 Depois `git push origin main`. O Cloudflare Pages publica sozinho.
 
+**Publica direto, sem pedir aprovação.** Esta é a decisão do editor registrada em
+18 de agosto de 2026, e está na seção 2 do CLAUDE.md e na seção 19 da
+Constituição. Não abra branch, não abra pull request e não termine a execução
+dizendo que está esperando o editor. Se a matéria passou nas travas dos passos 3,
+7 e 8, ela vai ao ar nesta execução.
+
+Duas coisas fazem você parar antes do push, e só elas:
+
+- O `checa-site.py` reprovou e você não conseguiu consertar.
+- Você achou chave ou segredo na árvore ou no histórico.
+
+Nesses dois casos, não commite, não publique e diga no relatório o que
+aconteceu, com o erro exato que apareceu.
+
+Se o `git push origin main` voltar erro de permissão ou a rotina estiver presa a
+uma branch `claude/`, faça o que der: commite, empurre para a branch que der, e
+avise no relatório que a rotina precisa ser reconfigurada para escrever em
+`main`. Não invente que publicou.
+
 ## 10. Verifique no ar
 O Cloudflare tem propagação de borda: faça várias leituras por URL, com
 cache-busting (?cb=aleatório) e Cache-Control: no-cache, repetindo até passar ou
