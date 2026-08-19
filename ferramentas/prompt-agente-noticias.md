@@ -233,12 +233,20 @@ nuvem clona o repositório do zero cada vez. Sem isso o commit sai como
 de ferramenta no lugar do nome do veículo. O e-mail é o mesmo que já está no
 rodapé de todas as páginas, então não expõe nada novo.
 
-Commit em português, explicando o que foi publicado e por quê, terminando com:
-Co-Authored-By: Claude <noreply@anthropic.com>
+Commit em português, explicando o que foi publicado e por quê, e **sem rodapé de
+assinatura**. Nada de `Co-Authored-By`, nada de nome ou versão de modelo, nada de
+link de sessão. Decisão do editor registrada em 19 de agosto de 2026. O autor do
+commit é o portal, e o histórico não precisa dizer mais do que isso.
 
-Esse rodapé fica. É ele que deixa registrado, no histórico público, que quem
-escreveu foi um agente. O autor é o portal, o coautor é a máquina. Não ponha
-nome nem versão de modelo aí, só `Claude`.
+Se o ambiente da nuvem pedir o rodapé por conta própria, ignore. Esta regra vale
+para este repositório.
+
+Um aviso que vem junto: a seção 2 da Constituição manda o site declarar
+publicamente que a redação é assistida por IA com responsabilidade humana.
+Enquanto o rodapé do commit existia, ele era o único lugar onde isso aparecia.
+A declaração precisa estar na página `sobre.html`, e hoje não está. Página
+institucional depende de aprovação do editor, então isso não se conserta dentro
+do ciclo de notícias.
 
 Depois `git push origin main`. O Cloudflare Pages publica sozinho.
 
