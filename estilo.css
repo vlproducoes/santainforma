@@ -618,7 +618,7 @@ html.ceu-noite .lua{opacity:1}
 .rio a{font-family:var(--display);font-weight:600;font-size:var(--t-rio);line-height:1.35;color:var(--tinta);text-decoration:none;display:inline-block;padding:0}
 .rio a:hover{color:var(--link)}
 
-.subs{grid-column:1/9;display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,32px);border-top:var(--fio) solid var(--fio-cor);padding-top:1.5rem}
+.subs{grid-column:1/13;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,32px);border-top:var(--fio) solid var(--fio-cor);padding-top:1.5rem}
 .sub{position:relative}
 .sub+.sub{border-left:var(--fio) solid var(--fio-cor);padding-left:clamp(16px,2.4vw,32px)}
 .sub h3{font-family:var(--display);font-weight:800;font-size:var(--t-card);line-height:1.18;letter-spacing:-.015em;margin:7px 0 6px}
@@ -718,7 +718,8 @@ article.card.v2 .mare::after{left:18px}
 @media(max-width:980px){
   .manchete{grid-column:1/13}
   .rio{grid-column:1/13;border-left:0;padding-left:0;border-top:var(--fio) solid var(--fio-cor);padding-top:1rem}
-  .subs{grid-column:1/13}
+  .subs{grid-column:1/13;grid-template-columns:1fr}
+  .sub+.sub{border-left:0;padding-left:0;border-top:var(--fio) solid var(--fio-cor);padding-top:1rem}
   .lider-sec{grid-column:1/13}
   .pilha{grid-column:1/13;border-left:0;padding-left:0;margin-top:1rem}
   .linha-2{grid-template-columns:1fr 1fr}
@@ -730,8 +731,6 @@ article.card.v2 .mare::after{left:18px}
   .linha-2 article.card.v2 .capa{width:94px;height:94px;aspect-ratio:1}
   .linha-2 article.card.v2 .ed,.linha-2 article.card.v2 h3,.linha-2 article.card.v2 p,.linha-2 article.card.v2 .quando{padding:0}
   .linha-2 article.card.v2 p{-webkit-line-clamp:2}
-  .subs{grid-template-columns:1fr}
-  .sub+.sub{border-left:0;padding-left:0;border-top:var(--fio) solid var(--fio-cor);padding-top:1rem}
 }
 @media(prefers-reduced-motion:reduce){
   .onda-pausa{display:none}
