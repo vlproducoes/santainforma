@@ -110,7 +110,7 @@ Volume conforme demanda, interesse e oportunidade. **Piso: 1 matéria por dia ú
 
 ## 13. Fluxo de produção
 
-Radar, seleção, redação, **aprovação do editor**, publicação e kit de distribuição (carrossel, off para ElevenLabs, roteiro de YouTube, buscas no Envato, prompts de imagem).
+Radar, seleção, redação, **conferência automática** (seção 2 do CLAUDE.md), publicação e kit de distribuição (carrossel, off para ElevenLabs, roteiro de YouTube, buscas no Envato, prompts de imagem). A revisão do editor entra depois que a matéria está no ar.
 
 ## 14. Formato padrão da matéria
 
@@ -146,7 +146,13 @@ Erro apontado por e-mail, apuração e resposta em até 48h, correção com nota
 
 ## 19. Governança
 
-- O editor humano aprova toda publicação e tem palavra final.
+- O ciclo de notícias agendado publica sozinho, direto em `main`, dentro das
+  travas da seção 2 do CLAUDE.md. Não pede aprovação prévia.
+- Fora do ciclo de notícias, nada novo vai ao ar sem aprovação prévia do editor.
+  Isso cobre layout, páginas institucionais, tabela de preços, política
+  editorial e conteúdo pago.
+- O editor humano tem palavra final, exercida depois da publicação: manda tirar,
+  corrigir ou reverter, e a correção segue a seção 18.
 - Agentes leem esta Constituição antes de qualquer tarefa.
 - Mudança só com decisão registrada do editor.
 
@@ -181,7 +187,7 @@ Cada equipe é um agente com papel definido. Todas leem esta Constituição prim
 - **Claude in Chrome:** pesquisa em fontes usando sessão já logada. Nunca digita senha.
 - **Postiz ou API oficial:** publicação em rede social.
 
-**Regra de custo:** automação totalmente desassistida (headless) tem orçamento separado e limitado. Enquanto não houver receita, o padrão é **ciclo assistido**: o editor dispara, a IA executa, o editor aprova.
+**Regra de custo:** o ciclo de notícias roda desassistido, em rotina agendada, e publica sozinho. O orçamento dessa automação é medido e revisto pelo editor, e ele pode desligar a rotina a qualquer momento. Fora do ciclo de notícias o padrão segue **assistido**: o editor dispara, a IA executa, o editor aprova.
 
 ## 22. Decisões registradas
 
@@ -193,5 +199,6 @@ Cada equipe é um agente com papel definido. Todas leem esta Constituição prim
 - Sem conteúdo retroativo.
 - Publieditorial identificado e fora da editoria de Política.
 - Stack: HTML estático no GitHub e Cloudflare Pages. Migração para Astro na Fase 3.
+- Publicação: em 18 de agosto de 2026 o editor decidiu que o ciclo de notícias agendado publica sozinho em `main`, sem aprovação prévia, dentro das travas da seção 2 do CLAUDE.md. Aprovação prévia continua obrigatória fora do ciclo de notícias.
 
 **Pendências:** nomes finais dos personagens, registro INPI, tabela de preços do mídia kit, política de privacidade e termos de uso publicados.

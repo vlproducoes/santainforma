@@ -715,5 +715,40 @@
     "pagina_da_fonte": null,
     "dimensao_original": "1600x900",
     "baixada_em": "2026-08-18"
+  },
+  "temporal-nuvens-litoral.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Peter Olexa",
+    "url_fotografo": "https://www.pexels.com/@peter-olexa-2214257",
+    "url_original": "https://www.pexels.com/photo/sea-under-dramatic-sky-4099198/",
+    "id_pexels": 4099198,
+    "termo_de_busca": "dark storm clouds over the sea",
+    "baixada_em": "2026-08-19"
+  },
+  "secretaria-educacao-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/01/secretaria-de-educacao-1-1024x768.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/educacao-abre-inscricoes-para-a-7a-edicao-do-professor-destaque-2026/",
+    "dimensao_original": "1024x768",
+    "baixada_em": "2026-08-19"
+  },
+  "banda-municipal-uniao-vitoria.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/Bandas-e-Fanfarras-4-1024x768.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/banda-municipal-de-itapema-conquista-titulo-em-concurso-de-bandas-e-fanfarras-em-uniao-da-vitoria/",
+    "dimensao_original": "1024x768",
+    "baixada_em": "2026-08-19"
   }
 }

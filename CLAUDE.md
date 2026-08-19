@@ -21,8 +21,29 @@ vl7producoes@gmail.com · Itapema, Santa Catarina.
 
 ## 2. Regra que não se quebra
 
-**Nada vai ao ar sem aprovação do editor humano.** Você prepara, ele aprova.
-Nenhum commit em `main` e nenhum deploy sem o editor mandar.
+**O ciclo de notícias publica sozinho.** O agente agendado apura, escreve,
+confere e dá `git push origin main`. O Cloudflare sobe. Não para para pedir
+aprovação. Decisão do editor registrada em 18 de agosto de 2026.
+
+Publicar sozinho não é publicar sem trava. Só sai o que passar por todas estas,
+e a ordem importa:
+
+1. Sem fato novo, não publica. Assunto já coberto não vira matéria de novo.
+2. As linhas vermelhas da seção 8 valem inteiras. Na dúvida, não publica.
+3. `python3 ferramentas/checa-site.py` tem que sair com código 0. Reprovou,
+   conserta. Não conseguiu consertar, não commita.
+4. Nenhuma chave no commit. Encontrou, para tudo e avisa o editor.
+5. Cada dado publicado saiu de página de fonte que abriu de verdade. Resumo de
+   busca não confere dado.
+
+**O que continua precisando de aprovação antes de ir ao ar:** tudo que não é
+matéria do ciclo. Layout, CSS, página institucional, tabela de preços, política
+editorial, texto sobre o próprio portal, conteúdo pago e qualquer mudança nesta
+lista. Isso o agente prepara em branch e o editor aprova.
+
+O editor tem palavra final depois, não antes. Matéria que não devia ter saído
+sai com `git revert` e nota de correção, do jeito que manda a seção 18 da
+Constituição.
 
 ## 3. Como escrever
 
