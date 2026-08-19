@@ -556,8 +556,10 @@ header.ceu{background:var(--ceu-alto);transition:background 1.2s}
 html.ceu-noite .astro .raios{opacity:0}
 html.ceu-noite .lua{opacity:1}
 
-/* barra de editorias que gruda no topo (so a home usa a variante .fixa) */
-.editorias.fixa{position:sticky;top:0;z-index:50;background:var(--ceu-alto);transition:background 1.2s;view-transition-name:editorias}
+/* barra de editorias que gruda no topo (so a home usa a variante .fixa).
+   margin-top zero: a regra geral de nav da 20px, que dentro do header escuro
+   era invisivel; fora dele virava uma faixa clara entre header e barra. */
+.editorias.fixa{position:sticky;top:0;z-index:50;background:var(--ceu-alto);transition:background 1.2s;view-transition-name:editorias;margin-top:0}
 .editorias.fixa::after{content:"";position:absolute;inset:auto 0 -14px 0;height:14px;background:linear-gradient(rgba(10,31,40,.28),transparent);opacity:0;pointer-events:none}
 @supports (animation-timeline:scroll()){
   .editorias.fixa::after{animation:eleva linear both;animation-timeline:scroll(root);animation-range:80px 260px}
@@ -610,6 +612,7 @@ html.ceu-noite .lua{opacity:1}
 .rio li:nth-child(1){animation-delay:.32s}.rio li:nth-child(2){animation-delay:.38s}
 .rio li:nth-child(3){animation-delay:.44s}.rio li:nth-child(4){animation-delay:.5s}
 .rio li:nth-child(5){animation-delay:.56s}.rio li:nth-child(6){animation-delay:.62s}
+.rio li:nth-child(7){animation-delay:.68s}.rio li:nth-child(8){animation-delay:.74s}
 .rio li:last-child{border-bottom:0}
 .rio time{display:block;font-family:var(--display);font-size:.76rem;font-weight:600;letter-spacing:.06em;color:var(--tinta-2);font-variant-numeric:tabular-nums;margin-bottom:3px}
 .rio a{font-family:var(--display);font-weight:600;font-size:var(--t-rio);line-height:1.35;color:var(--tinta);text-decoration:none;display:inline-block;padding:0}

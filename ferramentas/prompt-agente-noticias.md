@@ -188,7 +188,7 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
 - Inclua o bloco .pub-google antes de "Os números que importam"
 - Ligue nas listagens do index.html, que desde 19/08/2026 tem PACOTE DE CAPA
   no lugar do carrossel. A ordem é fixa e está comentada no próprio arquivo:
-  manchete (1), rio de últimas (6 itens em .rio ol), sub-destaques (2 em .subs).
+  manchete (1), rio de últimas (8 itens em .rio ol), sub-destaques (2 em .subs).
   Regra de rotação: matéria nova entra no TOPO do rio (li com time "DD mmm ·
   HHhMM" e link) e a mais antiga do rio sai. A manchete só troca quando a
   matéria nova tem interesse público imediato maior (alerta em vigor, decisão,
