@@ -220,8 +220,25 @@ O repositório é público. Antes do commit, confira que a chave do .env não es
 na árvore nem no histórico do git. Se estiver, PARE e não publique.
 
 ## 9. Commit e deploy
+Antes de commitar, assine como o portal e não como a ferramenta:
+
+```
+git config user.name "Santa Informa"
+git config user.email "vl7producoes@gmail.com"
+```
+
+Vale só para este repositório e precisa ser refeito em toda execução, porque a
+nuvem clona o repositório do zero cada vez. Sem isso o commit sai como
+`Claude <noreply@anthropic.com>`, e o histórico público do portal fica com nome
+de ferramenta no lugar do nome do veículo. O e-mail é o mesmo que já está no
+rodapé de todas as páginas, então não expõe nada novo.
+
 Commit em português, explicando o que foi publicado e por quê, terminando com:
-Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Co-Authored-By: Claude <noreply@anthropic.com>
+
+Esse rodapé fica. É ele que deixa registrado, no histórico público, que quem
+escreveu foi um agente. O autor é o portal, o coautor é a máquina. Não ponha
+nome nem versão de modelo aí, só `Claude`.
 
 Depois `git push origin main`. O Cloudflare Pages publica sozinho.
 
