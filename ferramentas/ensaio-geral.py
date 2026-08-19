@@ -14,6 +14,12 @@ rotina automatica faz, so que sem escrever materia e sem commitar:
   5. no ar: le o site publicado com cache-busting, como manda o passo 10
   6. segredo: confere que nenhuma chave vazou para o Git
 
+CUIDADO COM O PASSO 5. O Cloudflare Pages responde HTTP 200 servindo a home
+no lugar de qualquer URL que nao existe, entao codigo de status sozinho e
+falso positivo. Ele tambem corta o .html da URL com um 308, entao a leitura
+precisa seguir redirecionamento. Por isso toda checagem daqui procura um
+trecho de texto dentro do corpo, e nao so o 200.
+
 Nada do que ele cria fica no repositorio. Sai com 0 se o ciclo pode rodar
 sozinho, e com 1 se ainda nao pode.
 """
@@ -148,26 +154,60 @@ else:
 
 # ------------------------------------------------------- 5. no ar
 titulo(5, 'No ar: o site publicado responde?')
-alvos = [('/', 'a home'), ('/sitemap-noticias.xml', 'o sitemap de noticias')]
-for caminho, nome in alvos:
-    achou = False
-    for tentativa in range(1, 4):
+
+
+def le_no_ar(caminho, tentativas=3):
+    """Le a URL publicada com cache-busting, seguindo redirecionamento."""
+    codigo, corpo = '', ''
+    for _ in range(tentativas):
         cb = os.urandom(4).hex()
         codigo, corpo = baixa(f'{SITE}{caminho}?cb={cb}',
                               extra=['-H', 'Cache-Control: no-cache'])
         if codigo == '200' and corpo:
-            achou = True
-            break
-    if not achou:
+            return codigo, corpo
+    return codigo, corpo
+
+
+# Primeiro a prova de que status 200 nao serve de prova: uma URL que nao
+# existe. Se ela vier igual a home, o teste de conteudo e obrigatorio.
+inventada = '/materia-00-esta-pagina-nao-existe.html'
+cod_falso, corpo_falso = le_no_ar(inventada, tentativas=1)
+if cod_falso == '200':
+    aviso('URL inexistente responde 200 servindo a home',
+          'o site nao devolve 404, entao conferir so o codigo HTTP da falso positivo')
+else:
+    ok(f'URL inexistente devolve HTTP {cod_falso or "sem resposta"}, como deveria')
+
+alvos = [('/', 'a home', 'Santa Informa'),
+         ('/sitemap-noticias.xml', 'o sitemap de noticias', '<loc>')]
+
+# A materia mais recente do repositorio, conferida pelo titulo dentro do corpo.
+materias = sorted(f for f in os.listdir(BASE) if re.match(r'materia-\d+-.*\.html$', f))
+if materias:
+    ultima = materias[-1]
+    fonte = open(f'{BASE}/{ultima}', encoding='utf-8').read()
+    m = re.search(r'<h1>(.*?)</h1>', fonte, re.S)
+    if m:
+        # o .html some no redirecionamento do Cloudflare, e o -L do curl segue
+        alvos.append(('/' + ultima, f'a materia {ultima[:10]}', m.group(1).strip()))
+
+for caminho, nome, agulha in alvos:
+    codigo, corpo = le_no_ar(caminho)
+    if codigo != '200' or not corpo:
         falha(f'{nome} nao respondeu em 3 leituras (HTTP {codigo or "sem resposta"})',
               f'nao da para conferir {nome} no ar depois do deploy')
         continue
+    if agulha not in corpo:
+        falha(f'{nome} respondeu 200 mas o corpo nao traz o texto esperado',
+              f'{nome} nao esta no ar de verdade, o 200 veio da pagina de sobra')
+        continue
     if caminho == '/':
         ligacoes = len(re.findall(r'href="materia-\d+', corpo))
-        ok(f'{nome} respondeu, com {ligacoes} chamadas para materia')
+        ok(f'{nome} respondeu com o conteudo certo, e {ligacoes} chamadas para materia')
+    elif caminho.endswith('.xml'):
+        ok(f'{nome} respondeu com o conteudo certo, e {corpo.count("<loc>")} entradas')
     else:
-        n = corpo.count('<loc>')
-        ok(f'{nome} respondeu, com {n} entradas')
+        ok(f'{nome} respondeu com o titulo certo no corpo')
 
 # ------------------------------------------------------- 6. segredo
 titulo(6, 'Varredura de chave, o repositorio e publico')

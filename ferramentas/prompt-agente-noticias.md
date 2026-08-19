@@ -232,6 +232,23 @@ até 8 tentativas. Confira que cada matéria nova responde, que a home linka par
 ela e que o sitemap-noticias.xml no ar traz as matérias certas.
 Use grep -F em textos com R$ ou outros caracteres especiais.
 
+DUAS ARMADILHAS DESTE SITE, as duas já derrubaram uma verificação:
+
+1. **Código 200 não é prova de nada.** URL que não existe responde **HTTP 200**
+   servindo a home no lugar, não 404. Então nunca conclua "está no ar" pelo
+   status. Baixe o corpo e procure dentro dele um trecho do título da matéria.
+   Para conferir a armadilha, peça de propósito uma URL inventada e veja que
+   ela também devolve 200.
+2. **O Cloudflare corta o `.html` da URL.** `/materia-50-x.html` devolve **308**
+   e manda para `/materia-50-x`. `curl` sem `-L` para no redirecionamento e o
+   corpo vem vazio. **Sempre use `curl -sL`.**
+
+Por isso o endereço declarado no `canonical`, no `og:url`, no `mainEntityOfPage`
+e nos dois sitemaps vai **sem `.html`**, que é o endereço que responde 200
+direto. Link interno dentro do HTML continua com `.html`, porque o arquivo no
+disco tem extensão e é assim que o `checa-site.py` confere link quebrado. O
+`checa-site.py` reprova se algum endereço declarado voltar a ter `.html`.
+
 ## 11. Relate
 Ao fim, diga em poucas linhas: quantas matérias saíram e quais, com o nível de
 abrangência de cada uma; ou que não havia pauta; quantas entradas ficaram no

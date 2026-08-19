@@ -45,8 +45,11 @@ def monta():
          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
          '        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">']
     for quando, arq, titulo in recentes:
+        # O Cloudflare Pages corta o .html com um 308. O sitemap precisa
+        # trazer o endereco final, senao o Google acusa "pagina com
+        # redirecionamento" em toda entrada.
         o += ['', '  <url>',
-              f'    <loc>{SITE}/{arq}</loc>',
+              f'    <loc>{SITE}/{arq[:-5]}</loc>',
               '    <news:news>',
               '      <news:publication>',
               f'        <news:name>{NOME}</news:name>',
