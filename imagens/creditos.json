@@ -774,5 +774,27 @@
     "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/trabalhadores-nascidos-em-novembro-e-dezembro-recebem-abono-salarial",
     "dimensao_original": "5184x3456",
     "baixada_em": "2026-08-19"
+  },
+  "surfe-onda-litoral.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Mariano Serna",
+    "url_fotografo": "https://www.pexels.com/@mariano-serna-300284409",
+    "url_original": "https://www.pexels.com/photo/surfer-near-wave-at-sunset-18604780/",
+    "id_pexels": 18604780,
+    "termo_de_busca": "surfista onda mar",
+    "baixada_em": "2026-08-19"
+  },
+  "empreendedora-notebook-curso.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Gustavo Fring",
+    "url_fotografo": "https://www.pexels.com/@gustavo-fring",
+    "url_original": "https://www.pexels.com/photo/cheerful-young-woman-with-laptop-and-notebook-in-cafe-3874631/",
+    "id_pexels": 3874631,
+    "termo_de_busca": "mulher empreendedora notebook pequeno negocio",
+    "baixada_em": "2026-08-19"
   }
 }

@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-59-curso-gratuito-ia-empreendedoras-5-mil-vagas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-19T02:40:00-03:00</news:publication_date>
+      <news:title>Curso gratuito de inteligência artificial abre 5 mil vagas para mulheres que tocam o próprio negócio</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-58-surfe-itapema-podios-itapoa-brasileiro</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-19T02:30:00-03:00</news:publication_date>
+      <news:title>Surfe de base de Itapema faz dobradinha em Itapoá e garante vaga no Brasileiro, em Navegantes</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-57-abono-salarial-ultimo-lote-novembro-dezembro</loc>
     <news:news>
       <news:publication>
