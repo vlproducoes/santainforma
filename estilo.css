@@ -626,10 +626,21 @@ html.ceu-noite .lua{opacity:1}
 .sub:has(a:focus-visible){outline:2px solid var(--sol);outline-offset:3px}
 .sub h3 a:focus-visible{outline:none}
 
-/* titulo de secao com regua dupla (scotch rule) */
-.titulo.regua{border-bottom:0;border-top:3px solid var(--tinta);padding-top:9px;padding-bottom:0;position:relative}
+/* titulo de secao com regua dupla (scotch rule).
+   space-between joga a data para a outra ponta; com flex-wrap, em tela
+   estreita cada um fica na sua linha, alinhado a esquerda. */
+.titulo.regua{border-bottom:0;border-top:3px solid var(--tinta);padding-top:9px;padding-bottom:0;position:relative;justify-content:space-between}
 .titulo.regua::before{content:"";position:absolute;top:5px;left:0;right:0;height:1px;background:var(--fio-cor)}
 .titulo.regua h2{font-size:var(--t-secao);text-transform:none;letter-spacing:-.01em}
+/* sobre fundo escuro a regua inverte: a antiga .escuro .titulo so acerta
+   border-color e perde para esta, que e mais recente na cascata. */
+.escuro .titulo.regua{border-top-color:rgba(255,255,255,.7)}
+.escuro .titulo.regua::before{background:rgba(255,255,255,.22)}
+
+/* ANCORA SOB A BARRA FIXA
+   Com a barra de editorias grudada no topo, pular para #semanal escondia o
+   titulo atras dela. So vale onde a barra existe, que e a capa. */
+body:has(.editorias.fixa) [id]{scroll-margin-top:68px}
 
 /* primeira linha assimetrica da secao: lider com foto + pilha so-texto */
 .linha-1{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2.4vw,32px)}
@@ -676,14 +687,18 @@ article.card.v2 .mare::after{left:18px}
 .escuro.anoitecer .item{gap:18px;padding:15px 0}
 .escuro.anoitecer .item .mini{margin-top:5px}
 
-/* ferramentas: o traco do icone se desenha quando o card entra na tela */
+/* FERRAMENTAS DA CAPA
+   O traco do icone se desenha quando o card entra na tela. Escopo em
+   .dados-capa de proposito: a classe .d tambem vive em regiao, horoscopo e
+   anuncie, e la o icone rotula um dado. Sem escopo, ele nascia invisivel e
+   so aparecia depois que o leitor rolasse ate ele. */
 @supports (animation-timeline:view()){
-  .d .icone{stroke-dasharray:64;stroke-dashoffset:64;animation:desenha linear both;animation-timeline:view();animation-range:entry 10% entry 60%}
+  .dados-capa .d .icone{stroke-dasharray:64;stroke-dashoffset:64;animation:desenha linear both;animation-timeline:view();animation-range:entry 10% entry 60%}
 }
 @keyframes desenha{to{stroke-dashoffset:0}}
-.d{position:relative}
-.d .mare-d{position:absolute;left:22px;bottom:14px;width:38px;height:2px;background:var(--sol);transform:scaleX(0);transform-origin:0 50%;transition:transform .32s var(--curva-chegada)}
-.d:hover .mare-d,.d:focus-visible .mare-d{transform:scaleX(1)}
+.dados-capa .d{position:relative}
+.dados-capa .d .mare-d{position:absolute;left:22px;bottom:14px;width:38px;height:2px;background:var(--sol);transform:scaleX(0);transform-origin:0 50%;transition:transform .32s var(--curva-chegada)}
+.dados-capa .d:hover .mare-d,.dados-capa .d:focus-visible .mare-d{transform:scaleX(1)}
 
 /* faixa institucional: manifesto fora da grade de noticias */
 .institucional{margin-top:clamp(3rem,2.2rem + 2.5vw,4.5rem);border-top:var(--fio) solid var(--fio-cor);border-bottom:var(--fio) solid var(--fio-cor);padding:1.5rem 0}

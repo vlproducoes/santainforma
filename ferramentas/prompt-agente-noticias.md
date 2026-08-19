@@ -198,7 +198,10 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
   completo, width/height/loading, e a foto 3:2 da manchete com loading="eager"
   fetchpriority="high". A seção "Itapema e Costa Esmeralda" (líder .lider-sec,
   pilha de 3 e cards .card.v2) e o Resumo Semanal giram como antes: o mais
-  antigo sai. Nunca toque em .anuncio, .horizonte nem no cabeçalho.
+  antigo sai. Nunca toque em .anuncio, .horizonte, .institucional, .onda-rodape
+  nem no cabeçalho. Preserve as classes de estrutura ao editar: `titulo regua`
+  nos títulos de seção e `dados dados-capa` nas Ferramentas do litoral. Sem
+  elas o desenho quebra (a régua some e o ícone fica invisível).
 - Ligue também na editoria certa e nas páginas noticias*.html (o arquivo é de
   6 por página, e incluir no topo empurra tudo; crie página nova se precisar,
   e acerte paginação, títulos e o contador "página N de M")
