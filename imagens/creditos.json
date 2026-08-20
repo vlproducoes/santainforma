@@ -831,5 +831,27 @@
     "id_pexels": 18928152,
     "termo_de_busca": "drainage canal city water",
     "baixada_em": "2026-08-19"
+  },
+  "frio-geada-sc-agosto.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Nataliia Zhytnytska",
+    "url_fotografo": "https://www.pexels.com/@nataliia-zhytnytska-696963186",
+    "url_original": "https://www.pexels.com/photo/serene-winter-landscape-with-frosted-grass-35863969/",
+    "id_pexels": 35863969,
+    "termo_de_busca": "frost grass frozen morning",
+    "baixada_em": "2026-08-20"
+  },
+  "bancarios-greve-agencia.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Alec Adriano",
+    "url_fotografo": "https://www.pexels.com/@alec",
+    "url_original": "https://www.pexels.com/photo/modern-atm-machine-in-quiet-bank-lobby-36328523/",
+    "id_pexels": 36328523,
+    "termo_de_busca": "bank branch atm machine",
+    "baixada_em": "2026-08-20"
   }
 }
