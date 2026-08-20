@@ -853,5 +853,39 @@
     "id_pexels": 36328523,
     "termo_de_busca": "bank branch atm machine",
     "baixada_em": "2026-08-20"
+  },
+  "carros-novos-patio-financiamento.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Luke Miller",
+    "url_fotografo": "https://www.pexels.com/@bylukemiller",
+    "url_original": "https://www.pexels.com/photo/rows-of-new-suvs-in-dealership-parking-lot-29566906/",
+    "id_pexels": 29566906,
+    "termo_de_busca": "car dealership new cars showroom",
+    "baixada_em": "2026-08-20"
+  },
+  "formacao-lideranca-cultura-amfri.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Matheus Bertelli",
+    "url_fotografo": "https://www.pexels.com/@bertellifotografia",
+    "url_original": "https://www.pexels.com/photo/people-sitting-in-meeting-in-office-18999482/",
+    "id_pexels": 18999482,
+    "termo_de_busca": "business workshop training people",
+    "baixada_em": "2026-08-20"
+  },
+  "quartel-bombeiros-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/13o_BBM_-_Itapema-1024x577.jpg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/bombeiros-de-itapema-abrem-inscricoes-para-curso-e-recertificacao-de-guarda-vidas-civil-voluntario/",
+    "dimensao_original": "1024x577",
+    "baixada_em": "2026-08-20"
   }
 }
