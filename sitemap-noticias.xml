@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-74-sertao-trombudo-asfalto-2-km</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-21T18:40:00-03:00</news:publication_date>
+      <news:title>Asfalto do Sertão do Trombudo chega a quase 2 quilômetros na estrada que liga Itapema a Porto Belo</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-73-bets-beneficios-federais-bloqueio-3-milhoes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-21T18:30:00-03:00</news:publication_date>
+      <news:title>Mais de 3 milhões de pessoas com Bolsa Família e BPC já estão bloqueadas nas bets</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-72-tijucas-nova-ponte-rio-sondagem</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-21T18:20:00-03:00</news:publication_date>
+      <news:title>Tijucas começa a sondar o solo para projetar a terceira ponte sobre o Rio Tijucas</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-71-credenciamento-acolhimento-mulheres-itapema</loc>
     <news:news>
       <news:publication>
@@ -119,18 +155,6 @@
       </news:publication>
       <news:publication_date>2026-08-19T18:35:00-03:00</news:publication_date>
       <news:title>Itapema leva o ouro do paraciclismo no Parajasc com Kleverton Dala Corti, em Chapecó</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-61-navegantes-canais-drenagem-el-nino</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T18:20:00-03:00</news:publication_date>
-      <news:title>Navegantes desobstrui 4 km de canais antes da chuva, com o El Niño se fortalecendo</news:title>
     </news:news>
   </url>
 

@@ -923,5 +923,40 @@
     "pagina_da_fonte": null,
     "dimensao_original": "1600x900",
     "baixada_em": "2026-08-21"
+  },
+  "tijucas-ponte-projeto-rio.jpg": {
+    "origem": "divulgacao oficial (maquete eletronica)",
+    "orgao": "Prefeitura de Tijucas",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito; imagem de projeto, nao fotografia",
+    "uso": "imagem de projeto, nao registro do fato",
+    "url_original": "https://tijucas.sc.gov.br/conteudo/noticias/6149/743bdc0c-9339-44c0-b973-1dddd8926a0b.jpg",
+    "pagina_da_fonte": "https://www.tijucas.sc.gov.br/noticias/detalhe/estudos-para-projeto-de-nova-ponte-sobre-o-rio-tijucas-sao-iniciados",
+    "dimensao_original": "1135x633",
+    "baixada_em": "2026-08-21"
+  },
+  "sertao-trombudo-asfalto.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/asfalto_sertao-1.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/sertao-do-trombudo-chega-a-quase-2-km-de-asfalto/",
+    "dimensao_original": "1280x720",
+    "baixada_em": "2026-08-21"
+  },
+  "apostas-online-fichas-notebook.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Aidan Howe",
+    "url_fotografo": "https://www.pexels.com/@aidan-howe-2427444",
+    "url_original": "https://www.pexels.com/photo/dice-and-casino-tokens-4677404/",
+    "id_pexels": 4677404,
+    "termo_de_busca": "online gambling casino smartphone",
+    "baixada_em": "2026-08-21"
   }
 }
