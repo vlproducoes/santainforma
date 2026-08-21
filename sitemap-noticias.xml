@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-71-credenciamento-acolhimento-mulheres-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-21T06:40:00-03:00</news:publication_date>
+      <news:title>Itapema procura instituição para acolher mulher em situação de violência, e o credenciamento fica aberto por prazo indeterminado</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-70-alvara-baixa-temporada-ano-inteiro-camara</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-21T06:30:00-03:00</news:publication_date>
+      <news:title>Vendedor de milho e de churros vai poder pedir alvará de baixa temporada em qualquer mês do ano</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-69-editais-cultura-itapema-543-mil</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-21T06:20:00-03:00</news:publication_date>
+      <news:title>Itapema abre R$ 543 mil em editais de cultura, e a inscrição vai até 13 de setembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-68-move-brasil-credito-carro-aplicativo-200-mil</loc>
     <news:news>
       <news:publication>
@@ -95,102 +131,6 @@
       </news:publication>
       <news:publication_date>2026-08-19T18:20:00-03:00</news:publication_date>
       <news:title>Navegantes desobstrui 4 km de canais antes da chuva, com o El Niño se fortalecendo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-60-camara-itapema-cadastro-imovel-itbi-zr4</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T06:15:00-03:00</news:publication_date>
-      <news:title>Cadastro de imóvel, ITBI e alvará de baixa temporada: a pauta que a Câmara de Itapema levou ao plenário</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-59-curso-gratuito-ia-empreendedoras-5-mil-vagas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T02:40:00-03:00</news:publication_date>
-      <news:title>Curso gratuito de inteligência artificial abre 5 mil vagas para mulheres que tocam o próprio negócio</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-58-surfe-itapema-podios-itapoa-brasileiro</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T02:30:00-03:00</news:publication_date>
-      <news:title>Surfe de base de Itapema faz dobradinha em Itapoá e garante vaga no Brasileiro, em Navegantes</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-57-abono-salarial-ultimo-lote-novembro-dezembro</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T01:00:00-03:00</news:publication_date>
-      <news:title>Último lote do abono salarial começou a cair para quem nasceu em novembro e dezembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-56-palestra-obesidade-sem-mitos-camara</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T00:55:00-03:00</news:publication_date>
-      <news:title>Câmara de Itapema recebe nesta quinta palestra gratuita sobre obesidade, com nutricionista e educador físico</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-55-temporais-granizo-quarta-quinta</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T00:25:00-03:00</news:publication_date>
-      <news:title>Defesa Civil prevê temporal com granizo e rajada de vento em Santa Catarina na quarta e na quinta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-54-banda-municipal-titulo-uniao-da-vitoria</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T00:20:00-03:00</news:publication_date>
-      <news:title>Banda Municipal de Itapema é campeã em concurso no Paraná no ano em que completa 20 anos</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-53-professor-destaque-2026-inscricao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T00:15:00-03:00</news:publication_date>
-      <news:title>Professor Destaque abre inscrição nesta sexta em Itapema, e o prazo vai até 21 de setembro</news:title>
     </news:news>
   </url>
 
