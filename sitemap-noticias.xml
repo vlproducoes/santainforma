@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-77-parajasc-mais-tres-medalhas-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-22T09:40:00-03:00</news:publication_date>
+      <news:title>Itapema soma mais três medalhas no Parajasc, com prata no disco e bronze no peso e na mesa</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-76-sc-401-bloqueio-faixa-corte-arvore</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-22T09:30:00-03:00</news:publication_date>
+      <news:title>SC-401 tem faixa bloqueada neste sábado e no próximo para corte de árvore de grande porte</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-75-pec-escala-6x1-ccj-senado</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-22T09:20:00-03:00</news:publication_date>
+      <news:title>PEC do fim da escala 6x1 vai para a CCJ do Senado, com relatoria de Omar Aziz</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-74-sertao-trombudo-asfalto-2-km</loc>
     <news:news>
       <news:publication>
@@ -107,54 +143,6 @@
       </news:publication>
       <news:publication_date>2026-08-20T18:10:00-03:00</news:publication_date>
       <news:title>Bombeiros de Itapema abrem 60 vagas de guarda-vidas voluntário, e a inscrição começa no sábado</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-65-bancarios-paralisacao-24-horas-quinta</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-20T06:50:00-03:00</news:publication_date>
-      <news:title>Bancários param 24 horas nesta quinta, e quem depende do guichê precisa se ajustar</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-64-camara-indenizacao-regularizacao-450-joao-do-mato</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-20T06:40:00-03:00</news:publication_date>
-      <news:title>Câmara aprova indenização que abre caminho para regularizar a Comunidade da 450 e a João do Mato</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-63-frio-intenso-geada-ampla-domingo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-20T06:30:00-03:00</news:publication_date>
-      <news:title>Massa de ar frio chega nesta quinta e derruba a temperatura em Santa Catarina até domingo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-62-parajasc-ouro-paraciclismo-kleverton</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-19T18:35:00-03:00</news:publication_date>
-      <news:title>Itapema leva o ouro do paraciclismo no Parajasc com Kleverton Dala Corti, em Chapecó</news:title>
     </news:news>
   </url>
 

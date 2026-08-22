@@ -958,5 +958,39 @@
     "id_pexels": 4677404,
     "termo_de_busca": "online gambling casino smartphone",
     "baixada_em": "2026-08-21"
+  },
+  "comercio-jornada-trabalho.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Andrea Piacquadio",
+    "url_fotografo": "https://www.pexels.com/@olly",
+    "url_original": "https://www.pexels.com/photo/waiter-with-tray-working-in-stylish-restaurant-3769740/",
+    "id_pexels": 3769740,
+    "termo_de_busca": "waiter restaurant staff working service",
+    "baixada_em": "2026-08-22"
+  },
+  "rodovia-faixa-bloqueada-cones.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Magda Ehlers",
+    "url_fotografo": "https://www.pexels.com/@magda-ehlers-pexels",
+    "url_original": "https://www.pexels.com/photo/traffic-control-on-city-highway-with-warning-signs-31778820/",
+    "id_pexels": 31778820,
+    "termo_de_busca": "highway lane closed road work traffic cones",
+    "baixada_em": "2026-08-22"
+  },
+  "parajasc-medalha-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/medalhas_parajasc-3.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/sextou-com-chuva-de-medalhas-no-parajasc-itapema-soma-mais-tres-medalhas/",
+    "dimensao_original": "1200x1600",
+    "baixada_em": "2026-08-22"
   }
 }

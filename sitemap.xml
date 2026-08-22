@@ -3,7 +3,7 @@
 
   <url>
     <loc>https://santainforma.com.br/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -601,6 +601,27 @@
   <url>
     <loc>https://santainforma.com.br/materia-74-sertao-trombudo-asfalto-2-km</loc>
     <lastmod>2026-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-75-pec-escala-6x1-ccj-senado</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-76-sc-401-bloqueio-faixa-corte-arvore</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-77-parajasc-mais-tres-medalhas-itapema</loc>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
