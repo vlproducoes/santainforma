@@ -630,18 +630,21 @@ html.ceu-noite .linha-sol{fill:var(--espuma)}
 .rio time{display:block;font-family:var(--display);font-size:.76rem;font-weight:600;letter-spacing:.06em;color:var(--tinta-2);font-variant-numeric:tabular-nums;margin-bottom:3px}
 .rio a{font-family:var(--display);font-weight:600;font-size:var(--t-rio);line-height:1.35;color:var(--tinta);text-decoration:none;display:inline-block;padding:0}
 .rio a:hover{color:var(--link)}
-/* thumbs do rio, decisao do editor em 19/08. Slot fixo de 52px (CLS zero);
-   item sem mini renderiza sem o slot, nunca com imagem quebrada.
-   Horario em cima da largura toda; thumb alinhada com o topo do titulo.
-   O item inteiro e clicavel, thumb inclusive. */
+/* thumbs do rio, v2 (22/08): slot fixo de 76px, CLS zero. A mini vai
+   para a borda DE FORA: horario e titulo ficam cravados no fio da
+   manchete e item sem mini le no mesmo trilho, so alargando o texto.
+   76 e o teto da mini-160 em tela 2x (152<=160); 84 upscalaria.
+   A thumb atravessa horario + titulo e devolve a linha que o horario
+   ocupava sozinho: a coluna de 8 itens cresce so ~6px. Item inteiro
+   clicavel pelo overlay do <a>, que ancora no LI posicionado. */
 .rio li{position:relative}
 .rio li a::after{content:"";position:absolute;inset:0}
 .rio li:has(a:focus-visible){outline:2px solid var(--sol);outline-offset:2px}
 .rio a:focus-visible{outline:none}
-.rio li:has(.rio-mini){display:grid;grid-template-columns:52px 1fr;column-gap:12px;row-gap:6px}
-.rio .rio-mini{grid-column:1;grid-row:2;width:52px;height:52px;object-fit:cover;background:var(--fio-cor);align-self:center}
-.rio li:has(.rio-mini) time{grid-column:1/3;grid-row:1;margin-bottom:0}
-.rio li:has(.rio-mini) a{grid-column:2;grid-row:2}
+.rio li:has(.rio-mini){display:grid;grid-template-columns:1fr 76px;column-gap:14px;row-gap:4px}
+.rio .rio-mini{grid-column:2;grid-row:1/3;width:76px;height:76px;object-fit:cover;background:var(--fio-cor);align-self:center;box-shadow:var(--sombra-1)}
+.rio li:has(.rio-mini) time{grid-column:1;grid-row:1;margin-bottom:0}
+.rio li:has(.rio-mini) a{grid-column:1;grid-row:2}
 
 .subs{grid-column:1/13;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,32px);border-top:var(--fio) solid var(--fio-cor);padding-top:1.5rem}
 .sub{position:relative}
@@ -653,11 +656,23 @@ html.ceu-noite .linha-sol{fill:var(--espuma)}
 .sub h3 a::after{content:"";position:absolute;inset:0;z-index:1}
 .sub:has(a:focus-visible){outline:2px solid var(--sol);outline-offset:3px}
 .sub h3 a:focus-visible{outline:none}
-/* thumb do sub-destaque: quadrada, alinhada ao bloco de texto; o overlay
-   do titulo ja torna o card inteiro clicavel, thumb inclusive */
-.sub:has(.sub-mini){display:grid;grid-template-columns:76px 1fr;column-gap:14px}
-.sub .sub-mini{grid-row:1/4;width:76px;height:76px;object-fit:cover;background:var(--fio-cor);align-self:center}
-.sub:has(.sub-mini) .ed,.sub:has(.sub-mini) h3,.sub:has(.sub-mini) p{grid-column:2}
+/* SUB-DESTAQUE COM CAPA (pedido do editor em 22/08): mini-card com a
+   imagem 16:9 (mNN-card.jpg) em cima, mesma linguagem do card v2 da
+   linha-2: superficie, sombra-1 em repouso, ::before com sombra-2 no
+   hover, parallax capa-flutua (selecao la no bloco B1). A banda muda
+   junta (:has no .subs): com qualquer capa presente os fios internos
+   somem. Sub sem imagem dentro da banda vira card so-texto. Banda sem
+   nenhuma capa mantem o desenho antigo de colunas com fio. O overlay de
+   clique segue ancorado no article.sub; figure NAO e posicionada. */
+.subs:has(.capa-sub) .sub+.sub{border-left:0;padding-left:0}
+.subs:has(.capa-sub) .sub{background:var(--superficie);border:1px solid var(--fio-cor);padding:0 0 18px;box-shadow:var(--sombra-1)}
+.subs:has(.capa-sub) .sub::before{content:"";position:absolute;inset:0;box-shadow:var(--sombra-2);opacity:0;transition:opacity var(--dur-troca) var(--curva-troca);pointer-events:none}
+.subs:has(.capa-sub) .sub:hover::before,.subs:has(.capa-sub) .sub:has(a:focus-visible)::before{opacity:1}
+.sub figure{overflow:hidden;margin:0 0 8px}
+.sub .capa-sub{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--fio-cor)}
+.subs:has(.capa-sub) .sub .ed,.subs:has(.capa-sub) .sub h3,.subs:has(.capa-sub) .sub p{padding:0 18px}
+.subs:has(.capa-sub) .sub p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.subs:has(.capa-sub) .sub:not(:has(.capa-sub)){padding-top:16px}
 
 /* titulo de secao com regua dupla (scotch rule).
    space-between joga a data para a outra ponta; com flex-wrap, em tela
@@ -755,11 +770,32 @@ article.card.v2 p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:ve
   .rio{grid-column:1/13;border-left:0;padding-left:0;border-top:var(--fio) solid var(--fio-cor);padding-top:1rem}
   .subs{grid-column:1/13;grid-template-columns:1fr}
   .sub+.sub{border-left:0;padding-left:0;border-top:var(--fio) solid var(--fio-cor);padding-top:1rem}
+  /* banda com capa empilhada: cada sub vira linha larga, texto a
+     esquerda e capa 16:9 de 220px a direita, o mesmo desenho do card
+     orfao da linha-2 na faixa tablet. So border-top:0 aqui: o padding
+     dos cards vem inteiro da regra .sub abaixo (0,3,0 vence o
+     padding-top:1rem do .sub+.sub antigo, que e 0,2,0). */
+  .subs:has(.capa-sub) .sub+.sub{border-top:0}
+  .subs:has(.capa-sub) .sub{padding:16px 18px}
+  .subs:has(.capa-sub) .sub:has(.capa-sub){display:grid;grid-template-columns:1fr 220px;gap:2px 20px}
+  .subs:has(.capa-sub) .sub:has(.capa-sub) figure{grid-column:2;grid-row:1/4;margin:0;align-self:center}
+  .subs:has(.capa-sub) .sub .ed,.subs:has(.capa-sub) .sub h3,.subs:has(.capa-sub) .sub p{padding:0}
   .lider-sec{grid-column:1/13}
   .pilha{grid-column:1/13;border-left:0;padding-left:0;margin-top:1rem}
   .linha-2{grid-template-columns:1fr 1fr}
 }
 @media(max-width:720px){
+  /* subs no celular: mesmo formato de lista dos cards v2, thumb
+     quadrada de 94px a direita; o <picture> troca a fonte para a
+     mNN-mini.jpg nesta faixa */
+  .subs:has(.capa-sub){gap:0}
+  .subs:has(.capa-sub) .sub{background:transparent;border:0;box-shadow:none;border-bottom:var(--fio) solid var(--fio-cor);padding:14px 0}
+  .subs:has(.capa-sub) .sub::before{content:none}
+  .subs:has(.capa-sub) .sub:last-child{border-bottom:0}
+  .subs:has(.capa-sub) .sub:has(.capa-sub){grid-template-columns:1fr 94px;gap:2px 16px}
+  .subs:has(.capa-sub) .sub:has(.capa-sub) figure{grid-row:1/4;align-self:start}
+  .subs:has(.capa-sub) .capa-sub{width:94px;height:94px;aspect-ratio:1}
+  .subs:has(.capa-sub) .sub p{-webkit-line-clamp:2}
   .linha-2{grid-template-columns:1fr;gap:0}
   .linha-2 article.card.v2{display:grid;grid-template-columns:1fr 94px;gap:2px 16px;background:transparent;border:0;border-bottom:var(--fio) solid var(--fio-cor);padding:14px 0}
   .linha-2 article.card.v2 figure{grid-column:2;grid-row:1/5;margin:0}
@@ -804,7 +840,7 @@ article.card.v2:hover::before,article.card.v2:has(a:focus-visible)::before{opaci
    nunca nas minis; fora do formato lista do celular) */
 @media(min-width:721px){
   @supports (animation-timeline:view()){
-    article.card.v2 .capa,.lider-sec img{
+    article.card.v2 .capa,.lider-sec img,.sub .capa-sub{
       animation:capa-flutua linear both;
       animation-timeline:view();
       animation-range:cover 0% cover 100%;

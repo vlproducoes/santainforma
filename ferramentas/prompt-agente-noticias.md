@@ -190,12 +190,15 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
   no lugar do carrossel. A ordem é fixa e está comentada no próprio arquivo:
   manchete (1), rio de últimas (8 itens em .rio ol), sub-destaques (3 em .subs).
   Regra de rotação: matéria nova entra no TOPO do rio e a mais antiga do rio
-  sai. O li do rio tem: mini (img.rio-mini com a mNN-mini.jpg, width e height
-  160, loading lazy, alt descritivo real), time "DD mmm · HHhMM" e o link.
-  Se a mini não existir no disco, publique o li SEM a tag img (o CSS cuida
-  do resto); nunca aponte para imagem que não existe. O sub-destaque leva
-  img.sub-mini (mesma mNN-mini.jpg, width e height 160, lazy, alt real) como
-  PRIMEIRO filho do article.sub; sem mini, sem a tag, igual ao rio. No bloco
+  sai. O li do rio tem, NESTA ORDEM no DOM: time "DD mmm · HHhMM", o link, e
+  por último a img.rio-mini (mNN-mini.jpg, width e height 160, loading lazy,
+  alt descritivo real); o CSS posiciona a thumb na borda direita. Se a mini
+  não existir no disco, publique o li SEM a tag img; nunca aponte para
+  imagem que não existe. O sub-destaque leva como PRIMEIRO filho um
+  <figure><picture> com <source media="(max-width:720px)" srcset="mNN-mini.jpg">
+  e <img class="capa-sub" src="mNN-card.jpg" width="720" height="405" lazy e
+  alt real> (copie o bloco de um sub existente); sem imagem, omita o figure
+  inteiro, o card vira só-texto. No bloco
   "Leia também" de matéria nova, cada card leva a img.capa da matéria de
   destino (mNN-card.jpg, width 720 height 405, lazy, alt real) como primeiro
   filho do article.card. A manchete só troca quando a
