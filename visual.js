@@ -294,11 +294,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* CEU POR HORA
-   So a home tem header.ceu; nas outras paginas nada acontece. A classe no
-   <html> escolhe o gradiente no estilo.css. Sem Intl ou com erro, o ceu
-   fica no breu padrao e o site tem a cara de sempre. */
+   A classe no <html> vale em toda pagina: e ela que faz o sol da marca
+   virar lua a noite em todo o site. O FUNDO de ceu, esse sim, so aparece
+   onde existe header.ceu (a capa). Sem Intl ou com erro, nada muda. */
 document.addEventListener('DOMContentLoaded', function () {
-  if (!document.querySelector('header.ceu')) return;
   var ZONA = 'America/Sao_Paulo';
 
   function horaBrasilia() {
