@@ -114,6 +114,8 @@ table.preco th,table.preco td{padding:11px 13px;text-align:left;border-bottom:1p
 table.preco thead th{font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--espuma);background:var(--mar);border-bottom:0;white-space:nowrap}
 table.preco tbody th{font-family:var(--display);font-weight:700;color:var(--breu);white-space:nowrap}
 table.preco td.n{font-family:var(--display);font-weight:800;color:var(--mar);white-space:nowrap;text-align:right}
+/* cabecalho de coluna de dinheiro alinha com os valores */
+table.preco th.n{text-align:right}
 table.preco tbody tr:last-child th,table.preco tbody tr:last-child td{border-bottom:0}
 table.preco tbody tr:nth-child(even){background:var(--espuma)}
 
@@ -325,7 +327,7 @@ article.card .selo{margin-top:6px;padding-top:0}
 .paginacao{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin:34px 0 6px;font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
 .paginacao>a{color:var(--mar);text-decoration:none}
 .paginacao>a:hover{color:var(--breu);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--sol)}
-.paginacao .numeros{display:flex;gap:8px}
+.paginacao .numeros{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
 .paginacao .numeros a,.paginacao .numeros span{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;border:1px solid #9F8A6A;background:#fff;color:var(--mar);text-decoration:none}
 .paginacao .numeros a:hover{border-color:var(--mar)}
 .paginacao .numeros span[aria-current]{background:var(--mar);color:var(--espuma);border-color:var(--mar)}
@@ -404,8 +406,9 @@ article.card h3 a:focus-visible,.item h3 a:focus-visible{outline:none}
 .titulo h2{display:inline-flex;align-items:center;gap:10px}
 .titulo h2 .icone{color:var(--sol);width:1.05em;height:1.05em}
 .escuro .titulo h2 .icone{color:var(--sol)}
-.texto h2{display:flex;align-items:center;gap:11px}
-.texto h2 .icone{color:var(--sol);width:.9em;height:.9em}
+/* icone ancora na primeira linha do titulo, mesmo quando ele quebra */
+.texto h2{display:flex;align-items:flex-start;gap:11px}
+.texto h2 .icone{color:var(--sol);width:.9em;height:.9em;margin-top:.36em}
 .d .icone{display:block;color:var(--mar);width:20px;height:20px;margin-bottom:11px}
 .escuro .d .icone{color:var(--sol)}
 .selo .icone,.fonte .icone{width:13px;height:13px;color:var(--suave);vertical-align:-.15em;margin-right:4px}
@@ -579,7 +582,7 @@ html.ceu-noite .astro circle{fill:var(--espuma)}
 .onda-camada.frente{animation:deriva 26s linear infinite}
 @keyframes deriva{to{transform:translateX(-50%)}}
 .horizonte.pausada .onda-camada{animation-play-state:paused}
-.onda-pausa{position:absolute;right:14px;bottom:10px;z-index:2;border:1px solid rgba(255,255,255,.4);background:rgba(10,31,40,.35);color:var(--espuma);font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;border-radius:100px;padding:5px 11px;cursor:pointer}
+.onda-pausa{position:absolute;right:24px;bottom:10px;z-index:2;border:1px solid rgba(255,255,255,.4);background:rgba(10,31,40,.35);color:var(--espuma);font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;border-radius:100px;padding:7px 12px;cursor:pointer}
 .onda-pausa:hover{border-color:var(--sol);color:var(--sol)}
 .onda-pausa:focus-visible{outline:2px solid var(--sol);outline-offset:2px}
 
@@ -594,9 +597,11 @@ html.ceu-noite .astro circle{fill:var(--espuma)}
 @keyframes sobe-suave{from{opacity:0;transform:translateY(14px)}}
 .capa-grade .linhafina{font-family:var(--corpo);font-style:italic;font-weight:500;font-size:var(--t-linhafina);line-height:1.45;color:var(--tinta-2);max-width:52ch;margin-top:0;animation:sobe-suave .65s var(--curva-chegada) .26s both}
 .meta-capa{font-family:var(--display);font-size:var(--t-ui);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--tinta-2);animation:sobe-suave .65s var(--curva-chegada) .26s both}
-.manchete figure{margin:.5rem 0 0;overflow:hidden;animation:revela-foto .7s var(--curva-chegada) .2s both}
+/* flex:1 estica a figura ate o pe do rio: o aspect-ratio vira minimo e o
+   object-fit absorve, fechando o vao sob a legenda no desktop */
+.manchete figure{margin:.5rem 0 0;overflow:hidden;animation:revela-foto .7s var(--curva-chegada) .2s both;flex:1;display:flex;flex-direction:column}
 @keyframes revela-foto{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
-.manchete figure img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--fio-cor);animation:foto-assenta .9s var(--curva-chegada) .2s both}
+.manchete figure img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--fio-cor);animation:foto-assenta .9s var(--curva-chegada) .2s both;flex:1 0 auto}
 @keyframes foto-assenta{from{transform:scale(1.03)}}
 .manchete figcaption{font-size:.92rem;color:var(--tinta-2);line-height:1.5;margin-top:.5rem}
 .foto-tratada{filter:saturate(.94) contrast(1.03)}
@@ -677,7 +682,7 @@ body:has(.editorias.fixa) [id]{scroll-margin-top:52px}
 .lider-sec:has(a:focus-visible){outline:2px solid var(--sol);outline-offset:3px}
 .lider-sec h3 a:focus-visible{outline:none}
 .pilha{grid-column:8/13;display:flex;flex-direction:column;border-left:var(--fio) solid var(--fio-cor);padding-left:clamp(16px,2vw,28px)}
-.pilha article{position:relative;padding:16px 0;border-bottom:var(--fio) solid var(--fio-cor)}
+.pilha article{position:relative;padding:16px 0;border-bottom:var(--fio) solid var(--fio-cor);flex:1}
 .pilha article:first-child{padding-top:4px}
 .pilha article:last-child{border-bottom:0}
 .pilha h3{font-family:var(--corpo);font-weight:600;font-size:1.05rem;line-height:1.3;margin:6px 0 4px}
@@ -707,7 +712,8 @@ article.card.v2 .mare::after{left:18px}
 /* sem content-visibility aqui de proposito: a secao e alvo de ancora
    (#semanal), e o render adiado faz o pulo cair em area em branco. */
 .escuro.anoitecer{background:linear-gradient(180deg,var(--mar),var(--breu))}
-.escuro.anoitecer .num{font-family:var(--corpo);font-weight:500;font-size:2rem;line-height:1;padding-top:0;min-width:1.6ch}
+.escuro.anoitecer .num{font-family:var(--corpo);font-weight:500;font-size:2rem;line-height:1;padding-top:0;min-width:2.4ch;font-variant-numeric:tabular-nums}
+.escuro.anoitecer .semana{gap:0 clamp(16px,2.4vw,32px)}
 .escuro.anoitecer .item{gap:18px;padding:15px 0}
 .escuro.anoitecer .item .mini{margin-top:5px}
 
@@ -720,6 +726,7 @@ article.card.v2 .mare::after{left:18px}
   .dados-capa .d .icone{stroke-dasharray:64;stroke-dashoffset:64;animation:desenha linear both;animation-timeline:view();animation-range:entry 10% entry 60%}
 }
 @keyframes desenha{to{stroke-dashoffset:0}}
+.dados-capa{gap:clamp(16px,2.4vw,32px)}
 .dados-capa .d{position:relative}
 .dados-capa .d .mare-d{position:absolute;left:22px;bottom:14px;width:38px;height:2px;background:var(--sol);transform:scaleX(0);transform-origin:0 50%;transition:transform .32s var(--curva-chegada)}
 .dados-capa .d:hover .mare-d,.dados-capa .d:focus-visible .mare-d{transform:scaleX(1)}
@@ -756,3 +763,59 @@ article.card.v2 .mare::after{left:18px}
 @media(prefers-reduced-motion:reduce){
   .onda-pausa{display:none}
 }
+
+/* ============================================================
+   PROFUNDIDADE v1 · aprovada a busca pelo editor em 19/08/2026
+   Atmosferica, nao geometrica: luz, camadas e mare. Tudo no
+   compositor, coberto pelo kill switch de reduced-motion.
+   ============================================================ */
+
+/* card orfao da linha-2 na faixa tablet: o terceiro vira linha larga */
+@media(min-width:721px) and (max-width:980px){
+  .linha-2 article.card.v2:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:1fr 220px;gap:2px 24px}
+  .linha-2 article.card.v2:last-child:nth-child(odd) figure{grid-column:2;grid-row:1/5;margin:0}
+  .linha-2 article.card.v2:last-child:nth-child(odd) .capa{width:100%;height:auto;aspect-ratio:16/10}
+}
+
+/* A1 · relevo de impressao: fio de luz de 1px sob os tracos fortes */
+.titulo.regua{box-shadow:0 -1px 0 color-mix(in srgb,var(--superficie) 70%,transparent) inset}
+.rio li{box-shadow:0 1px 0 color-mix(in srgb,var(--superficie) 60%,transparent)}
+.rio li:last-child{box-shadow:none}
+
+/* A2 · sombra em camadas tingida pelo ceu (alfa maximo 13%) */
+:root{
+  --sombra-cor:color-mix(in srgb,var(--breu) 12%,transparent);
+  --sombra-1:0 1px 2px var(--sombra-cor);
+  --sombra-2:0 1px 2px var(--sombra-cor),0 6px 18px -8px var(--sombra-cor);
+}
+html.ceu-entardecer{--sombra-cor:color-mix(in srgb,color-mix(in srgb,var(--breu) 82%,var(--coral) 18%) 13%,transparent)}
+article.card.v2,.dados-capa .d{box-shadow:var(--sombra-1)}
+article.card.v2::before{content:"";position:absolute;inset:0;box-shadow:var(--sombra-2);opacity:0;transition:opacity var(--dur-troca) var(--curva-troca);pointer-events:none}
+article.card.v2:hover::before,article.card.v2:has(a:focus-visible)::before{opacity:1}
+
+/* B1 · parallax das capas de card por rolagem (nunca na manchete/LCP,
+   nunca nas minis; fora do formato lista do celular) */
+@media(min-width:721px){
+  @supports (animation-timeline:view()){
+    article.card.v2 .capa,.lider-sec img{
+      animation:capa-flutua linear both;
+      animation-timeline:view();
+      animation-range:cover 0% cover 100%;
+    }
+  }
+}
+@keyframes capa-flutua{from{scale:1.09;translate:0 -4%}to{scale:1.09;translate:0 4%}}
+
+/* B2 · numerais do Semanal andam como tinta atras da lista */
+@supports (animation-timeline:view()){
+  .escuro.anoitecer .num{animation:num-fica linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
+}
+@keyframes num-fica{from{translate:0 12px}to{translate:0 -12px}}
+
+/* C1 · mergulho de navegacao: a pagina que sai recua, a que chega sobe.
+   Cabecalho, rodape e barra tem nomes proprios e ficam parados; o voo
+   da capa-mNN acontece por cima. Reduced-motion ja desliga na raiz. */
+::view-transition-old(root){animation:vt-recua var(--dur-troca) var(--curva-troca) both}
+::view-transition-new(root){animation:vt-chega var(--dur-troca) var(--curva-chegada) both}
+@keyframes vt-recua{to{opacity:0;transform:scale(.985)}}
+@keyframes vt-chega{from{opacity:0;transform:translateY(12px)}}
