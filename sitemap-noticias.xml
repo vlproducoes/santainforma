@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-80-engenharia-social-fraude-pix-celular</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-22T18:40:00-03:00</news:publication_date>
+      <news:title>Golpe que engana pela conversa já responde por 40% das fraudes financeiras no país</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-79-capacitacao-licitacoes-lei-14133-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-22T18:30:00-03:00</news:publication_date>
+      <news:title>Prefeitura de Itapema treina servidores de compras nas regras da nova Lei de Licitações</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-78-ressaca-mar-agitado-litoral-ate-segunda</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-22T18:20:00-03:00</news:publication_date>
+      <news:title>Defesa Civil avisa: mar agitado e risco de ressaca no litoral catarinense até segunda-feira</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-77-parajasc-mais-tres-medalhas-itapema</loc>
     <news:news>
       <news:publication>
@@ -131,18 +167,6 @@
       </news:publication>
       <news:publication_date>2026-08-20T18:20:00-03:00</news:publication_date>
       <news:title>Formação gratuita em liderança para quem vive de cultura tem 15 vagas na região, e a inscrição fecha nesta sexta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-66-guarda-vidas-voluntario-itapema-inscricao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-20T18:10:00-03:00</news:publication_date>
-      <news:title>Bombeiros de Itapema abrem 60 vagas de guarda-vidas voluntário, e a inscrição começa no sábado</news:title>
     </news:news>
   </url>
 
