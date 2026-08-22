@@ -193,7 +193,12 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
   sai. O li do rio tem: mini (img.rio-mini com a mNN-mini.jpg, width e height
   160, loading lazy, alt descritivo real), time "DD mmm · HHhMM" e o link.
   Se a mini não existir no disco, publique o li SEM a tag img (o CSS cuida
-  do resto); nunca aponte para imagem que não existe. A manchete só troca quando a
+  do resto); nunca aponte para imagem que não existe. O sub-destaque leva
+  img.sub-mini (mesma mNN-mini.jpg, width e height 160, lazy, alt real) como
+  PRIMEIRO filho do article.sub; sem mini, sem a tag, igual ao rio. No bloco
+  "Leia também" de matéria nova, cada card leva a img.capa da matéria de
+  destino (mNN-card.jpg, width 720 height 405, lazy, alt real) como primeiro
+  filho do article.card. A manchete só troca quando a
   matéria nova tem interesse público imediato maior (alerta em vigor, decisão,
   prazo curto); quem deixa a manchete vira sub-destaque, quem deixa
   sub-destaque desce para o rio. Ao trocar manchete ou sub, copie o bloco
