@@ -736,8 +736,9 @@ article.card.v2 p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:ve
 .escuro.anoitecer{background:linear-gradient(180deg,var(--mar),var(--breu))}
 .escuro.anoitecer .num{font-family:var(--corpo);font-weight:500;font-size:2rem;line-height:1;padding-top:0;min-width:2.4ch;font-variant-numeric:tabular-nums}
 .escuro.anoitecer .semana{gap:0 clamp(16px,2.4vw,32px)}
-.escuro.anoitecer .item{gap:18px;padding:15px 0}
-.escuro.anoitecer .item .mini{margin-top:5px}
+/* numero, thumb e texto centrados na mesma linha visual */
+.escuro.anoitecer .item{gap:18px;padding:15px 0;align-items:center}
+.escuro.anoitecer .item .mini{margin-top:0}
 
 /* FERRAMENTAS DA CAPA
    O traco do icone se desenha quando o card entra na tela. Escopo em
@@ -849,11 +850,9 @@ article.card.v2:hover::before,article.card.v2:has(a:focus-visible)::before{opaci
 }
 @keyframes capa-flutua{from{scale:1.09;translate:0 -4%}to{scale:1.09;translate:0 4%}}
 
-/* B2 · numerais do Semanal andam como tinta atras da lista */
-@supports (animation-timeline:view()){
-  .escuro.anoitecer .num{animation:num-fica linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
-}
-@keyframes num-fica{from{translate:0 12px}to{translate:0 -12px}}
+/* B2 aposentado em 22/08: a contrafase dos numerais deslocava o numero
+   ate 12px do centro do item e lia como desalinhamento (print do editor).
+   O numero agora fica cravado, centrado com thumb e titulo. */
 
 /* C1 · mergulho de navegacao: a pagina que sai recua, a que chega sobe.
    Cabecalho, rodape e barra tem nomes proprios e ficam parados; o voo
