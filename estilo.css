@@ -591,6 +591,13 @@ html.ceu-noite .linha-sol{fill:var(--espuma)}
 .onda-pausa{position:absolute;right:24px;bottom:10px;z-index:2;border:1px solid rgba(255,255,255,.4);background:rgba(10,31,40,.35);color:var(--espuma);font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;border-radius:100px;padding:7px 12px;cursor:pointer}
 .onda-pausa:hover{border-color:var(--sol);color:var(--sol)}
 .onda-pausa:focus-visible{outline:2px solid var(--sol);outline-offset:2px}
+/* O botao sai de vista a pedido do editor, mas nao deixa de existir: a
+   onda anda sozinha e a 2.2.2 exige um jeito de parar. Reaparece com o
+   ponteiro na faixa e com o teclado (opacity:0 nao tira do foco;
+   pointer-events volta junto com a visibilidade, para nao virar alvo
+   invisivel). */
+.onda-pausa{opacity:0;pointer-events:none;transition:opacity var(--dur-troca) var(--curva-troca)}
+.horizonte:hover .onda-pausa,.horizonte:focus-within .onda-pausa{opacity:1;pointer-events:auto}
 
 /* PACOTE DE CAPA: manchete dominante, rio de ultimas, sub-destaques */
 .capa-grade{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2.4vw,32px);row-gap:2rem}
