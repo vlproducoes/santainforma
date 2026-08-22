@@ -552,9 +552,11 @@ html{transition:--ceu-alto 1.2s,--ceu-baixo 1.2s}
 /* so o cabecalho da home veste o ceu; as outras paginas seguem no breu */
 header.ceu{background:var(--ceu-alto);transition:background 1.2s}
 .astro{transform:translateY(var(--astro-y));transition:transform 1.2s var(--curva-troca),opacity .9s}
-.lua{opacity:0;transition:opacity .9s}
+/* de noite o proprio sol vira lua: circulo branco no horizonte do mar,
+   raios apagados. Decisao do editor em 19/08. */
+.astro circle{transition:fill .9s}
 html.ceu-noite .astro .raios{opacity:0}
-html.ceu-noite .lua{opacity:1}
+html.ceu-noite .astro circle{fill:var(--espuma)}
 
 /* barra de editorias que gruda no topo (so a home usa a variante .fixa).
    margin-top zero: a regra geral de nav da 20px, que dentro do header escuro
@@ -618,10 +620,17 @@ html.ceu-noite .lua{opacity:1}
 .rio a{font-family:var(--display);font-weight:600;font-size:var(--t-rio);line-height:1.35;color:var(--tinta);text-decoration:none;display:inline-block;padding:0}
 .rio a:hover{color:var(--link)}
 /* thumbs do rio, decisao do editor em 19/08. Slot fixo de 52px (CLS zero);
-   item sem mini renderiza sem o slot, nunca com imagem quebrada. */
-.rio li:has(.rio-mini){display:grid;grid-template-columns:52px 1fr;column-gap:12px;row-gap:2px}
-.rio .rio-mini{grid-row:1/3;width:52px;height:52px;object-fit:cover;background:var(--fio-cor);margin-top:3px}
-.rio li:has(.rio-mini) time,.rio li:has(.rio-mini) a{grid-column:2}
+   item sem mini renderiza sem o slot, nunca com imagem quebrada.
+   Horario em cima da largura toda; thumb alinhada com o topo do titulo.
+   O item inteiro e clicavel, thumb inclusive. */
+.rio li{position:relative}
+.rio li a::after{content:"";position:absolute;inset:0}
+.rio li:has(a:focus-visible){outline:2px solid var(--sol);outline-offset:2px}
+.rio a:focus-visible{outline:none}
+.rio li:has(.rio-mini){display:grid;grid-template-columns:52px 1fr;column-gap:12px;row-gap:6px}
+.rio .rio-mini{grid-column:1;grid-row:2;width:52px;height:52px;object-fit:cover;background:var(--fio-cor)}
+.rio li:has(.rio-mini) time{grid-column:1/3;grid-row:1;margin-bottom:0}
+.rio li:has(.rio-mini) a{grid-column:2;grid-row:2}
 
 .subs{grid-column:1/13;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,32px);border-top:var(--fio) solid var(--fio-cor);padding-top:1.5rem}
 .sub{position:relative}
@@ -633,6 +642,11 @@ html.ceu-noite .lua{opacity:1}
 .sub h3 a::after{content:"";position:absolute;inset:0;z-index:1}
 .sub:has(a:focus-visible){outline:2px solid var(--sol);outline-offset:3px}
 .sub h3 a:focus-visible{outline:none}
+/* thumb do sub-destaque: quadrada, alinhada ao bloco de texto; o overlay
+   do titulo ja torna o card inteiro clicavel, thumb inclusive */
+.sub:has(.sub-mini){display:grid;grid-template-columns:76px 1fr;column-gap:14px}
+.sub .sub-mini{grid-row:1/4;width:76px;height:76px;object-fit:cover;background:var(--fio-cor);margin-top:4px}
+.sub:has(.sub-mini) .ed,.sub:has(.sub-mini) h3,.sub:has(.sub-mini) p{grid-column:2}
 
 /* titulo de secao com regua dupla (scotch rule).
    space-between joga a data para a outra ponta; com flex-wrap, em tela
