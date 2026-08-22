@@ -6,7 +6,7 @@
 E a lista do passo 7 do ciclo de noticias virando codigo: se algo aqui
 reprova, a materia nao vai ao ar. Sai com codigo 1 quando acha problema.
 """
-import glob, json, os, re, sys
+import glob, json, os, re, shutil, subprocess, sys
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANALYTICS = 'G-PQKY68PE07'
@@ -117,6 +117,20 @@ def checa():
     css = open('estilo.css', encoding='utf-8').read()
     if css.count('{') != css.count('}'):
         erros.append(f'estilo.css: chaves desbalanceadas ({css.count("{")}/{css.count("}")})')
+
+    # Funcao de servidor: erro de sintaxe em functions/ reprova o deploy
+    # inteiro do Pages, inclusive o do ciclo de noticias. Valida com node
+    # quando ele existir no ambiente; sem node, segue sem checar.
+    # node --check puro engole modulo ES ('export'): valida via stdin
+    # com --input-type=module, que reprova de verdade.
+    if os.path.isdir('functions') and shutil.which('node'):
+        for fj in sorted(glob.glob('functions/*.js')):
+            with open(fj, 'rb') as arq:
+                r = subprocess.run(['node', '--input-type=module', '--check'],
+                                   stdin=arq, capture_output=True, text=True)
+            if r.returncode != 0:
+                detalhe = (r.stderr or '').strip().splitlines()
+                erros.append(f'{fj}: sintaxe invalida' + (f' ({detalhe[0]})' if detalhe else ''))
 
     return paginas, erros
 

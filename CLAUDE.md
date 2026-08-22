@@ -14,7 +14,11 @@ e Costa Esmeralda, expandindo para Litoral Norte, Vales e Santa Catarina.
 Nacional só quando conversa com o leitor daqui.
 
 **Stack:** HTML estático, sem build. GitHub e Cloudflare Pages. Um arquivo por
-página, na raiz. CSS único em `estilo.css`, JS único em `visual.js`.
+página, na raiz. CSS único em `estilo.css`, JS único em `visual.js`. Exceção
+única de servidor: `functions/clima.js`, função do Cloudflare Pages que
+devolve a condição do tempo da região do visitante para o céu da capa
+(decisão do editor em 22/08/2026). O ciclo de notícias NÃO toca em
+`functions/`; erro de sintaxe ali reprova o deploy inteiro do Pages.
 
 **Responsável público:** Lucas Esmerio Varela · CNPJ 51.087.731/0001-57 ·
 vl7producoes@gmail.com · Itapema, Santa Catarina.
@@ -195,7 +199,8 @@ Nunca, em hipótese nenhuma:
   `loading` e `alt` descritivo de verdade. Nada de `alt=""` em foto editorial.
 - **CSS:** só `estilo.css`. Use as variáveis que já existem (`--mar`, `--sol`,
   `--suave`, `--display`). Não crie paleta nova.
-- **JS:** só `visual.js`. Sem framework, sem dependência externa.
+- **JS:** só `visual.js`. Sem framework, sem dependência externa. Exceção
+  registrada: `functions/clima.js` (servidor, ver seção 1).
 - **Acentuação:** os HTML são UTF-8. Escreva com acento correto no conteúdo.
 - **Nomes de arquivo:** minúsculo, sem acento, separado por hífen.
 

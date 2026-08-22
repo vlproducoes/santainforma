@@ -868,3 +868,78 @@ article.card.v2:hover::before,article.card.v2:has(a:focus-visible)::before{opaci
 ::view-transition-new(root){animation:vt-chega var(--dur-troca) var(--curva-chegada) both}
 @keyframes vt-recua{to{opacity:0;transform:scale(.985)}}
 @keyframes vt-chega{from{opacity:0;transform:translateY(12px)}}
+/* ============================================================
+   TEMPO v1 · o ceu da capa sente o clima da regiao do leitor
+   Classes tempo-* no <html>, escritas pelo visual.js a partir
+   de GET /clima (limpo = classe sem regra: o site de hoje).
+   Bloco aditivo: nenhum seletor acima muda. Nenhum hex novo:
+   um unico veu "chumbo" dosado sobre o ceu da hora resolve a
+   matriz hora x clima inteira.
+   ============================================================ */
+:root{
+  --chumbo:color-mix(in srgb,var(--breu) 70%,var(--suave));
+  --veu-dose:0%;    /* quanto de chumbo entra no ceu */
+  --chuva-op:0;     /* opacidade da camada de fios */
+  --chuva-dur:1.5s;
+  --camada-op:0;    /* nuvens e nevoa */
+  --nuvem-al:0%;    /* alfa dos borroes de nuvem */
+  --nevoa-al:0%;    /* alfa do banco de nevoa */
+  --ceu-alto-t:color-mix(in srgb,var(--ceu-alto),var(--chumbo) var(--veu-dose));
+  --ceu-baixo-t:color-mix(in srgb,var(--ceu-baixo),var(--chumbo) var(--veu-dose));
+}
+/* o veu so escurece ou dessatura: nenhuma tinta do cabecalho perde
+   contraste (a celula mais apertada da matriz segue sendo o proprio
+   dia limpo de hoje; todo estado de tempo sobe esse numero) */
+html.tempo-nublado{--veu-dose:45%;--camada-op:1;--nuvem-al:26%}
+html.tempo-chuva{--veu-dose:55%;--camada-op:1;--nuvem-al:32%;--chuva-op:.32}
+html.tempo-temporal{--veu-dose:68%;--camada-op:1;--nuvem-al:45%;--chuva-op:.48;--chuva-dur:.9s}
+html.tempo-neblina{--veu-dose:30%;--camada-op:1;--nuvem-al:12%;--nevoa-al:38%}
+/* registrada, a virada de clima cruza em 1.2s, como a virada de hora */
+@property --veu-dose{syntax:'<percentage>';inherits:true;initial-value:0%}
+html{transition:--ceu-alto 1.2s,--ceu-baixo 1.2s,--veu-dose 1.2s}
+/* os consumidores do ceu passam a beber da variavel final */
+header.ceu,.editorias.fixa{background:var(--ceu-alto-t)}
+.horizonte{background:linear-gradient(180deg,var(--ceu-alto-t),var(--ceu-baixo-t))}
+
+/* CHUVA: fios curtos e esparsos, pintados uma vez (tiles de
+   radial-gradient); o movimento e so transform, compositor puro.
+   Pseudo-elemento: nenhum no novo no DOM, nada para leitor de tela.
+   O tile tem 52px e o loop anda exatamente 52px: emenda invisivel.
+   ::before pinta antes das ondas: a chuva some dentro do mar. */
+.horizonte::before{
+  content:"";position:absolute;inset:-52px 0 0;pointer-events:none;
+  background:
+    radial-gradient(1px 9px at 5px 13px,color-mix(in srgb,var(--espuma) 45%,transparent) 0 45%,transparent 100%) 0 0/21px 52px,
+    radial-gradient(1px 7px at 15px 37px,color-mix(in srgb,var(--mar-claro) 45%,transparent) 0 45%,transparent 100%) 0 0/21px 52px;
+  opacity:var(--chuva-op);transition:opacity 1.2s;
+  animation:tempo-cai var(--chuva-dur) linear infinite;
+}
+@keyframes tempo-cai{from{transform:translateY(-52px)}to{transform:translateY(0)}}
+
+/* NUVENS E NEVOA: borroes de chumbo no alto da faixa e um banco
+   leitoso deitado na linha d'agua (::after pinta por cima das ondas).
+   Largura 200% com padrao periodico a cada 50%: loop sem emenda.
+   Deriva de 90s: atmosfera, nao chamariz. */
+.horizonte::after{
+  content:"";position:absolute;top:0;bottom:0;left:0;width:200%;pointer-events:none;
+  background:
+    radial-gradient(34% 120% at 26% -45%,color-mix(in srgb,var(--chumbo) var(--nuvem-al),transparent) 0 45%,transparent 78%) 0 0/50% 100%,
+    radial-gradient(26% 95% at 71% -30%,color-mix(in srgb,var(--chumbo) var(--nuvem-al),transparent) 0 40%,transparent 75%) 0 0/50% 100%,
+    radial-gradient(42% 85% at 33% 112%,color-mix(in srgb,var(--mar-claro) var(--nevoa-al),transparent) 0 40%,transparent 80%) 0 0/50% 100%,
+    radial-gradient(36% 70% at 80% 105%,color-mix(in srgb,var(--mar-claro) var(--nevoa-al),transparent) 0 35%,transparent 78%) 0 0/50% 100%;
+  opacity:var(--camada-op);transition:opacity 1.2s;
+  animation:tempo-deriva 90s linear infinite;
+}
+@keyframes tempo-deriva{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* um botao, uma cena: pausar as ondas pausa o tempo junto */
+.horizonte.pausada::before,.horizonte.pausada::after{animation-play-state:paused}
+/* o kill switch global usa *, que nao alcanca pseudo-elemento:
+   a regra aqui e explicita. Sobra o estado parado, ainda legivel:
+   quem pediu menos movimento continua sabendo que chove. */
+@media(prefers-reduced-motion:reduce){
+  .horizonte::before,.horizonte::after{animation:none!important}
+}
+/* selo do modo de teste (?tempo=): todo print de clima forcado carrega
+   a palavra, para simulacao nunca circular como se fosse tempo real */
+.selo-simulacao{position:absolute;left:24px;bottom:10px;z-index:2;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--breu);background:var(--sol);border-radius:100px;padding:4px 10px;pointer-events:none}

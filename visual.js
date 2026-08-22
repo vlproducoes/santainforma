@@ -405,3 +405,54 @@ document.addEventListener('click', function (e) {
   var n = (a.getAttribute('href').match(/materia-(\d+)/) || [])[1];
   if (img && n) img.style.viewTransitionName = 'capa-m' + n;
 });
+
+/* TEMPO DA REGIAO
+   Depois que a pagina carrega, pergunta ao /clima (funcao no edge; ver
+   functions/clima.js) como esta o ceu de quem le e aplica tempo-<estado>
+   no <html>. O CSS faz o resto: veu no gradiente, fios de chuva, nevoa.
+   Em QUALQUER erro, silencio absoluto: o site fica com o ceu por hora.
+   O editor testa com ?tempo=chuva (limpo, nublado, neblina, chuva, neve,
+   temporal); o modo de teste carimba um selo "simulacao" no horizonte,
+   para print de temporal forcado nunca circular como se fosse real. */
+window.addEventListener('load', function () {
+  var ESTADOS = ['limpo', 'nublado', 'neblina', 'chuva', 'neve', 'temporal'];
+  function aplicar(estado) {
+    if (ESTADOS.indexOf(estado) < 0) return;   /* invalido: nada muda */
+    var raiz = document.documentElement;
+    raiz.className = raiz.className.replace(/\btempo-(?!simulado)\S+/g, '').trim();
+    raiz.classList.add('tempo-' + estado);
+  }
+  var teste = new URLSearchParams(location.search).get('tempo');
+  if (teste) {
+    aplicar(teste);
+    document.documentElement.classList.add('tempo-simulado');
+    var faixa = document.querySelector('.horizonte');
+    if (faixa && !faixa.querySelector('.selo-simulacao')) {
+      var selo = document.createElement('span');
+      selo.className = 'selo-simulacao';
+      selo.textContent = 'simulação';
+      faixa.appendChild(selo);
+    }
+    return;
+  }
+  /* lembra so a PALAVRA do estado por 30 min, nunca coordenada */
+  try {
+    var guardado = JSON.parse(sessionStorage.getItem('clima') || 'null');
+    if (guardado && Date.now() - guardado.quando < 1800000) {
+      aplicar(guardado.estado);
+      return;
+    }
+  } catch (e) { /* storage bloqueado: segue para a rede */ }
+  var corte = new AbortController();
+  setTimeout(function () { corte.abort(); }, 3000);
+  fetch('/clima', { signal: corte.signal })
+    .then(function (r) { return r.status === 200 ? r.json() : null; })
+    .then(function (d) {
+      if (!d || !d.estado) return;
+      try {
+        sessionStorage.setItem('clima', JSON.stringify({ estado: d.estado, quando: Date.now() }));
+      } catch (e) { /* sem storage, so nao lembra */ }
+      aplicar(d.estado);
+    })
+    .catch(function () { /* sem clima, sem drama */ });
+});

@@ -241,6 +241,9 @@ alvo pela extensão real (contando abertura e fechamento) e edite dentro dele.
 Depois de qualquer edição em lote, compare o diff com o commit anterior e
 confirme que só as linhas pretendidas mudaram.
 
+Nunca edite nada em `functions/`: é código de servidor do Cloudflare Pages,
+fora do ciclo, e um erro ali derruba o deploy do site inteiro.
+
 ## 8. Varredura de chave
 O repositório é público. Antes do commit, confira que a chave do .env não está
 na árvore nem no histórico do git. Se estiver, PARE e não publique.
