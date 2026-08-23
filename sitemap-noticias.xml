@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-86-simples-nacional-opcao-setembro-2027</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-23T18:40:00-03:00</news:publication_date>
+      <news:title>Quem quer entrar no Simples Nacional em 2027 precisa pedir em setembro, e não mais em janeiro</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-85-praia-sepultura-portao-acesso-bombinhas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-23T18:30:00-03:00</news:publication_date>
+      <news:title>Justiça manda tirar em 30 dias o portão que fecha a rua de acesso à Praia da Sepultura, em Bombinhas</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-84-orquestra-brasil-sobre-trilhos-bombinhas-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-23T18:20:00-03:00</news:publication_date>
+      <news:title>Orquestra com 60 jovens músicos toca em Bombinhas na terça e em Itapema na sexta</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-83-transparencia-salarial-prazo-31-agosto</loc>
     <news:news>
       <news:publication>
@@ -143,42 +179,6 @@
       </news:publication>
       <news:publication_date>2026-08-21T18:20:00-03:00</news:publication_date>
       <news:title>Tijucas começa a sondar o solo para projetar a terceira ponte sobre o Rio Tijucas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-71-credenciamento-acolhimento-mulheres-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-21T06:40:00-03:00</news:publication_date>
-      <news:title>Itapema procura instituição para acolher mulher em situação de violência, e o credenciamento fica aberto por prazo indeterminado</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-70-alvara-baixa-temporada-ano-inteiro-camara</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-21T06:30:00-03:00</news:publication_date>
-      <news:title>Vendedor de milho e de churros vai poder pedir alvará de baixa temporada em qualquer mês do ano</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-69-editais-cultura-itapema-543-mil</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-21T06:20:00-03:00</news:publication_date>
-      <news:title>Itapema abre R$ 543 mil em editais de cultura, e a inscrição vai até 13 de setembro</news:title>
     </news:news>
   </url>
 

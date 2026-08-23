@@ -1060,5 +1060,38 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/operacao-integrada-mira-perturbacao-do-sossego-em-seis-conveniencias-de-itapema/",
     "dimensao_original": "1200x1389",
     "baixada_em": "2026-08-23"
+  },
+  "orquestra-brasil-sobre-trilhos-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "cottonbro studio",
+    "url_fotografo": "https://www.pexels.com/@cottonbro",
+    "url_original": "https://www.pexels.com/photo/people-holding-musical-instruments-7095718/",
+    "id_pexels": 7095718,
+    "termo_de_busca": "orchestra concert stage strings",
+    "baixada_em": "2026-08-23"
+  },
+  "portao-acesso-praia-sepultura.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "David McElwee",
+    "url_fotografo": "https://www.pexels.com/@davidmcelwee",
+    "url_original": "https://www.pexels.com/photo/gate-is-locked-with-three-padlocks-22817377/",
+    "id_pexels": 22817377,
+    "termo_de_busca": "closed gate padlock path",
+    "baixada_em": "2026-08-23"
+  },
+  "simples-nacional-opcao-setembro.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Tim  Samuel",
+    "url_fotografo": "https://www.pexels.com/@tim-samuel",
+    "url_original": "https://www.pexels.com/photo/crop-man-standing-near-cash-machine-5835018/",
+    "id_pexels": 5835018,
+    "termo_de_busca": "shop owner counter cash register store brazil",
+    "baixada_em": "2026-08-23"
   }
 }
