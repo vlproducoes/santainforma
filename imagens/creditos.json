@@ -1026,5 +1026,39 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/prefeitura-capacita-equipes-para-aprimorar-processos-de-compras-e-licitacoes/",
     "dimensao_original": "1024x768",
     "baixada_em": "2026-08-22"
+  },
+  "br470-marginais-navegantes.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Rodolfo Gaion",
+    "url_fotografo": "https://www.pexels.com/@gaion",
+    "url_original": "https://www.pexels.com/photo/aerial-view-of-highway-interchange-in-londrina-brazil-34298466/",
+    "id_pexels": 34298466,
+    "termo_de_busca": "highway service road overpass brazil",
+    "baixada_em": "2026-08-23"
+  },
+  "transparencia-salarial-empresas.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "EqualStock IN",
+    "url_fotografo": "https://www.pexels.com/@equalstock",
+    "url_original": "https://www.pexels.com/photo/women-in-blue-uniforms-working-at-factory-desks-31321056/",
+    "id_pexels": 31321056,
+    "termo_de_busca": "woman worker factory office salary",
+    "baixada_em": "2026-08-23"
+  },
+  "operacao-sossego-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/operacao_gm-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/operacao-integrada-mira-perturbacao-do-sossego-em-seis-conveniencias-de-itapema/",
+    "dimensao_original": "1200x1389",
+    "baixada_em": "2026-08-23"
   }
 }

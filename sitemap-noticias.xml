@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-83-transparencia-salarial-prazo-31-agosto</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-23T06:40:00-03:00</news:publication_date>
+      <news:title>Empresa com 100 ou mais empregados tem até 31 de agosto para atualizar os dados de salário no Emprega Brasil</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-82-navegantes-prf-marginais-br-470</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-23T06:30:00-03:00</news:publication_date>
+      <news:title>Navegantes assume a fiscalização de trânsito das marginais da BR-470, e a mudança começa em dezembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-81-operacao-sossego-conveniencias-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-23T06:20:00-03:00</news:publication_date>
+      <news:title>Guarda Municipal e Fiscalização vistoriam seis conveniências de Itapema depois de denúncias de barulho</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-80-engenharia-social-fraude-pix-celular</loc>
     <news:news>
       <news:publication>
@@ -143,30 +179,6 @@
       </news:publication>
       <news:publication_date>2026-08-21T06:20:00-03:00</news:publication_date>
       <news:title>Itapema abre R$ 543 mil em editais de cultura, e a inscrição vai até 13 de setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-68-move-brasil-credito-carro-aplicativo-200-mil</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-20T18:30:00-03:00</news:publication_date>
-      <news:title>Crédito para carro de aplicativo e táxi sobe para R$ 200 mil, e o híbrido entra na conta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-67-lidere-cim-amfri-sebrae-cultura-inscricao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-20T18:20:00-03:00</news:publication_date>
-      <news:title>Formação gratuita em liderança para quem vive de cultura tem 15 vagas na região, e a inscrição fecha nesta sexta</news:title>
     </news:news>
   </url>
 
