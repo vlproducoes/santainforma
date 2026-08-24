@@ -456,3 +456,27 @@ window.addEventListener('load', function () {
     })
     .catch(function () { /* sem clima, sem drama */ });
 });
+
+/* NAVEGACAO ROLAVEL
+   As barras de menu e a paginacao abrem em scrollLeft 0, entao quem
+   entra em Meio Ambiente ve so as tres primeiras editorias e nunca o
+   destaque de onde esta. Rola SO a barra, nunca a pagina, e sem
+   animacao: nada de CLS, nada de rolagem inesperada.
+   Usa getBoundingClientRect de proposito: o li da barra e position
+   relative (camada de clique do celular), entao offsetLeft daria zero. */
+document.addEventListener('DOMContentLoaded', function () {
+  function centraliza(caixa, alvo) {
+    if (!caixa || !alvo || caixa.scrollWidth <= caixa.clientWidth) return;
+    var a = alvo.getBoundingClientRect(), c = caixa.getBoundingClientRect();
+    var antes = caixa.style.scrollBehavior;
+    caixa.style.scrollBehavior = 'auto';     /* o html tem scroll-behavior smooth */
+    caixa.scrollLeft += (a.left - c.left) - (caixa.clientWidth - a.width) / 2;
+    caixa.style.scrollBehavior = antes;
+  }
+  var barras = document.querySelectorAll('nav ul');
+  for (var i = 0; i < barras.length; i++) {
+    centraliza(barras[i], barras[i].querySelector('a.ativo'));
+  }
+  var nums = document.querySelector('.paginacao .numeros');
+  if (nums) centraliza(nums, nums.querySelector('[aria-current]'));
+});

@@ -246,6 +246,12 @@ function abrir(i){
       '<button type="button" class="chip" data-l="a" aria-pressed="false">O alerta</button>'+
       '<button type="button" class="chip" data-l="h" aria-pressed="false">Sem paciência</button>'+
     '</div><div id="leituraTexto" aria-live="polite"><p>'+c.d+'</p></div>';
+  /* no celular a leitura nasce fora da tela: leva o leitor ate ela,
+     senao o toque no signo parece nao ter funcionado */
+  if(window.matchMedia('(max-width:720px)').matches){
+    const suave=!window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+    document.getElementById('leituraSigno').scrollIntoView({block:'start',behavior:suave?'smooth':'auto'});
+  }
   const abas=[...document.querySelectorAll('.abas .chip')];
   abas.forEach(b=>b.addEventListener('click',()=>{
     abas.forEach(x=>x.setAttribute('aria-pressed','false'));

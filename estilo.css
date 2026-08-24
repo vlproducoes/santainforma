@@ -970,8 +970,6 @@ header.ceu,.editorias.fixa{background:var(--ceu-alto-t)}
   header{padding-top:14px}
   .meta{display:none}
   nav{margin-top:10px}
-  nav ul{padding:8px 0}
-  .editorias ul{padding:8px 0}
 
   /* titulo de lista no corpo do rio: 6 linhas de negrito viravam
      parede ao lado da thumb de 94px */
@@ -994,12 +992,12 @@ header.ceu,.editorias.fixa{background:var(--ceu-alto-t)}
      tres cards de 476px somavam 1430px de rolagem no fim do texto.
      Classe propria de proposito: .grade tambem monta o arquivo e as
      editorias, que seguem com o desenho de sempre. */
-  .grade.leia-tambem{border:0;grid-template-columns:1fr}
-  .grade.leia-tambem article.card{border:0;border-bottom:1px solid var(--fio-cor);background:transparent;padding:14px 0;display:grid;grid-template-columns:1fr 94px;gap:2px 16px}
-  .grade.leia-tambem article.card:last-child{border-bottom:0}
-  .grade.leia-tambem article.card .capa{grid-column:2;grid-row:1/5;width:94px;height:94px;max-width:none;aspect-ratio:1;margin:0;align-self:start}
-  .grade.leia-tambem article.card h3{font-size:var(--t-rio);line-height:1.25}
-  .grade.leia-tambem article.card p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .grade{border:0;grid-template-columns:1fr}
+  .grade article.card{border:0;border-bottom:1px solid var(--fio-cor);background:transparent;padding:14px 0;display:grid;grid-template-columns:1fr 94px;gap:2px 16px}
+  .grade article.card:last-child{border-bottom:0}
+  .grade article.card .capa{grid-column:2;grid-row:1/5;width:94px;height:94px;max-width:none;aspect-ratio:1;margin:0;align-self:start}
+  .grade article.card h3{font-size:var(--t-rio);line-height:1.25}
+  .grade article.card p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
   /* o selo de credibilidade da materia em caixa alta de 11.5px era
      o texto mais dificil da pagina justo onde se confere a fonte */
@@ -1015,4 +1013,93 @@ header.ceu,.editorias.fixa{background:var(--ceu-alto-t)}
 @media(max-width:760px){
   .medida .md-desk{display:none}
   .medida .md-cel{display:inline}
+}
+
+/* ============================================================
+   CELULAR v3 · 24/08/2026 · segunda leva da auditoria
+   A primeira leva (CELULAR v2) tratou a capa e a materia. Esta
+   trata a NAVEGACAO e as paginas internas, que ficaram para tras.
+   Aditivo: nenhum seletor de mesa muda, nenhum hex novo.
+   ============================================================ */
+
+/* P1 · as duas barras rolaveis: a faixa encosta na borda da tela, o
+   ultimo item esmaece em vez de ser cortado, e o alvo cresce para o
+   dedo sem mexer no desenho. A camada de clique ancora no LI. */
+@media(max-width:720px){
+  header nav ul,.editorias ul{
+    padding:8px 24px;margin-inline:-24px;
+    scroll-padding-inline:24px;scroll-snap-type:x proximity;scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,#000 0 calc(100% - 44px),transparent);
+            mask-image:linear-gradient(90deg,#000 0 calc(100% - 44px),transparent)}
+  header nav ul::-webkit-scrollbar,.editorias ul::-webkit-scrollbar{width:0;height:0}
+  header nav li,.editorias li{scroll-snap-align:start;position:relative;display:flex;align-items:center}
+  header nav a::after,.editorias a::after{content:"";position:absolute;inset:-10px -7px}
+}
+
+/* P3 · a tabela de precos vira ficha no celular: 6 colunas em 342px
+   escondiam justamente o preco. Rotulo de coluna vira etiqueta. */
+@media(max-width:720px){
+  .tabela-rolagem{overflow:visible;border:0}
+  table.preco{min-width:0;display:block}
+  table.preco thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  table.preco tbody,table.preco tr,table.preco th,table.preco td{display:block;width:auto}
+  table.preco tbody tr{border:1px solid #9F8A6A;background:var(--superficie);margin-bottom:14px}
+  table.preco tbody tr:nth-child(even){background:var(--superficie)}
+  /* o seletor duplo e obrigatorio: a regra de linha par pinta o th de
+     --espuma e o nome do espaco sumia, branco no branco. */
+  table.preco tbody th,table.preco tbody tr:nth-child(even) th{
+    position:static;background:var(--mar);color:var(--espuma);box-shadow:none;
+    white-space:normal;padding:10px 13px}
+  table.preco td{border-bottom:var(--fio) solid var(--fio-cor);padding:9px 13px;text-align:left}
+  table.preco tbody tr td:last-child{border-bottom:0}
+  table.preco td::before{content:attr(data-rot);display:block;font-family:var(--display);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);margin-bottom:3px}
+  table.preco td.n{text-align:left}
+}
+
+/* P4 · no celular a leitura do horoscopo vinha depois de 300px de carta
+   decorativa: o toque no signo parecia nao ter feito nada. */
+@media(max-width:720px){
+  .leitura{display:flex;flex-direction:column;gap:20px}
+  .leitura>#leituraSigno{order:1}
+  .carta{order:2;min-height:0;padding:20px 16px;gap:8px}
+  .carta .glifo{font-size:2.4rem}
+}
+
+/* P5 · a faixa tem 48px no celular: 44 de onda deixavam 4px de ceu, e a
+   chuva e as nuvens do TEMPO v1 nasciam fora da tela. A 48px a deriva
+   nao se le, entao ela para e o botao que a 2.2.2 exigiria devolve o
+   lugar para a manchete. Onda parada, nada a pausar. */
+@media(max-width:720px){
+  .onda-camada{height:62%}
+  .onda-camada,.horizonte::before,.horizonte::after{animation:none}
+  .onda-pausa{display:none}
+}
+
+/* P9 · sem duas colunas, o flex so afasta o rotulo do texto que ele nomeia */
+@media(max-width:720px){
+  .institucional .wrap{display:block}
+  .institucional b{display:block;margin-bottom:.4rem}
+  .institucional p+p{margin-top:.9rem}
+}
+
+@media(max-width:600px){
+  /* P6 · 15 caixinhas em tres fileiras viravam paredao de numero. Uma
+     fileira que rola, com alvo de 44px. O JS centraliza a atual. */
+  .paginacao{gap:14px}
+  .paginacao .numeros{width:100%;flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scroll-padding-inline:24px;scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);
+            mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent)}
+  .paginacao .numeros::-webkit-scrollbar{display:none}
+  .paginacao .numeros a,.paginacao .numeros span{flex:none;min-width:44px;height:44px;scroll-snap-align:center}
+
+  /* P8 · fora da capa, o cartao de dado cabe em duas colunas: os quatro
+     metros quadrados da Camada 3 voltam a poder ser comparados. */
+  .dados:not(.dados-capa){grid-template-columns:1fr 1fr;gap:10px}
+  .dados:not(.dados-capa) .d{padding:16px 14px}
+  .dados:not(.dados-capa) .d i{font-size:clamp(1.3rem,6.4vw,1.85rem)}
+  .dados:not(.dados-capa) .d .icone{margin-bottom:8px}
+
+  /* P10 · o balance partia "Camada 3 ·" com o ponto pendurado sozinho */
+  .texto h2{text-wrap:pretty;gap:8px;font-size:1.32rem}
+  .texto h2 .icone{margin-top:.3em}
 }
