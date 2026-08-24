@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-89-inss-consignado-sem-biometria-facial</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-24T06:40:00-03:00</news:publication_date>
+      <news:title>Aposentado sem biometria facial volta a poder contratar consignado, e a autorização é pelo Meu INSS</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-88-concurso-educacao-sc-escolha-de-vagas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-24T06:30:00-03:00</news:publication_date>
+      <news:title>Aprovados no concurso da Educação de Santa Catarina escolhem vaga desta segunda até quarta</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-87-festa-farroupilha-itapema-praca-da-paz</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-24T06:20:00-03:00</news:publication_date>
+      <news:title>Festa Farroupilha de Itapema muda para a Praça da Paz e ocupa quatro dias de setembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-86-simples-nacional-opcao-setembro-2027</loc>
     <news:news>
       <news:publication>
@@ -143,42 +179,6 @@
       </news:publication>
       <news:publication_date>2026-08-22T09:20:00-03:00</news:publication_date>
       <news:title>PEC do fim da escala 6x1 vai para a CCJ do Senado, com relatoria de Omar Aziz</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-74-sertao-trombudo-asfalto-2-km</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-21T18:40:00-03:00</news:publication_date>
-      <news:title>Asfalto do Sertão do Trombudo chega a quase 2 quilômetros na estrada que liga Itapema a Porto Belo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-73-bets-beneficios-federais-bloqueio-3-milhoes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-21T18:30:00-03:00</news:publication_date>
-      <news:title>Mais de 3 milhões de pessoas com Bolsa Família e BPC já estão bloqueadas nas bets</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-72-tijucas-nova-ponte-rio-sondagem</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-21T18:20:00-03:00</news:publication_date>
-      <news:title>Tijucas começa a sondar o solo para projetar a terceira ponte sobre o Rio Tijucas</news:title>
     </news:news>
   </url>
 

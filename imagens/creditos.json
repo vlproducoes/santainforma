@@ -1093,5 +1093,39 @@
     "id_pexels": 5835018,
     "termo_de_busca": "shop owner counter cash register store brazil",
     "baixada_em": "2026-08-23"
+  },
+  "farroupilha-praca-da-paz.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Felipe Balduino",
+    "url_fotografo": "https://www.pexels.com/@felipebalduino",
+    "url_original": "https://www.pexels.com/photo/two-men-and-grilled-beef-ribs-4253617/",
+    "id_pexels": 4253617,
+    "termo_de_busca": "churrasco costela fogo de chao",
+    "baixada_em": "2026-08-24"
+  },
+  "concurso-educacao-sc-escolha-vagas.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Valentin Ivantsov",
+    "url_fotografo": "https://www.pexels.com/@valentin-ivantsov-2154772556",
+    "url_original": "https://www.pexels.com/photo/empty-classroom-with-desks-and-chalkboard-36650154/",
+    "id_pexels": 36650154,
+    "termo_de_busca": "empty classroom school desks",
+    "baixada_em": "2026-08-24"
+  },
+  "inss-consignado-biometria.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Agência Brasil",
+    "autor": "Fabio Rodrigues-Pozzebom",
+    "ano": 2025,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/05/09/09052025-pzzb8406.jpg",
+    "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/inss-libera-consignado-sem-biometria-facial-para-aposentados",
+    "dimensao_original": "6000x4000",
+    "baixada_em": "2026-08-24"
   }
 }
