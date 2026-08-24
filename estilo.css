@@ -943,3 +943,76 @@ header.ceu,.editorias.fixa{background:var(--ceu-alto-t)}
 /* selo do modo de teste (?tempo=): todo print de clima forcado carrega
    a palavra, para simulacao nunca circular como se fosse tempo real */
 .selo-simulacao{position:absolute;left:24px;bottom:10px;z-index:2;font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--breu);background:var(--sol);border-radius:100px;padding:4px 10px;pointer-events:none}
+
+/* ============================================================
+   CELULAR v2 · 24/08/2026
+   Auditoria de equipe em telas de 320 a 390. O diagnostico: no
+   celular o leitor atravessava moldura demais antes da noticia
+   (cabecalho + dois menus + ondas = 345px) e rolava blocos de
+   ar entre secoes. Aqui o aperto e so no celular; o desenho de
+   mesa nao muda uma linha.
+   ============================================================ */
+
+/* o logo tem largura fixa de 298px e estourava 2px em telas de 320 */
+.topo>a svg{max-width:100%;height:auto}
+
+/* em tela de toque nao existe hover: o botao de pausar as ondas
+   precisa aparecer, senao a exigencia 2.2.2 fica sem mecanismo */
+@media(hover:none){
+  .onda-pausa{opacity:.7;pointer-events:auto}
+}
+
+@media(max-width:720px){
+  /* MOLDURA MENOR: a manchete sobe uns 100px e cabe na primeira tela.
+     A .meta sai porque o que ela diz ja esta em outro lugar da pagina:
+     a data aparece no titulo da secao (capa) e no "Publicada em"
+     (materia), e a praca ja esta na tagline do logo. */
+  header{padding-top:14px}
+  .meta{display:none}
+  nav{margin-top:10px}
+  nav ul{padding:8px 0}
+  .editorias ul{padding:8px 0}
+
+  /* titulo de lista no corpo do rio: 6 linhas de negrito viravam
+     parede ao lado da thumb de 94px */
+  .subs:has(.capa-sub) .sub h3,.linha-2 article.card.v2 h3{font-size:var(--t-rio);line-height:1.25}
+
+  /* costuras: 140px de fundo vazio entre o ultimo card e o Semanal
+     pareciam fim de pagina no meio da rolagem */
+  main.com-capa>.wrap{padding-bottom:24px}
+  .escuro.anoitecer{margin:32px 0}
+  .institucional{margin-top:2rem}
+}
+
+@media(max-width:600px){
+  /* HERO DA MATERIA: eram 2,1 telas de bloco escuro ate a foto */
+  .hero{padding:30px 0 46px}
+  .modo{margin-top:26px;padding-top:16px}
+  .painel{padding:18px 16px}
+
+  /* LEIA TAMBEM vira lista, como as chamadas da capa ja viram:
+     tres cards de 476px somavam 1430px de rolagem no fim do texto.
+     Classe propria de proposito: .grade tambem monta o arquivo e as
+     editorias, que seguem com o desenho de sempre. */
+  .grade.leia-tambem{border:0;grid-template-columns:1fr}
+  .grade.leia-tambem article.card{border:0;border-bottom:1px solid var(--fio-cor);background:transparent;padding:14px 0;display:grid;grid-template-columns:1fr 94px;gap:2px 16px}
+  .grade.leia-tambem article.card:last-child{border-bottom:0}
+  .grade.leia-tambem article.card .capa{grid-column:2;grid-row:1/5;width:94px;height:94px;max-width:none;aspect-ratio:1;margin:0;align-self:start}
+  .grade.leia-tambem article.card h3{font-size:var(--t-rio);line-height:1.25}
+  .grade.leia-tambem article.card p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+  /* o selo de credibilidade da materia em caixa alta de 11.5px era
+     o texto mais dificil da pagina justo onde se confere a fonte */
+  .fonte{font-size:12.5px;letter-spacing:.04em}
+}
+
+/* alvo de toque do link da tabela de precos dentro do anuncio: media
+   14px de altura. O margin negativo devolve o espaco visual. */
+.anuncio .valor a{display:inline-block;padding:8px 12px;margin:-8px -12px}
+/* o rotulo do espaco publicitario segue a medida que esta na tela:
+   a caixa encolhe para 320x100 no celular, o texto tem de encolher junto */
+.medida .md-cel{display:none}
+@media(max-width:760px){
+  .medida .md-desk{display:none}
+  .medida .md-cel{display:inline}
+}

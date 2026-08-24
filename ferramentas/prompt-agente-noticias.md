@@ -209,7 +209,17 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
   completo, width/height/loading, e a foto 3:2 da manchete com loading="eager"
   fetchpriority="high". A seção "Itapema e Costa Esmeralda" (líder .lider-sec,
   pilha de 3 e cards .card.v2) e o Resumo Semanal giram como antes: o mais
-  antigo sai. Nunca toque em .anuncio, .horizonte, .institucional, .onda-rodape
+  antigo sai. REGRA DE CURADORIA: matéria que está no rio de últimas NÃO
+  entra também na seção "Itapema e Costa Esmeralda" (líder nem pilha). No
+  celular tudo vira uma coluna só, e repetir a mesma chamada duas telas
+  depois faz a página parecer que não anda. Pegue as próximas mais recentes
+  da região que ainda não apareceram.
+  Ao montar o bloco "Leia também" de matéria nova, a div leva as duas
+  classes: `class="grade leia-tambem"` (a segunda é o que vira lista no
+  celular). No rótulo de espaço publicitário que muda de tamanho no celular
+  (a-super e a-faixa), use o par de spans md-desk/md-cel como nas matérias
+  existentes.
+  Nunca toque em .anuncio, .horizonte, .institucional, .onda-rodape
   nem no cabeçalho. Preserve as classes de estrutura ao editar: `titulo regua`
   nos títulos de seção e `dados dados-capa` nas Ferramentas do litoral. Sem
   elas o desenho quebra (a régua some e o ícone fica invisível).
