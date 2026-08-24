@@ -698,6 +698,24 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-90-casa-itapema-1120-apartamentos-concorrencia</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-91-casarao-gallotti-tijucas-ordem-de-servico</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-92-restituicao-ir-2026-ultimo-lote</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <url>
     <loc>https://santainforma.com.br/noticias-10</loc>
@@ -731,6 +749,12 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/noticias-15</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/noticias-16</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>

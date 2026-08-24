@@ -1127,5 +1127,41 @@
     "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/inss-libera-consignado-sem-biometria-facial-para-aposentados",
     "dimensao_original": "6000x4000",
     "baixada_em": "2026-08-24"
+  },
+  "casa-itapema-1120-apartamentos.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "planta de implantacao do empreendimento, registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/image.png",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-abre-concorrencia-para-construcao-de-1-120-apartamentos-do-programa-habitacional/",
+    "dimensao_original": "1431x628",
+    "baixada_em": "2026-08-24"
+  },
+  "casarao-gallotti-tijucas.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Tijucas",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://tijucas.sc.gov.br/conteudo/noticias/6155/dji0561.jpg",
+    "pagina_da_fonte": "https://tijucas.sc.gov.br/noticias/detalhe/principal-patrimonio-historico-de-tijucas-sera-revitalizado",
+    "dimensao_original": "1240x697",
+    "baixada_em": "2026-08-24"
+  },
+  "restituicao-ir-2026-ultimo-lote.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Agência Brasil",
+    "autor": "Arte",
+    "ano": 2025,
+    "licenca": "reproducao autorizada para veiculos jornalisticos mediante indicacao da fonte; sem marca de proibida reproducao",
+    "uso": "ilustracao editorial da fonte",
+    "url_original": "https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/03/21/mca_abr_21031913349.jpg",
+    "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/receita-libera-consulta-ao-ultimo-lote-de-restituicao-do-ir-2026",
+    "dimensao_original": "1170x700",
+    "baixada_em": "2026-08-24"
   }
 }

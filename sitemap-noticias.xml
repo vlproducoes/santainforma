@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-92-restituicao-ir-2026-ultimo-lote</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-24T17:30:00-03:00</news:publication_date>
+      <news:title>Receita libera o último lote da restituição do IR 2026, e o dinheiro cai em 31 de agosto</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-91-casarao-gallotti-tijucas-ordem-de-servico</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-24T17:20:00-03:00</news:publication_date>
+      <news:title>Tijucas assina ordem de serviço para reformar o Casarão Gallotti, e o Mercado Público fica para 2028</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-90-casa-itapema-1120-apartamentos-concorrencia</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-24T17:10:00-03:00</news:publication_date>
+      <news:title>Itapema abre concorrência para 1.120 apartamentos e entra com os quatro terrenos</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-89-inss-consignado-sem-biometria-facial</loc>
     <news:news>
       <news:publication>
@@ -143,42 +179,6 @@
       </news:publication>
       <news:publication_date>2026-08-22T18:20:00-03:00</news:publication_date>
       <news:title>Defesa Civil avisa: mar agitado e risco de ressaca no litoral catarinense até segunda-feira</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-77-parajasc-mais-tres-medalhas-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-22T09:40:00-03:00</news:publication_date>
-      <news:title>Itapema soma mais três medalhas no Parajasc, com prata no disco e bronze no peso e na mesa</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-76-sc-401-bloqueio-faixa-corte-arvore</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-22T09:30:00-03:00</news:publication_date>
-      <news:title>SC-401 tem faixa bloqueada neste sábado e no próximo para corte de árvore de grande porte</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-75-pec-escala-6x1-ccj-senado</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-22T09:20:00-03:00</news:publication_date>
-      <news:title>PEC do fim da escala 6x1 vai para a CCJ do Senado, com relatoria de Omar Aziz</news:title>
     </news:news>
   </url>
 
