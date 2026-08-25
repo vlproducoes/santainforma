@@ -1197,5 +1197,39 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/sala-do-empreendedor-oferece-consultoria-gratuita-para-empresarios-de-itapema/",
     "dimensao_original": "1280x720",
     "baixada_em": "2026-08-25"
+  },
+  "planificasus-itapema-encontro-regional.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/planifica-SUS-3-1024x768.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-recebe-planificasus-para-encontro-regional-de-alinhamento-e-qualificacao-da-saude/",
+    "dimensao_original": "1024x768",
+    "baixada_em": "2026-08-25"
+  },
+  "frente-fria-temporais-fim-de-semana-sc.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Connor Scott McManus",
+    "url_fotografo": "https://www.pexels.com/@connorscottmcmanus",
+    "url_original": "https://www.pexels.com/photo/hurricane-over-sea-18898633/",
+    "id_pexels": 18898633,
+    "termo_de_busca": "storm clouds coast beach",
+    "baixada_em": "2026-08-25"
+  },
+  "idoso-passagem-interestadual-onibus.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Renan Braz",
+    "url_fotografo": "https://www.pexels.com/@renan-braz-1732586",
+    "url_original": "https://www.pexels.com/photo/bus-terminal-in-rio-de-janeiro-midday-scene-36804658/",
+    "id_pexels": 36804658,
+    "termo_de_busca": "intercity bus station terminal",
+    "baixada_em": "2026-08-25"
   }
 }

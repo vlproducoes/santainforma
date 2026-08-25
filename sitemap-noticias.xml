@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-98-idoso-meia-passagem-onibus-interestadual</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-25T18:30:00-03:00</news:publication_date>
+      <news:title>Idoso de baixa renda pode comprar passagem interestadual pela metade a qualquer hora, decide a Justiça</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-97-virada-do-tempo-calor-frente-fria-sc</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-25T18:20:00-03:00</news:publication_date>
+      <news:title>Santa Catarina sai de 9 graus negativos para 30 graus na mesma semana, e a frente fria chega na sexta</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-96-planificasus-itapema-encontro-regional</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-25T18:10:00-03:00</news:publication_date>
+      <news:title>Itapema recebe as equipes de saúde dos 11 municípios da Foz do Rio Itajaí em dois dias de trabalho</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-95-salario-minimo-1741-2027-ploa</loc>
     <news:news>
       <news:publication>
@@ -143,42 +179,6 @@
       </news:publication>
       <news:publication_date>2026-08-23T18:20:00-03:00</news:publication_date>
       <news:title>Orquestra com 60 jovens músicos toca em Bombinhas na terça e em Itapema na sexta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-83-transparencia-salarial-prazo-31-agosto</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-23T06:40:00-03:00</news:publication_date>
-      <news:title>Empresa com 100 ou mais empregados tem até 31 de agosto para atualizar os dados de salário no Emprega Brasil</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-82-navegantes-prf-marginais-br-470</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-23T06:30:00-03:00</news:publication_date>
-      <news:title>Navegantes assume a fiscalização de trânsito das marginais da BR-470, e a mudança começa em dezembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-81-operacao-sossego-conveniencias-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-23T06:20:00-03:00</news:publication_date>
-      <news:title>Guarda Municipal e Fiscalização vistoriam seis conveniências de Itapema depois de denúncias de barulho</news:title>
     </news:news>
   </url>
 
