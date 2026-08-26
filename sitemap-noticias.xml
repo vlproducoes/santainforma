@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-104-prouni-lista-de-espera-prazo-27-agosto</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-26T18:25:00-03:00</news:publication_date>
+      <news:title>Lista de espera do Prouni fecha às 23h59 desta quinta, com 471 mil bolsas no semestre</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-103-guarda-municipal-porto-belo-balanco-semestre</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-26T18:20:00-03:00</news:publication_date>
+      <news:title>Guarda Municipal de Porto Belo fecha o primeiro semestre com mais de 3,2 mil ocorrências</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-102-saude-24h-itapema-telemedicina</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-26T18:15:00-03:00</news:publication_date>
+      <news:title>Itapema abre o Saúde 24h, com médico por telefone e WhatsApp no 0800 333 7973</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-101-desenrola-fies-2026-prazo-16-setembro</loc>
     <news:news>
       <news:publication>
@@ -107,78 +143,6 @@
       </news:publication>
       <news:publication_date>2026-08-25T06:05:00-03:00</news:publication_date>
       <news:title>Consultoria gratuita do Sebrae atende empreendedores de Itapema nesta sexta-feira</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-92-restituicao-ir-2026-ultimo-lote</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-24T17:30:00-03:00</news:publication_date>
-      <news:title>Receita libera o último lote da restituição do IR 2026, e o dinheiro cai em 31 de agosto</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-91-casarao-gallotti-tijucas-ordem-de-servico</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-24T17:20:00-03:00</news:publication_date>
-      <news:title>Tijucas assina ordem de serviço para reformar o Casarão Gallotti, e o Mercado Público fica para 2028</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-90-casa-itapema-1120-apartamentos-concorrencia</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-24T17:10:00-03:00</news:publication_date>
-      <news:title>Itapema abre concorrência para 1.120 apartamentos e entra com os quatro terrenos</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-89-inss-consignado-sem-biometria-facial</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-24T06:40:00-03:00</news:publication_date>
-      <news:title>Aposentado sem biometria facial volta a poder contratar consignado, e a autorização é pelo Meu INSS</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-88-concurso-educacao-sc-escolha-de-vagas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-24T06:30:00-03:00</news:publication_date>
-      <news:title>Aprovados no concurso da Educação de Santa Catarina escolhem vaga desta segunda até quarta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-87-festa-farroupilha-itapema-praca-da-paz</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-24T06:20:00-03:00</news:publication_date>
-      <news:title>Festa Farroupilha de Itapema muda para a Praça da Paz e ocupa quatro dias de setembro</news:title>
     </news:news>
   </url>
 

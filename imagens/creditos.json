@@ -1264,5 +1264,42 @@
     "id_pexels": 38262298,
     "termo_de_busca": "grilled fish plate restaurant seafood",
     "baixada_em": "2026-08-26"
+  },
+  "prouni-lista-de-espera-2026.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Charlotte May",
+    "url_fotografo": "https://www.pexels.com/@charlotte-may",
+    "url_original": "https://www.pexels.com/photo/crop-diverse-women-doing-task-in-campus-5965565/",
+    "id_pexels": 5965565,
+    "termo_de_busca": "university student laptop application online",
+    "baixada_em": "2026-08-26"
+  },
+  "saude-24h-itapema-telemedicina.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-26-at-11.54.32.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-lanca-saude-24h-com-atendimento-medico-por-telefone-e-whatsapp/",
+    "dimensao_original": "1280x960",
+    "recorte": "(0, 410, 750, 832)",
+    "baixada_em": "2026-08-26"
+  },
+  "guarda-municipal-porto-belo-viatura.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Porto Belo",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://portobelo.sc.gov.br/uploads/sites/375/2026/08/WhatsApp-Image-2026-08-24-at-12.09.16.jpeg",
+    "pagina_da_fonte": "https://portobelo.sc.gov.br/guarda-municipal-amplia-acoes-de-seguranca-e-realiza-mais-de-32-mil-atendimentos-em-porto-belo/",
+    "dimensao_original": "2560x1440",
+    "recorte": null,
+    "baixada_em": "2026-08-26"
   }
 }
