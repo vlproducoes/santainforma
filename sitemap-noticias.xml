@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-101-desenrola-fies-2026-prazo-16-setembro</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-26T06:25:00-03:00</news:publication_date>
+      <news:title>Quem ficou devendo o Fies tem até 16 de setembro para renegociar a dívida com desconto</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-100-rota-da-tainha-bombinhas-2790-pratos</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-26T06:20:00-03:00</news:publication_date>
+      <news:title>Rota da Tainha vende 2.790 pratos em Bombinhas e cresce 60% na segunda edição</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-99-revis-educacao-ambiental-1100-estudantes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-26T06:15:00-03:00</news:publication_date>
+      <news:title>Educação ambiental leva 1.100 estudantes de Itapema para dentro do Refúgio de Vida Silvestre</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-98-idoso-meia-passagem-onibus-interestadual</loc>
     <news:news>
       <news:publication>
@@ -143,42 +179,6 @@
       </news:publication>
       <news:publication_date>2026-08-24T06:20:00-03:00</news:publication_date>
       <news:title>Festa Farroupilha de Itapema muda para a Praça da Paz e ocupa quatro dias de setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-86-simples-nacional-opcao-setembro-2027</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-23T18:40:00-03:00</news:publication_date>
-      <news:title>Quem quer entrar no Simples Nacional em 2027 precisa pedir em setembro, e não mais em janeiro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-85-praia-sepultura-portao-acesso-bombinhas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-23T18:30:00-03:00</news:publication_date>
-      <news:title>Justiça manda tirar em 30 dias o portão que fecha a rua de acesso à Praia da Sepultura, em Bombinhas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-84-orquestra-brasil-sobre-trilhos-bombinhas-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-23T18:20:00-03:00</news:publication_date>
-      <news:title>Orquestra com 60 jovens músicos toca em Bombinhas na terça e em Itapema na sexta</news:title>
     </news:news>
   </url>
 

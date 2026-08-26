@@ -1231,5 +1231,38 @@
     "id_pexels": 36804658,
     "termo_de_busca": "intercity bus station terminal",
     "baixada_em": "2026-08-25"
+  },
+  "revis-trilha-educacao-ambiental-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Isaac Quesada",
+    "url_fotografo": "https://www.pexels.com/@isaacquesada",
+    "url_original": "https://www.pexels.com/photo/brown-path-in-between-green-trees-4388606/",
+    "id_pexels": 4388606,
+    "termo_de_busca": "atlantic forest trail rainforest hiking path",
+    "baixada_em": "2026-08-26"
+  },
+  "desenrola-fies-2026-renegociacao.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Feyza  Tuğba",
+    "url_fotografo": "https://www.pexels.com/@feyza-tugba-25430275",
+    "url_original": "https://www.pexels.com/photo/close-up-shot-of-square-academic-cap-and-diploma-on-concrete-surface-12794087/",
+    "id_pexels": 12794087,
+    "termo_de_busca": "graduation cap diploma university ceremony",
+    "baixada_em": "2026-08-26"
+  },
+  "rota-da-tainha-bombinhas-prato.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Magda Ehlers",
+    "url_fotografo": "https://www.pexels.com/@magda-ehlers-pexels",
+    "url_original": "https://www.pexels.com/photo/grilled-fish-with-salad-and-sauce-on-plate-38262298/",
+    "id_pexels": 38262298,
+    "termo_de_busca": "grilled fish plate restaurant seafood",
+    "baixada_em": "2026-08-26"
   }
 }
