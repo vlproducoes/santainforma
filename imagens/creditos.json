@@ -1301,5 +1301,40 @@
     "dimensao_original": "2560x1440",
     "recorte": null,
     "baixada_em": "2026-08-26"
+  },
+  "ipca15-agosto-2026-deflacao.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Rachel Claire",
+    "url_fotografo": "https://www.pexels.com/@rachel-claire",
+    "url_original": "https://www.pexels.com/photo/assorted-vegetables-on-market-counter-4846535/",
+    "id_pexels": 4846535,
+    "termo_de_busca": "vegetable market stall tomatoes",
+    "baixada_em": "2026-08-27"
+  },
+  "caminhada-agosto-lilas-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/caminhada-Lilas-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/blitz-educativa-reforca-campanha-agosto-lilas-e-convida-populacao-para-caminhada/",
+    "dimensao_original": "720x1280",
+    "baixada_em": "2026-08-27"
+  },
+  "campeonato-itapemense-futebol-amador.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/chamada_campeonato_amador-1-1.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/campeonato-itapemense-de-futebol-amador-comeca-neste-domingo/",
+    "dimensao_original": "1600x900",
+    "baixada_em": "2026-08-27"
   }
 }

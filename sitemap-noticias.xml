@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-107-ipca15-agosto-2026-deflacao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-27T06:25:00-03:00</news:publication_date>
+      <news:title>Prévia da inflação fecha agosto em -0,40%, a maior queda de preços desde 2022</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-106-campeonato-itapemense-futebol-amador-serie-a</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-27T06:20:00-03:00</news:publication_date>
+      <news:title>Campeonato Itapemense de Futebol Amador começa domingo com oito times na Série A</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-105-caminhada-agosto-lilas-itapema-praca-da-paz</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-27T06:15:00-03:00</news:publication_date>
+      <news:title>Caminhada do Agosto Lilás sai da Praça da Paz às 9h desta quinta, em Itapema</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-104-prouni-lista-de-espera-prazo-27-agosto</loc>
     <news:news>
       <news:publication>
@@ -107,42 +143,6 @@
       </news:publication>
       <news:publication_date>2026-08-25T18:10:00-03:00</news:publication_date>
       <news:title>Itapema recebe as equipes de saúde dos 11 municípios da Foz do Rio Itajaí em dois dias de trabalho</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-95-salario-minimo-1741-2027-ploa</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-25T06:15:00-03:00</news:publication_date>
-      <news:title>Salário mínimo deve subir para R$ 1.741 em 2027, e o valor vai no Orçamento que o governo manda ao Congresso</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-94-navegantes-647-vagas-emprego</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-25T06:10:00-03:00</news:publication_date>
-      <news:title>Navegantes abre a semana com 647 vagas de emprego, e 223 delas estão no Sine</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-93-sala-empreendedor-itapema-sebrae-consultoria</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-25T06:05:00-03:00</news:publication_date>
-      <news:title>Consultoria gratuita do Sebrae atende empreendedores de Itapema nesta sexta-feira</news:title>
     </news:news>
   </url>
 
