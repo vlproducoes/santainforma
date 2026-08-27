@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-110-desemprego-53-pnad-julho-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-27T18:20:00-03:00</news:publication_date>
+      <news:title>Desemprego cai para 5,3%, o menor da série, e a carteira assinada bate recorde</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-109-navegantes-64-anos-festival-nautico</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-27T18:15:00-03:00</news:publication_date>
+      <news:title>Navegantes faz 64 anos com três dias de festa, regata e torneio de pesca no Pontal</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-108-defesa-civil-itapema-chuva-fim-de-semana</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-27T18:10:00-03:00</news:publication_date>
+      <news:title>Defesa Civil espera de 100 a 150 milímetros de chuva em Itapema entre sábado e segunda</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-107-ipca15-agosto-2026-deflacao</loc>
     <news:news>
       <news:publication>
@@ -131,18 +167,6 @@
       </news:publication>
       <news:publication_date>2026-08-25T18:20:00-03:00</news:publication_date>
       <news:title>Santa Catarina sai de 9 graus negativos para 30 graus na mesma semana, e a frente fria chega na sexta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-96-planificasus-itapema-encontro-regional</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-25T18:10:00-03:00</news:publication_date>
-      <news:title>Itapema recebe as equipes de saúde dos 11 municípios da Foz do Rio Itajaí em dois dias de trabalho</news:title>
     </news:news>
   </url>
 

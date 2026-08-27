@@ -1336,5 +1336,39 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/campeonato-itapemense-de-futebol-amador-comeca-neste-domingo/",
     "dimensao_original": "1600x900",
     "baixada_em": "2026-08-27"
+  },
+  "defesa-civil-itapema-chuva-fim-de-semana.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/defesa_civil_monitoramento-1.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/defesa-civil-alerta-para-previsao-de-fim-de-semana-com-chuva-intensa-em-itapema/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-08-27"
+  },
+  "navegantes-festival-nautico-64-anos.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Konstantin Mishchenko",
+    "url_fotografo": "https://www.pexels.com/@aksioart",
+    "url_original": "https://www.pexels.com/photo/dynamic-sailing-competition-on-open-water-38362057/",
+    "id_pexels": 38362057,
+    "termo_de_busca": "sailboats racing on the sea harbor",
+    "baixada_em": "2026-08-27"
+  },
+  "desemprego-53-pnad-julho-2026.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "wal_ 172619",
+    "url_fotografo": "https://www.pexels.com/@wal_-172619-2156618639",
+    "url_original": "https://www.pexels.com/photo/construction-workers-on-building-site-37636256/",
+    "id_pexels": 37636256,
+    "termo_de_busca": "construction workers building site team",
+    "baixada_em": "2026-08-27"
   }
 }
