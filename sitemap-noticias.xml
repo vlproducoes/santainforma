@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-113-servicos-pas-2024-ibge-alimentacao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-28T06:20:00-03:00</news:publication_date>
+      <news:title>Alimentação é o que mais emprega no setor de serviços e o que menos paga, com média de 1,4 salário mínimo</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-112-faaci-reuniao-publica-procedimentos-ambientais</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-28T06:15:00-03:00</news:publication_date>
+      <news:title>FAACI marca reunião pública para explicar as novas regras ambientais de obra em Itapema</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-111-camara-itapema-26a-sessao-oito-projetos</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-28T06:10:00-03:00</news:publication_date>
+      <news:title>Câmara de Itapema aprova oito projetos, do cercamento dos parquinhos à Lei de Liberdade Econômica</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-110-desemprego-53-pnad-julho-2026</loc>
     <news:news>
       <news:publication>
@@ -131,42 +167,6 @@
       </news:publication>
       <news:publication_date>2026-08-26T06:20:00-03:00</news:publication_date>
       <news:title>Rota da Tainha vende 2.790 pratos em Bombinhas e cresce 60% na segunda edição</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-99-revis-educacao-ambiental-1100-estudantes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-26T06:15:00-03:00</news:publication_date>
-      <news:title>Educação ambiental leva 1.100 estudantes de Itapema para dentro do Refúgio de Vida Silvestre</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-98-idoso-meia-passagem-onibus-interestadual</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-25T18:30:00-03:00</news:publication_date>
-      <news:title>Idoso de baixa renda pode comprar passagem interestadual pela metade a qualquer hora, decide a Justiça</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-97-virada-do-tempo-calor-frente-fria-sc</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-25T18:20:00-03:00</news:publication_date>
-      <news:title>Santa Catarina sai de 9 graus negativos para 30 graus na mesma semana, e a frente fria chega na sexta</news:title>
     </news:news>
   </url>
 

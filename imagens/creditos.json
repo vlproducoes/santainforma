@@ -1370,5 +1370,40 @@
     "id_pexels": 37636256,
     "termo_de_busca": "construction workers building site team",
     "baixada_em": "2026-08-27"
+  },
+  "servicos-pas-2024-ibge.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "DΛVΞ GΛRCIΛ",
+    "url_fotografo": "https://www.pexels.com/@davegarcia",
+    "url_original": "https://www.pexels.com/photo/chef-pouring-saucepan-in-industrial-kitchen-36242473/",
+    "id_pexels": 36242473,
+    "termo_de_busca": "restaurant kitchen staff working brazil",
+    "baixada_em": "2026-08-28"
+  },
+  "camara-itapema-26a-sessao-ordinaria.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Camara de Vereadores de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://site.itapema.sc.leg.br/public/portaladm-cvitapema/imagens/fotos/4f897d54d3c4c85464f1203b940b66ec.jpg",
+    "pagina_da_fonte": "https://site.itapema.sc.leg.br/noticia/1816-Projetos+aprovados+na+26%C2%AA+Sess%C3%A3o+Ordin%C3%A1ria+avan%C3%A7am+para+a+Prefeitura.html",
+    "dimensao_original": "3000x2000",
+    "baixada_em": "2026-08-28"
+  },
+  "faaci-sede-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/IMG_6461-sede-FAACI.jpg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/faaci-promove-reuniao-publica-sobre-novos-procedimentos-ambientais-em-itapema/",
+    "dimensao_original": "4272x2848",
+    "baixada_em": "2026-08-28"
   }
 }
