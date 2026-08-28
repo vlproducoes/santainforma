@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-116-populacao-santa-catarina-ibge-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-28T18:20:00-03:00</news:publication_date>
+      <news:title>Santa Catarina cresce 1,54% e tem a segunda maior alta de população do país</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-115-escorpioes-navegantes-vigilancia-ambiental</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-28T18:15:00-03:00</news:publication_date>
+      <news:title>Navegantes captura 436 escorpiões em 2026, e a cada 10 vistorias a equipe acha de 6 a 7</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-114-cap-tea-itapema-um-ano</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-28T18:10:00-03:00</news:publication_date>
+      <news:title>CAP-TEA de Itapema completa um ano com 72 mil atendimentos e 451 crianças acompanhadas</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-113-servicos-pas-2024-ibge-alimentacao</loc>
     <news:news>
       <news:publication>
@@ -143,30 +179,6 @@
       </news:publication>
       <news:publication_date>2026-08-26T18:15:00-03:00</news:publication_date>
       <news:title>Itapema abre o Saúde 24h, com médico por telefone e WhatsApp no 0800 333 7973</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-101-desenrola-fies-2026-prazo-16-setembro</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-26T06:25:00-03:00</news:publication_date>
-      <news:title>Quem ficou devendo o Fies tem até 16 de setembro para renegociar a dívida com desconto</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-100-rota-da-tainha-bombinhas-2790-pratos</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-26T06:20:00-03:00</news:publication_date>
-      <news:title>Rota da Tainha vende 2.790 pratos em Bombinhas e cresce 60% na segunda edição</news:title>
     </news:news>
   </url>
 
