@@ -1438,5 +1438,41 @@
     "id_pexels": 20105456,
     "termo_de_busca": "aerial view crowd of people walking city street",
     "baixada_em": "2026-08-28"
+  },
+  "bandeira-amarela-setembro-2026.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Connor Scott McManus",
+    "url_fotografo": "https://www.pexels.com/@connorscottmcmanus",
+    "url_original": "https://www.pexels.com/photo/row-of-electricity-meters-11924298/",
+    "id_pexels": 11924298,
+    "termo_de_busca": "electricity meter house",
+    "baixada_em": "2026-08-29"
+  },
+  "limpa-fios-porto-belo.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Porto Belo",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://portobelo.sc.gov.br/uploads/sites/375/2026/08/WhatsApp-Image-2026-08-27-at-10.35.29.jpeg",
+    "pagina_da_fonte": "https://portobelo.sc.gov.br/porto-belo-inicia-programa-limpa-fios-para-organizar-cabeamento-nas-vias-do-municipio/",
+    "dimensao_original": "2048x2560",
+    "baixada_em": "2026-08-29"
+  },
+  "dibea-itapema-bem-estar-animal.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/dibea.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-conta-com-diretoria-de-bem-estar-animal-para-ampliar-politicas-publicas-na-area/",
+    "dimensao_original": "1600x1555",
+    "tratamento": "foto quase quadrada: montada em 1600x900 sobre fundo desfocado da propria imagem, sem cortar pessoa nem animal",
+    "baixada_em": "2026-08-29"
   }
 }

@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-119-bandeira-amarela-setembro-2026-aneel</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-29T06:20:00-03:00</news:publication_date>
+      <news:title>Bandeira amarela segue em setembro, e a conta de luz continua com R$ 1,885 a mais a cada 100 kWh</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-118-limpa-fios-porto-belo-cabeamento</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-29T06:15:00-03:00</news:publication_date>
+      <news:title>Porto Belo começa a tirar fio solto dos postes, e cabo sem permissão da Celesc pode ser retirado</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-117-dibea-itapema-bem-estar-animal</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-29T06:10:00-03:00</news:publication_date>
+      <news:title>Itapema tem diretoria própria de bem-estar animal, da castração ao caso de maus-tratos</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-116-populacao-santa-catarina-ibge-2026</loc>
     <news:news>
       <news:publication>
@@ -119,66 +155,6 @@
       </news:publication>
       <news:publication_date>2026-08-27T06:25:00-03:00</news:publication_date>
       <news:title>Prévia da inflação fecha agosto em -0,40%, a maior queda de preços desde 2022</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-106-campeonato-itapemense-futebol-amador-serie-a</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-27T06:20:00-03:00</news:publication_date>
-      <news:title>Campeonato Itapemense de Futebol Amador começa domingo com oito times na Série A</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-105-caminhada-agosto-lilas-itapema-praca-da-paz</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-27T06:15:00-03:00</news:publication_date>
-      <news:title>Caminhada do Agosto Lilás sai da Praça da Paz às 9h desta quinta, em Itapema</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-104-prouni-lista-de-espera-prazo-27-agosto</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-26T18:25:00-03:00</news:publication_date>
-      <news:title>Lista de espera do Prouni fecha às 23h59 desta quinta, com 471 mil bolsas no semestre</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-103-guarda-municipal-porto-belo-balanco-semestre</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-26T18:20:00-03:00</news:publication_date>
-      <news:title>Guarda Municipal de Porto Belo fecha o primeiro semestre com mais de 3,2 mil ocorrências</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-102-saude-24h-itapema-telemedicina</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-26T18:15:00-03:00</news:publication_date>
-      <news:title>Itapema abre o Saúde 24h, com médico por telefone e WhatsApp no 0800 333 7973</news:title>
     </news:news>
   </url>
 
