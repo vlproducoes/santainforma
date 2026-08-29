@@ -1474,5 +1474,42 @@
     "dimensao_original": "1600x1555",
     "tratamento": "foto quase quadrada: montada em 1600x900 sobre fundo desfocado da propria imagem, sem cortar pessoa nem animal",
     "baixada_em": "2026-08-29"
+  },
+  "conhecer-para-prevenir-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/prevenir_conhecer-4.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/tiago-linck-emociona-professores-da-rede-municipal-com-historia-de-vida-e-superacao/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-08-29"
+  },
+  "festival-cancao-bombinhas.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Fundação Municipal de Cultura de Bombinhas",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://bombinhas.sc.gov.br/uploads/sites/369/2026/08/cancao.jpg",
+    "pagina_da_fonte": "https://bombinhas.sc.gov.br/vem-ai-o-5o-festival-da-cancao-de-bombinhas/",
+    "dimensao_original": "1029x687",
+    "baixada_em": "2026-08-29"
+  },
+  "vacinacao-sarampo-posto.jpg": {
+    "origem": "agencia publica",
+    "orgao": "Agencia Brasil / EBC",
+    "autor": "Paulo Pinto",
+    "ano": 2026,
+    "licenca": "reproducao autorizada para veiculos de comunicacao com fins jornalisticos, mediante indicacao da fonte; a foto nao traz marca de proibida reproducao",
+    "uso": "registro do fato",
+    "url_original": "https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/08/18/_int1060.jpg",
+    "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-08/ministerio-da-saude-reforca-chamamento-para-vacina-contra-o-sarampo",
+    "dimensao_original": "1170x700",
+    "tratamento": "faixa da direita cortada (de 1170 para 915 px de largura) para tirar do primeiro plano o rosto de um passante, e depois enquadrada em 1600x900",
+    "baixada_em": "2026-08-29"
   }
 }

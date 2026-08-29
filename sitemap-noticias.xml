@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-122-multivacinacao-prazo-1-setembro-sarampo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-29T18:20:00-03:00</news:publication_date>
+      <news:title>Campanha de multivacinação termina na terça, e o Ministério da Saúde reforça o alerta do sarampo</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-121-festival-cancao-bombinhas-20-finalistas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-29T18:15:00-03:00</news:publication_date>
+      <news:title>Festival da Canção de Bombinhas leva 20 finalistas ao palco no domingo, com R$ 14.500 em prêmios</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-120-conhecer-para-prevenir-tiago-linck-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-29T18:10:00-03:00</news:publication_date>
+      <news:title>Tiago Linck fala de inclusão para os professores de Itapema e encerra o Conhecer para Prevenir</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-119-bandeira-amarela-setembro-2026-aneel</loc>
     <news:news>
       <news:publication>
@@ -107,54 +143,6 @@
       </news:publication>
       <news:publication_date>2026-08-28T06:10:00-03:00</news:publication_date>
       <news:title>Câmara de Itapema aprova oito projetos, do cercamento dos parquinhos à Lei de Liberdade Econômica</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-110-desemprego-53-pnad-julho-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-27T18:20:00-03:00</news:publication_date>
-      <news:title>Desemprego cai para 5,3%, o menor da série, e a carteira assinada bate recorde</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-109-navegantes-64-anos-festival-nautico</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-27T18:15:00-03:00</news:publication_date>
-      <news:title>Navegantes faz 64 anos com três dias de festa, regata e torneio de pesca no Pontal</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-108-defesa-civil-itapema-chuva-fim-de-semana</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-27T18:10:00-03:00</news:publication_date>
-      <news:title>Defesa Civil espera de 100 a 150 milímetros de chuva em Itapema entre sábado e segunda</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-107-ipca15-agosto-2026-deflacao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-27T06:25:00-03:00</news:publication_date>
-      <news:title>Prévia da inflação fecha agosto em -0,40%, a maior queda de preços desde 2022</news:title>
     </news:news>
   </url>
 
