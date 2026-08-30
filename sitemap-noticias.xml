@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-128-escala-6x1-taxa-blusinhas-congresso</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-30T18:40:00-03:00</news:publication_date>
+      <news:title>Congresso vota nesta semana o fim da escala 6x1 e o fim da taxa das blusinhas</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-127-porto-belo-plano-reducao-riscos</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-30T18:30:00-03:00</news:publication_date>
+      <news:title>Porto Belo apresenta o Plano de Redução de Riscos em 10 de setembro, e a reunião é aberta a quem quiser ir</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-126-chuva-granizo-23-cidades-sc-emergencia</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-30T18:20:00-03:00</news:publication_date>
+      <news:title>Chuva com granizo atinge 23 cidades de Santa Catarina, e cinco decretam situação de emergência</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-125-novo-desenrola-brasil-prazo-31-agosto</loc>
     <news:news>
       <news:publication>
@@ -119,42 +155,6 @@
       </news:publication>
       <news:publication_date>2026-08-28T18:20:00-03:00</news:publication_date>
       <news:title>Santa Catarina cresce 1,54% e tem a segunda maior alta de população do país</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-115-escorpioes-navegantes-vigilancia-ambiental</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-28T18:15:00-03:00</news:publication_date>
-      <news:title>Navegantes captura 436 escorpiões em 2026, e a cada 10 vistorias a equipe acha de 6 a 7</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-114-cap-tea-itapema-um-ano</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-28T18:10:00-03:00</news:publication_date>
-      <news:title>CAP-TEA de Itapema completa um ano com 72 mil atendimentos e 451 crianças acompanhadas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-113-servicos-pas-2024-ibge-alimentacao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-28T06:20:00-03:00</news:publication_date>
-      <news:title>Alimentação é o que mais emprega no setor de serviços e o que menos paga, com média de 1,4 salário mínimo</news:title>
     </news:news>
   </url>
 

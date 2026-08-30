@@ -1545,5 +1545,39 @@
     "id_pexels": 36554432,
     "termo_de_busca": "storm dark clouds city street rain",
     "baixada_em": "2026-08-30"
+  },
+  "temporal-granizo-arvore-caida.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "April Yang",
+    "url_fotografo": "https://www.pexels.com/@april-yang-2152726722",
+    "url_original": "https://www.pexels.com/photo/uprooted-tree-after-severe-storm-in-urban-area-32394146/",
+    "id_pexels": 32394146,
+    "termo_de_busca": "hail storm damage",
+    "baixada_em": "2026-08-30"
+  },
+  "casa-alagada-chuva-risco.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Helena Jankovičová Kováčová",
+    "url_fotografo": "https://www.pexels.com/@helen1",
+    "url_original": "https://www.pexels.com/photo/flooded-suburban-house-during-heavy-rain-28447774/",
+    "id_pexels": 28447774,
+    "termo_de_busca": "heavy rain flooded street storm",
+    "baixada_em": "2026-08-30"
+  },
+  "congresso-nacional-esplanada.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Agência Brasil",
+    "autor": "Rafa Neddermeyer",
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/22/_raf2044.jpg",
+    "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-08/congresso-vota-nesta-semana-fim-da-escala-6x1-e-taxa-das-blusinhas",
+    "dimensao_original": "5000x2709",
+    "baixada_em": "2026-08-30"
   }
 }
