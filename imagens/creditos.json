@@ -1511,5 +1511,39 @@
     "dimensao_original": "1170x700",
     "tratamento": "faixa da direita cortada (de 1170 para 915 px de largura) para tirar do primeiro plano o rosto de um passante, e depois enquadrada em 1600x900",
     "baixada_em": "2026-08-29"
+  },
+  "defesa-civil-reuniao-amfri-el-nino.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/08/Defesa-Civil-_-Reuniao-_-Amfri-1.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-participa-de-reuniao-regional-para-fortalecer-acoes-de-prevencao-aos-impactos-do-el-nino/",
+    "dimensao_original": "1200x1155",
+    "baixada_em": "2026-08-30"
+  },
+  "renegociacao-divida-calculadora.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Kaboompics.com",
+    "url_fotografo": "https://www.pexels.com/@karola-g",
+    "url_original": "https://www.pexels.com/photo/a-close-up-shot-of-a-person-using-a-calculator-7680696/",
+    "id_pexels": 7680696,
+    "termo_de_busca": "unpaid bills calculator debt paperwork table",
+    "baixada_em": "2026-08-30"
+  },
+  "temporal-frente-fria-cidade.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Jonathan Borba",
+    "url_fotografo": "https://www.pexels.com/@jonathanborba",
+    "url_original": "https://www.pexels.com/photo/storm-clouds-over-city-skyscrapers-36554432/",
+    "id_pexels": 36554432,
+    "termo_de_busca": "storm dark clouds city street rain",
+    "baixada_em": "2026-08-30"
   }
 }

@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-125-novo-desenrola-brasil-prazo-31-agosto</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-30T06:35:00-03:00</news:publication_date>
+      <news:title>Novo Desenrola termina na segunda, com desconto de até 90% para quem está atrasado há mais de um ano</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-124-el-nino-nao-brinca-itapema-38-estacoes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-30T06:25:00-03:00</news:publication_date>
+      <news:title>Itapema entra na campanha regional contra o El Niño, e o litoral terá 38 estações medindo chuva</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-123-temporais-santa-catarina-ate-terca-defesa-civil</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-30T06:15:00-03:00</news:publication_date>
+      <news:title>Temporal com granizo segue até terça em Santa Catarina, e o litoral deve receber de 100 a 150 milímetros</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-122-multivacinacao-prazo-1-setembro-sarampo</loc>
     <news:news>
       <news:publication>
@@ -119,30 +155,6 @@
       </news:publication>
       <news:publication_date>2026-08-28T06:20:00-03:00</news:publication_date>
       <news:title>Alimentação é o que mais emprega no setor de serviços e o que menos paga, com média de 1,4 salário mínimo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-112-faaci-reuniao-publica-procedimentos-ambientais</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-28T06:15:00-03:00</news:publication_date>
-      <news:title>FAACI marca reunião pública para explicar as novas regras ambientais de obra em Itapema</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-111-camara-itapema-26a-sessao-oito-projetos</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-28T06:10:00-03:00</news:publication_date>
-      <news:title>Câmara de Itapema aprova oito projetos, do cercamento dos parquinhos à Lei de Liberdade Econômica</news:title>
     </news:news>
   </url>
 
