@@ -1612,5 +1612,38 @@
     "id_pexels": 6321080,
     "termo_de_busca": "bandeira do brasil desfile civico rua",
     "baixada_em": "2026-08-31"
+  },
+  "alerta-fraude-celular-golpe.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "RDNE Stock project",
+    "url_fotografo": "https://www.pexels.com/@rdne",
+    "url_original": "https://www.pexels.com/photo/an-alert-text-message-on-a-cellphone-7821766/",
+    "id_pexels": 7821766,
+    "termo_de_busca": "golpe celular mensagem",
+    "baixada_em": "2026-08-31"
+  },
+  "live-editais-cultura-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Anete Lusina",
+    "url_fotografo": "https://www.pexels.com/@anete-lusina",
+    "url_original": "https://www.pexels.com/photo/modern-video-camera-and-laptop-near-opened-notebook-4793154/",
+    "id_pexels": 4793154,
+    "termo_de_busca": "live transmissao notebook camera",
+    "baixada_em": "2026-08-31"
+  },
+  "orquestra-amfri-turne-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Sami TÜRK",
+    "url_fotografo": "https://www.pexels.com/@trksami",
+    "url_original": "https://www.pexels.com/photo/people-playing-violins-15096222/",
+    "id_pexels": 15096222,
+    "termo_de_busca": "orquestra palco concerto violoncelo",
+    "baixada_em": "2026-08-31"
   }
 }

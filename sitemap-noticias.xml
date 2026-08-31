@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-134-golpes-internet-cetic-45-milhoes-brasileiros</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-31T18:30:00-03:00</news:publication_date>
+      <news:title>45 milhões de brasileiros sofreram tentativa de golpe na internet, e um em cada cinco virou vítima</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-133-orquestra-brasil-sobre-trilhos-encerra-turne-amfri</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-31T18:20:00-03:00</news:publication_date>
+      <news:title>Orquestra com 60 jovens encerra em Itapema uma turnê que passou por dez cidades da região</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-132-editais-cultura-itapema-lives-tira-duvidas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-31T18:10:00-03:00</news:publication_date>
+      <news:title>Itapema faz três lives para explicar os editais de cultura, e marca tira-dúvidas presencial no dia 9</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-131-tijucas-desfile-7-setembro-bloqueio-transito</loc>
     <news:news>
       <news:publication>
@@ -119,42 +155,6 @@
       </news:publication>
       <news:publication_date>2026-08-29T18:20:00-03:00</news:publication_date>
       <news:title>Campanha de multivacinação termina na terça, e o Ministério da Saúde reforça o alerta do sarampo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-121-festival-cancao-bombinhas-20-finalistas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-29T18:15:00-03:00</news:publication_date>
-      <news:title>Festival da Canção de Bombinhas leva 20 finalistas ao palco no domingo, com R$ 14.500 em prêmios</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-120-conhecer-para-prevenir-tiago-linck-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-29T18:10:00-03:00</news:publication_date>
-      <news:title>Tiago Linck fala de inclusão para os professores de Itapema e encerra o Conhecer para Prevenir</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-119-bandeira-amarela-setembro-2026-aneel</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-29T06:20:00-03:00</news:publication_date>
-      <news:title>Bandeira amarela segue em setembro, e a conta de luz continua com R$ 1,885 a mais a cada 100 kWh</news:title>
     </news:news>
   </url>
 
