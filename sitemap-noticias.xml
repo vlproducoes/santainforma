@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-131-tijucas-desfile-7-setembro-bloqueio-transito</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-31T06:50:00-03:00</news:publication_date>
+      <news:title>Tijucas fecha ruas da Avenida Hercílio Luz para o desfile de 7 de setembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-130-mata-atlantica-em-pe-sc-380-hectares</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-31T06:40:00-03:00</news:publication_date>
+      <news:title>Operação autua mais de 380 hectares de desmatamento em Santa Catarina, com R$ 2,7 milhões em multas</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-129-ressaca-mar-agitado-litoral-terca-quarta</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-31T06:30:00-03:00</news:publication_date>
+      <news:title>Ciclone deixa o mar agitado e traz risco de ressaca no litoral na terça e na quarta</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-128-escala-6x1-taxa-blusinhas-congresso</loc>
     <news:news>
       <news:publication>
@@ -119,42 +155,6 @@
       </news:publication>
       <news:publication_date>2026-08-29T06:20:00-03:00</news:publication_date>
       <news:title>Bandeira amarela segue em setembro, e a conta de luz continua com R$ 1,885 a mais a cada 100 kWh</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-118-limpa-fios-porto-belo-cabeamento</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-29T06:15:00-03:00</news:publication_date>
-      <news:title>Porto Belo começa a tirar fio solto dos postes, e cabo sem permissão da Celesc pode ser retirado</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-117-dibea-itapema-bem-estar-animal</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-29T06:10:00-03:00</news:publication_date>
-      <news:title>Itapema tem diretoria própria de bem-estar animal, da castração ao caso de maus-tratos</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-116-populacao-santa-catarina-ibge-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-28T18:20:00-03:00</news:publication_date>
-      <news:title>Santa Catarina cresce 1,54% e tem a segunda maior alta de população do país</news:title>
     </news:news>
   </url>
 

@@ -1579,5 +1579,38 @@
     "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-08/congresso-vota-nesta-semana-fim-da-escala-6x1-e-taxa-das-blusinhas",
     "dimensao_original": "5000x2709",
     "baixada_em": "2026-08-30"
+  },
+  "ressaca-ondas-litoral-setembro.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Ray Bilcliff",
+    "url_fotografo": "https://www.pexels.com/@raybilcliff",
+    "url_original": "https://www.pexels.com/photo/big-ocean-waves-crashing-on-shore-7977072/",
+    "id_pexels": 7977072,
+    "termo_de_busca": "ondas fortes mar agitado praia",
+    "baixada_em": "2026-08-31"
+  },
+  "mata-atlantica-floresta-sc.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Filipe Braggio",
+    "url_fotografo": "https://www.pexels.com/@filipe-braggio-57041688",
+    "url_original": "https://www.pexels.com/photo/aerial-view-of-lush-tropical-forest-in-rio-de-janeiro-35047478/",
+    "id_pexels": 35047478,
+    "termo_de_busca": "mata atlantica floresta brasil",
+    "baixada_em": "2026-08-31"
+  },
+  "bandeira-brasil-desfile-tijucas.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Murilo Fonseca",
+    "url_fotografo": "https://www.pexels.com/@murilo-fonseca-14867612",
+    "url_original": "https://www.pexels.com/photo/close-up-of-brazilian-flag-6321080/",
+    "id_pexels": 6321080,
+    "termo_de_busca": "bandeira do brasil desfile civico rua",
+    "baixada_em": "2026-08-31"
   }
 }

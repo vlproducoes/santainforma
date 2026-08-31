@@ -3,7 +3,7 @@
 
   <url>
     <loc>https://santainforma.com.br/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -893,6 +893,24 @@
   <url>
     <loc>https://santainforma.com.br/materia-128-escala-6x1-taxa-blusinhas-congresso</loc>
     <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-129-ressaca-mar-agitado-litoral-terca-quarta</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-130-mata-atlantica-em-pe-sc-380-hectares</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-131-tijucas-desfile-7-setembro-bloqueio-transito</loc>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
