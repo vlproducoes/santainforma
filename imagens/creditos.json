@@ -1678,5 +1678,41 @@
     "id_pexels": 3355400,
     "termo_de_busca": "beer bottles glass counter bar",
     "baixada_em": "2026-09-01"
+  },
+  "uti-hospital-santo-antonio-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/09/abertura_UTI-1.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/hospital-santo-antonio-de-itapema-passa-a-contar-com-10-leitos-de-uti-custeados-pelo-estado/",
+    "dimensao_original": "1600x1200",
+    "baixada_em": "2026-09-01"
+  },
+  "morro-do-encano-corte-rocha-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/09/obras_Morro_Encano.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/comunicado-detonacao-de-rochas-bloqueia-morro-do-encano-nesta-sexta-feira-04/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-09-01"
+  },
+  "pix-central-tela-celular.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Agência Brasil",
+    "autor": "Bruno Peres",
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/20/_mg_8269.jpg",
+    "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/nova-regra-do-pix-amplia-prazo-para-contestar-golpe",
+    "dimensao_original": "5472x3648",
+    "baixada_em": "2026-09-01"
   }
 }

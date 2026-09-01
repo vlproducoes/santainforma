@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-140-pix-med-80-dias-contestar-devolucao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-01T18:40:00-03:00</news:publication_date>
+      <news:title>Quem recebeu Pix e teve o dinheiro devolvido por suspeita de golpe agora tem 80 dias para contestar</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-139-morro-do-encano-detonacao-rochas-sexta</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-01T18:30:00-03:00</news:publication_date>
+      <news:title>Detonação de rochas fecha o Morro do Encano nesta sexta, e o bloqueio deve durar o dia inteiro</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-138-uti-hospital-santo-antonio-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-01T18:20:00-03:00</news:publication_date>
+      <news:title>Hospital Santo Antônio abre 10 leitos de UTI em Itapema, e o Estado banca o custeio</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-137-imposto-seletivo-419-bilhoes-2027</loc>
     <news:news>
       <news:publication>
@@ -143,30 +179,6 @@
       </news:publication>
       <news:publication_date>2026-08-30T18:20:00-03:00</news:publication_date>
       <news:title>Chuva com granizo atinge 23 cidades de Santa Catarina, e cinco decretam situação de emergência</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-125-novo-desenrola-brasil-prazo-31-agosto</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-30T06:35:00-03:00</news:publication_date>
-      <news:title>Novo Desenrola termina na segunda, com desconto de até 90% para quem está atrasado há mais de um ano</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-124-el-nino-nao-brinca-itapema-38-estacoes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-30T06:25:00-03:00</news:publication_date>
-      <news:title>Itapema entra na campanha regional contra o El Niño, e o litoral terá 38 estações medindo chuva</news:title>
     </news:news>
   </url>
 
