@@ -1645,5 +1645,38 @@
     "id_pexels": 15096222,
     "termo_de_busca": "orquestra palco concerto violoncelo",
     "baixada_em": "2026-08-31"
+  },
+  "rampa-acessibilidade-calcada.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Sidney de Almeida",
+    "url_fotografo": "https://www.pexels.com/@sidney-de-almeida-1436778037",
+    "url_original": "https://www.pexels.com/photo/accessibility-ramp-for-wheelchair-users-with-accessibility-symbol-design-26651561/",
+    "id_pexels": 26651561,
+    "termo_de_busca": "wheelchair ramp sidewalk street",
+    "baixada_em": "2026-09-01"
+  },
+  "rodovia-marginais-caminhoes.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "K",
+    "url_fotografo": "https://www.pexels.com/@kelly",
+    "url_original": "https://www.pexels.com/photo/roads-with-driving-vehicles-near-lush-green-forest-in-daylight-4030646/",
+    "id_pexels": 4030646,
+    "termo_de_busca": "highway aerial view trucks traffic",
+    "baixada_em": "2026-09-01"
+  },
+  "bebidas-alcoolicas-prateleira-bar.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Clam Lo",
+    "url_fotografo": "https://www.pexels.com/@clam-lo-1782448",
+    "url_original": "https://www.pexels.com/photo/selective-focus-photo-of-alcohol-bottles-3355400/",
+    "id_pexels": 3355400,
+    "termo_de_busca": "beer bottles glass counter bar",
+    "baixada_em": "2026-09-01"
   }
 }

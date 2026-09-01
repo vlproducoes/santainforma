@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-137-imposto-seletivo-419-bilhoes-2027</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-01T06:50:00-03:00</news:publication_date>
+      <news:title>Imposto do pecado deve render R$ 41,9 bilhões em 2027, e mira cigarro, bebida, refrigerante e aposta</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-136-navegantes-prf-marginais-br-470</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-01T06:40:00-03:00</news:publication_date>
+      <news:title>Navegantes assume o trânsito das marginais da BR-470 e vira a segunda cidade do país a fazer isso</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-135-acessibilidade-calcadas-itapema-tribuna-do-povo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-01T06:30:00-03:00</news:publication_date>
+      <news:title>Calçada bloqueada em Itapema vira assunto na Tribuna do Povo da Câmara</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-134-golpes-internet-cetic-45-milhoes-brasileiros</loc>
     <news:news>
       <news:publication>
@@ -131,30 +167,6 @@
       </news:publication>
       <news:publication_date>2026-08-30T06:25:00-03:00</news:publication_date>
       <news:title>Itapema entra na campanha regional contra o El Niño, e o litoral terá 38 estações medindo chuva</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-123-temporais-santa-catarina-ate-terca-defesa-civil</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-30T06:15:00-03:00</news:publication_date>
-      <news:title>Temporal com granizo segue até terça em Santa Catarina, e o litoral deve receber de 100 a 150 milímetros</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-122-multivacinacao-prazo-1-setembro-sarampo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-29T18:20:00-03:00</news:publication_date>
-      <news:title>Campanha de multivacinação termina na terça, e o Ministério da Saúde reforça o alerta do sarampo</news:title>
     </news:news>
   </url>
 
