@@ -1747,5 +1747,39 @@
     "id_pexels": 16123211,
     "termo_de_busca": "ocean waves beach shore brazil coast",
     "baixada_em": "2026-09-02"
+  },
+  "cadastro-habitacional-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Kampus Production",
+    "url_fotografo": "https://www.pexels.com/@kampus",
+    "url_original": "https://www.pexels.com/photo/hand-with-pen-on-documents-on-desk-8441817/",
+    "id_pexels": 8441817,
+    "termo_de_busca": "documentos formulario cadastro papel mesa",
+    "baixada_em": "2026-09-02"
+  },
+  "ambulancia-sus-tromboliticos.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Danielle  Calazans",
+    "url_fotografo": "https://www.pexels.com/@danielle-calazans-2159122311",
+    "url_original": "https://www.pexels.com/photo/emergency-ambulance-with-red-siren-light-in-city-36698627/",
+    "id_pexels": 36698627,
+    "termo_de_busca": "ambulancia emergencia hospital",
+    "baixada_em": "2026-09-02"
+  },
+  "secretaria-educacao-itapema-fila-unica.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/01/secretaria-de-educacao-3.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/educacao-divulga-sexta-chamada-dos-contemplados-do-fila-unica-inscritos-em-2026/",
+    "dimensao_original": "1600x1200",
+    "baixada_em": "2026-09-02"
   }
 }
