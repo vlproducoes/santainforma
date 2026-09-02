@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-143-pib-segundo-trimestre-2026-ibge</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-02T06:40:00-03:00</news:publication_date>
+      <news:title>Economia brasileira cresce 0,5% no trimestre, mas o comércio fica parado e as famílias gastam menos</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-142-protecao-mora-ao-lado-condominios-mpsc</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-02T06:30:00-03:00</news:publication_date>
+      <news:title>Ministério Público quer síndico e porteiro preparados para reconhecer violência contra a mulher dentro do condomínio</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-141-salva-vidas-civis-itapema-1996-camara</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-02T06:20:00-03:00</news:publication_date>
+      <news:title>Itapema formou a primeira turma de salva-vidas civis de Santa Catarina, e hoje o litoral tem mais de 5 mil guarda-vidas</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-140-pix-med-80-dias-contestar-devolucao</loc>
     <news:news>
       <news:publication>
@@ -143,42 +179,6 @@
       </news:publication>
       <news:publication_date>2026-08-31T06:30:00-03:00</news:publication_date>
       <news:title>Ciclone deixa o mar agitado e traz risco de ressaca no litoral na terça e na quarta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-128-escala-6x1-taxa-blusinhas-congresso</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-30T18:40:00-03:00</news:publication_date>
-      <news:title>Congresso vota nesta semana o fim da escala 6x1 e o fim da taxa das blusinhas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-127-porto-belo-plano-reducao-riscos</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-30T18:30:00-03:00</news:publication_date>
-      <news:title>Porto Belo apresenta o Plano de Redução de Riscos em 10 de setembro, e a reunião é aberta a quem quiser ir</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-126-chuva-granizo-23-cidades-sc-emergencia</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-30T18:20:00-03:00</news:publication_date>
-      <news:title>Chuva com granizo atinge 23 cidades de Santa Catarina, e cinco decretam situação de emergência</news:title>
     </news:news>
   </url>
 

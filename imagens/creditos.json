@@ -1714,5 +1714,38 @@
     "pagina_da_fonte": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/nova-regra-do-pix-amplia-prazo-para-contestar-golpe",
     "dimensao_original": "5472x3648",
     "baixada_em": "2026-09-01"
+  },
+  "cedulas-real-pib-trimestre.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Ivo Brasil",
+    "url_fotografo": "https://www.pexels.com/@ivo-brasil-335441",
+    "url_original": "https://www.pexels.com/photo/cedulas-de-real-moeda-do-brasil-27797871/",
+    "id_pexels": 27797871,
+    "termo_de_busca": "brazilian real banknotes money",
+    "baixada_em": "2026-09-02"
+  },
+  "predio-residencial-varandas-brasil.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Matheus Amaral",
+    "url_fotografo": "https://www.pexels.com/@eumatheusamaral",
+    "url_original": "https://www.pexels.com/photo/modern-high-rise-building-architecture-in-brazil-33493504/",
+    "id_pexels": 33493504,
+    "termo_de_busca": "modern residential tower balconies brazil beach city",
+    "baixada_em": "2026-09-02"
+  },
+  "mar-arrebentacao-praia-sc.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Marcos Andrade",
+    "url_fotografo": "https://www.pexels.com/@marcos-andrade-501850642",
+    "url_original": "https://www.pexels.com/photo/top-view-of-beach-on-sea-shore-16123211/",
+    "id_pexels": 16123211,
+    "termo_de_busca": "ocean waves beach shore brazil coast",
+    "baixada_em": "2026-09-02"
   }
 }
