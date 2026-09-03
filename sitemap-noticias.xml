@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-152-navegantes-945-kg-lixo-festa-aniversario</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-03T18:40:00-03:00</news:publication_date>
+      <news:title>Festa de 64 anos de Navegantes deixou 945 quilos de resíduo, e a maior parte saiu separada para reciclagem</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-151-ciamp-populacao-em-situacao-de-rua-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-03T18:30:00-03:00</news:publication_date>
+      <news:title>Itapema abre cinco vagas para entidades no comitê que vai cuidar da população em situação de rua</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-150-marginal-oeste-morretes-pavimentacao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-03T18:20:00-03:00</news:publication_date>
+      <news:title>Marginal Oeste do Morretes vai receber asfalto, e a vala que juntava água virou tubulação</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-149-fiocruz-vacina-rnam-covid-anvisa</loc>
     <news:news>
       <news:publication>
@@ -143,42 +179,6 @@
       </news:publication>
       <news:publication_date>2026-09-01T18:20:00-03:00</news:publication_date>
       <news:title>Hospital Santo Antônio abre 10 leitos de UTI em Itapema, e o Estado banca o custeio</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-137-imposto-seletivo-419-bilhoes-2027</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-01T06:50:00-03:00</news:publication_date>
-      <news:title>Imposto do pecado deve render R$ 41,9 bilhões em 2027, e mira cigarro, bebida, refrigerante e aposta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-136-navegantes-prf-marginais-br-470</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-01T06:40:00-03:00</news:publication_date>
-      <news:title>Navegantes assume o trânsito das marginais da BR-470 e vira a segunda cidade do país a fazer isso</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-135-acessibilidade-calcadas-itapema-tribuna-do-povo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-01T06:30:00-03:00</news:publication_date>
-      <news:title>Calçada bloqueada em Itapema vira assunto na Tribuna do Povo da Câmara</news:title>
     </news:news>
   </url>
 

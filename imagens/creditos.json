@@ -1814,5 +1814,28 @@
     "id_pexels": 36410539,
     "termo_de_busca": "wooden pier river mouth boats",
     "baixada_em": "2026-09-03"
+  },
+  "marginal-oeste-morretes.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/09/Marginal-3.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/marginal-oeste-do-morretes-sera-pavimentada-entre-as-ruas-424-e-444/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-09-03"
+  },
+  "lixo-festa-navegantes.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Hiago Rocha",
+    "url_fotografo": "https://www.pexels.com/@hiagorocha",
+    "url_original": "https://www.pexels.com/photo/colorful-garbage-bins-17072315/",
+    "id_pexels": 17072315,
+    "termo_de_busca": "recycling waste separation bins",
+    "baixada_em": "2026-09-03"
   }
 }
