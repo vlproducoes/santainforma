@@ -1103,3 +1103,49 @@ header.ceu,.editorias.fixa{background:var(--ceu-alto-t)}
   .texto h2{text-wrap:pretty;gap:8px;font-size:1.32rem}
   .texto h2 .icone{margin-top:.3em}
 }
+
+/* AVISO DE COOKIE
+   Sobrepoe o rodape em vez de empurrar o conteudo: banner que empurra soma
+   CLS, e o Core Web Vitals mede isso. Fica preso embaixo, acima de tudo,
+   e sai da tela assim que a pessoa escolhe. Cores so da camada semantica. */
+.consentimento{
+  position:fixed;left:0;right:0;bottom:0;z-index:200;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px;
+  padding:16px 22px;
+  background:var(--breu);color:var(--espuma);
+  border-top:3px solid var(--sol);
+  box-shadow:0 -8px 28px color-mix(in srgb,var(--breu) 35%,transparent);
+  animation:consent-sobe var(--dur-chegada) var(--curva-chegada) both}
+@keyframes consent-sobe{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){
+  .consentimento{animation:none}
+}
+.consentimento-texto{flex:1 1 420px;max-width:70ch}
+.consentimento-texto strong{
+  display:block;font-family:var(--display);font-size:.95rem;font-weight:800;
+  letter-spacing:-.01em;color:var(--sol);margin-bottom:3px}
+.consentimento-texto p{font-family:var(--display);font-size:.84rem;line-height:1.5;
+  color:color-mix(in srgb,var(--espuma) 88%,transparent)}
+.consentimento-texto a{color:var(--sol);text-decoration:underline;text-underline-offset:2px}
+.consentimento-texto a:focus-visible{outline:2px solid var(--sol);outline-offset:3px}
+.consentimento-acoes{display:flex;flex-wrap:wrap;gap:10px;flex:0 0 auto}
+.consentimento-acoes button{
+  font-family:var(--display);font-size:.83rem;font-weight:600;letter-spacing:.02em;
+  min-height:44px;padding:11px 20px;border-radius:3px;cursor:pointer;
+  transition:background var(--dur-toque) var(--curva-troca),
+             color var(--dur-toque) var(--curva-troca)}
+.consentimento-acoes button:focus-visible{outline:2px solid var(--sol);outline-offset:3px}
+.consentimento .btn-aceitar{
+  border:1px solid var(--sol);background:var(--sol);color:var(--breu)}
+.consentimento .btn-aceitar:hover{
+  background:color-mix(in srgb,var(--sol) 85%,var(--espuma))}
+.consentimento .btn-recusar{
+  border:1px solid color-mix(in srgb,var(--espuma) 55%,transparent);
+  background:transparent;color:var(--espuma)}
+.consentimento .btn-recusar:hover{
+  background:color-mix(in srgb,var(--espuma) 12%,transparent)}
+@media(max-width:640px){
+  .consentimento{gap:12px;padding:14px 16px}
+  .consentimento-acoes{width:100%}
+  .consentimento-acoes button{flex:1 1 auto}
+}
