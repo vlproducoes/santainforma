@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-149-fiocruz-vacina-rnam-covid-anvisa</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-03T06:15:00-03:00</news:publication_date>
+      <news:title>Anvisa libera o teste em gente da primeira vacina de RNA mensageiro feita no Brasil</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-148-porto-belo-15-cameras-seguracidade</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-03T06:10:00-03:00</news:publication_date>
+      <news:title>Porto Belo chega a 114 câmeras de monitoramento, com 15 novas pagas por uma empresa privada</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-147-consulta-publica-nome-pier-foz-rio-pereque</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-03T06:05:00-03:00</news:publication_date>
+      <news:title>Câmara de Itapema abre enquete para o morador dizer se o píer da Foz do Rio Perequê muda de nome</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-146-tromboliticos-sus-upa-samu</loc>
     <news:news>
       <news:publication>
@@ -143,30 +179,6 @@
       </news:publication>
       <news:publication_date>2026-09-01T06:30:00-03:00</news:publication_date>
       <news:title>Calçada bloqueada em Itapema vira assunto na Tribuna do Povo da Câmara</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-134-golpes-internet-cetic-45-milhoes-brasileiros</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-31T18:30:00-03:00</news:publication_date>
-      <news:title>45 milhões de brasileiros sofreram tentativa de golpe na internet, e um em cada cinco virou vítima</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-133-orquestra-brasil-sobre-trilhos-encerra-turne-amfri</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-31T18:20:00-03:00</news:publication_date>
-      <news:title>Orquestra com 60 jovens encerra em Itapema uma turnê que passou por dez cidades da região</news:title>
     </news:news>
   </url>
 

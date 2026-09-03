@@ -1781,5 +1781,38 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/educacao-divulga-sexta-chamada-dos-contemplados-do-fila-unica-inscritos-em-2026/",
     "dimensao_original": "1600x1200",
     "baixada_em": "2026-09-02"
+  },
+  "videomonitoramento-porto-belo.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "tommy picone",
+    "url_fotografo": "https://www.pexels.com/@tommaso",
+    "url_original": "https://www.pexels.com/photo/urban-traffic-surveillance-with-cctv-camera-30546987/",
+    "id_pexels": 30546987,
+    "termo_de_busca": "security surveillance camera street",
+    "baixada_em": "2026-09-03"
+  },
+  "vacina-rnam-fiocruz.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Artem Podrez",
+    "url_fotografo": "https://www.pexels.com/@artempodrez",
+    "url_original": "https://www.pexels.com/photo/vials-with-specimens-8533080/",
+    "id_pexels": 8533080,
+    "termo_de_busca": "vaccine vial laboratory research",
+    "baixada_em": "2026-09-03"
+  },
+  "pier-foz-rio-pereque-consulta.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Jonathan Borba",
+    "url_fotografo": "https://www.pexels.com/@jonathanborba",
+    "url_original": "https://www.pexels.com/photo/rustic-pier-with-boat-on-sandy-riverbank-36410539/",
+    "id_pexels": 36410539,
+    "termo_de_busca": "wooden pier river mouth boats",
+    "baixada_em": "2026-09-03"
   }
 }
