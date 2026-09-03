@@ -1,3 +1,72 @@
+/* CONSENTIMENTO ANTES DE MEDIR E DE ANUNCIAR
+   Este bloco precisa rodar antes do gtag.js e do adsbygoogle.js, e por isso
+   mora no topo do visual.js, que o HEAD carrega antes dos dois.
+
+   Modo de consentimento v2 do Google. O padrao e negado: nada de armazenamento
+   de anuncio ou de medicao ate a pessoa escolher. Quem nao escolhe nada
+   continua lendo o site inteiro, com anuncio nao personalizado e sem cookie
+   de perfil. Base: Guia de Cookies da ANPD, que trata o consentimento como a
+   hipotese adequada para cookie de publicidade. */
+(function () {
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = window.gtag || gtag;
+
+  var CHAVE = 'si-consentimento';
+  var VERSAO = 1;
+
+  function lido() {
+    try {
+      var bruto = localStorage.getItem(CHAVE);
+      if (!bruto) return null;
+      var v = JSON.parse(bruto);
+      return (v && v.versao === VERSAO) ? v : null;
+    } catch (e) { return null; }
+  }
+
+  var salvo = lido();
+  var aceitou = !!(salvo && salvo.analise);
+
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
+
+  if (aceitou) {
+    gtag('consent', 'update', {
+      analytics_storage: 'granted'
+    });
+  }
+
+  /* O portal nao pede personalizacao de anuncio em nenhuma hipotese, entao
+     ad_personalization e ad_user_data ficam negados mesmo para quem aceita.
+     Isso conversa com o requestNonPersonalizedAds que o HEAD ja envia. */
+
+  window.SantaConsentimento = {
+    CHAVE: CHAVE,
+    VERSAO: VERSAO,
+    ler: lido,
+    decidido: function () { return !!salvo; },
+    gravar: function (analise) {
+      var v = { versao: VERSAO, analise: !!analise, data: new Date().toISOString() };
+      try { localStorage.setItem(CHAVE, JSON.stringify(v)); } catch (e) {}
+      salvo = v;
+      gtag('consent', 'update', { analytics_storage: analise ? 'granted' : 'denied' });
+      return v;
+    },
+    esquecer: function () {
+      try { localStorage.removeItem(CHAVE); } catch (e) {}
+      salvo = null;
+      gtag('consent', 'update', { analytics_storage: 'denied' });
+    }
+  };
+})();
+
 /* SANTA INFORMA | movimento discreto e relogio | v1.2
    Regra de ouro: o conteudo nunca depende do efeito para aparecer.
    Sem JS, sem IntersectionObserver ou com ele falhando, tudo fica visivel. */
@@ -480,3 +549,105 @@ document.addEventListener('DOMContentLoaded', function () {
   var nums = document.querySelector('.paginacao .numeros');
   if (nums) centraliza(nums, nums.querySelector('[aria-current]'));
 });
+
+/* AVISO DE COOKIE E CENTRAL DE PREFERENCIA
+   O aviso sobrepoe o rodape, nunca empurra o texto: layout que pula conta
+   como CLS e o Google mede isso. Aparece so para quem ainda nao decidiu.
+   O link "Preferencia de cookie" no rodape reabre a escolha a qualquer
+   momento, que e a exigencia de revogar com a mesma facilidade de aceitar. */
+(function () {
+  var C = window.SantaConsentimento;
+  if (!C) return;
+
+  var caixa = null;
+
+  function fechar() {
+    if (!caixa) return;
+    caixa.remove();
+    caixa = null;
+  }
+
+  function montar() {
+    if (caixa) return;
+    caixa = document.createElement('div');
+    caixa.className = 'consentimento';
+    caixa.setAttribute('role', 'dialog');
+    caixa.setAttribute('aria-live', 'polite');
+    caixa.setAttribute('aria-label', 'Aviso de cookies');
+    caixa.innerHTML =
+      '<div class="consentimento-texto">' +
+        '<strong>Cookies por aqui</strong>' +
+        '<p>Usamos cookie necessario para o site funcionar e, se voce deixar, ' +
+        'cookie de medicao de audiencia para saber quais materias sao lidas. ' +
+        'O anuncio do Google e sempre nao personalizado. Detalhes na ' +
+        '<a href="privacidade.html">Politica de Privacidade</a>.</p>' +
+      '</div>' +
+      '<div class="consentimento-acoes">' +
+        '<button type="button" class="btn-recusar">Só o necessário</button>' +
+        '<button type="button" class="btn-aceitar">Aceitar medição</button>' +
+      '</div>';
+
+    document.body.appendChild(caixa);
+
+    caixa.querySelector('.btn-aceitar').addEventListener('click', function () {
+      C.gravar(true);
+      fechar();
+    });
+    caixa.querySelector('.btn-recusar').addEventListener('click', function () {
+      C.gravar(false);
+      fechar();
+    });
+  }
+
+  /* O rodape das paginas institucionais ja traz os dois links no HTML. Nas
+     materias o bloco e identico em 173 arquivos, entao o link entra por aqui:
+     mesma navegacao em todo o site, sem reescrever cada materia. A pagina
+     contato.html continua no sitemap e linkada em texto por sobre, privacidade
+     e termos, entao o rastreador acha ela sem depender de JS. */
+  function completarRodape() {
+    var blocos = document.querySelectorAll('footer .fgrid > div');
+    for (var i = 0; i < blocos.length; i++) {
+      var bloco = blocos[i];
+      var h = bloco.querySelector('h2');
+      if (!h || h.textContent.trim() !== 'Institucional') continue;
+      if (bloco.querySelector('[data-consentimento]')) return;
+
+      var tabela = bloco.querySelector('a[href="anuncie.html"]');
+      if (!bloco.querySelector('a[href="contato.html"]') && tabela) {
+        var contato = document.createElement('a');
+        contato.href = 'contato.html';
+        contato.textContent = 'Fale com a Redação';
+        bloco.insertBefore(contato, tabela);
+      }
+
+      var pref = document.createElement('a');
+      pref.href = '#';
+      pref.textContent = 'Preferência de cookie';
+      pref.setAttribute('data-consentimento', '');
+      bloco.appendChild(pref);
+      return;
+    }
+  }
+
+  function iniciar() {
+    completarRodape();
+    if (!C.decidido()) montar();
+
+    /* o link do rodape existe em todas as paginas e reabre a escolha */
+    document.addEventListener('click', function (e) {
+      var alvo = e.target.closest ? e.target.closest('[data-consentimento]') : null;
+      if (!alvo) return;
+      e.preventDefault();
+      C.esquecer();
+      montar();
+      var b = caixa && caixa.querySelector('.btn-aceitar');
+      if (b) b.focus();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', iniciar);
+  } else {
+    iniciar();
+  }
+})();
