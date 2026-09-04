@@ -30,6 +30,13 @@
   </url>
 
   <url>
+    <loc>https://santainforma.com.br/politica-editorial</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/contato</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -407,12 +414,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://santainforma.com.br/materia-45-simples-nacional-fim-regime-de-caixa</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://santainforma.com.br/noticias-8</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -439,13 +440,6 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/materia-49-meia-praia-agosto-sem-inicio</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-50-lei-seca-contran-triagem-reteste</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -495,13 +489,6 @@
 
   <url>
     <loc>https://santainforma.com.br/materia-56-palestra-obesidade-sem-mitos-camara</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-57-abono-salarial-ultimo-lote-novembro-dezembro</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -613,13 +600,6 @@
   </url>
 
   <url>
-    <loc>https://santainforma.com.br/materia-75-pec-escala-6x1-ccj-senado</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://santainforma.com.br/materia-76-sc-401-bloqueio-faixa-corte-arvore</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -641,12 +621,6 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/materia-79-capacitacao-licitacoes-lei-14133-itapema</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://santainforma.com.br/materia-80-engenharia-social-fraude-pix-celular</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -718,12 +692,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://santainforma.com.br/materia-92-restituicao-ir-2026-ultimo-lote</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://santainforma.com.br/materia-93-sala-empreendedor-itapema-sebrae-consultoria</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -749,12 +717,6 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/materia-97-virada-do-tempo-calor-frente-fria-sc</loc>
-    <lastmod>2026-08-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://santainforma.com.br/materia-98-idoso-meia-passagem-onibus-interestadual</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -880,12 +842,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://santainforma.com.br/materia-119-bandeira-amarela-setembro-2026-aneel</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://santainforma.com.br/materia-120-conhecer-para-prevenir-tiago-linck-itapema</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -952,12 +908,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://santainforma.com.br/materia-137-imposto-seletivo-419-bilhoes-2027</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://santainforma.com.br/materia-138-uti-hospital-santo-antonio-itapema</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -970,12 +920,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://santainforma.com.br/materia-140-pix-med-80-dias-contestar-devolucao</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://santainforma.com.br/materia-141-salva-vidas-civis-itapema-1996-camara</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -983,12 +927,6 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/materia-142-protecao-mora-ao-lado-condominios-mpsc</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://santainforma.com.br/materia-143-pib-segundo-trimestre-2026-ibge</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1073,12 +1011,6 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/materia-126-chuva-granizo-23-cidades-sc-emergencia</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://santainforma.com.br/materia-125-novo-desenrola-brasil-prazo-31-agosto</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
