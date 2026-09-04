@@ -612,6 +612,9 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!h || h.textContent.trim() !== 'Institucional') continue;
       if (bloco.querySelector('[data-consentimento]')) return;
 
+      var pe = bloco.querySelector('a[href="sobre.html#linhas"]');
+      if (pe) pe.setAttribute('href', 'politica-editorial.html');
+
       var tabela = bloco.querySelector('a[href="anuncie.html"]');
       if (!bloco.querySelector('a[href="contato.html"]') && tabela) {
         var contato = document.createElement('a');
