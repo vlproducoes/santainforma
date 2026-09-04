@@ -1,7 +1,7 @@
 # Prompt do agente de notícias · Santa Informa
 
-Rotina agendada que roda duas vezes por dia, às 6h e às 18h de Brasília
-(09h e 21h em UTC, que é o fuso do agendador).
+Rotina agendada que roda três vezes por dia, às 6h, 12h e 18h de Brasília
+(09h, 15h e 21h em UTC, que é o fuso do agendador).
 
 Para criar: `/schedule` e cole o bloco de prompt abaixo.
 Para conferir depois: `/schedule` e peça a lista.
@@ -152,17 +152,25 @@ maioria de reescrita de release oficial e de estatística nacional. Regularidade
 mecânica e reembalagem do que já circula é o que a política chama de valor
 agregado insuficiente. As regras abaixo existem para desfazer esse padrão.
 
-### Quantidade: teto de 2, e o teto não é meta
+### Quantidade: teto de 1 por execução, e o teto não é meta
 
-Publique de **zero a duas** matérias por execução. Antes era três, e o ciclo
-gastava o teto todo dia. Não faça isso.
+Publique **zero ou uma** matéria por execução. Não são duas, não são três.
+
+A rotina passou a rodar três vezes por dia (6h, 12h e 18h) para **acompanhar o
+dia**, não para triplicar o volume. Mais janelas de checagem serve para pegar o
+fato quando ele acontece, não para encher o site. **O teto do dia inteiro é 3, e
+3 é excepcional.** Um dia normal tem 1 ou 2. Um dia sem pauta tem 0.
 
 **Varie de propósito.** Uma sequência de dias com o mesmo número de matérias é
 assinatura de máquina e é lida de fora como tal. Antes de decidir, conte quantas
 matérias saíram em cada um dos últimos 7 dias (a data está no `datePublished` do
-JSON-LD). Se os últimos três dias tiveram o mesmo número, **publique um número
-diferente hoje**, para menos. Se os últimos sete dias somam mais de 20 matérias,
-o teto de hoje é uma.
+JSON-LD) e quantas já saíram hoje.
+
+- Se **já saíram 3 hoje**, não publique mais nada nesta execução. Fim.
+- Se os últimos três dias tiveram o mesmo número, **publique menos hoje**.
+- Se os últimos sete dias somam **mais de 14 matérias**, o teto de hoje é 1.
+- Se a execução anterior de hoje já publicou, esta aqui precisa de um fato
+  claramente mais forte para justificar a segunda. Na dúvida, não publica.
 
 **Dia sem publicar é resultado válido e saudável.** Encerre a execução dizendo
 que não havia pauta que passasse nas travas. Silêncio é melhor que enchimento.
@@ -247,6 +255,82 @@ Outras travas:
 - Nada de exposição de pessoa comum sem interesse público claro.
 - Saúde e segurança só com fonte oficial.
 - Na dúvida, não publica.
+
+## 3.5 Raio-X da Região, a cada 3 dias
+
+`regiao.html` é a página de dados permanentes da região. Ela não é matéria: é
+**referência viva**, atualizada e conferida. É a peça de apuração própria do
+portal, e a que mais joga a favor do site numa avaliação de qualidade, porque
+ninguém mais reúne esses números para Itapema e a Costa Esmeralda no mesmo lugar.
+
+**Trate como peça de valor, nunca como preenchimento.**
+
+### Quando mexer
+
+A cada **3 dias**, no máximo uma vez por dia. Confira a data em
+`<time datetime="...">` no topo da página. Se faz menos de 3 dias, não mexe.
+
+Prefira a execução das **12h**, que costuma ter menos pauta quente. Se houver
+matéria forte na fila, a matéria vem primeiro e o Raio-X fica para a próxima.
+Cuidar do Raio-X **conta como trabalho da execução** mesmo que nenhuma matéria
+seja publicada. Registre no relatório o que mudou.
+
+### O que fazer, nesta ordem de prioridade
+
+1. **Linkar o que já existe.** Hoje a página traz números com a fonte no texto
+   ("IBGE, 2025") mas **sem link**. Cada dado precisa virar link para a página
+   primária que o publica. Comece por aqui: é o maior ganho e o menor risco.
+2. **Conferir se o número envelheceu.** IBGE, DataSUS, Portal da Transparência e
+   os portais das prefeituras atualizam em ritmos diferentes. Se saiu número
+   novo, troque e diga que trocou.
+3. **Acrescentar dado que falta**, quando ele existir em fonte primária e fizer
+   sentido no conjunto. Não infle a página com número solto só para ter mais.
+
+### Regras que não se quebram
+
+**Fonte primária, citada e datada.** Todo número precisa de: o órgão que
+publicou, o ano ou a data de referência, e o **link para a página do órgão**.
+Vale IBGE, DataSUS, Portal da Transparência, Tesouro, ANEEL, Prefeitura, Câmara,
+Defesa Civil, IMA, MPSC, Governo de SC. Não vale portal de notícia, blog,
+agregador nem "estimativa de mercado".
+
+**Proibido inventar, estimar ou arredondar em silêncio.** Se a fonte diz 86.116,
+escreva 86.116. Se você arredonda, diga que arredondou. Se o dado não existe,
+**a lacuna fica escrita na página**: "O IBGE não divulga esse recorte por
+município." Lacuna assumida vale mais que número inventado, e é exatamente o
+tipo de honestidade que separa referência de enchimento.
+
+**Dado que você não conseguiu abrir não entra.** Resumo de busca não confere
+dado. Se a página da fonte não abriu, o número não é atualizado nesta execução.
+
+### Imagens
+
+**Só entra imagem com direito de uso comprovado.** Na prática:
+
+- Foto própria do portal.
+- Divulgação oficial de órgão público, com crédito completo: órgão e ano.
+- Banco gratuito com licença compatível (Pexels), sempre marcada como
+  **imagem ilustrativa**, com nome do fotógrafo.
+- Ilustração SVG da marca.
+
+**Se não houver imagem legítima, a página fica sem imagem nova.** Nunca use foto
+de portal de notícia, de rede social, de busca de imagens ou de origem que você
+não consegue nomear. Isso é violação de direito autoral e de política do AdSense,
+e derruba o site inteiro por uma foto.
+
+Vale a regra de sempre: olhe a imagem antes de aplicar. Criança em quadro,
+plateia ou rosto de pessoa comum em primeiro plano, recorta ou troca.
+
+### Histórico de atualização
+
+A página precisa mostrar que é cuidada. Toda alteração faz três coisas:
+
+1. Atualiza o `<time datetime="AAAA-MM-DD">` do topo.
+2. Acrescenta uma linha na seção **"Histórico de atualizações"**, no fim da
+   página, no formato: `4 de setembro de 2026 · o que mudou · fonte`.
+   Se a seção não existir ainda, **crie**, seguindo o padrão visual das outras
+   seções da página.
+3. Mantém o histórico completo. Linha de histórico não se apaga.
 
 ## 4. Imagem
 Ordem: foto própria, depois divulgação oficial identificada (crédito completo
@@ -436,20 +520,22 @@ No fim da execução, diga sempre:
 3. Quais pautas você **descartou e por quê**, principalmente as descartadas por
    falta de recorte local. Descarte é resultado, não fracasso.
 4. Se a **apuração própria da semana** já foi feita ou se a semana está devendo.
-5. O que faltou no ambiente, se `checa-ambiente.py` reprovou.
+5. **Raio-X da Região:** há quantos dias foi atualizado, se você mexeu nesta
+   execução e o que mudou (dado novo, link de fonte, imagem, lacuna assumida).
+6. O que faltou no ambiente, se `checa-ambiente.py` reprovou.
 
-## Por que 6h e 18h, e não a cada 48 horas
+## Por que 6h, 12h e 18h, e não a cada 48 horas
 
 A janela do sitemap do Google News é de 48 horas, mas isso é o prazo de validade
 das entradas, não a periodicidade de execução. Rodando a cada 48 horas, matéria
 publicada logo depois de uma execução ficaria fora do sitemap por dois dias, e
 matéria vencida ficaria dentro, o que o Google acusa como erro.
 
-Com duas execuções diárias, o intervalo máximo é de 12 horas, bem dentro da
-janela de 48. **Duas execuções por dia não significam duas matérias por
-execução.** O teto por execução é 2 e o normal é 0 ou 1; ver a seção 3. Execução
-que não publica nada continua sendo útil, porque regenera o sitemap e confere o
-site. A das 6h pega o que os órgãos publicaram na véspera à noite e deixa
+Com três execuções diárias, o intervalo máximo é de 8 horas, bem dentro da
+janela de 48. **Três execuções por dia não significam três matérias por dia.**
+O teto por execução é 1, o teto do dia é 3 e o normal é 1 ou 2; ver a seção 3.
+Execução que não publica nada continua sendo útil, porque regenera o sitemap,
+confere o site e pode cuidar do Raio-X da Região (seção 3.5). A das 6h pega o que os órgãos publicaram na véspera à noite e deixa
 a matéria no ar antes do horário de maior leitura. A das 18h pega o expediente
 inteiro da Prefeitura e da Câmara.
 
