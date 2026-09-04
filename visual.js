@@ -654,3 +654,18 @@ document.addEventListener('DOMContentLoaded', function () {
     iniciar();
   }
 })();
+/* O link "Politica editorial" do rodape aponta para a pagina propria.
+   O HTML de 177 paginas ainda traz sobre.html#linhas; reescrever ali seria
+   mexer em todas. A pagina esta no sitemap e linkada em texto por sobre,
+   contato e termos, entao o rastreador acha ela sem depender deste ajuste. */
+(function () {
+  function ajusta() {
+    var a = document.querySelector('footer a[href="sobre.html#linhas"]');
+    if (a) a.setAttribute('href', 'politica-editorial.html');
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ajusta);
+  } else {
+    ajusta();
+  }
+})();
