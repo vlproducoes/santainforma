@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-155-fila-pericia-inss-zerada-agosto</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-04T06:30:00-03:00</news:publication_date>
+      <news:title>Governo diz que a fila da perícia do INSS acabou em agosto, e 224 mil ainda esperam resultado</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-154-mpsc-preco-material-construcao-temporais</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-04T06:20:00-03:00</news:publication_date>
+      <news:title>Ministério Público investiga alta de até 356% no preço de material de construção depois dos temporais</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-153-jogos-escolares-itapema-jei-jeizinho-parajei</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-04T06:10:00-03:00</news:publication_date>
+      <news:title>Itapema marca os jogos escolares de 2026: JEIzinho em 30 de setembro e JEI a partir de 19 de outubro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-152-navegantes-945-kg-lixo-festa-aniversario</loc>
     <news:news>
       <news:publication>
@@ -143,42 +179,6 @@
       </news:publication>
       <news:publication_date>2026-09-02T06:20:00-03:00</news:publication_date>
       <news:title>Itapema formou a primeira turma de salva-vidas civis de Santa Catarina, e hoje o litoral tem mais de 5 mil guarda-vidas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-140-pix-med-80-dias-contestar-devolucao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-01T18:40:00-03:00</news:publication_date>
-      <news:title>Quem recebeu Pix e teve o dinheiro devolvido por suspeita de golpe agora tem 80 dias para contestar</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-139-morro-do-encano-detonacao-rochas-sexta</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-01T18:30:00-03:00</news:publication_date>
-      <news:title>Detonação de rochas fecha o Morro do Encano nesta sexta, e o bloqueio deve durar o dia inteiro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-138-uti-hospital-santo-antonio-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-01T18:20:00-03:00</news:publication_date>
-      <news:title>Hospital Santo Antônio abre 10 leitos de UTI em Itapema, e o Estado banca o custeio</news:title>
     </news:news>
   </url>
 

@@ -1837,5 +1837,27 @@
     "id_pexels": 17072315,
     "termo_de_busca": "recycling waste separation bins",
     "baixada_em": "2026-09-03"
+  },
+  "material-construcao-prateleira.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Markus Winkler",
+    "url_fotografo": "https://www.pexels.com/@markus-winkler-1430818",
+    "url_original": "https://www.pexels.com/photo/construction-materials-on-the-shelves-10284048/",
+    "id_pexels": 10284048,
+    "termo_de_busca": "stack of roof tiles construction material",
+    "baixada_em": "2026-09-04"
+  },
+  "cadeiras-espera-vazias.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Sébastien Vincon",
+    "url_fotografo": "https://www.pexels.com/@aomata",
+    "url_original": "https://www.pexels.com/photo/yellow-plastic-chairs-in-row-for-waiting-14932830/",
+    "id_pexels": 14932830,
+    "termo_de_busca": "empty waiting room chairs public office",
+    "baixada_em": "2026-09-04"
   }
 }
