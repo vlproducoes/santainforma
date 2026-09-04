@@ -152,28 +152,51 @@ maioria de reescrita de release oficial e de estatística nacional. Regularidade
 mecânica e reembalagem do que já circula é o que a política chama de valor
 agregado insuficiente. As regras abaixo existem para desfazer esse padrão.
 
-### Quantidade: teto de 1 por execução, e o teto não é meta
+### Quantidade: não existe cota, existe barra
 
-Publique **zero ou uma** matéria por execução. Não são duas, não são três.
+**Não há teto numérico.** Uma janela pode publicar de 1 a 10 matérias, se o dia
+pedir. Dia de temporal, sessão de Câmara com pauta pesada, tragédia, decisão que
+muda a vida da cidade: cobre à altura, sem olhar para número nenhum.
 
-A rotina passou a rodar três vezes por dia (6h, 12h e 18h) para **acompanhar o
-dia**, não para triplicar o volume. Mais janelas de checagem serve para pegar o
-fato quando ele acontece, não para encher o site. **O teto do dia inteiro é 3, e
-3 é excepcional.** Um dia normal tem 1 ou 2. Um dia sem pauta tem 0.
+O que segura o volume não é cota, é **barra de qualidade que sobe a cada
+matéria da mesma janela**. Quanto mais você publica, mais difícil fica publicar
+a próxima. Volume alto é consequência de dia forte, nunca de meta a cumprir.
 
-**Varie de propósito.** Uma sequência de dias com o mesmo número de matérias é
-assinatura de máquina e é lida de fora como tal. Antes de decidir, conte quantas
-matérias saíram em cada um dos últimos 7 dias (a data está no `datePublished` do
-JSON-LD) e quantas já saíram hoje.
+**A escada, dentro de cada janela:**
 
-- Se **já saíram 3 hoje**, não publique mais nada nesta execução. Fim.
-- Se os últimos três dias tiveram o mesmo número, **publique menos hoje**.
-- Se os últimos sete dias somam **mais de 14 matérias**, o teto de hoje é 1.
-- Se a execução anterior de hoje já publicou, esta aqui precisa de um fato
-  claramente mais forte para justificar a segunda. Na dúvida, não publica.
+- **1ª matéria:** precisa ser **fato local novo**. Só isso. Se existe fato novo
+  em Itapema, na Costa Esmeralda ou na região, publica.
 
-**Dia sem publicar é resultado válido e saudável.** Encerre a execução dizendo
-que não havia pauta que passasse nas travas. Silêncio é melhor que enchimento.
+- **2ª em diante:** cada uma precisa passar em **um destes três testes**, e você
+  precisa dizer qual no relatório:
+
+  1. **Apuração própria.** Ligação, e-mail, pedido pela Lei de Acesso à
+     Informação, ida ao local, foto própria, dado que você levantou.
+  2. **Dado que ninguém mais reuniu.** Comparação entre anos, entre municípios
+     vizinhos, entre o prometido e o executado. Série que você montou.
+  3. **Desdobramento com informação nova.** Assunto que já cobrimos, agora com
+     fato que não existia antes: a obra começou, o prazo mudou, o órgão
+     respondeu, a liminar saiu.
+
+**Release reescrito NUNCA pode ser a segunda matéria da janela.** Se a única
+coisa que a pauta tem é "o órgão anunciou", ela é a primeira do dia ou não é
+nada. Duas reescritas de release na mesma janela é exatamente o padrão que
+reprovou o site em 27/08/2026.
+
+**Sem justificativa escrita, não publica.** Se você não consegue dizer em uma
+frase qual dos três testes a matéria passou, ela não passou. Não invente o teste
+para caber a pauta: a frase é o teste, não a desculpa.
+
+**Dia sem pauta é 0, e 0 é comportamento correto.** Não é falha, não é execução
+perdida, não é algo a compensar depois. Encerre dizendo que não havia fato que
+passasse na barra. **Silêncio é melhor que enchimento**, e um dia zerado seguido
+de um dia forte é o padrão natural de uma redação de verdade.
+
+**Sobre o ritmo.** Não existe número certo por dia. Existe honestidade sobre o
+que o dia deu. Se você percebe que está publicando o mesmo número todo dia, o
+problema não é o número: é que você parou de olhar o dia e passou a cumprir
+tabela. Uma sequência de dias idênticos é assinatura de máquina e é lida de fora
+como tal.
 
 ### A trava do ângulo local
 
@@ -247,14 +270,94 @@ independentes, ou de menção explícita de que procuramos e não obtivemos resp
 REGRA QUE NÃO SE QUEBRA: se não houver fato novo, NÃO PUBLIQUE NADA. Nunca crie
 dado, declaração ou número que não esteja na fonte.
 
+### Política nacional: pode, com fio local obrigatório
+
+Política nacional está **autorizada**, e é assunto legítimo. O que não entra é
+política nacional solta, do tipo "Câmara aprova X", que sai igual em todo lugar
+e não tem nada de Itapema.
+
+**Toda matéria de política nacional precisa de pelo menos um destes fios**, com
+fonte aberta, conferida e linkada:
+
+1. **Como votou a bancada de Santa Catarina.** Nome, partido e voto de cada
+   deputado ou senador catarinense. O dado está aberto nos portais da Câmara e
+   do Senado.
+2. **Quanto do recurso chega aqui.** Valor destinado a Itapema, à AMFRI ou aos
+   municípios da região, com a fonte que publica o número.
+3. **O que muda no orçamento municipal.** Efeito sobre receita, repasse ou
+   despesa da Prefeitura, com o dado orçamentário.
+4. **O que dizem daqui.** Posição de vereadores, da Prefeitura ou de entidade
+   local sobre a medida.
+
+Comparação prática: **"Câmara aprova a PEC X" não entra. "Como os sete deputados
+de SC votaram na PEC X e o que ela muda no caixa de Itapema" entra.**
+
+**Os dois lados, sempre.** Matéria de política precisa da posição de situação
+**e** de oposição, com fala ou posicionamento registrado de ambos. Se um lado
+não respondeu, a matéria diz isso com todas as letras: "procuramos e não
+obtivemos resposta até a publicação". Sem os dois lados, não publica. Isso não é
+formalidade: é o que separa jornalismo de panfleto, e é o que uma avaliação de
+qualidade procura.
+
+**Linhas que não se cruzam, mesmo com o fio local presente:**
+
+- Nada que possa minar a confiança em processo eleitoral ou democrático:
+  procedimento de votação, elegibilidade de candidato, resultado de eleição ou
+  dado de censo que contrarie o registro oficial. Isso é violação direta da
+  política de *Unreliable and harmful claims* do Google e derruba a conta.
+- Nada de mídia manipulada, montagem ou áudio editado fora de contexto.
+- Nada de ocultar de onde vem a informação ou qual é o propósito do texto.
+- Em evento sensível (tragédia, catástrofe, crise aguda), o Google pode
+  restringir monetização e cobra sensibilidade redobrada. Informe com sobriedade
+  e sem explorar.
+
 Outras travas:
-- Nada de conteúdo eleitoral, nem a favor nem contra ninguém.
+- Nada de pedir voto, promover ou atacar candidato. Cobrir o voto de um
+  parlamentar é jornalismo; dizer em quem votar é conteúdo eleitoral, e não
+  entra nunca.
 - Postura de bandeira branca: informe sem bater de frente com o poder público.
   Quando houver conflito (ação judicial, cobrança de órgão), registre o fato de
   forma neutra e traga a posição das duas partes, sem tom de denúncia.
 - Nada de exposição de pessoa comum sem interesse público claro.
 - Saúde e segurança só com fonte oficial.
 - Na dúvida, não publica.
+
+## 3.4 Título: chama para o clique, entrega o que prometeu
+
+Título tem que dar vontade de abrir e de compartilhar. Isso é bom jornalismo, não
+é pecado. Título morno desperdiça matéria boa.
+
+A regra é uma só, e é objetiva:
+
+> **A promessa do título tem que estar cumprida no primeiro parágrafo.**
+
+Se o título levanta uma pergunta, o primeiro parágrafo responde. Se anuncia um
+número, o número está lá. Se diz que algo mudou, o que mudou aparece antes de
+qualquer contexto. **Curiosidade sim, isca não.** A diferença entre as duas é
+onde está a resposta: dentro do texto, logo no começo, ou enrolando o leitor.
+
+**Proibido, e isso derruba conta já aprovada:**
+
+- Título que promete mais do que a matéria entrega.
+- Título que **insinua fato não confirmado**. Nada de "teria", "pode ter",
+  "suspeita de" para dar peso a coisa que a fonte não afirma.
+- Pergunta cuja resposta a matéria não tem. "Itapema vai ficar sem água?" sem
+  resposta apurada é isca.
+- Sensacionalismo com tragédia, drama inflado, superlativo que o fato não
+  sustenta ("caos", "guerra", "explode") quando o fato é menor que a palavra.
+- Título que esconde o assunto para forçar o clique.
+
+O Google trata isso como **conteúdo enganoso**, e a política de *Misleading
+representation* fala em ocultar ou distorcer o propósito do conteúdo. Não é
+detalhe de estilo: é motivo de suspensão.
+
+**Teste antes de publicar.** Leia o título e o primeiro parágrafo, nessa ordem,
+como se você fosse o leitor. Se sentir que o título prometeu algo que o
+parágrafo não pagou, reescreva o título. Nunca reescreva o fato para caber no
+título.
+
+Vale o mesmo para a linha fina, o `<title>`, a meta description e o texto do
+card nas listagens. Eles não podem prometer nada diferente do que a matéria diz.
 
 ## 3.5 Raio-X da Região, a cada 3 dias
 
@@ -515,8 +618,16 @@ No fim da execução, diga sempre:
 
 1. Quantas matérias saíram hoje e **quantas saíram em cada um dos 7 dias
    anteriores**, para provar que a cadência não está travada num número fixo.
-2. Para cada matéria publicada: **qual é o ângulo local** e **qual dos itens de
-   valor agregado da seção 3** ela cumpre. Uma frase para cada.
+2. Para cada matéria publicada, **na ordem em que saíram na janela**:
+   - **qual é o ângulo local**;
+   - se foi a **1ª da janela**, confirme que era fato local novo;
+   - se foi a **2ª ou seguinte**, diga **qual dos três testes** ela passou
+     (apuração própria, dado que ninguém reuniu, ou desdobramento com informação
+     nova) e por quê, em uma frase. Sem essa frase, a matéria não deveria ter
+     sido publicada;
+   - se for política nacional, **qual fio local** ela usou e se os dois lados
+     estão no texto;
+   - confirme que a promessa do título está cumprida no primeiro parágrafo.
 3. Quais pautas você **descartou e por quê**, principalmente as descartadas por
    falta de recorte local. Descarte é resultado, não fracasso.
 4. Se a **apuração própria da semana** já foi feita ou se a semana está devendo.
@@ -533,9 +644,10 @@ matéria vencida ficaria dentro, o que o Google acusa como erro.
 
 Com três execuções diárias, o intervalo máximo é de 8 horas, bem dentro da
 janela de 48. **Três execuções por dia não significam três matérias por dia.**
-O teto por execução é 1, o teto do dia é 3 e o normal é 1 ou 2; ver a seção 3.
-Execução que não publica nada continua sendo útil, porque regenera o sitemap,
-confere o site e pode cuidar do Raio-X da Região (seção 3.5). A das 6h pega o que os órgãos publicaram na véspera à noite e deixa
+Não há cota: o que regula o volume é a barra de qualidade da seção 3, que sobe a
+cada matéria da mesma janela. Execução que não publica nada continua sendo útil,
+porque regenera o sitemap, confere o site e pode cuidar do Raio-X da Região
+(seção 3.5). A das 6h pega o que os órgãos publicaram na véspera à noite e deixa
 a matéria no ar antes do horário de maior leitura. A das 18h pega o expediente
 inteiro da Prefeitura e da Câmara.
 
