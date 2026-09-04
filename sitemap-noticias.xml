@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-156-feriado-7-setembro-itapema-desfile-orla</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-04T18:40:00-03:00</news:publication_date>
+      <news:title>Desfile de 7 de Setembro em Itapema é na orla do Centro às 14h, e a UBS do seu bairro não abre</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-155-fila-pericia-inss-zerada-agosto</loc>
     <news:news>
       <news:publication>
@@ -143,30 +155,6 @@
       </news:publication>
       <news:publication_date>2026-09-02T18:20:00-03:00</news:publication_date>
       <news:title>Cadastro das 90 casas do Minha Casa, Minha Vida em Itapema passa a atender no fim de semana</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-142-protecao-mora-ao-lado-condominios-mpsc</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-02T06:30:00-03:00</news:publication_date>
-      <news:title>Ministério Público quer síndico e porteiro preparados para reconhecer violência contra a mulher dentro do condomínio</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-141-salva-vidas-civis-itapema-1996-camara</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-02T06:20:00-03:00</news:publication_date>
-      <news:title>Itapema formou a primeira turma de salva-vidas civis de Santa Catarina, e hoje o litoral tem mais de 5 mil guarda-vidas</news:title>
     </news:news>
   </url>
 
