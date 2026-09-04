@@ -612,6 +612,9 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!h || h.textContent.trim() !== 'Institucional') continue;
       if (bloco.querySelector('[data-consentimento]')) return;
 
+      var pe = bloco.querySelector('a[href="sobre.html#linhas"]');
+      if (pe) pe.setAttribute('href', 'politica-editorial.html');
+
       var tabela = bloco.querySelector('a[href="anuncie.html"]');
       if (!bloco.querySelector('a[href="contato.html"]') && tabela) {
         var contato = document.createElement('a');
@@ -649,5 +652,20 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('DOMContentLoaded', iniciar);
   } else {
     iniciar();
+  }
+})();
+/* O link "Politica editorial" do rodape aponta para a pagina propria.
+   O HTML de 177 paginas ainda traz sobre.html#linhas; reescrever ali seria
+   mexer em todas. A pagina esta no sitemap e linkada em texto por sobre,
+   contato e termos, entao o rastreador acha ela sem depender deste ajuste. */
+(function () {
+  function ajusta() {
+    var a = document.querySelector('footer a[href="sobre.html#linhas"]');
+    if (a) a.setAttribute('href', 'politica-editorial.html');
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ajusta);
+  } else {
+    ajusta();
   }
 })();
