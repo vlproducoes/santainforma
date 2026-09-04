@@ -125,10 +125,14 @@ da Prefeitura. A cada execução, olhe os quatro antes de decidir:
    leitor daqui: imposto que muda a vida do comerciante, juros, programa
    habitacional, regra de turismo, clima. Nunca notícia nacional solta.
 
-A mistura publicada até aqui é de cerca de 63% municipal, 14% regional, 10%
-estadual e 12% nacional. Use isso como alvo, não como regra rígida. Na prática:
-se as últimas execuções só publicaram Itapema, dê preferência a regional,
-estadual ou nacional nesta. Se a cidade tiver fato forte, ela vem primeiro.
+**Alvo de mistura, revisado em 3 de setembro de 2026:** cerca de 70% municipal,
+20% regional, 10% estadual e **no máximo 5% nacional**. O nacional era 12% e foi
+o que puxou o site para "conteúdo de baixo valor" no AdSense. Doze matérias
+nacionais sem recorte local foram despublicadas nessa data.
+
+Na prática: se as últimas execuções só publicaram Itapema, dê preferência a
+regional ou estadual, **não a nacional**. Se a cidade tiver fato forte, ela vem
+primeiro, sempre.
 
 Antes de decidir, liste os títulos e os chapéus de TODAS as matérias já
 publicadas no repositório. Isso serve para duas coisas: não repetir assunto já
@@ -139,12 +143,101 @@ mistura ano, troca horário e confunde matéria velha com nova. Se a página da
 fonte não abrir, o dado não está conferido, e sem dado conferido não se publica.
 
 ## 3. Decida se publica, e quantas
-Publique de zero a três matérias por execução, conforme houver fato novo real.
 
-REGRA QUE NÃO SE QUEBRA: se não houver fato novo, NÃO PUBLIQUE NADA. Encerre a
-execução dizendo que não havia pauta. É melhor não publicar do que inventar,
-esticar assunto velho ou repetir o que já está no ar. Nunca crie dado,
-declaração ou número que não esteja na fonte.
+**Contexto que muda tudo: em 27 de agosto de 2026 o Google AdSense reprovou o
+site por "Conteúdo de baixo valor".** O motivo não foi página faltando nem erro
+técnico. Foi o conteúdo. O padrão que levou à reprovação: domínio de um mês,
+149 matérias em 25 dias, exatamente 6 por dia durante quatorze dias seguidos, e
+maioria de reescrita de release oficial e de estatística nacional. Regularidade
+mecânica e reembalagem do que já circula é o que a política chama de valor
+agregado insuficiente. As regras abaixo existem para desfazer esse padrão.
+
+### Quantidade: teto de 2, e o teto não é meta
+
+Publique de **zero a duas** matérias por execução. Antes era três, e o ciclo
+gastava o teto todo dia. Não faça isso.
+
+**Varie de propósito.** Uma sequência de dias com o mesmo número de matérias é
+assinatura de máquina e é lida de fora como tal. Antes de decidir, conte quantas
+matérias saíram em cada um dos últimos 7 dias (a data está no `datePublished` do
+JSON-LD). Se os últimos três dias tiveram o mesmo número, **publique um número
+diferente hoje**, para menos. Se os últimos sete dias somam mais de 20 matérias,
+o teto de hoje é uma.
+
+**Dia sem publicar é resultado válido e saudável.** Encerre a execução dizendo
+que não havia pauta que passasse nas travas. Silêncio é melhor que enchimento.
+
+### A trava do ângulo local
+
+**Toda matéria precisa de ângulo local verificável.** Antes de escrever,
+responda por escrito no relatório: *o que muda para quem mora em Itapema ou na
+Costa Esmeralda?* Se a resposta for genérica, do tipo "afeta todos os
+brasileiros", **não publique**.
+
+Ângulo local de verdade é: número da cidade ou da região, órgão local que aplica
+a regra, prazo que vale aqui, endereço, pessoa ou setor daqui que é atingido,
+comparação com dado local que já publicamos.
+
+Não vale como ângulo local: trocar "no Brasil" por "no litoral"; um parágrafo
+final dizendo que a medida também vale aqui; o colunista citar Itapema numa
+piada. Isso é adjetivo regional colado em texto nacional, e foi exatamente o que
+gerou as 12 matérias despublicadas na poda de 3 de setembro de 2026.
+
+### Estatística nacional: proibida sem recorte local
+
+**Não publique IPCA, PIB, Selic, PNAD, salário mínimo, restituição de IR, abono,
+bandeira tarifária ou qualquer indicador nacional apenas noticiando o número.**
+Isso sai igual em centenas de sites no mesmo dia e não tem nada de nosso.
+
+Só entra se você tiver **pelo menos uma** destas coisas:
+
+1. Recorte oficial de Santa Catarina, da AMFRI ou do município, com a fonte
+   aberta e conferida.
+2. Efeito concreto e datado sobre um setor daqui, com número: quantos
+   estabelecimentos, qual prazo, qual valor.
+3. Fala de fonte local obtida por você: secretaria, associação comercial,
+   sindicato, produtor.
+
+Sem nenhuma das três, a pauta morre aqui. Registre no relatório que descartou e
+por quê.
+
+### A trava do valor agregado
+
+Release reescrito não é matéria. Se o texto pode ser resumido como "o órgão X
+anunciou Y", falta trabalho. Toda matéria precisa de **pelo menos um** destes,
+e diga qual no relatório:
+
+- **Contexto histórico:** o que já aconteceu antes nesse mesmo assunto, com link
+  para a nossa matéria anterior.
+- **Número que ninguém juntou:** comparação entre anos, entre municípios
+  vizinhos, entre o prometido e o executado.
+- **Consequência prática:** o que o leitor precisa fazer, até quando, onde,
+  com qual documento.
+- **O que não foi respondido:** a lacuna concreta do anúncio oficial, no box
+  "O que ainda está em aberto". Não vale lacuna genérica.
+- **Apuração própria:** ligação, e-mail, pedido pela Lei de Acesso à Informação,
+  ida ao local, foto própria.
+
+### Apuração própria: pelo menos uma por semana
+
+Uma vez por semana, no mínimo, produza uma matéria que **não exista em lugar
+nenhum**: dado obtido via Lei de Acesso à Informação, comparação de séries do
+Portal da Transparência, acompanhamento de obra que prometemos cobrir, ou
+retorno a uma matéria antiga para dizer o que aconteceu depois.
+
+Se na execução não der para fazer isso, registre no relatório que a semana ainda
+está devendo. **Matéria de acompanhamento vale mais que matéria nova.** Voltar
+ao alargamento da Meia Praia seis semanas depois e dizer se a obra começou é
+jornalismo de valor. Anunciar uma obra nova é release.
+
+### Duas fontes independentes quando o assunto for disputado
+
+Uma fonte só basta para fato administrativo simples (a Câmara aprovou, a escola
+abriu inscrição). Assunto com mais de um lado precisa de duas fontes
+independentes, ou de menção explícita de que procuramos e não obtivemos resposta.
+
+REGRA QUE NÃO SE QUEBRA: se não houver fato novo, NÃO PUBLIQUE NADA. Nunca crie
+dado, declaração ou número que não esteja na fonte.
 
 Outras travas:
 - Nada de conteúdo eleitoral, nem a favor nem contra ninguém.
@@ -333,14 +426,17 @@ disco tem extensão e é assim que o `checa-site.py` confere link quebrado. O
 `checa-site.py` reprova se algum endereço declarado voltar a ter `.html`.
 
 ## 11. Relate
-Ao fim, diga em poucas linhas: quantas matérias saíram e quais, com o nível de
-abrangência de cada uma; ou que não havia pauta; quantas entradas ficaram no
-sitemap de notícias; e qualquer coisa que tenha ficado pendente ou duvidosa. Se
-você tomou alguma decisão editorial difícil (recusou uma pauta, rejeitou uma
-foto), diga qual e por quê.
-```
 
----
+No fim da execução, diga sempre:
+
+1. Quantas matérias saíram hoje e **quantas saíram em cada um dos 7 dias
+   anteriores**, para provar que a cadência não está travada num número fixo.
+2. Para cada matéria publicada: **qual é o ângulo local** e **qual dos itens de
+   valor agregado da seção 3** ela cumpre. Uma frase para cada.
+3. Quais pautas você **descartou e por quê**, principalmente as descartadas por
+   falta de recorte local. Descarte é resultado, não fracasso.
+4. Se a **apuração própria da semana** já foi feita ou se a semana está devendo.
+5. O que faltou no ambiente, se `checa-ambiente.py` reprovou.
 
 ## Por que 6h e 18h, e não a cada 48 horas
 
@@ -350,7 +446,10 @@ publicada logo depois de uma execução ficaria fora do sitemap por dois dias, e
 matéria vencida ficaria dentro, o que o Google acusa como erro.
 
 Com duas execuções diárias, o intervalo máximo é de 12 horas, bem dentro da
-janela de 48. A das 6h pega o que os órgãos publicaram na véspera à noite e deixa
+janela de 48. **Duas execuções por dia não significam duas matérias por
+execução.** O teto por execução é 2 e o normal é 0 ou 1; ver a seção 3. Execução
+que não publica nada continua sendo útil, porque regenera o sitemap e confere o
+site. A das 6h pega o que os órgãos publicaram na véspera à noite e deixa
 a matéria no ar antes do horário de maior leitura. A das 18h pega o expediente
 inteiro da Prefeitura e da Câmara.
 
