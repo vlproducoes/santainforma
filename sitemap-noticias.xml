@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-158-ifsc-gestao-publica-polo-uab-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-05T12:40:00-03:00</news:publication_date>
+      <news:title>IFSC abre 30 vagas de graduação em Gestão Pública em Itapema, e a inscrição vai até 25 de setembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-157-samu-itapema-equipamentos-motolancia</loc>
     <news:news>
       <news:publication>
@@ -95,30 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-03T18:20:00-03:00</news:publication_date>
       <news:title>Marginal Oeste do Morretes vai receber asfalto, e a vala que juntava água virou tubulação</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-149-fiocruz-vacina-rnam-covid-anvisa</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-03T06:15:00-03:00</news:publication_date>
-      <news:title>Anvisa libera o teste em gente da primeira vacina de RNA mensageiro feita no Brasil</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-148-porto-belo-15-cameras-seguracidade</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-03T06:10:00-03:00</news:publication_date>
-      <news:title>Porto Belo chega a 114 câmeras de monitoramento, com 15 novas pagas por uma empresa privada</news:title>
     </news:news>
   </url>
 
