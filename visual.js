@@ -669,3 +669,45 @@ document.addEventListener('DOMContentLoaded', function () {
     ajusta();
   }
 })();
+/* COR POR EDITORIA
+   O chapeu das chamadas (.ed) e o da materia (.chapeu) trazem
+   "Cidade · Assunto". O CSS colore por editoria, mas a marcacao nao tem
+   classe para isso, e as 185 paginas nao mudam. Aqui o assunto vira
+   data-editoria no proprio chapeu e no bloco que o contem (article, li,
+   .item), para o card inteiro poder usar a cor. Sem JS, o chapeu fica na
+   cor padrao e nada quebra. Assunto sem regra cai no lugar: Brasil vira
+   "brasil", Santa Catarina e regiao viram "santa-catarina", o resto e
+   "cidade" (Itapema e vizinhas). */
+document.addEventListener('DOMContentLoaded', function () {
+  var ASSUNTOS = [
+    ['economia', /econom|trabalho|emprego|invest|consum|previd|com[eé]rcio|tribut|imposto|renda|neg[oó]cio|sal[aá]rio|pre[çc]o/i],
+    ['infraestrutura', /infraestrutura|obra|mobilidade|tr[âa]nsito|acessibilidade|drenagem|pavimenta|saneamento|energia|rodovia/i],
+    ['clima', /clima|temporal|chuva|frio|calor|ressaca|defesa civil|mar[eé]/i],
+    ['meio-ambiente', /meio ambiente|ambiental|animal|natureza|mata|lixo|res[ií]duo|reciclagem/i],
+    ['saude', /sa[uú]de|vacina|hospital|upa|samu|bem-estar/i],
+    ['esporte', /esporte|jogos|futebol|surfe|atleta|ciclismo|parajasc|competi/i],
+    ['cultura', /cultura|m[uú]sica|festival|hist[oó]ria|arte|orquestra|banda|teatro|cinema/i],
+    ['turismo', /turismo|temporada|praia|festa|gastronom|roteiro|atra[çc]/i],
+    ['poder-publico', /legislativo|poder p[uú]blico|c[âa]mara|prefeitura|assist[êe]ncia|direitos|habita[çc][ãa]o|educa[çc][ãa]o|seguran[çc]a|pol[ií]tica|or[çc]amento|justi[çc]a|comunidade|popula[çc][ãa]o|minist[eé]rio|governo|licita|concurso|vereador/i]
+  ];
+  var LUGARES = [
+    ['brasil', /^brasil$/i],
+    ['santa-catarina', /santa catarina|litoral norte|vale|regi[ãa]o|raio-x/i]
+  ];
+  function classifica(texto) {
+    var partes = texto.replace(/\s+/g, ' ').trim().split(/\s*[·•]\s*/);
+    var lugar = partes[0] || '', assunto = partes[1] || '';
+    for (var i = 0; i < ASSUNTOS.length; i++) if (ASSUNTOS[i][1].test(assunto)) return ASSUNTOS[i][0];
+    for (var j = 0; j < LUGARES.length; j++) if (LUGARES[j][1].test(lugar)) return LUGARES[j][0];
+    return 'cidade';
+  }
+  var chapeus = document.querySelectorAll('.ed, .chapeu');
+  for (var k = 0; k < chapeus.length; k++) {
+    var el = chapeus[k];
+    if (!/[·•]/.test(el.textContent)) continue;            /* "Quem somos", "Erro 404": sem editoria */
+    var ed = classifica(el.textContent);
+    el.setAttribute('data-editoria', ed);
+    var bloco = el.closest('article, li, .item, .hero, .d');
+    if (bloco && !bloco.hasAttribute('data-editoria')) bloco.setAttribute('data-editoria', ed);
+  }
+});
