@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-159-itbi-itapema-contestacao-valor-bombinhas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-05T18:20:00-03:00</news:publication_date>
+      <news:title>Quem compra imóvel em Itapema passa a ter pelo menos 15 dias úteis para contestar a conta do ITBI</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-158-ifsc-gestao-publica-polo-uab-itapema</loc>
     <news:news>
       <news:publication>
