@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-157-samu-itapema-equipamentos-motolancia</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-05T06:10:00-03:00</news:publication_date>
+      <news:title>SAMU de Itapema recebe mais de R$ 300 mil em equipamento, e o desfibrilador agora cabe na motolância</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-156-feriado-7-setembro-itapema-desfile-orla</loc>
     <news:news>
       <news:publication>
@@ -107,54 +119,6 @@
       </news:publication>
       <news:publication_date>2026-09-03T06:10:00-03:00</news:publication_date>
       <news:title>Porto Belo chega a 114 câmeras de monitoramento, com 15 novas pagas por uma empresa privada</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-147-consulta-publica-nome-pier-foz-rio-pereque</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-03T06:05:00-03:00</news:publication_date>
-      <news:title>Câmara de Itapema abre enquete para o morador dizer se o píer da Foz do Rio Perequê muda de nome</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-146-tromboliticos-sus-upa-samu</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-02T18:40:00-03:00</news:publication_date>
-      <news:title>Lei sancionada nesta quarta leva o remédio que desfaz coágulo para UPA e Samu no país inteiro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-145-fila-unica-sexta-chamada-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-02T18:30:00-03:00</news:publication_date>
-      <news:title>Fila Única de Itapema faz a sexta chamada, e a matrícula tem que ser feita até 9 de setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-144-cadastro-habitacional-itapema-fim-de-semana</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-02T18:20:00-03:00</news:publication_date>
-      <news:title>Cadastro das 90 casas do Minha Casa, Minha Vida em Itapema passa a atender no fim de semana</news:title>
     </news:news>
   </url>
 
