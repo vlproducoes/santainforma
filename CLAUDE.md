@@ -197,35 +197,65 @@ Nunca, em hipótese nenhuma:
 
 - **HTML:** indentação de 2 espaços. Todo `<img>` com `width`, `height`,
   `loading` e `alt` descritivo de verdade. Nada de `alt=""` em foto editorial.
-- **CSS:** só `estilo.css`. Use as variáveis que já existem (`--mar`, `--sol`,
-  `--suave`, `--display`). Não crie paleta nova.
+- **CSS:** só `estilo.css`. Use as variáveis que já existem: as oito da marca
+  (`--mar`, `--sol`, `--coral`, `--breu`, `--espuma`, `--areia`, `--suave`,
+  `--mar-claro`), a camada semântica (`--fundo`, `--superficie`, `--tinta`,
+  `--fio-cor`, `--link`) e a paleta editorial (`--ed-*`, seção 9.5). Cor nova
+  fora dessas variáveis, só com aprovação do editor.
 - **JS:** só `visual.js`. Sem framework, sem dependência externa. Exceção
   registrada: `functions/clima.js` (servidor, ver seção 1).
 - **Acentuação:** os HTML são UTF-8. Escreva com acento correto no conteúdo.
 - **Nomes de arquivo:** minúsculo, sem acento, separado por hífen.
 
-## 9.5 A capa (redesign aprovado em 19/08/2026)
+## 9.5 O layout (redesign aprovado em 06/09/2026)
 
-O index.html tem pacote de capa no lugar do carrossel: manchete dominante,
-rio de últimas (6), dois sub-destaques, seção com líder e pilha, Resumo
-Semanal e ferramentas. A ordem e a regra de rotação estão comentadas no
-próprio index.html e no prompt do agente (`ferramentas/prompt-agente-noticias.md`).
+A estrutura do index.html continua a mesma de 19/08/2026: pacote de capa no
+lugar do carrossel, com manchete dominante, rio de últimas, sub-destaques,
+seção com líder e pilha, Resumo Semanal e ferramentas. A ordem e a regra de
+rotação estão comentadas no próprio index.html e no prompt do agente
+(`ferramentas/prompt-agente-noticias.md`). O que mudou em 06/09 foi a
+vestimenta: o `estilo.css` foi reescrito com anatomia de jornal (faixa de
+marca, barra de editorias que gruda, régua dupla nos títulos de seção,
+cards brancos com fio) e acabamento de restrição (ar entre blocos, raio
+máximo de 12px, sombra só no hover, folha branca). O registro do processo
+está em `proposta/17-redesign-layout-set-2026.md`.
 
-Regras do redesign:
+Regras do layout:
 
-- **Nenhum hex novo.** Toda cor derivada nasce de `color-mix()` sobre as oito
-  variáveis da paleta. O céu do cabeçalho muda com a hora de Brasília
-  (classes `ceu-*` escritas pelo visual.js; sem JS fica o breu de sempre).
-- Componente novo usa a camada semântica (`--fundo`, `--tinta`, `--tinta-2`,
-  `--superficie`, `--fio-cor`, `--link`), nunca hex direto. O modo escuro da
-  fase 2 só remapeia essa camada.
+- **Paleta editorial aprovada.** As oito cores da marca continuam intocadas.
+  Além delas existem doze cores de editoria (`--ed-poder-publico`,
+  `--ed-economia`, `--ed-infraestrutura`, `--ed-santa-catarina`,
+  `--ed-turismo`, `--ed-meio-ambiente`, `--ed-cidade`, `--ed-brasil`,
+  `--ed-cultura`, `--ed-esporte`, `--ed-clima`, `--ed-saude`), cada uma com
+  os tons `-texto` (AA sobre branco), `-claro` (AA sobre breu) e `-tint`
+  (fundo pálido). Todas com contraste medido no bloco 1 do `estilo.css`.
+  Cor fora dessa lista, só com aprovação do editor.
+- **A cor identifica editoria, nunca decora.** Ela entra no chapéu, no item
+  ativo da barra de editorias, no topo da página de editoria, na barra de
+  leitura da matéria, no painel de 30 segundos e na régua dos colunistas.
+  Nunca em título de chamada, corpo de texto ou fundo de seção inteira.
+- Componente novo usa a camada semântica (`--fundo`, `--superficie`,
+  `--tinta`, `--tinta-2`, `--tinta-3`, `--fio-cor`, `--link`) e a cor viva
+  (`--ed`, `--ed-texto`, `--ed-claro`, `--ed-tint`), nunca hex direto.
+- Tamanho, espaço e forma saem dos tokens: `--t-*` (tipografia fluida),
+  `--e-*` e `--esp-*` (espaço), `--raio`, `--raio-s`, `--pilula`.
+- O chapéu das chamadas traz "Cidade · Assunto". O `visual.js` lê esse texto
+  e escreve `data-editoria`, que é o que liga a cor. Assunto novo que não
+  cair no mapa fica na cor da casa, sem quebrar nada; se acontecer muito,
+  vale acrescentar o termo ao mapa no fim do `visual.js`.
+- O céu do cabeçalho muda com a hora de Brasília e o sol da marca vira lua à
+  noite (classes `ceu-*` do visual.js). Sem JS, a faixa fica no mar de sempre.
+- Movimento novo usa os tokens `--dur-*` e `--curva-*`. Estado invisível mora
+  sempre no `from` do keyframe, nunca na regra do elemento. Nada de sombra em
+  repouso, hover em foto ou raio maior que 12px.
+- Nada de `transform` em repouso em `.chip`, `.signo`, `.manchete`, `.sub`,
+  `.lider-sec`, `.pilha article` e `article.card.v2`: a mola do JS escreve
+  `transform` neles no toque.
 - Convenção de view transition: a imagem da chamada e a foto de topo da
   matéria compartilham o nome `capa-mNN` (o visual.js nomeia no clique; o
   modelo de matéria ainda não nomeia, fase 2).
-- Movimento novo usa os tokens `--dur-*` e `--curva-*` do estilo.css. Estado
-  invisível mora sempre no `from` do keyframe, nunca na regra do elemento.
-- A proposta completa da equipe de design está na pasta `proposta/` (não
-  versionada); o blueprint é o documento 01.
+- Modo escuro é fase 2. A proposta está no estudo de cores da equipe.
+- O material de design da equipe está na pasta `proposta/`.
 
 ## 10. Ao criar página nova
 
