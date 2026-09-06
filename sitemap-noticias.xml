@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-160-faaci-certidoes-obra-itapema-prazo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-06T06:40:00-03:00</news:publication_date>
+      <news:title>Obra de 10 apartamentos ou mais em Itapema passa a precisar de duas certidões da FAACI, e o prazo de análise ainda não foi definido</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-159-itbi-itapema-contestacao-valor-bombinhas</loc>
     <news:news>
       <news:publication>
@@ -71,54 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-04T06:20:00-03:00</news:publication_date>
       <news:title>Ministério Público investiga alta de até 356% no preço de material de construção depois dos temporais</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-153-jogos-escolares-itapema-jei-jeizinho-parajei</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-04T06:10:00-03:00</news:publication_date>
-      <news:title>Itapema marca os jogos escolares de 2026: JEIzinho em 30 de setembro e JEI a partir de 19 de outubro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-152-navegantes-945-kg-lixo-festa-aniversario</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-03T18:40:00-03:00</news:publication_date>
-      <news:title>Festa de 64 anos de Navegantes deixou 945 quilos de resíduo, e a maior parte saiu separada para reciclagem</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-151-ciamp-populacao-em-situacao-de-rua-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-03T18:30:00-03:00</news:publication_date>
-      <news:title>Itapema abre cinco vagas para entidades no comitê que vai cuidar da população em situação de rua</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-150-marginal-oeste-morretes-pavimentacao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-03T18:20:00-03:00</news:publication_date>
-      <news:title>Marginal Oeste do Morretes vai receber asfalto, e a vala que juntava água virou tubulação</news:title>
     </news:news>
   </url>
 

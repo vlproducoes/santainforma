@@ -1905,5 +1905,18 @@
     "id_pexels": 12955837,
     "termo_de_busca": "house keys contract signing",
     "baixada_em": "2026-09-05"
+  },
+  "faaci-procedimentos-ambientais-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-03-at-16.24.46.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/faaci-apresenta-novos-procedimentos-ambientais-para-construcoes-e-empreendimentos-em-itapema/",
+    "dimensao_original": "1280x720",
+    "baixada_em": "2026-09-06",
+    "recorte": "recortada para 700x394 antes de escalar, tirando a plateia do quadro (regra do CLAUDE.md, secao 6)"
   }
 }
