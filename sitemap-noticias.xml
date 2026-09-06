@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-161-estrada-parque-porto-belo-demolicao-chales</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-06T12:30:00-03:00</news:publication_date>
+      <news:title>Porto Belo demole estruturas de chalé na Estrada Parque, e o segundo acesso a Bombinhas segue com licenciamento suspenso desde julho</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-160-faaci-certidoes-obra-itapema-prazo</loc>
     <news:news>
       <news:publication>
@@ -59,30 +71,6 @@
       </news:publication>
       <news:publication_date>2026-09-04T18:40:00-03:00</news:publication_date>
       <news:title>Desfile de 7 de Setembro em Itapema é na orla do Centro às 14h, e a UBS do seu bairro não abre</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-155-fila-pericia-inss-zerada-agosto</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-04T06:30:00-03:00</news:publication_date>
-      <news:title>Governo diz que a fila da perícia do INSS acabou em agosto, e 224 mil ainda esperam resultado</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-154-mpsc-preco-material-construcao-temporais</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-04T06:20:00-03:00</news:publication_date>
-      <news:title>Ministério Público investiga alta de até 356% no preço de material de construção depois dos temporais</news:title>
     </news:news>
   </url>
 

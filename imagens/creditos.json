@@ -1918,5 +1918,16 @@
     "dimensao_original": "1280x720",
     "baixada_em": "2026-09-06",
     "recorte": "recortada para 700x394 antes de escalar, tirando a plateia do quadro (regra do CLAUDE.md, secao 6)"
+  },
+  "estrada-parque-porto-belo-bombinhas.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Orhan Pergel",
+    "url_fotografo": "https://www.pexels.com/@skylake",
+    "url_original": "https://www.pexels.com/photo/scenic-forest-trail-winding-through-lush-woods-29251986/",
+    "id_pexels": 29251986,
+    "termo_de_busca": "dirt road through atlantic forest",
+    "baixada_em": "2026-09-06"
   }
 }
