@@ -207,7 +207,7 @@ Nunca, em hipótese nenhuma:
 - **Acentuação:** os HTML são UTF-8. Escreva com acento correto no conteúdo.
 - **Nomes de arquivo:** minúsculo, sem acento, separado por hífen.
 
-## 9.5 O layout (redesign aprovado em 06/09/2026)
+## 9.5 O layout (redesign aprovado em 06/09/2026, cor revista no mesmo dia)
 
 A estrutura do index.html continua a mesma de 19/08/2026: pacote de capa no
 lugar do carrossel, com manchete dominante, rio de últimas, sub-destaques,
@@ -217,32 +217,49 @@ rotação estão comentadas no próprio index.html e no prompt do agente
 vestimenta: o `estilo.css` foi reescrito com anatomia de jornal (faixa de
 marca, barra de editorias que gruda, régua dupla nos títulos de seção,
 cards brancos com fio) e acabamento de restrição (ar entre blocos, raio
-máximo de 12px, sombra só no hover, folha branca). O registro do processo
-está em `proposta/17-redesign-layout-set-2026.md`.
+máximo de 12px, sombra só no hover, folha branca). Depois do primeiro
+resultado no ar, a cor foi revista: os tons do leque estavam escuros demais e
+o site continuava lendo como preto e branco. O registro do processo e da
+revisão está em `proposta/17-redesign-layout-set-2026.md`.
 
 Regras do layout:
 
 - **Paleta editorial aprovada.** As oito cores da marca continuam intocadas.
   Além delas existem doze cores de editoria (`--ed-poder-publico`,
   `--ed-economia`, `--ed-infraestrutura`, `--ed-santa-catarina`,
-  `--ed-turismo`, `--ed-meio-ambiente`, `--ed-cidade`, `--ed-brasil`,
-  `--ed-cultura`, `--ed-esporte`, `--ed-clima`, `--ed-saude`), cada uma com
-  os tons `-texto` (AA sobre branco), `-claro` (AA sobre breu) e `-tint`
-  (fundo pálido). Todas com contraste medido no bloco 1 do `estilo.css`.
-  Cor fora dessa lista, só com aprovação do editor.
-- **A cor identifica editoria, nunca decora.** Ela entra no chapéu, no item
-  ativo da barra de editorias, no topo da página de editoria, na barra de
-  leitura da matéria, no painel de 30 segundos e na régua dos colunistas.
-  Nunca em título de chamada, corpo de texto ou fundo de seção inteira.
+  `--ed-turismo`, `--ed-meio-ambiente`, `--ed-servico`, `--ed-brasil`,
+  `--ed-cultura`, `--ed-esporte`, `--ed-clima`, `--ed-saude`), mais
+  `--ed-cidade`, que é apelido de `--ed-servico`. Cada uma tem três tons e só
+  três: o tom vivo (`--ed-X`, entre 4,60:1 e 4,79:1 sobre branco, sobre o
+  fundo, sobre a espuma e sobre o próprio tint), o `-claro` (7:1 ou mais
+  sobre breu, é o que vale no modo escuro) e o `-tint` (fundo pálido).
+  `--ed-X-texto` não existe mais como tom separado: virou apelido do tom
+  vivo. Todos com contraste medido no bloco 1 do `estilo.css`. Para conferir,
+  `python3 ferramentas/contraste.py` lê a paleta do CSS, mede tom por tom nos
+  dois modos e sai com código 1 se algum par cair abaixo de 4,5:1. Cor fora
+  dessa lista, só com aprovação do editor.
+- **O tom precisa parecer cor.** A primeira paleta ficava entre 6,5:1 e
+  10,5:1: passava no AA de sobra e, em caixa alta de 12px, lia como preto.
+  A faixa de trabalho é de 4,6:1 a 5,2:1 sobre branco. Tom novo entra medido
+  pelo `ferramentas/contraste.py`, nessa faixa, nunca "no olho".
+- **A cor identifica editoria, nunca decora.** Ela entra no chapéu (texto e
+  ponto), no fio de 3px no topo do card, no fio à esquerda das chamadas da
+  pilha, no filete da manchete, no ícone e no item ativo da barra de
+  editorias, no topo da página de editoria (tint mais fio de 4px), na barra
+  de leitura da matéria, no painel de 30 segundos, no box "o que ainda está
+  em aberto", na régua dos colunistas e no rótulo do Resumo Semanal. Nunca em
+  título de chamada, corpo de texto ou fundo de seção inteira.
 - Componente novo usa a camada semântica (`--fundo`, `--superficie`,
   `--tinta`, `--tinta-2`, `--tinta-3`, `--fio-cor`, `--link`) e a cor viva
   (`--ed`, `--ed-texto`, `--ed-claro`, `--ed-tint`), nunca hex direto.
 - Tamanho, espaço e forma saem dos tokens: `--t-*` (tipografia fluida),
   `--e-*` e `--esp-*` (espaço), `--raio`, `--raio-s`, `--pilula`.
 - O chapéu das chamadas traz "Cidade · Assunto". O `visual.js` lê esse texto
-  e escreve `data-editoria`, que é o que liga a cor. Assunto novo que não
-  cair no mapa fica na cor da casa, sem quebrar nada; se acontecer muito,
-  vale acrescentar o termo ao mapa no fim do `visual.js`.
+  e escreve `data-editoria`, que é o que liga a cor. Assunto que não cai em
+  regra nenhuma fica sem editoria: chapéu e fio na tinta da casa, que é o
+  certo, porque vestir a cor de outra editoria seria mentira. Se um assunto
+  novo começar a aparecer muito, acrescente o termo ao mapa no fim do
+  `visual.js`.
 - O céu do cabeçalho muda com a hora de Brasília e o sol da marca vira lua à
   noite (classes `ceu-*` do visual.js). Sem JS, a faixa fica no mar de sempre.
 - Movimento novo usa os tokens `--dur-*` e `--curva-*`. Estado invisível mora
@@ -252,9 +269,15 @@ Regras do layout:
   `.lider-sec`, `.pilha article` e `article.card.v2`: a mola do JS escreve
   `transform` neles no toque.
 - Convenção de view transition: a imagem da chamada e a foto de topo da
-  matéria compartilham o nome `capa-mNN` (o visual.js nomeia no clique; o
-  modelo de matéria ainda não nomeia, fase 2).
-- Modo escuro é fase 2. A proposta está no estudo de cores da equipe.
+  matéria compartilham o nome `capa-mNN`, os dois lados escritos pelo
+  `visual.js` (no clique da chamada e no `pagereveal` da matéria). Nome único
+  por página: só a primeira foto de topo entra.
+- **Modo escuro.** Segue a preferência do sistema (`prefers-color-scheme`),
+  sem botão. Só a camada semântica e o leque viram: cada editoria troca o tom
+  vivo pelo `-claro`, e o tint vira fundo escuro tingido. Bloco 13 do
+  `estilo.css`. Componente novo que use os tokens já nasce funcionando nos
+  dois modos; peça escura sobre claro (botão em breu, chip pressionado)
+  precisa da inversão declarada nesse bloco. Impressão sai sempre clara.
 - O material de design da equipe está na pasta `proposta/`.
 
 ## 10. Ao criar página nova

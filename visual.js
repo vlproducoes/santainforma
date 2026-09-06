@@ -462,10 +462,12 @@ var mola = (function () {
 })();
 
 /* VOO DE CAPA
-   No clique rumo a uma materia, a imagem da chamada ganha o nome de
-   view transition daquela materia. Quando o modelo de materia nomear a
-   foto de topo com o mesmo capa-mNN (fase 2), a imagem viaja de uma
-   pagina a outra. Ate la, nada muda: o fade atual continua. */
+   No clique rumo a uma materia, a imagem da chamada ganha o nome de view
+   transition daquela materia; ao abrir a materia, a foto de topo recebe o
+   mesmo nome. Com os dois lados nomeados, a imagem viaja de uma pagina a
+   outra em vez de sumir e voltar. Nome unico por pagina, entao so a
+   primeira foto de topo entra. Sem suporte a view transition, nada disso
+   roda e o fade de sempre continua. */
 document.addEventListener('click', function (e) {
   var a = e.target.closest('a[href*="materia-"]');
   if (!a || !('startViewTransition' in document)) return;
@@ -474,6 +476,18 @@ document.addEventListener('click', function (e) {
   var n = (a.getAttribute('href').match(/materia-(\d+)/) || [])[1];
   if (img && n) img.style.viewTransitionName = 'capa-m' + n;
 });
+if ('startViewTransition' in document) {
+  /* o script vive no <head> sem defer: sem esperar o DOM, nao ha foto para
+     nomear. 'pagereveal' e o gancho certo (roda antes do primeiro desenho da
+     pagina nova); onde ele nao existe, o DOMContentLoaded resolve. */
+  var nomeiaFotoDeTopo = function () {
+    var n = (location.pathname.match(/materia-(\d+)/) || [])[1];
+    var img = n && document.querySelector('main figure.foto img, main .hero img');
+    if (img) img.style.viewTransitionName = 'capa-m' + n;
+  };
+  window.addEventListener('pagereveal', nomeiaFotoDeTopo);
+  document.addEventListener('DOMContentLoaded', nomeiaFotoDeTopo);
+}
 
 /* TEMPO DA REGIAO
    Depois que a pagina carrega, pergunta ao /clima (funcao no edge; ver
@@ -577,10 +591,10 @@ document.addEventListener('DOMContentLoaded', function () {
     caixa.innerHTML =
       '<div class="consentimento-texto">' +
         '<strong>Cookies por aqui</strong>' +
-        '<p>Usamos cookie necessario para o site funcionar e, se voce deixar, ' +
-        'cookie de medicao de audiencia para saber quais materias sao lidas. ' +
-        'O anuncio do Google e sempre nao personalizado. Detalhes na ' +
-        '<a href="privacidade.html">Politica de Privacidade</a>.</p>' +
+        '<p>Usamos cookie necessário para o site funcionar e, se você deixar, ' +
+        'cookie de medição de audiência para saber quais matérias são lidas. ' +
+        'O anúncio do Google é sempre não personalizado. Detalhes na ' +
+        '<a href="privacidade.html">Política de Privacidade</a>.</p>' +
       '</div>' +
       '<div class="consentimento-acoes">' +
         '<button type="button" class="btn-recusar">Só o necessário</button>' +
@@ -676,8 +690,10 @@ document.addEventListener('DOMContentLoaded', function () {
    data-editoria no proprio chapeu e no bloco que o contem (article, li,
    .item), para o card inteiro poder usar a cor. Sem JS, o chapeu fica na
    cor padrao e nada quebra. Assunto sem regra cai no lugar: Brasil vira
-   "brasil", Santa Catarina e regiao viram "santa-catarina", o resto e
-   "cidade" (Itapema e vizinhas). */
+   "brasil", Santa Catarina e regiao viram "santa-catarina". Assunto que nao
+   cai em regra nenhuma fica sem editoria: chapeu e fio na tinta da casa, que
+   e o certo (vestir a cor de outra editoria seria mentira). Se um assunto
+   novo comecar a aparecer muito, o lugar de resolver e a lista aqui. */
 document.addEventListener('DOMContentLoaded', function () {
   var ASSUNTOS = [
     ['economia', /econom|trabalho|emprego|invest|consum|previd|com[eé]rcio|tribut|imposto|renda|neg[oó]cio|sal[aá]rio|pre[çc]o/i],
@@ -688,6 +704,8 @@ document.addEventListener('DOMContentLoaded', function () {
     ['esporte', /esporte|jogos|futebol|surfe|atleta|ciclismo|parajasc|competi/i],
     ['cultura', /cultura|m[uú]sica|festival|hist[oó]ria|arte|orquestra|banda|teatro|cinema/i],
     ['turismo', /turismo|temporada|praia|festa|gastronom|roteiro|atra[çc]/i],
+    ['servico', /servi[çc]o|utilidade|expediente|plant[ãa]o|hor[aá]rio|agenda/i],
+    ['cidade', /^\s*cidade\s*$|bairro|vizinhan[çc]a/i],
     ['poder-publico', /legislativo|poder p[uú]blico|c[âa]mara|prefeitura|assist[êe]ncia|direitos|habita[çc][ãa]o|educa[çc][ãa]o|seguran[çc]a|pol[ií]tica|or[çc]amento|justi[çc]a|comunidade|popula[çc][ãa]o|minist[eé]rio|governo|licita|concurso|vereador/i]
   ];
   var LUGARES = [
@@ -699,13 +717,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var lugar = partes[0] || '', assunto = partes[1] || '';
     for (var i = 0; i < ASSUNTOS.length; i++) if (ASSUNTOS[i][1].test(assunto)) return ASSUNTOS[i][0];
     for (var j = 0; j < LUGARES.length; j++) if (LUGARES[j][1].test(lugar)) return LUGARES[j][0];
-    return 'cidade';
+    return '';
   }
-  var chapeus = document.querySelectorAll('.ed, .chapeu');
+  /* .item small e o rotulo do Resumo Semanal: mesmo texto, outra marcacao */
+  var chapeus = document.querySelectorAll('.ed, .chapeu, .item small');
   for (var k = 0; k < chapeus.length; k++) {
     var el = chapeus[k];
     if (!/[·•]/.test(el.textContent)) continue;            /* "Quem somos", "Erro 404": sem editoria */
     var ed = classifica(el.textContent);
+    if (!ed) continue;
     el.setAttribute('data-editoria', ed);
     var bloco = el.closest('article, li, .item, .hero, .d');
     if (bloco && !bloco.hasAttribute('data-editoria')) bloco.setAttribute('data-editoria', ed);

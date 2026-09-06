@@ -31,7 +31,8 @@ duas. O blueprint final e o CSS seguem esse veredito.
   breu) e tint de fundo. A cor identifica editoria: chapéu, item ativo da barra, topo da
   página de editoria, barra de leitura da matéria, painel de 30 segundos, régua dos
   colunistas. Nunca em título de chamada, corpo ou fundo de seção. Contraste medido em
-  `design/contraste.py` do estudo (tabela no estudo de cores).
+  `ferramentas/contraste.py` (tabela no estudo de cores). Os tons e parte
+  das matizes mudaram na revisão registrada mais abaixo; vale a lista de lá.
 - **Hook único de JS.** O `visual.js` lê o texto do chapéu ("Cidade · Assunto") e escreve
   `data-editoria` no chapéu e no bloco que o contém. Sem JS, tudo cai na tinta escura.
   Páginas de editoria e a barra usam `a[href="editoria-x.html"]` e `body:has()`, sem JS.
@@ -55,6 +56,48 @@ do mínimo, zero par texto/fundo abaixo de AA. Testes de interação: folha de c
 celular, barra grudada depois de rolar, horóscopo (signo e chips), foco por teclado,
 `prefers-reduced-motion` (nada some), estados `ceu-noite` e `tempo-chuva`.
 
+## Revisão da cor, no mesmo dia
+
+Com o redesign no ar, o editor pediu para rever a questão das cores. A conta
+mostrou onde estava o problema: os doze tons de texto do leque iam de 6,5:1 a
+10,5:1 sobre branco. Passavam no AA com folga demais e, em caixa alta de 12px,
+liam como preto. O site tinha paleta, mas não tinha cor. A superfície também
+era mínima: fora o chapéu de 12px, quase nada no layout carregava a editoria.
+
+O que mudou:
+
+- **Faixa de trabalho.** Cada editoria passou a ter um tom só, resolvido para
+  o ponto mais claro que ainda passa 4,6:1 sobre branco, sobre o fundo, sobre
+  a espuma e sobre o próprio tint. Deu de 4,60:1 a 4,79:1 no pior caso e
+  cerca de 5,1:1 sobre branco. O `-texto` deixou de ser um tom separado e
+  virou apelido do tom vivo.
+- **Matizes redistribuídas.** Com tons mais vivos, três azuis quase iguais
+  ficaram impossíveis de separar. Poder Público foi para 222°, Esporte para
+  199°, e Cidade saiu do azul da casa.
+- **Serviço ganhou cor própria.** É o maior grupo do site (87 chamadas, 12%)
+  e vestia o azul da marca, a mesma cor do cabeçalho, dos links e do rodapé:
+  sumia. Recebeu o violeta quaresmeira (264°), a única faixa vazia do
+  círculo. Cidade virou apelido de Serviço, porque é a mesma pauta.
+- **Mais superfície.** Fio de 3px na cor da editoria no topo de cada card,
+  ponto colorido em todo chapéu (antes só no da matéria), ícones da barra de
+  editorias sempre coloridos, fio à esquerda das chamadas da pilha, topo da
+  página de editoria em tint, filete da manchete na cor da editoria, rótulo
+  do Resumo Semanal na cor da editoria e box "o que ainda está em aberto"
+  seguindo a matéria.
+- **Modo escuro.** Saiu da fase 2 e entrou. Segue a preferência do sistema,
+  sem botão. Cada editoria troca o tom vivo pelo `-claro`, que já existia e já
+  estava medido sobre breu. As únicas regras de componente são inversões:
+  peça escura sobre claro que precisa virar clara sobre escuro.
+- **Duas pendências fechadas.** Os textos do aviso de cookie ganharam acento,
+  e a foto de topo da matéria passou a receber o mesmo `capa-mNN` da chamada,
+  então a imagem viaja de uma página à outra em vez de sumir e voltar.
+
+Validação da revisão: `checa-site.py` em zero; auditoria em 14 páginas por 5
+larguras, nos dois modos (140 telas), com zero overflow horizontal, zero alvo
+de toque abaixo do mínimo e zero par texto/fundo abaixo de AA. Os três links
+de fonte que ficavam abaixo do alvo mínimo no `regiao.html` foram corrigidos
+de passagem. O CSS foi de 23,6 kB para 25,7 kB comprimido.
+
 ## O que o editor decidiu
 
 1. Paleta editorial aprovada. As doze cores entraram no `estilo.css` (bloco 1) e a regra do
@@ -67,9 +110,11 @@ celular, barra grudada depois de rolar, horóscopo (signo e chips), foco por tec
 
 ## O que ficou para depois
 
-1. Modo escuro: proposto no estudo de cores, fica para a fase 2. Só a camada semântica
-   (`--fundo`, `--tinta`, `--superficie`, `--fio-cor`, `--link`) precisa ser remapeada.
-2. Os textos do aviso de cookie no `visual.js` seguem sem acento (vêm de antes); é conteúdo,
-   não foi tocado.
-3. O modelo de matéria ainda não nomeia a foto de topo como `capa-mNN`, então a transição de
-   imagem entre capa e matéria só vale na ida.
+1. O rio de últimas continua sem cor. As chamadas de lá não têm chapéu na
+   marcação, então não há de onde ler a editoria sem mexer no HTML das
+   páginas. Se um dia o gerador puser o chapéu no rio, a cor entra sozinha.
+2. O botão de modo escuro. Hoje quem manda é o sistema. Um botão pediria
+   marcação nova nas 185 páginas e um lugar para guardar a escolha; vale se o
+   editor quiser.
+3. A tagline do logo, dentro do SVG, tem 9,5px. É desenho de marca, não texto
+   de leitura, mas é o único ponto do site abaixo do piso de 12px.

@@ -19,7 +19,7 @@
    PALETA · Santa Informa · estudo de cores do redesign (set/2026)
    Camadas: 1) marca (8 hex, intocados)  2) neutra e semantica
    3) PALETA EDITORIAL (12 cores-mae, contraste medido em
-   design/contraste.py)  4) mapeamento editoria -> cor viva
+   ferramentas/contraste.py)  4) mapeamento editoria -> cor viva
    ============================================================ */
 :root{
   /* 1. MARCA: os oito hex de sempre. Nao mudam. */
@@ -48,85 +48,95 @@
   --foco:var(--mar);               /* anel de foco sobre claro */
   --acento:var(--sol);             /* unico acento de marca: filete, nav principal ativa, progresso */
   --urgente:var(--coral);          /* bolinha Ultimas, erro, 404: 4,99:1 sobre branco */
+  --mar-medio:#1B7796;             /* o mar da marca clareado para virar texto sobre branco (5,09:1). Nao e cor nova: e o mesmo azul na faixa do leque editorial. */
   --sombra-cor:color-mix(in srgb,var(--breu) 10%,transparent);
 
-  /* 3. PALETA EDITORIAL. Para cada editoria:
-     --ed-X        principal: filete, regua, borda, faixa do topo (branco por cima >= 4,58:1)
-     --ed-X-texto  chapeu e link da editoria sobre claro (>= 4,5:1 sobre #fff, fundo e tint)
-     --ed-X-claro  o mesmo papel sobre breu e superficie escura (>= 4,5:1)
-     --ed-X-tint   fundo de pilula e painel: color-mix com branco, 8 a 14% */
+  /* 3. PALETA EDITORIAL. Treze editorias, treze matizes espalhadas pelo
+     circulo. Cada uma tem tres tons, e so tres:
+     --ed-X        o tom vivo: chapeu, fio de topo do card, ponto, icone,
+                   regua. Medido entre 4,60:1 e 4,79:1 sobre branco, sobre o
+                   fundo da pagina, sobre a espuma e sobre o proprio tint.
+     --ed-X-claro  o mesmo papel sobre breu e no modo escuro: 7:1 ou mais.
+     --ed-X-tint   fundo palido, 7% do tom vivo sobre branco.
+     Set/2026: os tons antigos iam de 6,5:1 a 10,5:1 sobre branco. Passavam
+     de sobra no AA e, em caixa alta de 12px, liam como preto. O leque foi
+     rebaixado para a faixa em que a cor ainda e cor e o texto ainda passa.
+     Confira com `python3 ferramentas/contraste.py`. */
 
-  /* Poder Publico · Azul Forum (215°). Predio publico, plenario. */
-  --ed-poder-publico:#2B5288;
-  --ed-poder-publico-texto:#1F3F6E;
-  --ed-poder-publico-claro:#8FB4E6;
-  --ed-poder-publico-tint:color-mix(in srgb,#2B5288 10%,#FFFFFF);
+  /* Saude · Coral da marca (8°). O coral de sempre, um grau mais fundo para
+     caber na faixa; o coral puro continua em --urgente. */
+  --ed-saude:#CC341E;
+  --ed-saude-claro:#EC8D7F;
+  --ed-saude-tint:#FBF1EF;
 
-  /* Economia · Ouro Velho (39°). O sol da marca escurecido; sobre escuro volta a ser o sol. */
-  --ed-economia:#9B690D;
-  --ed-economia-texto:#7A5208;
+  /* Infraestrutura · Laranja Obra (24°). Cone, colete, placa de obra. */
+  --ed-infraestrutura:#B15416;
+  --ed-infraestrutura-claro:#EA9155;
+  --ed-infraestrutura-tint:#FAF3EF;
+
+  /* Economia · Ouro Velho (42°). O sol da marca escurecido; sobre escuro
+     volta a ser o sol. */
+  --ed-economia:#8F670B;
   --ed-economia-claro:var(--sol);
-  --ed-economia-tint:color-mix(in srgb,#9B690D 12%,#FFFFFF);
+  --ed-economia-tint:#F7F4EE;
 
-  /* Infraestrutura · Laranja Obra (21°). Cone, colete, placa de obra. */
-  --ed-infraestrutura:#C1551A;
-  --ed-infraestrutura-texto:#9E4210;
-  --ed-infraestrutura-claro:#F09A62;
-  --ed-infraestrutura-tint:color-mix(in srgb,#C1551A 10%,#FFFFFF);
-
-  /* Santa Catarina · Vinho Serra (351°). O vermelho da bandeira levado a vinho de altitude. */
-  --ed-santa-catarina:#8C2C3A;
-  --ed-santa-catarina-texto:#77212F;
-  --ed-santa-catarina-claro:#E48A98;
-  --ed-santa-catarina-tint:color-mix(in srgb,#8C2C3A 10%,#FFFFFF);
+  /* Meio Ambiente · Verde Mata (137°). Mata Atlantica do morro, mangue.
+     Unico verde do leque. */
+  --ed-meio-ambiente:#287E40;
+  --ed-meio-ambiente-claro:#3CBE61;
+  --ed-meio-ambiente-tint:#F0F6F2;
 
   /* Turismo · Turquesa (176°). A agua de Bombinhas em dia de sol. */
-  --ed-turismo:#12827B;
-  --ed-turismo-texto:#0E6660;
-  --ed-turismo-claro:#5FCFC6;
-  --ed-turismo-tint:color-mix(in srgb,#12827B 12%,#FFFFFF);
+  --ed-turismo:#0E7B74;
+  --ed-turismo-claro:#15BBB0;
+  --ed-turismo-tint:#EEF6F5;
 
-  /* Meio Ambiente · Verde Mata (139°). Mata Atlantica do morro, mangue. Unico verde. */
-  --ed-meio-ambiente:#2E7A46;
-  --ed-meio-ambiente-texto:#236238;
-  --ed-meio-ambiente-claro:#7FCB92;
-  --ed-meio-ambiente-tint:color-mix(in srgb,#2E7A46 12%,#FFFFFF);
+  /* Esporte · Azul Ceu (199°). Ceu aberto de regata e de quadra. */
+  --ed-esporte:#1676A2;
+  --ed-esporte-claro:#42B2E5;
+  --ed-esporte-tint:#EFF5F8;
 
-  /* Cidade / Servico · Mar (195°). Reuso: a noticia de todo dia veste a cor da casa. */
-  --ed-cidade:var(--mar);
-  --ed-cidade-texto:var(--mar);
-  --ed-cidade-claro:var(--mar-claro);
-  --ed-cidade-tint:color-mix(in srgb,var(--mar) 12%,#FFFFFF);
+  /* Clima · Ardosia (205°, 22% de saturacao). A nuvem carregada antes do
+     temporal. E a unica azulada sem brilho: some ao lado das outras de
+     proposito, porque clima aparece todo dia. */
+  --ed-clima:#567286;
+  --ed-clima-claro:#93AABA;
+  --ed-clima-tint:#F3F5F7;
 
-  /* Brasil · Grafite (neutro, 6% de saturacao). Quanto mais longe de Itapema, menos cor. */
-  --ed-brasil:#4C5256;
-  --ed-brasil-texto:#3C4246;
-  --ed-brasil-claro:#ADB3B7;
-  --ed-brasil-tint:color-mix(in srgb,#4C5256 10%,#FFFFFF);
+  /* Poder Publico · Azul Forum (222°). Predio publico, plenario. */
+  --ed-poder-publico:#3F69CC;
+  --ed-poder-publico-claro:#8EA7E1;
+  --ed-poder-publico-tint:#F2F4FB;
 
-  /* Cultura · Rosa Primavera (327°). A bougainvillea dos jardins da orla. Magenta de flor, nao roxo. */
-  --ed-cultura:#B02E76;
-  --ed-cultura-texto:#93225F;
-  --ed-cultura-claro:#F0A0CB;
-  --ed-cultura-tint:color-mix(in srgb,#B02E76 8%,#FFFFFF);
+  /* Servico · Violeta Quaresmeira (264°). A arvore que fica roxa na
+     quaresma, plantada em rua de cidade inteira aqui. Servico e o maior
+     grupo do site: vestia o azul da casa e sumia no cromo. */
+  --ed-servico:#8356C7;
+  --ed-servico-claro:#B69BDE;
+  --ed-servico-tint:#F6F3FB;
 
-  /* Esporte · Azul Ceu (205°). Ceu aberto de regata e de quadra. O azul mais vivo do leque. */
-  --ed-esporte:#227AB9;
-  --ed-esporte-texto:#1A5C8C;
-  --ed-esporte-claro:#7FBCEB;
-  --ed-esporte-tint:color-mix(in srgb,#227AB9 10%,#FFFFFF);
+  /* Cultura · Rosa Primavera (322°). A bougainvillea dos jardins da orla.
+     Magenta de flor, nao roxo. */
+  --ed-cultura:#C32E8D;
+  --ed-cultura-claro:#E38AC3;
+  --ed-cultura-tint:#FBF0F7;
 
-  /* Clima · Ardosia (203°, 25%). A nuvem carregada antes do temporal; parente do --chumbo. */
-  --ed-clima:#4C6C80;
-  --ed-clima-texto:#3B586B;
-  --ed-clima-claro:#A3BFD0;
-  --ed-clima-tint:color-mix(in srgb,#4C6C80 10%,#FFFFFF);
+  /* Santa Catarina · Vinho Serra (344°). O vermelho da bandeira levado a
+     vinho de altitude. */
+  --ed-santa-catarina:#C5385D;
+  --ed-santa-catarina-claro:#E090A5;
+  --ed-santa-catarina-tint:#FBF1F4;
 
-  /* Saude · Coral (7°). Reuso: a cor quente e urgente da marca. */
-  --ed-saude:var(--coral);
-  --ed-saude-texto:#B22A18;
-  --ed-saude-claro:#F5917E;
-  --ed-saude-tint:color-mix(in srgb,var(--coral) 8%,#FFFFFF);
+  /* Brasil · Grafite (205°, 6%). Quanto mais longe de Itapema, menos cor. */
+  --ed-brasil:#686F75;
+  --ed-brasil-claro:#A1A8AC;
+  --ed-brasil-tint:#F4F5F5;
+
+  /* Cidade · alias de Servico. Cidade e Servico sao a mesma pauta do dia a
+     dia; separadas, davam dois azuis parecidos. */
+  --ed-cidade:var(--ed-servico);
+  --ed-cidade-claro:var(--ed-servico-claro);
+  --ed-cidade-tint:var(--ed-servico-tint);
 
   /* 4. COR VIVA: o que o componente le. Sem editoria conhecida, cai na tinta
      (chapeu escuro e legivel, so sem cor). */
@@ -138,58 +148,61 @@
 
 /* MAPEAMENTO editoria -> cor viva.
    Tres ganchos, todos sem tocar no HTML:
-   a) [data-editoria] escrito pelo visual.js a partir do texto do .ed;
+   a) [data-editoria] escrito pelo visual.js a partir do texto do chapeu;
    b) o link de menu e de trilha, pelo href;
-   c) a pagina de editoria inteira, pelo item ativo do menu (body:has). */
+   c) a pagina de editoria inteira, pelo item ativo do menu (body:has).
+   --ed-texto sobrou de quando o tom de texto era mais escuro que o tom de
+   fio. Hoje e um so: fica como apelido para nao quebrar regra antiga. */
 [data-editoria="poder-publico"],
 a[href="editoria-poder-publico.html"],
 body:has(.editorias a.ativo[href="editoria-poder-publico.html"]) .editoria-topo{
-  --ed:var(--ed-poder-publico);--ed-texto:var(--ed-poder-publico-texto);
-  --ed-claro:var(--ed-poder-publico-claro);--ed-tint:var(--ed-poder-publico-tint)}
+  --ed:var(--ed-poder-publico);--ed-claro:var(--ed-poder-publico-claro);
+  --ed-tint:var(--ed-poder-publico-tint)}
 [data-editoria="economia"],
 a[href="editoria-economia.html"],
 body:has(.editorias a.ativo[href="editoria-economia.html"]) .editoria-topo{
-  --ed:var(--ed-economia);--ed-texto:var(--ed-economia-texto);
-  --ed-claro:var(--ed-economia-claro);--ed-tint:var(--ed-economia-tint)}
+  --ed:var(--ed-economia);--ed-claro:var(--ed-economia-claro);
+  --ed-tint:var(--ed-economia-tint)}
 [data-editoria="infraestrutura"],
 a[href="editoria-infraestrutura.html"],
 body:has(.editorias a.ativo[href="editoria-infraestrutura.html"]) .editoria-topo{
-  --ed:var(--ed-infraestrutura);--ed-texto:var(--ed-infraestrutura-texto);
-  --ed-claro:var(--ed-infraestrutura-claro);--ed-tint:var(--ed-infraestrutura-tint)}
+  --ed:var(--ed-infraestrutura);--ed-claro:var(--ed-infraestrutura-claro);
+  --ed-tint:var(--ed-infraestrutura-tint)}
 [data-editoria="santa-catarina"],
 a[href="editoria-santa-catarina.html"],
 body:has(.editorias a.ativo[href="editoria-santa-catarina.html"]) .editoria-topo{
-  --ed:var(--ed-santa-catarina);--ed-texto:var(--ed-santa-catarina-texto);
-  --ed-claro:var(--ed-santa-catarina-claro);--ed-tint:var(--ed-santa-catarina-tint)}
+  --ed:var(--ed-santa-catarina);--ed-claro:var(--ed-santa-catarina-claro);
+  --ed-tint:var(--ed-santa-catarina-tint)}
 [data-editoria="turismo"],
 a[href="editoria-turismo.html"],
 body:has(.editorias a.ativo[href="editoria-turismo.html"]) .editoria-topo{
-  --ed:var(--ed-turismo);--ed-texto:var(--ed-turismo-texto);
-  --ed-claro:var(--ed-turismo-claro);--ed-tint:var(--ed-turismo-tint)}
+  --ed:var(--ed-turismo);--ed-claro:var(--ed-turismo-claro);
+  --ed-tint:var(--ed-turismo-tint)}
 [data-editoria="meio-ambiente"],
 a[href="editoria-meio-ambiente.html"],
 body:has(.editorias a.ativo[href="editoria-meio-ambiente.html"]) .editoria-topo{
-  --ed:var(--ed-meio-ambiente);--ed-texto:var(--ed-meio-ambiente-texto);
-  --ed-claro:var(--ed-meio-ambiente-claro);--ed-tint:var(--ed-meio-ambiente-tint)}
-/* as seis de apoio nao tem pagina propria: so o data-editoria as liga */
-[data-editoria="cidade"]{--ed:var(--ed-cidade);--ed-texto:var(--ed-cidade-texto);--ed-claro:var(--ed-cidade-claro);--ed-tint:var(--ed-cidade-tint)}
-[data-editoria="brasil"]{--ed:var(--ed-brasil);--ed-texto:var(--ed-brasil-texto);--ed-claro:var(--ed-brasil-claro);--ed-tint:var(--ed-brasil-tint)}
-[data-editoria="cultura"]{--ed:var(--ed-cultura);--ed-texto:var(--ed-cultura-texto);--ed-claro:var(--ed-cultura-claro);--ed-tint:var(--ed-cultura-tint)}
-[data-editoria="esporte"]{--ed:var(--ed-esporte);--ed-texto:var(--ed-esporte-texto);--ed-claro:var(--ed-esporte-claro);--ed-tint:var(--ed-esporte-tint)}
-[data-editoria="clima"]{--ed:var(--ed-clima);--ed-texto:var(--ed-clima-texto);--ed-claro:var(--ed-clima-claro);--ed-tint:var(--ed-clima-tint)}
-[data-editoria="saude"]{--ed:var(--ed-saude);--ed-texto:var(--ed-saude-texto);--ed-claro:var(--ed-saude-claro);--ed-tint:var(--ed-saude-tint)}
+  --ed:var(--ed-meio-ambiente);--ed-claro:var(--ed-meio-ambiente-claro);
+  --ed-tint:var(--ed-meio-ambiente-tint)}
+/* as de apoio nao tem pagina propria: so o data-editoria as liga */
+[data-editoria="servico"]{--ed:var(--ed-servico);--ed-claro:var(--ed-servico-claro);--ed-tint:var(--ed-servico-tint)}
+[data-editoria="cidade"]{--ed:var(--ed-cidade);--ed-claro:var(--ed-cidade-claro);--ed-tint:var(--ed-cidade-tint)}
+[data-editoria="brasil"]{--ed:var(--ed-brasil);--ed-claro:var(--ed-brasil-claro);--ed-tint:var(--ed-brasil-tint)}
+[data-editoria="cultura"]{--ed:var(--ed-cultura);--ed-claro:var(--ed-cultura-claro);--ed-tint:var(--ed-cultura-tint)}
+[data-editoria="esporte"]{--ed:var(--ed-esporte);--ed-claro:var(--ed-esporte-claro);--ed-tint:var(--ed-esporte-tint)}
+[data-editoria="clima"]{--ed:var(--ed-clima);--ed-claro:var(--ed-clima-claro);--ed-tint:var(--ed-clima-tint)}
+[data-editoria="saude"]{--ed:var(--ed-saude);--ed-claro:var(--ed-saude-claro);--ed-tint:var(--ed-saude-tint)}
+[data-editoria],a[href^="editoria-"],.editoria-topo{--ed-texto:var(--ed)}
 
-/* Onde a cor viva e lida (exemplos; o layout decide o resto):
-   .ed, .chapeu            color:var(--ed-texto)
-   .chapeu (pilula)        background:var(--ed-tint); color:var(--ed-texto)
+/* Onde a cor viva e lida:
+   .ed, .chapeu            color:var(--ed-texto) e ponto em var(--ed)
+   .sub, article.card      border-top:3px solid var(--ed)
    .filete, .titulo.regua  background / border-top-color: var(--ed)
-   .editoria-topo          background:var(--ed); color:#fff
-   .editorias a.ativo      border-bottom:3px solid var(--ed)
-   .escuro .ed, footer .ed color:var(--ed-claro)
-   .publicado a[style]     o inline fixa color:var(--mar) em 143 paginas; o bloco 6
-                           redefine --mar dentro de .publicado, sem !important */
-/* Modo escuro: proposto no estudo de cores (design/cores.md, secao 4),
-   fica para a fase 2, depois de o editor aprovar a paleta clara. */
+   .editoria-topo          background:var(--ed-tint), fio de 4px em var(--ed)
+   .editorias .icone       color:var(--ed), sempre, em todos os itens
+   .escuro .ed, .item small color:var(--ed-claro)
+   .publicado a[style]     o inline fixa color:var(--mar) em 143 paginas; o
+                           bloco 7 redefine --mar dentro de .publicado */
+
 /* ==== 1 · TOKENS TIPOGRAFICOS E DE ESPACO ====
    Escala fluida: cada clamp e uma reta entre o valor de 360px e o de 1440px
    de viewport (calculo em design/clamps.py). Fora da faixa, trava. Base de
@@ -312,6 +325,7 @@ body:has(.editorias a.ativo[href="editoria-meio-ambiente.html"]) .editoria-topo{
      botao e chip. Raio maior que isso e cara de template. */
   --raio-s:8px;
   --raio:12px;
+  --raio-interno:9px;       /* 12 menos o fio de topo de 3px: a foto segue a curva de dentro do card */
   --pilula:100px;
   /* sombra: nenhuma em repouso. Esta so entra no hover, por opacidade. */
   --sombra-2:0 2px 6px color-mix(in srgb,var(--breu) 6%,transparent),
@@ -390,7 +404,7 @@ a:hover{color:var(--tinta);text-decoration-color:var(--sol);text-decoration-thic
 :focus-visible{outline:2px solid var(--foco);outline-offset:3px;border-radius:2px}
 /* link dentro de paragrafo: o padding entra no retangulo de toque (>=24px)
    sem mudar a altura da linha, porque a margem negativa devolve o espaco */
-.texto p a,.texto li a,.institucional a,.leituras-nota a,.legal a,.destaque a,.painel a,.leitura-v a,.consentimento-texto a,.fonte a{padding-block:6px;margin-block:-6px}
+.texto p a,.texto li a,.institucional a,.leituras-nota a,.legal a,.destaque a,.painel a,.leitura-v a,.consentimento-texto a,.fonte a,.d small a,.d p a,.d em a{padding-block:6px;margin-block:-6px}
 header :focus-visible,.escuro :focus-visible,.leitura :focus-visible,.consentimento .btn-aceitar:focus-visible{outline-color:var(--sol)}
 
 /* LARGURAS
@@ -480,7 +494,7 @@ nav.editorias ul::-webkit-scrollbar{display:none}
 nav.editorias li{display:flex;align-items:stretch}
 nav.editorias a{display:inline-flex;align-items:center;gap:var(--e-2);min-height:var(--h-editorias);padding:0 var(--e-3);font:var(--peso-medio) var(--t-nav-ed)/1.2 var(--display);letter-spacing:0;text-transform:none;color:var(--tinta);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;transition:color var(--dur-toque)}
 nav.editorias li:first-child a{padding-left:0}
-nav.editorias .icone{width:14px;height:14px;color:var(--tinta-3);transition:color var(--dur-toque)}
+nav.editorias .icone{width:14px;height:14px;color:var(--ed);transition:color var(--dur-toque)}
 nav.editorias a:hover,nav.editorias a:focus-visible{color:var(--ed-texto)}
 nav.editorias a:hover .icone,nav.editorias a:focus-visible .icone,nav.editorias a.ativo .icone{color:var(--ed)}
 nav.editorias a.ativo{color:var(--ed-texto);border-bottom-color:var(--ed)}
@@ -518,13 +532,13 @@ header.ceu::after{content:none}
 
 /* ==== 5 · COMPONENTES TRANSVERSAIS ==== */
 
-/* CHAPEU (.ed nas chamadas, .chapeu no hero): texto colorido em caixa alta,
-   sem fundo, sem borda. A cor vem do data-editoria que o visual.js escreve
-   a partir do proprio texto; sem JS fica na tinta, escuro e legivel.
+/* CHAPEU (.ed nas chamadas, .chapeu no hero): texto colorido em caixa alta
+   com um ponto da cor da editoria na frente, sem fundo e sem borda. A cor vem
+   do data-editoria que o visual.js escreve a partir do proprio texto; sem JS
+   fica na tinta, escuro e legivel, e o ponto vira um marcador neutro.
    A classe .ed.b do HTML antigo deixa de ter efeito: a cor e da editoria. */
-.ed,.chapeu{display:block;font:var(--peso-forte) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-caixa-alta);text-transform:uppercase;color:var(--ed-texto);padding-top:.08em}
-.chapeu{display:inline-flex;align-items:center;gap:var(--e-2)}
-.chapeu::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ed);flex:none}
+.ed,.chapeu{display:inline-flex;align-items:center;gap:var(--e-2);font:var(--peso-forte) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-caixa-alta);text-transform:uppercase;color:var(--ed-texto);padding-top:.08em}
+.ed::before,.chapeu::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ed);flex:none}
 .chapeu.claro{color:var(--ed-texto)}
 .escuro .ed,.leitura .ed{color:var(--ed-claro)}
 
@@ -559,11 +573,11 @@ header.ceu::after{content:none}
    clicavel pelo overlay do link do titulo; o foco do teclado contorna o card.
    Usado por .sub (capa), article.card (editoria, arquivo, leia tambem) e
    article.card.v2 (capa). */
-.sub,article.card{position:relative;display:flex;flex-direction:column;gap:var(--e-2);background:var(--superficie);border:var(--fio) solid var(--fio-cor);border-radius:var(--raio);padding:0 0 var(--e-4);transition:border-color var(--dur-troca)}
+.sub,article.card{position:relative;display:flex;flex-direction:column;gap:var(--e-2);background:var(--superficie);border:var(--fio) solid var(--fio-cor);border-top:3px solid var(--ed);border-radius:var(--raio);padding:0 0 var(--e-4);transition:border-color var(--dur-troca)}
 .sub::before,article.card::before{content:"";position:absolute;inset:-1px;border-radius:var(--raio);box-shadow:var(--sombra-2);opacity:0;transition:opacity var(--dur-troca) var(--curva-troca);pointer-events:none}
 .sub:hover::before,article.card:hover::before,.sub:has(a:focus-visible)::before,article.card:has(a:focus-visible)::before{opacity:1}
-.sub figure,article.card figure{margin:0 0 var(--e-2);overflow:hidden;border-radius:var(--raio) var(--raio) 0 0}
-.sub .capa-sub,article.card .capa{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 var(--e-2);background:var(--fio-cor);border-radius:var(--raio) var(--raio) 0 0}
+.sub figure,article.card figure{margin:0 0 var(--e-2);overflow:hidden;border-radius:var(--raio-interno) var(--raio-interno) 0 0}
+.sub .capa-sub,article.card .capa{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 var(--e-2);background:var(--fio-cor);border-radius:var(--raio-interno) var(--raio-interno) 0 0}
 .sub figure .capa-sub,article.card figure .capa{margin:0;border-radius:0}
 .sub .ed,.sub h3,.sub p,article.card .ed,article.card h3,article.card p,article.card .quando,article.card .selo{padding:0 var(--e-4)}
 .sub h3,article.card h3{font-size:var(--t-card-m);line-height:var(--lh-card);letter-spacing:var(--ls-card);color:var(--tinta)}
@@ -593,7 +607,7 @@ article.card .selo{margin-top:var(--e-1)}
 /* DESTAQUE: o box "O que ainda esta em aberto". Espuma com regua escura em
    cima e o strong de abertura em caixa alta na cor da editoria. E outro
    desenho de proposito: o painel de 30 segundos e o unico callout tingido. */
-.destaque{background:var(--superficie-2);border-top:3px solid var(--tinta);padding:var(--e-5) var(--e-6);margin:var(--esp-bloco) 0;font-size:var(--t-corpo);line-height:var(--lh-corpo)}
+.destaque{background:var(--superficie-2);border-top:3px solid var(--ed);padding:var(--e-5) var(--e-6);margin:var(--esp-bloco) 0;font-size:var(--t-corpo);line-height:var(--lh-corpo)}
 .destaque strong{font-weight:var(--peso-medio)}
 .destaque>strong:first-child{display:block;font:var(--peso-forte) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-caixa-alta);text-transform:uppercase;color:var(--ed-texto);margin-bottom:var(--e-2)}
 .destaque a{color:var(--link)}
@@ -723,7 +737,7 @@ body:has(.capa-grade) main.com-capa>.wrap{padding-top:var(--e-6)}
 
 /* MANCHETE: tipografia e foto, sem moldura. O filete de sol e a assinatura. */
 .manchete{grid-column:1/9;position:relative;display:flex;flex-direction:column;gap:var(--esp-comp)}
-.filete{width:32px;height:3px;background:var(--sol);transform-origin:0 50%;animation:filete .45s var(--curva-chegada) both}
+.filete{width:48px;height:3px;background:var(--ed);transform-origin:0 50%;animation:filete .45s var(--curva-chegada) both}
 @keyframes filete{from{transform:scaleX(0)}}
 .manchete .ed{animation:surge .3s var(--curva-chegada) .05s both}
 @keyframes surge{from{opacity:0}}
@@ -765,7 +779,7 @@ body:has(.capa-grade) main.com-capa>.wrap{padding-top:var(--e-6)}
 .lider-sec h3{font-size:var(--t-card-g);line-height:var(--lh-display);letter-spacing:var(--ls-display);max-width:var(--medida-lider);margin:var(--e-2) 0;color:var(--tinta);transition:color var(--dur-toque)}
 .lider-sec p{font-family:var(--corpo);font-size:var(--t-legenda);line-height:1.5;color:var(--tinta-2);max-width:var(--medida-legenda)}
 .pilha{grid-column:8/13;display:flex;flex-direction:column;border-left:0;padding-left:0}
-.pilha article{position:relative;padding-block:var(--esp-comp);border-bottom:var(--fio) solid var(--fio-cor);flex:1}
+.pilha article{position:relative;padding-block:var(--esp-comp);padding-left:var(--e-4);border-left:3px solid var(--ed);border-bottom:var(--fio) solid var(--fio-cor);flex:1}
 .pilha article:first-child{padding-top:0}
 .pilha article:last-child{border-bottom:0}
 .pilha h3{font-family:var(--corpo);font-weight:var(--peso-medio);font-size:calc(var(--t-lista) * 1.08);line-height:1.3;letter-spacing:0;color:var(--tinta);margin:var(--e-1) 0;transition:color var(--dur-toque)}
@@ -785,7 +799,7 @@ article.card.v2{padding:0 0 var(--e-4)}
 .num{font-family:var(--corpo);font-weight:500;font-size:1.875rem;line-height:1;color:var(--sol);min-width:2.4ch;font-variant-numeric:tabular-nums}
 .item .mini{width:56px;height:56px;flex:none;object-fit:cover;border-radius:var(--raio-s);background:color-mix(in srgb,#fff 8%,transparent)}
 .item h3{font-family:var(--display);font-weight:var(--peso-medio);font-size:var(--t-lista);line-height:var(--lh-lista);letter-spacing:var(--ls-lista);color:#fff;transition:color var(--dur-toque)}
-.item small{display:block;font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-rotulo);text-transform:uppercase;color:var(--mar-claro);margin-top:var(--e-1)}
+.item small{display:block;font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-rotulo);text-transform:uppercase;color:var(--ed-claro);margin-top:var(--e-1)}
 .item:hover h3{color:var(--sol)}
 .item:has(a:focus-visible){outline-color:var(--sol)}
 .escuro a{color:var(--sol);text-decoration-color:color-mix(in srgb,var(--sol) 45%,transparent)}
@@ -819,12 +833,12 @@ section.wrap:has(.dados-capa){padding-top:var(--esp-secao)}
    chapeu, no painel de 30 segundos, na barra de progresso e na regua dos
    titulos de secao. A editoria da materia vem da trilha (sem JS) e do
    chapeu do hero (com JS). */
-body:has(.trilha a[href="editoria-poder-publico.html"]){--ed:var(--ed-poder-publico);--ed-texto:var(--ed-poder-publico-texto);--ed-claro:var(--ed-poder-publico-claro);--ed-tint:var(--ed-poder-publico-tint)}
-body:has(.trilha a[href="editoria-economia.html"]){--ed:var(--ed-economia);--ed-texto:var(--ed-economia-texto);--ed-claro:var(--ed-economia-claro);--ed-tint:var(--ed-economia-tint)}
-body:has(.trilha a[href="editoria-infraestrutura.html"]){--ed:var(--ed-infraestrutura);--ed-texto:var(--ed-infraestrutura-texto);--ed-claro:var(--ed-infraestrutura-claro);--ed-tint:var(--ed-infraestrutura-tint)}
-body:has(.trilha a[href="editoria-santa-catarina.html"]){--ed:var(--ed-santa-catarina);--ed-texto:var(--ed-santa-catarina-texto);--ed-claro:var(--ed-santa-catarina-claro);--ed-tint:var(--ed-santa-catarina-tint)}
-body:has(.trilha a[href="editoria-turismo.html"]){--ed:var(--ed-turismo);--ed-texto:var(--ed-turismo-texto);--ed-claro:var(--ed-turismo-claro);--ed-tint:var(--ed-turismo-tint)}
-body:has(.trilha a[href="editoria-meio-ambiente.html"]){--ed:var(--ed-meio-ambiente);--ed-texto:var(--ed-meio-ambiente-texto);--ed-claro:var(--ed-meio-ambiente-claro);--ed-tint:var(--ed-meio-ambiente-tint)}
+body:has(.trilha a[href="editoria-poder-publico.html"]){--ed:var(--ed-poder-publico);--ed-texto:var(--ed-poder-publico);--ed-claro:var(--ed-poder-publico-claro);--ed-tint:var(--ed-poder-publico-tint)}
+body:has(.trilha a[href="editoria-economia.html"]){--ed:var(--ed-economia);--ed-texto:var(--ed-economia);--ed-claro:var(--ed-economia-claro);--ed-tint:var(--ed-economia-tint)}
+body:has(.trilha a[href="editoria-infraestrutura.html"]){--ed:var(--ed-infraestrutura);--ed-texto:var(--ed-infraestrutura);--ed-claro:var(--ed-infraestrutura-claro);--ed-tint:var(--ed-infraestrutura-tint)}
+body:has(.trilha a[href="editoria-santa-catarina.html"]){--ed:var(--ed-santa-catarina);--ed-texto:var(--ed-santa-catarina);--ed-claro:var(--ed-santa-catarina-claro);--ed-tint:var(--ed-santa-catarina-tint)}
+body:has(.trilha a[href="editoria-turismo.html"]){--ed:var(--ed-turismo);--ed-texto:var(--ed-turismo);--ed-claro:var(--ed-turismo-claro);--ed-tint:var(--ed-turismo-tint)}
+body:has(.trilha a[href="editoria-meio-ambiente.html"]){--ed:var(--ed-meio-ambiente);--ed-texto:var(--ed-meio-ambiente);--ed-claro:var(--ed-meio-ambiente-claro);--ed-tint:var(--ed-meio-ambiente-tint)}
 
 /* HERO CLARO: chapeu com ponto, titulo grande, linha fina em serifa romana
    (so a capa carrega o italico). Alinhado a coluna de leitura. */
@@ -890,9 +904,9 @@ body:has(.progresso) .texto h3+ul li strong:first-child{font-family:var(--displa
 .leitura-v .autor{font:var(--peso-forte) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-caixa-alta);text-transform:uppercase;color:var(--col);margin-bottom:var(--e-3)}
 .leitura-v p{font-family:var(--corpo);font-size:var(--t-corpo);line-height:var(--lh-corpo);margin-bottom:var(--e-3)}
 .leitura-v p:last-child{margin-bottom:0}
-.leitura-v:nth-child(1){--col:var(--ed-economia-texto);--regua-col:var(--sol)}
-.leitura-v:nth-child(2){--col:var(--mar);--regua-col:var(--mar)}
-.leitura-v:nth-child(3){--col:var(--ed-saude-texto);--regua-col:var(--coral)}
+.leitura-v:nth-child(1){--col:var(--ed-economia);--regua-col:var(--sol)}
+.leitura-v:nth-child(2){--col:var(--mar-medio);--regua-col:var(--mar-medio)}
+.leitura-v:nth-child(3){--col:var(--ed-saude);--regua-col:var(--coral)}
 .autor{font:var(--peso-forte) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-caixa-alta);text-transform:uppercase}
 
 /* FONTES e LEIA TAMBEM */
@@ -903,7 +917,7 @@ body:has(.progresso) .texto h3+ul li strong:first-child{font-family:var(--displa
    Topo branco com o nome da editoria na cor dela e um fio de 4px embaixo;
    grade de cards com o primeiro card como lider em 7/5; paginacao em
    pilulas. Sem editoria ativa (arquivo, institucionais) a cor cai na tinta. */
-.editoria-topo{background:var(--superficie);color:var(--tinta);padding:var(--esp-bloco) 0 0;border-bottom:4px solid var(--ed)}
+.editoria-topo{background:var(--ed-tint);color:var(--tinta);padding:var(--esp-bloco) 0 0;border-bottom:4px solid var(--ed)}
 .editoria-topo .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"trilha trilha" "h1 conta" "p p";align-items:end;column-gap:var(--e-6);padding-bottom:var(--esp-bloco)}
 .editoria-topo .trilha{grid-area:trilha;margin-bottom:var(--e-2)}
 .editoria-topo .trilha,.editoria-topo .trilha i{color:var(--tinta-3)}
@@ -995,7 +1009,7 @@ table.preco tbody tr:hover td,table.preco tbody tr:hover th{background:color-mix
 .escuro .linhafina{max-width:var(--medida-linhafina);margin-bottom:var(--e-6)}
 
 /* 404 */
-.chapeu.claro{color:var(--ed-saude-texto)}
+.chapeu.claro{color:var(--ed-saude)}
 .chapeu.claro::before{background:var(--coral)}
 body:has(.chapeu.claro) .titulo{--regua:var(--coral)}
 main>.wrap>.leituras-nota{margin-top:var(--esp-bloco);max-width:var(--medida-legenda)}
@@ -1238,4 +1252,75 @@ footer a:hover{color:var(--tinta);text-decoration:underline;text-decoration-thic
   .sub p,.linha-2 article.card.v2 p,.grade article.card:not(:first-child) p{display:none}
   .signos{grid-template-columns:repeat(3,minmax(0,1fr))}
   .dados-capa{gap:var(--e-4)}
+}
+
+/* ==== 13 · MODO ESCURO ====
+   Fase 2 do estudo de cores, entregue em 06/09/2026. Segue a preferencia do
+   sistema operacional e nao tem botao: quem quer escuro ja escolheu no
+   aparelho, e um botao a mais na barra pedia marcacao nova em 185 paginas.
+   So a camada semantica e o leque editorial viram. Cada editoria troca o tom
+   vivo pelo tom claro, que ja existia e ja fora medido sobre breu (7:1 ou
+   mais). Nenhum componente ganha cor propria aqui: as excecoes abaixo sao
+   inversoes, casos em que a peca era escura sobre claro e precisa ser clara
+   sobre escuro. Fora do @media nada muda, entao o modo claro segue intocado.
+   'screen' de proposito: papel imprime claro, sempre. */
+@media screen and (prefers-color-scheme:dark){
+  :root{
+    color-scheme:dark;
+    --fundo:#08181F;                 /* a folha; o breu puxado para baixo */
+    --superficie:#0E2630;            /* card, painel, tabela: um degrau acima da folha */
+    --superficie-2:#132F3A;          /* faixa alternada, fundo de bloco */
+    --tinta:#EAF0EE;                 /* 13,6:1 sobre superficie */
+    --tinta-2:#B4C6CC;               /* 8,9:1 */
+    --tinta-3:#9AB0B8;               /* 6,9:1 na superficie, 5,2:1 no tint mais claro do leque */
+    --fio-cor:#1E3D4A;               /* hairline decorativo */
+    --fio-forte:#6A838C;             /* borda com funcao: 3,9:1 */
+    --link:var(--mar-claro);         /* 6,8:1 */
+    --foco:var(--sol);               /* o anel de foco precisa saltar do escuro */
+    --sombra-cor:color-mix(in srgb,#000 55%,transparent);
+    --sombra-2:0 2px 6px color-mix(in srgb,#000 40%,transparent),
+               0 12px 32px -12px color-mix(in srgb,#000 60%,transparent);
+    --barra-fundo:color-mix(in srgb,#08181F 82%,transparent);
+    /* leque editorial: o tom claro assume, e o tint vira fundo escuro tingido */
+    --ed-saude:var(--ed-saude-claro);
+    --ed-saude-tint:color-mix(in srgb,var(--ed-saude-claro) 14%,var(--superficie));
+    --ed-infraestrutura:var(--ed-infraestrutura-claro);
+    --ed-infraestrutura-tint:color-mix(in srgb,var(--ed-infraestrutura-claro) 14%,var(--superficie));
+    --ed-economia:var(--ed-economia-claro);
+    --ed-economia-tint:color-mix(in srgb,var(--ed-economia-claro) 14%,var(--superficie));
+    --ed-meio-ambiente:var(--ed-meio-ambiente-claro);
+    --ed-meio-ambiente-tint:color-mix(in srgb,var(--ed-meio-ambiente-claro) 14%,var(--superficie));
+    --ed-turismo:var(--ed-turismo-claro);
+    --ed-turismo-tint:color-mix(in srgb,var(--ed-turismo-claro) 14%,var(--superficie));
+    --ed-esporte:var(--ed-esporte-claro);
+    --ed-esporte-tint:color-mix(in srgb,var(--ed-esporte-claro) 14%,var(--superficie));
+    --ed-clima:var(--ed-clima-claro);
+    --ed-clima-tint:color-mix(in srgb,var(--ed-clima-claro) 14%,var(--superficie));
+    --ed-poder-publico:var(--ed-poder-publico-claro);
+    --ed-poder-publico-tint:color-mix(in srgb,var(--ed-poder-publico-claro) 14%,var(--superficie));
+    --ed-servico:var(--ed-servico-claro);
+    --ed-servico-tint:color-mix(in srgb,var(--ed-servico-claro) 14%,var(--superficie));
+    --ed-cultura:var(--ed-cultura-claro);
+    --ed-cultura-tint:color-mix(in srgb,var(--ed-cultura-claro) 14%,var(--superficie));
+    --ed-santa-catarina:var(--ed-santa-catarina-claro);
+    --ed-santa-catarina-tint:color-mix(in srgb,var(--ed-santa-catarina-claro) 14%,var(--superficie));
+    --ed-brasil:var(--ed-brasil-claro);
+    --ed-brasil-tint:color-mix(in srgb,var(--ed-brasil-claro) 14%,var(--superficie));
+    --ed-claro:var(--tinta);         /* padrao sem editoria, sobre escuro */
+  }
+  /* no claro a folha e branca e o card tambem, separados pelo fio. No escuro
+     o card precisa subir: folha na cor de fundo, card na superficie. */
+  body{background:var(--fundo)}
+  /* os blocos que ja eram escuros descem mais um degrau para continuarem
+     sendo outro bloco, e nao o mesmo plano da pagina */
+  .escuro,.leitura{background:#04121A}
+  /* inversoes: peca escura sobre claro vira peca clara sobre escuro */
+  .chip[aria-pressed="true"],.chip[aria-selected="true"],
+  .signo[aria-pressed="true"]{background:var(--sol);color:var(--breu);border-color:var(--sol)}
+  .consentimento .btn-aceitar{background:var(--espuma);color:var(--breu);border-color:var(--espuma)}
+  .consentimento .btn-aceitar:hover{background:#fff;border-color:#fff}
+  /* o azul da casa e escuro demais para viver sobre escuro: vira o mar claro */
+  .d .icone,.dados-capa .d .icone,.dados a.d .icone{color:var(--mar-claro)}
+  .leitura-v:nth-child(2){--col:var(--mar-claro);--regua-col:var(--mar-claro)}
+  .destaque{border-top-color:var(--ed)}
 }
