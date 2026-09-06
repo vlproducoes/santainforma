@@ -1,6 +1,7 @@
 # Redesign de layout · setembro de 2026
 
-Registro do redesign entregue na branch `claude/santa-informa-layout-redesign-s1rsqt`.
+Registro do redesign aprovado pelo editor em 06 de setembro de 2026, publicado em
+`main` pelo pull request 3 e no ar em santainforma.com.br.
 Pedido do editor: refazer todo o layout, sem cara de "feito por IA", inspirado na Apple
 e no G1, responsivo e validado no celular, multicolorido a partir de estudo de cores.
 Restrição: só layout. Nenhum HTML, conteúdo, configuração, `functions/` ou ferramenta
@@ -54,11 +55,21 @@ do mínimo, zero par texto/fundo abaixo de AA. Testes de interação: folha de c
 celular, barra grudada depois de rolar, horóscopo (signo e chips), foco por teclado,
 `prefers-reduced-motion` (nada some), estados `ceu-noite` e `tempo-chuva`.
 
-## Pendências para o editor
+## O que o editor decidiu
 
-1. Aprovar a paleta editorial: o CLAUDE.md (seções 9 e 9.5) diz "nenhum hex novo"; esta
-   branch propõe doze cores novas, documentadas acima e no bloco 1 do `estilo.css`. Se
-   aprovada, a regra do CLAUDE.md precisa ser atualizada pelo editor.
-2. Modo escuro: proposto no estudo de cores, fica para a fase 2.
-3. Os textos do aviso de cookie no `visual.js` seguem sem acento (vêm de antes); é conteúdo,
+1. Paleta editorial aprovada. As doze cores entraram no `estilo.css` (bloco 1) e a regra do
+   CLAUDE.md foi reescrita: a seção 9 agora lista as variáveis de marca, a camada semântica e
+   a família `--ed-*`, e diz que cor fora dessas variáveis só entra com aprovação. A seção 9.5
+   virou "O layout (redesign aprovado em 06/09/2026)".
+2. Merge aprovado pelo editor e feito na hora. Publicado e conferido: `estilo.css` e
+   `visual.js` em produção batem byte a byte com o `main` (o `index.html` difere só pela
+   ofuscação de e-mail que o Cloudflare aplica sozinho, comportamento que já existia).
+
+## O que ficou para depois
+
+1. Modo escuro: proposto no estudo de cores, fica para a fase 2. Só a camada semântica
+   (`--fundo`, `--tinta`, `--superficie`, `--fio-cor`, `--link`) precisa ser remapeada.
+2. Os textos do aviso de cookie no `visual.js` seguem sem acento (vêm de antes); é conteúdo,
    não foi tocado.
+3. O modelo de matéria ainda não nomeia a foto de topo como `capa-mNN`, então a transição de
+   imagem entre capa e matéria só vale na ida.
