@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-163-bombinhas-forum-plano-municipal-educacao-2036</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-07T06:50:00-03:00</news:publication_date>
+      <news:title>Bombinhas debate em 15 de setembro o plano de educação até 2036, e a cidade cresceu 70% desde o plano que está acabando</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-162-restinga-gravata-navegantes-meia-praia-itapema</loc>
     <news:news>
       <news:publication>
@@ -59,30 +71,6 @@
       </news:publication>
       <news:publication_date>2026-09-05T12:40:00-03:00</news:publication_date>
       <news:title>IFSC abre 30 vagas de graduação em Gestão Pública em Itapema, e a inscrição vai até 25 de setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-157-samu-itapema-equipamentos-motolancia</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-05T06:10:00-03:00</news:publication_date>
-      <news:title>SAMU de Itapema recebe mais de R$ 300 mil em equipamento, e o desfibrilador agora cabe na motolância</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-156-feriado-7-setembro-itapema-desfile-orla</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-04T18:40:00-03:00</news:publication_date>
-      <news:title>Desfile de 7 de Setembro em Itapema é na orla do Centro às 14h, e a UBS do seu bairro não abre</news:title>
     </news:news>
   </url>
 

@@ -10,7 +10,7 @@
 
   <url>
     <loc>https://santainforma.com.br/regiao</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1018,6 +1018,12 @@
   <url>
     <loc>https://santainforma.com.br/materia-162-restinga-gravata-navegantes-meia-praia-itapema</loc>
     <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-163-bombinhas-forum-plano-municipal-educacao-2036</loc>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
