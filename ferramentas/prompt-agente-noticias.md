@@ -500,7 +500,9 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
   (a-super e a-faixa), use o par de spans md-desk/md-cel como nas matérias
   existentes.
   Nunca toque em .anuncio, .horizonte, .institucional, .onda-rodape
-  nem no cabeçalho. Preserve as classes de estrutura ao editar: `titulo regua`
+  nem no cabeçalho. Isso inclui os comentários HTML de PUBLICIDADE VENDIDA
+  e de placeholder que ficam colados nos blocos .anuncio.pago, e o atributo
+  data-fim deles: são o mapa da retirada de campanha paga, não são lixo. Preserve as classes de estrutura ao editar: `titulo regua`
   nos títulos de seção e `dados dados-capa` nas Ferramentas do litoral. Sem
   elas o desenho quebra (a régua some e o ícone fica invisível).
 - Ligue também na editoria certa e nas páginas noticias*.html (o arquivo é de
