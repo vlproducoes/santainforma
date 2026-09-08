@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-167-camara-itapema-sessao-limpa-pauta-21-projetos</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-08T12:40:00-03:00</news:publication_date>
+      <news:title>Câmara de Itapema tira a Tribuna do Povo da sessão desta terça para votar 21 projetos, com mais de 590 na fila</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-166-farroupilha-programacao-cavalgada-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-06T12:30:00-03:00</news:publication_date>
       <news:title>Porto Belo demole estruturas de chalé na Estrada Parque, e o segundo acesso a Bombinhas segue com licenciamento suspenso desde julho</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-160-faaci-certidoes-obra-itapema-prazo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-06T06:40:00-03:00</news:publication_date>
-      <news:title>Obra de 10 apartamentos ou mais em Itapema passa a precisar de duas certidões da FAACI, e o prazo de análise ainda não foi definido</news:title>
     </news:news>
   </url>
 
