@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-166-farroupilha-programacao-cavalgada-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-08T06:30:00-03:00</news:publication_date>
+      <news:title>Cavalgada da Festa Farroupilha larga às 18h30 de quinta em Itapema, e a programação final mudou três horários de agosto</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-165-estacoes-meteorologicas-itapema-amfri</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-06T06:40:00-03:00</news:publication_date>
       <news:title>Obra de 10 apartamentos ou mais em Itapema passa a precisar de duas certidões da FAACI, e o prazo de análise ainda não foi definido</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-159-itbi-itapema-contestacao-valor-bombinhas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-05T18:20:00-03:00</news:publication_date>
-      <news:title>Quem compra imóvel em Itapema passa a ter pelo menos 15 dias úteis para contestar a conta do ITBI</news:title>
     </news:news>
   </url>
 
