@@ -98,8 +98,57 @@ de toque abaixo do mínimo e zero par texto/fundo abaixo de AA. Os três links
 de fonte que ficavam abaixo do alvo mínimo no `regiao.html` foram corrigidos
 de passagem. O CSS foi de 23,6 kB para 25,7 kB comprimido.
 
+## A marca sai do azul esverdeado, 08/09
+
+O editor foi direto: o azul esverdeado e o amarelo davam ao site a cara de
+material gerado por IA. É uma queixa justa. Aquele par turquesa mais âmbar é o
+padrão de saída de meio mundo de tema automático, e o problema não parava no
+acento: o leque inteiro de neutros tinha fundo ciano (espuma, fios, cinza de
+legenda, cinza do modo escuro), que é de onde vem metade da impressão.
+
+Montei três saídas e mostrei as três renderizadas na capa de verdade, não em
+amostra de cor: grafite e osso, azul-tinta e osso, sépia e areia. O editor
+escolheu **grafite e osso** e mandou deixar o leque de editorias como estava.
+
+O que mudou:
+
+- **Marca.** `--breu` virou `#15171A`, um cinza neutro quase preto. Entraram
+  `--grafite` (`#262A2E`, a faixa de marca e o link), `--osso` (`#D9D2C4`, o
+  acento, que era o amarelo), `--pedra` e `--papel`. O coral escureceu um
+  grau, para `#C8341F`, e virou o único tom forte da marca.
+- **Apelidos.** `--mar`, `--sol`, `--mar-claro` e `--espuma` continuam de pé
+  apontando para os nomes novos. Não é preguiça: 143 páginas trazem
+  `style="color:var(--mar)"` cravado no HTML e não vão ser reescritas.
+- **Neutros.** Fundo, fios, tinta secundária e a camada inteira do modo escuro
+  perderam o ciano. É a mudança que mais pesa e a menos visível de descrever.
+- **Logo sem tocar em HTML.** O SVG do cabeçalho traz os hex antigos como
+  atributo de apresentação, que perde para qualquer regra de CSS. Sete linhas
+  no bloco 4 repintam sol, linhas d'água, marca e tagline. Página que o ciclo
+  de notícias gerar amanhã copiando o cabeçalho antigo já nasce certa.
+- **A marca ganhou estrutura de volta.** Antes era claro mais amarelo. Agora
+  SANTA recua em cinza e INFORMA avança em branco, então o peso fica na metade
+  que diz o que o jornal faz.
+- **Link.** Sem cor própria: é a tinta com sublinhado fino, e o hover engrossa
+  em coral. Osso sobre branco some, então não servia.
+- **Céu.** Ficou monocromático, como o editor sabia ao escolher. Para não virar
+  borrão cinza, a linha d'água puxa para a areia: vira a luz do horizonte.
+  Amanhecer e entardecer seguem quentes, em coral e osso.
+- **Colunistas.** O Seu Prudêncio usava o azul da casa, que era justamente o
+  tom em questão. Passou para a ardósia do leque editorial, que combina com o
+  criterioso. A régua da Clara era o amarelo e virou o ouro de Economia.
+
+Ficou de fora, por decisão do editor: o turquesa do Turismo e o ouro da
+Economia. Ali a cor tem função, identifica editoria, aparece em pedaço pequeno
+e nunca como fundo de página. O único ajuste foi o tom claro de Economia, que
+apontava para o amarelo da marca e agora tem hex próprio (`#D29810`).
+
+Validação: `checa-site.py` em zero, `contraste.py` em zero, auditoria em 14
+páginas por 5 larguras nos dois modos, com zero overflow, zero alvo de toque
+pequeno e zero par abaixo de AA.
+
 ## O que o editor decidiu
 
+0. Marca em grafite e osso, em 08/09. Fora o azul esverdeado e o amarelo.
 1. Paleta editorial aprovada. As doze cores entraram no `estilo.css` (bloco 1) e a regra do
    CLAUDE.md foi reescrita: a seção 9 agora lista as variáveis de marca, a camada semântica e
    a família `--ed-*`, e diz que cor fora dessas variáveis só entra com aprovação. A seção 9.5

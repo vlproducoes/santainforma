@@ -65,6 +65,14 @@ def le_variaveis():
     return {n: resolve(v) for n, v in bruto.items()}
 
 
+def superficie_escura():
+    """A --superficie declarada dentro do @media do modo escuro."""
+    texto = CSS.read_text(encoding='utf-8')
+    i = texto.find('prefers-color-scheme:dark')
+    achado = re.search(r'--superficie:\s*(#[0-9A-Fa-f]{3,6})', texto[i:]) if i >= 0 else None
+    return achado.group(1) if achado else '#000000'
+
+
 def editorias(v):
     nomes = sorted({m.group(1) for m in
                     (re.fullmatch(r'--ed-([a-z-]+?)(?:-claro|-tint)?', n) for n in v)
@@ -83,7 +91,7 @@ def principal():
     fundo = v.get('--fundo', '#F5F7F6')
     espuma = v.get('--espuma', '#F1F5F3')
     breu = v.get('--breu', '#0A1F28')
-    escuro = '#0E2630'                                  # --superficie do bloco 13
+    escuro = superficie_escura()                        # --superficie do bloco 13
     falhas = []
 
     print('%-16s %-8s branco fundo espuma  tint | %-8s breu  escuro' % ('editoria', 'tom', 'claro'))

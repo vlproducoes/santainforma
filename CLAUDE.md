@@ -197,17 +197,20 @@ Nunca, em hipótese nenhuma:
 
 - **HTML:** indentação de 2 espaços. Todo `<img>` com `width`, `height`,
   `loading` e `alt` descritivo de verdade. Nada de `alt=""` em foto editorial.
-- **CSS:** só `estilo.css`. Use as variáveis que já existem: as oito da marca
-  (`--mar`, `--sol`, `--coral`, `--breu`, `--espuma`, `--areia`, `--suave`,
-  `--mar-claro`), a camada semântica (`--fundo`, `--superficie`, `--tinta`,
+- **CSS:** só `estilo.css`. Use as variáveis que já existem: as da marca
+  (`--breu`, `--grafite`, `--osso`, `--pedra`, `--papel`, `--coral`, `--areia`,
+  `--suave`), a camada semântica (`--fundo`, `--superficie`, `--tinta`,
   `--fio-cor`, `--link`) e a paleta editorial (`--ed-*`, seção 9.5). Cor nova
-  fora dessas variáveis, só com aprovação do editor.
+  fora dessas variáveis, só com aprovação do editor. `--mar`, `--sol`,
+  `--mar-claro` e `--espuma` são apelidos das quatro primeiras: existem porque
+  143 páginas trazem `style="color:var(--mar)"` cravado no HTML. Não use os
+  apelidos em código novo.
 - **JS:** só `visual.js`. Sem framework, sem dependência externa. Exceção
   registrada: `functions/clima.js` (servidor, ver seção 1).
 - **Acentuação:** os HTML são UTF-8. Escreva com acento correto no conteúdo.
 - **Nomes de arquivo:** minúsculo, sem acento, separado por hífen.
 
-## 9.5 O layout (redesign aprovado em 06/09/2026, cor revista no mesmo dia)
+## 9.5 O layout (redesign de 06/09/2026, marca em grafite e osso desde 08/09)
 
 A estrutura do index.html continua a mesma de 19/08/2026: pacote de capa no
 lugar do carrossel, com manchete dominante, rio de últimas, sub-destaques,
@@ -218,12 +221,25 @@ vestimenta: o `estilo.css` foi reescrito com anatomia de jornal (faixa de
 marca, barra de editorias que gruda, régua dupla nos títulos de seção,
 cards brancos com fio) e acabamento de restrição (ar entre blocos, raio
 máximo de 12px, sombra só no hover, folha branca). Depois do primeiro
-resultado no ar, a cor foi revista: os tons do leque estavam escuros demais e
-o site continuava lendo como preto e branco. O registro do processo e da
-revisão está em `proposta/17-redesign-layout-set-2026.md`.
+resultado no ar, a cor foi revista duas vezes: primeiro os tons do leque, que
+estavam escuros demais e faziam o site ler como preto e branco; depois a
+marca, porque o azul esverdeado e o amarelo davam ao site a cara de material
+gerado por IA. O registro das duas está em
+`proposta/17-redesign-layout-set-2026.md`.
 
 Regras do layout:
 
+- **A marca é grafite e osso (decisão do editor, 08/09/2026).** Nada de azul
+  esverdeado e nada de amarelo, e o verde saiu também dos neutros: cinza com
+  fundo ciano é metade daquela cara de template. `--breu` é a tinta,
+  `--grafite` é a faixa de marca e o link, `--osso` é o acento, `--pedra` e
+  `--papel` são os claros. `--coral` é o único tom forte que sobrou e fica
+  reservado para urgência (bolinha de Últimas, erro, 404, sublinhado de link no
+  hover). Link não tem cor: é a tinta com sublinhado fino, como em jornal.
+- **O logo segue os tokens, não o HTML.** O SVG das 185 páginas traz os hex
+  antigos como atributo de apresentação, que perde para qualquer regra de CSS.
+  As regras que pintam o logo estão no bloco 4. Página nova que o ciclo gerar
+  copiando o cabeçalho antigo já nasce com a cor certa, sem ninguém mexer.
 - **Paleta editorial aprovada.** As oito cores da marca continuam intocadas.
   Além delas existem doze cores de editoria (`--ed-poder-publico`,
   `--ed-economia`, `--ed-infraestrutura`, `--ed-santa-catarina`,
@@ -240,8 +256,9 @@ Regras do layout:
   dessa lista, só com aprovação do editor.
 - **O tom precisa parecer cor.** A primeira paleta ficava entre 6,5:1 e
   10,5:1: passava no AA de sobra e, em caixa alta de 12px, lia como preto.
-  A faixa de trabalho é de 4,6:1 a 5,2:1 sobre branco. Tom novo entra medido
-  pelo `ferramentas/contraste.py`, nessa faixa, nunca "no olho".
+  A faixa de trabalho é de 4,6:1 a 5,2:1 sobre branco, e o piso é 4,5:1 em
+  todos os fundos onde o tom vive. Tom novo entra medido pelo
+  `ferramentas/contraste.py`, nessa faixa, nunca "no olho".
 - **A cor identifica editoria, nunca decora.** Ela entra no chapéu (texto e
   ponto), no fio de 3px no topo do card, no fio à esquerda das chamadas da
   pilha, no filete da manchete, no ícone e no item ativo da barra de
@@ -261,7 +278,10 @@ Regras do layout:
   novo começar a aparecer muito, acrescente o termo ao mapa no fim do
   `visual.js`.
 - O céu do cabeçalho muda com a hora de Brasília e o sol da marca vira lua à
-  noite (classes `ceu-*` do visual.js). Sem JS, a faixa fica no mar de sempre.
+  noite (classes `ceu-*` do visual.js). Sem JS, a faixa fica no grafite de
+  sempre. Com a marca em grafite o céu virou monocromático, então a linha
+  d'água puxa para a areia: é a única luz do horizonte, e sem ela a faixa vira
+  borrão cinza. Amanhecer e entardecer continuam quentes, em coral e osso.
 - Movimento novo usa os tokens `--dur-*` e `--curva-*`. Estado invisível mora
   sempre no `from` do keyframe, nunca na regra do elemento. Nada de sombra em
   repouso, hover em foto ou raio maior que 12px.
