@@ -362,6 +362,28 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 500);
 });
 
+/* PUBLICIDADE VENDIDA DIRETO
+   Cada .anuncio.pago declara em data-fim o ultimo dia de veiculacao do
+   contrato, no fuso da redacao. Passou o dia, o bloco sai do ar no
+   navegador na hora, mesmo antes da limpeza do repositorio devolver o
+   placeholder. Sem Intl ou com erro, nada muda: a limpeza do repositorio
+   continua sendo quem retira de verdade. */
+document.addEventListener('DOMContentLoaded', function () {
+  var pagos = document.querySelectorAll('.anuncio.pago[data-fim]');
+  if (!pagos.length) return;
+  var hoje;
+  try {
+    /* en-CA formata AAAA-MM-DD, que compara direto como texto */
+    hoje = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'America/Sao_Paulo',
+      year: 'numeric', month: '2-digit', day: '2-digit'
+    }).format(new Date());
+  } catch (e) { return; }
+  for (var i = 0; i < pagos.length; i++) {
+    if (hoje > pagos[i].getAttribute('data-fim')) pagos[i].style.display = 'none';
+  }
+});
+
 /* CEU POR HORA
    A classe no <html> vale em toda pagina: e ela que faz o sol da marca
    virar lua a noite em todo o site. O FUNDO de ceu, esse sim, so aparece

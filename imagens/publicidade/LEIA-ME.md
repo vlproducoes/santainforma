@@ -10,9 +10,12 @@ registro de cada contrato, em `registro.json`.
 - Veiculação: 08/09/2026 a 07/10/2026 (30 dias)
 - Peças: Super Banner 970x250 (celular 320x100) logo abaixo da capa do index,
   e Retângulo 300x250 no Resumo Semanal do index
-- Retirada programada: 08/10/2026, por rotina agendada que apaga os blocos
-  `.pago` do index.html e devolve os placeholders "Espaço disponível"
-  guardados em comentário ao lado de cada bloco
+- Retirada em duas camadas: (1) o visual.js esconde no navegador todo
+  `.anuncio.pago` cujo `data-fim` já passou no fuso de Brasília, então em
+  08/10/2026 o anúncio some sozinho para quem visita o site; (2) a limpeza
+  do repositório apaga os blocos `.pago` do index.html e devolve os
+  placeholders "Espaço disponível" guardados em comentário ao lado de cada
+  bloco
 
 ## ATENÇÃO: artes provisórias
 
