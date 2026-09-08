@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-168-temporal-granizo-quinta-sexta-farroupilha-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-08T18:20:00-03:00</news:publication_date>
+      <news:title>Defesa Civil prevê temporal com granizo na quinta e na sexta, os dois dias de abertura da Festa Farroupilha em Itapema</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-167-camara-itapema-sessao-limpa-pauta-21-projetos</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-06T18:20:00-03:00</news:publication_date>
       <news:title>Navegantes começa a plantar a restinga que o IMA exigiu pelo alargamento da praia, e a Meia Praia de Itapema segue sem draga</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-161-estrada-parque-porto-belo-demolicao-chales</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-06T12:30:00-03:00</news:publication_date>
-      <news:title>Porto Belo demole estruturas de chalé na Estrada Parque, e o segundo acesso a Bombinhas segue com licenciamento suspenso desde julho</news:title>
     </news:news>
   </url>
 
