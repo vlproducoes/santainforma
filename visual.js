@@ -379,6 +379,10 @@ document.addEventListener('DOMContentLoaded', function () {
       year: 'numeric', month: '2-digit', day: '2-digit'
     }).format(new Date());
   } catch (e) { return; }
+  /* locale sem dados do en-CA pode devolver DD/MM/AAAA; ai a comparacao de
+     texto mentiria e esconderia campanha paga no meio da veiculacao. Na
+     duvida, o anuncio fica no ar: e o erro barato. */
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(hoje)) return;
   for (var i = 0; i < pagos.length; i++) {
     if (hoje > pagos[i].getAttribute('data-fim')) pagos[i].style.display = 'none';
   }

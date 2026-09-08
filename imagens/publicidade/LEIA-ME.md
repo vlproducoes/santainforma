@@ -15,7 +15,16 @@ registro de cada contrato, em `registro.json`.
   08/10/2026 o anúncio some sozinho para quem visita o site; (2) a limpeza
   do repositório apaga os blocos `.pago` do index.html e devolve os
   placeholders "Espaço disponível" guardados em comentário ao lado de cada
-  bloco
+  bloco. Não existe rotina agendada externa: a camada 2 é disparada pelo
+  editor, pedindo a limpeza em qualquer sessão a partir de 08/10/2026
+
+## O que sai e o que fica na retirada
+
+Saem: os dois blocos `.pago` do index.html (com seus comentários) e a seção
+"Campanha no ar" deste arquivo. Ficam: os JPG e o registro.json (arquivo do
+contrato; acrescente `"retirada_em"` ao registro), as regras `.anuncio.pago`
+do estilo.css e o bloco PUBLICIDADE VENDIDA DIRETO do visual.js, que são
+infraestrutura da casa para campanhas futuras.
 
 ## Artes
 

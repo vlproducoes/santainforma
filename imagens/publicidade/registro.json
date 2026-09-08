@@ -28,6 +28,13 @@
       }
     ],
     "destino_do_clique": "https://www.itapema.sc.gov.br/",
+    "publicada_em": "2026-09-08T20:05:40Z",
+    "publicacao_registro": "https://github.com/vlproducoes/santainforma/pull/4",
+    "retirada": {
+      "camada_navegador": "visual.js esconde .anuncio.pago[data-fim] quando a data passa, fuso de Brasília",
+      "camada_repositorio": "apagar os blocos PI 33092.26 do index.html e devolver os placeholders comentados; ver LEIA-ME.md",
+      "rotina_agendada_externa": "nenhuma criada até 08/09/2026; a limpeza do repositório é disparada pelo editor"
+    },
     "arte_final_recebida": true,
     "observacao": "Artes finais da agência recebidas do editor em 08/09/2026, via pasta TELEMEDICINA no Google Drive, e aplicadas no mesmo dia. Peças estáticas, sem script e sem pixel de terceiro."
   }
