@@ -695,6 +695,15 @@ article.card .selo{margin-top:var(--e-1)}
 .anuncio.escuro{background:transparent;border-color:color-mix(in srgb,#fff 40%,transparent);padding:var(--e-3) var(--e-4);margin:var(--esp-bloco) auto}
 .anuncio.escuro .rotulo,.anuncio.escuro .medida{color:var(--mar-claro)}
 .anuncio.escuro .valor a{color:var(--sol)}
+/* ESPACO VENDIDO (.pago): a caixa deixa de ser reserva e vira moldura de
+   campanha. O rotulo vira selo de publicidade com o nome do pagante, sempre
+   visivel, em linha propria acima da peca; medida, onde e valor saem do
+   markup. A reserva por aspect-ratio sai de cena: a peca declara
+   width/height no img e reserva a propria altura. */
+.anuncio.pago{aspect-ratio:auto;grid-template-rows:auto auto;row-gap:var(--e-2)}
+.anuncio.pago .rotulo{grid-column:1/-1}
+.anuncio.pago .peca{grid-column:1/-1;grid-row:2;display:block}
+.anuncio.pago .peca img{width:100%;height:auto}
 .formatos{display:flex;flex-wrap:wrap;gap:var(--e-6);align-items:center;justify-content:center;margin:var(--esp-bloco) 0}
 .formatos .anuncio{margin:0}
 @media(max-height:520px) and (orientation:landscape){.texto .a-ret{display:none}}
