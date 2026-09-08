@@ -17,22 +17,18 @@ registro de cada contrato, em `registro.json`.
   placeholders "Espaço disponível" guardados em comentário ao lado de cada
   bloco
 
-## ATENÇÃO: artes provisórias
+## Artes
 
-Os três PNG desta pasta foram gerados pelo próprio portal, só com os dados
-oficiais da campanha (texto, telefone 0800 333 7973 e endereço do site da
-Prefeitura), sem os logos do anunciante, porque os arquivos finais da agência
-não chegaram ao repositório. Antes de aprovar a publicação, substitua cada
-PNG pelo arquivo final da agência Ômega, mantendo o mesmo nome:
+Os três JPG desta pasta são as artes finais da agência, entregues pelo
+editor em 08/09/2026 pela pasta TELEMEDICINA no Google Drive:
 
-- `saude-24h-telemedicina-970x250.png`
-- `saude-24h-telemedicina-320x100.png`
-- `saude-24h-telemedicina-300x250.png`
+- `saude-24h-telemedicina-970x250.jpg`
+- `saude-24h-telemedicina-320x100.jpg`
+- `saude-24h-telemedicina-300x250.jpg`
 
-Se a arte final vier em JPG, converta para PNG ou ajuste os `src` no
-index.html. A peça precisa ser estática, sem script e sem pixel de terceiro:
-é a promessa feita ao leitor no aviso de cookies (anúncio sempre não
-personalizado, sem rastreamento).
+Toda peça vendida direto precisa ser estática, sem script e sem pixel de
+terceiro: é a promessa feita ao leitor no aviso de cookies (anúncio sempre
+não personalizado, sem rastreamento).
 
 ## Regra da casa
 

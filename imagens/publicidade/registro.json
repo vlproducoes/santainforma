@@ -15,20 +15,20 @@
         "formato": "Super Banner 970x250 (celular 320x100)",
         "posicao": "index.html, slot .anuncio.a-super, abaixo do pacote de capa",
         "arquivos": [
-          "imagens/publicidade/saude-24h-telemedicina-970x250.png",
-          "imagens/publicidade/saude-24h-telemedicina-320x100.png"
+          "imagens/publicidade/saude-24h-telemedicina-970x250.jpg",
+          "imagens/publicidade/saude-24h-telemedicina-320x100.jpg"
         ]
       },
       {
         "formato": "Retângulo 300x250",
         "posicao": "index.html, slot .anuncio.a-ret do Resumo Semanal",
         "arquivos": [
-          "imagens/publicidade/saude-24h-telemedicina-300x250.png"
+          "imagens/publicidade/saude-24h-telemedicina-300x250.jpg"
         ]
       }
     ],
     "destino_do_clique": "https://www.itapema.sc.gov.br/",
-    "arte_final_recebida": false,
-    "observacao": "Artes no ar são provisórias, geradas pelo portal só com os dados da campanha (texto e telefone oficiais), sem os logos do anunciante. Substituir pelos arquivos finais da agência assim que recebidos, mantendo os mesmos nomes de arquivo."
+    "arte_final_recebida": true,
+    "observacao": "Artes finais da agência recebidas do editor em 08/09/2026, via pasta TELEMEDICINA no Google Drive, e aplicadas no mesmo dia. Peças estáticas, sem script e sem pixel de terceiro."
   }
 }
