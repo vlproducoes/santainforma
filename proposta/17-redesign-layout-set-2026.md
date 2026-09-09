@@ -191,6 +191,15 @@ sol e os dois fios do mar saírem limpos em 16px; ele reescreve o `favicon.ico`
 (16, 32, 48 e 64), o `apple-touch-icon.png` e os dois PNG de uma vez. O
 `favicon.svg` continua escrito à mão, com a mesma geometria.
 
+Depois o editor pediu redondo. O quadrado virou disco: a mesma cena recortada
+num círculo, com um fio de mar em volta e transparência fora dele. O fio não é
+enfeite: sem ele o disco branco some em aba clara e o ícone volta a parecer
+quadrado. A linha d'água, que ia de ponta a ponta, virou uma corda do círculo,
+e a cena ficou parecendo uma escotilha, o que cai bem para jornal de litoral.
+O `apple-touch-icon.png` ficou de fora e segue quadrado: o iOS aplica a própria
+máscara e transforma área transparente em preto, então PNG redondo lá volta com
+quatro cantos pretos.
+
 Validação: `checa-site.py` e `contraste.py` em zero, auditoria em 14 páginas por
 5 larguras com zero overflow, zero alvo de toque pequeno e zero par abaixo de
 AA. Nenhum HTML mudou.

@@ -247,8 +247,11 @@ Regras do layout:
   antigos como atributo de apresentação, que perde para qualquer regra de CSS,
   então quem pinta o logo é o bloco 4. Página nova que o ciclo gerar copiando o
   cabeçalho antigo já nasce com a cor certa, sem ninguém mexer.
-- **O favicon segue o logo.** Fundo branco, sol em `--sol-logo`, mar em
-  `--mar-logo`, a mesma geometria do desenho do cabeçalho. Mudou a cor da
+- **O favicon é um disco.** Disco branco com o sol nascendo na linha d'água,
+  fio de mar em volta e transparente fora do disco. Cores do logo do cabeçalho:
+  `--sol-logo` e `--mar-logo`. **O `apple-touch-icon.png` é a exceção e fica
+  quadrado**: o iOS aplica a própria máscara e transforma área transparente em
+  preto, então PNG redondo lá volta com quatro cantos pretos. Mudou a cor da
   marca? Ajuste as três constantes do `ferramentas/icone.py` e o `favicon.svg`
   (escrito à mão) e rode `python3 ferramentas/icone.py`, que reescreve o
   `favicon.ico`, o `apple-touch-icon.png` e os dois PNG. Não edite os PNG na
