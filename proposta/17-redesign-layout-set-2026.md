@@ -146,8 +146,51 @@ Validação: `checa-site.py` em zero, `contraste.py` em zero, auditoria em 14
 páginas por 5 larguras nos dois modos, com zero overflow, zero alvo de toque
 pequeno e zero par abaixo de AA.
 
+## Site todo claro, topo no jeito Apple, 09/09
+
+Quatro pedidos do editor de uma vez: tirar as ondas, refazer o topo inspirado
+no menu do site da Apple, deixar o site todo claro, e o logo com o sol e o mar
+nas cores do desenho e as letras em azul marinho.
+
+- **Ondas.** A faixa `.horizonte` da capa, com as duas ondas derivando, o botão
+  de pausa e o selo de simulação, saiu. O HTML das páginas não foi tocado, então
+  o CSS esconde a faixa. As ondas das páginas internas e do rodapé já estavam
+  desligadas desde o redesign.
+- **Topo.** Barra branca e translúcida com blur por trás, tipo em peso 400,
+  hairline de 1px embaixo e nada mais. Sem faixa colorida, sem gradiente, sem
+  sombra. O logo encolheu de 179 para 164px. Depois de rolar sobra só a barra
+  de editorias, com 44px, que é a altura da barra da Apple. Ajustei o padding
+  da nav para manter o alvo de toque em 44px: a primeira versão tinha caído
+  para 31px e a auditoria pegou.
+- **Tudo claro.** O Resumo Semanal e a leitura do horóscopo, os dois únicos
+  blocos escuros, viraram faixas em `--superficie-2`. Chip pressionado, signo
+  escolhido e botão de aceitar cookie viraram azul marinho com texto branco. O
+  modo escuro automático saiu inteiro: um site que vira escuro sozinho na
+  preferência do sistema não é um site todo claro. Os tons `-claro` do leque
+  ficaram no CSS, medidos, caso o modo escuro volte um dia.
+- **Céu.** Saiu junto. Com a faixa de marca branca não há onde pintar céu, e
+  com ele foram as classes `ceu-*`, o véu de chumbo do clima e o sol que virava
+  lua. O `visual.js` continua escrevendo essas classes e chamando o `/clima`,
+  sem efeito nenhum: mexer nisso é decisão do editor, porque envolve
+  `functions/`, que o ciclo de notícias não pode tocar.
+- **Logo.** O sol voltou a ser sol (`--sol-logo`) e o mar voltou a ser mar
+  (`--mar-logo`). As duas variáveis não aparecem em mais nenhum lugar do site:
+  o desenho guarda as cores literais, o resto do site não. As letras foram para
+  o azul marinho, que virou a cor da marca em tudo: link, foco, item ativo da
+  nav, régua de bloco, número do Resumo Semanal. A tagline de 9,5px ficou no
+  cinza, que é o que passa no contraste naquele corpo.
+
+O grafite de 08/09 continua no CSS como cinza de apoio. O osso saiu: só servia
+sobre fundo escuro, e fundo escuro não existe mais.
+
+Validação: `checa-site.py` e `contraste.py` em zero, auditoria em 14 páginas por
+5 larguras com zero overflow, zero alvo de toque pequeno e zero par abaixo de
+AA. Nenhum HTML mudou.
+
 ## O que o editor decidiu
 
+-1. Site todo claro, topo no jeito Apple, sem ondas, logo com sol e mar nas
+   cores do desenho e letras em azul marinho, em 09/09.
 0. Marca em grafite e osso, em 08/09. Fora o azul esverdeado e o amarelo.
 1. Paleta editorial aprovada. As doze cores entraram no `estilo.css` (bloco 1) e a regra do
    CLAUDE.md foi reescrita: a seção 9 agora lista as variáveis de marca, a camada semântica e
@@ -162,8 +205,7 @@ pequeno e zero par abaixo de AA.
 1. O rio de últimas continua sem cor. As chamadas de lá não têm chapéu na
    marcação, então não há de onde ler a editoria sem mexer no HTML das
    páginas. Se um dia o gerador puser o chapéu no rio, a cor entra sozinha.
-2. O botão de modo escuro. Hoje quem manda é o sistema. Um botão pediria
-   marcação nova nas 185 páginas e um lugar para guardar a escolha; vale se o
-   editor quiser.
+2. O modo escuro saiu em 09/09. Se voltar, o leque editorial já tem os tons
+   `-claro` medidos e o que falta é a camada semântica.
 3. A tagline do logo, dentro do SVG, tem 9,5px. É desenho de marca, não texto
    de leitura, mas é o único ponto do site abaixo do piso de 12px.

@@ -22,25 +22,30 @@
    ferramentas/contraste.py)  4) mapeamento editoria -> cor viva
    ============================================================ */
 :root{
-  /* 1. MARCA. Em 08/09/2026 o leque virou GRAFITE E OSSO. O azul esverdeado
-     e o amarelo davam ao site a cara de material gerado por IA, que e
-     exatamente o que este projeto nao quer (decisao do editor). O verde saiu
-     de tudo, inclusive dos neutros: metade daquela impressao vinha do cinza
-     com fundo ciano, nao do acento.
+  /* 1. MARCA. Site claro de ponta a ponta (decisao do editor, 09/09/2026).
+     Nao ha mais faixa escura, bloco escuro nem modo escuro: o site e branco
+     do topo ao rodape, do jeito do site da Apple.
+     O logo e o unico lugar que guarda as cores do desenho: o sol e sol, o mar
+     e mar. Fora do logo a marca e o AZUL MARINHO, que e a cor das letras.
+     Em 08/09 o leque tinha virado grafite e osso, tirando o azul esverdeado e
+     o amarelo que davam cara de material gerado por IA. O grafite ficou como
+     cinza de apoio; o osso saiu, porque so servia sobre fundo escuro.
      Os nomes --mar, --sol, --mar-claro e --espuma continuam de pe como
-     apelido, porque 143 paginas trazem style="color:var(--mar)" cravado no
-     HTML e nao vao ser reescritas. Codigo novo usa os nomes de baixo. */
-  --breu:#15171A;                  /* a tinta da casa: cinza neutro quase preto */
-  --grafite:#262A2E;               /* a faixa de marca e o link: 14,45:1 sobre branco */
-  --osso:#D9D2C4;                  /* o acento. O sol do logo virou osso: 11,94:1 sobre breu */
-  --pedra:#A8A9AB;                 /* cinza claro sobre escuro: 7,64:1 sobre breu */
-  --papel:#F2F2F1;                 /* o branco quebrado das faixas */
-  --coral:#C8341F;                 /* o unico tom forte que sobrou na marca: 5,29:1 sobre branco */
+     apelido, porque 156 pedacos de HTML trazem style="color:var(--mar)"
+     cravado e nao vao ser reescritos. Codigo novo usa os nomes de baixo. */
+  --breu:#15171A;                  /* a tinta do texto: 18,0:1 sobre branco */
+  --marinho:#17325E;               /* A COR DA MARCA: letras do logo, link, foco, item ativo, regua. 12,7:1 */
+  --sol-logo:#F0A81E;              /* o sol do desenho. So dentro do logo. */
+  --mar-logo:#2C7C9B;              /* o mar do desenho. So dentro do logo. 4,7:1 */
+  --grafite:#262A2E;               /* cinza escuro de apoio: chip pressionado, atalho de teclado */
+  --pedra:#A8A9AB;                 /* cinza claro, para peca sobre fundo escuro */
+  --papel:#F2F2F1;                 /* o branco quebrado das faixas e dos blocos */
+  --coral:#C8341F;                 /* urgencia, e so: 5,29:1 sobre branco */
   --areia:#C9C0B0;
-  --suave:#6C6F73;                 /* 5,05:1 sobre branco */
+  --suave:#686B6F;                 /* 5,4:1 sobre branco */
   /* apelidos, para o HTML antigo e as regras antigas nao quebrarem */
-  --mar:var(--grafite);
-  --sol:var(--osso);
+  --mar:var(--marinho);
+  --sol:var(--sol-logo);
   --mar-claro:var(--pedra);
   --espuma:var(--papel);
   --display:'Archivo',system-ui,-apple-system,sans-serif;
@@ -56,9 +61,9 @@
   --fio:1px;
   --fio-cor:#E0E0DE;               /* hairline decorativo, 1,3:1 de proposito */
   --fio-forte:#86888B;             /* borda com funcao (input, tabela, chip): 3,55:1 */
-  --link:var(--grafite);           /* 14,45:1. Sem cor de link: e a tinta com sublinhado, como em jornal */
-  --foco:var(--mar);               /* anel de foco sobre claro */
-  --acento:var(--sol);             /* unico acento de marca: filete, nav principal ativa, progresso */
+  --link:var(--marinho);           /* 12,7:1. O azul marinho da marca, com sublinhado fino */
+  --foco:var(--marinho);           /* anel de foco */
+  --acento:var(--marinho);         /* unico acento de marca: nav principal ativa, regua de bloco */
   --urgente:var(--coral);          /* bolinha Ultimas, erro, 404: 5,29:1 sobre branco */
   --sombra-cor:color-mix(in srgb,var(--breu) 10%,transparent);
 
@@ -352,31 +357,13 @@ body:has(.editorias a.ativo[href="editoria-meio-ambiente.html"]) .editoria-topo{
   --dur-chegada:.55s;
   --curva-chegada:cubic-bezier(.2,.7,.3,1);
   --curva-troca:cubic-bezier(.45,0,.2,1);
-  /* ceu por hora (classes ceu-* no html, escritas pelo visual.js). O alto e o
-     grafite da faixa de marca; a linha d'agua puxa para a areia, que e a luz
-     do horizonte. Sem esse calor no pe, a faixa vira borrao cinza. A capa e a
-     unica pagina que veste o ceu. */
-  --ceu-alto:var(--mar);
-  --ceu-baixo:color-mix(in srgb,var(--mar) 55%,var(--areia) 45%);
-  /* clima (classes tempo-*): um veu de chumbo dosado sobre o ceu da hora */
-  --chumbo:color-mix(in srgb,var(--breu) 70%,var(--suave));
-  --veu-dose:0%;
-  --ceu-alto-t:color-mix(in srgb,var(--ceu-alto),var(--chumbo) var(--veu-dose));
-  --ceu-baixo-t:color-mix(in srgb,var(--ceu-baixo),var(--chumbo) var(--veu-dose));
+  /* o ceu da hora saiu em 09/09/2026: com a faixa de marca clara nao ha mais
+     onde pintar ceu, e o editor pediu o site todo claro. O visual.js continua
+     escrevendo as classes ceu-* e tempo-*, que hoje nao pintam nada. Se elas
+     nunca mais forem usadas, a chamada ao /clima do visual.js e a funcao
+     functions/clima.js podem sair, mas isso e decisao do editor. */
 }
-html.ceu-noite{--ceu-alto:var(--breu);--ceu-baixo:color-mix(in srgb,var(--breu) 80%,var(--mar) 20%)}
-html.ceu-amanhecer{--ceu-alto:color-mix(in srgb,var(--breu) 55%,var(--mar) 45%);--ceu-baixo:color-mix(in srgb,var(--coral) 55%,var(--sol) 45%)}
-html.ceu-dia{--ceu-alto:var(--mar);--ceu-baixo:color-mix(in srgb,var(--mar) 40%,var(--areia) 60%)}
-html.ceu-entardecer{--ceu-alto:color-mix(in srgb,var(--breu) 70%,var(--coral) 30%);--ceu-baixo:color-mix(in srgb,var(--coral) 60%,var(--sol) 40%)}
-html.tempo-nublado{--veu-dose:45%}
-html.tempo-chuva{--veu-dose:55%}
-html.tempo-temporal{--veu-dose:68%}
-html.tempo-neblina{--veu-dose:30%}
 /* registrada, a variavel transiciona: a virada de ceu e de clima leva 1,2s */
-@property --ceu-alto{syntax:'<color>';inherits:true;initial-value:#262A2E}
-@property --ceu-baixo{syntax:'<color>';inherits:true;initial-value:#262A2E}
-@property --veu-dose{syntax:'<percentage>';inherits:true;initial-value:0%}
-html{transition:--ceu-alto 1.2s,--ceu-baixo 1.2s,--veu-dose 1.2s}
 
 *{box-sizing:border-box;margin:0;padding:0}
 /* clip, e nao hidden: hidden no html ou no body mata o position:sticky do
@@ -419,7 +406,6 @@ a:hover{color:var(--tinta);text-decoration-color:var(--urgente);text-decoration-
 /* link dentro de paragrafo: o padding entra no retangulo de toque (>=24px)
    sem mudar a altura da linha, porque a margem negativa devolve o espaco */
 .texto p a,.texto li a,.institucional a,.leituras-nota a,.legal a,.destaque a,.painel a,.leitura-v a,.consentimento-texto a,.fonte a,.d small a,.d p a,.d em a{padding-block:6px;margin-block:-6px}
-header :focus-visible,.escuro :focus-visible,.leitura :focus-visible,.consentimento .btn-aceitar:focus-visible{outline-color:var(--sol)}
 
 /* LARGURAS
    .wrap e a pagina; .estreito e a coluna de leitura (58ch da Newsreader,
@@ -435,76 +421,61 @@ header :focus-visible,.escuro :focus-visible,.leitura :focus-visible,.consentime
 
 /* IMPRESSAO: so o texto, sem barras, sem anuncio */
 @media print{
-  header,nav,.horizonte,.onda,.onda-rodape,.anuncio,.pub-google,.consentimento,.progresso,.pular,footer .fgrid{display:none!important}
+  header,nav,.horizonte,.anuncio,.pub-google,.consentimento,.progresso,.pular,footer .fgrid{display:none!important}
   body{background:#fff;color:#000;font-size:11pt}
   a{color:#000;text-decoration:underline}
   figure.foto{break-inside:avoid}
 }
 
 /* ==== 4 · CABECALHO E NAVEGACAO ====
-   Duas fileiras no desktop: a faixa de marca (logo, nav principal, meta)
-   e a barra de editorias, branca e translucida, a unica coisa que gruda.
-   Nas paginas internas a barra mora DENTRO do header. As duas faixas sao
-   pintadas no fundo do proprio header (mar em cima, branco embaixo), de
-   ponta a ponta da tela, e a grade do .wrap tem as linhas com a mesma
-   altura das faixas. O header inteiro gruda com top negativo do tamanho
-   da faixa de marca: depois de rolar, so a barra fica visivel.
-   Na capa a barra esta fora do header (.fixa) e gruda sozinha; o header
-   da capa fica parado e veste o ceu da hora. */
-:root{--barra-fundo:color-mix(in srgb,#fff 82%,transparent)}
+   Desde 09/09/2026 o topo e todo claro, no jeito do site da Apple: uma barra
+   branca e translucida com blur por tras, tipo pequeno em peso normal,
+   hairline de 1px embaixo e nada mais. Sem faixa escura, sem ceu, sem ondas.
+   Duas fileiras no desktop: a de marca (logo, nav principal, meta) e a de
+   editorias. Nas paginas internas a de editorias mora DENTRO do header, e o
+   header inteiro gruda com top negativo do tamanho da faixa de marca: depois
+   de rolar so a barra de editorias fica, com 44px, como a da Apple.
+   Na capa a barra esta fora do header (.fixa) e gruda sozinha. */
+:root{--barra-fundo:color-mix(in srgb,var(--superficie) 82%,transparent)}
 header{
-  color:var(--espuma);position:sticky;z-index:50;
+  color:var(--tinta);position:sticky;z-index:50;
   top:calc(-1 * (var(--h-marca) + var(--h-principal)));
-  background:linear-gradient(to bottom,var(--mar) 0 calc(var(--h-marca) + var(--h-principal)),var(--barra-fundo) calc(var(--h-marca) + var(--h-principal)) 100%);
+  background:var(--barra-fundo);
   -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
   border-bottom:var(--fio) solid var(--fio-cor)}
-header.ceu{position:static;background:var(--ceu-alto-t);transition:background 1.2s;-webkit-backdrop-filter:none;backdrop-filter:none;border-bottom:0}
-/* 404 nao tem barra de editorias: nada gruda, e a faixa e so mar */
-body:not(:has(.editorias)) header{position:static;background:var(--mar);border-bottom:0}
-header .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:var(--h-marca) var(--h-editorias);grid-template-areas:"logo principal meta" "editorias editorias editorias";align-items:center;column-gap:var(--e-8)}
+header.ceu,body:not(:has(.editorias)) header{position:static}
+header .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:var(--h-marca) var(--h-editorias);grid-template-areas:"logo principal meta" "editorias editorias editorias";align-items:center;column-gap:var(--e-6)}
 header.ceu .wrap,body:not(:has(.editorias)) header .wrap{grid-template-rows:var(--h-marca);grid-template-areas:"logo principal meta"}
 header .topo{display:contents}
 header .topo>a{grid-area:logo;display:inline-block;line-height:0;color:inherit;text-decoration:none}
 header .topo>a:focus-visible{outline-offset:4px}
-header .topo>a svg{width:179px;height:36px;max-width:100%}
-header .meta{grid-area:meta;font:var(--peso-medio) var(--t-ui)/1.5 var(--display);letter-spacing:0;text-transform:none;text-align:right;color:color-mix(in srgb,var(--espuma) 76%,var(--mar))}
-header .meta b{color:var(--sol);font-weight:var(--peso-medio)}
-/* nav principal: Apple, caixa normal, peso 600, sem tracking. O ativo leva
-   sublinhado em sol a 2px, sem mudar de peso (peso muda a largura e pula).
-   O padding fecha 44px de alvo dentro da faixa de 56. */
+header .topo>a svg{width:164px;height:33px;max-width:100%}
+header .meta{grid-area:meta;font:var(--peso-normal) var(--t-ui)/1.5 var(--display);letter-spacing:0;text-transform:none;text-align:right;color:var(--tinta-3)}
+header .meta b{color:var(--marinho);font-weight:var(--peso-medio)}
+/* nav principal, jeito Apple: caixa normal, peso normal, sem tracking, tinta
+   a 82% que fecha em cheio no hover. O ativo leva sublinhado de 2px em azul
+   marinho, sem mudar de peso (peso muda a largura e o item pula). */
 header nav[aria-label="Principal"]{grid-area:principal;justify-self:end;margin:0;border:0;min-width:0;max-width:100%}
 header nav[aria-label="Principal"] ul{display:flex;gap:var(--e-6);list-style:none;padding:0;overflow-x:auto;scrollbar-width:none}
 header nav[aria-label="Principal"] ul::-webkit-scrollbar{display:none}
-header nav[aria-label="Principal"] a{display:inline-block;font:var(--peso-medio) var(--t-nav)/1.2 var(--display);letter-spacing:0;text-transform:none;color:color-mix(in srgb,var(--espuma) 90%,var(--mar));text-decoration:none;white-space:nowrap;padding:14px 0 12px;border-bottom:2px solid transparent;transition:color var(--dur-toque)}
-header nav[aria-label="Principal"] a:hover,header nav[aria-label="Principal"] a:focus-visible{color:#fff}
-header nav[aria-label="Principal"] a.ativo{color:#fff;border-bottom-color:var(--sol)}
+header nav[aria-label="Principal"] a{display:inline-block;font:var(--peso-normal) var(--t-nav)/1.2 var(--display);letter-spacing:0;text-transform:none;color:color-mix(in srgb,var(--tinta) 82%,transparent);text-decoration:none;white-space:nowrap;padding:13px 0 12px;border-bottom:2px solid transparent;transition:color var(--dur-toque)}
+header nav[aria-label="Principal"] a:hover,header nav[aria-label="Principal"] a:focus-visible{color:var(--tinta)}
+header nav[aria-label="Principal"] a.ativo{color:var(--tinta);border-bottom-color:var(--marinho)}
 
-/* LOGO: o SVG das 185 paginas traz os hex antigos cravados como atributo
-   (#FFB627 no sol e no INFORMA, #8FB0B9 nas linhas d'agua e na tagline,
-   #F1F5F3 no SANTA). Atributo de apresentacao perde para qualquer regra de
-   CSS, entao o leque novo entra por aqui e nenhum HTML precisa mudar. Vale
-   tambem para a pagina que o ciclo de noticias gerar amanha copiando o
-   cabecalho antigo: ela ja nasce com a cor certa. */
-header .sun .raios{stroke:var(--acento)}
-header .sun .astro circle{fill:var(--acento)}
-header .sun .linha-sol{fill:var(--acento)}
-header .sun>g[fill]{fill:var(--pedra)}
-/* a marca era clara mais amarela; agora e cinza mais branco. SANTA recua,
-   INFORMA avanca: o peso fica na metade que diz o que o jornal faz. */
-header .wordmark text{fill:var(--pedra)}
-header .wordmark text+text{fill:var(--papel)}
-header .tagline{fill:var(--pedra)}
-/* a regra que pintava a marca inteira de branco de dia saiu: existia porque o
-   amarelo perdia contraste, e a faixa nunca chega a clarear (o ceu do dia e o
-   mesmo grafite, e chuva e entardecer so escurecem). */
+/* LOGO: o SVG das 185 paginas traz os hex cravados como atributo de
+   apresentacao, que perde para qualquer regra de CSS. Entao a cor entra por
+   aqui e nenhum HTML precisa mudar, nem a pagina que o ciclo de noticias
+   gerar amanha copiando o cabecalho antigo.
+   O desenho guarda as cores literais, como o editor pediu: o sol e sol, o mar
+   e mar. As letras vao no azul marinho da marca, e a tagline no cinza, que no
+   corpo de 9,5px precisa passar no contraste. */
+header .sun .raios{stroke:var(--sol-logo)}
+header .sun .astro circle{fill:var(--sol-logo)}
+header .sun .linha-sol{fill:var(--sol-logo)}
+header .sun>g[fill]{fill:var(--mar-logo)}
+header .wordmark text{fill:var(--marinho)}
+header .tagline{fill:var(--suave)}
 
-/* A noite o sol vira lua. */
-.astro circle{transition:fill .9s}
-.raios{transition:opacity .9s}
-.linha-sol{transition:fill .9s}
-html.ceu-noite .astro .raios{opacity:0}
-html.ceu-noite .astro circle{fill:var(--espuma)}
-html.ceu-noite .linha-sol{fill:var(--espuma)}
 /* o sol nasce so na capa, uma vez por carregamento */
 header.ceu .sun{animation:nascer 1.3s var(--curva-chegada) both}
 header.ceu .wordmark{animation:aparecer .7s ease .45s both}
@@ -539,26 +510,12 @@ header.ceu::after{content:none}
 /* ancora nunca para atras da barra */
 [id]{scroll-margin-top:calc(var(--h-editorias) + 12px)}
 
-/* HORIZONTE (so a capa): a linha d'agua do ceu. No desktop e uma faixa de
-   24px com o degrade do ceu e duas ondas brancas derivando devagar; no
-   celular vira um fio de 3px, parado. Chuva e nuvens do TEMPO v1 saem
-   daqui: o clima segue visivel no veu de chumbo da faixa de marca. */
-.horizonte{position:relative;height:24px;background:linear-gradient(90deg,var(--ceu-alto-t),var(--ceu-baixo-t));overflow:hidden}
-.horizonte::before,.horizonte::after{content:none}
-.onda-camada{position:absolute;left:0;bottom:-1px;width:200%;height:14px}
-.onda-camada svg{display:block;width:100%;height:100%}
-.onda-camada path{fill:var(--superficie)}
-.onda-camada.tras{opacity:.45;animation:deriva 34s linear infinite}
-.onda-camada.frente{animation:deriva 26s linear infinite}
-@keyframes deriva{to{transform:translateX(-50%)}}
-.horizonte.pausada .onda-camada{animation-play-state:paused}
-.onda-pausa{position:absolute;right:var(--margem);top:0;bottom:0;margin:auto 0;height:fit-content;z-index:2;border:1px solid color-mix(in srgb,#fff 45%,transparent);background:color-mix(in srgb,var(--breu) 35%,transparent);color:#fff;font:var(--peso-medio) 12px/1 var(--display);border-radius:var(--pilula);padding:6px 12px;min-height:28px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity var(--dur-troca)}
-.horizonte:hover .onda-pausa,.horizonte:focus-within .onda-pausa{opacity:1;pointer-events:auto}
-@media(hover:none){.onda-pausa{opacity:.8;pointer-events:auto}}
-.selo-simulacao{position:absolute;left:var(--margem);top:0;bottom:0;margin:auto 0;height:fit-content;z-index:2;font:var(--peso-medio) 12px/1 var(--display);color:var(--breu);background:var(--sol);border-radius:var(--pilula);padding:3px 10px;pointer-events:none}
-/* ondas das paginas internas e do rodape: com folha branca e rodape claro
-   nao existe mais borda para ondular */
-.onda,.onda-rodape{display:none}
+/* As ondas sairam em 09/09/2026, a pedido do editor. A faixa .horizonte
+   continua no HTML da capa (nao mexemos em pagina), entao some por aqui,
+   junto com o botao de pausa e o selo de simulacao que moravam dentro dela.
+   As ondas das paginas internas e do rodape ja estavam desligadas desde o
+   redesign: com folha branca nao existe borda para ondular. */
+.horizonte,.onda,.onda-rodape{display:none}
 
 /* ==== 5 · COMPONENTES TRANSVERSAIS ==== */
 
@@ -570,7 +527,6 @@ header.ceu::after{content:none}
 .ed,.chapeu{display:inline-flex;align-items:center;gap:var(--e-2);font:var(--peso-forte) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-caixa-alta);text-transform:uppercase;color:var(--ed-texto);padding-top:.08em}
 .ed::before,.chapeu::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ed);flex:none}
 .chapeu.claro{color:var(--ed-texto)}
-.escuro .ed,.leitura .ed{color:var(--ed-claro)}
 
 /* ROTULOS DE INTERFACE: hora, data, selo, credito. Caixa normal, 12px no
    piso, numeros tabulares. So o chapeu e o rotulo de secao vao em caixa alta. */
@@ -592,10 +548,7 @@ header.ceu::after{content:none}
 .titulo h2{display:flex;align-items:center;gap:var(--e-2);font-size:var(--t-secao);line-height:var(--lh-display);letter-spacing:var(--ls-display);text-transform:none;color:var(--tinta)}
 .titulo h2 .icone{display:none}
 .titulo em{font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);font-style:normal;letter-spacing:var(--ls-rotulo);text-transform:uppercase;color:var(--tinta-3)}
-.escuro .titulo{--regua:var(--sol)}
-.escuro .titulo::before{background:color-mix(in srgb,#fff 18%,transparent)}
-.escuro .titulo h2{color:#fff}
-.escuro .titulo em{color:var(--mar-claro)}
+.escuro .titulo{--regua:var(--marinho)}
 
 /* CARD A: branco, fio de 1px, raio 12, foto 16:9 com o raio so em cima,
    texto com respiro interno. Nada de sombra em repouso: ela chega no hover,
@@ -630,7 +583,7 @@ article.card .selo{margin-top:var(--e-1)}
    a mola do JS escreve scale() no toque. */
 .chip,.pausa-anima,.paginacao>a,.consentimento-acoes button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 var(--e-5);border-radius:var(--pilula);font:var(--peso-medio) var(--t-tabela)/1 var(--display);letter-spacing:0;border:1px solid var(--fio-forte);background:var(--superficie);color:var(--tinta);cursor:pointer;text-decoration:none;transition:background var(--dur-toque),color var(--dur-toque),border-color var(--dur-toque)}
 .chip:hover,.pausa-anima:hover,.paginacao>a:hover{border-color:var(--tinta);color:var(--tinta)}
-.chip[aria-pressed="true"],.chip[aria-selected="true"]{background:var(--breu);color:var(--sol);border-color:var(--breu)}
+.chip[aria-pressed="true"],.chip[aria-selected="true"]{background:var(--marinho);color:#fff;border-color:var(--marinho)}
 @media(hover:none){.chip,.pausa-anima,.paginacao>a,.consentimento-acoes button{min-height:44px}}
 .pausa-anima{margin-top:var(--e-3)}
 
@@ -653,10 +606,7 @@ article.card .selo{margin-top:var(--e-1)}
 .d b{display:block;font-family:var(--display);font-size:var(--t-inter-2);font-weight:var(--peso-forte);line-height:var(--lh-lista);letter-spacing:var(--ls-lista);color:var(--tinta);margin-top:var(--e-2)}
 .d small{display:block;font-family:var(--corpo);font-size:var(--t-legenda);line-height:var(--lh-legenda);color:var(--tinta-2);margin-top:var(--e-1)}
 .d em{display:block;font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);font-style:normal;letter-spacing:var(--ls-rotulo);text-transform:uppercase;color:var(--tinta-3);margin-top:var(--e-3)}
-.escuro .d{background:color-mix(in srgb,#fff 6%,transparent);border-color:color-mix(in srgb,#fff 18%,transparent)}
-.escuro .d i,.escuro .d b{color:#fff}
-.escuro .d .icone{color:var(--sol)}
-.escuro .d small,.escuro .d em{color:var(--mar-claro)}
+.escuro .d .icone{color:var(--marinho)}
 
 /* RESERVA DE ANUNCIO: espaco a venda, reservado por aspect-ratio para o
    anuncio nao empurrar o texto quando carrega. Reserva silenciosa: espuma,
@@ -692,9 +642,7 @@ article.card .selo{margin-top:var(--e-1)}
 }
 .medida .md-cel{display:none}
 /* dentro da faixa escura (vitrine do anuncie) o fio e o texto invertem */
-.anuncio.escuro{background:transparent;border-color:color-mix(in srgb,#fff 40%,transparent);padding:var(--e-3) var(--e-4);margin:var(--esp-bloco) auto}
-.anuncio.escuro .rotulo,.anuncio.escuro .medida{color:var(--mar-claro)}
-.anuncio.escuro .valor a{color:var(--sol)}
+.anuncio.escuro{background:transparent;padding:var(--e-3) var(--e-4);margin:var(--esp-bloco) auto}
 /* ESPACO VENDIDO (.pago): a caixa deixa de ser reserva e vira moldura de
    campanha. O rotulo vira selo de publicidade com o nome do pagante, sempre
    visivel, em linha propria acima da peca; medida, onde e valor saem do
@@ -826,26 +774,24 @@ body:has(.capa-grade) main.com-capa>.wrap{padding-top:var(--e-6)}
 .linha-2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gutter);margin-top:var(--esp-bloco);border-top:0}
 article.card.v2{padding:0 0 var(--e-4)}
 
-/* RESUMO SEMANAL: breu chapado, o unico bloco escuro da capa. A grade do
-   .wrap poe o retangulo de anuncio na coluna da direita, ao lado da lista. */
-.escuro{background:var(--breu);color:var(--espuma);padding:var(--esp-secao) 0;margin:0}
+/* RESUMO SEMANAL: era o unico bloco escuro da capa e virou faixa em papel
+   quando o editor pediu o site todo claro. A classe .escuro ficou no HTML de
+   185 paginas, entao o nome mente: hoje ela quer dizer "faixa de fundo
+   chapado". A grade do .wrap poe o retangulo de anuncio na coluna da direita,
+   ao lado da lista. */
+.escuro{background:var(--superficie-2);color:var(--tinta);padding:var(--esp-secao) 0;margin:0}
 .escuro.anoitecer{margin-top:var(--esp-secao)}
 #semanal .wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:var(--gutter);row-gap:0;align-items:start}
 #semanal .titulo{grid-column:1/-1}
 .semana{grid-column:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--gutter)}
 #semanal .anuncio{grid-column:2;grid-row:2;margin:0}
-.item{position:relative;display:flex;align-items:center;gap:var(--e-4);padding-block:var(--esp-comp);border-bottom:var(--fio) solid color-mix(in srgb,#fff 14%,transparent)}
-.num{font-family:var(--corpo);font-weight:500;font-size:1.875rem;line-height:1;color:var(--sol);min-width:2.4ch;font-variant-numeric:tabular-nums}
-.item .mini{width:56px;height:56px;flex:none;object-fit:cover;border-radius:var(--raio-s);background:color-mix(in srgb,#fff 8%,transparent)}
-.item h3{font-family:var(--display);font-weight:var(--peso-medio);font-size:var(--t-lista);line-height:var(--lh-lista);letter-spacing:var(--ls-lista);color:#fff;transition:color var(--dur-toque)}
-.item small{display:block;font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-rotulo);text-transform:uppercase;color:var(--ed-claro);margin-top:var(--e-1)}
-.item:hover h3{color:var(--sol)}
-.item:has(a:focus-visible){outline-color:var(--sol)}
-.escuro a{color:var(--sol);text-decoration-color:color-mix(in srgb,var(--sol) 45%,transparent)}
-.escuro a:hover{color:var(--sol);text-decoration-color:var(--sol)}
-.escuro :is(h1,h2,h3,h4) a{color:inherit}
-.escuro :is(h1,h2,h3,h4) a:hover{color:var(--sol)}
-.escuro .linhafina{color:var(--mar-claro)}
+.item{position:relative;display:flex;align-items:center;gap:var(--e-4);padding-block:var(--esp-comp);border-bottom:var(--fio) solid var(--fio-cor)}
+.num{font-family:var(--corpo);font-weight:500;font-size:1.875rem;line-height:1;color:var(--marinho);min-width:2.4ch;font-variant-numeric:tabular-nums}
+.item .mini{width:56px;height:56px;flex:none;object-fit:cover;border-radius:var(--raio-s);background:var(--fio-cor)}
+.item h3{font-family:var(--display);font-weight:var(--peso-medio);font-size:var(--t-lista);line-height:var(--lh-lista);letter-spacing:var(--ls-lista);color:var(--tinta);transition:color var(--dur-toque)}
+.item small{display:block;font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-rotulo);text-transform:uppercase;color:var(--ed-texto);margin-top:var(--e-1)}
+.item:hover h3{color:var(--link)}
+.escuro .linhafina{color:var(--tinta-2)}
 
 /* FERRAMENTAS DO LITORAL e os atalhos do 404: fileira de links com fio a
    esquerda, icone solto, rotulo curto, titulo e frase. Sem cartao. */
@@ -1004,30 +950,26 @@ body:has(.progresso) .texto h3+ul li strong:first-child{font-family:var(--displa
 .sumario a:hover{color:var(--link);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--urgente)}
 .texto .dados{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--e-4);margin:var(--esp-bloco) 0}
 
-/* HOROSCOPO: grade de signos, leitura em bloco escuro (o unico fora da capa),
-   carta com fio de sol, chips escuros. */
+/* HOROSCOPO: grade de signos e a leitura numa faixa em papel, com a carta
+   num cartao branco. Era o unico bloco escuro fora da capa. */
 .signos{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:var(--e-3);margin-bottom:var(--esp-bloco)}
 .signo{background:var(--superficie);border:1px solid var(--fio-cor);border-radius:var(--raio);padding:var(--e-4) var(--e-2);text-align:center;cursor:pointer;font:var(--peso-medio) var(--t-tabela)/1.2 var(--display);color:var(--tinta);transition:background var(--dur-toque),color var(--dur-toque),border-color var(--dur-toque)}
 .signo:hover{border-color:var(--tinta)}
-.signo[aria-pressed="true"]{background:var(--breu);color:var(--sol);border-color:var(--breu)}
+.signo[aria-pressed="true"]{background:var(--marinho);color:#fff;border-color:var(--marinho)}
 .signo b{display:block;font-size:1.4rem;font-weight:var(--peso-normal);line-height:1;margin-bottom:var(--e-2)}
-.leitura{background:var(--breu);color:var(--espuma);border-radius:var(--raio);padding:var(--e-8);display:grid;grid-template-columns:230px minmax(0,1fr);gap:var(--e-8);align-items:start}
-.carta{background:color-mix(in srgb,#fff 5%,transparent);border:1px solid color-mix(in srgb,var(--sol) 60%,transparent);border-radius:var(--raio);padding:var(--e-6) var(--e-5);text-align:center;min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:var(--e-3)}
+.leitura{background:var(--superficie-2);color:var(--tinta);border-radius:var(--raio);padding:var(--e-8);display:grid;grid-template-columns:230px minmax(0,1fr);gap:var(--e-8);align-items:start}
+.carta{background:var(--superficie);border:1px solid var(--fio-cor);border-radius:var(--raio);padding:var(--e-6) var(--e-5);text-align:center;min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:var(--e-3)}
 .carta .glifo{font-size:3.25rem;line-height:1}
-.carta .nome{font-family:var(--display);font-size:var(--t-inter-2);font-weight:var(--peso-forte);color:var(--sol);letter-spacing:var(--ls-lista)}
-.carta .num{font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--mar-claro);min-width:0}
-.leitura h3{font-size:var(--t-inter);line-height:var(--lh-card);letter-spacing:var(--ls-card);color:#fff;margin-bottom:var(--e-1)}
-.leitura h3 span{color:var(--mar-claro);font-weight:var(--peso-normal);font-size:var(--t-tabela)}
-.leitura .sub{display:block;background:transparent;border:0;border-radius:0;padding:0;font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-rotulo);text-transform:uppercase;color:var(--sol);margin-bottom:var(--e-5)}
+.carta .nome{font-family:var(--display);font-size:var(--t-inter-2);font-weight:var(--peso-forte);color:var(--marinho);letter-spacing:var(--ls-lista)}
+.carta .num{font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-3);min-width:0}
+.leitura h3{font-size:var(--t-inter);line-height:var(--lh-card);letter-spacing:var(--ls-card);color:var(--tinta);margin-bottom:var(--e-1)}
+.leitura h3 span{color:var(--tinta-3);font-weight:var(--peso-normal);font-size:var(--t-tabela)}
+.leitura .sub{display:block;background:transparent;border:0;border-radius:0;padding:0;font:var(--peso-medio) var(--t-ui)/var(--lh-ui) var(--display);letter-spacing:var(--ls-rotulo);text-transform:uppercase;color:var(--marinho);margin-bottom:var(--e-5)}
 .leitura .sub::before{content:none}
-.leitura p{color:color-mix(in srgb,var(--espuma) 90%,var(--mar-claro));font-size:var(--t-corpo);line-height:var(--lh-corpo);margin-bottom:var(--e-4)}
+.leitura p{color:var(--tinta-2);font-size:var(--t-corpo);line-height:var(--lh-corpo);margin-bottom:var(--e-4)}
 .leitura p:last-child{margin-bottom:0}
 .abas{display:flex;gap:var(--e-2);flex-wrap:wrap;margin-bottom:var(--e-5)}
-.leitura .chip{background:transparent;color:#fff;border-color:color-mix(in srgb,#fff 35%,transparent)}
-.leitura .chip:hover{border-color:var(--sol);color:var(--sol)}
-.leitura .chip[aria-pressed="true"]{background:var(--sol);color:var(--breu);border-color:var(--sol)}
-.vazio{color:var(--mar-claro);font-family:var(--display);font-size:var(--t-tabela);line-height:1.5}
-.leitura a{color:var(--sol)}
+.vazio{color:var(--tinta-3);font-family:var(--display);font-size:var(--t-tabela);line-height:1.5}
 #leituraSigno{scroll-margin-top:calc(var(--h-editorias) + 16px)}
 
 /* ANUNCIE: tabela de precos com cabecalho em espuma, numeros tabulares a
@@ -1078,16 +1020,16 @@ footer a:hover{color:var(--tinta);text-decoration:underline;text-decoration-thic
 .consentimento-texto a{color:var(--link)}
 .consentimento-acoes{display:flex;flex-wrap:wrap;gap:var(--e-2);flex:0 0 auto}
 .consentimento-acoes button{min-height:44px;flex:1 1 auto}
-.consentimento .btn-aceitar{background:var(--breu);color:#fff;border-color:var(--breu)}
-.consentimento .btn-aceitar:hover{background:var(--mar);border-color:var(--mar)}
+.consentimento .btn-aceitar{background:var(--marinho);color:#fff;border-color:var(--marinho)}
+.consentimento .btn-aceitar:hover{background:var(--breu);border-color:var(--breu)}
 .consentimento .btn-recusar{background:transparent;color:var(--tinta);border-color:var(--fio-forte)}
 .consentimento .btn-recusar:hover{border-color:var(--tinta)}
 
 /* ==== 11 · MOVIMENTO E ESTADOS ====
    Lista fechada: sol nascendo, filete e chegada da manchete (capa, uma
    vez), reveal por rolagem que nunca esconde de verdade, sombra e cor no
-   hover, elevacao da barra, barra de leitura, ondas do horizonte, virada
-   do ceu, transicao de pagina. So transform e opacity. Estado invisivel
+   hover, elevacao da barra, barra de leitura, transicao de pagina. So
+   transform e opacity. Estado invisivel
    mora sempre no from do keyframe, nunca na regra do elemento. */
 
 /* reveal por rolagem (classes rv/vis do visual.js): parte de 40% de
@@ -1111,9 +1053,8 @@ footer a:hover{color:var(--tinta);text-decoration:underline;text-decoration-thic
   @view-transition{navigation:none}
   .rv-on .rv,.sun,.wordmark,.tagline,.filete,.manchete .ed,.manchete h2,.capa-grade .linhafina,.meta-capa,.consentimento{opacity:1!important;transform:none!important}
   html{scroll-behavior:auto}
-  .progresso,.onda-pausa,.pausa-anima{display:none}
+  .progresso,.pausa-anima{display:none}
   .anima .corre,.anima .pulsa,.anima .sobe{transform:none!important;opacity:1!important}
-  .horizonte::before,.horizonte::after{animation:none!important}
 }
 
 /* ==== 12 · RESPONSIVO CONSOLIDADO ====
@@ -1162,9 +1103,6 @@ footer a:hover{color:var(--tinta);text-decoration:underline;text-decoration-thic
   header nav[aria-label="Principal"] a{padding:11px 0 9px}
   header nav[aria-label="Principal"] a::after,nav.editorias a::after{content:"";position:absolute;inset:-6px -8px}
   nav.editorias a{padding:0 var(--e-2)}
-  .horizonte{height:3px}
-  .horizonte:has(.selo-simulacao){height:24px}
-  .onda-camada,.onda-pausa{display:none}
 
   main.com-capa>.wrap{padding-top:var(--e-5)}
   .capa-grade{row-gap:var(--e-6)}
@@ -1295,73 +1233,10 @@ footer a:hover{color:var(--tinta);text-decoration:underline;text-decoration-thic
   .dados-capa{gap:var(--e-4)}
 }
 
-/* ==== 13 · MODO ESCURO ====
-   Fase 2 do estudo de cores, entregue em 06/09/2026. Segue a preferencia do
-   sistema operacional e nao tem botao: quem quer escuro ja escolheu no
-   aparelho, e um botao a mais na barra pedia marcacao nova em 185 paginas.
-   So a camada semantica e o leque editorial viram. Cada editoria troca o tom
-   vivo pelo tom claro, que ja existia e ja fora medido sobre breu (7:1 ou
-   mais). Nenhum componente ganha cor propria aqui: as excecoes abaixo sao
-   inversoes, casos em que a peca era escura sobre claro e precisa ser clara
-   sobre escuro. Fora do @media nada muda, entao o modo claro segue intocado.
-   'screen' de proposito: papel imprime claro, sempre. */
-@media screen and (prefers-color-scheme:dark){
-  :root{
-    color-scheme:dark;
-    --fundo:#111214;                 /* a folha; o breu puxado para baixo */
-    --superficie:#1B1D20;            /* card, painel, tabela: um degrau acima da folha */
-    --superficie-2:#232629;          /* faixa alternada, fundo de bloco */
-    --tinta:#EDECE9;                 /* 14,3:1 sobre superficie */
-    --tinta-2:#C2C0BB;               /* 9,3:1 */
-    --tinta-3:#A3A19D;               /* 6,5:1 na superficie, e passa no tint mais claro do leque */
-    --fio-cor:#2E3236;               /* hairline decorativo */
-    --fio-forte:#7C7F83;             /* borda com funcao: 4,2:1 */
-    --link:var(--osso);              /* 11,2:1. No escuro o link deixa de ser tinta e vira o acento */
-    --foco:var(--osso);              /* o anel de foco precisa saltar do escuro */
-    --sombra-cor:color-mix(in srgb,#000 55%,transparent);
-    --sombra-2:0 2px 6px color-mix(in srgb,#000 40%,transparent),
-               0 12px 32px -12px color-mix(in srgb,#000 60%,transparent);
-    --barra-fundo:color-mix(in srgb,#111214 82%,transparent);
-    /* leque editorial: o tom claro assume, e o tint vira fundo escuro tingido */
-    --ed-saude:var(--ed-saude-claro);
-    --ed-saude-tint:color-mix(in srgb,var(--ed-saude-claro) 14%,var(--superficie));
-    --ed-infraestrutura:var(--ed-infraestrutura-claro);
-    --ed-infraestrutura-tint:color-mix(in srgb,var(--ed-infraestrutura-claro) 14%,var(--superficie));
-    --ed-economia:var(--ed-economia-claro);
-    --ed-economia-tint:color-mix(in srgb,var(--ed-economia-claro) 14%,var(--superficie));
-    --ed-meio-ambiente:var(--ed-meio-ambiente-claro);
-    --ed-meio-ambiente-tint:color-mix(in srgb,var(--ed-meio-ambiente-claro) 14%,var(--superficie));
-    --ed-turismo:var(--ed-turismo-claro);
-    --ed-turismo-tint:color-mix(in srgb,var(--ed-turismo-claro) 14%,var(--superficie));
-    --ed-esporte:var(--ed-esporte-claro);
-    --ed-esporte-tint:color-mix(in srgb,var(--ed-esporte-claro) 14%,var(--superficie));
-    --ed-clima:var(--ed-clima-claro);
-    --ed-clima-tint:color-mix(in srgb,var(--ed-clima-claro) 14%,var(--superficie));
-    --ed-poder-publico:var(--ed-poder-publico-claro);
-    --ed-poder-publico-tint:color-mix(in srgb,var(--ed-poder-publico-claro) 14%,var(--superficie));
-    --ed-servico:var(--ed-servico-claro);
-    --ed-servico-tint:color-mix(in srgb,var(--ed-servico-claro) 14%,var(--superficie));
-    --ed-cultura:var(--ed-cultura-claro);
-    --ed-cultura-tint:color-mix(in srgb,var(--ed-cultura-claro) 14%,var(--superficie));
-    --ed-santa-catarina:var(--ed-santa-catarina-claro);
-    --ed-santa-catarina-tint:color-mix(in srgb,var(--ed-santa-catarina-claro) 14%,var(--superficie));
-    --ed-brasil:var(--ed-brasil-claro);
-    --ed-brasil-tint:color-mix(in srgb,var(--ed-brasil-claro) 14%,var(--superficie));
-    --ed-claro:var(--tinta);         /* padrao sem editoria, sobre escuro */
-  }
-  /* no claro a folha e branca e o card tambem, separados pelo fio. No escuro
-     o card precisa subir: folha na cor de fundo, card na superficie. */
-  body{background:var(--fundo)}
-  /* os blocos que ja eram escuros descem mais um degrau para continuarem
-     sendo outro bloco, e nao o mesmo plano da pagina */
-  .escuro,.leitura{background:#0B0C0D}
-  /* inversoes: peca escura sobre claro vira peca clara sobre escuro */
-  .chip[aria-pressed="true"],.chip[aria-selected="true"],
-  .signo[aria-pressed="true"]{background:var(--sol);color:var(--breu);border-color:var(--sol)}
-  .consentimento .btn-aceitar{background:var(--espuma);color:var(--breu);border-color:var(--espuma)}
-  .consentimento .btn-aceitar:hover{background:#fff;border-color:#fff}
-  /* o grafite da casa e escuro demais para viver sobre escuro: vira a pedra */
-  .d .icone,.dados-capa .d .icone,.dados a.d .icone{color:var(--pedra)}
-  .leitura-v:nth-child(2){--col:var(--ed-clima-claro);--regua-col:var(--ed-clima-claro)}
-  .destaque{border-top-color:var(--ed)}
-}
+/* O MODO ESCURO SAIU EM 09/09/2026.
+   O editor pediu o site todo claro, e um site que vira escuro sozinho na
+   preferencia do sistema nao e um site todo claro. O bloco 13 inteiro foi
+   removido: nao ha @media prefers-color-scheme nenhum aqui.
+   O que ficou de pe do trabalho daquele dia: cada editoria ainda tem o tom
+   --ed-X-claro, medido sobre escuro. Nenhuma regra usa hoje. Se o modo escuro
+   voltar, o leque ja esta pronto e o que precisa e a camada semantica. */

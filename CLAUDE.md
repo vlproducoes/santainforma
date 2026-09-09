@@ -198,19 +198,19 @@ Nunca, em hipótese nenhuma:
 - **HTML:** indentação de 2 espaços. Todo `<img>` com `width`, `height`,
   `loading` e `alt` descritivo de verdade. Nada de `alt=""` em foto editorial.
 - **CSS:** só `estilo.css`. Use as variáveis que já existem: as da marca
-  (`--breu`, `--grafite`, `--osso`, `--pedra`, `--papel`, `--coral`, `--areia`,
-  `--suave`), a camada semântica (`--fundo`, `--superficie`, `--tinta`,
-  `--fio-cor`, `--link`) e a paleta editorial (`--ed-*`, seção 9.5). Cor nova
-  fora dessas variáveis, só com aprovação do editor. `--mar`, `--sol`,
-  `--mar-claro` e `--espuma` são apelidos das quatro primeiras: existem porque
-  143 páginas trazem `style="color:var(--mar)"` cravado no HTML. Não use os
-  apelidos em código novo.
+  (`--breu`, `--marinho`, `--sol-logo`, `--mar-logo`, `--grafite`, `--pedra`,
+  `--papel`, `--coral`, `--areia`, `--suave`), a camada semântica (`--fundo`,
+  `--superficie`, `--tinta`, `--fio-cor`, `--link`) e a paleta editorial
+  (`--ed-*`, seção 9.5). Cor nova fora dessas variáveis, só com aprovação do
+  editor. `--mar`, `--sol`, `--mar-claro` e `--espuma` são apelidos: existem
+  porque 156 pedaços de HTML trazem `style="color:var(--mar)"` cravado. Não
+  use os apelidos em código novo.
 - **JS:** só `visual.js`. Sem framework, sem dependência externa. Exceção
   registrada: `functions/clima.js` (servidor, ver seção 1).
 - **Acentuação:** os HTML são UTF-8. Escreva com acento correto no conteúdo.
 - **Nomes de arquivo:** minúsculo, sem acento, separado por hífen.
 
-## 9.5 O layout (redesign de 06/09/2026, marca em grafite e osso desde 08/09)
+## 9.5 O layout (redesign de 06/09/2026, site todo claro desde 09/09)
 
 A estrutura do index.html continua a mesma de 19/08/2026: pacote de capa no
 lugar do carrossel, com manchete dominante, rio de últimas, sub-destaques,
@@ -221,34 +221,49 @@ vestimenta: o `estilo.css` foi reescrito com anatomia de jornal (faixa de
 marca, barra de editorias que gruda, régua dupla nos títulos de seção,
 cards brancos com fio) e acabamento de restrição (ar entre blocos, raio
 máximo de 12px, sombra só no hover, folha branca). Depois do primeiro
-resultado no ar, a cor foi revista duas vezes: primeiro os tons do leque, que
-estavam escuros demais e faziam o site ler como preto e branco; depois a
-marca, porque o azul esverdeado e o amarelo davam ao site a cara de material
-gerado por IA. O registro das duas está em
+resultado no ar, a cor foi revista três vezes: os tons do leque, que estavam
+escuros demais e faziam o site ler como preto e branco; a marca, porque o azul
+esverdeado e o amarelo davam ao site a cara de material gerado por IA; e por
+fim o site inteiro, que ficou claro do topo ao rodapé, com o topo no jeito do
+site da Apple e sem as ondas. O registro das três está em
 `proposta/17-redesign-layout-set-2026.md`.
 
 Regras do layout:
 
-- **A marca é grafite e osso (decisão do editor, 08/09/2026).** Nada de azul
-  esverdeado e nada de amarelo, e o verde saiu também dos neutros: cinza com
-  fundo ciano é metade daquela cara de template. `--breu` é a tinta,
-  `--grafite` é a faixa de marca e o link, `--osso` é o acento, `--pedra` e
-  `--papel` são os claros. `--coral` é o único tom forte que sobrou e fica
-  reservado para urgência (bolinha de Últimas, erro, 404, sublinhado de link no
-  hover). Link não tem cor: é a tinta com sublinhado fino, como em jornal.
-- **O logo segue os tokens, não o HTML.** O SVG das 185 páginas traz os hex
-  antigos como atributo de apresentação, que perde para qualquer regra de CSS.
-  As regras que pintam o logo estão no bloco 4. Página nova que o ciclo gerar
-  copiando o cabeçalho antigo já nasce com a cor certa, sem ninguém mexer.
+- **O site é todo claro (decisão do editor, 09/09/2026).** Não existe faixa
+  escura, bloco escuro nem modo escuro. Nada de `@media prefers-color-scheme`
+  no `estilo.css`: se alguém precisar de modo escuro de novo, é conversa com o
+  editor. O Resumo Semanal e a leitura do horóscopo, que eram os dois blocos
+  escuros, hoje são faixas em `--superficie-2`. A classe `.escuro` continua no
+  HTML e o nome mente: hoje quer dizer "faixa de fundo chapado".
+- **A marca é o azul marinho.** `--marinho` é a cor da marca: letras do logo,
+  link, foco, item ativo e régua. `--breu` é a tinta do texto. `--coral` é só
+  urgência (bolinha de Últimas, erro, 404, sublinhado de link no hover).
+  `--grafite`, `--pedra`, `--papel`, `--areia` e `--suave` são os neutros, sem
+  fundo ciano: cinza esverdeado é metade da cara de template.
+- **O logo guarda as cores do desenho.** O sol é sol (`--sol-logo`) e o mar é
+  mar (`--mar-logo`), e essas duas variáveis não aparecem em mais lugar nenhum
+  do site. As letras vão em `--marinho`. O SVG das 185 páginas traz os hex
+  antigos como atributo de apresentação, que perde para qualquer regra de CSS,
+  então quem pinta o logo é o bloco 4. Página nova que o ciclo gerar copiando o
+  cabeçalho antigo já nasce com a cor certa, sem ninguém mexer.
+- **O topo é no jeito Apple.** Barra branca e translúcida com blur por trás,
+  tipo pequeno em peso 400, hairline de 1px embaixo e nada mais. Nada de faixa
+  colorida, gradiente, sombra ou logo grande. Depois de rolar sobra só a barra
+  de editorias, com 44px. Alvo de toque de 44px continua valendo: mexeu no
+  padding da nav, roda a auditoria.
+- **Sem ondas.** A faixa `.horizonte` da capa, o botão de pausa e o selo saíram
+  em 09/09. O HTML continua com a `<div class="horizonte">` (não mexemos em
+  página), então o CSS a esconde. Não reponha onda em lugar nenhum.
 - **Paleta editorial aprovada.** As oito cores da marca continuam intocadas.
   Além delas existem doze cores de editoria (`--ed-poder-publico`,
   `--ed-economia`, `--ed-infraestrutura`, `--ed-santa-catarina`,
   `--ed-turismo`, `--ed-meio-ambiente`, `--ed-servico`, `--ed-brasil`,
   `--ed-cultura`, `--ed-esporte`, `--ed-clima`, `--ed-saude`), mais
   `--ed-cidade`, que é apelido de `--ed-servico`. Cada uma tem três tons e só
-  três: o tom vivo (`--ed-X`, entre 4,60:1 e 4,79:1 sobre branco, sobre o
-  fundo, sobre a espuma e sobre o próprio tint), o `-claro` (7:1 ou mais
-  sobre breu, é o que vale no modo escuro) e o `-tint` (fundo pálido).
+  três: o tom vivo (`--ed-X`, que é o que o site usa), o `-claro` (7:1 ou mais
+  sobre breu, que hoje nenhuma regra usa: ficou pronto caso o modo escuro
+  volte) e o `-tint` (fundo pálido).
   `--ed-X-texto` não existe mais como tom separado: virou apelido do tom
   vivo. Todos com contraste medido no bloco 1 do `estilo.css`. Para conferir,
   `python3 ferramentas/contraste.py` lê a paleta do CSS, mede tom por tom nos
@@ -277,11 +292,11 @@ Regras do layout:
   certo, porque vestir a cor de outra editoria seria mentira. Se um assunto
   novo começar a aparecer muito, acrescente o termo ao mapa no fim do
   `visual.js`.
-- O céu do cabeçalho muda com a hora de Brasília e o sol da marca vira lua à
-  noite (classes `ceu-*` do visual.js). Sem JS, a faixa fica no grafite de
-  sempre. Com a marca em grafite o céu virou monocromático, então a linha
-  d'água puxa para a areia: é a única luz do horizonte, e sem ela a faixa vira
-  borrão cinza. Amanhecer e entardecer continuam quentes, em coral e osso.
+- O céu por hora saiu junto com as ondas: com a faixa de marca branca não há
+  onde pintar céu. O `visual.js` segue escrevendo as classes `ceu-*` e
+  `tempo-*`, que hoje não pintam nada, e segue chamando o `/clima`. Se elas
+  nunca mais forem usadas, essa chamada e o `functions/clima.js` podem sair,
+  mas isso é decisão do editor.
 - Movimento novo usa os tokens `--dur-*` e `--curva-*`. Estado invisível mora
   sempre no `from` do keyframe, nunca na regra do elemento. Nada de sombra em
   repouso, hover em foto ou raio maior que 12px.
@@ -292,12 +307,6 @@ Regras do layout:
   matéria compartilham o nome `capa-mNN`, os dois lados escritos pelo
   `visual.js` (no clique da chamada e no `pagereveal` da matéria). Nome único
   por página: só a primeira foto de topo entra.
-- **Modo escuro.** Segue a preferência do sistema (`prefers-color-scheme`),
-  sem botão. Só a camada semântica e o leque viram: cada editoria troca o tom
-  vivo pelo `-claro`, e o tint vira fundo escuro tingido. Bloco 13 do
-  `estilo.css`. Componente novo que use os tokens já nasce funcionando nos
-  dois modos; peça escura sobre claro (botão em breu, chip pressionado)
-  precisa da inversão declarada nesse bloco. Impressão sai sempre clara.
 - O material de design da equipe está na pasta `proposta/`.
 
 ## 10. Ao criar página nova
