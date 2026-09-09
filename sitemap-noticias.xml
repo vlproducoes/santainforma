@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-169-projetos-parados-camara-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09T06:15:00-03:00</news:publication_date>
+      <news:title>Câmara de Itapema tem 640 projetos de lei esperando decisão, e 204 deles são do ano passado</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-168-temporal-granizo-quinta-sexta-farroupilha-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-07T06:50:00-03:00</news:publication_date>
       <news:title>Bombinhas debate em 15 de setembro o plano de educação até 2036, e a cidade cresceu 70% desde o plano que está acabando</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-162-restinga-gravata-navegantes-meia-praia-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-06T18:20:00-03:00</news:publication_date>
-      <news:title>Navegantes começa a plantar a restinga que o IMA exigiu pelo alargamento da praia, e a Meia Praia de Itapema segue sem draga</news:title>
     </news:news>
   </url>
 
