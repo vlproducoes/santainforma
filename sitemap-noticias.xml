@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-171-ldo-2027-itapema-954-milhoes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09T18:30:00-03:00</news:publication_date>
+      <news:title>Itapema prevê receita de R$ 954,3 milhões em 2027, e a Prefeitura escreve que o salto de 18,3% vem do empréstimo que banca o alargamento da praia</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-170-fila-creche-itajai-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-07T18:20:00-03:00</news:publication_date>
       <news:title>Itapema ganha duas estações que medem chuva e vento, e a Defesa Civil comprou outras duas com recurso próprio</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-164-mutirao-castracao-daba-itapema-14-setembro</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-07T12:20:00-03:00</news:publication_date>
-      <news:title>Mutirão de castração de Itapema é em 14 de setembro, não exige CadÚnico e o agendamento fecha no dia 11</news:title>
     </news:news>
   </url>
 
