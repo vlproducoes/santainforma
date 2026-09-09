@@ -204,6 +204,24 @@ Validação: `checa-site.py` e `contraste.py` em zero, auditoria em 14 páginas 
 5 larguras com zero overflow, zero alvo de toque pequeno e zero par abaixo de
 AA. Nenhum HTML mudou.
 
+## Miniatura na pilha e a marca na base do nome, 09/09
+
+Dois ajustes pedidos olhando a capa no ar.
+
+- **Miniatura na coluna da direita.** As três chamadas da seção "Itapema e
+  Costa Esmeralda" eram só texto e ganharam a miniatura quadrada da matéria à
+  direita, no mesmo desenho do rio de últimas: 96px no desktop, 88px no
+  celular. Foi preciso mexer no `index.html`, a primeira vez neste trabalho
+  todo: as chamadas não tinham `<img>` nenhuma. O `prompt-agente-noticias.md`
+  passou a mandar o ciclo de notícias levar a miniatura junto quando a pilha
+  gira, senão a coluna voltaria a ficar só-texto na próxima rotação. No CSS o
+  `:has(.pilha-mini)` devolve a coluna única quando a imagem não existe, então
+  chamada sem foto não abre buraco.
+- **A linha d'água na base do nome.** No SVG do logo a linha do mar nasce em
+  y=23 e a base de SANTA INFORMA está em y=26: a marca boiava três unidades
+  acima do nome. Um `translateY(3px)` no grupo do sol resolve, por CSS, sem
+  tocar no SVG das 198 páginas.
+
 ## O que o editor decidiu
 
 -1. Site todo claro, topo no jeito Apple, sem ondas, logo com sol e mar nas

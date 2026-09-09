@@ -489,7 +489,12 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
   completo, width/height/loading, e a foto 3:2 da manchete com loading="eager"
   fetchpriority="high". A seção "Itapema e Costa Esmeralda" (líder .lider-sec,
   pilha de 3 e cards .card.v2) e o Resumo Semanal giram como antes: o mais
-  antigo sai. REGRA DE CURADORIA: matéria que está no rio de últimas NÃO
+  antigo sai. Cada article da .pilha leva a miniatura quadrada da matéria de
+  destino como ÚLTIMO filho: <img class="pilha-mini"
+  src="imagens/miniaturas/mNN-mini.jpg" width="160" height="160" loading="lazy"
+  decoding="async" alt=alt real do recorte quadrado>. Copie o bloco de uma
+  chamada existente. Sem miniatura, omita a img e a chamada volta a ser
+  só-texto sem buraco, mas prefira sempre a matéria que tem foto. REGRA DE CURADORIA: matéria que está no rio de últimas NÃO
   entra também na seção "Itapema e Costa Esmeralda" (líder nem pilha). No
   celular tudo vira uma coluna só, e repetir a mesma chamada duas telas
   depois faz a página parecer que não anda. Pegue as próximas mais recentes

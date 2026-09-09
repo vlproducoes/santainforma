@@ -469,6 +469,11 @@ header nav[aria-label="Principal"] a.ativo{color:var(--tinta);border-bottom-colo
    O desenho guarda as cores literais, como o editor pediu: o sol e sol, o mar
    e mar. As letras vao no azul marinho da marca, e a tagline no cinza, que no
    corpo de 9,5px precisa passar no contraste. */
+/* a linha d'agua do desenho desce 3 unidades para pousar exatamente na base
+   das letras: no SVG a linha nasce em y=23 e a base do SANTA INFORMA esta em
+   y=26, entao a marca ficava boiando acima do nome. Feito por CSS, como a
+   cor, para nao mexer no SVG das 198 paginas. */
+header .sun{transform:translateY(3px)}
 header .sun .raios{stroke:var(--sol-logo)}
 header .sun .astro circle{fill:var(--sol-logo)}
 header .sun .linha-sol{fill:var(--sol-logo)}
@@ -766,7 +771,15 @@ body:has(.capa-grade) main.com-capa>.wrap{padding-top:var(--e-6)}
 .lider-sec h3{font-size:var(--t-card-g);line-height:var(--lh-display);letter-spacing:var(--ls-display);max-width:var(--medida-lider);margin:var(--e-2) 0;color:var(--tinta);transition:color var(--dur-toque)}
 .lider-sec p{font-family:var(--corpo);font-size:var(--t-legenda);line-height:1.5;color:var(--tinta-2);max-width:var(--medida-legenda)}
 .pilha{grid-column:8/13;display:flex;flex-direction:column;border-left:0;padding-left:0}
-.pilha article{position:relative;padding-block:var(--esp-comp);padding-left:var(--e-4);border-left:3px solid var(--ed);border-bottom:var(--fio) solid var(--fio-cor);flex:1}
+/* cada chamada da pilha leva a miniatura da materia a direita, no mesmo
+   desenho do rio de ultimas. As tres linhas explicitas existem para a foto
+   poder atravessar chapeu, titulo e resumo com um grid-row:1/-1 que nao
+   depende de quantos filhos a chamada tem. Sem imagem o :has devolve a
+   coluna unica e a chamada volta a ser so-texto, sem buraco. */
+.pilha article{position:relative;display:grid;grid-template-columns:minmax(0,1fr);column-gap:var(--esp-comp);align-content:start;padding-block:var(--esp-comp);padding-left:var(--e-4);border-left:3px solid var(--ed);border-bottom:var(--fio) solid var(--fio-cor);flex:1}
+.pilha article:has(.pilha-mini){grid-template-columns:minmax(0,1fr) var(--pilha-thumb,96px);grid-template-rows:repeat(3,auto)}
+.pilha article>:not(.pilha-mini){grid-column:1}
+.pilha .pilha-mini{grid-column:2;grid-row:1/-1;width:var(--pilha-thumb,96px);height:var(--pilha-thumb,96px);object-fit:cover;border-radius:var(--raio-s);background:var(--fio-cor);align-self:center}
 .pilha article:first-child{padding-top:0}
 .pilha article:last-child{border-bottom:0}
 .pilha h3{font-family:var(--corpo);font-weight:var(--peso-medio);font-size:calc(var(--t-lista) * 1.08);line-height:1.3;letter-spacing:0;color:var(--tinta);margin:var(--e-1) 0;transition:color var(--dur-toque)}
@@ -1071,7 +1084,7 @@ footer a:hover{color:var(--tinta);text-decoration:underline;text-decoration-thic
   .rio{grid-column:1/13}
   .subs{grid-column:1/13}
   .lider-sec{grid-column:1/13}
-  .pilha{grid-column:1/13;border-top:var(--fio) solid var(--fio-cor);padding-top:var(--e-2)}
+  .pilha{grid-column:1/13;border-top:var(--fio) solid var(--fio-cor);padding-top:var(--e-2);--pilha-thumb:88px}
   .pilha article:first-child{padding-top:var(--esp-comp)}
   .linha-2{grid-template-columns:repeat(3,minmax(0,1fr))}
   #semanal .wrap{grid-template-columns:minmax(0,1fr)}
