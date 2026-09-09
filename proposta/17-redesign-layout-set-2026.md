@@ -231,6 +231,38 @@ Dois ajustes pedidos olhando a capa no ar.
   direitas baterem. Está em unidade do viewBox, então escala junto e fecha
   igual no celular.
 
+## O clique da foto da manchete, 09/09
+
+O editor avisou que a foto da matéria em destaque não abria a página. Era
+verdade, e o motivo é uma pegadinha do CSS que vale ficar registrada.
+
+O card inteiro é clicável por um truque comum: o link do título recebe um
+`::after` com `position:absolute` e `inset:0`, que se estica por todo o
+`article`. Isso depende de o `article` ser o bloco de contenção do overlay.
+
+O h2 da manchete tem a animação de chegada `sobe-suave`, com `fill-mode: both`.
+Terminada a animação, o `both` continua aplicando a última chave, e como a
+única chave escrita é a de partida, o valor final vem do próprio elemento. Só
+que o `transform` não volta para `none`: fica computado como
+`matrix(1,0,0,1,0,0)`. Para o CSS isso é um valor diferente de `none`, e
+qualquer valor diferente de `none` faz o elemento virar bloco de contenção dos
+filhos absolutos. Resultado: o overlay parava de medir a `.manchete` (816 por
+1176) e passava a medir o h2 (646 por 288). O título abria, a foto não.
+
+Confirmei com `document.elementFromPoint` no meio da foto: devolvia
+`img.foto-tratada`, não o link. A correção é trocar `both` por `backwards` nas
+duas animações que mexem em `transform` dentro do pacote de capa. Na tela fica
+igual, porque o fim já era o estado natural.
+
+De quebra, no celular a foto da manchete sangra até a borda e o overlay parava
+na margem: a faixa de 16px de cada lado não abria a matéria. O overlay agora
+acompanha a sangria.
+
+Escrevi uma sonda que roda os cinco pontos de cada foto (centro e os quatro
+cantos) e diz se cada um cai no link. Com o CSS antigo ela reprova a manchete
+nos dois tamanhos; com o corrigido, 90 fotos em quatro páginas passam. A regra
+foi para o CLAUDE.md 9.5, porque é o tipo de coisa que volta.
+
 ## O que o editor decidiu
 
 -1. Site todo claro, topo no jeito Apple, sem ondas, logo com sol e mar nas

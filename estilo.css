@@ -741,9 +741,17 @@ body:has(.capa-grade) main.com-capa>.wrap{padding-top:var(--e-6)}
 @keyframes filete{from{transform:scaleX(0)}}
 .manchete .ed{animation:surge .3s var(--curva-chegada) .05s both}
 @keyframes surge{from{opacity:0}}
-.manchete h2{font-size:var(--t-manchete);line-height:var(--lh-manchete);letter-spacing:var(--ls-manchete);max-width:var(--medida-manchete);margin-left:-.02em;color:var(--tinta);animation:sobe-suave var(--dur-chegada) var(--curva-chegada) .12s both}
+.manchete h2{font-size:var(--t-manchete);line-height:var(--lh-manchete);letter-spacing:var(--ls-manchete);max-width:var(--medida-manchete);margin-left:-.02em;color:var(--tinta);animation:sobe-suave var(--dur-chegada) var(--curva-chegada) .12s backwards}
+/* ATENCAO ao fill-mode aqui. Com "both", a animacao continua aplicando o
+   valor da ultima chave depois de terminar, e o transform fica computado como
+   matrix(1,0,0,1,0,0). Para o CSS isso e "um valor diferente de none", entao o
+   h2 vira bloco de contencao dos filhos absolutos: o ::after de inset:0 que
+   faz o card inteiro clicavel encolhe para o tamanho do titulo, e a foto da
+   manchete para de abrir a materia. Com "backwards" a propriedade volta a
+   none no fim e o overlay pega a .manchete inteira. Visualmente e igual: a
+   unica chave e a de partida, e o fim ja e o estado natural. */
 @keyframes sobe-suave{from{opacity:0;transform:translateY(12px)}}
-.capa-grade .linhafina{font-family:var(--corpo);font-style:italic;font-weight:500;font-size:var(--t-linhafina);line-height:var(--lh-linhafina);color:var(--tinta-2);max-width:var(--medida-linhafina);margin:0;animation:sobe-suave var(--dur-chegada) var(--curva-chegada) .22s both}
+.capa-grade .linhafina{font-family:var(--corpo);font-style:italic;font-weight:500;font-size:var(--t-linhafina);line-height:var(--lh-linhafina);color:var(--tinta-2);max-width:var(--medida-linhafina);margin:0;animation:sobe-suave var(--dur-chegada) var(--curva-chegada) .22s backwards}
 .meta-capa{animation:surge .4s var(--curva-chegada) .3s both}
 /* flex:1 estica a figura ate o pe do rio: o aspect-ratio vira minimo e o
    object-fit absorve, fechando o vao sob a legenda no desktop */
@@ -1243,6 +1251,9 @@ footer a:hover{color:var(--tinta);text-decoration:underline;text-decoration-thic
 @media(max-width:480px){
   /* a foto da manchete e as figuras da materia sangram ate a borda, sem raio */
   .manchete figure{margin-inline:calc(-1 * var(--margem))}
+  /* o overlay de clique acompanha a sangria: sem isso a faixa de margem de
+     cada lado da foto fica fora do link, e no dedo isso e muito */
+  .manchete h2 a::after{inset:0 calc(-1 * var(--margem))}
   .manchete figure img{border-radius:0}
   .manchete figcaption{padding-inline:var(--margem)}
   .estreito figure.foto{margin-inline:calc(-1 * var(--margem));width:auto}

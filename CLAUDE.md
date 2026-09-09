@@ -310,6 +310,16 @@ Regras do layout:
 - Movimento novo usa os tokens `--dur-*` e `--curva-*`. Estado invisível mora
   sempre no `from` do keyframe, nunca na regra do elemento. Nada de sombra em
   repouso, hover em foto ou raio maior que 12px.
+- **Animação de `transform` com `both` quebra o clique do card.** Terminada a
+  animação, o `both` continua aplicando a última chave e o `transform` fica
+  computado como `matrix(1,0,0,1,0,0)`. Para o CSS isso é um valor diferente de
+  `none`, então o elemento vira bloco de contenção dos filhos absolutos, e o
+  `::after` de `inset:0` que faz o card inteiro clicável encolhe para o tamanho
+  do texto. Foi o que tirou o link da foto da manchete em 09/09/2026. Em
+  elemento que tenha (ou possa vir a ter) um link com esse overlay, use
+  `backwards`, não `both`: o resultado na tela é igual, porque a única chave é a
+  de partida. Mexeu em animação de chegada ou no overlay? Confira no console
+  com `document.elementFromPoint` no meio da foto: tem que devolver o `<a>`.
 - Nada de `transform` em repouso em `.chip`, `.signo`, `.manchete`, `.sub`,
   `.lider-sec`, `.pilha article` e `article.card.v2`: a mola do JS escreve
   `transform` neles no toque.
