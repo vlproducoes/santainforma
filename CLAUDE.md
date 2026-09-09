@@ -247,6 +247,13 @@ Regras do layout:
   antigos como atributo de apresentação, que perde para qualquer regra de CSS,
   então quem pinta o logo é o bloco 4. Página nova que o ciclo gerar copiando o
   cabeçalho antigo já nasce com a cor certa, sem ninguém mexer.
+- **O favicon segue o logo.** Fundo branco, sol em `--sol-logo`, mar em
+  `--mar-logo`, a mesma geometria do desenho do cabeçalho. Mudou a cor da
+  marca? Ajuste as três constantes do `ferramentas/icone.py` e o `favicon.svg`
+  (escrito à mão) e rode `python3 ferramentas/icone.py`, que reescreve o
+  `favicon.ico`, o `apple-touch-icon.png` e os dois PNG. Não edite os PNG na
+  mão. Não existe `theme-color` nem manifesto: se um dia entrarem, entram nas
+  198 páginas de uma vez.
 - **O topo é no jeito Apple.** Barra branca e translúcida com blur por trás,
   tipo pequeno em peso 400, hairline de 1px embaixo e nada mais. Nada de faixa
   colorida, gradiente, sombra ou logo grande. Depois de rolar sobra só a barra
