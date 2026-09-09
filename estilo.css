@@ -479,7 +479,15 @@ header .sun .astro circle{fill:var(--sol-logo)}
 header .sun .linha-sol{fill:var(--sol-logo)}
 header .sun>g[fill]{fill:var(--mar-logo)}
 header .wordmark text{fill:var(--marinho)}
-header .tagline{fill:var(--suave)}
+/* a tagline vai justificada na largura do nome: o SVG traz letter-spacing 2.5
+   e para o L de LITORAL e o A de INFORMA fecharem na mesma vertical o valor
+   e 3,066. Nao foi no olho: no console, getExtentOfChar do ultimo glifo de
+   cada um dos dois textos, mexendo no letter-spacing ate as duas bordas
+   direitas baterem. Vale para Archivo 600 em 9,5 sobre o wordmark em Archivo
+   800 em 25; trocou fonte, peso ou texto da marca, meca de novo do mesmo
+   jeito. Como o valor esta em unidade do viewBox, escala junto com o SVG e
+   fecha igual no celular. */
+header .tagline{fill:var(--suave);letter-spacing:3.066px}
 
 /* o sol nasce so na capa, uma vez por carregamento */
 header.ceu .sun{animation:nascer 1.3s var(--curva-chegada) both}

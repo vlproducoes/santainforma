@@ -221,6 +221,15 @@ Dois ajustes pedidos olhando a capa no ar.
   y=23 e a base de SANTA INFORMA está em y=26: a marca boiava três unidades
   acima do nome. Um `translateY(3px)` no grupo do sol resolve, por CSS, sem
   tocar no SVG das 198 páginas.
+- **A tagline justificada na largura do nome.** LITORAL DE SANTA CATARINA
+  parava bem antes do A de INFORMA. O jeito certo no SVG seria `textLength`,
+  que é atributo e não dá para escrever por CSS, e mexer nisso pediria editar
+  o cabeçalho das 198 páginas. Então a justificação saiu pelo `letter-spacing`,
+  que é a mesma coisa para uma linha só de caixa alta espaçada: 3,066 em vez
+  do 2,5 que vem no SVG. O valor foi medido no navegador, com
+  `getExtentOfChar` do último glifo de cada um dos dois textos, até as bordas
+  direitas baterem. Está em unidade do viewBox, então escala junto e fecha
+  igual no celular.
 
 ## O que o editor decidiu
 
