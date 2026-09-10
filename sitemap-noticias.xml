@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-172-banheiros-modulares-orla-itapema-pregao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-10T06:55:00-03:00</news:publication_date>
+      <news:title>Os banheiros novos da orla de Itapema são alugados, e a ata do pregão soma R$ 2,99 milhões</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-171-ldo-2027-itapema-954-milhoes</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-08T06:30:00-03:00</news:publication_date>
       <news:title>Cavalgada da Festa Farroupilha larga às 18h30 de quinta em Itapema, e a programação final mudou três horários de agosto</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-165-estacoes-meteorologicas-itapema-amfri</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-07T18:20:00-03:00</news:publication_date>
-      <news:title>Itapema ganha duas estações que medem chuva e vento, e a Defesa Civil comprou outras duas com recurso próprio</news:title>
     </news:news>
   </url>
 
