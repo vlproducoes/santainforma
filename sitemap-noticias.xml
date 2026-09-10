@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-173-subsidio-praiana-transporte-coletivo-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-10T12:20:00-03:00</news:publication_date>
+      <news:title>Itapema aprova de novo R$ 906 mil para a empresa de ônibus, o mesmo valor de 2024, e a lei manda estudar tarifa zero</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-172-banheiros-modulares-orla-itapema-pregao</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-08T12:40:00-03:00</news:publication_date>
       <news:title>Câmara de Itapema tira a Tribuna do Povo da sessão desta terça para votar 21 projetos, com mais de 590 na fila</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-166-farroupilha-programacao-cavalgada-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-08T06:30:00-03:00</news:publication_date>
-      <news:title>Cavalgada da Festa Farroupilha larga às 18h30 de quinta em Itapema, e a programação final mudou três horários de agosto</news:title>
     </news:news>
   </url>
 
