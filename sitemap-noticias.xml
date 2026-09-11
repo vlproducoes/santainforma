@@ -27,6 +27,30 @@
   </url>
 
   <url>
+    <loc>https://santainforma.com.br/materia-177-aluguel-temporada-itapema-cadastur-iss</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-11T06:15:00-03:00</news:publication_date>
+      <news:title>Itapema tem 717 imóveis de temporada no Airbnb, e o plano da própria Prefeitura diz que só 27,68% da hospedagem da cidade está no Cadastur</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-176-plano-turismo-itapema-perfil-turista</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-11T06:10:00-03:00</news:publication_date>
+      <news:title>Turista que veio a Itapema no verão gastou R$ 1.858 por dia em grupo, e 1 em cada 4 era argentino: os números da pesquisa que está dentro do novo Plano de Turismo</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-173-subsidio-praiana-transporte-coletivo-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-09T12:35:00-03:00</news:publication_date>
       <news:title>Justiça manda Itajaí zerar a fila da creche em oito meses, e os editais de Itapema não dizem quantas crianças esperam</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-169-projetos-parados-camara-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-09T06:15:00-03:00</news:publication_date>
-      <news:title>Câmara de Itapema tem 640 projetos de lei esperando decisão, e 204 deles são do ano passado</news:title>
     </news:news>
   </url>
 

@@ -2089,5 +2089,27 @@
     "id_pexels": 37293704,
     "termo_de_busca": "heavy rain falling street pavement",
     "baixada_em": "2026-09-11"
+  },
+  "turistas-itapema-plano-turismo.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "K",
+    "url_fotografo": "https://www.pexels.com/@kelly",
+    "url_original": "https://www.pexels.com/photo/umbrellas-by-the-shore-23732430/",
+    "id_pexels": 23732430,
+    "termo_de_busca": "brazilian beach summer crowd aerial",
+    "baixada_em": "2026-09-11"
+  },
+  "aluguel-temporada-itapema-iss.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Andre Dantas",
+    "url_fotografo": "https://www.pexels.com/@andredantasfotografia",
+    "url_original": "https://www.pexels.com/photo/vibrant-high-rise-buildings-in-natal-brazil-coastline-28866361/",
+    "id_pexels": 28866361,
+    "termo_de_busca": "beachfront apartment towers skyline coast",
+    "baixada_em": "2026-09-11"
   }
 }
