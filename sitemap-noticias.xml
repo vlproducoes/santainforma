@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-178-orcamento-itapema-1-bilhao-prestacao-contas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-11T12:30:00-03:00</news:publication_date>
+      <news:title>O orçamento de Itapema passou de R$ 1 bilhão, e metade do aumento do ano foi para infraestrutura urbana</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-175-el-nino-95-por-cento-estacoes-amfri</loc>
     <news:news>
       <news:publication>
