@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-179-sessao-limpa-pauta-resultado-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-11T18:40:00-03:00</news:publication_date>
+      <news:title>A sessão limpa-pauta de Itapema terminou em 18 aprovações por 12 a 0, e a regra do alvará de construção foi retirada</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-178-orcamento-itapema-1-bilhao-prestacao-contas</loc>
     <news:news>
       <news:publication>
@@ -95,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-09T18:30:00-03:00</news:publication_date>
       <news:title>Itapema prevê receita de R$ 954,3 milhões em 2027, e a Prefeitura escreve que o salto de 18,3% vem do empréstimo que banca o alargamento da praia</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-170-fila-creche-itajai-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-09T12:35:00-03:00</news:publication_date>
-      <news:title>Justiça manda Itajaí zerar a fila da creche em oito meses, e os editais de Itapema não dizem quantas crianças esperam</news:title>
     </news:news>
   </url>
 
