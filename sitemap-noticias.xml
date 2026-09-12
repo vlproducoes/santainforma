@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-180-alto-areal-estrada-alargamento-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-12T06:40:00-03:00</news:publication_date>
+      <news:title>A estrada do Alto Areal alargou um ano depois da detonação das rochas, e o programa estadual citado em 2025 não aparece no anúncio novo</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-179-sessao-limpa-pauta-resultado-itapema</loc>
     <news:news>
       <news:publication>
@@ -95,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-10T06:55:00-03:00</news:publication_date>
       <news:title>Os banheiros novos da orla de Itapema são alugados, e a ata do pregão soma R$ 2,99 milhões</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-171-ldo-2027-itapema-954-milhoes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-09T18:30:00-03:00</news:publication_date>
-      <news:title>Itapema prevê receita de R$ 954,3 milhões em 2027, e a Prefeitura escreve que o salto de 18,3% vem do empréstimo que banca o alargamento da praia</news:title>
     </news:news>
   </url>
 
