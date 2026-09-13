@@ -12,8 +12,10 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANALYTICS = 'G-PQKY68PE07'
 
 # Tags que precisam abrir e fechar na conta certa.
-PARES = ['main', 'section', 'div', 'article', 'figure', 'ul', 'table',
-         'time', 'ins', 'script']
+# head e body entraram em 13/09/2026: cinco materias tinham </head> duplicado
+# desde a instalacao do AdSense e ninguem viu, porque a conta nao era checada.
+PARES = ['head', 'body', 'main', 'section', 'div', 'article', 'figure', 'ul',
+         'table', 'time', 'ins', 'script']
 # Estas o HTML permite fechar sozinho em alguns casos, entao so reprova
 # quando fecha mais do que abre, que e erro de verdade.
 FROUXAS = ['p', 'li', 'a', 'span']
