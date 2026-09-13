@@ -10,7 +10,7 @@
 
   <url>
     <loc>https://santainforma.com.br/regiao</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1054,6 +1054,12 @@
   <url>
     <loc>https://santainforma.com.br/materia-181-regularize-mei-itapema-sala-empreendedor</loc>
     <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-183-loa-2027-porto-belo-orcamento-comparado</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

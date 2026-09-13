@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-183-loa-2027-porto-belo-orcamento-comparado</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-13T06:30:00-03:00</news:publication_date>
+      <news:title>Porto Belo discute o orçamento de 2027 nesta segunda com R$ 13,3 mil de receita prevista por morador, contra R$ 10,6 mil em Itapema</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-182-estacoes-meteorologicas-porto-belo-amfri</loc>
     <news:news>
       <news:publication>
@@ -83,30 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-11T06:20:00-03:00</news:publication_date>
       <news:title>O asfalto da alça nova da BR-101 em Itapema está pronto, e o prazo de cinco meses anunciado pela Prefeitura vence em 24 de setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-177-aluguel-temporada-itapema-cadastur-iss</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-11T06:15:00-03:00</news:publication_date>
-      <news:title>Itapema tem 717 imóveis de temporada no Airbnb, e o plano da própria Prefeitura diz que só 27,68% da hospedagem da cidade está no Cadastur</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-176-plano-turismo-itapema-perfil-turista</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-11T06:10:00-03:00</news:publication_date>
-      <news:title>Turista que veio a Itapema no verão gastou R$ 1.858 por dia em grupo, e 1 em cada 4 era argentino: os números da pesquisa que está dentro do novo Plano de Turismo</news:title>
     </news:news>
   </url>
 
