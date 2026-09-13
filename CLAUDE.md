@@ -11,7 +11,8 @@ a Constituição vence este arquivo. Só o editor humano altera a Constituição
 
 `santainforma.com.br`, portal de notícias do litoral catarinense. Foco em Itapema
 e Costa Esmeralda, expandindo para Litoral Norte, Vales e Santa Catarina.
-Nacional só quando conversa com o leitor daqui.
+Nacional entra também, como nível próprio de cobertura. A regra está na
+seção 7.5.
 
 **Stack:** HTML estático, sem build. GitHub e Cloudflare Pages. Um arquivo por
 página, na raiz. CSS único em `estilo.css`, JS único em `visual.js`. Exceção
@@ -176,6 +177,46 @@ Toda matéria lista as fontes com link no rodapé. Camadas sugeridas:
 
 **Reescrita 100% original.** Citação curta com crédito pode. Parágrafo copiado,
 jamais.
+
+## 7.5 Notícia nacional
+
+**Notícia nacional entra, e entra como nível próprio de cobertura.** Decisão do
+editor registrada em 13 de setembro de 2026. O Brasil deixou de ser exceção rara.
+Agora é um dos quatro níveis que o ciclo olha em toda execução, ao lado de
+Itapema, da região e de Santa Catarina.
+
+**Alvo de mistura:** cerca de 55% municipal, 20% regional, 10% estadual e 15%
+nacional. É tendência para olhar ao longo das semanas, não cota para cumprir na
+execução. Se Itapema tiver fato forte, Itapema vem primeiro, sempre.
+
+O que continua valendo em matéria nacional:
+
+- **Reescrita 100% original.** Vale a seção 7 inteira. Parágrafo copiado, jamais.
+- **Trabalho nosso por cima.** Toda matéria nacional leva pelo menos um destes:
+  contexto histórico do assunto, número que ninguém juntou, consequência prática
+  (o que o leitor faz, até quando, com qual documento), a lacuna concreta do
+  anúncio oficial, ou a leitura de quem é daqui. Esse é o bar que separa
+  jornalismo de reembalagem, e foi reembalagem que reprovou o site no AdSense em
+  27 de agosto de 2026.
+- **Número solto não vira matéria.** IPCA, PIB, Selic, PNAD, salário mínimo,
+  restituição, abono e bandeira tarifária não são matéria quando o texto só
+  repete o número que sai igual em centenas de sites no mesmo dia. Com leitura,
+  comparação ou efeito datado sobre alguém, vira.
+- **Política nacional pede os dois lados.** Situação e oposição, com posição
+  registrada de cada uma. Se um lado não respondeu, o texto diz isso com todas as
+  letras.
+- **As linhas vermelhas da seção 8**, inteiras.
+
+**O ângulo local passa a ser preferência, não exigência, em matéria nacional.**
+Quando existir, use, porque é o que o portal faz melhor e é o que ninguém mais
+faz. Quando não existir, a matéria sai assim mesmo, desde que passe no bar de
+cima. Para matéria municipal, regional e estadual nada muda.
+
+**Pendência que só o editor resolve.** A seção 3 da Constituição ainda diz que
+nacional e mundial só entram quando conversam com o leitor daqui. Em conflito, a
+Constituição vence este arquivo. Então, enquanto essa linha não mudar, o fio
+local continua obrigatório na prática, e o parágrafo acima fica sem efeito. Quem
+altera a Constituição é o editor humano.
 
 ## 8. Linhas vermelhas
 

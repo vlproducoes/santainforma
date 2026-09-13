@@ -121,18 +121,25 @@ da Prefeitura. A cada execução, olhe os quatro antes de decidir:
    vizinhas, obras que cruzam municípios, BR-101, turismo e temporada.
 3. ESTADUAL (Santa Catarina). Governo de SC, Assembleia, MPSC, IMA, Defesa
    Civil, Polícia Militar, órgãos de saúde e educação do estado.
-4. NACIONAL (Brasil). Agência Brasil e EBC. Só entra quando conversa com o
-   leitor daqui: imposto que muda a vida do comerciante, juros, programa
-   habitacional, regra de turismo, clima. Nunca notícia nacional solta.
+4. NACIONAL (Brasil). Agência Brasil e EBC. Nível próprio de cobertura, e não
+   mais exceção: imposto que muda a vida do comerciante, juros, programa
+   habitacional, regra de turismo, clima, política federal. O que não entra é
+   notícia nacional sem trabalho nosso por cima.
 
-**Alvo de mistura, revisado em 3 de setembro de 2026:** cerca de 70% municipal,
-20% regional, 10% estadual e **no máximo 5% nacional**. O nacional era 12% e foi
-o que puxou o site para "conteúdo de baixo valor" no AdSense. Doze matérias
-nacionais sem recorte local foram despublicadas nessa data.
+**Alvo de mistura, revisado em 13 de setembro de 2026:** cerca de 55% municipal,
+20% regional, 10% estadual e **15% nacional**. O nacional era no máximo 5% desde
+a poda de 3 de setembro. O editor reabriu o nível em 13 de setembro de 2026. É
+tendência para olhar ao longo das semanas, não cota para cumprir na execução.
 
-Na prática: se as últimas execuções só publicaram Itapema, dê preferência a
-regional ou estadual, **não a nacional**. Se a cidade tiver fato forte, ela vem
-primeiro, sempre.
+Na prática: se as últimas execuções só publicaram Itapema, olhe regional,
+estadual e nacional, os três. Se a cidade tiver fato forte, ela vem primeiro,
+sempre.
+
+O que reprovou o site no AdSense em 27 de agosto de 2026 foi reembalagem, não o
+assunto nacional em si: release reescrito e estatística repetida sem nada de
+nosso. Por isso o nível voltou com o bar de valor agregado no lugar da cota
+apertada. As doze matérias despublicadas em 3 de setembro continuam
+despublicadas.
 
 Antes de decidir, liste os títulos e os chapéus de TODAS as matérias já
 publicadas no repositório. Isso serve para duas coisas: não repetir assunto já
@@ -165,7 +172,11 @@ a próxima. Volume alto é consequência de dia forte, nunca de meta a cumprir.
 **A escada, dentro de cada janela:**
 
 - **1ª matéria:** precisa ser **fato local novo**. Só isso. Se existe fato novo
-  em Itapema, na Costa Esmeralda ou na região, publica.
+  em Itapema, na Costa Esmeralda ou na região, publica. **Não havendo fato local
+  novo na janela, a 1ª pode ser estadual ou nacional**, desde que passe na trava
+  do valor agregado. Diga no relatório que abriu a janela sem fato local e por
+  quê. Isso vale desde 13 de setembro de 2026, e existe para que dia fraco na
+  cidade não signifique automaticamente dia mudo.
 
 - **2ª em diante:** cada uma precisa passar em **um destes três testes**, e você
   precisa dizer qual no relatório:
@@ -200,10 +211,15 @@ como tal.
 
 ### A trava do ângulo local
 
-**Toda matéria precisa de ângulo local verificável.** Antes de escrever,
-responda por escrito no relatório: *o que muda para quem mora em Itapema ou na
-Costa Esmeralda?* Se a resposta for genérica, do tipo "afeta todos os
-brasileiros", **não publique**.
+**Toda matéria municipal, regional e estadual precisa de ângulo local
+verificável.** Antes de escrever, responda por escrito no relatório: *o que muda
+para quem mora em Itapema ou na Costa Esmeralda?* Se a resposta for genérica, do
+tipo "afeta todos os brasileiros", **não publique**.
+
+**Em matéria nacional o ângulo local é preferência, não exigência** (decisão do
+editor de 13 de setembro de 2026). Tendo ângulo local, use, porque é o que
+ninguém mais faz. Não tendo, a matéria sai assim mesmo, desde que passe na trava
+do valor agregado logo abaixo. Diga no relatório qual dos dois casos é.
 
 Ângulo local de verdade é: número da cidade ou da região, órgão local que aplica
 a regra, prazo que vale aqui, endereço, pessoa ou setor daqui que é atingido,
@@ -214,13 +230,14 @@ final dizendo que a medida também vale aqui; o colunista citar Itapema numa
 piada. Isso é adjetivo regional colado em texto nacional, e foi exatamente o que
 gerou as 12 matérias despublicadas na poda de 3 de setembro de 2026.
 
-### Estatística nacional: proibida sem recorte local
+### Estatística nacional: o número sozinho não é matéria
 
 **Não publique IPCA, PIB, Selic, PNAD, salário mínimo, restituição de IR, abono,
 bandeira tarifária ou qualquer indicador nacional apenas noticiando o número.**
-Isso sai igual em centenas de sites no mesmo dia e não tem nada de nosso.
+Isso sai igual em centenas de sites no mesmo dia e não tem nada de nosso. A
+proibição é do texto raso, não do assunto.
 
-Só entra se você tiver **pelo menos uma** destas coisas:
+Entra se você tiver **pelo menos uma** destas coisas:
 
 1. Recorte oficial de Santa Catarina, da AMFRI ou do município, com a fonte
    aberta e conferida.
@@ -228,8 +245,12 @@ Só entra se você tiver **pelo menos uma** destas coisas:
    estabelecimentos, qual prazo, qual valor.
 3. Fala de fonte local obtida por você: secretaria, associação comercial,
    sindicato, produtor.
+4. Série histórica que você montou, comparação entre regiões do país, ou a
+   consequência prática explicada de verdade: o que o leitor faz, até quando,
+   com qual documento. Este item é o que abre a estatística nacional sem recorte
+   local, e vale desde 13 de setembro de 2026.
 
-Sem nenhuma das três, a pauta morre aqui. Registre no relatório que descartou e
+Sem nenhuma das quatro, a pauta morre aqui. Registre no relatório que descartou e
 por quê.
 
 ### A trava do valor agregado
@@ -270,14 +291,15 @@ independentes, ou de menção explícita de que procuramos e não obtivemos resp
 REGRA QUE NÃO SE QUEBRA: se não houver fato novo, NÃO PUBLIQUE NADA. Nunca crie
 dado, declaração ou número que não esteja na fonte.
 
-### Política nacional: pode, com fio local obrigatório
+### Política nacional: pode, com fio local sempre que houver
 
 Política nacional está **autorizada**, e é assunto legítimo. O que não entra é
-política nacional solta, do tipo "Câmara aprova X", que sai igual em todo lugar
-e não tem nada de Itapema.
+política nacional rasa, do tipo "Câmara aprova X" em três parágrafos, que sai
+igual em todo lugar e não tem nada de nosso.
 
-**Toda matéria de política nacional precisa de pelo menos um destes fios**, com
-fonte aberta, conferida e linkada:
+**Procure sempre um destes fios**, com fonte aberta, conferida e linkada. Desde
+13 de setembro de 2026 o fio deixou de ser obrigatório, mas segue sendo a
+primeira coisa a tentar, porque é o que dá vantagem ao portal:
 
 1. **Como votou a bancada de Santa Catarina.** Nome, partido e voto de cada
    deputado ou senador catarinense. O dado está aberto nos portais da Câmara e
@@ -289,8 +311,10 @@ fonte aberta, conferida e linkada:
 4. **O que dizem daqui.** Posição de vereadores, da Prefeitura ou de entidade
    local sobre a medida.
 
-Comparação prática: **"Câmara aprova a PEC X" não entra. "Como os sete deputados
-de SC votaram na PEC X e o que ela muda no caixa de Itapema" entra.**
+Comparação prática: **"Como os sete deputados de SC votaram na PEC X e o que ela
+muda no caixa de Itapema" é sempre melhor que "Câmara aprova a PEC X".** Sem o
+fio, a matéria precisa entregar o assunto explicado de verdade: o que muda, para
+quem, a partir de quando, e o que ainda depende de regulamentação.
 
 **Os dois lados, sempre.** Matéria de política precisa da posição de situação
 **e** de oposição, com fala ou posicionamento registrado de ambos. Se um lado
@@ -626,14 +650,16 @@ No fim da execução, diga sempre:
 1. Quantas matérias saíram hoje e **quantas saíram em cada um dos 7 dias
    anteriores**, para provar que a cadência não está travada num número fixo.
 2. Para cada matéria publicada, **na ordem em que saíram na janela**:
-   - **qual é o ângulo local**;
+   - **qual é o ângulo local**, ou, em matéria nacional sem ângulo local, **o
+     que ela entrega de nosso** (contexto, número que ninguém juntou,
+     consequência prática, lacuna do anúncio oficial);
    - se foi a **1ª da janela**, confirme que era fato local novo;
    - se foi a **2ª ou seguinte**, diga **qual dos três testes** ela passou
      (apuração própria, dado que ninguém reuniu, ou desdobramento com informação
      nova) e por quê, em uma frase. Sem essa frase, a matéria não deveria ter
      sido publicada;
-   - se for política nacional, **qual fio local** ela usou e se os dois lados
-     estão no texto;
+   - se for política nacional, **qual fio local** ela usou, ou que saiu sem fio,
+     e se os dois lados estão no texto;
    - confirme que a promessa do título está cumprida no primeiro parágrafo.
 3. Quais pautas você **descartou e por quê**, principalmente as descartadas por
    falta de recorte local. Descarte é resultado, não fracasso.
