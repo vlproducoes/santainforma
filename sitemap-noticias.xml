@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-184-festa-farroupilha-itapema-programacao-domingo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-13T12:40:00-03:00</news:publication_date>
+      <news:title>A Festa Farroupilha termina hoje em Itapema, e a programação que a Prefeitura publicou na sexta perdeu o torneio de laço infantil das 9h</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-183-loa-2027-porto-belo-orcamento-comparado</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-11T12:20:00-03:00</news:publication_date>
       <news:title>Chance de El Niño muito forte no verão sobe para 95%, e a rede de 38 estações que mede a chuva na nossa região tem prazo até o fim de setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-174-alca-br101-itapema-km146-reta-final</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-11T06:20:00-03:00</news:publication_date>
-      <news:title>O asfalto da alça nova da BR-101 em Itapema está pronto, e o prazo de cinco meses anunciado pela Prefeitura vence em 24 de setembro</news:title>
     </news:news>
   </url>
 
