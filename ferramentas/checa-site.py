@@ -79,6 +79,18 @@ def checa():
             except Exception as ex:
                 e(f'JSON-LD invalido: {ex}')
                 continue
+            # Pagina nova nasce de copia de outra, e a trilha da copiada vem
+            # junto apontando para a pagina errada. O ultimo degrau tem que ser
+            # a propria pagina, senao o Google recebe hierarquia mentirosa.
+            if isinstance(d, dict) and d.get('@type') == 'BreadcrumbList':
+                itens = d.get('itemListElement') or []
+                ultimo = itens[-1].get('item') if itens else None
+                if can and ultimo != can.group(1):
+                    e(f'BreadcrumbList nao termina na propria pagina: {ultimo}')
+                for it in itens:
+                    if str(it.get('item', '')).endswith('.html'):
+                        e(f'BreadcrumbList com .html, o Cloudflare redireciona: {it["item"]}')
+                continue
             if not (isinstance(d, dict) and d.get('@type') == 'NewsArticle'):
                 continue
             for c in CAMPOS_JSONLD:
@@ -107,8 +119,13 @@ def checa():
         for q in re.findall(r'<span class="quando">.*?</span>', s, re.S):
             if 'data-agora' in q: e('data-agora dentro de span.quando')
 
-        if 'class="pub-google"' in s and not f.startswith('materia-'):
-            e('bloco .pub-google fora de pagina de materia')
+        # Materia, guia e pagina-tema sao conteudo editorial e levam o bloco do
+        # Google, um por pagina. Home, editoria, Raio-X, horoscopo e arquivo sao
+        # inventario da tabela de precos e nao recebem (CLAUDE.md, secao 7.6).
+        if 'class="pub-google"' in s and not f.startswith(('materia-', 'guia-', 'tema-')):
+            e('bloco .pub-google fora de materia, guia ou pagina-tema')
+        if s.count('class="pub-google"') > 1:
+            e('mais de um bloco .pub-google na pagina')
 
         for href in re.findall(r'href="([^"#?][^"]*?)"', s):
             if href.startswith(('http', 'mailto:', 'tel:', '//')):

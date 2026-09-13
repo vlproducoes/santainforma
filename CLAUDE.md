@@ -218,6 +218,85 @@ Constituição vence este arquivo. Então, enquanto essa linha não mudar, o fio
 local continua obrigatório na prática, e o parágrafo acima fica sem efeito. Quem
 altera a Constituição é o editor humano.
 
+## 7.6 Além da notícia: os tipos de página que sustentam o site
+
+Decisão do editor registrada em 13 de setembro de 2026. O foco do site é busca
+orgânica do Google e AdSense. Notícia sozinha não entrega isso: matéria vive
+quarenta e oito horas e morre, e num domínio novo ela ainda disputa a mesma
+consulta com NSC e ND Mais, que têm dez anos de autoridade. O que rende mês após
+mês é página que responde a pergunta que alguém daqui digita o ano inteiro, e que
+ninguém grande se dá ao trabalho de escrever porque o público é pequeno demais
+para eles e do tamanho certo para nós.
+
+O ciclo continua publicando notícia todo dia. Além dela, produz e mantém os três
+tipos abaixo. Todos seguem a seção 10: cabeçalho e rodapé iguais aos das outras
+páginas, `<title>`, meta description, canonical sem `.html`, Open Graph,
+BreadcrumbList e entrada no `sitemap.xml`.
+
+**Nenhum deles entra no `sitemap-noticias.xml`.** Aquele arquivo é só de matéria
+das últimas 48 horas. Página permanente ali dentro é erro que o Google acusa.
+
+**Armadilha de quem cria página copiando outra.** O BreadcrumbList mora no
+`<head>` e vem junto na cópia, apontando para a página de origem. Apague o bloco
+antigo e gere o novo a partir da trilha da página nova. O `checa-site.py` reprova
+quando o último degrau não é a própria página, então o erro não passa, mas é bom
+saber por que ele acontece. Vale a mesma atenção para `<title>`, description,
+Open Graph, canonical e o JSON-LD principal.
+
+### Guia de serviço, `guia-slug.html`
+
+Responde uma dúvida prática de quem mora ou passa aqui, com o dado conferido na
+fonte oficial: como pagar, onde fica, que horas abre, qual documento levar, até
+quando dá tempo. Exemplos de fila: IPTU de Itapema, coleta de lixo por bairro,
+ônibus da Praiana, telefones de emergência, postos de saúde, matrícula e Fila
+Única, alvará e documentação de obra.
+
+Regras: todo dado com fonte primária linkada e data de referência, do mesmo jeito
+que o Raio-X. Lacuna assumida por escrito quando o dado não existe. Seção
+"Histórico de atualizações" no fim, e linha de histórico não se apaga. Guia que
+envelhece sem ninguém conferir vira informação errada, e informação errada de
+serviço é pior que não ter página.
+
+### Página-tema, `tema-slug.html`
+
+Reúne tudo que já publicamos sobre um assunto que corre há meses, com a linha do
+tempo do que aconteceu, onde está hoje e o que falta. Liga para cada matéria
+nossa e para as fontes primárias. Exemplos de fila: alargamento da Meia Praia,
+alça da BR-101, orçamento de Itapema, fila da creche, estações da AMFRI.
+
+É o que o Google chama de autoridade no assunto, e é o que faz o leitor abrir a
+segunda e a terceira página em vez de sair na primeira. Serve às duas metas ao
+mesmo tempo.
+
+Regra de ouro: página-tema é texto de verdade, não lista de links. Se o leitor
+não entender o assunto lendo só ela, ela não está pronta.
+
+### Explicador, `guia-como-funciona-slug.html`
+
+Responde a pergunta que está atrás da notícia e não muda toda semana: o que é
+uma LDO e por que ela decide o que a cidade faz, como funciona o pedido de
+urgência na Câmara, o que é engorda de praia, o que muda quando o município
+decreta emergência. Usa a mesma estrutura do guia de serviço.
+
+### O que não fazer, e isso é mais importante que a lista de cima
+
+- **Não produzir página fina em série.** Foi exatamente isso que reprovou o site
+  no AdSense em 27 de agosto de 2026. Dez guias rasos valem menos que um guia bom
+  e fazem mais estrago.
+- **Não criar guia sem ter a fonte aberta.** Sem dado conferido, a página não
+  nasce. Melhor não ter.
+- **Não repetir a mesma página com outro título** para pegar variação de busca.
+  Uma página por assunto.
+- **Não encher de anúncio.** O bloco do Google é um por página, rotulado
+  "Publicidade", como já é na matéria. Nada de Auto Ads.
+
+### Ritmo
+
+Uma página nova desses tipos por semana já muda o site em três meses. Cuidar de
+uma que já existe **conta como trabalho da execução**, do mesmo jeito que o
+Raio-X, mesmo que nenhuma matéria saia naquela janela. Matéria quente vem
+primeiro, sempre.
+
 ## 8. Linhas vermelhas
 
 Nunca, em hipótese nenhuma:

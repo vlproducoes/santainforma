@@ -459,6 +459,41 @@ A página precisa mostrar que é cuidada. Toda alteração faz três coisas:
    seções da página.
 3. Mantém o histórico completo. Linha de histórico não se apaga.
 
+## 3.6 Guia, página-tema e explicador: o que rende busca orgânica
+
+Leia a seção 7.6 do CLAUDE.md antes de mexer nisso. Resumo do que ela manda:
+além da notícia do dia, o site mantém guias de serviço (`guia-slug.html`),
+páginas-tema (`tema-slug.html`) e explicadores. Matéria vive dois dias, essas
+páginas rendem o ano inteiro, e é delas que sai a maior parte do tráfego de busca
+de um site local.
+
+**Alvo de ritmo: uma página nova desse tipo por semana, no mínimo.** Cuidar de uma
+que já existe conta como trabalho da execução, igual ao Raio-X, mesmo que nenhuma
+matéria saia. Matéria quente vem primeiro, sempre.
+
+**Prefira a execução em que a pauta estiver fraca.** Dia sem fato novo é o melhor
+dia para construir guia, e é o que transforma uma janela de zero matéria em
+trabalho que rende.
+
+Antes de criar uma página nova, olhe o que já existe e pergunte se o assunto não
+cabe numa que já está no ar. Uma página por assunto. Guia repetido com outro
+título para pegar variação de busca é exatamente o que o Google trata como
+conteúdo de baixo valor.
+
+Quando publicar ou atualizar uma dessas páginas:
+
+- `sitemap.xml` recebe a entrada. **`sitemap-noticias.xml` não**, porque ali só
+  entra matéria das últimas 48 horas.
+- A página leva BreadcrumbList, como todas as outras. O bloco está no `<head>`,
+  gerado a partir da trilha visível, e o endereço de cada item vai sem `.html`.
+- Todo dado com fonte primária linkada e data de referência. Lacuna que você não
+  conseguiu preencher fica escrita na página.
+- Seção "Histórico de atualizações" no fim, no mesmo formato do `regiao.html`.
+- O bloco `.pub-google` pode entrar, uma vez só, como já entra na matéria.
+
+Diga no relatório o que fez: página criada, página atualizada, ou nenhuma e por
+quê.
+
 ## 4. Imagem
 Ordem: foto própria, depois divulgação oficial identificada (crédito completo
 com órgão e ano), depois banco gratuito como "imagem ilustrativa", depois a
@@ -666,7 +701,10 @@ No fim da execução, diga sempre:
 4. Se a **apuração própria da semana** já foi feita ou se a semana está devendo.
 5. **Raio-X da Região:** há quantos dias foi atualizado, se você mexeu nesta
    execução e o que mudou (dado novo, link de fonte, imagem, lacuna assumida).
-6. O que faltou no ambiente, se `checa-ambiente.py` reprovou.
+6. **Guia, página-tema ou explicador:** se criou, atualizou ou não mexeu em
+   nenhum nesta execução, e por quê. Diga também há quantos dias o site não
+   ganha uma página desse tipo, para a meta de uma por semana não escorrer.
+7. O que faltou no ambiente, se `checa-ambiente.py` reprovou.
 
 ## Por que 6h, 12h e 18h, e não a cada 48 horas
 
