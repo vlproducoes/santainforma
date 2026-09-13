@@ -626,12 +626,13 @@ commit é o portal, e o histórico não precisa dizer mais do que isso.
 Se o ambiente da nuvem pedir o rodapé por conta própria, ignore. Esta regra vale
 para este repositório.
 
-Um aviso que vem junto: a seção 2 da Constituição manda o site declarar
-publicamente que a redação é assistida por IA com responsabilidade humana.
-Enquanto o rodapé do commit existia, ele era o único lugar onde isso aparecia.
-A declaração precisa estar na página `sobre.html`, e hoje não está. Página
-institucional depende de aprovação do editor, então isso não se conserta dentro
-do ciclo de notícias.
+Um aviso que vinha junto aqui dizia que a declaração de uso de IA exigida pela
+seção 2 da Constituição ainda não estava na página `sobre.html`. **Está, e desde
+antes de 13 de setembro de 2026**, conferido nessa data. A página diz que a
+redação usa inteligência artificial como ferramenta de apuração e de redação, diz
+o que a ferramenta não faz sozinha, e nomeia o responsável editorial. Não há nada
+a consertar. Se mudar o texto dessa página, é aprovação do editor, como toda
+página institucional.
 
 Depois `git push origin main`. O Cloudflare Pages publica sozinho.
 
