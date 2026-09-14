@@ -467,18 +467,30 @@ páginas-tema (`tema-slug.html`) e explicadores. Matéria vive dois dias, essas
 páginas rendem o ano inteiro, e é delas que sai a maior parte do tráfego de busca
 de um site local.
 
-**Alvo de ritmo: uma página nova desse tipo por semana, no mínimo.** Cuidar de uma
+**Alvo de ritmo: três páginas atemporais novas por dia**, decisão do editor de 14
+de setembro de 2026, distribuídas entre as três execuções como der. Cuidar de uma
 que já existe conta como trabalho da execução, igual ao Raio-X, mesmo que nenhuma
 matéria saia. Matéria quente vem primeiro, sempre.
 
-**Prefira a execução em que a pauta estiver fraca.** Dia sem fato novo é o melhor
-dia para construir guia, e é o que transforma uma janela de zero matéria em
-trabalho que rende.
+**A fila de pauta está pronta, em `ferramentas/pauta-atemporal.md`.** Cada linha é
+uma página. Pegue de cima para baixo, marque na coluna "feito" com a data o que
+virou página, e rode `python3 ferramentas/pauta-busca.py --salvar` de novo quando
+a fila encurtar. A fila saiu do autocompletar do Google, que é **proxy de demanda,
+não volume de busca**: nunca escreva no site nem no relatório que a pauta seguiu
+"o volume de buscas".
+
+**Três é alvo, não cota.** Se no dia não houver três assuntos que passem na barra,
+publique os que passam e diga no relatório quantos saíram e por quê. Encher a
+conta com página fina é exatamente o padrão que reprovou o site no AdSense em 27
+de agosto de 2026, e vale mais parar em uma boa do que entregar três rasas.
+
+**Dia de pauta fraca é o melhor dia para isso.** Janela sem fato novo vira janela
+de guia, e é assim que um dia de zero matéria continua rendendo.
 
 Antes de criar uma página nova, olhe o que já existe e pergunte se o assunto não
-cabe numa que já está no ar. Uma página por assunto. Guia repetido com outro
-título para pegar variação de busca é exatamente o que o Google trata como
-conteúdo de baixo valor.
+cabe numa que já está no ar. Uma página por assunto, e variação da mesma consulta
+cabe toda na mesma página. Guia repetido com outro título para pegar variação de
+busca é exatamente o que o Google trata como conteúdo de baixo valor.
 
 Quando publicar ou atualizar uma dessas páginas:
 
@@ -702,9 +714,11 @@ No fim da execução, diga sempre:
 4. Se a **apuração própria da semana** já foi feita ou se a semana está devendo.
 5. **Raio-X da Região:** há quantos dias foi atualizado, se você mexeu nesta
    execução e o que mudou (dado novo, link de fonte, imagem, lacuna assumida).
-6. **Guia, página-tema ou explicador:** se criou, atualizou ou não mexeu em
-   nenhum nesta execução, e por quê. Diga também há quantos dias o site não
-   ganha uma página desse tipo, para a meta de uma por semana não escorrer.
+6. **Guia, página-tema ou explicador:** quantas páginas atemporais saíram hoje,
+   contra o alvo de três, e quais assuntos da fila você riscou. Se saiu menos de
+   três, diga por quê, assunto por assunto. Se a fila de
+   `ferramentas/pauta-atemporal.md` estiver acabando, avise com todas as letras
+   que o ritmo precisa baixar: isso é resultado, não fracasso.
 7. O que faltou no ambiente, se `checa-ambiente.py` reprovou.
 
 ## Por que 6h, 12h e 18h, e não a cada 48 horas

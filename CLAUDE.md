@@ -290,12 +290,39 @@ decreta emergência. Usa a mesma estrutura do guia de serviço.
 - **Não encher de anúncio.** O bloco do Google é um por página, rotulado
   "Publicidade", como já é na matéria. Nada de Auto Ads.
 
-### Ritmo
+### Ritmo: três páginas atemporais por dia
 
-Uma página nova desses tipos por semana já muda o site em três meses. Cuidar de
-uma que já existe **conta como trabalho da execução**, do mesmo jeito que o
-Raio-X, mesmo que nenhuma matéria saia naquela janela. Matéria quente vem
-primeiro, sempre.
+Decisão do editor registrada em 14 de setembro de 2026. O alvo é **três páginas
+atemporais novas por dia**, além das matérias do ciclo, escolhidas pela demanda
+de busca. Cuidar de uma que já existe **conta como trabalho da execução**, do
+mesmo jeito que o Raio-X. Matéria quente vem primeiro, sempre.
+
+**De onde sai a pauta.** A fila está em `ferramentas/pauta-atemporal.md`, gerada
+por `ferramentas/pauta-busca.py`, que lê o autocompletar do Google. Pegue de cima
+para baixo, marque o que virou página e rode o script de novo quando a fila
+encurtar. Uma linha da fila é **uma** página: variação da mesma consulta cabe
+toda na mesma página.
+
+**Isso não é volume de busca.** O autocompletar dá ordem e recorrência, que são
+proxy de demanda, não medida dela. Volume real exige Keyword Planner com conta
+de Google Ads ativa, ou o Search Console do próprio site. Enquanto o editor não
+ligar o Search Console, escreva "a pauta saiu do autocompletar", nunca "segundo
+o volume de buscas".
+
+**A trava que vale mais que o número três.** Três é alvo, e alvo não vira cota.
+Se no dia não houver três assuntos que passem na barra da seção 7.6, publique os
+que passam e diga no relatório quantos saíram e por quê. Publicar página fina
+para fechar a conta é o comportamento errado, e é literalmente o que reprovou o
+site no AdSense em 27 de agosto de 2026.
+
+**O tamanho da fila é finito, e isso importa.** A varredura de 14 de setembro de
+2026 achou 75 assuntos distintos ainda sem página, somando Itapema, Porto Belo e
+Bombinhas. A três por dia, isso dura cerca de 25 dias. Quando a fila apertar, o
+caminho não é inventar assunto: é (1) rodar a varredura funda, com `--alfabeto`,
+(2) abrir para as cidades vizinhas que o site já cobre, (3) cuidar das páginas
+que existem, porque guia desatualizado é pior que guia inexistente, e (4) avisar
+o editor de que o ritmo precisa baixar. **Avisar que a fila acabou é resultado
+correto, não fracasso.**
 
 ## 8. Linhas vermelhas
 
