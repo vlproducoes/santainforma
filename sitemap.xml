@@ -1064,6 +1064,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://santainforma.com.br/materia-187-mutirao-castracao-343-animais-itapema</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://santainforma.com.br/materia-185-containers-itapema-instalacao-3-2-milhoes</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -1336,7 +1342,13 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/noticias-29</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/noticias-30</loc>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>

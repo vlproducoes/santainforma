@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-187-mutirao-castracao-343-animais-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-14T18:20:00-03:00</news:publication_date>
+      <news:title>Mutirão de castração de Itapema atendeu 343 cães e gatos, o maior número que a Prefeitura já publicou, e o primeiro divulgado desde abril de 2022</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-186-contas-2025-itapema-votacao-camara</loc>
     <news:news>
       <news:publication>
@@ -59,18 +71,6 @@
       </news:publication>
       <news:publication_date>2026-09-12T18:20:00-03:00</news:publication_date>
       <news:title>Porto Belo ganhou três estações meteorológicas, uma a mais que Itapema, e só 10 dos 38 pontos da AMFRI foram anunciados cidade por cidade</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-181-regularize-mei-itapema-sala-empreendedor</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-12T12:50:00-03:00</news:publication_date>
-      <news:title>A Sala do Empreendedor de Itapema abre 13 dias de atendimento gratuito ao MEI, e quem recebeu termo de exclusão da Receita sai do regime em 1º de janeiro</news:title>
     </news:news>
   </url>
 
