@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-189-bombeiros-itapema-aluguel-imovel-meia-praia</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T12:10:00-03:00</news:publication_date>
+      <news:title>Itapema aluga um imóvel de 253 m² na Meia Praia por R$ 228,7 mil para a administração do Corpo de Bombeiros ficar 18 meses fora da sede</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-188-alca-br101-itapema-aditivo-90-dias</loc>
     <news:news>
       <news:publication>
@@ -59,18 +71,6 @@
       </news:publication>
       <news:publication_date>2026-09-13T12:40:00-03:00</news:publication_date>
       <news:title>A Festa Farroupilha termina hoje em Itapema, e a programação que a Prefeitura publicou na sexta perdeu o torneio de laço infantil das 9h</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-183-loa-2027-porto-belo-orcamento-comparado</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-13T06:30:00-03:00</news:publication_date>
-      <news:title>Porto Belo discute o orçamento de 2027 nesta segunda com R$ 13,3 mil de receita prevista por morador, contra R$ 10,6 mil em Itapema</news:title>
     </news:news>
   </url>
 
