@@ -2242,5 +2242,18 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/nova-alca-de-incorporacao-na-br-101-entra-na-fase-de-pavimentacao/",
     "dimensao_original": "1280x960",
     "baixada_em": "2026-09-15"
+  },
+  "m190-selo-onibus-excursao-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2025,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2025/01/fiscalizacao_onibus.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/prefeitura-de-itapema-reforca-informacao-sobre-a-lei-de-regulamentacao-de-veiculos-de-excursao/",
+    "dimensao_original": "1200x1600",
+    "recorte": "corte 0,500-1200,1175 do original, para deixar o selo em quadro e tirar a pessoa atras do vidro",
+    "baixada_em": "2026-09-15"
   }
 }

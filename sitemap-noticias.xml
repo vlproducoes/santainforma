@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-190-taxa-onibus-turismo-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T18:20:00-03:00</news:publication_date>
+      <news:title>A taxa do ônibus de turismo em Itapema custa R$ 638,40 por dia, e a Prefeitura avisa que não tem intermediário nem desconto</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-189-bombeiros-itapema-aluguel-imovel-meia-praia</loc>
     <news:news>
       <news:publication>
@@ -59,18 +71,6 @@
       </news:publication>
       <news:publication_date>2026-09-14T06:40:00-03:00</news:publication_date>
       <news:title>Itapema fechou R$ 3,27 milhões para instalar containers, e já tinha registrado R$ 5,06 milhões para comprar 35 deles</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-184-festa-farroupilha-itapema-programacao-domingo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-13T12:40:00-03:00</news:publication_date>
-      <news:title>A Festa Farroupilha termina hoje em Itapema, e a programação que a Prefeitura publicou na sexta perdeu o torneio de laço infantil das 9h</news:title>
     </news:news>
   </url>
 
