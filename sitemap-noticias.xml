@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-188-alca-br101-itapema-aditivo-90-dias</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T07:10:00-03:00</news:publication_date>
+      <news:title>A alça da BR-101 em Itapema ganhou mais 90 dias de contrato quatro dias depois do anúncio de reta final, e o novo prazo vai até 19 de dezembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-187-mutirao-castracao-343-animais-itapema</loc>
     <news:news>
       <news:publication>
@@ -59,18 +71,6 @@
       </news:publication>
       <news:publication_date>2026-09-13T06:30:00-03:00</news:publication_date>
       <news:title>Porto Belo discute o orçamento de 2027 nesta segunda com R$ 13,3 mil de receita prevista por morador, contra R$ 10,6 mil em Itapema</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-182-estacoes-meteorologicas-porto-belo-amfri</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-12T18:20:00-03:00</news:publication_date>
-      <news:title>Porto Belo ganhou três estações meteorológicas, uma a mais que Itapema, e só 10 dos 38 pontos da AMFRI foram anunciados cidade por cidade</news:title>
     </news:news>
   </url>
 
