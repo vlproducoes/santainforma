@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-194-gratificacao-esfinge-itapema-tce</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-16T18:30:00-03:00</news:publication_date>
+      <news:title>Itapema vai pagar R$ 1.596 por mês a quem manda os dados da Prefeitura ao Tribunal de Contas, e quem perder prazo fica sem a gratificação do mês</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-193-ponte-rio-santa-luzia-porto-belo-tijucas</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-14T18:20:00-03:00</news:publication_date>
       <news:title>Mutirão de castração de Itapema atendeu 343 cães e gatos, o maior número que a Prefeitura já publicou, e o primeiro divulgado desde abril de 2022</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-186-contas-2025-itapema-votacao-camara</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T15:40:00-03:00</news:publication_date>
-      <news:title>A Câmara de Itapema vota as contas de 2025 nesta terça, e o Tribunal de Contas recomendou aprovar pedindo que a despesa corrente volte ao limite de 95% da receita</news:title>
     </news:news>
   </url>
 
