@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-193-ponte-rio-santa-luzia-porto-belo-tijucas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-16T12:30:00-03:00</news:publication_date>
+      <news:title>A ponte entre Porto Belo e Tijucas está em Estado Crítico no laudo, e caminhão acima de 12 toneladas não passa desde 11 de setembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-192-contratacoes-artistas-itapema-credenciamento</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-14T15:40:00-03:00</news:publication_date>
       <news:title>A Câmara de Itapema vota as contas de 2025 nesta terça, e o Tribunal de Contas recomendou aprovar pedindo que a despesa corrente volte ao limite de 95% da receita</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-185-containers-itapema-instalacao-3-2-milhoes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T06:40:00-03:00</news:publication_date>
-      <news:title>Itapema fechou R$ 3,27 milhões para instalar containers, e já tinha registrado R$ 5,06 milhões para comprar 35 deles</news:title>
     </news:news>
   </url>
 

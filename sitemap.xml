@@ -1082,6 +1082,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://santainforma.com.br/materia-193-ponte-rio-santa-luzia-porto-belo-tijucas</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://santainforma.com.br/materia-191-lei-sono-seguro-bebe-itapema</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -1379,6 +1385,12 @@
   <url>
     <loc>https://santainforma.com.br/noticias-30</loc>
     <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/noticias-31</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
