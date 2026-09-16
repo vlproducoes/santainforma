@@ -2255,5 +2255,27 @@
     "dimensao_original": "1200x1600",
     "recorte": "corte 0,500-1200,1175 do original, para deixar o selo em quadro e tirar a pessoa atras do vidro",
     "baixada_em": "2026-09-15"
+  },
+  "m191-berco-sono-seguro-bebe.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Curtis Adams",
+    "url_fotografo": "https://www.pexels.com/@curtis-adams-1694007",
+    "url_original": "https://www.pexels.com/photo/white-wooden-crib-beside-white-wall-4713247/",
+    "id_pexels": 4713247,
+    "termo_de_busca": "empty baby crib nursery",
+    "baixada_em": "2026-09-16"
+  },
+  "m192-palco-feira-cultura-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Caio",
+    "url_fotografo": "https://www.pexels.com/@caio",
+    "url_original": "https://www.pexels.com/photo/microphones-and-a-bar-stool-13061472/",
+    "id_pexels": 13061472,
+    "termo_de_busca": "empty outdoor stage sound equipment",
+    "baixada_em": "2026-09-16"
   }
 }
