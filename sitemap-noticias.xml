@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-197-pier-oporto-nome-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-17T18:25:00-03:00</news:publication_date>
+      <news:title>Itapema chama o píer de Píer Oporto no aviso oficial, e o nome que está na lei teve 64% de aprovação na consulta de 2024</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-196-itbi-cartao-credito-itapema</loc>
     <news:news>
       <news:publication>

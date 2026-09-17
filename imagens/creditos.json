@@ -2324,5 +2324,17 @@
     "dimensao_original": "1280x792",
     "recorte": "cortada para 978x550 a partir da borda esquerda, tirando de quadro a servidora ao fundo do balcao",
     "baixada_em": "2026-09-17"
+  },
+  "pier-oporto-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/09/IMG_1726.JPG-scaled.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/turismo-promove-visita-tecnica-ao-pier-oporto-para-profissionais-da-rede-hoteleira/",
+    "dimensao_original": "2560x1440",
+    "baixada_em": "2026-09-17"
   }
 }
