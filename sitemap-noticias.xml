@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-196-itbi-cartao-credito-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-17T12:40:00-03:00</news:publication_date>
+      <news:title>Itapema passa a aceitar cartão de crédito no ITBI, o imposto que rendeu R$ 65,1 milhões à cidade em 2025</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-195-contas-2025-itapema-aprovadas</loc>
     <news:news>
       <news:publication>
@@ -71,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T18:20:00-03:00</news:publication_date>
       <news:title>A taxa do ônibus de turismo em Itapema custa R$ 638,40 por dia, e a Prefeitura avisa que não tem intermediário nem desconto</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-189-bombeiros-itapema-aluguel-imovel-meia-praia</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T12:10:00-03:00</news:publication_date>
-      <news:title>Itapema aluga um imóvel de 253 m² na Meia Praia por R$ 228,7 mil para a administração do Corpo de Bombeiros ficar 18 meses fora da sede</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-188-alca-br101-itapema-aditivo-90-dias</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T07:10:00-03:00</news:publication_date>
-      <news:title>A alça da BR-101 em Itapema ganhou mais 90 dias de contrato quatro dias depois do anúncio de reta final, e o novo prazo vai até 19 de dezembro</news:title>
     </news:news>
   </url>
 
