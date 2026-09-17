@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-195-contas-2025-itapema-aprovadas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-17T06:40:00-03:00</news:publication_date>
+      <news:title>A Câmara de Itapema aprovou as contas de 2025 por 11 votos a 1, e dois vereadores que votaram contra as contas de 2024 mudaram de lado</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-194-gratificacao-esfinge-itapema-tce</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T07:10:00-03:00</news:publication_date>
       <news:title>A alça da BR-101 em Itapema ganhou mais 90 dias de contrato quatro dias depois do anúncio de reta final, e o novo prazo vai até 19 de dezembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-187-mutirao-castracao-343-animais-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T18:20:00-03:00</news:publication_date>
-      <news:title>Mutirão de castração de Itapema atendeu 343 cães e gatos, o maior número que a Prefeitura já publicou, e o primeiro divulgado desde abril de 2022</news:title>
     </news:news>
   </url>
 
