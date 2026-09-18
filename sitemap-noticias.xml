@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-200-transito-orla-centro-itapema-fim-de-semana</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-18T12:20:00-03:00</news:publication_date>
+      <news:title>Três eventos fecham trechos da orla do Centro de Itapema neste fim de semana, e a Rua 137 fica sem estacionamento a partir da 0h de sexta</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-199-acor-2027-bombinhas-sede</loc>
     <news:news>
       <news:publication>
@@ -83,30 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-16T12:30:00-03:00</news:publication_date>
       <news:title>A ponte entre Porto Belo e Tijucas está em Estado Crítico no laudo, e caminhão acima de 12 toneladas não passa desde 11 de setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-192-contratacoes-artistas-itapema-credenciamento</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-16T06:50:00-03:00</news:publication_date>
-      <news:title>Itapema fechou 93 apresentações artísticas por R$ 69,8 mil desde agosto, e três delas acontecem neste fim de semana</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-191-lei-sono-seguro-bebe-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-16T06:30:00-03:00</news:publication_date>
-      <news:title>Hospital de Itapema passa a ser obrigado a ensinar como deitar o bebê para dormir, e o projeto levou 356 dias para virar lei</news:title>
     </news:news>
   </url>
 
