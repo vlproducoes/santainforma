@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-202-morro-do-encano-segunda-detonacao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-18T19:10:00-03:00</news:publication_date>
+      <news:title>Morro do Encano fecha de novo para detonação de rochas nesta segunda a partir das 8h, o segundo bloqueio de dia inteiro em 17 dias</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-201-cadunico-cras-morretes-sabado-horario</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-18T18:40:00-03:00</news:publication_date>
+      <news:title>O CadÚnico da habitação atende neste sábado em Itapema, e o horário publicado agora tem uma hora a mais em cada turno</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-200-transito-orla-centro-itapema-fim-de-semana</loc>
     <news:news>
       <news:publication>
@@ -83,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-16T18:30:00-03:00</news:publication_date>
       <news:title>Itapema vai pagar R$ 1.596 por mês a quem manda os dados da Prefeitura ao Tribunal de Contas, e quem perder prazo fica sem a gratificação do mês</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-193-ponte-rio-santa-luzia-porto-belo-tijucas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-16T12:30:00-03:00</news:publication_date>
-      <news:title>A ponte entre Porto Belo e Tijucas está em Estado Crítico no laudo, e caminhão acima de 12 toneladas não passa desde 11 de setembro</news:title>
     </news:news>
   </url>
 

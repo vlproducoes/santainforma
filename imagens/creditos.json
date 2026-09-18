@@ -2371,5 +2371,30 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/transito-tera-alteracoes-no-centro-neste-fim-de-semana/",
     "dimensao_original": "1600x1200",
     "baixada_em": "2026-09-18"
+  },
+  "morro-do-encano-detonacao-setembro.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/09/obras_morro_encano-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/transito-no-morro-do-encano-sera-interditado-para-detonacao-de-rochas-na-segunda-feira-21/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-09-18"
+  },
+  "cras-morretes-cadunico-setembro.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/09/cad_unico-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/cras-morretes-tera-atendimentos-do-cadunico-voltados-a-habitacao/",
+    "dimensao_original": "1280x960",
+    "observacao": "recortada para a fachada e a placa: o enquadramento original trazia crianca e rosto de pessoa comum na fila",
+    "baixada_em": "2026-09-18"
   }
 }
