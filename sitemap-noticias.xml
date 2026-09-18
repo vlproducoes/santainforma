@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-199-acor-2027-bombinhas-sede</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-18T06:55:00-03:00</news:publication_date>
+      <news:title>Bombinhas vai sediar o Açor de 2027, e a maior festa açoriana das Américas fica dois anos seguidos na Costa Esmeralda</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-198-zona-azul-itapema-licitacao-revogada</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-18T06:35:00-03:00</news:publication_date>
+      <news:title>Itapema revogou a licitação da Zona Azul quatro dias depois de publicar o edital, e a tentativa anterior foi anulada por ordem do Tribunal de Contas</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-197-pier-oporto-nome-itapema</loc>
     <news:news>
       <news:publication>
@@ -83,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-16T06:30:00-03:00</news:publication_date>
       <news:title>Hospital de Itapema passa a ser obrigado a ensinar como deitar o bebê para dormir, e o projeto levou 356 dias para virar lei</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-190-taxa-onibus-turismo-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T18:20:00-03:00</news:publication_date>
-      <news:title>A taxa do ônibus de turismo em Itapema custa R$ 638,40 por dia, e a Prefeitura avisa que não tem intermediário nem desconto</news:title>
     </news:news>
   </url>
 

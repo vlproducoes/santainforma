@@ -2336,5 +2336,28 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/turismo-promove-visita-tecnica-ao-pier-oporto-para-profissionais-da-rede-hoteleira/",
     "dimensao_original": "2560x1440",
     "baixada_em": "2026-09-17"
+  },
+  "zona-azul-itapema-vagas.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Ivett M",
+    "url_fotografo": "https://www.pexels.com/@ivett",
+    "url_original": "https://www.pexels.com/photo/street-view-of-natal-brazil-with-palm-trees-38951979/",
+    "id_pexels": 38951979,
+    "termo_de_busca": "street view natal brazil palm trees parked cars",
+    "baixada_em": "2026-09-18"
+  },
+  "acor-bombinhas-2027.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Bombinhas",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://bombinhas.sc.gov.br/uploads/sites/369/2026/09/WhatsApp-Image-2026-09-17-at-15.23.27.jpeg",
+    "pagina_da_fonte": "https://bombinhas.sc.gov.br/bombinhas-e-escolhida-sede-da-33a-edicao-do-acor-em-2027/",
+    "dimensao_original": "1280x904",
+    "baixada_em": "2026-09-18"
   }
 }
