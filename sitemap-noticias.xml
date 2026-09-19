@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-205-vale-transporte-servidores-praiana-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-19T18:30:00-03:00</news:publication_date>
+      <news:title>Itapema compra mais R$ 29,9 mil em vale-transporte da Viação Praiana, e o gasto de 2026 já é seis vezes o de 2025</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-204-setembro-amarelo-itapema-construcao-civil</loc>
     <news:news>
       <news:publication>
@@ -95,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-17T18:25:00-03:00</news:publication_date>
       <news:title>Itapema chama o píer de Píer Oporto no aviso oficial, e o nome que está na lei teve 64% de aprovação na consulta de 2024</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-196-itbi-cartao-credito-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-17T12:40:00-03:00</news:publication_date>
-      <news:title>Itapema passa a aceitar cartão de crédito no ITBI, o imposto que rendeu R$ 65,1 milhões à cidade em 2025</news:title>
     </news:news>
   </url>
 

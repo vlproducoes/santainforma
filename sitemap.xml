@@ -1118,6 +1118,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://santainforma.com.br/materia-205-vale-transporte-servidores-praiana-itapema</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://santainforma.com.br/materia-201-cadunico-cras-morretes-sabado-horario</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -1462,7 +1468,13 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/noticias-32</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/noticias-33</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
