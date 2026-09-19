@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-204-setembro-amarelo-itapema-construcao-civil</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-19T12:20:00-03:00</news:publication_date>
+      <news:title>Itapema levou o Setembro Amarelo ao canteiro de obras, e a rede de saúde mental da cidade tem cinco portas de entrada</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-203-avanca-itapema-rua-282-meia-praia</loc>
     <news:news>
       <news:publication>
@@ -95,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-17T12:40:00-03:00</news:publication_date>
       <news:title>Itapema passa a aceitar cartão de crédito no ITBI, o imposto que rendeu R$ 65,1 milhões à cidade em 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-195-contas-2025-itapema-aprovadas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-17T06:40:00-03:00</news:publication_date>
-      <news:title>A Câmara de Itapema aprovou as contas de 2025 por 11 votos a 1, e dois vereadores que votaram contra as contas de 2024 mudaram de lado</news:title>
     </news:news>
   </url>
 
