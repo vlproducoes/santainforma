@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-207-coco-verde-itapema-programa-reciclagem</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-20T06:25:00-03:00</news:publication_date>
+      <news:title>Itapema aprovou o programa de reciclagem do coco verde na orla, e o texto está com o prefeito desde 10 de setembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-206-credito-suplementar-itapema-turismo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-20T06:10:00-03:00</news:publication_date>
+      <news:title>Itapema abre R$ 2,26 milhões de crédito extra no orçamento, e três quartos ficam com o Turismo</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-205-vale-transporte-servidores-praiana-itapema</loc>
     <news:news>
       <news:publication>
@@ -95,18 +119,6 @@
       </news:publication>
       <news:publication_date>2026-09-18T06:35:00-03:00</news:publication_date>
       <news:title>Itapema revogou a licitação da Zona Azul quatro dias depois de publicar o edital, e a tentativa anterior foi anulada por ordem do Tribunal de Contas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-197-pier-oporto-nome-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-17T18:25:00-03:00</news:publication_date>
-      <news:title>Itapema chama o píer de Píer Oporto no aviso oficial, e o nome que está na lei teve 64% de aprovação na consulta de 2024</news:title>
     </news:news>
   </url>
 

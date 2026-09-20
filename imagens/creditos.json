@@ -2430,5 +2430,27 @@
     "id_pexels": 32133697,
     "termo_de_busca": "bus ticket card public transport",
     "baixada_em": "2026-09-19"
+  },
+  "cocos-verdes-cortados-descarte.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Anastasiia De Oliveira",
+    "url_fotografo": "https://www.pexels.com/@anastasiia-de-oliveira-2158883670",
+    "url_original": "https://www.pexels.com/photo/plastic-bags-filled-with-fresh-green-coconuts-37275108/",
+    "id_pexels": 37275108,
+    "termo_de_busca": "green coconut drink beach vendor",
+    "baixada_em": "2026-09-20"
+  },
+  "relatorios-financeiros-mesa-decreto.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Tima Miroshnichenko",
+    "url_fotografo": "https://www.pexels.com/@tima-miroshnichenko",
+    "url_original": "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-6693647/",
+    "id_pexels": 6693647,
+    "termo_de_busca": "public budget report documents desk",
+    "baixada_em": "2026-09-20"
   }
 }
