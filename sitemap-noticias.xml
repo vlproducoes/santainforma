@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-209-multas-transito-itapema-estacionamento-edital</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-20T18:20:00-03:00</news:publication_date>
+      <news:title>Estacionamento virou quase metade das multas que Itapema notificou por edital em 2026, contra um quarto em 2025</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-208-faaci-autorizacao-unidade-conservacao-itapema</loc>
     <news:news>
       <news:publication>
@@ -95,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-18T18:40:00-03:00</news:publication_date>
       <news:title>O CadÚnico da habitação atende neste sábado em Itapema, e o horário publicado agora tem uma hora a mais em cada turno</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-200-transito-orla-centro-itapema-fim-de-semana</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-18T12:20:00-03:00</news:publication_date>
-      <news:title>Três eventos fecham trechos da orla do Centro de Itapema neste fim de semana, e a Rua 137 fica sem estacionamento a partir da 0h de sexta</news:title>
     </news:news>
   </url>
 
