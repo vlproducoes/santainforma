@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-208-faaci-autorizacao-unidade-conservacao-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-20T12:30:00-03:00</news:publication_date>
+      <news:title>Itapema publica o passo a passo para construir dentro do Refúgio de Vida Silvestre, que cobre metade da cidade</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-207-coco-verde-itapema-programa-reciclagem</loc>
     <news:news>
       <news:publication>
@@ -95,30 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-18T12:20:00-03:00</news:publication_date>
       <news:title>Três eventos fecham trechos da orla do Centro de Itapema neste fim de semana, e a Rua 137 fica sem estacionamento a partir da 0h de sexta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-199-acor-2027-bombinhas-sede</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-18T06:55:00-03:00</news:publication_date>
-      <news:title>Bombinhas vai sediar o Açor de 2027, e a maior festa açoriana das Américas fica dois anos seguidos na Costa Esmeralda</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-198-zona-azul-itapema-licitacao-revogada</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-18T06:35:00-03:00</news:publication_date>
-      <news:title>Itapema revogou a licitação da Zona Azul quatro dias depois de publicar o edital, e a tentativa anterior foi anulada por ordem do Tribunal de Contas</news:title>
     </news:news>
   </url>
 
