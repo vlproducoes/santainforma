@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-212-camara-itapema-30a-sessao-19-proposicoes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-21T18:30:00-03:00</news:publication_date>
+      <news:title>A Câmara de Itapema lê 19 propostas nesta terça, e três delas tratam da própria Câmara</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-211-cateteres-cis-amfri-itapema-pregao</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-19T18:30:00-03:00</news:publication_date>
       <news:title>Itapema compra mais R$ 29,9 mil em vale-transporte da Viação Praiana, e o gasto de 2026 já é seis vezes o de 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-204-setembro-amarelo-itapema-construcao-civil</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-19T12:20:00-03:00</news:publication_date>
-      <news:title>Itapema levou o Setembro Amarelo ao canteiro de obras, e a rede de saúde mental da cidade tem cinco portas de entrada</news:title>
     </news:news>
   </url>
 
