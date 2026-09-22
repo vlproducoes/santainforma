@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-215-chamada-merenda-agricultura-familiar-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-22T12:20:00-03:00</news:publication_date>
+      <news:title>Itapema remarca para 25 de setembro a sessão da merenda da agricultura familiar, a terceira data da mesma chamada</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-214-porto-belo-esgoto-estudo-concepcao</loc>
     <news:news>
       <news:publication>
