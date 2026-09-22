@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-216-alvara-ambulante-itapema-familiar</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-22T18:30:00-03:00</news:publication_date>
+      <news:title>Itapema vota liberar cônjuge e filho no alvará do ambulante, e a lei de 2009 já mudou seis vezes em pouco mais de um ano</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-215-chamada-merenda-agricultura-familiar-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-21T06:40:00-03:00</news:publication_date>
       <news:title>Aviso de temporal da Epagri vale para Itapema até as 18h de terça, e o Morro do Encano fecha o dia inteiro nesta segunda</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-209-multas-transito-itapema-estacionamento-edital</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-20T18:20:00-03:00</news:publication_date>
-      <news:title>Estacionamento virou quase metade das multas que Itapema notificou por edital em 2026, contra um quarto em 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-208-faaci-autorizacao-unidade-conservacao-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-20T12:30:00-03:00</news:publication_date>
-      <news:title>Itapema publica o passo a passo para construir dentro do Refúgio de Vida Silvestre, que cobre metade da cidade</news:title>
     </news:news>
   </url>
 
