@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-214-porto-belo-esgoto-estudo-concepcao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-22T06:50:00-03:00</news:publication_date>
+      <news:title>Porto Belo recebeu o estudo do seu primeiro sistema público de esgoto, e o Censo mostra que 3 em cada 4 casas da cidade usam fossa</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-213-bombinhas-assistencia-social-mpsc</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-22T06:35:00-03:00</news:publication_date>
+      <news:title>A Justiça dá 90 dias para Bombinhas abrir CRAS e CREAS oito horas por dia, e a cidade gastou R$ 141 por morador em assistência social em 2025</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-212-camara-itapema-30a-sessao-19-proposicoes</loc>
     <news:news>
       <news:publication>
@@ -59,42 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-20T12:30:00-03:00</news:publication_date>
       <news:title>Itapema publica o passo a passo para construir dentro do Refúgio de Vida Silvestre, que cobre metade da cidade</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-207-coco-verde-itapema-programa-reciclagem</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-20T06:25:00-03:00</news:publication_date>
-      <news:title>Itapema aprovou o programa de reciclagem do coco verde na orla, e o texto está com o prefeito desde 10 de setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-206-credito-suplementar-itapema-turismo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-20T06:10:00-03:00</news:publication_date>
-      <news:title>Itapema abre R$ 2,26 milhões de crédito extra no orçamento, e três quartos ficam com o Turismo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-205-vale-transporte-servidores-praiana-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-19T18:30:00-03:00</news:publication_date>
-      <news:title>Itapema compra mais R$ 29,9 mil em vale-transporte da Viação Praiana, e o gasto de 2026 já é seis vezes o de 2025</news:title>
     </news:news>
   </url>
 
