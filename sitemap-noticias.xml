@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-217-detrami-guincho-itapema-agentes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-23T09:40:00-03:00</news:publication_date>
+      <news:title>Itapema pagou R$ 428,8 mil pelo guincho próprio do trânsito, e tem 11 agentes para as 30 vagas que a lei de junho criou</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-216-alvara-ambulante-itapema-familiar</loc>
     <news:news>
       <news:publication>
