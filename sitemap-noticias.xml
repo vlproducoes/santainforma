@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-218-camara-itapema-30a-sessao-sete-aprovacoes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-23T13:10:00-03:00</news:publication_date>
+      <news:title>A Câmara de Itapema aprovou sete matérias numa noite só, e as três que tratam da própria Casa levaram menos de uma semana</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-217-detrami-guincho-itapema-agentes</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-21T12:40:00-03:00</news:publication_date>
       <news:title>Consórcio de saúde da região abre pregão de 266,4 mil cateteres para Itapema e mais seis cidades, e o edital não diz quantos são de cada uma</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-210-aviso-temporal-itapema-segunda-terca</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-21T06:40:00-03:00</news:publication_date>
-      <news:title>Aviso de temporal da Epagri vale para Itapema até as 18h de terça, e o Morro do Encano fecha o dia inteiro nesta segunda</news:title>
     </news:news>
   </url>
 
