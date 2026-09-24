@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-222-editais-cultura-itapema-resultado</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T12:15:00-03:00</news:publication_date>
+      <news:title>Os três editais de cultura de Itapema deram 19 projetos aprovados, e a bolsa para Mestres não teve um único inscrito</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-221-concurso-publico-itapema-furb</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T09:35:00-03:00</news:publication_date>
+      <news:title>Itapema assinou o contrato do concurso público com a FURB por R$ 593,6 mil, e a conta sobe se passar de 6 mil inscritos</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-220-rua-250-meia-praia-avanca-itapema</loc>
     <news:news>
       <news:publication>
@@ -95,18 +119,6 @@
       </news:publication>
       <news:publication_date>2026-09-22T06:35:00-03:00</news:publication_date>
       <news:title>A Justiça dá 90 dias para Bombinhas abrir CRAS e CREAS oito horas por dia, e a cidade gastou R$ 141 por morador em assistência social em 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-212-camara-itapema-30a-sessao-19-proposicoes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-21T18:30:00-03:00</news:publication_date>
-      <news:title>A Câmara de Itapema lê 19 propostas nesta terça, e três delas tratam da própria Câmara</news:title>
     </news:news>
   </url>
 
