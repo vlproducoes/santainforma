@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-223-despesa-corrente-itapema-teto-95</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T12:35:00-03:00</news:publication_date>
+      <news:title>A despesa corrente de Itapema subiu para 97,78% da receita em agosto, depois de ficar abaixo do teto de 95% até abril</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-222-editais-cultura-itapema-resultado</loc>
     <news:news>
       <news:publication>
@@ -83,42 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-22T18:30:00-03:00</news:publication_date>
       <news:title>Itapema vota liberar cônjuge e filho no alvará do ambulante, e a lei de 2009 já mudou seis vezes em pouco mais de um ano</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-215-chamada-merenda-agricultura-familiar-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-22T12:20:00-03:00</news:publication_date>
-      <news:title>Itapema remarca para 25 de setembro a sessão da merenda da agricultura familiar, a terceira data da mesma chamada</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-214-porto-belo-esgoto-estudo-concepcao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-22T06:50:00-03:00</news:publication_date>
-      <news:title>Porto Belo recebeu o estudo do seu primeiro sistema público de esgoto, e o Censo mostra que 3 em cada 4 casas da cidade usam fossa</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-213-bombinhas-assistencia-social-mpsc</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-22T06:35:00-03:00</news:publication_date>
-      <news:title>A Justiça dá 90 dias para Bombinhas abrir CRAS e CREAS oito horas por dia, e a cidade gastou R$ 141 por morador em assistência social em 2025</news:title>
     </news:news>
   </url>
 
