@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-224-pier-oporto-consulta-resultado</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T18:20:00-03:00</news:publication_date>
+      <news:title>A consulta da Câmara de Itapema deu 87,76% a favor de trocar o nome do píer, e o nome que sai teve 64% de aprovação em 2024</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-223-despesa-corrente-itapema-teto-95</loc>
     <news:news>
       <news:publication>
