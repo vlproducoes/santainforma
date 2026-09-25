@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-227-despesa-pessoal-itapema-lrf</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-25T12:25:00-03:00</news:publication_date>
+      <news:title>O gasto com pessoal de Itapema cresceu 20,12% em um ano, mais rápido que a receita, e a audiência que explica as contas é nesta segunda</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-226-praca-edegar-von-buettner-itapema</loc>
     <news:news>
       <news:publication>
@@ -107,18 +119,6 @@
       </news:publication>
       <news:publication_date>2026-09-23T13:10:00-03:00</news:publication_date>
       <news:title>A Câmara de Itapema aprovou sete matérias numa noite só, e as três que tratam da própria Casa levaram menos de uma semana</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-217-detrami-guincho-itapema-agentes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-23T09:40:00-03:00</news:publication_date>
-      <news:title>Itapema pagou R$ 428,8 mil pelo guincho próprio do trânsito, e tem 11 agentes para as 30 vagas que a lei de junho criou</news:title>
     </news:news>
   </url>
 
