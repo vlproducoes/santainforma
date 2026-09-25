@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-226-praca-edegar-von-buettner-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-25T06:30:00-03:00</news:publication_date>
+      <news:title>Itapema fechou em R$ 307,9 mil a estrutura recreativa da Praça Edegar Von Buettner, e a reforma anterior da mesma praça levou seis prorrogações e 240 dias a mais</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-225-seletivo-simplificado-itapema-furb</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-25T06:15:00-03:00</news:publication_date>
+      <news:title>Itapema assinou o segundo contrato com a FURB em dois dias, agora o seletivo temporário de 22 cargos por R$ 419,8 mil, e a soma dos dois chega a R$ 1,01 milhão</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-224-pier-oporto-consulta-resultado</loc>
     <news:news>
       <news:publication>
@@ -95,18 +119,6 @@
       </news:publication>
       <news:publication_date>2026-09-23T09:40:00-03:00</news:publication_date>
       <news:title>Itapema pagou R$ 428,8 mil pelo guincho próprio do trânsito, e tem 11 agentes para as 30 vagas que a lei de junho criou</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-216-alvara-ambulante-itapema-familiar</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-22T18:30:00-03:00</news:publication_date>
-      <news:title>Itapema vota liberar cônjuge e filho no alvará do ambulante, e a lei de 2009 já mudou seis vezes em pouco mais de um ano</news:title>
     </news:news>
   </url>
 
