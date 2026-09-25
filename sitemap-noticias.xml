@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-228-alca-br101-itapema-liberada</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-25T18:40:00-03:00</news:publication_date>
+      <news:title>A alça da BR-101 em Itapema abriu um dia depois do prazo anunciado em abril, e 85 dias antes do contrato prorrogado em setembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-227-despesa-pessoal-itapema-lrf</loc>
     <news:news>
       <news:publication>
@@ -107,18 +119,6 @@
       </news:publication>
       <news:publication_date>2026-09-23T18:25:00-03:00</news:publication_date>
       <news:title>A Comissão de Finanças liberou a LDO de 2027 de Itapema para o plenário, e a ficha do projeto ainda não trazia o parecer nem os votos</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-218-camara-itapema-30a-sessao-sete-aprovacoes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-23T13:10:00-03:00</news:publication_date>
-      <news:title>A Câmara de Itapema aprovou sete matérias numa noite só, e as três que tratam da própria Casa levaram menos de uma semana</news:title>
     </news:news>
   </url>
 
