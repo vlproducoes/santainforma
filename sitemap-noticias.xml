@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-231-serie-b-veterano-futebol-amador-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-26T18:30:00-03:00</news:publication_date>
+      <news:title>Itapema abre Série B e Veterano do futebol amador com inscrição até 2 de outubro, e a Série A estreou uma semana depois da data anunciada</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-230-lei-terraplanagem-faaci-itapema</loc>
     <news:news>
       <news:publication>
@@ -95,30 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-24T12:35:00-03:00</news:publication_date>
       <news:title>A despesa corrente de Itapema subiu para 97,78% da receita em agosto, depois de ficar abaixo do teto de 95% até abril</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-222-editais-cultura-itapema-resultado</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-24T12:15:00-03:00</news:publication_date>
-      <news:title>Os três editais de cultura de Itapema deram 19 projetos aprovados, e a bolsa para Mestres não teve um único inscrito</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-221-concurso-publico-itapema-furb</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-24T09:35:00-03:00</news:publication_date>
-      <news:title>Itapema assinou o contrato do concurso público com a FURB por R$ 593,6 mil, e a conta sobe se passar de 6 mil inscritos</news:title>
     </news:news>
   </url>
 
