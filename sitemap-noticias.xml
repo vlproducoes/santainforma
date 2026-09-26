@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-232-acor-32-orla-centro-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-26T19:10:00-03:00</news:publication_date>
+      <news:title>O AÇOR de Itapema já tem endereço: a festa açoriana será na Orla do Centro em 20, 21 e 22 de novembro, e das seis perguntas que deixamos em aberto em agosto só essa teve resposta</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-231-serie-b-veterano-futebol-amador-itapema</loc>
     <news:news>
       <news:publication>
@@ -95,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-24T18:20:00-03:00</news:publication_date>
       <news:title>A consulta da Câmara de Itapema deu 87,76% a favor de trocar o nome do píer, e o nome que sai teve 64% de aprovação em 2024</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-223-despesa-corrente-itapema-teto-95</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-24T12:35:00-03:00</news:publication_date>
-      <news:title>A despesa corrente de Itapema subiu para 97,78% da receita em agosto, depois de ficar abaixo do teto de 95% até abril</news:title>
     </news:news>
   </url>
 
