@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-230-lei-terraplanagem-faaci-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-26T13:05:00-03:00</news:publication_date>
+      <news:title>Três dias depois do voto, a terraplanagem virou lei em Itapema, e o texto lista sete casos que ficam livres de pedir autorização</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-229-comarca-fundo-transacoes-penais-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-26T09:40:00-03:00</news:publication_date>
+      <news:title>A Comarca de Itapema destinou R$ 134,8 mil de acordos penais a três projetos da Prefeitura, e R$ 100 mil vão para os animais e para uma academia no 406B</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-228-alca-br101-itapema-liberada</loc>
     <news:news>
       <news:publication>
@@ -95,30 +119,6 @@
       </news:publication>
       <news:publication_date>2026-09-24T09:35:00-03:00</news:publication_date>
       <news:title>Itapema assinou o contrato do concurso público com a FURB por R$ 593,6 mil, e a conta sobe se passar de 6 mil inscritos</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-220-rua-250-meia-praia-avanca-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-23T18:30:00-03:00</news:publication_date>
-      <news:title>A Meia Praia ganhou a segunda rua asfaltada do Avança Itapema em cinco dias, e a 250 estava na primeira lista do programa havia 419 dias</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-219-ldo-2027-itapema-parecer-comissao-financas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-23T18:25:00-03:00</news:publication_date>
-      <news:title>A Comissão de Finanças liberou a LDO de 2027 de Itapema para o plenário, e a ficha do projeto ainda não trazia o parecer nem os votos</news:title>
     </news:news>
   </url>
 

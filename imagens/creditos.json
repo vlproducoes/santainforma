@@ -2681,5 +2681,28 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/nova-alca-de-acesso-a-br-101-e-liberada-para-o-trafego-em-itapema/",
     "dimensao_original": "1280x960",
     "baixada_em": "2026-09-25"
+  },
+  "m230-terraplanagem-faaci-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Rodolfo Gaion",
+    "url_fotografo": "https://www.pexels.com/@gaion",
+    "url_original": "https://www.pexels.com/photo/construction-site-with-excavator-in-londrina-brazil-32215946/",
+    "id_pexels": 32215946,
+    "termo_de_busca": "terraplanagem escavadeira terreno obra",
+    "baixada_em": "2026-09-26"
+  },
+  "m229-comarca-fundo-transacoes-penais-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/09/recursos-Fundo-de-Transacoes-Penais-6.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/comarca-de-itapema-destina-mais-de-r-130-mil-a-projetos-da-prefeitura-com-recursos-de-acordos-e-multas-penais/",
+    "dimensao_original": "1280x960",
+    "baixada_em": "2026-09-26"
   }
 }
