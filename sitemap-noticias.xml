@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-235-cis-amfri-iodoterapia-tabela</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-27T12:45:00-03:00</news:publication_date>
+      <news:title>O consórcio de saúde de Itapema e mais dez cidades pôs iodoterapia e punção de mama na tabela, e a tabela do SUS paga 28,6% dessa conta</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-234-arborizacao-itapema-censo</loc>
     <news:news>
       <news:publication>
@@ -83,30 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-25T18:40:00-03:00</news:publication_date>
       <news:title>A alça da BR-101 em Itapema abriu um dia depois do prazo anunciado em abril, e 85 dias antes do contrato prorrogado em setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-227-despesa-pessoal-itapema-lrf</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-25T12:25:00-03:00</news:publication_date>
-      <news:title>O gasto com pessoal de Itapema cresceu 20,12% em um ano, mais rápido que a receita, e a audiência que explica as contas é nesta segunda</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-226-praca-edegar-von-buettner-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-25T06:30:00-03:00</news:publication_date>
-      <news:title>Itapema fechou em R$ 307,9 mil a estrutura recreativa da Praça Edegar Von Buettner, e a reforma anterior da mesma praça levou seis prorrogações e 240 dias a mais</news:title>
     </news:news>
   </url>
 
