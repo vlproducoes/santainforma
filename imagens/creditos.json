@@ -2728,5 +2728,27 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/itapema-recebe-a-32a-festa-da-cultura-acoriana-em-novembro/",
     "dimensao_original": "1280x960",
     "baixada_em": "2026-09-26"
+  },
+  "m233-viva-praia-dia-das-criancas-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Wolfgang Weiser",
+    "url_fotografo": "https://www.pexels.com/@wolfgang-weiser-467045605",
+    "url_original": "https://www.pexels.com/photo/inflatable-bouncy-castle-18294173/",
+    "id_pexels": 18294173,
+    "termo_de_busca": "brinquedo inflavel pula pula colorido",
+    "baixada_em": "2026-09-27"
+  },
+  "m234-arborizacao-itapema-censo.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Gabriela Cheloni",
+    "url_fotografo": "https://www.pexels.com/@gabrielacheloni",
+    "url_original": "https://www.pexels.com/photo/autumn-trees-lining-road-in-curitiba-brazil-31778712/",
+    "id_pexels": 31778712,
+    "termo_de_busca": "rua arborizada calcada arvores cidade",
+    "baixada_em": "2026-09-27"
   }
 }

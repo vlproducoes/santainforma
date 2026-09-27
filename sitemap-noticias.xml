@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-234-arborizacao-itapema-censo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-27T07:30:00-03:00</news:publication_date>
+      <news:title>68% dos moradores de Itapema vivem em rua sem nenhuma árvore, a pior marca das três cidades da Costa Esmeralda, e a lei estadual de julho não obriga a cidade a plantar</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-233-viva-praia-dia-das-criancas-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-27T06:40:00-03:00</news:publication_date>
+      <news:title>Itapema procura empresa para bancar a pipoca e o algodão-doce do Viva Praia do Dia das Crianças, e o prazo para se inscrever fecha em 5 de outubro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-232-acor-32-orla-centro-itapema</loc>
     <news:news>
       <news:publication>
@@ -83,30 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-25T06:30:00-03:00</news:publication_date>
       <news:title>Itapema fechou em R$ 307,9 mil a estrutura recreativa da Praça Edegar Von Buettner, e a reforma anterior da mesma praça levou seis prorrogações e 240 dias a mais</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-225-seletivo-simplificado-itapema-furb</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-25T06:15:00-03:00</news:publication_date>
-      <news:title>Itapema assinou o segundo contrato com a FURB em dois dias, agora o seletivo temporário de 22 cargos por R$ 419,8 mil, e a soma dos dois chega a R$ 1,01 milhão</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-224-pier-oporto-consulta-resultado</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-24T18:20:00-03:00</news:publication_date>
-      <news:title>A consulta da Câmara de Itapema deu 87,76% a favor de trocar o nome do píer, e o nome que sai teve 64% de aprovação em 2024</news:title>
     </news:news>
   </url>
 
