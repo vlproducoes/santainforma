@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-237-obras-temporada-itapema-substitutivo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-28T06:40:00-03:00</news:publication_date>
+      <news:title>O projeto que proíbe obra nova na rua durante a temporada de Itapema voltou 585 dias depois, sem a comissão que daria assento ao Sinduscon e com a multa dez vezes menor</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-236-orla-ilhota-reurbanizacao-contrato</loc>
     <news:news>
       <news:publication>
@@ -95,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-09-26T09:40:00-03:00</news:publication_date>
       <news:title>A Comarca de Itapema destinou R$ 134,8 mil de acordos penais a três projetos da Prefeitura, e R$ 100 mil vão para os animais e para uma academia no 406B</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-228-alca-br101-itapema-liberada</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-25T18:40:00-03:00</news:publication_date>
-      <news:title>A alça da BR-101 em Itapema abriu um dia depois do prazo anunciado em abril, e 85 dias antes do contrato prorrogado em setembro</news:title>
     </news:news>
   </url>
 
