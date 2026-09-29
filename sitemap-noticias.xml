@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-240-pregao-tapa-buraco-lombadas-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T06:50:00-03:00</news:publication_date>
+      <news:title>Itapema abre pregão de R$ 21,8 milhões para tapa-buraco e lombadas, 31% acima do de 2025, e o do ano passado foi homologado por menos da metade</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-239-adote-area-publica-tuneis-br101-itapema</loc>
     <news:news>
       <news:publication>
@@ -83,30 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-27T06:40:00-03:00</news:publication_date>
       <news:title>Itapema procura empresa para bancar a pipoca e o algodão-doce do Viva Praia do Dia das Crianças, e o prazo para se inscrever fecha em 5 de outubro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-232-acor-32-orla-centro-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-26T19:10:00-03:00</news:publication_date>
-      <news:title>O AÇOR de Itapema já tem endereço: a festa açoriana será na Orla do Centro em 20, 21 e 22 de novembro, e das seis perguntas que deixamos em aberto em agosto só essa teve resposta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-231-serie-b-veterano-futebol-amador-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-26T18:30:00-03:00</news:publication_date>
-      <news:title>Itapema abre Série B e Veterano do futebol amador com inscrição até 2 de outubro, e a Série A estreou uma semana depois da data anunciada</news:title>
     </news:news>
   </url>
 
