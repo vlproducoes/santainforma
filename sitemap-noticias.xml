@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-242-cmdca-fia-itapema-edital-2027</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T13:20:00-03:00</news:publication_date>
+      <news:title>Itapema abre R$ 2,4 milhões do fundo da infância para 2027, R$ 400 mil a mais que nos dois editais anteriores, e o prazo de entrega encurtou de novembro para 23 de outubro</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-241-adiantamento-diarias-itapema-escalonado</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T12:45:00-03:00</news:publication_date>
+      <news:title>Itapema quer trocar o teto único de R$ 57,2 mil das viagens de delegação por quatro faixas de até R$ 120 mil, e o texto nasceu na segunda para ser votado nesta terça</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-240-pregao-tapa-buraco-lombadas-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,30 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-27T12:45:00-03:00</news:publication_date>
       <news:title>O consórcio de saúde de Itapema e mais dez cidades pôs iodoterapia e punção de mama na tabela, e a tabela do SUS paga 28,6% dessa conta</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-234-arborizacao-itapema-censo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T07:30:00-03:00</news:publication_date>
-      <news:title>68% dos moradores de Itapema vivem em rua sem nenhuma árvore, a pior marca das três cidades da Costa Esmeralda, e a lei estadual de julho não obriga a cidade a plantar</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-233-viva-praia-dia-das-criancas-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T06:40:00-03:00</news:publication_date>
-      <news:title>Itapema procura empresa para bancar a pipoca e o algodão-doce do Viva Praia do Dia das Crianças, e o prazo para se inscrever fecha em 5 de outubro</news:title>
     </news:news>
   </url>
 
