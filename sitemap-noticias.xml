@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-243-despesa-pessoal-costa-esmeralda-comparada</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T18:40:00-03:00</news:publication_date>
+      <news:title>Itapema gasta R$ 3.685 por morador com a folha, o menor valor entre as quatro cidades vizinhas que acabaram de publicar as contas, e Balneário Camboriú está a R$ 5,3 milhões do alerta da lei</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-242-cmdca-fia-itapema-edital-2027</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-27T18:40:00-03:00</news:publication_date>
       <news:title>Itapema contratou a reurbanização da orla da Ilhota por R$ 7,8 milhões, R$ 2,1 milhões abaixo do previsto, e o prazo vai até novembro de 2027</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-235-cis-amfri-iodoterapia-tabela</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T12:45:00-03:00</news:publication_date>
-      <news:title>O consórcio de saúde de Itapema e mais dez cidades pôs iodoterapia e punção de mama na tabela, e a tabela do SUS paga 28,6% dessa conta</news:title>
     </news:news>
   </url>
 
