@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-246-camara-itapema-31a-sessao-espera</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-30T18:35:00-03:00</news:publication_date>
+      <news:title>A Câmara de Itapema aprovou 11 projetos numa noite só, e sete deles esperaram mais de 300 dias para chegar ao voto</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-245-urgencia-executivo-camara-itapema</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-28T18:35:00-03:00</news:publication_date>
       <news:title>Já são quatro os túneis da BR-101 em Itapema com empresa querendo adotar, e o aviso dos dois mais novos abre prazo nesta terça</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-238-presenca-vereadores-itapema-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-28T12:40:00-03:00</news:publication_date>
-      <news:title>Somamos as 83 listas de presença da Câmara de Itapema: 96% em 2026, seis vereadores sem nenhuma falta e a cadeira que mais faltou em 2025 está hoje com 100%</news:title>
     </news:news>
   </url>
 
