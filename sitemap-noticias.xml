@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-245-urgencia-executivo-camara-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-30T12:25:00-03:00</news:publication_date>
+      <news:title>A Prefeitura de Itapema pediu urgência 37 vezes em 2026 e a Câmara aprovou as 37, enquanto 4 dos 32 pedidos feitos por vereador foram rejeitados</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-244-citmar-rateio-turismo-itapema</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-28T12:40:00-03:00</news:publication_date>
       <news:title>Somamos as 83 listas de presença da Câmara de Itapema: 96% em 2026, seis vereadores sem nenhuma falta e a cadeira que mais faltou em 2025 está hoje com 100%</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-237-obras-temporada-itapema-substitutivo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-28T06:40:00-03:00</news:publication_date>
-      <news:title>O projeto que proíbe obra nova na rua durante a temporada de Itapema voltou 585 dias depois, sem a comissão que daria assento ao Sinduscon e com a multa dez vezes menor</news:title>
     </news:news>
   </url>
 

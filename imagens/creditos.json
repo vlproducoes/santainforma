@@ -2870,5 +2870,17 @@
     "dimensao_original": "1600x1200",
     "recorte": "cortada a faixa superior para deixar so a estrutura do estande e tirar do quadro os rostos dos visitantes em primeiro plano",
     "baixada_em": "2026-09-30"
+  },
+  "m245-urgencia-executivo-camara.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Câmara de Vereadores de Itapema",
+    "autor": null,
+    "ano": "2026",
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://site.itapema.sc.leg.br/public/portaladm-cvitapema/imagens/fotos/215da32bc21e20657c421ddcc8b71bff.jpg",
+    "pagina_da_fonte": "https://site.itapema.sc.leg.br/noticia/1854-31+Sessao+Prefeitura+propoe+criacao+de+limites+escalonados+para+participacoes+em+eventos+culturais+sociais+e+esportivos.html",
+    "dimensao_original": "2048x1365",
+    "baixada_em": "2026-09-30"
   }
 }
