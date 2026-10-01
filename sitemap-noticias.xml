@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-249-it-wheel-roda-gigante-69-vagas-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-01T18:30:00-03:00</news:publication_date>
+      <news:title>A roda-gigante de Itapema seleciona para 69 vagas neste sábado, e as nove vagas publicadas pedem experiência e pagam de R$ 2.300 a R$ 4.000</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-248-indicacao-parque-esponja-drenagem-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-29T18:40:00-03:00</news:publication_date>
       <news:title>Itapema gasta R$ 3.685 por morador com a folha, o menor valor entre as quatro cidades vizinhas que acabaram de publicar as contas, e Balneário Camboriú está a R$ 5,3 milhões do alerta da lei</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-242-cmdca-fia-itapema-edital-2027</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-29T13:20:00-03:00</news:publication_date>
-      <news:title>Itapema abre R$ 2,4 milhões do fundo da infância para 2027, R$ 400 mil a mais que nos dois editais anteriores, e o prazo de entrega encurtou de novembro para 23 de outubro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-241-adiantamento-diarias-itapema-escalonado</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-29T12:45:00-03:00</news:publication_date>
-      <news:title>Itapema quer trocar o teto único de R$ 57,2 mil das viagens de delegação por quatro faixas de até R$ 120 mil, e o texto nasceu na segunda para ser votado nesta terça</news:title>
     </news:news>
   </url>
 
