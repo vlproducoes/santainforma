@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-248-indicacao-parque-esponja-drenagem-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-01T15:40:00-03:00</news:publication_date>
+      <news:title>Das 5.668 indicações protocoladas na Câmara de Itapema em 2026, 484 pedem drenagem e só uma pede parque-esponja</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-247-praca-domino-ordem-servico-itapema</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-29T12:45:00-03:00</news:publication_date>
       <news:title>Itapema quer trocar o teto único de R$ 57,2 mil das viagens de delegação por quatro faixas de até R$ 120 mil, e o texto nasceu na segunda para ser votado nesta terça</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-240-pregao-tapa-buraco-lombadas-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-29T06:50:00-03:00</news:publication_date>
-      <news:title>Itapema abre pregão de R$ 21,8 milhões para tapa-buraco e lombadas, 31% acima do de 2025, e o do ano passado foi homologado por menos da metade</news:title>
     </news:news>
   </url>
 
