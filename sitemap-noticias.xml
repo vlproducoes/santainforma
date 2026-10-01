@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-247-praca-domino-ordem-servico-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-01T06:25:00-03:00</news:publication_date>
+      <news:title>Itapema assinou a ordem de serviço da Praça do Dominó e o endereço que faltava nos documentos apareceu: Centro, entre as Ruas 145 e 147</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-246-camara-itapema-31a-sessao-espera</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-09-29T06:50:00-03:00</news:publication_date>
       <news:title>Itapema abre pregão de R$ 21,8 milhões para tapa-buraco e lombadas, 31% acima do de 2025, e o do ano passado foi homologado por menos da metade</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-239-adote-area-publica-tuneis-br101-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-28T18:35:00-03:00</news:publication_date>
-      <news:title>Já são quatro os túneis da BR-101 em Itapema com empresa querendo adotar, e o aviso dos dois mais novos abre prazo nesta terça</news:title>
     </news:news>
   </url>
 

@@ -1208,6 +1208,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://santainforma.com.br/materia-247-praca-domino-ordem-servico-itapema</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://santainforma.com.br/materia-245-urgencia-executivo-camara-itapema</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -1757,6 +1763,12 @@
   <url>
     <loc>https://santainforma.com.br/noticias-39</loc>
     <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/noticias-40</loc>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
