@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-251-contratos-cultura-itapema-outubro</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T12:40:00-03:00</news:publication_date>
+      <news:title>Itapema fechou R$ 59.746 em contratos de cultura em 17 dias, e R$ 44.900 estão num só, o teatro do Dia das Crianças</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-250-fila-unica-setima-chamada-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-30T12:25:00-03:00</news:publication_date>
       <news:title>A Prefeitura de Itapema pediu urgência 37 vezes em 2026 e a Câmara aprovou as 37, enquanto 4 dos 32 pedidos feitos por vereador foram rejeitados</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-244-citmar-rateio-turismo-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T06:40:00-03:00</news:publication_date>
-      <news:title>Itapema paga R$ 169 mil por ano ao consórcio de turismo da região, o terceiro maior valor entre dez cidades, e a Câmara aprovou o novo contrato por 11 a 0</news:title>
     </news:news>
   </url>
 
