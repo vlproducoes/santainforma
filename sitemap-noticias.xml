@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-250-fila-unica-setima-chamada-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T06:15:00-03:00</news:publication_date>
+      <news:title>Somamos as sete chamadas do Fila Única de Itapema em 2026: 1.567 convocações, e a sétima é a menor do ano, com 116</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-249-it-wheel-roda-gigante-69-vagas-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-09-30T06:40:00-03:00</news:publication_date>
       <news:title>Itapema paga R$ 169 mil por ano ao consórcio de turismo da região, o terceiro maior valor entre dez cidades, e a Câmara aprovou o novo contrato por 11 a 0</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-243-despesa-pessoal-costa-esmeralda-comparada</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-29T18:40:00-03:00</news:publication_date>
-      <news:title>Itapema gasta R$ 3.685 por morador com a folha, o menor valor entre as quatro cidades vizinhas que acabaram de publicar as contas, e Balneário Camboriú está a R$ 5,3 milhões do alerta da lei</news:title>
     </news:news>
   </url>
 

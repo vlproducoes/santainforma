@@ -2930,5 +2930,17 @@
     "dimensao_original": "1600x900",
     "baixada_em": "2026-10-01",
     "observacao": "imagem de divulgacao publicada pela Prefeitura de Itapema na nota do Sine de 1o de outubro de 2026; a roda-gigante ainda nao estava inaugurada"
+  },
+  "m250-secretaria-educacao-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/01/secretaria-de-educacao-3.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/educacao-divulga-setima-chamada-dos-contemplados-do-fila-unica-inscritos-em-2026/",
+    "dimensao_original": "1600x1200",
+    "baixada_em": "2026-10-02"
   }
 }
