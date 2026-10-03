@@ -2965,5 +2965,29 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/saude-24h-supera-mil-atendimentos-em-pouco-mais-de-um-mes-em-itapema/",
     "dimensao_original": "4032x3024",
     "baixada_em": "2026-10-02"
+  },
+  "m253-guarda-municipal-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/10/atendimento_gm_setembro-5.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/guarda-municipal-de-itapema-registra-729-atendimentos-em-setembro/",
+    "dimensao_original": "1204x1600",
+    "observacao": "recortada para enquadrar apenas a viatura: o original traz pessoa detida, que a regra da casa manda nao expor",
+    "baixada_em": "2026-10-03"
+  },
+  "m254-festival-camarao-porto-belo.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Sheldon  Cuba",
+    "url_fotografo": "https://www.pexels.com/@sheldon-cuba-238542428",
+    "url_original": "https://www.pexels.com/photo/cooked-prawns-on-white-plates-12458186/",
+    "id_pexels": 12458186,
+    "termo_de_busca": "shrimp festival food",
+    "baixada_em": "2026-10-03"
   }
 }

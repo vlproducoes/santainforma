@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-254-festival-camarao-porto-belo-contratos</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-03T07:45:00-03:00</news:publication_date>
+      <news:title>Somamos os sete contratos do 11º Festival do Camarão de Porto Belo e deu R$ 3,58 milhões para seis dias, com o maior deles na organização</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-253-guarda-municipal-itapema-729-setembro</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-03T07:10:00-03:00</news:publication_date>
+      <news:title>A Guarda Municipal de Itapema fez 729 atendimentos em setembro, abaixo da média mensal de 2025, e desta vez a Prefeitura não abriu os números por tipo</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-252-saude-24h-itapema-1064-atendimentos</loc>
     <news:news>
       <news:publication>
@@ -59,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-01T15:40:00-03:00</news:publication_date>
       <news:title>Das 5.668 indicações protocoladas na Câmara de Itapema em 2026, 484 pedem drenagem e só uma pede parque-esponja</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-247-praca-domino-ordem-servico-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-01T06:25:00-03:00</news:publication_date>
-      <news:title>Itapema assinou a ordem de serviço da Praça do Dominó e o endereço que faltava nos documentos apareceu: Centro, entre as Ruas 145 e 147</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-246-camara-itapema-31a-sessao-espera</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T18:35:00-03:00</news:publication_date>
-      <news:title>A Câmara de Itapema aprovou 11 projetos numa noite só, e sete deles esperaram mais de 300 dias para chegar ao voto</news:title>
     </news:news>
   </url>
 
