@@ -2989,5 +2989,18 @@
     "id_pexels": 12458186,
     "termo_de_busca": "shrimp festival food",
     "baixada_em": "2026-10-03"
+  },
+  "m255-praca-espaco-produtor-itapema.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/10/revitalizacao_praca-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/praca-espaco-do-produtor-e-revitalizada-e-entregue-a-comunidade-na-meia-praia/",
+    "dimensao_original": "1280x960",
+    "observacao": "recortada para 16:9 na banca dos produtores; o recorte tira os rostos do quadro, pela regra da casa de nao expor pessoa comum",
+    "baixada_em": "2026-10-03"
   }
 }

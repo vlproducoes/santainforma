@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-255-praca-espaco-produtor-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-03T18:45:00-03:00</news:publication_date>
+      <news:title>Itapema entregou a praça dos produtores reformada por uma empresa de internet, e ela não aparece em nenhum dos cinco avisos de adoção de área pública publicados desde 2025</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-254-festival-camarao-porto-belo-contratos</loc>
     <news:news>
       <news:publication>
@@ -59,30 +71,6 @@
       </news:publication>
       <news:publication_date>2026-10-02T06:15:00-03:00</news:publication_date>
       <news:title>Somamos as sete chamadas do Fila Única de Itapema em 2026: 1.567 convocações, e a sétima é a menor do ano, com 116</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-249-it-wheel-roda-gigante-69-vagas-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-01T18:30:00-03:00</news:publication_date>
-      <news:title>A roda-gigante de Itapema seleciona para 69 vagas neste sábado, e as nove vagas publicadas pedem experiência e pagam de R$ 2.300 a R$ 4.000</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-248-indicacao-parque-esponja-drenagem-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-01T15:40:00-03:00</news:publication_date>
-      <news:title>Das 5.668 indicações protocoladas na Câmara de Itapema em 2026, 484 pedem drenagem e só uma pede parque-esponja</news:title>
     </news:news>
   </url>
 
