@@ -3002,5 +3002,27 @@
     "dimensao_original": "1280x960",
     "observacao": "recortada para 16:9 na banca dos produtores; o recorte tira os rostos do quadro, pela regra da casa de nao expor pessoa comum",
     "baixada_em": "2026-10-03"
+  },
+  "m256-contrato-limpeza-itapema.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Thomas  balabaud",
+    "url_fotografo": "https://www.pexels.com/@thomas-balabaud-735585",
+    "url_original": "https://www.pexels.com/photo/industrial-hallway-with-cleaning-cart-setup-36303748/",
+    "id_pexels": 36303748,
+    "termo_de_busca": "cleaning supplies bucket mop",
+    "baixada_em": "2026-10-04"
+  },
+  "m257-bombeiros-itapema-contratos.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Grégory Costa",
+    "url_fotografo": "https://www.pexels.com/@gregory-costa",
+    "url_original": "https://www.pexels.com/photo/close-up-shot-of-walkie-talkies-5733665/",
+    "id_pexels": 5733665,
+    "termo_de_busca": "handheld two way radio walkie talkie",
+    "baixada_em": "2026-10-04"
   }
 }

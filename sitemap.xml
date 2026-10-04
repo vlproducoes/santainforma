@@ -3,14 +3,14 @@
 
   <url>
     <loc>https://santainforma.com.br/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://santainforma.com.br/regiao</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1234,6 +1234,18 @@
   <url>
     <loc>https://santainforma.com.br/materia-253-guarda-municipal-itapema-729-setembro</loc>
     <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-256-contrato-limpeza-itapema-aditivo</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-257-bombeiros-itapema-contratos-2026</loc>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

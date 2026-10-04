@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-257-bombeiros-itapema-contratos-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-04T12:40:00-03:00</news:publication_date>
+      <news:title>Itapema já assinou R$ 449,7 mil em 2026 para equipar e abrigar o Corpo de Bombeiros, que é órgão do estado, e três dessas compras saíram em dez dias</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-256-contrato-limpeza-itapema-aditivo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-04T10:30:00-03:00</news:publication_date>
+      <news:title>Itapema renovou por R$ 16,25 milhões o contrato de limpeza dos prédios públicos, 48% acima do que os mesmos 12 meses custavam em 2024</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-255-praca-espaco-produtor-itapema</loc>
     <news:news>
       <news:publication>
@@ -59,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-02T12:40:00-03:00</news:publication_date>
       <news:title>Itapema fechou R$ 59.746 em contratos de cultura em 17 dias, e R$ 44.900 estão num só, o teatro do Dia das Crianças</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-250-fila-unica-setima-chamada-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-02T06:15:00-03:00</news:publication_date>
-      <news:title>Somamos as sete chamadas do Fila Única de Itapema em 2026: 1.567 convocações, e a sétima é a menor do ano, com 116</news:title>
     </news:news>
   </url>
 
