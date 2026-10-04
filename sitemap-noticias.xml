@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-259-equipamento-veraneio-itapema-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-04T18:40:00-03:00</news:publication_date>
+      <news:title>Itapema assinou R$ 195,6 mil em equipamento de praia num só dia, e o que já contratou para esta temporada é 52% menor que no mesmo ponto de 2025</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-257-bombeiros-itapema-contratos-2026</loc>
     <news:news>
       <news:publication>
@@ -71,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-03T07:10:00-03:00</news:publication_date>
       <news:title>A Guarda Municipal de Itapema fez 729 atendimentos em setembro, abaixo da média mensal de 2025, e desta vez a Prefeitura não abriu os números por tipo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-252-saude-24h-itapema-1064-atendimentos</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-02T18:30:00-03:00</news:publication_date>
-      <news:title>O Saúde 24h de Itapema chegou a 1.064 atendimentos, e 792 foram só em setembro, 26 por dia</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-251-contratos-cultura-itapema-outubro</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-02T12:40:00-03:00</news:publication_date>
-      <news:title>Itapema fechou R$ 59.746 em contratos de cultura em 17 dias, e R$ 44.900 estão num só, o teatro do Dia das Crianças</news:title>
     </news:news>
   </url>
 
