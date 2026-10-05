@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-260-curso-guarda-vidas-itapema-costa-esmeralda</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-05T06:40:00-03:00</news:publication_date>
+      <news:title>Itapema sedia três dos nove cursos de guarda-vidas voluntário do batalhão, Porto Belo não sedia nenhum, e o teste físico daqui é nesta quarta, em Itajaí</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-259-equipamento-veraneio-itapema-2026</loc>
     <news:news>
       <news:publication>
