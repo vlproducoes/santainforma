@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-261-alvara-ambulante-itapema-prazo-protocolo-web</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-05T12:40:00-03:00</news:publication_date>
+      <news:title>Itapema fecha neste sábado a renovação do alvará do ambulante, e este ano o pedido só entra pelo Protocolo Web, sem balcão e sem e-mail</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-260-curso-guarda-vidas-itapema-costa-esmeralda</loc>
     <news:news>
       <news:publication>
@@ -71,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-03T18:45:00-03:00</news:publication_date>
       <news:title>Itapema entregou a praça dos produtores reformada por uma empresa de internet, e ela não aparece em nenhum dos cinco avisos de adoção de área pública publicados desde 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-254-festival-camarao-porto-belo-contratos</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-03T07:45:00-03:00</news:publication_date>
-      <news:title>Somamos os sete contratos do 11º Festival do Camarão de Porto Belo e deu R$ 3,58 milhões para seis dias, com o maior deles na organização</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-253-guarda-municipal-itapema-729-setembro</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-03T07:10:00-03:00</news:publication_date>
-      <news:title>A Guarda Municipal de Itapema fez 729 atendimentos em setembro, abaixo da média mensal de 2025, e desta vez a Prefeitura não abriu os números por tipo</news:title>
     </news:news>
   </url>
 
