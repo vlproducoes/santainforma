@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-265-obras-temporada-itapema-pauta-votacao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-06T18:40:00-03:00</news:publication_date>
+      <news:title>O projeto que fecha a obra de rua de Itapema antes do verão entrou na pauta desta terça, e no verão passado a Prefeitura publicou seis avisos de frente de obra no período que ele proibiria</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-264-engordamento-praia-itapoa-meia-praia-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-04T18:40:00-03:00</news:publication_date>
       <news:title>Itapema assinou R$ 195,6 mil em equipamento de praia num só dia, e o que já contratou para esta temporada é 52% menor que no mesmo ponto de 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-257-bombeiros-itapema-contratos-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-04T12:40:00-03:00</news:publication_date>
-      <news:title>Itapema já assinou R$ 449,7 mil em 2026 para equipar e abrigar o Corpo de Bombeiros, que é órgão do estado, e três dessas compras saíram em dez dias</news:title>
     </news:news>
   </url>
 
