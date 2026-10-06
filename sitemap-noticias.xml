@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-263-audiencia-residuos-solidos-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-06T06:40:00-03:00</news:publication_date>
+      <news:title>Itapema marca audiência pública sobre o lixo para 15 de outubro, 1.275 dias depois da última que localizamos sobre o tema, e o aviso não diz qual documento vai à mesa</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-262-dia-parasurf-itapema-estreia</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-04T10:30:00-03:00</news:publication_date>
       <news:title>Itapema renovou por R$ 16,25 milhões o contrato de limpeza dos prédios públicos, 48% acima do que os mesmos 12 meses custavam em 2024</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-255-praca-espaco-produtor-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-03T18:45:00-03:00</news:publication_date>
-      <news:title>Itapema entregou a praça dos produtores reformada por uma empresa de internet, e ela não aparece em nenhum dos cinco avisos de adoção de área pública publicados desde 2025</news:title>
     </news:news>
   </url>
 
