@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-264-engordamento-praia-itapoa-meia-praia-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-06T13:10:00-03:00</news:publication_date>
+      <news:title>O maior engordamento de praia do Brasil terminou em Itapoá, e o alargamento da Meia Praia não aparece em nenhum dos 678 contratos que Itapema publicou em 2026</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-263-audiencia-residuos-solidos-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-04T12:40:00-03:00</news:publication_date>
       <news:title>Itapema já assinou R$ 449,7 mil em 2026 para equipar e abrigar o Corpo de Bombeiros, que é órgão do estado, e três dessas compras saíram em dez dias</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-258-viva-praia-itapema-um-ano-10-edicoes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-04T12:18:00-03:00</news:publication_date>
-      <news:title>O Viva Praia faz um ano no domingo com 10 edições realizadas, conta que a Prefeitura não publica, e o recorde de expositores segue sendo o de dezembro de 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-256-contrato-limpeza-itapema-aditivo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-04T10:30:00-03:00</news:publication_date>
-      <news:title>Itapema renovou por R$ 16,25 milhões o contrato de limpeza dos prédios públicos, 48% acima do que os mesmos 12 meses custavam em 2024</news:title>
     </news:news>
   </url>
 
