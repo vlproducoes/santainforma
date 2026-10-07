@@ -10,7 +10,7 @@
 
   <url>
     <loc>https://santainforma.com.br/regiao</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1264,6 +1264,12 @@
   <url>
     <loc>https://santainforma.com.br/materia-264-engordamento-praia-itapoa-meia-praia-itapema</loc>
     <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-266-votacao-adiada-obras-temporada-itapema</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

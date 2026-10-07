@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-266-votacao-adiada-obras-temporada-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T09:40:00-03:00</news:publication_date>
+      <news:title>A Câmara de Itapema aprovou por 12 a 0 a urgência para votar a regra de obra no verão, e a votação não aconteceu: o projeto voltou para a fila a 25 dias de novembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-265-obras-temporada-itapema-pauta-votacao</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-05T06:40:00-03:00</news:publication_date>
       <news:title>Itapema sedia três dos nove cursos de guarda-vidas voluntário do batalhão, Porto Belo não sedia nenhum, e o teste físico daqui é nesta quarta, em Itajaí</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-259-equipamento-veraneio-itapema-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-04T18:40:00-03:00</news:publication_date>
-      <news:title>Itapema assinou R$ 195,6 mil em equipamento de praia num só dia, e o que já contratou para esta temporada é 52% menor que no mesmo ponto de 2025</news:title>
     </news:news>
   </url>
 
