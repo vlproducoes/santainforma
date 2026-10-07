@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-267-equipamento-veraneio-santa-catarina-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T13:40:00-03:00</news:publication_date>
+      <news:title>Santa Catarina comprou 65% mais equipamento de praia neste ano, e Itapema, que era a primeira do estado, caiu para a quinta posição</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-266-votacao-adiada-obras-temporada-itapema</loc>
     <news:news>
       <news:publication>
@@ -59,30 +71,6 @@
       </news:publication>
       <news:publication_date>2026-10-05T18:20:00-03:00</news:publication_date>
       <news:title>Itapema estreia neste sábado o Dia do Parasurf que criou em setembro, com aulão às 10h na Praia do Centro e o atleta que ficou em terceiro no Brasileiro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-261-alvara-ambulante-itapema-prazo-protocolo-web</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-05T12:40:00-03:00</news:publication_date>
-      <news:title>Itapema fecha neste sábado a renovação do alvará do ambulante, e este ano o pedido só entra pelo Protocolo Web, sem balcão e sem e-mail</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-260-curso-guarda-vidas-itapema-costa-esmeralda</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-05T06:40:00-03:00</news:publication_date>
-      <news:title>Itapema sedia três dos nove cursos de guarda-vidas voluntário do batalhão, Porto Belo não sedia nenhum, e o teste físico daqui é nesta quarta, em Itajaí</news:title>
     </news:news>
   </url>
 
