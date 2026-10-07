@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-268-morro-do-encano-contrato-pavimentacao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T18:20:00-03:00</news:publication_date>
+      <news:title>O Morro do Encano chegou à fase de subleito, e o contrato de R$ 9,8 milhões que paga a obra vale até 8 de fevereiro, com 59% do prazo já corrido</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-267-equipamento-veraneio-santa-catarina-itapema</loc>
     <news:news>
       <news:publication>
@@ -59,18 +71,6 @@
       </news:publication>
       <news:publication_date>2026-10-06T06:40:00-03:00</news:publication_date>
       <news:title>Itapema marca audiência pública sobre o lixo para 15 de outubro, 1.275 dias depois da última que localizamos sobre o tema, e o aviso não diz qual documento vai à mesa</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-262-dia-parasurf-itapema-estreia</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-05T18:20:00-03:00</news:publication_date>
-      <news:title>Itapema estreia neste sábado o Dia do Parasurf que criou em setembro, com aulão às 10h na Praia do Centro e o atleta que ficou em terceiro no Brasileiro</news:title>
     </news:news>
   </url>
 

@@ -3,7 +3,7 @@
 
   <url>
     <loc>https://santainforma.com.br/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -1269,6 +1269,13 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/materia-267-equipamento-veraneio-santa-catarina-itapema</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-268-morro-do-encano-contrato-pavimentacao</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
