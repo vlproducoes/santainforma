@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-271-binario-ruas-442-444-morretes-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-08T18:30:00-03:00</news:publication_date>
+      <news:title>As Ruas 442 e 444 do Morretes viraram mão única, e é o quinto aviso de mudança de trânsito que o bairro recebe em doze meses</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-270-equipamento-guarda-municipal-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-06T18:40:00-03:00</news:publication_date>
       <news:title>O projeto que fecha a obra de rua de Itapema antes do verão entrou na pauta desta terça, e no verão passado a Prefeitura publicou seis avisos de frente de obra no período que ele proibiria</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-264-engordamento-praia-itapoa-meia-praia-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-06T13:10:00-03:00</news:publication_date>
-      <news:title>O maior engordamento de praia do Brasil terminou em Itapoá, e o alargamento da Meia Praia não aparece em nenhum dos 678 contratos que Itapema publicou em 2026</news:title>
     </news:news>
   </url>
 
