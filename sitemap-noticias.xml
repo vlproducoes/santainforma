@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-269-apostas-camara-itapema-oito-projetos</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-08T07:10:00-03:00</news:publication_date>
+      <news:title>O projeto sobre o vício em apostas que a Câmara de Itapema discutiu é o oitavo do tema desde 2025, e um que já tem três pareceres favoráveis espera votação há 181 dias</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-268-morro-do-encano-contrato-pavimentacao</loc>
     <news:news>
       <news:publication>
