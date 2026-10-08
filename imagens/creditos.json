@@ -3139,5 +3139,17 @@
     "dimensao_original": "1280x960",
     "baixada_em": "2026-10-07",
     "observacao": "borda direita recortada para tirar o trabalhador que aparecia parcialmente no quadro"
+  },
+  "ilustracao-m270.jpg": {
+    "origem": "ilustracao da marca",
+    "orgao": null,
+    "autor": "Santa Informa",
+    "ano": 2026,
+    "licenca": "arte propria do portal",
+    "uso": "ilustracao",
+    "url_original": null,
+    "pagina_da_fonte": null,
+    "dimensao_original": "1600x900",
+    "baixada_em": "2026-10-08"
   }
 }

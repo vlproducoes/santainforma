@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-270-equipamento-guarda-municipal-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-08T12:40:00-03:00</news:publication_date>
+      <news:title>Itapema fechou mais R$ 63.280 em espargidor de pimenta e projétil de borracha para a Guarda Municipal, e é a segunda compra do tipo em 2026</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-269-apostas-camara-itapema-oito-projetos</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-06T13:10:00-03:00</news:publication_date>
       <news:title>O maior engordamento de praia do Brasil terminou em Itapoá, e o alargamento da Meia Praia não aparece em nenhum dos 678 contratos que Itapema publicou em 2026</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-263-audiencia-residuos-solidos-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-06T06:40:00-03:00</news:publication_date>
-      <news:title>Itapema marca audiência pública sobre o lixo para 15 de outubro, 1.275 dias depois da última que localizamos sobre o tema, e o aviso não diz qual documento vai à mesa</news:title>
     </news:news>
   </url>
 
