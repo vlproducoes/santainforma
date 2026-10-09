@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-273-viva-praia-200-expositores-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-09T12:20:00-03:00</news:publication_date>
+      <news:title>O Viva Praia de domingo tem cerca de 200 expositores, o número que faltava nas duas notas em que a Prefeitura chamou a feira de maior da história</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-272-oleo-cozinha-camara-itapema-389-dias</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-07T13:40:00-03:00</news:publication_date>
       <news:title>Santa Catarina comprou 65% mais equipamento de praia neste ano, e Itapema, que era a primeira do estado, caiu para a quinta posição</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-266-votacao-adiada-obras-temporada-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-07T09:40:00-03:00</news:publication_date>
-      <news:title>A Câmara de Itapema aprovou por 12 a 0 a urgência para votar a regra de obra no verão, e a votação não aconteceu: o projeto voltou para a fila a 25 dias de novembro</news:title>
     </news:news>
   </url>
 
