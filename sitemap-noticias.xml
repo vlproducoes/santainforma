@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-274-dez-policiais-temporarios-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-09T18:40:00-03:00</news:publication_date>
+      <news:title>Itapema fica com 10 dos 948 novos soldados temporários da Polícia Militar, e a lei que criou o posto proíbe esse policial de patrulhar com viatura, moto ou a cavalo</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-273-viva-praia-200-expositores-itapema</loc>
     <news:news>
       <news:publication>
@@ -59,30 +71,6 @@
       </news:publication>
       <news:publication_date>2026-10-08T07:10:00-03:00</news:publication_date>
       <news:title>O projeto sobre o vício em apostas que a Câmara de Itapema discutiu é o oitavo do tema desde 2025, e um que já tem três pareceres favoráveis espera votação há 181 dias</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-268-morro-do-encano-contrato-pavimentacao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-07T18:20:00-03:00</news:publication_date>
-      <news:title>O Morro do Encano chegou à fase de subleito, e o contrato de R$ 9,8 milhões que paga a obra vale até 8 de fevereiro, com 59% do prazo já corrido</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-267-equipamento-veraneio-santa-catarina-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-07T13:40:00-03:00</news:publication_date>
-      <news:title>Santa Catarina comprou 65% mais equipamento de praia neste ano, e Itapema, que era a primeira do estado, caiu para a quinta posição</news:title>
     </news:news>
   </url>
 
