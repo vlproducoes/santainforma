@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-272-oleo-cozinha-camara-itapema-389-dias</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-09T06:40:00-03:00</news:publication_date>
+      <news:title>A Câmara de Itapema aprovou o programa de coleta de óleo de cozinha 389 dias depois de o projeto chegar, e outros oito projetos sobre lixo seguem sem data de votação</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-271-binario-ruas-442-444-morretes-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-07T09:40:00-03:00</news:publication_date>
       <news:title>A Câmara de Itapema aprovou por 12 a 0 a urgência para votar a regra de obra no verão, e a votação não aconteceu: o projeto voltou para a fila a 25 dias de novembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-265-obras-temporada-itapema-pauta-votacao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-06T18:40:00-03:00</news:publication_date>
-      <news:title>O projeto que fecha a obra de rua de Itapema antes do verão entrou na pauta desta terça, e no verão passado a Prefeitura publicou seis avisos de frente de obra no período que ele proibiria</news:title>
     </news:news>
   </url>
 
