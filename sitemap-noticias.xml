@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-275-concessoes-desertas-capivaras-mirante-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-10T13:20:00-03:00</news:publication_date>
+      <news:title>Ninguém se candidatou a tocar o Parque das Capivaras e o Mirante do Encanto por 30 anos, e Itapema revogou as duas concessões no mesmo dia</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-274-dez-policiais-temporarios-itapema</loc>
     <news:news>
       <news:publication>
@@ -59,18 +71,6 @@
       </news:publication>
       <news:publication_date>2026-10-08T12:40:00-03:00</news:publication_date>
       <news:title>Itapema fechou mais R$ 63.280 em espargidor de pimenta e projétil de borracha para a Guarda Municipal, e é a segunda compra do tipo em 2026</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-269-apostas-camara-itapema-oito-projetos</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-08T07:10:00-03:00</news:publication_date>
-      <news:title>O projeto sobre o vício em apostas que a Câmara de Itapema discutiu é o oitavo do tema desde 2025, e um que já tem três pareceres favoráveis espera votação há 181 dias</news:title>
     </news:news>
   </url>
 
