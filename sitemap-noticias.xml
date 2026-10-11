@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-276-feriado-12-outubro-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-11T06:40:00-03:00</news:publication_date>
+      <news:title>O feriado de segunda tira dois dias de aula da mesma semana em Itapema, e o Mirante do Encanto abre três horas mais cedo</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-275-concessoes-desertas-capivaras-mirante-itapema</loc>
     <news:news>
       <news:publication>
@@ -47,30 +59,6 @@
       </news:publication>
       <news:publication_date>2026-10-09T06:40:00-03:00</news:publication_date>
       <news:title>A Câmara de Itapema aprovou o programa de coleta de óleo de cozinha 389 dias depois de o projeto chegar, e outros oito projetos sobre lixo seguem sem data de votação</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-271-binario-ruas-442-444-morretes-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-08T18:30:00-03:00</news:publication_date>
-      <news:title>As Ruas 442 e 444 do Morretes viraram mão única, e é o quinto aviso de mudança de trânsito que o bairro recebe em doze meses</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-270-equipamento-guarda-municipal-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-08T12:40:00-03:00</news:publication_date>
-      <news:title>Itapema fechou mais R$ 63.280 em espargidor de pimenta e projétil de borracha para a Guarda Municipal, e é a segunda compra do tipo em 2026</news:title>
     </news:news>
   </url>
 
