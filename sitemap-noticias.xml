@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-278-abastecimento-medicamentos-itapema-100</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-11T12:40:00-03:00</news:publication_date>
+      <news:title>O estoque de remédio de Itapema chegou a 100%, 496 dias depois de chegar a 95%, e a lista que o morador consulta no site ainda é a de 2023</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-277-prefeitura-mais-perto-meia-praia-itapema</loc>
     <news:news>
       <news:publication>
@@ -47,30 +59,6 @@
       </news:publication>
       <news:publication_date>2026-10-09T18:40:00-03:00</news:publication_date>
       <news:title>Itapema fica com 10 dos 948 novos soldados temporários da Polícia Militar, e a lei que criou o posto proíbe esse policial de patrulhar com viatura, moto ou a cavalo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-273-viva-praia-200-expositores-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-09T12:20:00-03:00</news:publication_date>
-      <news:title>O Viva Praia de domingo tem cerca de 200 expositores, o número que faltava nas duas notas em que a Prefeitura chamou a feira de maior da história</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-272-oleo-cozinha-camara-itapema-389-dias</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-09T06:40:00-03:00</news:publication_date>
-      <news:title>A Câmara de Itapema aprovou o programa de coleta de óleo de cozinha 389 dias depois de o projeto chegar, e outros oito projetos sobre lixo seguem sem data de votação</news:title>
     </news:news>
   </url>
 
