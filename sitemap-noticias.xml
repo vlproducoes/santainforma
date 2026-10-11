@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-277-prefeitura-mais-perto-meia-praia-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-11T09:40:00-03:00</news:publication_date>
+      <news:title>O Prefeitura Mais Perto volta à Meia Praia no sábado, 378 dias depois da edição que era recorde do programa, e o recorde hoje é do Morretes</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-276-feriado-12-outubro-itapema</loc>
     <news:news>
       <news:publication>
