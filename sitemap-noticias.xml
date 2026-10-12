@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-280-bandeira-azul-bombinhas-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-12T06:40:00-03:00</news:publication_date>
+      <news:title>Bombinhas vai ter 5 praias com Bandeira Azul nesta temporada, e Itapema não aparece em nenhuma das 17 temporadas do programa, 522 dias depois de anunciar que buscava o selo</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-279-samu-capacitacao-ubs-itapema</loc>
     <news:news>
       <news:publication>
@@ -59,18 +71,6 @@
       </news:publication>
       <news:publication_date>2026-10-10T13:20:00-03:00</news:publication_date>
       <news:title>Ninguém se candidatou a tocar o Parque das Capivaras e o Mirante do Encanto por 30 anos, e Itapema revogou as duas concessões no mesmo dia</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-274-dez-policiais-temporarios-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-09T18:40:00-03:00</news:publication_date>
-      <news:title>Itapema fica com 10 dos 948 novos soldados temporários da Polícia Militar, e a lei que criou o posto proíbe esse policial de patrulhar com viatura, moto ou a cavalo</news:title>
     </news:news>
   </url>
 
