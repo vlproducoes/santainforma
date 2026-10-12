@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-281-olesc-2026-itapema-84-atletas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-12T18:30:00-03:00</news:publication_date>
+      <news:title>Itapema está na OLESC com 84 atletas, duas das seis modalidades da cidade já acabaram sem pódio para ela, e as outras quatro entram a partir desta terça</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-280-bandeira-azul-bombinhas-itapema</loc>
     <news:news>
       <news:publication>
@@ -59,18 +71,6 @@
       </news:publication>
       <news:publication_date>2026-10-11T06:40:00-03:00</news:publication_date>
       <news:title>O feriado de segunda tira dois dias de aula da mesma semana em Itapema, e o Mirante do Encanto abre três horas mais cedo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-275-concessoes-desertas-capivaras-mirante-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-10T13:20:00-03:00</news:publication_date>
-      <news:title>Ninguém se candidatou a tocar o Parque das Capivaras e o Mirante do Encanto por 30 anos, e Itapema revogou as duas concessões no mesmo dia</news:title>
     </news:news>
   </url>
 
