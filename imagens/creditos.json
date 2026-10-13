@@ -3270,5 +3270,27 @@
     "id_pexels": 35462702,
     "termo_de_busca": "beach volleyball net empty court",
     "baixada_em": "2026-10-12"
+  },
+  "auditorio-patrocinio-m282.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Fahmi Garna",
+    "url_fotografo": "https://www.pexels.com/@fahmi-garna-249814583",
+    "url_original": "https://www.pexels.com/photo/white-chairs-in-office-boardroom-12470396/",
+    "id_pexels": 12470396,
+    "termo_de_busca": "auditorio vazio cadeiras palestra",
+    "baixada_em": "2026-10-13"
+  },
+  "palco-viva-praia-m283.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Joe Ambrogio",
+    "url_fotografo": "https://www.pexels.com/@josephmartin",
+    "url_original": "https://www.pexels.com/photo/outdoor-auditorium-and-stage-with-professional-equipment-on-city-square-5494915/",
+    "id_pexels": 5494915,
+    "termo_de_busca": "palco vazio som caixa evento ar livre",
+    "baixada_em": "2026-10-13"
   }
 }
