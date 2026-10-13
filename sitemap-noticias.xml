@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-285-sine-itapema-45-vagas-serie-listas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-13T18:40:00-03:00</news:publication_date>
+      <news:title>O Sine de Itapema está com 45 vagas, o maior número das cinco listas de 2026, e ainda assim um terço da menor lista que a Prefeitura publicou em 2025</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-284-ldo-2027-itapema-votacao-plenario</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-11T18:30:00-03:00</news:publication_date>
       <news:title>O SAMU já treinou 2 das 13 UBSs de Itapema para parada cardíaca e AVC, e nenhuma nota diz quando chega às outras 11</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-278-abastecimento-medicamentos-itapema-100</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-11T12:40:00-03:00</news:publication_date>
-      <news:title>O estoque de remédio de Itapema chegou a 100%, 496 dias depois de chegar a 95%, e a lista que o morador consulta no site ainda é a de 2023</news:title>
     </news:news>
   </url>
 
