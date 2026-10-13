@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-284-ldo-2027-itapema-votacao-plenario</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-13T12:30:00-03:00</news:publication_date>
+      <news:title>Itapema vota nesta terça a LDO de 2027, com R$ 954,3 milhões de receita prevista, R$ 10 milhões acima do que a Prefeitura já espera arrecadar neste ano</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-283-contratos-viva-praia-itapema-5701</loc>
     <news:news>
       <news:publication>
@@ -71,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-11T12:40:00-03:00</news:publication_date>
       <news:title>O estoque de remédio de Itapema chegou a 100%, 496 dias depois de chegar a 95%, e a lista que o morador consulta no site ainda é a de 2023</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-277-prefeitura-mais-perto-meia-praia-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-11T09:40:00-03:00</news:publication_date>
-      <news:title>O Prefeitura Mais Perto volta à Meia Praia no sábado, 378 dias depois da edição que era recorde do programa, e o recorde hoje é do Morretes</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-276-feriado-12-outubro-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-11T06:40:00-03:00</news:publication_date>
-      <news:title>O feriado de segunda tira dois dias de aula da mesma semana em Itapema, e o Mirante do Encanto abre três horas mais cedo</news:title>
     </news:news>
   </url>
 
