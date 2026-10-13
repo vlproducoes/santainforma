@@ -17,6 +17,20 @@ registro de cada contrato, em `registro.json`.
   placeholders "Espaço disponível" guardados em comentário ao lado de cada
   bloco. Não existe rotina agendada externa: a camada 2 é disparada pelo
   editor, pedindo a limpeza em qualquer sessão a partir de 08/10/2026
+- Reexibição: a pedido do editor, as duas peças voltaram ao ar em 13/10/2026
+  até as 19h de Brasília (`data-fim="2026-10-13T19:00"`). Às 19h o visual.js
+  esconde de novo, sem ninguém mexer. Registro em `registro.json`, campo
+  `reexibicoes`
+
+## Formato do data-fim
+
+- `AAAA-MM-DD`: último dia no ar. A peça some à meia-noite do dia seguinte.
+- `AAAA-MM-DDTHH:MM`: hora exata da retirada, no fuso de Brasília. A peça
+  some nessa hora, e o visual.js confere de minuto em minuto para quem deixou
+  a página aberta.
+
+Qualquer outro formato é ignorado e a peça fica no ar. Para reexibir uma
+campanha por algumas horas, basta trocar o `data-fim` dos blocos `.pago`.
 
 ## O que sai e o que fica na retirada
 

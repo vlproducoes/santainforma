@@ -36,6 +36,15 @@
       "rotina_agendada_externa": "nenhuma criada até 08/09/2026; a limpeza do repositório é disparada pelo editor"
     },
     "arte_final_recebida": true,
-    "observacao": "Artes finais da agência recebidas do editor em 08/09/2026, via pasta TELEMEDICINA no Google Drive, e aplicadas no mesmo dia. Peças estáticas, sem script e sem pixel de terceiro."
+    "observacao": "Artes finais da agência recebidas do editor em 08/09/2026, via pasta TELEMEDICINA no Google Drive, e aplicadas no mesmo dia. Peças estáticas, sem script e sem pixel de terceiro.",
+    "reexibicoes": [
+      {
+        "data": "2026-10-13",
+        "ate": "2026-10-13T19:00-03:00",
+        "pedido": "Editor, no chat, em 13/10/2026 às 8h45: reaparecer até as 19h de hoje e ocultar de novo depois",
+        "como": "data-fim dos dois blocos .pago do index.html trocado de 2026-10-07 para 2026-10-13T19:00; o visual.js passou a aceitar hora no data-fim e esconde as peças às 19h de Brasília",
+        "pecas": "as mesmas duas: Super Banner (a-super) e Retângulo (a-ret)"
+      }
+    ]
   }
 }

@@ -363,29 +363,60 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* PUBLICIDADE VENDIDA DIRETO
-   Cada .anuncio.pago declara em data-fim o ultimo dia de veiculacao do
-   contrato, no fuso da redacao. Passou o dia, o bloco sai do ar no
-   navegador na hora, mesmo antes da limpeza do repositorio devolver o
-   placeholder. Sem Intl ou com erro, nada muda: a limpeza do repositorio
+   Cada .anuncio.pago declara em data-fim quando a veiculacao acaba, no fuso
+   da redacao (Brasilia). Dois formatos:
+   - AAAA-MM-DD: ultimo dia no ar. O bloco sai a meia-noite do dia seguinte.
+   - AAAA-MM-DDTHH:MM: hora exata da retirada. O bloco sai nessa hora, e a
+     conferencia se repete a cada minuto para quem deixou a pagina aberta.
+   Passou o prazo, o bloco sai do ar no navegador na hora, mesmo antes da
+   limpeza do repositorio devolver o placeholder. Sem Intl, com erro ou com
+   data-fim fora desses dois formatos, nada muda: a limpeza do repositorio
    continua sendo quem retira de verdade. */
 document.addEventListener('DOMContentLoaded', function () {
   var pagos = document.querySelectorAll('.anuncio.pago[data-fim]');
   if (!pagos.length) return;
-  var hoje;
+  var fmt;
   try {
-    /* en-CA formata AAAA-MM-DD, que compara direto como texto */
-    hoje = new Intl.DateTimeFormat('en-CA', {
-      timeZone: 'America/Sao_Paulo',
-      year: 'numeric', month: '2-digit', day: '2-digit'
-    }).format(new Date());
+    /* en-CA da as partes em AAAA, MM e DD; montadas como AAAA-MM-DDTHH:MM,
+       comparam direto como texto com o data-fim */
+    fmt = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'America/Sao_Paulo', hourCycle: 'h23',
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit'
+    });
   } catch (e) { return; }
-  /* locale sem dados do en-CA pode devolver DD/MM/AAAA; ai a comparacao de
-     texto mentiria e esconderia campanha paga no meio da veiculacao. Na
-     duvida, o anuncio fica no ar: e o erro barato. */
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(hoje)) return;
-  for (var i = 0; i < pagos.length; i++) {
-    if (hoje > pagos[i].getAttribute('data-fim')) pagos[i].style.display = 'none';
+  function agora() {
+    try {
+      var p = fmt.formatToParts(new Date()), v = {};
+      for (var i = 0; i < p.length; i++) v[p[i].type] = p[i].value;
+      /* motor antigo que ignora hourCycle escreve meia-noite como 24 */
+      var h = v.hour === '24' ? '00' : v.hour;
+      var t = v.year + '-' + v.month + '-' + v.day + 'T' + h + ':' + v.minute;
+      /* formato estranho faria a comparacao de texto mentir e esconder
+         campanha paga no meio da veiculacao. Na duvida, o anuncio fica no
+         ar: e o erro barato. */
+      return /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(t) ? t : null;
+    } catch (e) { return null; }
   }
+  var relogio = null;
+  function confere() {
+    var t = agora();
+    if (!t) return;
+    var dia = t.slice(0, 10), restam = 0;
+    for (var i = 0; i < pagos.length; i++) {
+      if (pagos[i].style.display === 'none') continue;
+      var fim = pagos[i].getAttribute('data-fim') || '';
+      var passou;
+      if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(fim)) passou = t >= fim;
+      else if (/^\d{4}-\d{2}-\d{2}$/.test(fim)) passou = dia > fim;
+      else continue;
+      if (passou) pagos[i].style.display = 'none';
+      else restam++;
+    }
+    if (!restam && relogio) { clearInterval(relogio); relogio = null; }
+    return restam;
+  }
+  if (confere()) relogio = setInterval(confere, 60000);
 });
 
 /* CEU POR HORA
