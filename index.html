@@ -144,19 +144,23 @@ if (document.prerendering) {
 
   <!-- PACOTE DE CAPA · ordem fixa: manchete (1), rio de últimas (8), sub-destaques (3).
        Regra de rotação para o ciclo de notícias: matéria nova entra no topo do rio e a
-       mais antiga do rio sai. A manchete só troca quando a matéria nova tem interesse
-       público imediato maior (alerta, decisão, prazo); quem deixa a manchete vira
-       sub-destaque, quem deixa sub-destaque desce para o rio. -->
+       mais antiga do rio sai. A MANCHETE TROCA EM TODA EXECUÇÃO (decisão do editor,
+       13/10/2026), pela mais importante das últimas 48 horas que ainda não foi manchete;
+       a escala de importância está no passo 5 do ferramentas/prompt-agente-noticias.md.
+       Quem deixa a manchete vira o primeiro sub-destaque; o último sub-destaque sai da
+       capa. A matéria que vira manchete sai do rio, e o rio completa os 8 com a próxima
+       mais recente que não esteja em outro bloco da capa. O checa-site.py reprova
+       manchete mais de 48 horas atrás da matéria mais nova do rio. -->
   <div class="capa-grade">
     <article class="manchete">
       <span class="filete" aria-hidden="true"></span>
-      <span class="ed">Itapema &middot; Poder Público</span>
-      <h2><a href="materia-256-contrato-limpeza-itapema-aditivo.html">Itapema renovou por R$ 16,25 milhões o contrato de limpeza dos prédios públicos, 48% acima do que os mesmos 12 meses custavam em 2024</a></h2>
-      <p class="linhafina">A Prefeitura publicou no Diário Oficial dos Municípios, na sexta-feira 2 de outubro, o 5º termo aditivo do contrato 023/2024. Ele prorroga por 12 meses, até 30 de setembro de 2027, a limpeza e a conservação de escolas, postos de saúde e demais prédios do município, por R$ 16.251.501,12. O contrato original, de 1º de abril de 2024, valia R$ 10.981.731,72 pelo mesmo prazo. Fomos ler todos os aditivos publicados: somados, o contrato já passa de R$ 33,3 milhões, e a última tabela de pessoal tem 195 postos, 125 deles na Educação.</p>
-      <span class="meta-capa"><time datetime="2026-10-04T10:30:00-03:00">4 de outubro de 2026, 10h30</time></span>
+      <span class="ed">Itapema &middot; Saúde</span>
+      <h2><a href="materia-279-samu-capacitacao-ubs-itapema.html">O SAMU já treinou 2 das 13 UBSs de Itapema para parada cardíaca e AVC, e nenhuma nota diz quando chega às outras 11</a></h2>
+      <p class="linhafina">A Prefeitura informou que a equipe da UBS Tabuleiro passou na quinta-feira, 8 de outubro, por um treinamento do SAMU sobre parada cardiorrespiratória, AVC, crise convulsiva e manobra de desengasgo, e que na semana anterior foi a vez da UBS Centro. A nota promete continuidade "nas demais unidades" e não diz quantas são nem até quando. Fomos contar na lista de contatos da própria Secretaria de Saúde: Itapema tem 13 UBSs. Duas passaram pelo treinamento, 11 não.</p>
+      <span class="meta-capa"><time datetime="2026-10-11T18:30:00-03:00">11 de outubro de 2026, 18h30</time></span>
       <figure>
-        <img class="foto-tratada" src="imagens/miniaturas/m256-card.jpg" width="720" height="405" loading="eager" fetchpriority="high" decoding="async" alt="Carrinho de limpeza parado num corredor de prédio público, com rodo, vassoura, balde amarelo, saco de lixo azul e frascos de produto nas prateleiras, encostado numa parede de tijolo à vista ao lado de uma porta branca.">
-        <figcaption>Carrinho de limpeza em corredor de prédio público. Em Itapema, o serviço é feito por empresa contratada. Imagem ilustrativa: Thomas Balabaud/Pexels, 2025.</figcaption>
+        <img class="foto-tratada" src="imagens/miniaturas/m279-card.jpg" width="720" height="405" loading="eager" fetchpriority="high" decoding="async" alt="Duas pessoas ajoelhadas no piso de uma sala prendem um boneco de treinamento a uma prancha de imobilização amarela com faixas vermelhas. Uma delas veste jaqueta escura escrita Diretoria de Urgência e Emergência, Prefeitura de Itapema, Secretaria da Saúde.">
+        <figcaption>A equipe do SAMU de Itapema demonstra imobilização em prancha durante a capacitação na UBS Tabuleiro. Foto: Prefeitura de Itapema/Divulgação, 2026.</figcaption>
       </figure>
     </article>
 
@@ -167,14 +171,25 @@ if (document.prerendering) {
         <li><time datetime="2026-10-13T06:40:00-03:00">13 out &middot; 06h40</time><a href="materia-282-editais-patrocinio-itapema-inova-empreendelas.html">Itapema publicou dois editais em seis dias para empresa patrocinar evento da Prefeitura, com cota a partir de R$ 100, e as duas planilhas de custo são iguais item por item</a><img class="rio-mini" src="imagens/miniaturas/m282-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Fileiras de cadeiras brancas vazias de braço escamoteável numa sala clara, com janelas altas ao fundo deixando entrar luz forte."></li>
         <li><time datetime="2026-10-12T18:30:00-03:00">12 out &middot; 18h30</time><a href="materia-281-olesc-2026-itapema-84-atletas.html">Itapema está na OLESC com 84 atletas, duas das seis modalidades da cidade já acabaram sem pódio para ela, e as outras quatro entram a partir desta terça</a><img class="rio-mini" src="imagens/miniaturas/m281-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Quadra de vôlei de praia vazia, com rede preta esticada entre dois postes azul-claros sobre a areia batida de uma praia larga."></li>
         <li><time datetime="2026-10-12T06:40:00-03:00">12 out &middot; 06h40</time><a href="materia-280-bandeira-azul-bombinhas-itapema.html">Bombinhas vai ter 5 praias com Bandeira Azul nesta temporada, e Itapema não aparece em nenhuma das 17 temporadas do programa, 522 dias depois de anunciar que buscava o selo</a><img class="rio-mini" src="imagens/miniaturas/m280-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Vista aérea de uma enseada de água esverdeada com barcos pequenos ancorados, faixa de areia e morros cobertos de mata em primeiro plano."></li>
-        <li><time datetime="2026-10-11T18:30:00-03:00">11 out &middot; 18h30</time><a href="materia-279-samu-capacitacao-ubs-itapema.html">O SAMU já treinou 2 das 13 UBSs de Itapema para parada cardíaca e AVC, e nenhuma nota diz quando chega às outras 11</a><img class="rio-mini" src="imagens/miniaturas/m279-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Duas pessoas ajoelhadas no chão prendem um boneco de treinamento a uma prancha de imobilização amarela, ao lado da maleta de um desfibrilador."></li>
         <li><time datetime="2026-10-11T12:40:00-03:00">11 out &middot; 12h40</time><a href="materia-278-abastecimento-medicamentos-itapema-100.html">O estoque de remédio de Itapema chegou a 100%, 496 dias depois de chegar a 95%, e a lista que o morador consulta no site ainda é a de 2023</a><img class="rio-mini" src="imagens/miniaturas/m278-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Profissional de jaleco branco, de perfil, diante de prateleiras de aço cheias de gavetas plásticas azuis etiquetadas com nomes de medicamentos."></li>
         <li><time datetime="2026-10-11T09:40:00-03:00">11 out &middot; 09h40</time><a href="materia-277-prefeitura-mais-perto-meia-praia-itapema.html">O Prefeitura Mais Perto volta à Meia Praia no sábado, 378 dias depois da edição que era recorde do programa, e o recorde hoje é do Morretes</a><img class="rio-mini" src="imagens/miniaturas/m277-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Ilustração de duas fileiras de seis fichas retangulares, as de cima brancas com contorno azul e as de baixo azul-marinho, uma amarela e uma só de contorno."></li>
         <li><time datetime="2026-10-11T06:40:00-03:00">11 out &middot; 06h40</time><a href="materia-276-feriado-12-outubro-itapema.html">O feriado de segunda tira dois dias de aula da mesma semana em Itapema, e o Mirante do Encanto abre três horas mais cedo</a><img class="rio-mini" src="imagens/miniaturas/m276-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Fachada da Prefeitura de Itapema com faixa azul e letras brancas sobre a marquise, janelas de vidro e estacionamento vazio na frente."></li>
+        <li><time datetime="2026-10-09T18:40:00-03:00">09 out &middot; 18h40</time><a href="materia-274-dez-policiais-temporarios-itapema.html">Itapema fica com 10 dos 948 novos soldados temporários da Polícia Militar, e a lei que criou o posto proíbe esse policial de patrulhar com viatura, moto ou a cavalo</a><img class="rio-mini" src="imagens/miniaturas/m274-mini.jpg" width="160" height="160" loading="lazy" decoding="async" alt="Dois policiais militares de farda bege e boina, de perfil, em formatura no pátio de um quartel, com outros soldados enfileirados atrás."></li>
       </ol>
     </aside>
 
     <div class="subs">
+      <article class="sub">
+        <figure>
+          <picture>
+            <source media="(max-width:720px)" srcset="imagens/miniaturas/m256-mini.jpg">
+            <img class="capa-sub" src="imagens/miniaturas/m256-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Carrinho de limpeza parado num corredor de prédio público, com rodo, vassoura, balde amarelo, saco de lixo azul e frascos de produto nas prateleiras, encostado numa parede de tijolo à vista ao lado de uma porta branca.">
+          </picture>
+        </figure>
+        <span class="ed">Itapema &middot; Poder Público</span>
+        <h3 class="mare"><a href="materia-256-contrato-limpeza-itapema-aditivo.html">Itapema renovou por R$ 16,25 milhões o contrato de limpeza dos prédios públicos, 48% acima do que os mesmos 12 meses custavam em 2024</a></h3>
+        <p>Lemos todos os aditivos do contrato 023/2024: somados, ele já passa de R$ 33,3 milhões, e a prorrogação vai até setembro de 2027.</p>
+      </article>
       <article class="sub">
         <figure>
           <picture>
@@ -196,17 +211,6 @@ if (document.prerendering) {
         <span class="ed">Itapema &middot; Poder Público</span>
         <h3 class="mare"><a href="materia-246-camara-itapema-31a-sessao-espera.html">A Câmara de Itapema aprovou 11 projetos numa noite só, e sete deles esperaram mais de 300 dias para chegar ao voto</a></h3>
         <p>Sete projetos foram lidos em plenário ainda em 2025 e só voltaram ao voto em 29 de setembro: de 315 a 392 dias de espera. Abrimos a ficha dos 11, uma por uma.</p>
-      </article>
-      <article class="sub">
-        <figure>
-          <picture>
-            <source media="(max-width:720px)" srcset="imagens/miniaturas/m245-mini.jpg">
-            <img class="capa-sub" src="imagens/miniaturas/m245-card.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Plenário da Câmara de Itapema em sessão, com um vereador de terno falando ao microfone em primeiro plano, colegas sentados na bancada preta de brasão dourado e um telão ao fundo projetando a página de um projeto.">
-          </picture>
-        </figure>
-        <span class="ed">Itapema &middot; Poder Público</span>
-        <h3 class="mare"><a href="materia-245-urgencia-executivo-camara-itapema.html">A Prefeitura de Itapema pediu urgência 37 vezes em 2026 e a Câmara aprovou as 37, enquanto 4 dos 32 pedidos feitos por vereador foram rejeitados</a></h3>
-        <p>Projeto de lei costuma parar nas comissões antes de ir a voto. O pedido de urgência pula essa fila. Abrimos a ficha de todos os pedidos deste ano, um por um.</p>
       </article>
     </div>
   </div>

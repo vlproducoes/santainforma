@@ -481,10 +481,8 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
   inteiro, o card vira só-texto. No bloco
   "Leia também" de matéria nova, cada card leva a img.capa da matéria de
   destino (mNN-card.jpg, width 720 height 405, lazy, alt real) como primeiro
-  filho do article.card. A manchete só troca quando a
-  matéria nova tem interesse público imediato maior (alerta em vigor, decisão,
-  prazo curto); quem deixa a manchete vira sub-destaque, quem deixa
-  sub-destaque desce para o rio. Ao trocar manchete ou sub, copie o bloco
+  filho do article.card. A manchete troca em TODA execução, pela regra do
+  passo 5.5. Ao trocar manchete ou sub, copie o bloco
   existente e mantenha: classe .ed (Itapema) ou .ed b (Brasil/SC), alt
   completo, width/height/loading, e a foto 3:2 da manchete com loading="eager"
   fetchpriority="high". A seção "Itapema e Costa Esmeralda" (líder .lider-sec,
@@ -514,6 +512,45 @@ Para cada matéria nova, com o número seguinte ao mais alto existente:
   6 por página, e incluir no topo empurra tudo; crie página nova se precisar,
   e acerte paginação, títulos e o contador "página N de M")
 - Acrescente ao sitemap.xml
+
+## 5.5 Troque a manchete em TODA execução
+Decisão do editor em 13 de outubro de 2026, depois de a mesma manchete ficar
+nove dias no ar: a manchete da capa troca em toda execução, publicando matéria
+ou não. Quem decide qual entra é a importância.
+
+1. Candidatas: as matérias publicadas nas últimas 48 horas. Ficam de fora a
+   manchete atual e as que estão nos sub-destaques (já foram manchete e não
+   voltam). Se não sobrar nenhuma, use as que estão no rio de últimas.
+2. Escolha pela escala abaixo, de cima para baixo. Ganha a candidata do degrau
+   mais alto. Empate no mesmo degrau vai para a mais recente.
+   1. Alerta em vigor ou risco à vida e à saúde: Defesa Civil, temporal,
+      interdição, serviço essencial fora do ar, falha no atendimento de saúde.
+   2. Prazo curto que pede ação do leitor: inscrição, matrícula, vacinação,
+      audiência pública, vencimento de taxa.
+   3. Decisão ou mudança que atinge muita gente na cidade: lei aprovada,
+      trânsito, tarifa, serviço que abre ou fecha.
+   4. Dinheiro público em valor alto ou apuração própria que ninguém mais tem.
+   5. O resto, pelo número de pessoas atingidas.
+3. Monte o bloco copiando o article.manchete que está no ar: chapéu (.ed),
+   título no h2 com o link, linha fina da matéria (sem as tags strong), data
+   em .meta-capa (time com datetime completo e texto "11 de outubro de 2026,
+   18h30"), foto mNN-card.jpg 720x405 com loading="eager" e
+   fetchpriority="high", alt real e legenda com o crédito completo que está
+   na matéria.
+4. A manchete que sai vira o PRIMEIRO sub-destaque (copie o bloco de um sub
+   existente, com figure, picture e um parágrafo curto). O último
+   sub-destaque sai da capa: ele continua na editoria e nas páginas de
+   notícias.
+5. A matéria promovida sai do bloco onde estava. Se estava no rio, o rio
+   completa os 8 itens com a próxima matéria mais recente que não esteja em
+   outro bloco da capa (manchete, sub-destaque, líder ou pilha). Ela entra no
+   fim do rio, com o time e a img.rio-mini de sempre.
+6. No relatório, diga em uma frase qual matéria assumiu a manchete, em qual
+   degrau da escala ela entrou e qual saiu.
+
+O `checa-site.py` reprova a capa se a manchete estiver mais de 48 horas atrás
+da matéria mais nova do rio, ou se ela aparecer repetida no rio ou nos
+sub-destaques.
 
 ## 6. Regenere o sitemap de notícias SEMPRE
 Rode `python3 ferramentas/sitemap-noticias.py` em TODA execução, mesmo quando
@@ -641,6 +678,8 @@ No fim da execução, diga sempre:
 5. **Raio-X da Região:** há quantos dias foi atualizado, se você mexeu nesta
    execução e o que mudou (dado novo, link de fonte, imagem, lacuna assumida).
 6. O que faltou no ambiente, se `checa-ambiente.py` reprovou.
+7. **Manchete:** qual entrou, em qual degrau da escala do passo 5.5, e qual
+   saiu.
 
 ## Por que 6h, 12h e 18h, e não a cada 48 horas
 

@@ -114,6 +114,39 @@ def checa():
             alvo = href.split('#')[0].split('?')[0]
             if alvo and not os.path.exists(alvo): e(f'link interno quebrado: {href}')
 
+    # MANCHETE DA CAPA. Decisão do editor em 13/10/2026: a manchete troca em
+    # toda execução do ciclo, por importância, depois de ficar nove dias
+    # parada na mesma matéria. Sem guardar estado não dá para provar que
+    # trocou, mas dá para pegar o sintoma: manchete mais de 48 horas atrás da
+    # matéria mais nova do rio, ou a mesma matéria repetida no rio ou nos
+    # sub-destaques.
+    if os.path.exists('index.html'):
+        s = open('index.html', encoding='utf-8').read()
+        man = re.search(r'<article class="manchete">(.*?)</article>', s, re.S)
+        rio = re.search(r'<aside class="rio"[^>]*>(.*?)</aside>', s, re.S)
+        subs = re.search(r'<div class="subs">(.*?)</div>', s, re.S)
+        if man and rio:
+            alvo = re.search(r'href="(materia-[^"]+\.html)"', man.group(1))
+            quando = re.search(r'<time datetime="([^"]+)"', man.group(1))
+            datas_rio = re.findall(r'<time datetime="([^"]+)"', rio.group(1))
+            if not alvo or not quando:
+                erros.append('index.html: manchete sem link de matéria ou sem <time datetime>')
+            else:
+                if alvo.group(1) in rio.group(1):
+                    erros.append(f'index.html: a manchete também está no rio de últimas: {alvo.group(1)}')
+                if subs and alvo.group(1) in subs.group(1):
+                    erros.append(f'index.html: a manchete também está nos sub-destaques: {alvo.group(1)}')
+                try:
+                    from datetime import datetime
+                    dm = datetime.fromisoformat(quando.group(1))
+                    mais_nova = max(datetime.fromisoformat(d) for d in datas_rio) if datas_rio else dm
+                    horas = (mais_nova - dm).total_seconds() / 3600
+                    if horas > 48:
+                        erros.append(f'index.html: manchete parada, {horas:.0f} h atrás da matéria mais nova '
+                                     f'do rio ({alvo.group(1)}); troque pela mais importante das últimas 48 h')
+                except ValueError as ex:
+                    erros.append(f'index.html: data da capa ilegível ({ex})')
+
     css = open('estilo.css', encoding='utf-8').read()
     if css.count('{') != css.count('}'):
         erros.append(f'estilo.css: chaves desbalanceadas ({css.count("{")}/{css.count("}")})')
