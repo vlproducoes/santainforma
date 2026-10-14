@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-286-projetos-retirados-camara-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-14T07:10:00-03:00</news:publication_date>
+      <news:title>Vereadores de Itapema já retiraram 248 dos 1.384 projetos que apresentaram, e os 12 lidos nesta terça passaram até 476 dias na comissão sem um parecer</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-285-sine-itapema-45-vagas-serie-listas</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-12T06:40:00-03:00</news:publication_date>
       <news:title>Bombinhas vai ter 5 praias com Bandeira Azul nesta temporada, e Itapema não aparece em nenhuma das 17 temporadas do programa, 522 dias depois de anunciar que buscava o selo</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-279-samu-capacitacao-ubs-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-11T18:30:00-03:00</news:publication_date>
-      <news:title>O SAMU já treinou 2 das 13 UBSs de Itapema para parada cardíaca e AVC, e nenhuma nota diz quando chega às outras 11</news:title>
     </news:news>
   </url>
 
