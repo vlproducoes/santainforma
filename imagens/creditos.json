@@ -3339,5 +3339,39 @@
     "id_pexels": 7437968,
     "termo_de_busca": "beach vendor cart sand",
     "baixada_em": "2026-10-14"
+  },
+  "campo-verde-casas-m289.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/10/cadastro_habitacional-1.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/cadastro-habitacional-do-campo-verde-termina-com-2-077-familias-inscritasproxima-etapa-comeca-nesta-sexta-feira-16-com-a-hierarquizacao-dos-candidatos-as-90-casas-do-empreendimento/",
+    "dimensao_original": "1280x720",
+    "baixada_em": "2026-10-15"
+  },
+  "planta-arquiteto-m290.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Czapp Árpád",
+    "url_fotografo": "https://www.pexels.com/@czapp-arpad-3647289",
+    "url_original": "https://www.pexels.com/photo/sktetch-of-a-building-design-on-the-desk-17115287/",
+    "id_pexels": 17115287,
+    "termo_de_busca": "architect engineer blueprint desk drawing",
+    "baixada_em": "2026-10-15"
+  },
+  "sala-aula-vazia-m291.jpg": {
+    "banco": "Pexels",
+    "licenca": "Pexels License (uso comercial livre, atribuicao nao obrigatoria)",
+    "uso": "imagem ilustrativa",
+    "fotografo": "Valentin Ivantsov",
+    "url_fotografo": "https://www.pexels.com/@valentin-ivantsov-2154772556",
+    "url_original": "https://www.pexels.com/photo/empty-classroom-with-desks-and-chalkboard-36650154/",
+    "id_pexels": 36650154,
+    "termo_de_busca": "empty classroom school desks chairs",
+    "baixada_em": "2026-10-15"
   }
 }

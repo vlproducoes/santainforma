@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-291-concurso-educacao-tijucas-250-vagas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-15T06:28:00-03:00</news:publication_date>
+      <news:title>Tijucas abre 250 vagas de concurso só na Educação, com inscrição a partir das 16h desta quinta, e o concurso de Itapema ainda não tem edital</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-290-concurso-itapema-31-cargos-arquiteto-engenheiro</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-15T06:22:00-03:00</news:publication_date>
+      <news:title>O concurso público de Itapema passou de 29 para 31 cargos, e os dois que entraram são arquiteto e engenheiro civil, com salário inicial de R$ 8.686,63</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-289-cadastro-campo-verde-2077-familias-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-15T06:15:00-03:00</news:publication_date>
+      <news:title>O cadastro das 90 casas do Campo Verde fechou com 2.077 famílias inscritas em Itapema, 23 para cada casa, e a fila começa a ser montada nesta sexta</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-288-sorteio-alvara-praia-itapema-26-vagas</loc>
     <news:news>
       <news:publication>
@@ -83,18 +119,6 @@
       </news:publication>
       <news:publication_date>2026-10-13T06:40:00-03:00</news:publication_date>
       <news:title>Itapema publicou dois editais em seis dias para empresa patrocinar evento da Prefeitura, com cota a partir de R$ 100, e as duas planilhas de custo são iguais item por item</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-281-olesc-2026-itapema-84-atletas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-12T18:30:00-03:00</news:publication_date>
-      <news:title>Itapema está na OLESC com 84 atletas, duas das seis modalidades da cidade já acabaram sem pódio para ela, e as outras quatro entram a partir desta terça</news:title>
     </news:news>
   </url>
 
