@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-293-ipva-itapema-frota-placa-daqui</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-15T18:40:00-03:00</news:publication_date>
+      <news:title>Itapema recebeu R$ 37,5 milhões de IPVA em 2025, e hoje tem 92 veículos com placa da cidade para cada 100 moradores</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-292-sem-aula-sexta-decreto-calendario-itapema</loc>
     <news:news>
       <news:publication>
@@ -95,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-10-13T18:40:00-03:00</news:publication_date>
       <news:title>O Sine de Itapema está com 45 vagas, o maior número das cinco listas de 2026, e ainda assim um terço da menor lista que a Prefeitura publicou em 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-284-ldo-2027-itapema-votacao-plenario</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-13T12:30:00-03:00</news:publication_date>
-      <news:title>Itapema vota nesta terça a LDO de 2027, com R$ 954,3 milhões de receita prevista, R$ 10 milhões acima do que a Prefeitura já espera arrecadar neste ano</news:title>
     </news:news>
   </url>
 
