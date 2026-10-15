@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-292-sem-aula-sexta-decreto-calendario-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-15T12:45:00-03:00</news:publication_date>
+      <news:title>Itapema não tem aula nesta sexta por um decreto de janeiro, e o calendário escolar publicado no site da Prefeitura ainda marca o dia 15</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-291-concurso-educacao-tijucas-250-vagas</loc>
     <news:news>
       <news:publication>
@@ -95,30 +107,6 @@
       </news:publication>
       <news:publication_date>2026-10-13T12:30:00-03:00</news:publication_date>
       <news:title>Itapema vota nesta terça a LDO de 2027, com R$ 954,3 milhões de receita prevista, R$ 10 milhões acima do que a Prefeitura já espera arrecadar neste ano</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-283-contratos-viva-praia-itapema-5701</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-13T06:55:00-03:00</news:publication_date>
-      <news:title>Os dois contratos de palco do Viva Praia de domingo somam R$ 5.701, e um deles traz o quinto preço do credenciamento de artistas de Itapema, que faltava na tabela que montamos em setembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-282-editais-patrocinio-itapema-inova-empreendelas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-13T06:40:00-03:00</news:publication_date>
-      <news:title>Itapema publicou dois editais em seis dias para empresa patrocinar evento da Prefeitura, com cota a partir de R$ 100, e as duas planilhas de custo são iguais item por item</news:title>
     </news:news>
   </url>
 
