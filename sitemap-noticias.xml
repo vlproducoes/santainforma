@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-298-rematricula-2027-itapema-prazo-edital</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-16T13:35:00-03:00</news:publication_date>
+      <news:title>A rematrícula de Itapema fecha em 6 de novembro no edital, e a nota que a Prefeitura publicou dá cinco dias a mais</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-297-processo-seletivo-itapema-27-vagas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-16T13:10:00-03:00</news:publication_date>
+      <news:title>Itapema abriu 27 vagas temporárias com prova em 22 de novembro, e 15 delas são de organizador de postura, mais da metade do edital</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-296-carros-alegoricos-natal-itapema-400-mil</loc>
     <news:news>
       <news:publication>
@@ -119,18 +143,6 @@
       </news:publication>
       <news:publication_date>2026-10-14T12:40:00-03:00</news:publication_date>
       <news:title>A LDO de 2027 passou por 12 a 0 na Câmara de Itapema, sem nenhuma emenda, e os três vereadores que votaram contra a do ano passado agora votaram a favor</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-286-projetos-retirados-camara-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-14T07:10:00-03:00</news:publication_date>
-      <news:title>Vereadores de Itapema já retiraram 248 dos 1.384 projetos que apresentaram, e os 12 lidos nesta terça passaram até 476 dias na comissão sem um parecer</news:title>
     </news:news>
   </url>
 
