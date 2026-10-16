@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-299-desabamento-rua-290-meia-praia-lei-terraplanagem</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-16T18:25:00-03:00</news:publication_date>
+      <news:title>Duas edificações ficaram interditadas no desabamento da Rua 290, em Itapema, e a lei de terraplanagem sancionada há 21 dias dispensa de autorização a escavação de fundação</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-298-rematricula-2027-itapema-prazo-edital</loc>
     <news:news>
       <news:publication>
@@ -131,18 +143,6 @@
       </news:publication>
       <news:publication_date>2026-10-14T18:40:00-03:00</news:publication_date>
       <news:title>Sobraram 26 vagas de ambulante na praia de Itapema, contra 85 no ano passado, e o sorteio delas ficou para 6 de novembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-287-ldo-2027-itapema-primeira-votacao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-14T12:40:00-03:00</news:publication_date>
-      <news:title>A LDO de 2027 passou por 12 a 0 na Câmara de Itapema, sem nenhuma emenda, e os três vereadores que votaram contra a do ano passado agora votaram a favor</news:title>
     </news:news>
   </url>
 
