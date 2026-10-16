@@ -45,6 +45,59 @@
         "como": "data-fim dos dois blocos .pago do index.html trocado de 2026-10-07 para 2026-10-13T19:00; o visual.js passou a aceitar hora no data-fim e esconde as peças às 19h de Brasília",
         "pecas": "as mesmas duas: Super Banner (a-super) e Retângulo (a-ret)"
       }
-    ]
+    ],
+    "retirada_em": "2026-10-16",
+    "retirada_nota": "Blocos apagados do index.html em 16/10/2026, quando o PI 33113.26 entrou nos mesmos dois espaços. No navegador as peças já estavam fora do ar desde 13/10/2026 às 19h. Os JPG ficam nesta pasta como arquivo do contrato."
+  },
+  "pi-33113.26": {
+    "campanha": "Avança Itapema - Prevenção El Niño",
+    "anunciante": "Prefeitura Municipal de Itapema (Município de Itapema)",
+    "cnpj_anunciante": "82.572.207/0001-03",
+    "agencia": "Ômega Comunicação LTDA",
+    "pi": "33113.26",
+    "pit": "PMITA 019-26",
+    "emissao": "2026-09-30",
+    "periodo_no_pi": {
+      "inicio": "2026-10-15",
+      "fim": "2026-11-13",
+      "dias": 30
+    },
+    "veiculacao_inicio": "2026-10-16",
+    "veiculacao_fim": "2026-11-14",
+    "retirada_programada": "2026-11-15",
+    "ajuste_de_datas": {
+      "decidido_por": "Editor, no chat, em 16/10/2026",
+      "motivo": "A publicação não saiu em 15/10/2026, primeiro dia do PI. Entrou em 16/10/2026 e ganhou um dia a mais no fim, para fechar os 30 dias contratados.",
+      "formalizacao": "A Ômega Comunicação vai enviar PI novo com as datas atualizadas. Quando chegar, registrar o número aqui."
+    },
+    "pecas": [
+      {
+        "formato": "Super Banner 970x250 (celular 320x100)",
+        "posicao": "index.html, slot .anuncio.a-super, abaixo do pacote de capa",
+        "mensagem": "Limpeza dos rios e córregos",
+        "arquivos": [
+          "imagens/publicidade/avanca-itapema-el-nino-970x250.jpg",
+          "imagens/publicidade/avanca-itapema-el-nino-970x250-2x.jpg",
+          "imagens/publicidade/avanca-itapema-el-nino-320x100.jpg",
+          "imagens/publicidade/avanca-itapema-el-nino-320x100-2x.jpg"
+        ]
+      },
+      {
+        "formato": "Retângulo 300x250",
+        "posicao": "index.html, slot .anuncio.a-ret do Resumo Semanal",
+        "mensagem": "Contenção de encostas em rios nos bairros Várzea e Ilhota",
+        "arquivos": [
+          "imagens/publicidade/avanca-itapema-el-nino-300x250.jpg",
+          "imagens/publicidade/avanca-itapema-el-nino-300x250-2x.jpg"
+        ]
+      }
+    ],
+    "destino_do_clique": "https://www.itapema.sc.gov.br/",
+    "retirada": {
+      "camada_navegador": "visual.js esconde os dois blocos .pago depois de data-fim=2026-11-14, ou seja, à 0h de 15/11/2026 em Brasília",
+      "camada_repositorio": "apagar os blocos PI 33113.26 do index.html e devolver os placeholders comentados; ver LEIA-ME.md"
+    },
+    "arte_final_recebida": true,
+    "observacao": "Artes da agência recebidas do editor no chat em 16/10/2026, em resolução maior que o formato (2000x516, 1334x417 e 1250x1043). Reduzidas para o tamanho do contrato (1x) e para o dobro (2x, telas de alta densidade), sem corte: a diferença de proporção era de 0,1%. Peças estáticas, sem script e sem pixel de terceiro."
   }
 }
