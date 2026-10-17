@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-303-hidrantes-itapema-norma-concessionaria</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-17T18:45:00-03:00</news:publication_date>
+      <news:title>A Câmara de Itapema pediu estudo para ampliar a rede de hidrantes, e a norma que vale em Santa Catarina desde 2024 põe projeto, troca e manutenção na conta da concessionária de água</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-302-olesc-ciclismo-itapema-titulo-geral</loc>
     <news:news>
       <news:publication>
@@ -119,18 +131,6 @@
       </news:publication>
       <news:publication_date>2026-10-15T18:40:00-03:00</news:publication_date>
       <news:title>Itapema recebeu R$ 37,5 milhões de IPVA em 2025, e hoje tem 92 veículos com placa da cidade para cada 100 moradores</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-292-sem-aula-sexta-decreto-calendario-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-15T12:45:00-03:00</news:publication_date>
-      <news:title>Itapema não tem aula nesta sexta por um decreto de janeiro, e o calendário escolar publicado no site da Prefeitura ainda marca o dia 15</news:title>
     </news:news>
   </url>
 
