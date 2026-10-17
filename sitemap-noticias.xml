@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-302-olesc-ciclismo-itapema-titulo-geral</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-17T12:20:00-03:00</news:publication_date>
+      <news:title>Itapema levou o título geral do ciclismo masculino na OLESC com 48 pontos, à frente de Jaraguá do Sul e de Joinville, e não aparece entre os seis primeiros da classificação geral que a Fesporte publicou</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-301-audiencia-residuos-camara-itapema-fila-projetos</loc>
     <news:news>
       <news:publication>
