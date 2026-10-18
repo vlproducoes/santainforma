@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-306-transferencia-rede-estadual-itapema-prazo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-18T19:05:00-03:00</news:publication_date>
+      <news:title>A vinda da rede municipal para a estadual fecha às 17h de 6 de novembro, o mesmo dia em que a rematrícula de Itapema fecha na escola</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-305-fiscalizacao-pescado-amfri-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,42 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-17T09:20:00-03:00</news:publication_date>
       <news:title>O Mirante do Encanto fecha para visitação nesta segunda-feira, e quem vai pagar a obra ainda não foi escolhido: as propostas da concessão só são abertas em 10 de dezembro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-299-desabamento-rua-290-meia-praia-lei-terraplanagem</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-16T18:25:00-03:00</news:publication_date>
-      <news:title>Duas edificações ficaram interditadas no desabamento da Rua 290, em Itapema, e a lei de terraplanagem sancionada há 21 dias dispensa de autorização a escavação de fundação</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-298-rematricula-2027-itapema-prazo-edital</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-16T13:35:00-03:00</news:publication_date>
-      <news:title>A rematrícula de Itapema fecha em 6 de novembro no edital, e a nota que a Prefeitura publicou dá cinco dias a mais</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-297-processo-seletivo-itapema-27-vagas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-16T13:10:00-03:00</news:publication_date>
-      <news:title>Itapema abriu 27 vagas temporárias com prova em 22 de novembro, e 15 delas são de organizador de postura, mais da metade do edital</news:title>
     </news:news>
   </url>
 
