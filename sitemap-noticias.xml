@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-305-fiscalizacao-pescado-amfri-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-18T13:10:00-03:00</news:publication_date>
+      <news:title>A fiscalização de pescado descartou 23,62 toneladas em dois dias no litoral, e o consórcio de que Itapema faz parte questionou em nota o tamanho do descarte</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-304-remedio-controlado-duas-ubs-itapema</loc>
     <news:news>
       <news:publication>
@@ -95,42 +107,6 @@
       </news:publication>
       <news:publication_date>2026-10-16T13:10:00-03:00</news:publication_date>
       <news:title>Itapema abriu 27 vagas temporárias com prova em 22 de novembro, e 15 delas são de organizador de postura, mais da metade do edital</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-296-carros-alegoricos-natal-itapema-400-mil</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-16T07:20:00-03:00</news:publication_date>
-      <news:title>Os carros alegóricos do Natal de Itapema custam R$ 400 mil este ano, 29% mais que em 2025, e a inscrição de voluntário fecha nesta terça</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-295-voucher-educacional-itapema-tres-escolas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-16T07:05:00-03:00</news:publication_date>
-      <news:title>Itapema fechou R$ 5,8 milhões com três escolas particulares e pôs o voucher educacional de pé 447 dias depois da lei que o criou</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-294-mirante-encanto-novo-edital-concessao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-16T06:50:00-03:00</news:publication_date>
-      <news:title>Sete dias depois de revogar a concessão que ninguém quis, Itapema recolocou o Mirante do Encanto em disputa por 30 anos, e a janela de propostas abre nesta sexta ao meio-dia</news:title>
     </news:news>
   </url>
 
