@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-307-balneabilidade-itapema-rua-205-tres-coletas</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-19T07:10:00-03:00</news:publication_date>
+      <news:title>O ponto de banho em frente à Rua 205, em Itapema, está impróprio há três coletas seguidas, e é o único da cidade que não saiu da lista do IMA</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-306-transferencia-rede-estadual-itapema-prazo</loc>
     <news:news>
       <news:publication>
