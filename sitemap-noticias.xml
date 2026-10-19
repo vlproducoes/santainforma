@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-308-policiais-temporarios-patrulha-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-19T12:30:00-03:00</news:publication_date>
+      <news:title>Os policiais temporários começaram a patrulhar Itapema cinco dias depois da formatura, e a lei que criou o posto proíbe que eles usem viatura ou moto</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-307-balneabilidade-itapema-rua-205-tres-coletas</loc>
     <news:news>
       <news:publication>
@@ -59,42 +71,6 @@
       </news:publication>
       <news:publication_date>2026-10-17T18:45:00-03:00</news:publication_date>
       <news:title>A Câmara de Itapema pediu estudo para ampliar a rede de hidrantes, e a norma que vale em Santa Catarina desde 2024 põe projeto, troca e manutenção na conta da concessionária de água</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-302-olesc-ciclismo-itapema-titulo-geral</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-17T12:20:00-03:00</news:publication_date>
-      <news:title>Itapema levou o título geral do ciclismo masculino na OLESC com 48 pontos, à frente de Jaraguá do Sul e de Joinville, e não aparece entre os seis primeiros da classificação geral que a Fesporte publicou</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-301-audiencia-residuos-camara-itapema-fila-projetos</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-17T09:40:00-03:00</news:publication_date>
-      <news:title>A audiência do lixo em Itapema terminou com a promessa de mais um projeto de lei, e outros doze sobre resíduo já esperam na Câmara, um deles do próprio vereador que fez a promessa, parado há 136 dias</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-300-mirante-encanto-fechado-visitacao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-17T09:20:00-03:00</news:publication_date>
-      <news:title>O Mirante do Encanto fecha para visitação nesta segunda-feira, e quem vai pagar a obra ainda não foi escolhido: as propostas da concessão só são abertas em 10 de dezembro</news:title>
     </news:news>
   </url>
 
