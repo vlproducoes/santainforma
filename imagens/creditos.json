@@ -3583,5 +3583,18 @@
     "pagina_da_fonte": null,
     "dimensao_original": "1600x900",
     "baixada_em": "2026-10-20"
+  },
+  "mascotes-desfile-natal-itapema-m313.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2025,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2025/12/desfile-centro1.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/inscricoes-para-participar-do-desfile-do-feliz-natal-sao-prorrogadas-ate-30-de-outubro/",
+    "dimensao_original": "1600x1066",
+    "recorte": "manual, caixa (0,150,900,656) do original, para deixar a plateia fora do quadro",
+    "baixada_em": "2026-10-20"
   }
 }
