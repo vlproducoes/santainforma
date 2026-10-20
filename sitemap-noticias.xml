@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-312-dia-d-outubro-rosa-itapema-ubs-vacina</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-20T15:40:00-03:00</news:publication_date>
+      <news:title>Itapema abre as 13 UBS neste sábado para o Dia D do Outubro Rosa, e duas que vacinam de segunda a sexta ficam sem vacina justamente no dia</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-311-jei-parajei-itapema-calendario</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-18T13:10:00-03:00</news:publication_date>
       <news:title>A fiscalização de pescado descartou 23,62 toneladas em dois dias no litoral, e o consórcio de que Itapema faz parte questionou em nota o tamanho do descarte</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-304-remedio-controlado-duas-ubs-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-18T10:30:00-03:00</news:publication_date>
-      <news:title>Itapema passa a entregar remédio controlado em 2 das 13 UBS, e a nota da Prefeitura pede só documento, sem citar receita</news:title>
     </news:news>
   </url>
 
