@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-311-jei-parajei-itapema-calendario</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-20T09:10:00-03:00</news:publication_date>
+      <news:title>Os Jogos Escolares de Itapema abriram com 19 escolas, e o ParaJEI, que o calendário de setembro marcava para o começo de outubro, entrou só agora</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-310-taxa-ambulante-praia-itapema-medida-provisoria</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-20T07:40:00-03:00</news:publication_date>
+      <news:title>O prazo para pagar a taxa do ambulante de praia em Itapema foi de 10 para 30 de outubro, e quem pagar nesse prazo novo perde o desconto de 50%</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-309-policiais-31-batalhao-oito-municipios</loc>
     <news:news>
       <news:publication>
@@ -71,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-18T10:30:00-03:00</news:publication_date>
       <news:title>Itapema passa a entregar remédio controlado em 2 das 13 UBS, e a nota da Prefeitura pede só documento, sem citar receita</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-303-hidrantes-itapema-norma-concessionaria</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-17T18:45:00-03:00</news:publication_date>
-      <news:title>A Câmara de Itapema pediu estudo para ampliar a rede de hidrantes, e a norma que vale em Santa Catarina desde 2024 põe projeto, troca e manutenção na conta da concessionária de água</news:title>
     </news:news>
   </url>
 
