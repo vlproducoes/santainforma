@@ -3633,5 +3633,17 @@
     "dimensao_original": "2048x1365",
     "recorte": "lateral direita do original, para deixar a plateia fora do quadro",
     "baixada_em": "2026-10-21"
+  },
+  "m317-avanca-itapema-rua-282-preparacao.jpg": {
+    "origem": "divulgacao oficial",
+    "orgao": "Prefeitura de Itapema",
+    "autor": null,
+    "ano": 2026,
+    "licenca": "material de divulgacao de orgao publico, reproduzido com credito",
+    "uso": "registro do fato",
+    "url_original": "https://www.itapema.sc.gov.br/wp-content/uploads/2026/10/obras_avanca_Itapema-2.jpeg",
+    "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/avanca-itapema-obras-de-pavimentacao-drenagem-e-melhorias-na-orla-seguem-em-diferentes-pontos-da-cidade",
+    "dimensao_original": "900x1600",
+    "baixada_em": "2026-10-21"
   }
 }
