@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-315-contratos-voucher-itapema-tabela-ausente</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-21T07:25:00-03:00</news:publication_date>
+      <news:title>Os três contratos do voucher de Itapema já estão assinados e valem 12 meses, e o extrato que promete a tabela de preços e de vagas sai sem a tabela</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-314-acolhimento-mulheres-violencia-itapema-habilitacao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-21T07:05:00-03:00</news:publication_date>
+      <news:title>Itapema habilitou uma única organização para acolher mulher em situação de violência, e o CNPJ habilitado tem endereço em São José</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-313-inscricao-desfile-natal-itapema-prorrogada</loc>
     <news:news>
       <news:publication>
@@ -83,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-10-19T07:10:00-03:00</news:publication_date>
       <news:title>O ponto de banho em frente à Rua 205, em Itapema, está impróprio há três coletas seguidas, e é o único da cidade que não saiu da lista do IMA</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-306-transferencia-rede-estadual-itapema-prazo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-18T19:05:00-03:00</news:publication_date>
-      <news:title>A vinda da rede municipal para a estadual fecha às 17h de 6 de novembro, o mesmo dia em que a rematrícula de Itapema fecha na escola</news:title>
     </news:news>
   </url>
 
