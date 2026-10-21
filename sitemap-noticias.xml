@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-316-ldo-2027-itapema-aprovada-sem-voto-contrario</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-21T15:40:00-03:00</news:publication_date>
+      <news:title>A LDO de 2027 de Itapema foi aprovada sem nenhum voto contrário, e os cinco vereadores que votaram contra o empréstimo que explica o aumento votaram a favor dela</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-315-contratos-voucher-itapema-tabela-ausente</loc>
     <news:news>
       <news:publication>
@@ -83,30 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-19T18:40:00-03:00</news:publication_date>
       <news:title>Os dez policiais que Itapema anunciou foram destinados ao batalhão que atende oito cidades, e Tijucas já anunciou sete para três delas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-308-policiais-temporarios-patrulha-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T12:30:00-03:00</news:publication_date>
-      <news:title>Os policiais temporários começaram a patrulhar Itapema cinco dias depois da formatura, e a lei que criou o posto proíbe que eles usem viatura ou moto</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-307-balneabilidade-itapema-rua-205-tres-coletas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T07:10:00-03:00</news:publication_date>
-      <news:title>O ponto de banho em frente à Rua 205, em Itapema, está impróprio há três coletas seguidas, e é o único da cidade que não saiu da lista do IMA</news:title>
     </news:news>
   </url>
 
