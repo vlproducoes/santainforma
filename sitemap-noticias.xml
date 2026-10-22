@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-320-fila-criancas-atipicas-itapema-indicacao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-22T19:05:00-03:00</news:publication_date>
+      <news:title>Itapema publica 282 crianças atendidas no CAP-TEA e nenhum número de quem espera, e uma indicação na Câmara pede fila à vista em quatro programas</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-319-ciclomotor-calcadao-itapema-lei-radar</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-20T18:50:00-03:00</news:publication_date>
       <news:title>A inscrição para desfilar no Natal de Itapema fechava nesta terça e foi para 30 de outubro, e a nota não diz quantas das 150 vagas já foram preenchidas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-312-dia-d-outubro-rosa-itapema-ubs-vacina</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-20T15:40:00-03:00</news:publication_date>
-      <news:title>Itapema abre as 13 UBS neste sábado para o Dia D do Outubro Rosa, e duas que vacinam de segunda a sexta ficam sem vacina justamente no dia</news:title>
     </news:news>
   </url>
 
