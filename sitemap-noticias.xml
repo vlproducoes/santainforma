@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-318-neavit-regional-balneario-camboriu-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-22T07:10:00-03:00</news:publication_date>
+      <news:title>O primeiro núcleo de apoio a vítima de violência pronto no novo modelo do Ministério Público atende Itapema, e fica em Balneário Camboriú</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-317-avanca-itapema-rua-282-volta-preparacao</loc>
     <news:news>
       <news:publication>
@@ -95,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-10-20T07:40:00-03:00</news:publication_date>
       <news:title>O prazo para pagar a taxa do ambulante de praia em Itapema foi de 10 para 30 de outubro, e quem pagar nesse prazo novo perde o desconto de 50%</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-309-policiais-31-batalhao-oito-municipios</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T18:40:00-03:00</news:publication_date>
-      <news:title>Os dez policiais que Itapema anunciou foram destinados ao batalhão que atende oito cidades, e Tijucas já anunciou sete para três delas</news:title>
     </news:news>
   </url>
 

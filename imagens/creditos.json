@@ -3645,5 +3645,17 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/avanca-itapema-obras-de-pavimentacao-drenagem-e-melhorias-na-orla-seguem-em-diferentes-pontos-da-cidade",
     "dimensao_original": "900x1600",
     "baixada_em": "2026-10-21"
+  },
+  "ilustracao-m318.jpg": {
+    "origem": "ilustracao propria",
+    "orgao": "Santa Informa",
+    "autor": "Santa Informa",
+    "ano": 2026,
+    "licenca": "ilustracao da marca, feita pela redacao",
+    "uso": "grafico de dado proprio",
+    "url_original": null,
+    "pagina_da_fonte": "https://servicodados.ibge.gov.br/api/v3/agregados/6579/periodos/2026/variaveis/9324",
+    "dimensao_original": "1600x900",
+    "baixada_em": "2026-10-22"
   }
 }
