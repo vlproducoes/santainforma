@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-319-ciclomotor-calcadao-itapema-lei-radar</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-22T13:20:00-03:00</news:publication_date>
+      <news:title>A lei que proíbe ciclomotor no Calçadão de Itapema está em vigor há 244 dias e já prevê remoção, e o radar que a Câmara pediu nesta semana a Prefeitura testou há 388 dias</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-318-neavit-regional-balneario-camboriu-itapema</loc>
     <news:news>
       <news:publication>
@@ -83,30 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-20T15:40:00-03:00</news:publication_date>
       <news:title>Itapema abre as 13 UBS neste sábado para o Dia D do Outubro Rosa, e duas que vacinam de segunda a sexta ficam sem vacina justamente no dia</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-311-jei-parajei-itapema-calendario</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-20T09:10:00-03:00</news:publication_date>
-      <news:title>Os Jogos Escolares de Itapema abriram com 19 escolas, e o ParaJEI, que o calendário de setembro marcava para o começo de outubro, entrou só agora</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-310-taxa-ambulante-praia-itapema-medida-provisoria</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-20T07:40:00-03:00</news:publication_date>
-      <news:title>O prazo para pagar a taxa do ambulante de praia em Itapema foi de 10 para 30 de outubro, e quem pagar nesse prazo novo perde o desconto de 50%</news:title>
     </news:news>
   </url>
 
