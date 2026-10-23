@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-321-eletroposto-itapema-projetos-recarga-arquivados</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-23T11:45:00-03:00</news:publication_date>
+      <news:title>O eletroposto da Celesc chegou ao Terminal Rodoviário de Itapema, e os dois projetos que tentaram criar regra municipal de recarga foram arquivados sem ir a plenário</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-320-fila-criancas-atipicas-itapema-indicacao</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-21T07:05:00-03:00</news:publication_date>
       <news:title>Itapema habilitou uma única organização para acolher mulher em situação de violência, e o CNPJ habilitado tem endereço em São José</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-313-inscricao-desfile-natal-itapema-prorrogada</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-20T18:50:00-03:00</news:publication_date>
-      <news:title>A inscrição para desfilar no Natal de Itapema fechava nesta terça e foi para 30 de outubro, e a nota não diz quantas das 150 vagas já foram preenchidas</news:title>
     </news:news>
   </url>
 
