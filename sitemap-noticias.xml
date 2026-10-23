@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-322-acor-pregao-estrutura-pavilhao-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-23T16:10:00-03:00</news:publication_date>
+      <news:title>O AÇOR de Itapema vai ter pavilhão de 2.500 m², 44 estandes e 20 cabines de chuveiro, e a disputa do pregão da estrutura cai a 16 dias da festa</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-321-eletroposto-itapema-projetos-recarga-arquivados</loc>
     <news:news>
       <news:publication>
@@ -71,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-21T15:40:00-03:00</news:publication_date>
       <news:title>A LDO de 2027 de Itapema foi aprovada sem nenhum voto contrário, e os cinco vereadores que votaram contra o empréstimo que explica o aumento votaram a favor dela</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-315-contratos-voucher-itapema-tabela-ausente</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-21T07:25:00-03:00</news:publication_date>
-      <news:title>Os três contratos do voucher de Itapema já estão assinados e valem 12 meses, e o extrato que promete a tabela de preços e de vagas sai sem a tabela</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-314-acolhimento-mulheres-violencia-itapema-habilitacao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-21T07:05:00-03:00</news:publication_date>
-      <news:title>Itapema habilitou uma única organização para acolher mulher em situação de violência, e o CNPJ habilitado tem endereço em São José</news:title>
     </news:news>
   </url>
 
