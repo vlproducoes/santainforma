@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-323-vagas-escola-particular-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-23T18:30:00-03:00</news:publication_date>
+      <news:title>Itapema vai pagar cerca de 250 vagas em escola particular, e os contratos de R$ 5,8 milhões preveem até o 5º ano e criança com necessidade especial, que ficaram fora da primeira etapa</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-322-acor-pregao-estrutura-pavilhao-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-21T18:40:00-03:00</news:publication_date>
       <news:title>A Rua 282 voltou à preparação para o asfalto 33 dias depois de a Prefeitura de Itapema anunciar que ela já estava na pavimentação</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-316-ldo-2027-itapema-aprovada-sem-voto-contrario</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-21T15:40:00-03:00</news:publication_date>
-      <news:title>A LDO de 2027 de Itapema foi aprovada sem nenhum voto contrário, e os cinco vereadores que votaram contra o empréstimo que explica o aumento votaram a favor dela</news:title>
     </news:news>
   </url>
 
