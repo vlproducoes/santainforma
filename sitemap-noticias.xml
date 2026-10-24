@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-325-merenda-agricultura-familiar-habilitados-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-24T12:55:00-03:00</news:publication_date>
+      <news:title>A merenda escolar de Itapema fechou com 10 fornecedores da agricultura familiar, e duas cooperativas ficaram com 65 dos 83 itens</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-324-habilitacao-edital-cultura-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-22T13:20:00-03:00</news:publication_date>
       <news:title>A lei que proíbe ciclomotor no Calçadão de Itapema está em vigor há 244 dias e já prevê remoção, e o radar que a Câmara pediu nesta semana a Prefeitura testou há 388 dias</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-318-neavit-regional-balneario-camboriu-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-22T07:10:00-03:00</news:publication_date>
-      <news:title>O primeiro núcleo de apoio a vítima de violência pronto no novo modelo do Ministério Público atende Itapema, e fica em Balneário Camboriú</news:title>
     </news:news>
   </url>
 
