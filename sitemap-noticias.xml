@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-326-citmar-contrato-ratificacao-itapema-porto-belo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-24T18:40:00-03:00</news:publication_date>
+      <news:title>O contrato novo do consórcio de turismo da região só vale com a maioria das dez cidades, e por ora só Itapema e Porto Belo ratificaram</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-325-merenda-agricultura-familiar-habilitados-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-22T19:05:00-03:00</news:publication_date>
       <news:title>Itapema publica 282 crianças atendidas no CAP-TEA e nenhum número de quem espera, e uma indicação na Câmara pede fila à vista em quatro programas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-319-ciclomotor-calcadao-itapema-lei-radar</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-22T13:20:00-03:00</news:publication_date>
-      <news:title>A lei que proíbe ciclomotor no Calçadão de Itapema está em vigor há 244 dias e já prevê remoção, e o radar que a Câmara pediu nesta semana a Prefeitura testou há 388 dias</news:title>
     </news:news>
   </url>
 
