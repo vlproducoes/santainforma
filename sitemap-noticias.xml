@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-327-dentistas-servidores-sisemi-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-25T09:40:00-03:00</news:publication_date>
+      <news:title>Itapema vai custear dois dentistas para atender servidores em consultório na sede do sindicato, e o processo seletivo aberto há nove dias não tem vaga de dentista</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-326-citmar-contrato-ratificacao-itapema-porto-belo</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-23T11:45:00-03:00</news:publication_date>
       <news:title>O eletroposto da Celesc chegou ao Terminal Rodoviário de Itapema, e os dois projetos que tentaram criar regra municipal de recarga foram arquivados sem ir a plenário</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-320-fila-criancas-atipicas-itapema-indicacao</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-22T19:05:00-03:00</news:publication_date>
-      <news:title>Itapema publica 282 crianças atendidas no CAP-TEA e nenhum número de quem espera, e uma indicação na Câmara pede fila à vista em quatro programas</news:title>
     </news:news>
   </url>
 
