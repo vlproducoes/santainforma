@@ -3716,5 +3716,29 @@
     "pagina_da_fonte": "https://www.itapema.sc.gov.br/noticia/prefeitura-e-sisemi-firmam-parceria-para-atendimento-odontologico-aos-servidores-de-itapema/",
     "dimensao_original": "1600x1200",
     "baixada_em": "2026-10-25"
+  },
+  "ilustracao-m328.jpg": {
+    "origem": "ilustracao propria",
+    "orgao": "Santa Informa",
+    "autor": "Santa Informa",
+    "ano": 2026,
+    "licenca": "ilustracao da marca, feita pela redacao",
+    "uso": "grafico comparativo de dado proprio",
+    "url_original": null,
+    "pagina_da_fonte": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20261001&dataFinal=20261031&codigoModalidadeContratacao=6&cnpj=82572207000103&pagina=1",
+    "dimensao_original": "1600x900",
+    "baixada_em": "2026-10-25"
+  },
+  "ilustracao-m329.jpg": {
+    "origem": "ilustracao propria",
+    "orgao": "Santa Informa",
+    "autor": "Santa Informa",
+    "ano": 2026,
+    "licenca": "ilustracao da marca, feita pela redacao",
+    "uso": "quadro comparativo de dado proprio",
+    "url_original": null,
+    "pagina_da_fonte": "https://diariomunicipal.sc.gov.br/atos/8837352",
+    "dimensao_original": "1600x900",
+    "baixada_em": "2026-10-25"
   }
 }

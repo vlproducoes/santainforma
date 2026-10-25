@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-329-erratas-pregao-acor-itapema-valor-estimado</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-25T11:30:00-03:00</news:publication_date>
+      <news:title>O pregão da estrutura do AÇOR de Itapema saiu assinado pela Secretária de Saúde e precisou de três erratas, e o valor que faltava no extrato é de R$ 166 mil</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-328-decoracao-natal-itapema-pregao-2-1-milhoes</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-25T09:50:00-03:00</news:publication_date>
+      <news:title>A decoração do Natal de Itapema vai a pregão por R$ 2,1 milhões, R$ 110 mil abaixo do que a cidade pagou em 2025, e o pacote fica quase igual porque os carros subiram 29%</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-327-dentistas-servidores-sisemi-itapema</loc>
     <news:news>
       <news:publication>
@@ -71,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-23T16:10:00-03:00</news:publication_date>
       <news:title>O AÇOR de Itapema vai ter pavilhão de 2.500 m², 44 estandes e 20 cabines de chuveiro, e a disputa do pregão da estrutura cai a 16 dias da festa</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-321-eletroposto-itapema-projetos-recarga-arquivados</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-23T11:45:00-03:00</news:publication_date>
-      <news:title>O eletroposto da Celesc chegou ao Terminal Rodoviário de Itapema, e os dois projetos que tentaram criar regra municipal de recarga foram arquivados sem ir a plenário</news:title>
     </news:news>
   </url>
 
