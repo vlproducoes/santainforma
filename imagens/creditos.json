@@ -3740,5 +3740,17 @@
     "pagina_da_fonte": "https://diariomunicipal.sc.gov.br/atos/8837352",
     "dimensao_original": "1600x900",
     "baixada_em": "2026-10-25"
+  },
+  "ilustracao-m330.jpg": {
+    "origem": "ilustracao propria",
+    "orgao": "Santa Informa",
+    "autor": "Santa Informa",
+    "ano": 2026,
+    "licenca": "ilustracao da marca, feita pela redacao",
+    "uso": "comparativo entre o texto do projeto e o texto da emenda",
+    "url_original": null,
+    "pagina_da_fonte": "https://site.itapema.sc.leg.br/elegis2/detalhe-proposicao/cod_proposicao/26058",
+    "dimensao_original": "1600x900",
+    "baixada_em": "2026-10-25"
   }
 }

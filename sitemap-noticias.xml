@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-330-outorga-onerosa-pavimentacao-itapema-emenda</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-25T18:55:00-03:00</news:publication_date>
+      <news:title>A emenda que chega ao plenário de Itapema troca a prioridade da rua sem asfalto por “sempre que possível”, e o projeto espera votação há 217 dias</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-329-erratas-pregao-acor-itapema-valor-estimado</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-23T18:30:00-03:00</news:publication_date>
       <news:title>Itapema vai pagar cerca de 250 vagas em escola particular, e os contratos de R$ 5,8 milhões preveem até o 5º ano e criança com necessidade especial, que ficaram fora da primeira etapa</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-322-acor-pregao-estrutura-pavilhao-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-23T16:10:00-03:00</news:publication_date>
-      <news:title>O AÇOR de Itapema vai ter pavilhão de 2.500 m², 44 estandes e 20 cabines de chuveiro, e a disputa do pregão da estrutura cai a 16 dias da festa</news:title>
     </news:news>
   </url>
 
