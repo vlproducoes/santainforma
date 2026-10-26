@@ -3752,5 +3752,17 @@
     "pagina_da_fonte": "https://site.itapema.sc.leg.br/elegis2/detalhe-proposicao/cod_proposicao/26058",
     "dimensao_original": "1600x900",
     "baixada_em": "2026-10-25"
+  },
+  "ilustracao-m331.jpg": {
+    "origem": "ilustracao propria",
+    "orgao": "Santa Informa",
+    "autor": "Santa Informa",
+    "ano": 2026,
+    "licenca": "ilustracao da marca, feita pela redacao",
+    "uso": "serie de quatro coletas do IMA nos pontos de Itapema, montada por nos",
+    "url_original": null,
+    "pagina_da_fonte": "https://balneabilidade.ima.sc.gov.br/relatorio/downloadPDF/2026-10-23",
+    "dimensao_original": "1600x900",
+    "baixada_em": "2026-10-26"
   }
 }

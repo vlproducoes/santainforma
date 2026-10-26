@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-331-balneabilidade-itapema-dois-pontos-temporada</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-26T06:40:00-03:00</news:publication_date>
+      <news:title>Itapema chega à temporada com dois pontos de praia reprovados, e o da Rua 205 soma quatro coletas seguidas</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-330-outorga-onerosa-pavimentacao-itapema-emenda</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-24T06:45:00-03:00</news:publication_date>
       <news:title>Seis dos 18 projetos de cultura selecionados em Itapema caíram na documentação, e R$ 70 mil ficam sem ninguém na fila para ocupar</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-323-vagas-escola-particular-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-23T18:30:00-03:00</news:publication_date>
-      <news:title>Itapema vai pagar cerca de 250 vagas em escola particular, e os contratos de R$ 5,8 milhões preveem até o 5º ano e criança com necessidade especial, que ficaram fora da primeira etapa</news:title>
     </news:news>
   </url>
 
