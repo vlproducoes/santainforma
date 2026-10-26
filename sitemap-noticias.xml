@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-332-outubro-rosa-itapema-dia-d-mamografia</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-26T12:40:00-03:00</news:publication_date>
+      <news:title>O Dia D do Outubro Rosa de Itapema somou mais de 750 atendimentos, e a mamografia não aparece em nenhuma das quatro notas da campanha deste ano</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-331-balneabilidade-itapema-dois-pontos-temporada</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-24T12:55:00-03:00</news:publication_date>
       <news:title>A merenda escolar de Itapema fechou com 10 fornecedores da agricultura familiar, e duas cooperativas ficaram com 65 dos 83 itens</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-324-habilitacao-edital-cultura-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-24T06:45:00-03:00</news:publication_date>
-      <news:title>Seis dos 18 projetos de cultura selecionados em Itapema caíram na documentação, e R$ 70 mil ficam sem ninguém na fila para ocupar</news:title>
     </news:news>
   </url>
 
