@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-333-fila-unica-oitava-chamada-voucher-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-26T18:30:00-03:00</news:publication_date>
+      <news:title>A oitava chamada do Fila Única de Itapema convoca 200 crianças para a escola particular, 50 a menos que a nota de três dias antes, e nenhuma vaga é do 1º ou do 2º ano</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-332-outubro-rosa-itapema-dia-d-mamografia</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-24T18:40:00-03:00</news:publication_date>
       <news:title>O contrato novo do consórcio de turismo da região só vale com a maioria das dez cidades, e por ora só Itapema e Porto Belo ratificaram</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-325-merenda-agricultura-familiar-habilitados-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-24T12:55:00-03:00</news:publication_date>
-      <news:title>A merenda escolar de Itapema fechou com 10 fornecedores da agricultura familiar, e duas cooperativas ficaram com 65 dos 83 itens</news:title>
     </news:news>
   </url>
 
