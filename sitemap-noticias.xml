@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-335-cata-bagulho-itapema-lei-entulho</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-27T13:10:00-03:00</news:publication_date>
+      <news:title>O projeto que proíbe entulho no Cata-Bagulho de Itapema vai a voto nesta terça, 574 dias depois de ser lido, e a Prefeitura já recusa esse material desde abril de 2025</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-334-festival-beija-flor-itapema-tijucas</loc>
     <news:news>
       <news:publication>
@@ -59,42 +71,6 @@
       </news:publication>
       <news:publication_date>2026-10-25T18:55:00-03:00</news:publication_date>
       <news:title>A emenda que chega ao plenário de Itapema troca a prioridade da rua sem asfalto por “sempre que possível”, e o projeto espera votação há 217 dias</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-329-erratas-pregao-acor-itapema-valor-estimado</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-25T11:30:00-03:00</news:publication_date>
-      <news:title>O pregão da estrutura do AÇOR de Itapema saiu assinado pela Secretária de Saúde e precisou de três erratas, e o valor que faltava no extrato é de R$ 166 mil</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-328-decoracao-natal-itapema-pregao-2-1-milhoes</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-25T09:50:00-03:00</news:publication_date>
-      <news:title>A decoração do Natal de Itapema vai a pregão por R$ 2,1 milhões, R$ 110 mil abaixo do que a cidade pagou em 2025, e o pacote fica quase igual porque os carros subiram 29%</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-327-dentistas-servidores-sisemi-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-25T09:40:00-03:00</news:publication_date>
-      <news:title>Itapema vai custear dois dentistas para atender servidores em consultório na sede do sindicato, e o processo seletivo aberto há nove dias não tem vaga de dentista</news:title>
     </news:news>
   </url>
 
