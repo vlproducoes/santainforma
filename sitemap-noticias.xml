@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-339-pontos-coleta-eletronico-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-28T12:30:00-03:00</news:publication_date>
+      <news:title>Itapema está instalando seis pontos de coleta de eletrônico, e a nota da Prefeitura desta quarta cita quatro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-338-maes-atipicas-cap-tea-itapema-estagiarios</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-26T12:40:00-03:00</news:publication_date>
       <news:title>O Dia D do Outubro Rosa de Itapema somou mais de 750 atendimentos, e a mamografia não aparece em nenhuma das quatro notas da campanha deste ano</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-331-balneabilidade-itapema-dois-pontos-temporada</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-26T06:40:00-03:00</news:publication_date>
-      <news:title>Itapema chega à temporada com dois pontos de praia reprovados, e o da Rua 205 soma quatro coletas seguidas</news:title>
     </news:news>
   </url>
 
