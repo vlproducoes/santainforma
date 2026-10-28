@@ -3,14 +3,14 @@
 
   <url>
     <loc>https://santainforma.com.br/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://santainforma.com.br/regiao</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -157,7 +157,7 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/editoria-poder-publico</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -193,7 +193,7 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/noticias</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -1462,6 +1462,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://santainforma.com.br/materia-338-maes-atipicas-cap-tea-itapema-estagiarios</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/materia-337-cata-bagulho-aprovado-emenda-cronograma</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://santainforma.com.br/materia-336-catarata-itapema-90-cirurgias-fila</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -2391,6 +2403,12 @@
   <url>
     <loc>https://santainforma.com.br/noticias-54</loc>
     <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/noticias-55</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>

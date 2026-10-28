@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-338-maes-atipicas-cap-tea-itapema-estagiarios</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-28T07:30:00-03:00</news:publication_date>
+      <news:title>Itapema aprovou por 11 a 0 o programa para mães atípicas no CAP-TEA, 462 dias depois de ler o projeto, e a Câmara cortou do texto o item dos estagiários da UNIVALI</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-337-cata-bagulho-aprovado-emenda-cronograma</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-28T06:45:00-03:00</news:publication_date>
+      <news:title>A Câmara de Itapema aprovou a nova regra do Cata-Bagulho por 11 a 0, e a emenda que põe o cronograma na internet, criada 4h25 antes do voto, diz “poderá” e não “deverá”</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-336-catarata-itapema-90-cirurgias-fila</loc>
     <news:news>
       <news:publication>
@@ -71,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-26T06:40:00-03:00</news:publication_date>
       <news:title>Itapema chega à temporada com dois pontos de praia reprovados, e o da Rua 205 soma quatro coletas seguidas</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-330-outorga-onerosa-pavimentacao-itapema-emenda</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-25T18:55:00-03:00</news:publication_date>
-      <news:title>A emenda que chega ao plenário de Itapema troca a prioridade da rua sem asfalto por “sempre que possível”, e o projeto espera votação há 217 dias</news:title>
     </news:news>
   </url>
 
