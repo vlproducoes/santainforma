@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-341-cemiterio-itapema-desapropriacao-ampliacao</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-29T06:50:00-03:00</news:publication_date>
+      <news:title>Itapema decretou a desapropriação de 47.796 m² ao lado do cemitério, e vai pagar em potencial construtivo em vez de dinheiro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-340-volei-praia-itapema-dezembro</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-27T07:20:00-03:00</news:publication_date>
       <news:title>O Festival do Beija-Flor abre sete roteiros de observação de aves em Itapema e Tijucas a partir de sábado, e um deles é no Parque das Capivaras, cuja concessão de 30 anos ficou deserta há 19 dias</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-333-fila-unica-oitava-chamada-voucher-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-26T18:30:00-03:00</news:publication_date>
-      <news:title>A oitava chamada do Fila Única de Itapema convoca 200 crianças para a escola particular, 50 a menos que a nota de três dias antes, e nenhuma vaga é do 1º ou do 2º ano</news:title>
     </news:news>
   </url>
 
