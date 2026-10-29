@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-342-rua-282-itapema-asfalto-41-dias</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-29T12:40:00-03:00</news:publication_date>
+      <news:title>O asfalto chegou à Rua 282 nesta quinta, 41 dias depois de a Prefeitura de Itapema publicar que a rua já tinha entrado na etapa de pavimentação</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-341-cemiterio-itapema-desapropriacao-ampliacao</loc>
     <news:news>
       <news:publication>
@@ -83,18 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-27T13:10:00-03:00</news:publication_date>
       <news:title>O projeto que proíbe entulho no Cata-Bagulho de Itapema vai a voto nesta terça, 574 dias depois de ser lido, e a Prefeitura já recusa esse material desde abril de 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-334-festival-beija-flor-itapema-tijucas</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-27T07:20:00-03:00</news:publication_date>
-      <news:title>O Festival do Beija-Flor abre sete roteiros de observação de aves em Itapema e Tijucas a partir de sábado, e um deles é no Parque das Capivaras, cuja concessão de 30 anos ficou deserta há 19 dias</news:title>
     </news:news>
   </url>
 
