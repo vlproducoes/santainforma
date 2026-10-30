@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-345-rua-416-itapema-141-dias-preparo-solo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T13:05:00-03:00</news:publication_date>
+      <news:title>A Rua 416 entrou no asfalto em junho e voltou ao preparo do solo em outubro, e as notas do Avança Itapema pararam de dizer qual trecho</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-344-pontos-de-cultura-itapema-inabilitado</loc>
     <news:news>
       <news:publication>
@@ -71,30 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-28T12:30:00-03:00</news:publication_date>
       <news:title>Itapema está instalando seis pontos de coleta de eletrônico, e a nota da Prefeitura desta quarta cita quatro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-338-maes-atipicas-cap-tea-itapema-estagiarios</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-28T07:30:00-03:00</news:publication_date>
-      <news:title>Itapema aprovou por 11 a 0 o programa para mães atípicas no CAP-TEA, 462 dias depois de ler o projeto, e a Câmara cortou do texto o item dos estagiários da UNIVALI</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-337-cata-bagulho-aprovado-emenda-cronograma</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-28T06:45:00-03:00</news:publication_date>
-      <news:title>A Câmara de Itapema aprovou a nova regra do Cata-Bagulho por 11 a 0, e a emenda que põe o cronograma na internet, criada 4h25 antes do voto, diz “poderá” e não “deverá”</news:title>
     </news:news>
   </url>
 
