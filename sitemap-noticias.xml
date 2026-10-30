@@ -3,6 +3,30 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-344-pontos-de-cultura-itapema-inabilitado</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T07:40:00-03:00</news:publication_date>
+      <news:title>O único inscrito no edital de R$ 90 mil dos Pontos de Cultura de Itapema foi inabilitado, e tem até 5 de novembro para recorrer</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-343-ponto-facultativo-finados-itapema</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T07:10:00-03:00</news:publication_date>
+      <news:title>A Prefeitura de Itapema não abre nesta sexta nem na segunda, e o decreto de janeiro marca mais cinco dias sem expediente até 31 de dezembro</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-342-rua-282-itapema-asfalto-41-dias</loc>
     <news:news>
       <news:publication>
@@ -71,30 +95,6 @@
       </news:publication>
       <news:publication_date>2026-10-28T06:45:00-03:00</news:publication_date>
       <news:title>A Câmara de Itapema aprovou a nova regra do Cata-Bagulho por 11 a 0, e a emenda que põe o cronograma na internet, criada 4h25 antes do voto, diz “poderá” e não “deverá”</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-336-catarata-itapema-90-cirurgias-fila</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-27T21:45:00-03:00</news:publication_date>
-      <news:title>Itapema atendeu 90 pessoas com cirurgia de catarata em outubro, o primeiro número que a Prefeitura publica em 424 dias, e nenhuma das doze notas sobre o assunto diz quantos ainda esperam na fila</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-335-cata-bagulho-itapema-lei-entulho</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-27T13:10:00-03:00</news:publication_date>
-      <news:title>O projeto que proíbe entulho no Cata-Bagulho de Itapema vai a voto nesta terça, 574 dias depois de ser lido, e a Prefeitura já recusa esse material desde abril de 2025</news:title>
     </news:news>
   </url>
 
