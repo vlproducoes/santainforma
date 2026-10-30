@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-346-credenciamento-saude-itapema-sus-rede-privada</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T18:30:00-03:00</news:publication_date>
+      <news:title>Itapema abre edital para clínicas privadas fazerem consulta, exame e cirurgia pelo SUS, e o credenciamento que vale desde 2020 teve uma única publicação neste ano</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-345-rua-416-itapema-141-dias-preparo-solo</loc>
     <news:news>
       <news:publication>
@@ -71,18 +83,6 @@
       </news:publication>
       <news:publication_date>2026-10-28T18:40:00-03:00</news:publication_date>
       <news:title>O vôlei de praia volta a Itapema em dezembro com arquibancada maior e uma competição a menos que em 2025</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-339-pontos-coleta-eletronico-itapema</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-28T12:30:00-03:00</news:publication_date>
-      <news:title>Itapema está instalando seis pontos de coleta de eletrônico, e a nota da Prefeitura desta quarta cita quatro</news:title>
     </news:news>
   </url>
 
