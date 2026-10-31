@@ -3,6 +3,42 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://santainforma.com.br/materia-349-catador-reciclavel-porto-belo-multa-lei</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T07:00:00-03:00</news:publication_date>
+      <news:title>Porto Belo passa a multar o catador de recicláveis que trabalhar sem crachá, e a lei nova dá uma chance de acertar na hora sem pagar nada</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-348-ubs-jardim-praiamar-itapema-quarto-aditivo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T06:55:00-03:00</news:publication_date>
+      <news:title>A UBS do Jardim Praiamar recebeu o quarto aditivo e a entrega foi para março de 2027, 600 dias depois da assinatura do contrato</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-347-cmei-jardim-praia-mar-itapema-contrato</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Santa Informa</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T06:50:00-03:00</news:publication_date>
+      <news:title>Itapema assinou o contrato de R$ 17,6 milhões da creche do Jardim Praia Mar, e o edital que gerou a obra ficou suspenso em setembro por impugnação</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://santainforma.com.br/materia-346-credenciamento-saude-itapema-sus-rede-privada</loc>
     <news:news>
       <news:publication>
@@ -71,18 +107,6 @@
       </news:publication>
       <news:publication_date>2026-10-29T06:50:00-03:00</news:publication_date>
       <news:title>Itapema decretou a desapropriação de 47.796 m² ao lado do cemitério, e vai pagar em potencial construtivo em vez de dinheiro</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://santainforma.com.br/materia-340-volei-praia-itapema-dezembro</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Santa Informa</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-28T18:40:00-03:00</news:publication_date>
-      <news:title>O vôlei de praia volta a Itapema em dezembro com arquibancada maior e uma competição a menos que em 2025</news:title>
     </news:news>
   </url>
 

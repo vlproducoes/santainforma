@@ -3,14 +3,14 @@
 
   <url>
     <loc>https://santainforma.com.br/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://santainforma.com.br/regiao</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -157,7 +157,7 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/editoria-poder-publico</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -193,7 +193,7 @@
   </url>
   <url>
     <loc>https://santainforma.com.br/noticias</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -1492,6 +1492,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://santainforma.com.br/materia-349-catador-reciclavel-porto-belo-multa-lei</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-348-ubs-jardim-praiamar-itapema-quarto-aditivo</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://santainforma.com.br/materia-347-cmei-jardim-praia-mar-itapema-contrato</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://santainforma.com.br/materia-346-credenciamento-saude-itapema-sus-rede-privada</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -2463,6 +2483,12 @@
   <url>
     <loc>https://santainforma.com.br/noticias-56</loc>
     <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://santainforma.com.br/noticias-57</loc>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
